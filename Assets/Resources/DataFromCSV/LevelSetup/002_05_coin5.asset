@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
+  m_Name: 002_05_coin5
+  m_EditorClassIdentifier: 
+  levelUID: 205
+  themeIndex: 2
+  levelIndex: 5
+  nextLevelIndex: 206
+  previousLevel: {fileID: 11400000, guid: d886d20ef904cf84faa043c15565ae66, type: 2}
+  nextLevel: {fileID: 11400000, guid: 47eacb1ea2bb3ea48ac54488e6da4d12, type: 2}
+  theme: '@Loc=themename_tm2@@'
+  title: '@Loc=levelname_lv205@@'
+  newInitNarrative: '@Loc=init_lv205@@'
+  newPlayNarratives: []
+  oldNarratives:
+  - '@Loc=init_lv201@@'
+  - '@Loc=init_lv202@@'
+  - '@Loc=play1_lv202@@'
+  - '@Loc=init_lv203@@'
+  - '@Loc=play1_lv203@@'
+  - '@Loc=init_lv204@@'
+  goal: '@Loc=goal_lv205@@'
+  ruleset:
+  - tag: 0
+    ruleDesc: '@Loc=rule1_lv204@@'
+  - tag: 2
+    ruleDesc: '@Loc=rule2_lv205@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule3_lv204@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule4_lv203@@'
+  initBoard:
+    boardSize: {x: 2, y: 2}
+    cells:
+    - coord: {x: 0, y: 0}
+      value: 7
+      status: 0
+    - coord: {x: 1, y: 0}
+      value: 6
+      status: 0
+    - coord: {x: 0, y: 1}
+      value: 9
+      status: 0
+    - coord: {x: 1, y: 1}
+      value: 8
+      status: 0
+    toolCount: 20
+    toolStatus: 0

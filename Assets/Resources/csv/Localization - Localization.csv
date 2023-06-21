@@ -1,0 +1,101 @@
+UID,Key,EN,CN
+1,themename_tm1,Clock,时钟
+2,themename_tm2,Coin,硬币
+3,levelname_lv101,8:00 PM,8:00 PM
+4,levelname_lv102,10:00 PM,10:00 PM
+5,levelname_lv103,1:00 AM,1:00 AM
+6,levelname_lv104,2:00 AM,2:00 AM
+7,levelname_lv105,3:00 AM,3:00 AM
+8,levelname_lv106,4:00 AM,4:00 AM
+9,levelname_lv107,5:00 AM,5:00 AM
+10,levelname_lv108,6:00 AM,6:00 AM
+11,levelname_lv201,Coin,硬币
+12,levelname_lv202,Greek Drachma,德拉克马
+13,levelname_lv203,Ban Liang,秦半两
+14,levelname_lv204,Dinar,达里克
+15,levelname_lv205,Bezant,拜占庭贝卡特
+16,levelname_lv206,Pound Sterling,英镑
+17,levelname_lv207,Maple Leaf coin,枫叶币
+18,levelname_lv208,Bitcoin,比特币
+19,init_lv101,Clock,时钟
+20,init_lv102,"Tick, tick, tick,",滴答滴答滴答，
+21,init_lv103,它从不停止，,它从不停止，
+22,init_lv104,微博、连载、直播，,微博、连载、直播，
+23,init_lv105,打乱了时间的秩序，,打乱了时间的秩序，
+24,init_lv106,让夜晚比白天更加精彩。,让夜晚比白天更加精彩。
+25,init_lv107,无眠之夜，常常感叹时间的无垠。,无眠之夜，常常感叹时间的无垠。
+26,init_lv108,意识逐渐模糊，,意识逐渐模糊，
+27,init_lv201,Coin,硬币
+28,init_lv202,从四德拉克马到比特币，,从四德拉克马到比特币，
+29,init_lv203,它流过历史的长河，,它流过历史的长河，
+30,init_lv204,正面象征前进，或者盲从；,正面象征前进，或者盲从；
+31,init_lv205,反面代表保留，或者放弃。,反面代表保留，或者放弃。
+32,init_lv206,再次投掷硬币，,再次投掷硬币，
+33,init_lv207,将结果交给命运，,将结果交给命运，
+34,init_lv208,或者智慧。,或者智慧。
+35,play1_lv107,转瞬之间，又唏嘘时间的短暂。,转瞬之间，又唏嘘时间的短暂。
+36,play1_lv108,是时候休息了。,是时候休息了。
+37,play1_lv202,硬币的形式无穷尽。,硬币的形式无穷尽。
+38,play1_lv203,始终保持两面，,始终保持两面，
+39,goal_lv101,Set all cells to 8,将所有格子变为8
+40,goal_lv102,Set all cells to 10,将所有格子变为10
+41,goal_lv103,Set all cells to 1,将所有格子变为1
+42,goal_lv104,Set all cells to UNIQUE,将所有格子变为不同的值
+43,goal_lv105,Set all cells to 3,将所有格子变为3
+44,goal_lv106,Set all cells to 4,将所有格子变为4
+45,goal_lv107,Set all cells to UNIQUE(at least 8 steps),将所有格子变为不同的值（最少需要8步）
+46,goal_lv108,Set all cells to 6(at least 35 steps),将所有格子变为6（最少需要35步）
+47,goal_lv201,Set all cells to 4,将所有格子变为4
+48,goal_lv202,Set all cells to 4,将所有格子变为4
+49,goal_lv203,Set all cells to SAME,将所有格子变为相同的值
+50,goal_lv204,Set at least 2 cells to 9,将至少2个格子变为9
+51,goal_lv205,Set at least 2 cells to 1,将至少2个格子变为1
+52,goal_lv206,Set all cells to SAME,将所有格子变为相同的值
+53,goal_lv207,Set all cells to UNIQUE,将所有格子变为不同的值
+54,goal_lv208,Set all cells to SAME,将所有格子变为相同的值
+55,rule1_lv101,Cell Played +1,打出的格子 +1
+56,rule1_lv201,Head - Cell Played +1,正 - 打出的格子 +1
+57,rule1_lv204,Head - Cell Played +X,正 - 打出的格子 +X
+58,rule2_lv103,Cell already with a Clock +1,已有时钟的格子 +1
+59,rule2_lv202,Tail - Cell Played -1,反 - 打出的格子 -1
+60,rule2_lv205,Tail - Cell Played -X,反 - 打出的格子 -X
+61,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
+62,rule4_lv203,FLIP the coin after play,打出后硬币翻面
+63,rule4_lv207,TOSS the coin after play,打出后投掷硬币
+64,ui_goal_section_title,Goal,目标
+65,ui_goal_current_sum,Current Sum: ,当前数字之和为：
+66,themename_tm4,Sushi,寿司
+67,levelname_lv401,Nigiri,寿司
+68,levelname_lv402,Ahi,金枪鱼
+69,levelname_lv403,Ebi,虎虾
+70,levelname_lv404,Ikura,鱼子
+71,levelname_lv405,Sake,三文鱼
+72,levelname_lv406,Tako,章鱼
+73,levelname_lv407,Toro,金枪鱼大腹
+74,levelname_lv408,Uni,海胆
+75,init_lv401,,寿司
+76,init_lv402,,将鲜嫩的鱼肉切成薄片，
+77,init_lv403,,米饭在碗中勾勒出完美的弧线，
+78,init_lv404,,一缕白玉，一只海鲜，轻轻捏合，
+79,init_lv405,,一团鲜食，一勺白米，缓缓包起，
+80,init_lv406,,这是大地与深海的碰撞，
+81,init_lv407,,仅用两种原料，却交织出丰富组合。
+82,init_lv408,,简约、丰盈、深邃、永恒。
+83,play1_lv402,,晶莹剔透。
+84,play1_lv403,,撒上淡淡调料。
+85,play1_lv404,,寿司的简单却最能展现细腻的美感。
+86,play1_lv405,,开启一段丰盈的味道之旅。
+87,play1_lv408,,寿司之美，恰如人生。
+88,goal_lv401,Set at least 3 cells to 3,将至少3个格子变为3
+89,goal_lv402,Set at least 5 cells to 5,将至少5个格子变为5
+90,goal_lv403,Set all cells to 4,将所有格子变为4
+91,goal_lv404,Set all cells to 7,将所有格子变为7
+92,goal_lv405,Set all cells to either 2 or 7,将所有格子为2或7
+93,goal_lv406,Set the sum of all cells to 20,将数字总和变为20
+94,goal_lv407,Set all cells to UNIQUE,将所有格子变为不同值
+95,goal_lv408,Set the sum of all cells to 90,每个格子都是寿司或饭卷时，<br>将数字总和变为90
+96,rule1_lv401,Fish - Cell Played +3,鱼 - 打出的格子 +3
+97,rule2_lv403,Rice - Cell Played +3,米 - 打出的格子 +3
+98,rule3_lv404,Sushi(Rice+Fish) - Cell Played =7,寿司（米+鱼） - 格子变为7
+99,rule4_lv405,Maki(Rice+Fish) - Cell Played =2,手卷（鱼+米） - 格子变为2
+100,rule5_lv403,Fish and Rice alternate,鱼和米交替出现

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2916438287c8e504ca9415bd10164603, type: 3}
+  m_Name: ThemeLookup
+  m_EditorClassIdentifier: 
+  ThemeXResource:
+  - Theme: clock
+    ThemeID: 1
+    MasterScript: {fileID: 11500000, guid: af00fd74cc6ede14193ea6d757c4a2d2, type: 3}
+    ThemeSpecialHub: {fileID: 4929449583468539589, guid: 53e783262bb415a47ab02125b3dd51ba, type: 3}
+  - Theme: coin
+    ThemeID: 2
+    MasterScript: {fileID: 11500000, guid: fadc98ce7ffce204fb91768efde8d605, type: 3}
+    ThemeSpecialHub: {fileID: 4404011959201444184, guid: 748139364fa414f41bb0831e34d2a26a, type: 3}
+  - Theme: climber
+    ThemeID: 3
+    MasterScript: {fileID: 11500000, guid: fadc98ce7ffce204fb91768efde8d605, type: 3}
+    ThemeSpecialHub: {fileID: 4404011959201444184, guid: 748139364fa414f41bb0831e34d2a26a, type: 3}
+  - Theme: sushi
+    ThemeID: 4
+    MasterScript: {fileID: 11500000, guid: 984d1d00befe24249a42ed4a4a6aac88, type: 3}
+    ThemeSpecialHub: {fileID: 5242734479810822178, guid: 284f4d5063bddca4d920c939660afb91, type: 3}

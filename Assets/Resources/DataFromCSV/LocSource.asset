@@ -1,0 +1,315 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64979687c259fc94dae192da73291955, type: 3}
+  m_Name: LocSource
+  m_EditorClassIdentifier: 
+  locList:
+  - key: themename_tm1
+    EN: Clock
+    CN: "\u65F6\u949F"
+  - key: themename_tm2
+    EN: Coin
+    CN: "\u786C\u5E01"
+  - key: levelname_lv101
+    EN: 8:00 PM
+    CN: 8:00 PM
+  - key: levelname_lv102
+    EN: 10:00 PM
+    CN: 10:00 PM
+  - key: levelname_lv103
+    EN: 1:00 AM
+    CN: 1:00 AM
+  - key: levelname_lv104
+    EN: 2:00 AM
+    CN: 2:00 AM
+  - key: levelname_lv105
+    EN: 3:00 AM
+    CN: 3:00 AM
+  - key: levelname_lv106
+    EN: 4:00 AM
+    CN: 4:00 AM
+  - key: levelname_lv107
+    EN: 5:00 AM
+    CN: 5:00 AM
+  - key: levelname_lv108
+    EN: 6:00 AM
+    CN: 6:00 AM
+  - key: levelname_lv201
+    EN: Coin
+    CN: "\u786C\u5E01"
+  - key: levelname_lv202
+    EN: Greek Drachma
+    CN: "\u5FB7\u62C9\u514B\u9A6C"
+  - key: levelname_lv203
+    EN: Ban Liang
+    CN: "\u79E6\u534A\u4E24"
+  - key: levelname_lv204
+    EN: Dinar
+    CN: "\u8FBE\u91CC\u514B"
+  - key: levelname_lv205
+    EN: Bezant
+    CN: "\u62DC\u5360\u5EAD\u8D1D\u5361\u7279"
+  - key: levelname_lv206
+    EN: Pound Sterling
+    CN: "\u82F1\u9551"
+  - key: levelname_lv207
+    EN: Maple Leaf coin
+    CN: "\u67AB\u53F6\u5E01"
+  - key: levelname_lv208
+    EN: Bitcoin
+    CN: "\u6BD4\u7279\u5E01"
+  - key: init_lv101
+    EN: Clock
+    CN: "\u65F6\u949F"
+  - key: init_lv102
+    EN: Tick, tick, tick,
+    CN: "\u6EF4\u7B54\u6EF4\u7B54\u6EF4\u7B54\uFF0C"
+  - key: init_lv103
+    EN: "\u5B83\u4ECE\u4E0D\u505C\u6B62\uFF0C"
+    CN: "\u5B83\u4ECE\u4E0D\u505C\u6B62\uFF0C"
+  - key: init_lv104
+    EN: "\u5FAE\u535A\u3001\u8FDE\u8F7D\u3001\u76F4\u64AD\uFF0C"
+    CN: "\u5FAE\u535A\u3001\u8FDE\u8F7D\u3001\u76F4\u64AD\uFF0C"
+  - key: init_lv105
+    EN: "\u6253\u4E71\u4E86\u65F6\u95F4\u7684\u79E9\u5E8F\uFF0C"
+    CN: "\u6253\u4E71\u4E86\u65F6\u95F4\u7684\u79E9\u5E8F\uFF0C"
+  - key: init_lv106
+    EN: "\u8BA9\u591C\u665A\u6BD4\u767D\u5929\u66F4\u52A0\u7CBE\u5F69\u3002"
+    CN: "\u8BA9\u591C\u665A\u6BD4\u767D\u5929\u66F4\u52A0\u7CBE\u5F69\u3002"
+  - key: init_lv107
+    EN: "\u65E0\u7720\u4E4B\u591C\uFF0C\u5E38\u5E38\u611F\u53F9\u65F6\u95F4\u7684\u65E0\u57A0\u3002"
+    CN: "\u65E0\u7720\u4E4B\u591C\uFF0C\u5E38\u5E38\u611F\u53F9\u65F6\u95F4\u7684\u65E0\u57A0\u3002"
+  - key: init_lv108
+    EN: "\u610F\u8BC6\u9010\u6E10\u6A21\u7CCA\uFF0C"
+    CN: "\u610F\u8BC6\u9010\u6E10\u6A21\u7CCA\uFF0C"
+  - key: init_lv201
+    EN: Coin
+    CN: "\u786C\u5E01"
+  - key: init_lv202
+    EN: "\u4ECE\u56DB\u5FB7\u62C9\u514B\u9A6C\u5230\u6BD4\u7279\u5E01\uFF0C"
+    CN: "\u4ECE\u56DB\u5FB7\u62C9\u514B\u9A6C\u5230\u6BD4\u7279\u5E01\uFF0C"
+  - key: init_lv203
+    EN: "\u5B83\u6D41\u8FC7\u5386\u53F2\u7684\u957F\u6CB3\uFF0C"
+    CN: "\u5B83\u6D41\u8FC7\u5386\u53F2\u7684\u957F\u6CB3\uFF0C"
+  - key: init_lv204
+    EN: "\u6B63\u9762\u8C61\u5F81\u524D\u8FDB\uFF0C\u6216\u8005\u76F2\u4ECE\uFF1B"
+    CN: "\u6B63\u9762\u8C61\u5F81\u524D\u8FDB\uFF0C\u6216\u8005\u76F2\u4ECE\uFF1B"
+  - key: init_lv205
+    EN: "\u53CD\u9762\u4EE3\u8868\u4FDD\u7559\uFF0C\u6216\u8005\u653E\u5F03\u3002"
+    CN: "\u53CD\u9762\u4EE3\u8868\u4FDD\u7559\uFF0C\u6216\u8005\u653E\u5F03\u3002"
+  - key: init_lv206
+    EN: "\u518D\u6B21\u6295\u63B7\u786C\u5E01\uFF0C"
+    CN: "\u518D\u6B21\u6295\u63B7\u786C\u5E01\uFF0C"
+  - key: init_lv207
+    EN: "\u5C06\u7ED3\u679C\u4EA4\u7ED9\u547D\u8FD0\uFF0C"
+    CN: "\u5C06\u7ED3\u679C\u4EA4\u7ED9\u547D\u8FD0\uFF0C"
+  - key: init_lv208
+    EN: "\u6216\u8005\u667A\u6167\u3002"
+    CN: "\u6216\u8005\u667A\u6167\u3002"
+  - key: play1_lv107
+    EN: "\u8F6C\u77AC\u4E4B\u95F4\uFF0C\u53C8\u550F\u5618\u65F6\u95F4\u7684\u77ED\u6682\u3002"
+    CN: "\u8F6C\u77AC\u4E4B\u95F4\uFF0C\u53C8\u550F\u5618\u65F6\u95F4\u7684\u77ED\u6682\u3002"
+  - key: play1_lv108
+    EN: "\u662F\u65F6\u5019\u4F11\u606F\u4E86\u3002"
+    CN: "\u662F\u65F6\u5019\u4F11\u606F\u4E86\u3002"
+  - key: play1_lv202
+    EN: "\u786C\u5E01\u7684\u5F62\u5F0F\u65E0\u7A77\u5C3D\u3002"
+    CN: "\u786C\u5E01\u7684\u5F62\u5F0F\u65E0\u7A77\u5C3D\u3002"
+  - key: play1_lv203
+    EN: "\u59CB\u7EC8\u4FDD\u6301\u4E24\u9762\uFF0C"
+    CN: "\u59CB\u7EC8\u4FDD\u6301\u4E24\u9762\uFF0C"
+  - key: goal_lv101
+    EN: Set all cells to 8
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A8"
+  - key: goal_lv102
+    EN: Set all cells to 10
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A10"
+  - key: goal_lv103
+    EN: Set all cells to 1
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A1"
+  - key: goal_lv104
+    EN: Set all cells to UNIQUE
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u7684\u503C"
+  - key: goal_lv105
+    EN: Set all cells to 3
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A3"
+  - key: goal_lv106
+    EN: Set all cells to 4
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A4"
+  - key: goal_lv107
+    EN: Set all cells to UNIQUE(at least 8 steps)
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u7684\u503C\uFF08\u6700\u5C11\u9700\u89818\u6B65\uFF09"
+  - key: goal_lv108
+    EN: Set all cells to 6(at least 35 steps)
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A6\uFF08\u6700\u5C11\u9700\u898135\u6B65\uFF09"
+  - key: goal_lv201
+    EN: Set all cells to 4
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A4"
+  - key: goal_lv202
+    EN: Set all cells to 4
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A4"
+  - key: goal_lv203
+    EN: Set all cells to SAME
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u76F8\u540C\u7684\u503C"
+  - key: goal_lv204
+    EN: Set at least 2 cells to 9
+    CN: "\u5C06\u81F3\u5C112\u4E2A\u683C\u5B50\u53D8\u4E3A9"
+  - key: goal_lv205
+    EN: Set at least 2 cells to 1
+    CN: "\u5C06\u81F3\u5C112\u4E2A\u683C\u5B50\u53D8\u4E3A1"
+  - key: goal_lv206
+    EN: Set all cells to SAME
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u76F8\u540C\u7684\u503C"
+  - key: goal_lv207
+    EN: Set all cells to UNIQUE
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u7684\u503C"
+  - key: goal_lv208
+    EN: Set all cells to SAME
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u76F8\u540C\u7684\u503C"
+  - key: rule1_lv101
+    EN: Cell Played +1
+    CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
+  - key: rule1_lv201
+    EN: Head - Cell Played +1
+    CN: "\u6B63 - \u6253\u51FA\u7684\u683C\u5B50 +1"
+  - key: rule1_lv204
+    EN: Head - Cell Played +X
+    CN: "\u6B63 - \u6253\u51FA\u7684\u683C\u5B50 +X"
+  - key: rule2_lv103
+    EN: Cell already with a Clock +1
+    CN: "\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50 +1"
+  - key: rule2_lv202
+    EN: Tail - Cell Played -1
+    CN: "\u53CD - \u6253\u51FA\u7684\u683C\u5B50 -1"
+  - key: rule2_lv205
+    EN: Tail - Cell Played -X
+    CN: "\u53CD - \u6253\u51FA\u7684\u683C\u5B50 -X"
+  - key: rule3_lv204
+    EN: X is the number of coins in a Cell
+    CN: "X\u4E3A\u683C\u5B50\u5185\u786C\u5E01\u6570"
+  - key: rule4_lv203
+    EN: FLIP the coin after play
+    CN: "\u6253\u51FA\u540E\u786C\u5E01\u7FFB\u9762"
+  - key: rule4_lv207
+    EN: TOSS the coin after play
+    CN: "\u6253\u51FA\u540E\u6295\u63B7\u786C\u5E01"
+  - key: ui_goal_section_title
+    EN: Goal
+    CN: "\u76EE\u6807"
+  - key: ui_goal_current_sum
+    EN: 'Current Sum: '
+    CN: "\u5F53\u524D\u6570\u5B57\u4E4B\u548C\u4E3A\uFF1A"
+  - key: themename_tm4
+    EN: Sushi
+    CN: "\u5BFF\u53F8"
+  - key: levelname_lv401
+    EN: Nigiri
+    CN: "\u5BFF\u53F8"
+  - key: levelname_lv402
+    EN: Ahi
+    CN: "\u91D1\u67AA\u9C7C"
+  - key: levelname_lv403
+    EN: Ebi
+    CN: "\u864E\u867E"
+  - key: levelname_lv404
+    EN: Ikura
+    CN: "\u9C7C\u5B50"
+  - key: levelname_lv405
+    EN: Sake
+    CN: "\u4E09\u6587\u9C7C"
+  - key: levelname_lv406
+    EN: Tako
+    CN: "\u7AE0\u9C7C"
+  - key: levelname_lv407
+    EN: Toro
+    CN: "\u91D1\u67AA\u9C7C\u5927\u8179"
+  - key: levelname_lv408
+    EN: Uni
+    CN: "\u6D77\u80C6"
+  - key: init_lv401
+    EN: 
+    CN: "\u5BFF\u53F8"
+  - key: init_lv402
+    EN: 
+    CN: "\u5C06\u9C9C\u5AE9\u7684\u9C7C\u8089\u5207\u6210\u8584\u7247\uFF0C"
+  - key: init_lv403
+    EN: 
+    CN: "\u7C73\u996D\u5728\u7897\u4E2D\u52FE\u52D2\u51FA\u5B8C\u7F8E\u7684\u5F27\u7EBF\uFF0C"
+  - key: init_lv404
+    EN: 
+    CN: "\u4E00\u7F15\u767D\u7389\uFF0C\u4E00\u53EA\u6D77\u9C9C\uFF0C\u8F7B\u8F7B\u634F\u5408\uFF0C"
+  - key: init_lv405
+    EN: 
+    CN: "\u4E00\u56E2\u9C9C\u98DF\uFF0C\u4E00\u52FA\u767D\u7C73\uFF0C\u7F13\u7F13\u5305\u8D77\uFF0C"
+  - key: init_lv406
+    EN: 
+    CN: "\u8FD9\u662F\u5927\u5730\u4E0E\u6DF1\u6D77\u7684\u78B0\u649E\uFF0C"
+  - key: init_lv407
+    EN: 
+    CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C\u5374\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7EC4\u5408\u3002"
+  - key: init_lv408
+    EN: 
+    CN: "\u7B80\u7EA6\u3001\u4E30\u76C8\u3001\u6DF1\u9083\u3001\u6C38\u6052\u3002"
+  - key: play1_lv402
+    EN: 
+    CN: "\u6676\u83B9\u5254\u900F\u3002"
+  - key: play1_lv403
+    EN: 
+    CN: "\u6492\u4E0A\u6DE1\u6DE1\u8C03\u6599\u3002"
+  - key: play1_lv404
+    EN: 
+    CN: "\u5BFF\u53F8\u7684\u7B80\u5355\u5374\u6700\u80FD\u5C55\u73B0\u7EC6\u817B\u7684\u7F8E\u611F\u3002"
+  - key: play1_lv405
+    EN: 
+    CN: "\u5F00\u542F\u4E00\u6BB5\u4E30\u76C8\u7684\u5473\u9053\u4E4B\u65C5\u3002"
+  - key: play1_lv408
+    EN: 
+    CN: "\u5BFF\u53F8\u4E4B\u7F8E\uFF0C\u6070\u5982\u4EBA\u751F\u3002"
+  - key: goal_lv401
+    EN: Set at least 3 cells to 3
+    CN: "\u5C06\u81F3\u5C113\u4E2A\u683C\u5B50\u53D8\u4E3A3"
+  - key: goal_lv402
+    EN: Set at least 5 cells to 5
+    CN: "\u5C06\u81F3\u5C115\u4E2A\u683C\u5B50\u53D8\u4E3A5"
+  - key: goal_lv403
+    EN: Set all cells to 4
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A4"
+  - key: goal_lv404
+    EN: Set all cells to 7
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A7"
+  - key: goal_lv405
+    EN: Set all cells to either 2 or 7
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u4E3A2\u62167"
+  - key: goal_lv406
+    EN: Set the sum of all cells to 20
+    CN: "\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A20"
+  - key: goal_lv407
+    EN: Set all cells to UNIQUE
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u503C"
+  - key: goal_lv408
+    EN: Set the sum of all cells to 90
+    CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u662F\u5BFF\u53F8\u6216\u996D\u5377\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A90"
+  - key: rule1_lv401
+    EN: Fish - Cell Played +3
+    CN: "\u9C7C - \u6253\u51FA\u7684\u683C\u5B50 +3"
+  - key: rule2_lv403
+    EN: Rice - Cell Played +3
+    CN: "\u7C73 - \u6253\u51FA\u7684\u683C\u5B50 +3"
+  - key: rule3_lv404
+    EN: Sushi(Rice+Fish) - Cell Played =7
+    CN: "\u5BFF\u53F8\uFF08\u7C73+\u9C7C\uFF09 - \u683C\u5B50\u53D8\u4E3A7"
+  - key: rule4_lv405
+    EN: Maki(Rice+Fish) - Cell Played =2
+    CN: "\u624B\u5377\uFF08\u9C7C+\u7C73\uFF09 - \u683C\u5B50\u53D8\u4E3A2"
+  - key: rule5_lv403
+    EN: Fish and Rice alternate
+    CN: "\u9C7C\u548C\u7C73\u4EA4\u66FF\u51FA\u73B0"

@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1006502322684299612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1006502322684299611}
+  - component: {fileID: 1006502322684299608}
+  - component: {fileID: 1006502322684299609}
+  - component: {fileID: 1006502322684299610}
+  - component: {fileID: 6325044055288167257}
+  m_Layer: 0
+  m_Name: clock_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1006502322684299611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006502322684299612}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1006502322684299608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006502322684299612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ada11dee7933d43b6be24394cebe25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: 4:00AM
+  goalDesc: "\u76EE\u6807\uFF1A\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A4"
+  toolName: Clock
+  toolDesc: "\u65F6\u949F\uFF1A<br><indent=5%>\xB7 \u653E\u7F6E\u65F6\u949F\u7684\u683C\u5B50
+    +1<br>\xB7 \u6240\u6709\u5DF2\u7ECF\u6709\u65F6\u949F\u683C\u5B50 +1"
+  narratives:
+  - "\u604D\u60DA\u95F4\uFF0C\u53C8\u611F\u53F9\u65F6\u95F4\u7684\u6613\u901D\u3002"
+  puzzleBoard: {fileID: 11400000, guid: b027c6ccc5fdcf244ae5e4a840641e21, type: 2}
+  ruleScript: {fileID: 1006502322684299609}
+  goalScript: {fileID: 1006502322684299610}
+  failScript: {fileID: 6325044055288167257}
+--- !u!114 &1006502322684299609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006502322684299612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b366e364b1ae9c147a0e3b02a2c77d9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phase: 2
+--- !u!114 &1006502322684299610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006502322684299612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54da1f410250229478a0d20f13fba240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 6
+--- !u!114 &6325044055288167257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006502322684299612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b87398f1322624bb57ba6ce1bdad04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phase: 1

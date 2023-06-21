@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8490392861612717161
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8490392861612717166}
+  - component: {fileID: 8490392861612717165}
+  - component: {fileID: 5589116772130628228}
+  - component: {fileID: 7738441532122777081}
+  - component: {fileID: 1067066719632303211}
+  m_Layer: 0
+  m_Name: coin_6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8490392861612717166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490392861612717161}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8490392861612717165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490392861612717161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ada11dee7933d43b6be24394cebe25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: "\u786C\u5E01 6"
+  goalDesc: "\u76EE\u6807\uFF1A\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u76F8\u540C\u7684\u503C"
+  toolName: Coin
+  toolDesc: "\u786C\u5E01\uFF1A<br><indent=5%>\xB7 \u6B63\u9762 - \u6253\u51FA\u786C\u5E01\u7684\u683C\u5B50
+    +X<br>\xB7 \u53CD\u9762 - \u6253\u51FA\u786C\u5E01\u7684\u683C\u5B50 -X<br>\xB7
+    X\u4E3A\u683C\u5B50\u5185\u786C\u5E01\u6570\u91CF</color><br>\xB7 \u6BCF\u6B21\u6253\u51FA\u540E\u786C\u5E01\u7FFB\u9762"
+  narratives:
+  - "\u518D\u6B21\u6295\u63B7\u786C\u5E01\uFF0C"
+  puzzleBoard: {fileID: 11400000, guid: 96b5648307d1b3e4dbc1d4500b0e6e92, type: 2}
+  ruleScript: {fileID: 5589116772130628228}
+  goalScript: {fileID: 7738441532122777081}
+  failScript: {fileID: 1067066719632303211}
+--- !u!114 &5589116772130628228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490392861612717161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c4f08556cf5ab3489c81b6ccf2b9ae5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phase: 5
+--- !u!114 &7738441532122777081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490392861612717161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde41dddb362f8d4eb0de6010560e4dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 6
+--- !u!114 &1067066719632303211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8490392861612717161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57619d63ea7866343917ddb596f791d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phase: 1
