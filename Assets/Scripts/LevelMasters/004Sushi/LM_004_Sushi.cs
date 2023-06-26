@@ -205,6 +205,8 @@ public class LM_004_Sushi : LevelMasterBase
             narrative_lv8_1 = true;
             TryTypeNextPlayLine(0);
         }
+        //Play sfx
+        AudioDraft.singleton.PlaySFX(sushiHub.GetNextPlayClip());
     }
     public override bool CheckWinCondition()
     {

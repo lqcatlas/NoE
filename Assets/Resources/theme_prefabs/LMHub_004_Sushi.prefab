@@ -86,6 +86,11 @@ MonoBehaviour:
   - {fileID: -41299935, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   cellBgHolder: {fileID: 4068668159233435932}
   sushiPlateTemplate: {fileID: 7440367047798593944, guid: 640b437b764681f47a4c5738650e1205, type: 3}
+  playClips:
+  - {fileID: 8300000, guid: e69d0e5aec8b0254290829a90daa40f8, type: 3}
+  - {fileID: 8300000, guid: debcc4b6d603feb46bbe963b28d0c9f3, type: 3}
+  - {fileID: 8300000, guid: 8cddde7519393c6458ee7c3076726ee7, type: 3}
+  - {fileID: 8300000, guid: 8f1d573baf7747d4a9537361162cb2c1, type: 3}
 --- !u!1 &6202353322546198707
 GameObject:
   m_ObjectHideFlags: 0

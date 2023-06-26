@@ -32,7 +32,6 @@ MonoBehaviour:
   - '@Loc=play1_lv404@@'
   - '@Loc=init_lv405@@'
   - '@Loc=play1_lv405@@'
-  - '@Loc=play2_lv405@@'
   - '@Loc=init_lv406@@'
   goal: '@Loc=goal_lv407@@'
   ruleset:
