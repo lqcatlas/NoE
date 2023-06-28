@@ -13,18 +13,28 @@ public class LMHub_004_Sushi : MonoBehaviour
 
     [Header("Play Audio")]
     public List<AudioClip> playClips;
-    private int clipIndex = 0;
-
-    public AudioClip GetNextPlayClip()
+    //private int clipIndex = 0;
+    public List<AudioClip> endingClips;
+    public AudioClip GetPlayClip(int index)
     {
-        if (playClips.Count > 0)
+        if (index > playClips.Count)
         {
-            clipIndex = (clipIndex + 1) % playClips.Count;
-            return playClips[clipIndex];
+            return null;
         }
         else
         {
+            return playClips[index];
+        }
+    }
+    public AudioClip GetEndingClip(int level)
+    {
+        if (level > endingClips.Count)
+        {
             return null;
+        }
+        else
+        {
+            return endingClips[level];
         }
     }
 }

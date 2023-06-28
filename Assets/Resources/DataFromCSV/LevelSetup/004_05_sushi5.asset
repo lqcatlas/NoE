@@ -23,7 +23,6 @@ MonoBehaviour:
   newInitNarrative: '@Loc=init_lv405@@'
   newPlayNarratives:
   - '@Loc=play1_lv405@@'
-  - '@Loc=play2_lv405@@'
   oldNarratives:
   - '@Loc=init_lv401@@'
   - '@Loc=init_lv402@@'

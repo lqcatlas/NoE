@@ -74,7 +74,10 @@ public class LM_004_Sushi : LevelMasterBase
                     levelData.curBoard.cells[i].value += levelData.curBoard.toolStatus == (int)SushiStatus.fish ? 3 : -3;
                     levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRage);
                     levelData.curBoard.cells[i].status = levelData.curBoard.toolStatus;
+                    //Play sfx
+                    AudioDraft.singleton.PlaySFX(sushiHub.GetPlayClip(levelData.curBoard.cells[i].status - 1));
                 }
+                
             }
         }
         //lv 4
@@ -90,6 +93,7 @@ public class LM_004_Sushi : LevelMasterBase
                     {
                         levelData.curBoard.cells[i].value = 7;
                         levelData.curBoard.cells[i].status = (int)SushiStatus.sushi;
+
                     }
                     else
                     {
@@ -97,6 +101,8 @@ public class LM_004_Sushi : LevelMasterBase
                         levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRage);
                         levelData.curBoard.cells[i].status = levelData.curBoard.toolStatus;
                     }
+                    //Play sfx
+                    AudioDraft.singleton.PlaySFX(sushiHub.GetPlayClip(levelData.curBoard.cells[i].status - 1));
                 }
             }
         }
@@ -125,6 +131,8 @@ public class LM_004_Sushi : LevelMasterBase
                         levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRage);
                         levelData.curBoard.cells[i].status = levelData.curBoard.toolStatus;
                     }
+                    //Play sfx
+                    AudioDraft.singleton.PlaySFX(sushiHub.GetPlayClip(levelData.curBoard.cells[i].status - 1));
                 }
             }
         }
@@ -205,8 +213,7 @@ public class LM_004_Sushi : LevelMasterBase
             narrative_lv8_1 = true;
             TryTypeNextPlayLine(0);
         }
-        //Play sfx
-        AudioDraft.singleton.PlaySFX(sushiHub.GetNextPlayClip());
+        
     }
     public override bool CheckWinCondition()
     {
@@ -258,5 +265,10 @@ public class LM_004_Sushi : LevelMasterBase
             Debug.LogError(string.Format("reach undefined level in CheckWinCondition of ({0})", levelData.theme));
         }
         return result;
+    }
+    public override void WinALevel()
+    {
+        AudioDraft.singleton.PlaySFX(sushiHub.GetEndingClip(levelData.levelIndex));
+        base.WinALevel();
     }
 }
