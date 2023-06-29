@@ -9,8 +9,14 @@ using UnityEngine.UI;
 public class LM_004_Sushi : LevelMasterBase
 {
     enum SushiStatus:int { none = 0, fish = 1, rice = 2, sushi = 3, onigiri = 4};
+
     [Header("Theme Additions")]
     public LMHub_004_Sushi sushiHub;
+
+    [Header("Theme Animation Params")]
+    float CellFoodTrasitionDistance = 1f;
+    float CellFoodTrasitionDuration = 1f;
+    float originalFoodAlpha = 0.4f;
 
     public override void GetObjectReferences(GameObject _themeHub)
     {
@@ -140,6 +146,20 @@ public class LM_004_Sushi : LevelMasterBase
         {
             Debug.LogError(string.Format("master script of {0} reaches undefined level", levelData.theme));
         }
+        //cell bg update addition
+        for (int i = 0; i < sushiHub.sushiPlates.Count; i++)
+        {
+            if(sushiHub.sushiPlates[i].Key.coord == coord)
+            {
+                sushiHub.sushiPlates[i].Value.SetActive(true);
+                DataCell prev_cellData = levelData.previousBoard.GetCellDataByCoord(sushiHub.sushiPlates[i].Key.coord);
+                DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(sushiHub.sushiPlates[i].Key.coord);
+                FoodPlaceAnimation(sushiHub.sushiPlates[i].Value, prev_cellData.status, levelData.curBoard.toolStatus, temp_cellData.status);
+                Debug.Log(string.Format("food animation input params {0},{1},{2}", prev_cellData.status, levelData.curBoard.toolStatus, temp_cellData.status));
+                break;
+            }
+
+        }
     }
     public override void HandleEnvironment(Vector2Int coord)
     {
@@ -181,13 +201,8 @@ public class LM_004_Sushi : LevelMasterBase
             LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
         }
 
-        //cell bg update addition
-        for (int i = 0; i < sushiHub.sushiPlates.Count; i++)
-        {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(sushiHub.sushiPlates[i].Key.coord);
-            sushiHub.sushiPlates[i].Value.SetActive(temp_cellData.status != 0);
-            sushiHub.sushiPlates[i].Value.GetComponent<SpriteRenderer>().sprite = sushiHub.statusSprites[temp_cellData.status];
-        }
+        
+        //in-play narrative
         if (!narrative_lv2_1 && levelData.levelIndex == 2 && BoardCalculation.CountX_Ytimes(levelData.curBoard, 5, 4))
         {
             narrative_lv2_1 = true;
@@ -270,5 +285,43 @@ public class LM_004_Sushi : LevelMasterBase
     {
         AudioDraft.singleton.PlaySFX(sushiHub.GetEndingClip(levelData.levelIndex));
         base.WinALevel();
+    }
+
+    void FoodPlaceAnimation(GameObject sushiPlate, int curStatus, int toolStatus, int finalStatus)
+    {
+        //float originalAlpha = sushiPlate.GetComponent<SpriteRenderer>().color.a;
+        //Debug.Log("originalAlpha is " + originalAlpha);
+        sushiPlate.GetComponent<SpriteRenderer>().sprite = sushiHub.statusSprites[curStatus];
+        Sprite finalSprite = sushiHub.statusSprites[finalStatus];
+        //creation
+        GameObject placed_sprite = Instantiate(sushiPlate, sushiPlate.transform.parent);
+        GameObject new_sprite = Instantiate(sushiPlate, sushiPlate.transform.parent);
+        //placement
+        placed_sprite.transform.parent = sushiPlate.transform;
+        new_sprite.transform.parent = sushiPlate.transform;
+        placed_sprite.transform.localPosition = Vector3.zero;
+        placed_sprite.transform.localScale = Vector3.one;
+        new_sprite.transform.localPosition = Vector3.zero;
+        new_sprite.transform.localScale = Vector3.one;
+        //animation
+        placed_sprite.GetComponent<SpriteRenderer>().sprite = sushiHub.statusSprites[toolStatus];
+        placed_sprite.GetComponent<SpriteRenderer>().DOFade(0f, CellFoodTrasitionDuration * 0.6f);
+        placed_sprite.transform.DOLocalMoveY(CellFoodTrasitionDistance, CellFoodTrasitionDuration * 0.6f).From();
+
+        new_sprite.GetComponent<SpriteRenderer>().sprite = finalSprite;
+        new_sprite.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+        new_sprite.GetComponent<SpriteRenderer>().DOFade(originalFoodAlpha, CellFoodTrasitionDuration * 0.5f).SetDelay(CellFoodTrasitionDuration * 0.5f);
+
+        sushiPlate.GetComponent<SpriteRenderer>().DOFade(0f, CellFoodTrasitionDuration * 0.6f);
+        
+        Sequence seq = DOTween.Sequence();
+        seq.AppendInterval(CellFoodTrasitionDuration)
+            .AppendCallback(() => sushiPlate.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, originalFoodAlpha))
+            .AppendCallback(() => sushiPlate.GetComponent<SpriteRenderer>().sprite = finalSprite)
+            .AppendCallback(() => Destroy(new_sprite))
+            .AppendCallback(() => Destroy(placed_sprite));
+        //.OnComplete(() => Destroy(temp_sprite))
+        //sushiHub.sushiPlates[i].Value.SetActive(temp_cellData.status != 0);
+        //sushiHub.sushiPlates[i].Value.GetComponent<SpriteRenderer>().sprite = sushiHub.statusSprites[temp_cellData.status];
     }
 }

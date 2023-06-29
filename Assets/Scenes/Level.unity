@@ -753,6 +753,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e2c4f807b87415440b8023eeb28170ae, type: 3}
   - {fileID: 8300000, guid: 9e8454e61638ecd4081ffcd5f6b7e2af, type: 3}
   - {fileID: 8300000, guid: e2c4f807b87415440b8023eeb28170ae, type: 3}
+  - {fileID: 0}
   introSource: {fileID: 1407233124}
   puzzleSource: {fileID: 231650543}
   SFXSources:
@@ -1209,7 +1210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2723159949830554531, guid: d7b6c482e9187004499916d78ceffab6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 11.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2723159949830554531, guid: d7b6c482e9187004499916d78ceffab6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1377,7 +1378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7299069033500671779, guid: d7b6c482e9187004499916d78ceffab6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 11.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7299069033500671779, guid: d7b6c482e9187004499916d78ceffab6, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2182,7 +2183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LaunchLevelUID: 
-  LevelSetup: {fileID: 11400000, guid: c34364ed97b493347ac77bf7c52b9f51, type: 2}
+  LevelSetup: {fileID: 11400000, guid: d5355cadfbb1b76449e072ec7f744bcb, type: 2}
   LAUNCH_IT: 0
   lookupTable: {fileID: 11400000, guid: 24d4cf5313d2bb346abaa9638ba89e42, type: 2}
   levelHolder: {fileID: 156060639}
