@@ -114,7 +114,7 @@ public class BoardCalculation
     static public bool Same_All(DataBoard board)
     {
         bool allSame = true;
-        for (int i = 0; i < board.cells.Count - 1; i++)
+        for (int i = 0; i < board.cells.Count; i++)
         {
             for (int j = i + 1; j < board.cells.Count; j++)
             {
@@ -137,7 +137,7 @@ public class BoardCalculation
     static public bool Unique_All(DataBoard board)
     {
         bool allUnique = true;
-        for (int i = 0; i < board.cells.Count - 1; i++)
+        for (int i = 0; i < board.cells.Count; i++)
         {
             for (int j = i + 1; j < board.cells.Count; j++)
             {
@@ -155,7 +155,7 @@ public class BoardCalculation
         int requiredUniqueCount = Y;
         int uniqueCount = board.cells.Count;
         bool firstDup = true;
-        for (int i = 0; i < board.cells.Count - 1; i++)
+        for (int i = 0; i < board.cells.Count; i++)
         {
             for (int j = i + 1; j < board.cells.Count; j++)
             {
@@ -176,17 +176,18 @@ public class BoardCalculation
     {
         int requiredSum = X;
         int sum = 0;
-        for (int i = 0; i < board.cells.Count - 1; i++)
+        for (int i = 0; i < board.cells.Count; i++)
         {
             sum += board.cells[i].value;
         }
+        Debug.Log(string.Format("Sum_As_X() now sum is {0}", sum));
         return sum == requiredSum;
     }
     static public bool Sum_Larger_X(DataBoard board, int X)
     {
         int requiredSum = X;
         int sum = 0;
-        for (int i = 0; i < board.cells.Count - 1; i++)
+        for (int i = 0; i < board.cells.Count; i++)
         {
             sum += board.cells[i].value;
         }
@@ -196,7 +197,7 @@ public class BoardCalculation
     {
         int requiredSum = X;
         int sum = 0;
-        for (int i = 0; i < board.cells.Count - 1; i++)
+        for (int i = 0; i < board.cells.Count; i++)
         {
             sum += board.cells[i].value;
         }

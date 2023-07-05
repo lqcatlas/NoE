@@ -28,13 +28,13 @@ public class LMHub_004_Sushi : MonoBehaviour
     }
     public AudioClip GetEndingClip(int level)
     {
-        if (level > endingClips.Count)
+        if (level >= endingClips.Count)
         {
             return null;
         }
         else
         {
-            return endingClips[level];
+            return endingClips[level-1];
         }
     }
 }

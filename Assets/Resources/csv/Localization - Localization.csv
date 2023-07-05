@@ -63,7 +63,7 @@ UID,Key,EN,CN
 62,rule4_lv203,FLIP the coin after play,打出后硬币翻面
 63,rule4_lv207,TOSS the coin after play,打出后投掷硬币
 64,ui_goal_section_title,Goal,目标
-65,ui_goal_current_sum,Current Sum: ,当前数字之和为：
+65,ui_goal_current_sum,Current Sum: ,当前数字之和：
 66,themename_tm4,Sushi,寿司
 67,levelname_lv401,Nigiri,寿司
 68,levelname_lv402,Ahi,金枪鱼
@@ -73,29 +73,29 @@ UID,Key,EN,CN
 72,levelname_lv406,Tako,章鱼
 73,levelname_lv407,Toro,金枪鱼大腹
 74,levelname_lv408,Uni,海胆
-75,init_lv401,,寿司
-76,init_lv402,,将鲜嫩的鱼肉切成薄片，
-77,init_lv403,,米饭在碗中勾勒出完美的弧线，
-78,init_lv404,,一缕白玉，一只海鲜，轻轻捏合，
-79,init_lv405,,一团鲜食，一勺白米，缓缓包起，
-80,init_lv406,,这是大地与深海的碰撞，
-81,init_lv407,,仅用两种原料，却交织出丰富组合。
-82,init_lv408,,简约、丰盈、深邃、永恒。
-83,play1_lv402,,晶莹剔透。
-84,play1_lv403,,撒上淡淡调料。
-85,play1_lv404,,寿司的简单却最能展现细腻的美感。
-86,play1_lv405,,开启一段丰盈的味道之旅。
-87,play1_lv408,,寿司之美，恰如人生。
+75,init_lv401,寿司,寿司
+76,init_lv402,将鲜嫩的鱼肉切成薄片，,将鲜嫩的鱼肉切成薄片，
+77,init_lv403,米饭在碗中勾勒出完美的弧线，,米饭在碗中勾勒出完美的弧线，
+78,init_lv404,一缕白玉，一只海鲜，,一缕白玉，一只海鲜，
+79,init_lv405,一团鲜食，一勺白米，,一团鲜食，一勺白米，
+80,init_lv406,仅用两种原料，却交织出丰富组合。,仅用两种原料，却交织出丰富组合。
+81,init_lv407,这是大地与深海的碰撞，,这是大地与深海的碰撞，
+82,init_lv408,简约、丰盈、深邃、永恒，,简约、丰盈、深邃、永恒，
+83,play1_lv402,晶莹剔透。,晶莹剔透。
+84,play1_lv403,撒上淡淡调料。,撒上淡淡调料。
+85,play1_lv404,轻轻捏合。,轻轻捏合。
+86,play1_lv405,缓缓包起。,缓缓包起。
+87,play1_lv408,寿司之美，恰如人生。,寿司之美，恰如人生。
 88,goal_lv401,Set at least 3 cells to 3,将至少3个格子变为3
 89,goal_lv402,Set at least 5 cells to 5,将至少5个格子变为5
 90,goal_lv403,Set all cells to 4,将所有格子变为4
 91,goal_lv404,Set all cells to 7,将所有格子变为7
 92,goal_lv405,Set all cells to either 2 or 7,将所有格子为2或7
-93,goal_lv406,Set the sum of all cells to 20,将数字总和变为20
-94,goal_lv407,Set all cells to UNIQUE,将所有格子变为不同值
-95,goal_lv408,Set the sum of all cells to 90,每个格子都是寿司或饭卷时，<br>将数字总和变为90
+93,goal_lv406,Set all cells to UNIQUE,将所有格子变为不同值
+94,goal_lv407,Set the sum of cells to 20,将数字总和变为20
+95,goal_lv408,Set the sum of cells to 90,每个格子都是寿司或饭团时，<br>将数字总和变为90
 96,rule1_lv401,Fish - Cell Played +3,鱼 - 打出的格子 +3
-97,rule2_lv403,Rice - Cell Played +3,米 - 打出的格子 +3
+97,rule2_lv403,Rice - Cell Played +3,米 - 打出的格子 -3
 98,rule3_lv404,Sushi(Rice+Fish) - Cell Played =7,寿司（米+鱼） - 格子变为7
-99,rule4_lv405,Maki(Rice+Fish) - Cell Played =2,手卷（鱼+米） - 格子变为2
+99,rule4_lv405,Onigiri(Rice+Fish) - Cell Played =2,饭团（鱼+米） - 格子变为2
 100,rule5_lv403,Fish and Rice alternate,鱼和米交替出现
