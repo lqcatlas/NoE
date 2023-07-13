@@ -7,6 +7,18 @@ using UnityEngine;
 
 public class LevelLauncher : MonoBehaviour
 {
+    static public LevelLauncher singleton;
+    private void Awake()
+    {
+        if (singleton == null)
+        {
+            singleton = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
     [Header("Debug Options")]
     public string LaunchLevelUID;
     public SheetItem_LevelSetup LevelSetup;
