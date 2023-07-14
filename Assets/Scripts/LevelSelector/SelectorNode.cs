@@ -8,8 +8,8 @@ public class SelectorNode : MonoBehaviour
     enum NodeStatus { locked = 1, unlocked = 2, finished = 3};
     [Header("Selector Logic")]
     public LevelSelector master;
-    [SerializeField] string unlockLevelUID;
-    [SerializeField] string targetLevelUID;
+    [SerializeField] int unlockLevelUID;
+    [SerializeField] int targetLevelUID;
 
     [Header("Node Status")]
     
@@ -61,7 +61,7 @@ public class SelectorNode : MonoBehaviour
             SetToFinished();
             return 3;
         }
-        else if (unlockLevelUID == "-1")
+        else if (unlockLevelUID == -1)
         {
             SetToUnlocked();
             return 2;

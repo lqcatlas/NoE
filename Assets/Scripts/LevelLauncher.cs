@@ -18,14 +18,16 @@ public class LevelLauncher : MonoBehaviour
         {
             Destroy(this);
         }
+        LoadAllLevelSetups();
     }
     [Header("Debug Options")]
-    public string LaunchLevelUID;
+    public int LaunchLevelUID;
     public SheetItem_LevelSetup LevelSetup;
     public bool LAUNCH_IT;
 
     [Header("Data & Objs")]
-    public ThemeResourceLookup lookupTable;
+    public List<SheetItem_LevelSetup> levelSetupTable;
+    public ThemeResourceLookup themeLookupTable;
     public GameObject levelHolder;
     public GameObject levelPreset;
     
@@ -34,7 +36,7 @@ public class LevelLauncher : MonoBehaviour
         if (LAUNCH_IT)
         {
             LAUNCH_IT = false;
-            if(LaunchLevelUID != "")
+            if(LaunchLevelUID != 0)
             {
                 LaunchLevelByUID(LaunchLevelUID);
             }
@@ -48,6 +50,11 @@ public class LevelLauncher : MonoBehaviour
             }
         }
     }
+    void LoadAllLevelSetups()
+    {
+        levelSetupTable = Resources.LoadAll<SheetItem_LevelSetup>("DataFromCSV/LevelSetup").ToList();
+        Debug.Log(string.Format("{0} level setups loaded from setup data folder", levelSetupTable.Count));
+    }
     void ClearExistingLevel()
     {
         foreach (Transform child in levelHolder.transform)
@@ -55,20 +62,42 @@ public class LevelLauncher : MonoBehaviour
             Destroy(child.gameObject);
         }
     }
-    public void LaunchLevelByUID(string uid)
+    public bool CheckLevelSetupDataByUID(int uid)
     {
-        //TBD
+        for (int i = 0; i < levelSetupTable.Count; i++)
+        {
+            if (levelSetupTable[i].levelUID == uid)
+            {
+                //found = true;
+                return true;
+            }
+        }
+        return false;
+    }
+    public bool LaunchLevelByUID(int uid)
+    {
         ClearExistingLevel();
-        Debug.LogError("unfinished function launch by Level UID");
+        //bool found = false;
+        for(int i = 0; i < levelSetupTable.Count; i++)
+        {
+            if (levelSetupTable[i].levelUID == uid)
+            {
+                //found = true;
+                LaunchLevelBySheetItem(levelSetupTable[i]);
+                return true;
+            }
+        }
+        Debug.Log(string.Format("unable to find level setup data for levleUID {0}", uid));
+        return false;
     }
     public void LaunchLevelBySheetItem(SheetItem_LevelSetup setupData)
     {
         ClearExistingLevel();
-        Debug.Log(string.Format("Launch level ({0}) as theme ({1})", setupData.levelUID, setupData.theme));
+        Debug.Log(string.Format("Launch level ({0}) as theme ({1})", setupData.levelUID, LocalizedAssetLookup.singleton.Translate(setupData.theme)));
         //clone a level preset to start setup
         GameObject levelObj = Instantiate(levelPreset, levelHolder.transform);
         //get correct master script and assign to the level object
-        MonoScript master = lookupTable.GetThemeScript(setupData.themeIndex);
+        MonoScript master = themeLookupTable.GetThemeScript(setupData.themeIndex);
         if (master == null)
         {
             return;
@@ -78,7 +107,7 @@ public class LevelLauncher : MonoBehaviour
             levelObj.AddComponent(master.GetClass());
         }
         //get correct additional hub object. if exist, clone it and assign
-        GameObject addition = lookupTable.GetThemeSpecialHub(setupData.themeIndex);
+        GameObject addition = themeLookupTable.GetThemeSpecialHub(setupData.themeIndex);
         if (addition != null)
         {
             addition = Instantiate(addition, levelObj.transform);  
