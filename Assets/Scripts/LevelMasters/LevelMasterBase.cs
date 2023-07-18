@@ -356,10 +356,10 @@ public class LevelMasterBase : MonoBehaviour
         bool result = false;
         Sequence seq = DOTween.Sequence();
         seq.AppendInterval(1.5f).AppendCallback(() => result = TryLoadNextLevel());
-        if (!result)
+        /*if (!result)
         {
             Debug.Log(string.Format("Theme ends. Plz go back to theme selector"));
-        }
+        }*/
     }
     public virtual bool CheckLoseCondition()
     {

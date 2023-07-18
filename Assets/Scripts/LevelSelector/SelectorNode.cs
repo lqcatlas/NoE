@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class SelectorNode : MonoBehaviour
@@ -8,8 +9,9 @@ public class SelectorNode : MonoBehaviour
     enum NodeStatus { locked = 1, unlocked = 2, finished = 3};
     [Header("Selector Logic")]
     public LevelSelector master;
-    [SerializeField] int unlockLevelUID;
-    [SerializeField] int targetLevelUID;
+    public SheetItem_LevelSetup setupData;
+    //[SerializeField] int unlockLevelUID;
+    //[SerializeField] int targetLevelUID;
 
     [Header("Node Status")]
     
@@ -19,8 +21,9 @@ public class SelectorNode : MonoBehaviour
     [SerializeField] CircleCollider2D inputCollider;
     [SerializeField] SpriteRenderer fill;
     [SerializeField] SpriteRenderer frame;
+    [SerializeField] TextMeshPro levelName;
 
-    
+
     public void HoverOn()
     {
         if (status == NodeStatus.unlocked)
@@ -28,10 +31,12 @@ public class SelectorNode : MonoBehaviour
             fill.DOFade(0.8f, dConstants.UI.StandardizedBtnAnimDuration);
             fill.transform.DOScale(1f, dConstants.UI.StandardizedBtnAnimDuration);
             frame.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+            levelName.DOFade(1f, dConstants.UI.StandardizedBtnAnimDuration);
         }
         else if (status == NodeStatus.finished)
         {
             fill.DOFade(0.8f, dConstants.UI.StandardizedBtnAnimDuration/2);
+            levelName.DOFade(1f, dConstants.UI.StandardizedBtnAnimDuration/2);
         }
     }
     public void HoverOff()
@@ -41,33 +46,36 @@ public class SelectorNode : MonoBehaviour
             fill.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
             fill.transform.DOScale(0f, dConstants.UI.StandardizedBtnAnimDuration);
             frame.DOFade(1f, dConstants.UI.StandardizedBtnAnimDuration);
+            levelName.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
         }
         else if (status == NodeStatus.finished)
         {
             fill.DOFade(1f, dConstants.UI.StandardizedBtnAnimDuration/2);
+            levelName.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration / 2);
         }
     }
     public void MouseUp()
     {
         if (status == NodeStatus.unlocked || status == NodeStatus.finished)
         {
-            LevelLauncher.singleton.LaunchLevelByUID(targetLevelUID);
+            LevelLauncher.singleton.LaunchLevelByUID(setupData.levelUID);
         }
     }
-    public int CheckStatus()
+    public int InitStatus()
     {
-        if (master.playerLevelRecords.isLevelFinished(targetLevelUID))
+        levelName.SetText(LocalizedAssetLookup.singleton.Translate(setupData.title));
+        if (master.playerLevelRecords.isLevelFinished(setupData.levelUID))
         {
             SetToFinished();
             return 3;
         }
-        else if (unlockLevelUID == -1)
+        else if (setupData.previousLevel == null)
         {
             SetToUnlocked();
             return 2;
         }
 
-        else if(master.playerLevelRecords.isLevelFinished(unlockLevelUID))
+        else if(master.playerLevelRecords.isLevelFinished(setupData.previousLevel.levelUID))
         {
             SetToUnlocked();
             return 2;
@@ -78,6 +86,10 @@ public class SelectorNode : MonoBehaviour
             return 1;
         }
     }
+    public void Debug_UnlockNode()
+    {
+        SetToUnlocked();
+    }
     void SetToFinished()
     {
         status = NodeStatus.finished;
@@ -85,6 +97,7 @@ public class SelectorNode : MonoBehaviour
         fill.color = new Color(1f, 1f, 1f, 1f);
         frame.gameObject.SetActive(false);
         inputCollider.enabled = true;
+        levelName.color = new Color(0.5f, 0.5f, 0.5f, 1f);
     }
     void SetToLocked()
     {
@@ -92,6 +105,7 @@ public class SelectorNode : MonoBehaviour
         fill.gameObject.SetActive(false);
         frame.gameObject.SetActive(false);
         inputCollider.enabled = false;
+        levelName.color = new Color(1f, 1f, 1f, 0f);
     }
     void SetToUnlocked()
     {
@@ -101,5 +115,6 @@ public class SelectorNode : MonoBehaviour
         fill.transform.localScale = Vector3.zero;
         frame.gameObject.SetActive(true);
         inputCollider.enabled = true;
+        levelName.color = new Color(1f, 1f, 1f, 0f);
     }
 }

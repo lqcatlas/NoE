@@ -112,7 +112,7 @@ public class LevelLauncher : MonoBehaviour
         {
             addition = Instantiate(addition, levelObj.transform);  
         }
-        levelObj.GetComponent<LevelMasterBase>().levelSetupData = LevelSetup;
+        levelObj.GetComponent<LevelMasterBase>().levelSetupData = setupData;
         levelObj.GetComponent<LevelMasterBase>().ObjectInit(addition);
         levelObj.GetComponent<LevelMasterBase>().LevelInit();
 
