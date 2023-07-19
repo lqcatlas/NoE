@@ -1563,10 +1563,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aec3304d9d8e714a90de87ec64dc2d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unlockAll: 0
   playerLevelRecords: {fileID: 11400000, guid: 450fdbb801f43e743baa8ed62a117cb3, type: 2}
   nodeParent: {fileID: 3859878453413947202}
   nodes: []
-  unlockAll: 0
 --- !u!1 &8301271419519545036
 GameObject:
   m_ObjectHideFlags: 0

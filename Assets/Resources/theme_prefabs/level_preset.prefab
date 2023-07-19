@@ -1474,7 +1474,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseUpFuncs:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9188252853338786935}
+        m_TargetAssemblyTypeName: MiscMaster, Assembly-CSharp
+        m_MethodName: CloseLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   mouseDownFuncs:
     m_PersistentCalls:
       m_Calls: []
@@ -2849,7 +2861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555404712143973839, guid: f5f952959ee516946b39e1a46921c607, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 11.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3555404712143973839, guid: f5f952959ee516946b39e1a46921c607, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3750,7 +3762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3555404712143973839, guid: f5f952959ee516946b39e1a46921c607, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 11.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3555404712143973839, guid: f5f952959ee516946b39e1a46921c607, type: 3}
       propertyPath: m_AnchoredPosition.y

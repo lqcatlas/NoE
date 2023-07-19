@@ -6,6 +6,9 @@ using UnityEngine.Rendering.Universal;
 
 public class LevelSelector : MonoBehaviour
 {
+    [Header("Debug")]
+    [SerializeField] bool unlockAll = false;
+
     static public LevelSelector singleton;
     private void Awake()
     {
@@ -18,11 +21,17 @@ public class LevelSelector : MonoBehaviour
             Destroy(this);
         }
     }
+    [Header("Player Data")]
     public LevelRecords playerLevelRecords;
+    [Header("Children Objs")]
     [SerializeField] Transform nodeParent;
     [SerializeField] List<SelectorNode> nodes;
-
-    [SerializeField] bool unlockAll = false;
+    
+    
+    public void SelectorShow()
+    {
+        gameObject.SetActive(true);
+    }
 
     private void Update()
     {

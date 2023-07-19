@@ -389,6 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   master: {fileID: 0}
   setupData: {fileID: 0}
+  SelectorTransitionFX: {fileID: 828554427017460235, guid: 40aaac2fd9b739a489e9dfeb2e60975e, type: 3}
   status: 1
   inputCollider: {fileID: 5882855491490104848}
   fill: {fileID: 646943152779324808}

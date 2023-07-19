@@ -23,6 +23,10 @@ public class MiscMaster : MonoBehaviour
         levelMaster = _master;
     }
     #region close
+    public void CloseLevel()
+    {
+        levelMaster.LevelExit();
+    }
     public void CloseBtnHoverEnter()
     {
         closeBtn.transform.DOScale(Vector3.one * 2.5f, dConstants.UI.StandardizedBtnAnimDuration);

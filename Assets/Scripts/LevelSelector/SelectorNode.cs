@@ -12,9 +12,10 @@ public class SelectorNode : MonoBehaviour
     public SheetItem_LevelSetup setupData;
     //[SerializeField] int unlockLevelUID;
     //[SerializeField] int targetLevelUID;
+    [Header("VFX Prefabs")]
+    [SerializeField] GameObject SelectorTransitionFX;
 
     [Header("Node Status")]
-    
     [SerializeField] NodeStatus status = NodeStatus.locked;
 
     [Header("Children Objs")]
@@ -58,7 +59,12 @@ public class SelectorNode : MonoBehaviour
     {
         if (status == NodeStatus.unlocked || status == NodeStatus.finished)
         {
-            LevelLauncher.singleton.LaunchLevelByUID(setupData.levelUID);
+            GameObject obj = Instantiate(SelectorTransitionFX, transform);
+            obj.transform.parent = VFXHolder.singleton.transform;
+            Sequence seq = DOTween.Sequence();
+            seq.AppendInterval(dConstants.VFX.SelectorToLevelAnimTransitionPhase1);
+            seq.AppendCallback(() => LevelLauncher.singleton.LaunchLevelByUID(setupData.levelUID));
+            seq.AppendCallback(() => LevelSelector.singleton.gameObject.SetActive(false));
         }
     }
     public int InitStatus()

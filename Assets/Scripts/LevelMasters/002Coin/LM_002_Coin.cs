@@ -202,13 +202,13 @@ public class LM_002_Coin : LevelMasterBase
         float distance = 10f;
         float duration = 0.3f;
         float start_size = 10f;
-        float shake_strength = 0.08f;
+        float shake_strength = 0.03f;
         float rotate_angle = Random.Range(0f, Mathf.PI * 2);
         Vector3 moveFromCoord = new Vector3(Mathf.Cos(rotate_angle) * distance, Mathf.Sin(rotate_angle) * distance, 0);
         randomCoin.transform.DOLocalMove(moveFromCoord, duration).From();
         randomCoin.transform.DOScale(Vector3.one * start_size, duration).From();
         randomCoin.GetComponent<RandomCoinShapeWidget>().coinShape.GetComponent<SpriteRenderer>().DOFade(0f, duration).From();
-        randomCoin.transform.DOShakePosition(duration / 2, Vector3.one * shake_strength, 50).SetDelay(duration).OnStart(()=> AudioDraft.singleton.PlaySFX(coinHub.GetNextPlayClip()));
+        randomCoin.transform.DOShakePosition(duration / 2, new Vector3(1f, 1f, 0f) * shake_strength, 50).SetDelay(duration * 1.2f).OnStart(()=> AudioDraft.singleton.PlaySFX(coinHub.GetNextPlayClip()));
 
     }
     public override bool CheckWinCondition()

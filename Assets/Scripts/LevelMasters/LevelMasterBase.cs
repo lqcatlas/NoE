@@ -149,6 +149,11 @@ public class LevelMasterBase : MonoBehaviour
         //invalid check TO DO
         //reset one step
     }
+    public void LevelExit()
+    {
+        gameObject.SetActive(false);
+        LevelSelector.singleton.SelectorShow();
+    }
     #region atomic methods
     //Atomic Funtions that can be overwritten by Theme-Specific LevlMaster Script
     public virtual void GetObjectReferences(GameObject _themeHub)
@@ -170,7 +175,7 @@ public class LevelMasterBase : MonoBehaviour
     public virtual void OnlyInFirstEntry()
     {
         hub.miscMaster.ScreenMaskInit();
-        hub.miscMaster.ScreenMaskFadeOut(2f);
+        hub.miscMaster.ScreenMaskFadeOut(dConstants.VFX.CallbackAnimationDelayAfterInit);
         AudioDraft.singleton.PlayKeynote(levelData.themeIndex);
     }
     //init 2 board data(current, previous)
