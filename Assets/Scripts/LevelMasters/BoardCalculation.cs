@@ -1,6 +1,8 @@
+using Newtonsoft.Json;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BoardCalculation
@@ -33,6 +35,20 @@ public class BoardCalculation
         for (int i = 0; i < board.cells.Count; i++)
         {
             if (board.cells[i].value == targetValue)
+            {
+                targetCount += 1;
+            }
+        }
+        return targetCount >= requiredTargetCount;
+    }
+    static public bool CountXplus_Ytimes(DataBoard board, int X, int Y)
+    {
+        int requiredTargetCount = Y;
+        int targetCount = 0;
+        int targetValue = X;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            if (board.cells[i].value >= targetValue)
             {
                 targetCount += 1;
             }
@@ -202,5 +218,83 @@ public class BoardCalculation
             sum += board.cells[i].value;
         }
         return sum <= requiredSum;
+    }
+    static public bool ExactLineMatchX(DataBoard board, List<int> X)
+    {
+        //number must > -1
+        if(X.Count != board.boardSize.y)
+        {
+            Debug.LogError(string.Format("ExactLineMatchX function is called on a dismatching X({0}) and board size({1})", X.Count, board.boardSize.y));
+            return false;
+        }
+        List<List<int>> NumbersByLine = new List<List<int>>();
+        for(int i=0;i< board.boardSize.x; i++)
+        {
+            NumbersByLine.Add(new List<int>());
+            for (int j = 0; j < board.boardSize.y; j++)
+            {
+                NumbersByLine[i].Add(-1);
+            }
+        }
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            NumbersByLine[board.cells[i].coord.x-1][board.cells[i].coord.y-1] = board.cells[i].value;
+        }
+        for (int i = 0; i < board.boardSize.x; i++)
+        {
+            bool lineMatch = true;
+            for (int j = 0; j < board.boardSize.y; j++)
+            {
+                if(NumbersByLine[i][j] != X[j])
+                {
+                    lineMatch = false;
+                    break;
+                }
+            }
+            if (lineMatch)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    static public bool ExactRowMatchX(DataBoard board, List<int> X)
+    {
+        //number must > -1
+        if (X.Count != board.boardSize.x)
+        {
+            Debug.LogError(string.Format("ExactLineMatchX function is called on a dismatching X({0}) and board size({1})", X.Count, board.boardSize.y));
+            return false;
+        }
+        List<List<int>> NumbersByLine = new List<List<int>>();
+        for (int i = 0; i < board.boardSize.y; i++)
+        {
+            NumbersByLine.Add(new List<int>());
+            for (int j = 0; j < board.boardSize.x; j++)
+            {
+                NumbersByLine[i].Add(-1);
+            }
+        }
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            NumbersByLine[board.cells[i].coord.y - 1][board.cells[i].coord.x - 1] = board.cells[i].value;
+        }
+        for (int i = 0; i < board.boardSize.y; i++)
+        {
+            bool rowMatch = true;
+            for (int j = 0; j < board.boardSize.x; j++)
+            {
+                if (NumbersByLine[i][j] != X[j])
+                {
+                    rowMatch = false;
+                    break;
+                }
+            }
+            if (rowMatch)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

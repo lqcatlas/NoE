@@ -67,7 +67,7 @@ public class LM_004_Sushi : LevelMasterBase
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
-        Vector2Int numberRage = new Vector2Int(0, 9);
+        Vector2Int numberRange = new Vector2Int(0, 9);
         //cell number rule
         //lv 1-3
         //fish +3, rice -3
@@ -78,7 +78,7 @@ public class LM_004_Sushi : LevelMasterBase
                 if (levelData.curBoard.cells[i].coord == coord)
                 {
                     levelData.curBoard.cells[i].value += levelData.curBoard.toolStatus == (int)SushiStatus.fish ? 3 : -3;
-                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRage);
+                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
                     levelData.curBoard.cells[i].status = levelData.curBoard.toolStatus;
                     //Play sfx
                     AudioDraft.singleton.PlaySFX(sushiHub.GetPlayClip(levelData.curBoard.cells[i].status - 1));
@@ -104,7 +104,7 @@ public class LM_004_Sushi : LevelMasterBase
                     else
                     {
                         levelData.curBoard.cells[i].value += levelData.curBoard.toolStatus == (int)SushiStatus.fish ? 3 : -3;
-                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRage);
+                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
                         levelData.curBoard.cells[i].status = levelData.curBoard.toolStatus;
                     }
                     //Play sfx
@@ -134,7 +134,7 @@ public class LM_004_Sushi : LevelMasterBase
                     else
                     {
                         levelData.curBoard.cells[i].value += levelData.curBoard.toolStatus == (int)SushiStatus.fish ? 3 : -3;
-                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRage);
+                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
                         levelData.curBoard.cells[i].status = levelData.curBoard.toolStatus;
                     }
                     //Play sfx
@@ -158,7 +158,6 @@ public class LM_004_Sushi : LevelMasterBase
                 //Debug.Log(string.Format("food animation input params {0},{1},{2}", prev_cellData.status, levelData.curBoard.toolStatus, temp_cellData.status));
                 break;
             }
-
         }
     }
     public override void HandleEnvironment(Vector2Int coord)
@@ -183,7 +182,6 @@ public class LM_004_Sushi : LevelMasterBase
     public override void UpdateTool(Vector2Int coord)
     {
         base.UpdateTool(coord);
-        //add merge animation
         hub.toolMaster.toolIcon.sprite = sushiHub.statusSprites[levelData.curBoard.toolStatus];
     }
     private bool narrative_lv2_1 = false;
