@@ -291,7 +291,7 @@ MonoBehaviour:
     CN: "\u5C06\u6240\u6709\u683C\u5B50\u4E3A2\u62167"
   - key: goal_lv406
     EN: Set all cells to UNIQUE
-    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u503C"
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u6570\u5B57"
   - key: goal_lv407
     EN: Set the sum of cells to 20
     CN: "\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A20"
@@ -313,3 +313,99 @@ MonoBehaviour:
   - key: rule5_lv403
     EN: Fish and Rice alternate
     CN: "\u9C7C\u548C\u7C73\u4EA4\u66FF\u51FA\u73B0"
+  - key: themename_tm5
+    EN: Moon
+    CN: "\u6708\u4EAE"
+  - key: levelname_lv501
+    EN: Moon
+    CN: "\u6708\u4EAE"
+  - key: levelname_lv502
+    EN: New Moon
+    CN: "\u65B0\u6708"
+  - key: levelname_lv503
+    EN: Waxing Crescent
+    CN: "\u7709\u6708"
+  - key: levelname_lv504
+    EN: First Quarter
+    CN: "\u4E0A\u5F26\u6708"
+  - key: levelname_lv505
+    EN: Full Moon
+    CN: "\u6EE1\u6708"
+  - key: levelname_lv506
+    EN: Last Quarter
+    CN: "\u4E0B\u5F26\u6708"
+  - key: levelname_lv507
+    EN: Wanning Crescent
+    CN: "\u6B8B\u6708"
+  - key: levelname_lv508
+    EN: Eclipse
+    CN: "\u6708\u98DF"
+  - key: init_lv501
+    EN: Moon
+    CN: "\u6708\u4EAE"
+  - key: init_lv502
+    EN: "\u592A\u9633\u843D\u4E0B\uFF0C\u6708\u8272\u6E10\u660E\u3002"
+    CN: "\u592A\u9633\u843D\u4E0B\uFF0C\u6708\u8272\u6E10\u660E\u3002"
+  - key: init_lv503
+    EN: "\u516B\u6708\u5341\u4E94\uFF0C\u4E2D\u79CB\u4F73\u8282\u3002"
+    CN: "\u516B\u6708\u5341\u4E94\uFF0C\u4E2D\u79CB\u4F73\u8282\u3002"
+  - key: init_lv504
+    EN: "\u6EE1\u6708\u5BC4\u6258\u4E86\u601D\u5FF5\uFF0C\u671F\u5F85\u56E2\u5706\u3002"
+    CN: "\u6EE1\u6708\u5BC4\u6258\u4E86\u601D\u5FF5\uFF0C\u671F\u5F85\u56E2\u5706\u3002"
+  - key: init_lv505
+    EN: "\u6EE1\u6708\u4E5F\u5E26\u6765\u707E\u7978\uFF0C\u5524\u8D77\u72FC\u4EBA\u3002"
+    CN: "\u6EE1\u6708\u4E5F\u5E26\u6765\u707E\u7978\uFF0C\u5524\u8D77\u72FC\u4EBA\u3002"
+  - key: init_lv506
+    EN: "\u53CD\u590D\u89C2\u6D4B\u6708\u76F8\uFF0C\u638C\u63E1\u89C4\u5F8B\u3002"
+    CN: "\u53CD\u590D\u89C2\u6D4B\u6708\u76F8\uFF0C\u638C\u63E1\u89C4\u5F8B\u3002"
+  - key: init_lv507
+    EN: "\u795E\u8FF9\u56E0\u6B64\u6210\u4E3A\u4F20\u8BF4\u3002"
+    CN: "\u795E\u8FF9\u56E0\u6B64\u6210\u4E3A\u4F20\u8BF4\u3002"
+  - key: init_lv508
+    EN: "\u5468\u800C\u590D\u59CB\uFF0C\u79E9\u5E8F\u4E0E\u766B\u72C2\u7684\u8F6E\u56DE\u3002"
+    CN: "\u5468\u800C\u590D\u59CB\uFF0C\u79E9\u5E8F\u4E0E\u766B\u72C2\u7684\u8F6E\u56DE\u3002"
+  - key: play1_lv507
+    EN: "\u6708\u98DF\uFF01\u79E9\u5E8F\u518D\u6B21\u88AB\u541E\u566C\u3002"
+    CN: "\u6708\u98DF\uFF01\u79E9\u5E8F\u518D\u6B21\u88AB\u541E\u566C\u3002"
+  - key: play1_lv508
+    EN: "\u6708\u4EAE\u9759\u9759\u5730\u89C1\u8BC1\u7740\u4E00\u5207\u3002"
+    CN: "\u6708\u4EAE\u9759\u9759\u5730\u89C1\u8BC1\u7740\u4E00\u5207\u3002"
+  - key: goal_lv501
+    EN: Set calendar to 08/10
+    CN: "\u5C06\u65E5\u5386\u8BBE\u4E3A8\u670810\u65E5"
+  - key: goal_lv502
+    EN: Set a line to 08/13
+    CN: "\u8BA9\u67D0\u4E00\u884C\u6210\u4E3A8\u670813\u65E5"
+  - key: goal_lv503
+    EN: Set a line and a row to 08/15
+    CN: "\u8BA9\u67D0\u4E00\u884C\u548C\u5217\u540C\u65F6\u6210\u4E3A8\u670815\u65E5"
+  - key: goal_lv504
+    EN: Set all cells to SAME
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
+  - key: goal_lv505
+    EN: Set all cells to UNIQUE
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u4E0D\u540C\u6570\u5B57"
+  - key: goal_lv506
+    EN: See 3 full moon cycles
+    CN: "\u7ECF\u53863\u6B21\u5B8C\u6574\u6708\u76F8"
+  - key: goal_lv507
+    EN: See 5 full moon cycles
+    CN: "\u7ECF\u53865\u6B21\u5B8C\u6574\u6708\u76F8"
+  - key: goal_lv508
+    EN: After 2 eclipses, set all cells to 3
+    CN: "\u7ECF\u53862\u6B21\u6708\u98DF\u540E\uFF0C\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5230\u6700\u521D\u503C"
+  - key: rule1_lv501
+    EN: 'Crescent: +1'
+    CN: "\u65B0\u6708\uFF1A+1"
+  - key: rule2_lv501
+    EN: 'Quarter: +3'
+    CN: "\u5F26\u6708\uFF1A+3"
+  - key: rule3_lv503
+    EN: 'Full: +5'
+    CN: "\u6EE1\u6708\uFF1A+5"
+  - key: rule4_lv507
+    EN: 'Eclipse(Full + 9): All cells -5'
+    CN: "\u6708\u98DF\uFF08\u6EE1\u6708+9\uFF09\uFF1A\u5168\u573A -5"
+  - key: rule5_lv502
+    EN: '10+: Sunrise! LOSE'
+    CN: "\u8D85\u8FC79\uFF1A\u592A\u9633\u5347\u8D77\uFF0C\u6E38\u620F\u5931\u8D25"

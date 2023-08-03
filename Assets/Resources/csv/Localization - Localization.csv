@@ -91,11 +91,43 @@ UID,Key,EN,CN
 90,goal_lv403,Set all cells to 4,将所有格子变为4
 91,goal_lv404,Set all cells to 7,将所有格子变为7
 92,goal_lv405,Set all cells to either 2 or 7,将所有格子为2或7
-93,goal_lv406,Set all cells to UNIQUE,将所有格子变为不同值
+93,goal_lv406,Set all cells to UNIQUE,将所有格子变为不同数字
 94,goal_lv407,Set the sum of cells to 20,将数字总和变为20
-95,goal_lv408,Set the sum of cells to 90,每个格子都是寿司或饭团时，<br>将数字总和变为90
+95,goal_lv408,Set the sum of cells to 82,每个格子都是寿司或饭团时，<br>将数字总和变为82
 96,rule1_lv401,Fish - Cell Played +3,鱼 - 打出的格子 +3
 97,rule2_lv403,Rice - Cell Played +3,米 - 打出的格子 -3
 98,rule3_lv404,Sushi(Rice+Fish) - Cell Played =7,寿司（米+鱼） - 格子变为7
 99,rule4_lv405,Onigiri(Rice+Fish) - Cell Played =2,饭团（鱼+米） - 格子变为2
 100,rule5_lv403,Fish and Rice alternate,鱼和米交替出现
+101,themename_tm5,Moon,月亮
+102,levelname_lv501,Moon,月亮
+103,levelname_lv502,New Moon,新月
+104,levelname_lv503,Waxing Crescent,眉月
+105,levelname_lv504,First Quarter,上弦月
+106,levelname_lv505,Full Moon,满月
+107,levelname_lv506,Last Quarter,下弦月
+108,levelname_lv507,Wanning Crescent,残月
+109,levelname_lv508,Eclipse,月食
+110,init_lv501,Moon,月亮
+111,init_lv502,太阳落下，月色渐明。,太阳落下，月色渐明。
+112,init_lv503,八月十五，中秋佳节。,八月十五，中秋佳节。
+113,init_lv504,满月寄托了思念，期待团圆。,满月寄托了思念，期待团圆。
+114,init_lv505,满月也带来灾祸，唤起狼人。,满月也带来灾祸，唤起狼人。
+115,init_lv506,反复观测月相，掌握规律。,反复观测月相，掌握规律。
+116,init_lv507,神迹因此成为传说。,神迹因此成为传说。
+117,init_lv508,周而复始，秩序与癫狂的轮回。,周而复始，秩序与癫狂的轮回。
+118,play1_lv507,月食！秩序再次被吞噬。,月食！秩序再次被吞噬。
+119,play1_lv508,月亮静静地见证着一切。,月亮静静地见证着一切。
+120,goal_lv501,Set calendar to 08/10,将日历设为8月10日
+121,goal_lv502,Set a line to 08/13,让某一行成为8月13日
+122,goal_lv503,Set a line and a row to 08/15,让某一行和列同时成为8月15日
+123,goal_lv504,Set all cells to SAME,让所有格子成为相同数字
+124,goal_lv505,Set all cells to UNIQUE,让所有格子成为不同数字
+125,goal_lv506,See 3 full moon cycles,经历3次完整月相
+126,goal_lv507,See 5 full moon cycles,经历5次完整月相
+127,goal_lv508,"After 2 eclipses, set all cells to 3",经历2次月食后，让所有格子回到最初值
+128,rule1_lv501,Crescent: +1,新月：+1
+129,rule2_lv501,Quarter: +3,弦月：+3
+130,rule3_lv503,Full: +5,满月：+5
+131,rule4_lv507,Eclipse(Full + 9): All cells -5,月食（满月+9）：全场 -5
+132,rule5_lv502,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败

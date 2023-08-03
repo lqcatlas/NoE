@@ -23,3 +23,11 @@ UID,themeindex,levelindex,nextlevelindex,themename,levelname,init,play1,play2,pl
 406,4,6,407,@Loc=themename_tm4@@,@Loc=levelname_lv406@@,@Loc=init_lv406@@,,,,@Loc=goal_lv406@@,None,@Loc=rule1_lv401@@,None,@Loc=rule2_lv403@@,None,@Loc=rule3_lv404@@,None,@Loc=rule4_lv405@@,None,@Loc=rule5_lv403@@
 407,4,7,408,@Loc=themename_tm4@@,@Loc=levelname_lv407@@,@Loc=init_lv407@@,,,,@Loc=goal_lv407@@,None,@Loc=rule1_lv401@@,None,@Loc=rule2_lv403@@,None,@Loc=rule3_lv404@@,None,@Loc=rule4_lv405@@,None,@Loc=rule5_lv403@@
 408,4,8,,@Loc=themename_tm4@@,@Loc=levelname_lv408@@,@Loc=init_lv408@@,@Loc=play1_lv408@@,,,@Loc=goal_lv408@@,None,@Loc=rule1_lv401@@,None,@Loc=rule2_lv403@@,None,@Loc=rule3_lv404@@,None,@Loc=rule4_lv405@@,None,@Loc=rule5_lv403@@
+501,5,1,502,@Loc=themename_tm5@@,@Loc=levelname_lv501@@,@Loc=init_lv501@@,,,,@Loc=goal_lv501@@,Addition,@Loc=rule1_lv501@@,Addition,@Loc=rule2_lv501@@,,,,,,
+502,5,2,503,@Loc=themename_tm5@@,@Loc=levelname_lv502@@,@Loc=init_lv502@@,,,,@Loc=goal_lv502@@,None,@Loc=rule1_lv501@@,None,@Loc=rule2_lv501@@,,,,,Addition,@Loc=rule5_lv502@@
+503,5,3,504,@Loc=themename_tm5@@,@Loc=levelname_lv503@@,@Loc=init_lv503@@,,,,@Loc=goal_lv503@@,None,@Loc=rule1_lv501@@,None,@Loc=rule2_lv501@@,Addition,@Loc=rule3_lv503@@,,,None,@Loc=rule5_lv502@@
+504,5,4,505,@Loc=themename_tm5@@,@Loc=levelname_lv504@@,@Loc=init_lv504@@,,,,@Loc=goal_lv504@@,None,@Loc=rule1_lv501@@,None,@Loc=rule2_lv501@@,None,@Loc=rule3_lv503@@,,,None,@Loc=rule5_lv502@@
+505,5,5,506,@Loc=themename_tm5@@,@Loc=levelname_lv505@@,@Loc=init_lv505@@,,,,@Loc=goal_lv505@@,None,@Loc=rule1_lv501@@,None,@Loc=rule2_lv501@@,None,@Loc=rule3_lv503@@,,,None,@Loc=rule5_lv502@@
+506,5,6,507,@Loc=themename_tm5@@,@Loc=levelname_lv506@@,@Loc=init_lv506@@,,,,@Loc=goal_lv506@@,None,@Loc=rule1_lv501@@,None,@Loc=rule2_lv501@@,None,@Loc=rule3_lv503@@,,,None,@Loc=rule5_lv502@@
+507,5,7,508,@Loc=themename_tm5@@,@Loc=levelname_lv507@@,@Loc=init_lv507@@,@Loc=play1_lv507@@,,,@Loc=goal_lv507@@,None,@Loc=rule1_lv501@@,None,@Loc=rule2_lv501@@,None,@Loc=rule3_lv503@@,Addition,@Loc=rule4_lv507@@,None,@Loc=rule5_lv502@@
+508,5,8,,@Loc=themename_tm5@@,@Loc=levelname_lv508@@,@Loc=init_lv508@@,@Loc=play1_lv508@@,,,@Loc=goal_lv508@@,None,@Loc=rule1_lv501@@,None,@Loc=rule2_lv501@@,None,@Loc=rule3_lv503@@,None,@Loc=rule4_lv507@@,None,@Loc=rule5_lv502@@

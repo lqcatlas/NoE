@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,8 @@ public class LM_005_Moon : LevelMasterBase
 
     [Header("Theme Additions")]
     public LMHub_005_Moon moonHub;
-    public int fullPhaseCount = 0;;
+    public int fullPhaseCount = 0;
+    public int endReason = -1;
 
     [Header("Theme Animation Params")]
     float CellFoodTrasitionDistance = 1f;
@@ -19,14 +21,25 @@ public class LM_005_Moon : LevelMasterBase
     {
         base.GetObjectReferences(null);
         moonHub = _themeHub.GetComponent<LMHub_005_Moon>();
+        //init theme-specific params
     }
 
     public override void InitTool()
     {
         base.InitTool();
         hub.toolMaster.toolIcon.sprite = moonHub.statusSprites[levelData.curBoard.toolStatus];
-        fullPhaseCount = 0;
+        SetTabletToDegree(moonHub.phaseDegrees[0]);
         //moon phase tablet
+
+    }
+    public override void AddtionalInit_Theme()
+    {
+        fullPhaseCount = 0;
+        endReason = -1;
+    }
+    public override void DelayedInit_Theme()
+    {
+        AnimateTabletToDegree(levelData.curBoard.toolStatus);
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -119,7 +132,9 @@ public class LM_005_Moon : LevelMasterBase
         {
             Debug.LogError(string.Format("master script of {0} reaches undefined level", levelData.theme));
         }
-        
+        AnimateTabletToDegree(moonHub.phaseDegrees[levelData.curBoard.toolStatus]);
+
+
     }
     public override void UpdateTool(Vector2Int coord)
     {
@@ -169,7 +184,7 @@ public class LM_005_Moon : LevelMasterBase
         }
         else if (levelData.levelIndex == 7)
         {
-            return BoardCalculation.CountX_All(levelData.curBoard, 6);
+            return fullPhaseCount >= 5;
         }
         else if (levelData.levelIndex == 8)
         {
@@ -185,16 +200,23 @@ public class LM_005_Moon : LevelMasterBase
     {
         if (levelData.curBoard.toolCount == 0)
         {
+            endReason = 0;
             return true;
         }
-        else if(BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 9, 1))
+        else if(BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 10, 1))
         {
+            endReason = 1;
             return true;
         }
         return false;
     }
-    public override void LoseALevel()
+    //to do add a special lose banner of sun
+    void SetTabletToDegree(float degree_360)
     {
-        
+        moonHub.phasePlate.transform.localRotation = Quaternion.Euler(0f, 0f, degree_360);
+    }
+    void AnimateTabletToDegree(float degree_360)
+    {
+        moonHub.phasePlate.transform.DORotate(new Vector3(0f, 0f, degree_360), moonHub.PLATE_ROTATION_DURATION_PLAY);
     }
 }

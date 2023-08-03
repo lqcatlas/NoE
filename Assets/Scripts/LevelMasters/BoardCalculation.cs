@@ -222,7 +222,7 @@ public class BoardCalculation
     static public bool ExactLineMatchX(DataBoard board, List<int> X)
     {
         //number must > -1
-        if(X.Count != board.boardSize.y)
+        if(X.Count != board.boardSize.x)
         {
             Debug.LogError(string.Format("ExactLineMatchX function is called on a dismatching X({0}) and board size({1})", X.Count, board.boardSize.y));
             return false;
@@ -238,14 +238,14 @@ public class BoardCalculation
         }
         for (int i = 0; i < board.cells.Count; i++)
         {
-            NumbersByLine[board.cells[i].coord.x-1][board.cells[i].coord.y-1] = board.cells[i].value;
+            NumbersByLine[board.cells[i].coord.x][board.cells[i].coord.y] = board.cells[i].value;
         }
-        for (int i = 0; i < board.boardSize.x; i++)
+        for (int i = 0; i < board.boardSize.y; i++)
         {
             bool lineMatch = true;
-            for (int j = 0; j < board.boardSize.y; j++)
+            for (int j = 0; j < board.boardSize.x; j++)
             {
-                if(NumbersByLine[i][j] != X[j])
+                if(NumbersByLine[j][i] != X[j])
                 {
                     lineMatch = false;
                     break;
@@ -261,7 +261,7 @@ public class BoardCalculation
     static public bool ExactRowMatchX(DataBoard board, List<int> X)
     {
         //number must > -1
-        if (X.Count != board.boardSize.x)
+        if (X.Count != board.boardSize.y)
         {
             Debug.LogError(string.Format("ExactLineMatchX function is called on a dismatching X({0}) and board size({1})", X.Count, board.boardSize.y));
             return false;
@@ -277,14 +277,14 @@ public class BoardCalculation
         }
         for (int i = 0; i < board.cells.Count; i++)
         {
-            NumbersByLine[board.cells[i].coord.y - 1][board.cells[i].coord.x - 1] = board.cells[i].value;
+            NumbersByLine[board.cells[i].coord.y][board.cells[i].coord.x] = board.cells[i].value;
         }
-        for (int i = 0; i < board.boardSize.y; i++)
+        for (int i = 0; i < board.boardSize.x; i++)
         {
             bool rowMatch = true;
-            for (int j = 0; j < board.boardSize.x; j++)
+            for (int j = board.boardSize.y - 1; j >= 0 ; j--)
             {
-                if (NumbersByLine[i][j] != X[j])
+                if (NumbersByLine[i][j] != X[board.boardSize.y - j])
                 {
                     rowMatch = false;
                     break;

@@ -85,6 +85,7 @@ public class LevelMasterBase : MonoBehaviour
     {
         EnablePlayerInput();
         AnimateRuleset();
+        DelayedInit_Theme();
     }
     public void Play(Vector2Int coord)
     {
@@ -287,6 +288,10 @@ public class LevelMasterBase : MonoBehaviour
                 }
             }
         }
+    }
+    public virtual void DelayedInit_Theme()
+    {
+        //this should always be theme-specific
     }
     public virtual void ToolConsume()
     {
