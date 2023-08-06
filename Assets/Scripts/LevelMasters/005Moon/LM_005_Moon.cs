@@ -27,8 +27,22 @@ public class LM_005_Moon : LevelMasterBase
     public override void InitTool()
     {
         base.InitTool();
-        hub.toolMaster.toolIcon.sprite = moonHub.statusSprites[levelData.curBoard.toolStatus];
-        SetTabletToDegree(moonHub.phaseDegrees[0]);
+        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 2)
+        {
+            hub.toolMaster.toolIcon.sprite = moonHub.statusSprites[levelData.curBoard.toolStatus];
+            moonHub.SetPlateWidget(false);
+        }
+        else if (levelData.levelIndex >= 3)
+        {
+            hub.toolMaster.frame.gameObject.SetActive(false);
+            hub.toolMaster.toolIcon.gameObject.SetActive(false);
+            moonHub.SetPlateWidget(true);
+            SetTabletToDegree(moonHub.phaseDegrees[0]);
+        }
+        else
+        {
+            Debug.LogError(string.Format("master script of {0} reaches undefined level", levelData.theme));
+        }
         //moon phase tablet
 
     }
