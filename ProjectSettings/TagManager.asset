@@ -44,3 +44,6 @@ TagManager:
   - name: LevelSelector
     uniqueID: 423832989
     locked: 0
+  - name: ScreenMask
+    uniqueID: 4256120175
+    locked: 0
