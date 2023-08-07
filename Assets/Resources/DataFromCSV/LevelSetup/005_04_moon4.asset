@@ -40,16 +40,16 @@ MonoBehaviour:
     boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 0
+      value: 7
       status: 0
     - coord: {x: 1, y: 0}
-      value: 2
+      value: 6
       status: 0
     - coord: {x: 2, y: 0}
       value: 8
       status: 0
     - coord: {x: 0, y: 1}
-      value: 3
+      value: 0
       status: 0
     - coord: {x: 1, y: 1}
       value: 9
@@ -66,5 +66,5 @@ MonoBehaviour:
     - coord: {x: 2, y: 2}
       value: 4
       status: 0
-    toolCount: 8
+    toolCount: 15
     toolStatus: 1

@@ -11,6 +11,7 @@ public class LM_005_Moon : LevelMasterBase
     public LMHub_005_Moon moonHub;
     public int fullPhaseCount = 0;
     public int endReason = -1;
+    public bool eclipseTriggered = false;
 
     [Header("Theme Animation Params")]
     float CellFoodTrasitionDistance = 1f;
@@ -36,8 +37,8 @@ public class LM_005_Moon : LevelMasterBase
         {
             hub.toolMaster.frame.gameObject.SetActive(false);
             hub.toolMaster.toolIcon.gameObject.SetActive(false);
-            moonHub.SetPlateWidget(true);
-            SetTabletToDegree(moonHub.phaseDegrees[0]);
+            moonHub.SetPlateWidget(false);
+            
         }
         else
         {
@@ -50,10 +51,13 @@ public class LM_005_Moon : LevelMasterBase
     {
         fullPhaseCount = 0;
         endReason = -1;
+        eclipseTriggered = false;
     }
     public override void DelayedInit_Theme()
     {
-        AnimateTabletToDegree(levelData.curBoard.toolStatus);
+        moonHub.SetPlateWidget(true);
+        moonHub.SetTabletToDegree(0);
+        moonHub.AnimateTabletToDegree(levelData.curBoard.toolStatus);
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -85,7 +89,7 @@ public class LM_005_Moon : LevelMasterBase
         }     
         //lv 2+
         //crescent +1, quarter +3, full +5
-        else if (levelData.levelIndex >= 2)
+        else if (levelData.levelIndex >= 2 && levelData.levelIndex <= 6)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -101,6 +105,34 @@ public class LM_005_Moon : LevelMasterBase
                     {
                         levelData.curBoard.cells[i].value += 3;
                         levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                    }
+                    else if (levelData.curBoard.toolStatus == (int)MoonPhase.full)
+                    {
+                        levelData.curBoard.cells[i].value += 5;
+                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                    }
+                }
+            }
+        }
+        else if (levelData.levelIndex >= 7 && levelData.levelIndex <= 8)
+        {
+            for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+            {
+                if (levelData.curBoard.cells[i].coord == coord)
+                {
+                    if (levelData.curBoard.toolStatus == (int)MoonPhase.crescent_1 || levelData.curBoard.toolStatus == (int)MoonPhase.crescent_2)
+                    {
+                        levelData.curBoard.cells[i].value += 1;
+                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                    }
+                    else if (levelData.curBoard.toolStatus == (int)MoonPhase.quarter_1 || levelData.curBoard.toolStatus == (int)MoonPhase.quarter_2)
+                    {
+                        levelData.curBoard.cells[i].value += 3;
+                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                    }
+                    else if (levelData.curBoard.toolStatus == (int)MoonPhase.full && levelData.curBoard.cells[i].value == 9)
+                    {
+                        eclipseTriggered = true;
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full)
                     {
@@ -146,15 +178,26 @@ public class LM_005_Moon : LevelMasterBase
         {
             Debug.LogError(string.Format("master script of {0} reaches undefined level", levelData.theme));
         }
-        AnimateTabletToDegree(moonHub.phaseDegrees[levelData.curBoard.toolStatus]);
-
-
+        moonHub.AnimateTabletToDegree(levelData.curBoard.toolStatus);
     }
     public override void UpdateTool(Vector2Int coord)
     {
         base.UpdateTool(coord);
         //moon phase tablet rotate
         hub.toolMaster.toolIcon.sprite = moonHub.statusSprites[levelData.curBoard.toolStatus];
+    }
+    public override void DelayedPlay_Theme()
+    {
+        Vector2Int numberRange = new Vector2Int(0, 10000);
+        //eclipse number change
+        if (eclipseTriggered)
+        {
+            for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+            {
+                levelData.curBoard.cells[i].value -= 5;
+                levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+            }
+        }
     }
     public override bool CheckWinCondition()
     {
@@ -225,12 +268,5 @@ public class LM_005_Moon : LevelMasterBase
         return false;
     }
     //to do add a special lose banner of sun
-    void SetTabletToDegree(float degree_360)
-    {
-        moonHub.phasePlate.transform.localRotation = Quaternion.Euler(0f, 0f, degree_360);
-    }
-    void AnimateTabletToDegree(float degree_360)
-    {
-        moonHub.phasePlate.transform.DORotate(new Vector3(0f, 0f, degree_360), moonHub.PLATE_ROTATION_DURATION_PLAY);
-    }
+    
 }

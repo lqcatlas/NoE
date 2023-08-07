@@ -39,25 +39,25 @@ MonoBehaviour:
       value: 0
       status: 0
     - coord: {x: 1, y: 0}
-      value: 6
+      value: 5
       status: 0
     - coord: {x: 2, y: 0}
       value: 1
       status: 0
     - coord: {x: 3, y: 0}
-      value: 4
+      value: 0
       status: 0
     - coord: {x: 0, y: 1}
       value: 0
       status: 0
     - coord: {x: 1, y: 1}
-      value: 7
+      value: 6
       status: 0
     - coord: {x: 2, y: 1}
-      value: 1
+      value: 0
       status: 0
     - coord: {x: 3, y: 1}
-      value: 0
+      value: 1
       status: 0
     - coord: {x: 0, y: 2}
       value: 6
@@ -83,5 +83,5 @@ MonoBehaviour:
     - coord: {x: 3, y: 3}
       value: 8
       status: 0
-    toolCount: 12
+    toolCount: 4
     toolStatus: 1

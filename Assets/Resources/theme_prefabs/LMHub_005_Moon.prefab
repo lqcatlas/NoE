@@ -223,7 +223,9 @@ MonoBehaviour:
   - {fileID: 153082221, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   - {fileID: -348473210, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   phaseMask: {fileID: 2599058822400933908}
-  phasePlate: {fileID: 8557199609628433335}
+  phaseRotate: {fileID: 8557199609628433335}
+  phasePlate: {fileID: 3307026204629537511}
+  phaseStar: {fileID: 6510537913823798655}
   phaseDegrees:
   - -36
   - 0

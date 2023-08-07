@@ -106,17 +106,6 @@ public class LevelMasterBase : MonoBehaviour
         UpdateTool(coord);
         UpdateMiscs();
         AddtionalUpdate_Theme(coord);
-        if (CheckWinCondition())
-        {
-            Debug.Log("congrats! you win!");
-            WinALevel();
-        }
-        else if (CheckLoseCondition())
-        {
-            Debug.Log("ooops! you lose!");
-            LoseALevel();
-            
-        }
         UpdatePlayable();
         //Below should be called as calledback when all key FX is handled
         Sequence seq = DOTween.Sequence();
@@ -126,7 +115,18 @@ public class LevelMasterBase : MonoBehaviour
     public void PlayCallback()
     {
         EnablePlayerInput();
-        //more to be added
+        DelayedPlay_Theme();
+        if (CheckWinCondition())
+        {
+            Debug.Log("congrats! you win!");
+            WinALevel();
+        }
+        else if (CheckLoseCondition())
+        {
+            Debug.Log("ooops! you lose!");
+            LoseALevel();
+
+        }
     }
     public void LevelRetry()
     {
@@ -355,6 +355,10 @@ public class LevelMasterBase : MonoBehaviour
     public virtual void UpdatePlayable()
     {
         
+    }
+    public virtual void DelayedPlay_Theme()
+    {
+        //this should always be theme-specific
     }
     public virtual bool CheckWinCondition()
     {
