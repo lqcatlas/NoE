@@ -48,52 +48,52 @@ MonoBehaviour:
     boardSize: {x: 4, y: 4}
     cells:
     - coord: {x: 0, y: 0}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 1, y: 0}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 2, y: 0}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 3, y: 0}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 0, y: 1}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 1, y: 1}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 2, y: 1}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 3, y: 1}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 0, y: 2}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 1, y: 2}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 2, y: 2}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 3, y: 2}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 0, y: 3}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 1, y: 3}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 2, y: 3}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 3, y: 3}
-      value: 3
+      value: 4
       status: 0
     toolCount: 15
     toolStatus: 1

@@ -12,6 +12,7 @@ public class LM_005_Moon : LevelMasterBase
     public int fullPhaseCount = 0;
     public int endReason = -1;
     public bool eclipseTriggered = false;
+    public Vector2Int eclipseCoord;
 
     [Header("Theme Animation Params")]
     float CellFoodTrasitionDistance = 1f;
@@ -55,9 +56,12 @@ public class LM_005_Moon : LevelMasterBase
     }
     public override void DelayedInit_Theme()
     {
-        moonHub.SetPlateWidget(true);
-        moonHub.SetTabletToDegree(0);
-        moonHub.AnimateTabletToDegree(levelData.curBoard.toolStatus);
+        if(levelData.levelIndex >= 3)
+        {
+            moonHub.SetPlateWidget(true);
+            moonHub.SetTabletToDegree(0);
+            moonHub.AnimateTabletToDegree(levelData.curBoard.toolStatus);
+        }
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -98,18 +102,18 @@ public class LM_005_Moon : LevelMasterBase
                     if (levelData.curBoard.toolStatus == (int)MoonPhase.crescent_1 || levelData.curBoard.toolStatus == (int)MoonPhase.crescent_2)
                     {
                         levelData.curBoard.cells[i].value += 1;
-                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                        levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
                         //Play sfx ?
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.quarter_1 || levelData.curBoard.toolStatus == (int)MoonPhase.quarter_2)
                     {
                         levelData.curBoard.cells[i].value += 3;
-                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                        levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full)
                     {
                         levelData.curBoard.cells[i].value += 5;
-                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                        levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
                     }
                 }
             }
@@ -123,21 +127,22 @@ public class LM_005_Moon : LevelMasterBase
                     if (levelData.curBoard.toolStatus == (int)MoonPhase.crescent_1 || levelData.curBoard.toolStatus == (int)MoonPhase.crescent_2)
                     {
                         levelData.curBoard.cells[i].value += 1;
-                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                        levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.quarter_1 || levelData.curBoard.toolStatus == (int)MoonPhase.quarter_2)
                     {
                         levelData.curBoard.cells[i].value += 3;
-                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                        levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full && levelData.curBoard.cells[i].value == 9)
                     {
                         eclipseTriggered = true;
+                        eclipseCoord = coord;
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full)
                     {
                         levelData.curBoard.cells[i].value += 5;
-                        levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                        levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
                     }
                 }
             }
@@ -149,9 +154,9 @@ public class LM_005_Moon : LevelMasterBase
     }
     public override void HandleEnvironment(Vector2Int coord)
     {
-        //lv 1
+        //lv 1-2
         //crescent/quarter alternate
-        if (levelData.levelIndex == 1)
+        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 2)
         {
             if(levelData.curBoard.toolStatus == (int)MoonPhase.crescent_1)
             {
@@ -163,9 +168,9 @@ public class LM_005_Moon : LevelMasterBase
                 fullPhaseCount += 1;
             }
         }
-        //lv 2-8
+        //lv 3-8
         //phase rotate
-        else if (levelData.levelIndex >= 2)
+        else if (levelData.levelIndex >= 3)
         {
             levelData.curBoard.toolStatus = levelData.curBoard.toolStatus + 1;
             if(levelData.curBoard.toolStatus == 6)
@@ -192,12 +197,16 @@ public class LM_005_Moon : LevelMasterBase
         //eclipse number change
         if (eclipseTriggered)
         {
+            eclipseTriggered = false;
+            eclipseCoord = Vector2Int.zero;
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
                 levelData.curBoard.cells[i].value -= 5;
-                levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
+                //levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
             }
         }
+        UpdateCells(eclipseCoord);
     }
     public override bool CheckWinCondition()
     {

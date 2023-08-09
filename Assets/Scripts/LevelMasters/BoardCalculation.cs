@@ -27,6 +27,22 @@ public class BoardCalculation
             return X + addition;
         }
     }
+    static public int ConstrainX_Range(int X, Vector2Int Range)
+    {
+        int rangeDistance = Range.y - Range.x + 1;
+        if (X >= Range.x && X <= Range.y)
+        {
+            return X;
+        }
+        else if (X > Range.y)
+        {
+            return Range.y;
+        }
+        else
+        {
+            return Range.x;
+        }
+    }
     static public bool CountX_Ytimes(DataBoard board, int X, int Y)
     {
         int requiredTargetCount = Y;
