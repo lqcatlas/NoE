@@ -7,6 +7,8 @@ public class LMHub_005_Moon : MonoBehaviour
 {
     [Header("Tool")]
     public List<Sprite> statusSprites;
+    [Header("Eclipse")]
+    public GameObject eclipseVFX;
     [Header("Phase Plate")]
     public GameObject phaseMask;
     public GameObject phaseRotate;

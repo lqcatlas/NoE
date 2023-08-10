@@ -138,6 +138,7 @@ public class LM_005_Moon : LevelMasterBase
                     {
                         eclipseTriggered = true;
                         eclipseCoord = coord;
+                        moonHub.eclipseVFX.SetActive(true);
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full)
                     {
@@ -205,8 +206,9 @@ public class LM_005_Moon : LevelMasterBase
                 levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
                 //levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
             }
+            UpdateCells(eclipseCoord); 
         }
-        UpdateCells(eclipseCoord);
+        
     }
     public override bool CheckWinCondition()
     {
