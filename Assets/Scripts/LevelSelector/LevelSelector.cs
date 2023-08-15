@@ -48,7 +48,7 @@ public class LevelSelector : MonoBehaviour
     }
     void NodeParentInit()
     {
-        nodeParent.localPosition = Vector3.zero;
+        nodeParent.localPosition = new Vector3(-45f, 0f, 0f);
     }
     void CollectAllNodes()
     {

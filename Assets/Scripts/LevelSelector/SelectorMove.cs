@@ -24,11 +24,11 @@ public class SelectorMove : MonoBehaviour
     {
         if (tier2 && tier1)
         {
-            movingGroup.transform.localPosition += moveDirection * Time.fixedDeltaTime * movingSpeedTier2;
+            movingGroup.GetComponent<RectTransform>().localPosition += moveDirection * Time.fixedDeltaTime * movingSpeedTier2;
         }
         else if (tier1)
         {
-            movingGroup.transform.localPosition += moveDirection * Time.fixedDeltaTime * movingSpeedTier1;
+            movingGroup.GetComponent<RectTransform>().localPosition += moveDirection * Time.fixedDeltaTime * movingSpeedTier1;
         }
     }
     void BarInit()
