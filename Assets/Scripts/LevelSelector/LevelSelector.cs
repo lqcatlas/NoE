@@ -23,11 +23,13 @@ public class LevelSelector : MonoBehaviour
     }
     [Header("Player Data")]
     public LevelRecords playerLevelRecords;
+    public int curTokenCount;
     [Header("Children Objs")]
     [SerializeField] Transform nodeParent;
     [SerializeField] List<SelectorNode> nodes;
-    
-    
+    [SerializeField] List<SelectorTheme> themes;
+
+
     public void SelectorShow()
     {
         gameObject.SetActive(true);
@@ -45,6 +47,8 @@ public class LevelSelector : MonoBehaviour
     {
         CollectAllNodes();
         NodeParentInit();
+        //test only
+        curTokenCount = 100;
     }
     void NodeParentInit()
     {
