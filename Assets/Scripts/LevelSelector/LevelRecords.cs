@@ -6,6 +6,7 @@ using UnityEngine;
 public class LevelRecords : ScriptableObject
 {
     public List<int> finishedLevels;
+    public List<int> unlockedThemes;
 
     public bool isLevelFinished(int uid)
     {
@@ -13,6 +14,19 @@ public class LevelRecords : ScriptableObject
         for(int i = 0; i < finishedLevels.Count; i++)
         {
             if (finishedLevels[i] == uid)
+            {
+                found = true;
+                break;
+            }
+        }
+        return found;
+    }
+    public bool isThemeUnlocked(int uid)
+    {
+        bool found = false;
+        for (int i = 0; i < unlockedThemes.Count; i++)
+        {
+            if (unlockedThemes[i] == uid)
             {
                 found = true;
                 break;

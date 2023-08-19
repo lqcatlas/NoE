@@ -341,7 +341,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 423832989
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: 104d10bdd498c7146a6acb2e17745f5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 153841770097525937}
   - component: {fileID: 6049230862703414505}
   m_Layer: 0
-  m_Name: theme_bg_txt
+  m_Name: token_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,7 +431,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 423832989
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 102
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &6049230862703414505
 MonoBehaviour:
@@ -833,7 +833,7 @@ GameObject:
   - component: {fileID: 5942178203447232328}
   - component: {fileID: 9206941910633674038}
   m_Layer: 0
-  m_Name: theme_bg_sprite
+  m_Name: token_icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -848,7 +848,7 @@ Transform:
   m_GameObject: {fileID: 6075186465984060294}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 3, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5990974640528905266}
@@ -894,8 +894,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 423832989
   m_SortingLayer: 1
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -937068970, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -418628789, guid: fdb2cdea34ce34349a3f5043b05ead7b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1168,9 +1168,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unlockAll: 0
+  getTokens: 0
   playerLevelRecords: {fileID: 11400000, guid: 450fdbb801f43e743baa8ed62a117cb3, type: 2}
-  nodeParent: {fileID: 5718106933962749381}
+  curTokenCount: 0
   nodes: []
+  themes: []
+  nodeParent: {fileID: 5718106933962749381}
+  tokenCount: {fileID: 6049230862703414505}
 --- !u!1001 &2296216671340555471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1221,6 +1225,10 @@ PrefabInstance:
     - target: {fileID: 4825250303505462705, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_402
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: themeIndex
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5138411361348791074, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
@@ -1363,6 +1371,10 @@ PrefabInstance:
     - target: {fileID: 1896418941309985152, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_LocalPosition.y
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: themeIndex
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Pivot.x
@@ -1509,6 +1521,10 @@ PrefabInstance:
     - target: {fileID: 4825250303505462705, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_502
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: themeIndex
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5138411361348791074, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
@@ -1691,6 +1707,10 @@ PrefabInstance:
     - target: {fileID: 4825250303505462705, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_202
+      objectReference: {fileID: 0}
+    - target: {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: themeIndex
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5138411361348791074, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name

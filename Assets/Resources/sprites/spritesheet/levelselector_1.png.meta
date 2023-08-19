@@ -629,7 +629,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -650,7 +650,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -671,7 +671,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -692,7 +692,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -700,6 +700,174 @@ TextureImporter:
       bones: []
       spriteID: b75e27e094d2e1f459891229b694b8b0
       internalID: 417461764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selector_token@v1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 634
+        width: 45
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0843cfe4fe065fc4aba44636e0a34281
+      internalID: -418628789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selector_token@v2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 634
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14fa1216dd801942a1a1ac9f746da06
+      internalID: -1067203089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selector_token@v3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 535
+        width: 46
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d3ff9c13d104b4f84e4d3023002266
+      internalID: -300451388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selector_token@v4
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 535
+        width: 46
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f129e3300371434f90bf37e1a6ae8eb
+      internalID: -1505919035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selector_token_frame@v1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 634
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27ed3236b9b37e4fb4d2345b7165b1c
+      internalID: 265618436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selector_token_frame@v2
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 634
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604f87e406b716b49a1fd522aa584ea3
+      internalID: 1574931161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selector_token_frame@v3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 535
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3979b98c78028f64186615ea9ca063ac
+      internalID: 1886774836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: selector_token_frame@v4
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 535
+        width: 46
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09b845cba1ddbd4987d1b8a871708e2
+      internalID: -1045053022
       vertices: []
       indices: 
       edges: []
@@ -720,13 +888,17 @@ TextureImporter:
       line_l@v4: -229653398
       inner_round@v3: 326368757
       dash_round@v2: 417461764
+      selector_token@v3: -300451388
       line_m@v3: 439778568
       outer_circle@v1: 1980784755
       inner_round@v1: 1918193431
+      selector_token_frame@v1: 265618436
       line_l@v1: 2038254056
       line_s@v1: -1881035732
       line_s@v3: 1860934932
+      selector_token_frame@v3: 1886774836
       line_s@v4: 886497668
+      selector_token_frame@v4: -1045053022
       theme_circle@v1: -649263325
       inner_round@v2: -1384375413
       dash_round@v3: -1133080979
@@ -734,15 +906,19 @@ TextureImporter:
       theme_circle@v4: 1384261528
       outer_circle@v3: 191658589
       outer_circle@v4: 1951914171
+      selector_token@v2: -1067203089
       inner_round@v4: -819475706
+      selector_token@v4: -1505919035
       theme_circle@v3: -1274661641
       line_s@v2: 1865591893
       line_m@v2: 2043964236
       theme_circle@v2: -649263325
+      selector_token@v1: -418628789
       line_l@v3: 996841694
       outer_circle@v2: -72958355
       dash_round@v1: -59997216
       dash_round@v4: 1873079356
+      selector_token_frame@v2: 1574931161
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

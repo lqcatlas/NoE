@@ -6,17 +6,15 @@ using UnityEngine;
 
 public class SelectorNode : MonoBehaviour
 {
-    enum NodeStatus { locked = 1, unlocked = 2, finished = 3};
-    [Header("Selector Logic")]
+    public enum NodeStatus { locked = 1, unlocked = 2, finished = 3};
+    [Header("Gameplay")]
     public LevelSelector master;
+    public NodeStatus status = NodeStatus.locked; 
     public SheetItem_LevelSetup setupData;
     //[SerializeField] int unlockLevelUID;
     //[SerializeField] int targetLevelUID;
     [Header("VFX Prefabs")]
     [SerializeField] GameObject SelectorTransitionFX;
-
-    [Header("Node Status")]
-    [SerializeField] NodeStatus status = NodeStatus.locked;
 
     [Header("Children Objs")]
     [SerializeField] CircleCollider2D inputCollider;
@@ -77,10 +75,17 @@ public class SelectorNode : MonoBehaviour
         }
         else if (setupData.previousLevel == null)
         {
-            SetToUnlocked();
-            return 2;
+            if (master.playerLevelRecords.isThemeUnlocked(setupData.themeIndex))
+            {
+                SetToUnlocked();
+                return 2;
+            }
+            else
+            {
+                SetToLocked();
+                return 1;
+            }
         }
-
         else if(master.playerLevelRecords.isLevelFinished(setupData.previousLevel.levelUID))
         {
             SetToUnlocked();
@@ -91,6 +96,10 @@ public class SelectorNode : MonoBehaviour
             SetToLocked();
             return 1;
         }
+    }
+    public void UnlockLevel()
+    {
+        SetToUnlocked();
     }
     public void Debug_UnlockNode()
     {

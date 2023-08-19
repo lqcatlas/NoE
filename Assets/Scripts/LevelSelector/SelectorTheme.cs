@@ -3,77 +3,71 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Timeline;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
+using System.Linq;
+using Unity.VisualScripting;
 
 public class SelectorTheme : MonoBehaviour
 {
-    enum ThemeStatus { locked = 1, unlocked = 2, finished = 3 };
+    public enum ThemeStatus { locked = 1, unlocked = 2, finished = 3 };
 
-    [Header("Theme Status")]
-    [SerializeField] ThemeStatus status = ThemeStatus.locked;
+    [Header("Gameplay Data")]
+    public LevelSelector master;
+    public ThemeStatus status = ThemeStatus.locked;
+    [SerializeField] int UnlockTokenRequired = dConstants.Gameplay.DefaultThemeUnlockTokenRequirement;
+    [SerializeField] int themeIndex;
+    [SerializeField] List<SelectorNode> nodes;
+
+
 
     [Header("Children Objs")]
+    [SerializeField] Transform NodesParent;
     [SerializeField] SpriteRenderer frame;
+    [SerializeField] SpriteRenderer tokenFrame;
     [SerializeField] TextMeshPro title;
     [SerializeField] SpriteRenderer tokenIcon;
     [SerializeField] TextMeshPro tokenNeed;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void HoverOn()
     {
         if (status == ThemeStatus.locked)
         {
-            
+            if (isUnlockable())
+            {
+                tokenIcon.DOFade(0.5f, dConstants.UI.StandardizedBtnAnimDuration);
+            }
         }
     }
     public void HoverOff()
     {
         if (status == ThemeStatus.locked)
         {
-            
-        }
-        else if (status == ThemeStatus.unlocked)
-        {
-
-        }
-        else if (status == ThemeStatus.finished)
-        {
-            
+            if (isUnlockable())
+            {
+                tokenIcon.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+            }
         }
     }
     public void MouseUp()
     {
         if (status == ThemeStatus.locked)
         {
-            
+            if (isUnlockable())
+            {
+                master.UnlockTheme(themeIndex, UnlockTokenRequired);
+                AnimateToUnlocked();
+                UnlockDefaultLevels();
+            }
+        }
+        if(status == ThemeStatus.unlocked || status == ThemeStatus.finished)
+        {
+            //to do: manifesto
         }
     }
     public int InitStatus()
     {
-        //levelName.SetText(LocalizedAssetLookup.singleton.Translate(setupData.title));
-        /*if (master.playerLevelRecords.isLevelFinished(setupData.levelUID))
+        //title.SetText(LocalizedAssetLookup.singleton.Translate(setupData.title));
+        if (master.playerLevelRecords.isThemeUnlocked(themeIndex))
         {
-            SetToFinished();
-            return 3;
-        }
-        else if (setupData.previousLevel == null)
-        {
-            SetToUnlocked();
-            return 2;
-        }
-
-        else if (master.playerLevelRecords.isLevelFinished(setupData.previousLevel.levelUID))
-        {
+            //finished status check TBD
             SetToUnlocked();
             return 2;
         }
@@ -81,20 +75,90 @@ public class SelectorTheme : MonoBehaviour
         {
             SetToLocked();
             return 1;
-        }*/
-        return 0;
+        }
     }
-    public void SetLocked()
+    public List<SelectorNode> CollectMyNodes()
+    {
+        nodes = NodesParent.GetComponentsInChildren<SelectorNode>().ToList();
+        int LockCount = 0;
+        int UnlockCount = 0;
+        int FinishCount = 0;
+        for (int i = 0; i < nodes.Count; i++)
+        {
+            nodes[i].master = master;
+            int result = nodes[i].InitStatus();
+            if (result == 1)
+            {
+                LockCount += 1;
+            }
+            else if (result == 2)
+            {
+                UnlockCount += 1;
+            }
+            else if (result == 3)
+            {
+                FinishCount += 1;
+            }
+        }
+        return nodes;
+        //Debug.Log(string.Format("level selector launched, with {0} level nodes loaded. {1} locked, {2} unlocked, {3} finished.", nodes.Count, LockCount, UnlockCount, FinishCount));
+    }
+    bool isUnlockable()
+    {
+        if (master != null)
+        {
+            return master.curTokenCount >= UnlockTokenRequired;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    void SetToLocked()
     {
         status = ThemeStatus.locked;
-
+        title.gameObject.SetActive(false);
+        
+        tokenFrame.gameObject.SetActive(true);
+        tokenFrame.color = new Color(1f, 1f, 1f, 1f);
+        tokenIcon.gameObject.SetActive(true);
+        tokenIcon.color = new Color(1f, 1f, 1f, 0f);
+        tokenNeed.gameObject.SetActive(true);
+        tokenNeed.color = new Color(1f, 1f, 1f, 1f);
+        tokenNeed.SetText(UnlockTokenRequired.ToString());
     }
-    public void SetToUnlocked()
+    void SetToUnlocked()
     {
+        status = ThemeStatus.unlocked;
+        title.gameObject.SetActive(true);
 
+        tokenFrame.gameObject.SetActive(false);
+        tokenIcon.gameObject.SetActive(false);
+        tokenNeed.gameObject.SetActive(false);
     }
-    public void SetToFinished()
+    void AnimateToUnlocked()
     {
+        title.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).From().OnComplete(()=> SetToUnlocked());
+        tokenFrame.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+        tokenIcon.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+        tokenNeed.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+    }
 
+    void SetToFinished()
+    {
+        //for now same as unlocked, manifesto to be added
+        SetToUnlocked();
+        status = ThemeStatus.finished;
+    }
+    void UnlockDefaultLevels()
+    {
+        //Debug.Log("execute unlock default level ()");
+        for(int i = 0; i < nodes.Count; i++)
+        {
+            if (nodes[i].setupData.previousLevel == null)
+            {
+                nodes[i].UnlockLevel();
+            }
+        }
     }
 }

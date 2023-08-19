@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.Rendering.Universal;
+using TMPro;
 
 public class LevelSelector : MonoBehaviour
 {
     [Header("Debug")]
     [SerializeField] bool unlockAll = false;
+    [SerializeField] bool getTokens = false;
 
     static public LevelSelector singleton;
     private void Awake()
@@ -24,10 +26,13 @@ public class LevelSelector : MonoBehaviour
     [Header("Player Data")]
     public LevelRecords playerLevelRecords;
     public int curTokenCount;
-    [Header("Children Objs")]
-    [SerializeField] Transform nodeParent;
+    [Header("Gameplay Data")]
     [SerializeField] List<SelectorNode> nodes;
     [SerializeField] List<SelectorTheme> themes;
+    [Header("Children Objs")]
+    [SerializeField] Transform nodeParent;
+    [SerializeField] TextMeshPro tokenCount;
+    
 
 
     public void SelectorShow()
@@ -42,28 +47,63 @@ public class LevelSelector : MonoBehaviour
             Debug_UnlockAllNodes();
             unlockAll = false;
         }
+        if (getTokens)
+        {
+            TokenCountAdjust(20);
+            getTokens = false;
+        }
     }
     private void Start()
     {
-        CollectAllNodes();
         NodeParentInit();
-        //test only
-        curTokenCount = 100;
+
+        themes.Clear();
+        nodes.Clear();
+
+        CollectAllThemes();
+        //CollectAllNodes();
+
+        TokenCountAdjust(0);
+    }
+    public void UnlockTheme(int themeIndex, int tokenCost)
+    {
+        if (!playerLevelRecords.isThemeUnlocked(themeIndex))
+        {
+            playerLevelRecords.unlockedThemes.Add(themeIndex);
+        }
+        TokenCountAdjust(-tokenCost);
+    }
+    public void FinishLevel(int levelIndex)
+    {
+        if (!playerLevelRecords.isLevelFinished(levelIndex))
+        {
+            playerLevelRecords.finishedLevels.Add(levelIndex);
+        }
+        TokenCountAdjust(1);
+    }
+    void TokenCountAdjust(int count)
+    {
+        curTokenCount += count;
+        if(curTokenCount < 0)
+        {
+            Debug.LogError(string.Format("Selector Token Count Reacn invalid number:{0}.", curTokenCount));
+        }
+        tokenCount.SetText(curTokenCount.ToString());
     }
     void NodeParentInit()
     {
         nodeParent.localPosition = new Vector3(-45f, 0f, 0f);
     }
-    void CollectAllNodes()
+    void CollectAllThemes()
     {
-        nodes = nodeParent.GetComponentsInChildren<SelectorNode>().ToList();
+        themes = nodeParent.GetComponentsInChildren<SelectorTheme>().ToList();
         int LockCount = 0;
         int UnlockCount = 0;
         int FinishCount = 0;
-        for (int i = 0; i < nodes.Count; i++)
+        for (int i = 0; i < themes.Count; i++)
         {
-            nodes[i].master = this;
-            int result = nodes[i].InitStatus();
+            themes[i].master = this;
+            int result = themes[i].InitStatus();
             if (result == 1)
             {
                 LockCount += 1;
@@ -76,8 +116,28 @@ public class LevelSelector : MonoBehaviour
             {
                 FinishCount += 1;
             }
+            nodes.AddRange(themes[i].CollectMyNodes()); ;
         }
-        Debug.Log(string.Format("level selector launched, with {0} level nodes loaded. {1} locked, {2} unlocked, {3} finished.", nodes.Count, LockCount, UnlockCount, FinishCount));
+        Debug.Log(string.Format("Level Selector launched, with {0} themes loaded. {1} locked, {2} unlocked, {3} finished.", nodes.Count, LockCount, UnlockCount, FinishCount));
+        int NodeLockCount = 0;
+        int NodeUnlockCount = 0;
+        int NodeFinishCount = 0;
+        for (int i = 0; i < nodes.Count; i++)
+        {
+            if (nodes[i].status == SelectorNode.NodeStatus.locked)
+            {
+                NodeLockCount += 1;
+            }
+            else if (nodes[i].status == SelectorNode.NodeStatus.unlocked)
+            {
+                NodeUnlockCount += 1;
+            }
+            else if (nodes[i].status == SelectorNode.NodeStatus.finished)
+            {
+                NodeFinishCount += 1;
+            }
+        }
+        Debug.Log(string.Format("Additional, with {0} levels loaded. {1} locked, {2} unlocked, {3} finished.", nodes.Count, NodeLockCount, NodeUnlockCount, NodeFinishCount));
     }
     public void Debug_UnlockAllNodes()
     {

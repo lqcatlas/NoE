@@ -18,6 +18,10 @@ public static class dConstants
         public const float SelectorToLevelAnimTransitionPhase2 = 0.8f;
         public const float SelectorToLevelAnimTransitionOnHold = 0f;
     }
-
+    public static class Gameplay
+    {
+        public const int DefaultThemeUnlockTokenRequirement = 6;
+    }
+    //below is deprecated
     public enum GameTheme { Clock = 1, Coin = 2};
 }
