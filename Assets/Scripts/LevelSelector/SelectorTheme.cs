@@ -17,8 +17,6 @@ public class SelectorTheme : MonoBehaviour
     [SerializeField] int themeIndex;
     [SerializeField] List<SelectorNode> nodes;
 
-
-
     [Header("Children Objs")]
     [SerializeField] Transform NodesParent;
     [SerializeField] SpriteRenderer frame;
@@ -100,6 +98,7 @@ public class SelectorTheme : MonoBehaviour
                 FinishCount += 1;
             }
         }
+        NodeReposition();
         return nodes;
         //Debug.Log(string.Format("level selector launched, with {0} level nodes loaded. {1} locked, {2} unlocked, {3} finished.", nodes.Count, LockCount, UnlockCount, FinishCount));
     }
@@ -107,7 +106,7 @@ public class SelectorTheme : MonoBehaviour
     {
         if (master != null)
         {
-            return master.curTokenCount >= UnlockTokenRequired;
+            return master.playerLevelRecords.tokens >= UnlockTokenRequired;
         }
         else
         {
@@ -159,6 +158,19 @@ public class SelectorTheme : MonoBehaviour
             {
                 nodes[i].UnlockLevel();
             }
+        }
+    }
+    void NodeReposition()
+    {
+        int minNodeCount = 10;
+        float radius = 7f;
+        float degree = Mathf.PI * 2 / Mathf.Max(nodes.Count, minNodeCount);
+        float startDegree = Mathf.PI / 3;
+        for(int i = 0; i < nodes.Count; i++)
+        {
+            float finalDegree = startDegree - degree * i;
+            Debug.Log(string.Format("angle at {0}", finalDegree));
+            nodes[i].transform.localPosition = radius * new Vector3(Mathf.Cos(finalDegree), Mathf.Sin(finalDegree), 0);
         }
     }
 }

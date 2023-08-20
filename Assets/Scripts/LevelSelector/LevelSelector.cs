@@ -25,7 +25,6 @@ public class LevelSelector : MonoBehaviour
     }
     [Header("Player Data")]
     public LevelRecords playerLevelRecords;
-    public int curTokenCount;
     [Header("Gameplay Data")]
     [SerializeField] List<SelectorNode> nodes;
     [SerializeField] List<SelectorTheme> themes;
@@ -83,12 +82,12 @@ public class LevelSelector : MonoBehaviour
     }
     void TokenCountAdjust(int count)
     {
-        curTokenCount += count;
-        if(curTokenCount < 0)
+        playerLevelRecords.tokens += count;
+        if(playerLevelRecords.tokens < 0)
         {
-            Debug.LogError(string.Format("Selector Token Count Reacn invalid number:{0}.", curTokenCount));
+            Debug.LogError(string.Format("Selector Token Count Reacn invalid number:{0}.", playerLevelRecords.tokens));
         }
-        tokenCount.SetText(curTokenCount.ToString());
+        tokenCount.SetText(playerLevelRecords.tokens.ToString());
     }
     void NodeParentInit()
     {

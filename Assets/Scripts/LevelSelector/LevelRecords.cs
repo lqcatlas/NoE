@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "PlayingData/LevelRecords")]
 public class LevelRecords : ScriptableObject
 {
+    public int tokens;
     public List<int> finishedLevels;
     public List<int> unlockedThemes;
 
