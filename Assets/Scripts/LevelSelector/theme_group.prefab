@@ -109,8 +109,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281545523
-  m_fontColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    rgba: 4284900966
+  m_fontColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -127,8 +127,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 1
@@ -385,6 +385,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80a020d389c5c5438afeaacd96f08e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FLOATING_RANGE_X: {x: 0.5, y: 0.9}
+  FLOATING_RANGE_Y: {x: 2, y: 3}
+  FLOATING_LOOP_TIME: {x: 6, y: 10}
 --- !u!1001 &1698219143059632709
 PrefabInstance:
   m_ObjectHideFlags: 0

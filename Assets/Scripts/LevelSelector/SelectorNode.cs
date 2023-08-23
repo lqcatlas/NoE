@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class SelectorNode : MonoBehaviour
 {
-    public enum NodeStatus { locked = 1, unlocked = 2, finished = 3};
+    public enum NodeStatus {hidden = 0, locked = 1, unlocked = 2, finished = 3};
     [Header("Gameplay")]
     public LevelSelector master;
     public NodeStatus status = NodeStatus.locked; 
@@ -20,6 +20,8 @@ public class SelectorNode : MonoBehaviour
     [SerializeField] CircleCollider2D inputCollider;
     [SerializeField] SpriteRenderer fill;
     [SerializeField] SpriteRenderer frame;
+    [SerializeField] SpriteRenderer outter_frame;
+    [SerializeField] SpriteRenderer outter_bg;
     [SerializeField] TextMeshPro levelName;
 
 
@@ -68,23 +70,20 @@ public class SelectorNode : MonoBehaviour
     public int InitStatus()
     {
         levelName.SetText(LocalizedAssetLookup.singleton.Translate(setupData.title));
-        if (master.playerLevelRecords.isLevelFinished(setupData.levelUID))
+        if (!master.playerLevelRecords.isThemeUnlocked(setupData.themeIndex))
+        {
+            SetToHidden();
+            return 0;
+        }
+        else if (master.playerLevelRecords.isLevelFinished(setupData.levelUID))
         {
             SetToFinished();
             return 3;
         }
         else if (setupData.previousLevel == null)
         {
-            if (master.playerLevelRecords.isThemeUnlocked(setupData.themeIndex))
-            {
-                SetToUnlocked();
-                return 2;
-            }
-            else
-            {
-                SetToLocked();
-                return 1;
-            }
+            SetToUnlocked();
+            return 2;
         }
         else if(master.playerLevelRecords.isLevelFinished(setupData.previousLevel.levelUID))
         {
@@ -95,6 +94,29 @@ public class SelectorNode : MonoBehaviour
         {
             SetToLocked();
             return 1;
+        }
+    }
+    public void UpdateStatus()
+    {
+        if (!master.playerLevelRecords.isThemeUnlocked(setupData.themeIndex))
+        {
+            SetToHidden();
+        }
+        else if (master.playerLevelRecords.isLevelFinished(setupData.levelUID))
+        {
+            SetToFinished();
+        }
+        else if (setupData.previousLevel == null)
+        {
+            SetToUnlocked();
+        }
+        else if (master.playerLevelRecords.isLevelFinished(setupData.previousLevel.levelUID))
+        {
+            SetToUnlocked();
+        }
+        else
+        {
+            SetToLocked();
         }
     }
     public void UnlockLevel()
@@ -110,8 +132,13 @@ public class SelectorNode : MonoBehaviour
         status = NodeStatus.finished;
         fill.gameObject.SetActive(true);
         fill.color = new Color(1f, 1f, 1f, 1f);
+        fill.transform.localScale = Vector3.one;
         frame.gameObject.SetActive(false);
-        inputCollider.enabled = true;
+        inputCollider.enabled = false;    
+
+        outter_frame.color = new Color(1f, 1f, 1f, 1f);
+        outter_bg.color = new Color(outter_bg.color.r, outter_bg.color.g, outter_bg.color.b, 1f);
+
         levelName.color = new Color(0.5f, 0.5f, 0.5f, 1f);
     }
     void SetToLocked()
@@ -120,6 +147,10 @@ public class SelectorNode : MonoBehaviour
         fill.gameObject.SetActive(false);
         frame.gameObject.SetActive(false);
         inputCollider.enabled = false;
+
+        outter_frame.color = new Color(1f, 1f, 1f, 1f);
+        outter_bg.color = new Color(outter_bg.color.r, outter_bg.color.g, outter_bg.color.b, 1f);
+
         levelName.color = new Color(1f, 1f, 1f, 0f);
     }
     void SetToUnlocked()
@@ -130,6 +161,29 @@ public class SelectorNode : MonoBehaviour
         fill.transform.localScale = Vector3.zero;
         frame.gameObject.SetActive(true);
         inputCollider.enabled = true;
+
+        outter_frame.color = new Color(1f, 1f, 1f, 1f);
+        outter_bg.color = new Color(outter_bg.color.r, outter_bg.color.g, outter_bg.color.b, 1f);
+
         levelName.color = new Color(1f, 1f, 1f, 0f);
     }
+    void SetToHidden()
+    {
+        status = NodeStatus.hidden;
+        fill.gameObject.SetActive(false);
+        frame.gameObject.SetActive(false);
+        inputCollider.enabled = false;
+
+        outter_frame.color = new Color(1f, 1f, 1f, 0f);
+        outter_bg.color = new Color(outter_bg.color.r, outter_bg.color.g, outter_bg.color.b, 0f);
+
+        levelName.color = new Color(1f, 1f, 1f, 0f);
+    }
+    public void AnimateToLocked()
+    {
+        outter_frame.DOFade(1f, dConstants.UI.StandardizedBtnAnimDuration);
+        outter_bg.DOFade(1f, dConstants.UI.StandardizedBtnAnimDuration);
+        transform.DOLocalMove(Vector3.zero, dConstants.UI.StandardizedBtnAnimDuration).From().OnComplete(()=> UpdateStatus());
+    }
+
 }

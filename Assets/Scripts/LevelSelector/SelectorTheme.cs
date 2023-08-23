@@ -52,7 +52,7 @@ public class SelectorTheme : MonoBehaviour
             {
                 master.UnlockTheme(themeIndex, UnlockTokenRequired);
                 AnimateToUnlocked();
-                UnlockDefaultLevels();
+                
             }
         }
         if(status == ThemeStatus.unlocked || status == ThemeStatus.finished)
@@ -73,6 +73,19 @@ public class SelectorTheme : MonoBehaviour
         {
             SetToLocked();
             return 1;
+        }
+    }
+    public void UpdateStatus()
+    {
+        //title.SetText(LocalizedAssetLookup.singleton.Translate(setupData.title));
+        if (master.playerLevelRecords.isThemeUnlocked(themeIndex))
+        {
+            //finished status check TBD
+            SetToUnlocked();
+        }
+        else
+        {
+            SetToLocked();
         }
     }
     public List<SelectorNode> CollectMyNodes()
@@ -141,6 +154,10 @@ public class SelectorTheme : MonoBehaviour
         tokenFrame.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
         tokenIcon.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
         tokenNeed.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+        for (int i = 0; i < nodes.Count; i++)
+        {
+            nodes[i].AnimateToLocked();
+        }
     }
 
     void SetToFinished()
@@ -149,27 +166,16 @@ public class SelectorTheme : MonoBehaviour
         SetToUnlocked();
         status = ThemeStatus.finished;
     }
-    void UnlockDefaultLevels()
-    {
-        //Debug.Log("execute unlock default level ()");
-        for(int i = 0; i < nodes.Count; i++)
-        {
-            if (nodes[i].setupData.previousLevel == null)
-            {
-                nodes[i].UnlockLevel();
-            }
-        }
-    }
     void NodeReposition()
     {
         int minNodeCount = 10;
         float radius = 7f;
-        float degree = Mathf.PI * 2 / Mathf.Max(nodes.Count, minNodeCount);
+        float degree = Mathf.PI * 1.9f / nodes.Count;
         float startDegree = Mathf.PI / 3;
         for(int i = 0; i < nodes.Count; i++)
         {
             float finalDegree = startDegree - degree * i;
-            Debug.Log(string.Format("angle at {0}", finalDegree));
+            //Debug.Log(string.Format("angle at {0}", finalDegree));
             nodes[i].transform.localPosition = radius * new Vector3(Mathf.Cos(finalDegree), Mathf.Sin(finalDegree), 0);
         }
     }

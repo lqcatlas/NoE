@@ -36,6 +36,14 @@ public class LevelSelector : MonoBehaviour
 
     public void SelectorShow()
     {
+        for(int i = 0; i < themes.Count; i++)
+        {
+            themes[i].UpdateStatus();
+        }
+        for (int i = 0; i < nodes.Count; i++)
+        {
+            nodes[i].UpdateStatus();
+        }
         gameObject.SetActive(true);
     }
 
@@ -72,13 +80,13 @@ public class LevelSelector : MonoBehaviour
         }
         TokenCountAdjust(-tokenCost);
     }
-    public void FinishLevel(int levelIndex)
+    public void FinishLevel(int levelUID)
     {
-        if (!playerLevelRecords.isLevelFinished(levelIndex))
+        if (!playerLevelRecords.isLevelFinished(levelUID))
         {
-            playerLevelRecords.finishedLevels.Add(levelIndex);
+            playerLevelRecords.finishedLevels.Add(levelUID);
+            TokenCountAdjust(1);
         }
-        TokenCountAdjust(1);
     }
     void TokenCountAdjust(int count)
     {

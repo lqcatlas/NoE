@@ -11,28 +11,26 @@ public class LevelRecords : ScriptableObject
 
     public bool isLevelFinished(int uid)
     {
-        bool found = false;
         for(int i = 0; i < finishedLevels.Count; i++)
         {
             if (finishedLevels[i] == uid)
             {
-                found = true;
-                break;
+                Debug.Log(string.Format("check level UID {0} in finished level, return true", uid));
+                return true;
             }
         }
-        return found;
+        Debug.Log(string.Format("check level UID {0} in finished level, return false", uid));
+        return false;
     }
     public bool isThemeUnlocked(int uid)
     {
-        bool found = false;
         for (int i = 0; i < unlockedThemes.Count; i++)
         {
             if (unlockedThemes[i] == uid)
             {
-                found = true;
-                break;
+                return true;
             }
         }
-        return found;
+        return false;
     }
 }

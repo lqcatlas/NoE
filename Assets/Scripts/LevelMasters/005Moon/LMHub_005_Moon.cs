@@ -24,12 +24,12 @@ public class LMHub_005_Moon : MonoBehaviour
     }
     public void SetTabletToDegree(int phaseIndex)
     {
-        phasePlate.transform.localRotation = Quaternion.Euler(0f, 0f, phaseDegrees[phaseIndex]);
+        phaseRotate.transform.localRotation = Quaternion.Euler(0f, 0f, phaseDegrees[phaseIndex]);
         phasePlate.GetComponent<SpriteRenderer>().DOFade(0f, PLATE_ROTATION_DURATION_PLAY * 2).From();
         phaseStar.GetComponent<SpriteRenderer>().DOFade(0f, PLATE_ROTATION_DURATION_PLAY * 5).From();
     }
     public void AnimateTabletToDegree(int phaseIndex)
     {
-        phasePlate.transform.DORotate(new Vector3(0f, 0f, phaseDegrees[phaseIndex]), PLATE_ROTATION_DURATION_PLAY);
+        phaseRotate.transform.DORotate(new Vector3(0f, 0f, phaseDegrees[phaseIndex]), PLATE_ROTATION_DURATION_PLAY);
     }
 }

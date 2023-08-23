@@ -366,10 +366,14 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void WinALevel()
     {
+        LevelSelector.singleton.FinishLevel(levelData.levelUID);
+
         hub.miscMaster.ScreenMaskFadeIn();
         bool result = false;
         Sequence seq = DOTween.Sequence();
         seq.AppendInterval(1.5f).AppendCallback(() => result = TryLoadNextLevel());
+
+        
         /*if (!result)
         {
             Debug.Log(string.Format("Theme ends. Plz go back to theme selector"));
@@ -412,6 +416,10 @@ public class LevelMasterBase : MonoBehaviour
             levelSetupData = levelSetupData.nextLevel;
             LevelInit();
             return true;
+        }
+        else
+        {
+            LevelExit();
         }
         return false;
     }

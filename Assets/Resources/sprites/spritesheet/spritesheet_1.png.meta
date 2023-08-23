@@ -2846,6 +2846,132 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: bulb_on@v1
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 769
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb898ad63d80e04b8d24d8d6293b850
+      internalID: 1976225001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulb_on@v2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd272d5dfadbc243bd840f1fe1d1905
+      internalID: -1510645359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulb_off@v1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3375d96398aba4e8db5894c86519d1
+      internalID: 935129763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulb_off@v2
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bcdd0c180894843986529af1df0801
+      internalID: -1323275175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulb_light@v1
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c83c301c00ef1ec4b89c0cf2fc32f7be
+      internalID: 48020980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bulb_light@v2
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b87e9d2644cc6c45a116d4c1e46a43e
+      internalID: 1867406002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -2860,6 +2986,7 @@ TextureImporter:
       window5_v1: -1311390543
       coin_shape_4: -682845913
       cell_frame@v2: -538937313
+      bulb_light@v1: 1976225001
       cell_frame@v3: 1068077397
       onigiri@v2: -829597296
       window1_full: -2042462037
@@ -2911,13 +3038,16 @@ TextureImporter:
       clock_tool_v6: 962059274
       window5_full: -872146286
       star1_v1: 521555965
+      bulb_off@v1: 1880714286
       window2_fill: 480405304
       star6_v3: -781750752
       coin_shape_20: -920651032
       coin_shape_11: -1872248968
       clocktime_tool_v11: 1014170568
+      bulb_off@v2: 1976225001
       coin_shape_15: 1042714110
       onigiri@v1: -41299935
+      bulb_on@v2: 935129763
       ILSH_S_v2: 1475740820
       sashimi@v2: 1960666750
       star3_v4: 2066761262
@@ -2942,6 +3072,7 @@ TextureImporter:
       moon_crescent1@v2: -1945855551
       coin_tool_tail_v1: -1806039361
       coin_tool_head_v2: -1036423111
+      bulb_on@v1: 935129763
       clocktime_tool_v9: 480742791
       star3_v1: -950381411
       sushi@v1: 1983163683
@@ -2979,6 +3110,7 @@ TextureImporter:
       clocktime_tool_v2: -1691713925
       window4_v2: 940230836
       exit_v1: 1334681943
+      bulb_light@v2: 935129763
       clocktime_tool_v4: 90361197
       clocktime_tool_v8: -476586744
       moon_crescent2@v2: 1391890634
