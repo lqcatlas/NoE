@@ -14,11 +14,6 @@ public class LM_005_Moon : LevelMasterBase
     public bool eclipseTriggered = false;
     public Vector2Int eclipseCoord;
 
-    [Header("Theme Animation Params")]
-    float CellFoodTrasitionDistance = 1f;
-    float CellFoodTrasitionDuration = 1f;
-    float originalFoodAlpha = 0.4f;
-
     public override void GetObjectReferences(GameObject _themeHub)
     {
         base.GetObjectReferences(null);
@@ -207,8 +202,7 @@ public class LM_005_Moon : LevelMasterBase
                 //levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
             }
             UpdateCells(eclipseCoord); 
-        }
-        
+        } 
     }
     public override bool CheckWinCondition()
     {

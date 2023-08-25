@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LMHub_004_Sushi : MonoBehaviour
 {
-    [Header("Tool")]
+    [Header("Assets")]
     public List<Sprite> statusSprites;
     [Header("Cells")]
     public Transform cellBgHolder;

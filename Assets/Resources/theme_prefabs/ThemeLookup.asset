@@ -33,3 +33,7 @@ MonoBehaviour:
     ThemeID: 5
     MasterScript: {fileID: 11500000, guid: 0fac2e1dd510cb946b11cc225f33840f, type: 3}
     ThemeSpecialHub: {fileID: 4644139329102416059, guid: 7f32a5fd5de3ddc43bca66f9f6e10a69, type: 3}
+  - Theme: lightbulb
+    ThemeID: 6
+    MasterScript: {fileID: 11500000, guid: 1d213bf90f9f58f4ebc561c775c36e66, type: 3}
+    ThemeSpecialHub: {fileID: 5242734479810822178, guid: df91e5e460decb9459e82338f7113b1e, type: 3}

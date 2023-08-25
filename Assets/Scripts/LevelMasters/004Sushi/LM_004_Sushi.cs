@@ -149,7 +149,7 @@ public class LM_004_Sushi : LevelMasterBase
         //cell bg update addition
         for (int i = 0; i < sushiHub.sushiPlates.Count; i++)
         {
-            if(sushiHub.sushiPlates[i].Key.coord == coord)
+            if (sushiHub.sushiPlates[i].Key.coord == coord)
             {
                 sushiHub.sushiPlates[i].Value.SetActive(true);
                 DataCell prev_cellData = levelData.previousBoard.GetCellDataByCoord(sushiHub.sushiPlates[i].Key.coord);
