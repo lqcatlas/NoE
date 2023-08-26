@@ -867,7 +867,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 8300000, guid: e2c4f807b87415440b8023eeb28170ae, type: 3}
   - {fileID: 8300000, guid: 9e8454e61638ecd4081ffcd5f6b7e2af, type: 3}
-  - {fileID: 8300000, guid: e2c4f807b87415440b8023eeb28170ae, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 0}
   introSource: {fileID: 1407233124}
   puzzleSource: {fileID: 231650543}

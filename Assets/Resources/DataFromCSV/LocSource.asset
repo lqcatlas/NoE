@@ -299,17 +299,17 @@ MonoBehaviour:
     EN: Set the sum of cells to 82
     CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u662F\u5BFF\u53F8\u6216\u996D\u56E2\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A82"
   - key: rule1_lv401
-    EN: Fish - Cell Played +3
-    CN: "\u9C7C - \u6253\u51FA\u7684\u683C\u5B50 +3"
+    EN: 'Fish: +3'
+    CN: "\u9C7C\uFF1A +3"
   - key: rule2_lv403
-    EN: Rice - Cell Played +3
-    CN: "\u7C73 - \u6253\u51FA\u7684\u683C\u5B50 -3"
+    EN: 'Rice: -3'
+    CN: "\u7C73\uFF1A -3"
   - key: rule3_lv404
-    EN: Sushi(Rice+Fish) - Cell Played =7
-    CN: "\u5BFF\u53F8\uFF08\u7C73+\u9C7C\uFF09 - \u683C\u5B50\u53D8\u4E3A7"
+    EN: 'Sushi(Rice+Fish): =7'
+    CN: "\u5BFF\u53F8\uFF08\u7C73+\u9C7C\uFF09\uFF1A =7"
   - key: rule4_lv405
-    EN: Onigiri(Rice+Fish) - Cell Played =2
-    CN: "\u996D\u56E2\uFF08\u9C7C+\u7C73\uFF09 - \u683C\u5B50\u53D8\u4E3A2"
+    EN: 'Onigiri(Rice+Fish): =2'
+    CN: "\u996D\u56E2\uFF08\u9C7C+\u7C73\uFF09\uFF1A =2"
   - key: rule5_lv403
     EN: Fish and Rice alternate
     CN: "\u9C7C\u548C\u7C73\u4EA4\u66FF\u51FA\u73B0"
@@ -368,8 +368,8 @@ MonoBehaviour:
     EN: "\u6708\u98DF\uFF01\u79E9\u5E8F\u518D\u6B21\u88AB\u541E\u566C\u3002"
     CN: "\u6708\u98DF\uFF01\u79E9\u5E8F\u518D\u6B21\u88AB\u541E\u566C\u3002"
   - key: play1_lv508
-    EN: "\u6708\u4EAE\u9759\u9759\u5730\u89C1\u8BC1\u7740\u4E00\u5207\u3002"
-    CN: "\u6708\u4EAE\u9759\u9759\u5730\u89C1\u8BC1\u7740\u4E00\u5207\u3002"
+    EN: "\u6708\u4EAE\u9759\u9759\u5730\u89C1\u8BC1\u7740\u3002"
+    CN: "\u6708\u4EAE\u9759\u9759\u5730\u89C1\u8BC1\u7740\u3002"
   - key: goal_lv501
     EN: Set calendar to 08/10
     CN: "\u5C06\u65E5\u5386\u8BBE\u4E3A8\u670810\u65E5"
@@ -409,3 +409,102 @@ MonoBehaviour:
   - key: rule5_lv502
     EN: '10+: Sunrise! LOSE'
     CN: "\u8D85\u8FC79\uFF1A\u592A\u9633\u5347\u8D77\uFF0C\u6E38\u620F\u5931\u8D25"
+  - key: themename_tm6
+    EN: Light Bulb
+    CN: "\u706F\u6CE1"
+  - key: levelname_lv601
+    EN: 1
+    CN: 1
+  - key: levelname_lv602
+    EN: 2
+    CN: 2
+  - key: levelname_lv603
+    EN: 3
+    CN: 3
+  - key: levelname_lv604
+    EN: 4
+    CN: 4
+  - key: levelname_lv605
+    EN: 5
+    CN: 5
+  - key: levelname_lv606
+    EN: 6
+    CN: 6
+  - key: levelname_lv607
+    EN: 7
+    CN: 7
+  - key: levelname_lv608
+    EN: 8
+    CN: 8
+  - key: init_lv601
+    EN: Light Bulb
+    CN: "\u706F\u6CE1"
+  - key: init_lv602
+    EN: "\u4EE3\u8868\u7740\u7075\u611F\u3002"
+    CN: "\u4EE3\u8868\u7740\u7075\u611F\u3002"
+  - key: init_lv603
+    EN: "\u5F53\u7EC6\u8282\u5F97\u4EE5\u4E32\u8054\uFF0C"
+    CN: "\u5F53\u7EC6\u8282\u5F97\u4EE5\u4E32\u8054\uFF0C"
+  - key: init_lv604
+    EN: "\u5728\u6F06\u9ED1\u4E2D\u5149\u660E\u95EA\u73B0\uFF0C"
+    CN: "\u5728\u6F06\u9ED1\u4E2D\u5149\u660E\u95EA\u73B0\uFF0C"
+  - key: init_lv605
+    EN: "\u95EA\u70C1\u4E0D\u5B9A\uFF0C"
+    CN: "\u95EA\u70C1\u4E0D\u5B9A\uFF0C"
+  - key: init_lv606
+    EN: "\u8FC7\u5EA6\u6C79\u6D8C\u7684\u7075\u611F\uFF0C"
+    CN: "\u8FC7\u5EA6\u6C79\u6D8C\u7684\u7075\u611F\uFF0C"
+  - key: init_lv607
+    EN: "\u521B\u4F5C\u5373\u662F\u5728\u5BFB\u627E\u6070\u5982\u5176\u5206\uFF0C"
+    CN: "\u521B\u4F5C\u5373\u662F\u5728\u5BFB\u627E\u6070\u5982\u5176\u5206\uFF0C"
+  - key: init_lv608
+    EN: "\u6CA1\u6709\u706F\u6CE1\uFF0C\u4EBA\u7C7B\u7684\u7075\u611F\u4ECE\u4F55\u800C\u6765\uFF1F"
+    CN: "\u6CA1\u6709\u706F\u6CE1\uFF0C\u4EBA\u7C7B\u7684\u7075\u611F\u4ECE\u4F55\u800C\u6765\uFF1F"
+  - key: play1_lv603
+    EN: "\u91CD\u5EFA\u79E9\u5E8F\u4E0E\u89C4\u5F8B\u3002"
+    CN: "\u91CD\u5EFA\u79E9\u5E8F\u4E0E\u89C4\u5F8B\u3002"
+  - key: play1_lv604
+    EN: "\u601D\u8DEF\u53D8\u5F97\u6E05\u6670\u660E\u6717\u3002"
+    CN: "\u601D\u8DEF\u53D8\u5F97\u6E05\u6670\u660E\u6717\u3002"
+  - key: play1_lv605
+    EN: "\u5149\u4EAE\u5982\u8424\u706B\u822C\u6D88\u901D\u3002"
+    CN: "\u5149\u4EAE\u5982\u8424\u706B\u822C\u6D88\u901D\u3002"
+  - key: play1_lv606
+    EN: "\u8BA9\u4EBA\u7741\u4E0D\u5F00\u773C\uFF0C\u5931\u53BB\u65B9\u5411\u3002"
+    CN: "\u8BA9\u4EBA\u7741\u4E0D\u5F00\u773C\uFF0C\u5931\u53BB\u65B9\u5411\u3002"
+  - key: play1_lv607
+    EN: "\u8FFD\u6C42\u7CBE\u786E\u5730\u63A7\u5236\u3002"
+    CN: "\u8FFD\u6C42\u7CBE\u786E\u5730\u63A7\u5236\u3002"
+  - key: goal_lv601
+    EN: "\u70B9\u4EAE2\u76CF\u706F\u6CE1"
+    CN: "\u70B9\u4EAE2\u76CF\u706F\u6CE1"
+  - key: goal_lv602
+    EN: "\u70B9\u4EAE5\u76CF\u706F\u6CE1"
+    CN: "\u70B9\u4EAE5\u76CF\u706F\u6CE1"
+  - key: goal_lv603
+    EN: "\u70B9\u4EAE5\u76CF\u706F\u6CE1"
+    CN: "\u70B9\u4EAE5\u76CF\u706F\u6CE1"
+  - key: goal_lv604
+    EN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
+    CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
+  - key: goal_lv605
+    EN: "\u7184\u706D\u5168\u90E8\u706F\u6CE1"
+    CN: "\u7184\u706D\u5168\u90E8\u706F\u6CE1"
+  - key: goal_lv606
+    EN: "\u53EA\u70B9\u4EAE\u89D2\u843D\u91CC\u7684\u706F\u6CE1"
+    CN: "\u53EA\u70B9\u4EAE\u89D2\u843D\u91CC\u7684\u706F\u6CE1"
+  - key: goal_lv607
+    EN: "\u540C\u4E00\u65F6\u95F4\u70B9\u4EAE5\u76CF\u706F\u6CE1"
+    CN: "\u540C\u4E00\u65F6\u95F4\u70B9\u4EAE5\u76CF\u706F\u6CE1"
+  - key: goal_lv608
+    EN: "\u540C\u65F6\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
+    CN: "\u540C\u65F6\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
+  - key: rule1_lv601
+    EN: Played cell +1
+    CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
+  - key: rule1_lv603
+    EN: Played and adjacent cells +1
+    CN: "\u6253\u51FA\u53CA\u76F8\u90BB\u7684\u683C\u5B50 +1"
+  - key: rule2_lv601
+    EN: Light on when adjacent to 2+ same numbers
+    CN: "\u4E0E\u4E24\u4E2A\u53CA\u4EE5\u4E0A\u76F8\u540C\u6570\u5B57\u76F8\u90BB\u5219\u70B9\u4EAE"

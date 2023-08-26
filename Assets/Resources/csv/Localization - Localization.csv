@@ -94,10 +94,10 @@ UID,Key,EN,CN
 93,goal_lv406,Set all cells to UNIQUE,将所有格子变为不同数字
 94,goal_lv407,Set the sum of cells to 20,将数字总和变为20
 95,goal_lv408,Set the sum of cells to 82,每个格子都是寿司或饭团时，<br>将数字总和变为82
-96,rule1_lv401,Fish - Cell Played +3,鱼 - 打出的格子 +3
-97,rule2_lv403,Rice - Cell Played +3,米 - 打出的格子 -3
-98,rule3_lv404,Sushi(Rice+Fish) - Cell Played =7,寿司（米+鱼） - 格子变为7
-99,rule4_lv405,Onigiri(Rice+Fish) - Cell Played =2,饭团（鱼+米） - 格子变为2
+96,rule1_lv401,Fish: +3,鱼： +3
+97,rule2_lv403,Rice: -3,米： -3
+98,rule3_lv404,Sushi(Rice+Fish): =7,寿司（米+鱼）： =7
+99,rule4_lv405,Onigiri(Rice+Fish): =2,饭团（鱼+米）： =2
 100,rule5_lv403,Fish and Rice alternate,鱼和米交替出现
 101,themename_tm5,Moon,月亮
 102,levelname_lv501,Moon,月亮
@@ -117,7 +117,7 @@ UID,Key,EN,CN
 116,init_lv507,神迹因此成为传说。,神迹因此成为传说。
 117,init_lv508,周而复始，秩序与癫狂的轮回。,周而复始，秩序与癫狂的轮回。
 118,play1_lv507,月食！秩序再次被吞噬。,月食！秩序再次被吞噬。
-119,play1_lv508,月亮静静地见证着一切。,月亮静静地见证着一切。
+119,play1_lv508,月亮静静地见证着。,月亮静静地见证着。
 120,goal_lv501,Set calendar to 08/10,将日历设为8月10日
 121,goal_lv502,Set a line to 08/13,让某一行成为8月13日
 122,goal_lv503,Set a line and a row to 08/15,让某一行和列同时成为8月15日
@@ -131,3 +131,36 @@ UID,Key,EN,CN
 130,rule3_lv503,Full: +5,满月：+5
 131,rule4_lv507,Eclipse(Full + 9): All cells -5,月食（满月+9）：全场 -5
 132,rule5_lv502,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
+133,themename_tm6,Light Bulb,灯泡
+134,levelname_lv601,1,1
+135,levelname_lv602,2,2
+136,levelname_lv603,3,3
+137,levelname_lv604,4,4
+138,levelname_lv605,5,5
+139,levelname_lv606,6,6
+140,levelname_lv607,7,7
+141,levelname_lv608,8,8
+142,init_lv601,Light Bulb,灯泡
+143,init_lv602,代表着灵感。,代表着灵感。
+144,init_lv603,当细节得以串联，,当细节得以串联，
+145,init_lv604,在漆黑中光明闪现，,在漆黑中光明闪现，
+146,init_lv605,闪烁不定，,闪烁不定，
+147,init_lv606,过度汹涌的灵感，,过度汹涌的灵感，
+148,init_lv607,创作即是在寻找恰如其分，,创作即是在寻找恰如其分，
+149,init_lv608,没有灯泡，人类的灵感从何而来？,没有灯泡，人类的灵感从何而来？
+150,play1_lv603,重建秩序与规律。,重建秩序与规律。
+151,play1_lv604,思路变得清晰明朗。,思路变得清晰明朗。
+152,play1_lv605,光亮如萤火般消逝。,光亮如萤火般消逝。
+153,play1_lv606,让人睁不开眼，失去方向。,让人睁不开眼，失去方向。
+154,play1_lv607,追求精确地控制。,追求精确地控制。
+155,goal_lv601,点亮2盏灯泡,点亮2盏灯泡
+156,goal_lv602,点亮5盏灯泡,点亮5盏灯泡
+157,goal_lv603,点亮5盏灯泡,点亮5盏灯泡
+158,goal_lv604,点亮全部灯泡,点亮全部灯泡
+159,goal_lv605,熄灭全部灯泡,熄灭全部灯泡
+160,goal_lv606,只点亮角落里的灯泡,只点亮角落里的灯泡
+161,goal_lv607,同一时间点亮5盏灯泡,同一时间点亮5盏灯泡
+162,goal_lv608,同时点亮全部灯泡,同时点亮全部灯泡
+163,rule1_lv601,Played cell +1,打出的格子 +1
+164,rule1_lv603,Played and adjacent cells +1,打出及相邻的格子 +1
+165,rule2_lv601,Light on when adjacent to 2+ same numbers,与两个及以上相同数字相邻则点亮
