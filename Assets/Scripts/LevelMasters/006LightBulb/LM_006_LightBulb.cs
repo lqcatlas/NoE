@@ -33,6 +33,8 @@ public class LM_006_LightBulb : LevelMasterBase
             if (temp_cellData != null)
             {
                 hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
+                hub.boardMaster.cells[i].numberTxt.fontSize = 9;
+                hub.boardMaster.cells[i].numberTxt.color = Color.white;
                 //additional
                 GameObject plateBg = Instantiate(lightbulbHub.bulbBgTemplate, lightbulbHub.cellBgHolder);
                 plateBg.transform.position = hub.boardMaster.cells[i].transform.position;
@@ -114,6 +116,8 @@ public class LM_006_LightBulb : LevelMasterBase
             DataCell prev_cellData = levelData.previousBoard.GetCellDataByCoord(lightbulbHub.lightBulbs[i].Key.coord);
             DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(lightbulbHub.lightBulbs[i].Key.coord);
             lightbulbHub.lightBulbs[i].Value.GetComponent<SpriteRenderer>().sprite = lightbulbHub.bulbSprites[temp_cellData.status];
+            lightbulbHub.lightBulbs[i].Key.numberTxt.color = temp_cellData.status == 0 ? Color.white : dConstants.UI.BackgroundDefaultBalck;
+            //VFX TBD
         }
     }
     public override bool CheckWinCondition()
@@ -139,7 +143,7 @@ public class LM_006_LightBulb : LevelMasterBase
         }
         else if (levelData.levelIndex == 3)
         {
-            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 5);
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 4);
         }
         else if (levelData.levelIndex == 4)
         {

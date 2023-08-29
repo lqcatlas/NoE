@@ -1205,7 +1205,7 @@ PrefabInstance:
     - target: {fileID: 1925034961179543218, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 1976225001, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+      objectReference: {fileID: -81264564, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     - target: {fileID: 3100827147518323821, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_604
@@ -1546,6 +1546,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5718106933962749381}
     m_Modifications:
+    - target: {fileID: 1925034961179543218, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 58489355, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     - target: {fileID: 4346134455982857764, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_text
       value: "\u6C38\u4E0D\u505C\u6B47\u3002"
