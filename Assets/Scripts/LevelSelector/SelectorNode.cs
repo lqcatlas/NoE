@@ -134,7 +134,7 @@ public class SelectorNode : MonoBehaviour
         fill.color = new Color(1f, 1f, 1f, 1f);
         fill.transform.localScale = Vector3.one;
         frame.gameObject.SetActive(false);
-        inputCollider.enabled = false;    
+        inputCollider.enabled = true;    
 
         outter_frame.color = new Color(1f, 1f, 1f, 1f);
         outter_bg.color = new Color(outter_bg.color.r, outter_bg.color.g, outter_bg.color.b, 1f);
