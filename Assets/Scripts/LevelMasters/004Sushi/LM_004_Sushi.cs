@@ -147,6 +147,7 @@ public class LM_004_Sushi : LevelMasterBase
             Debug.LogError(string.Format("master script of {0} reaches undefined level", levelData.theme));
         }
         //cell bg update addition
+        //cannot put in UpdateCells duel to its animation needs
         for (int i = 0; i < sushiHub.sushiPlates.Count; i++)
         {
             if (sushiHub.sushiPlates[i].Key.coord == coord)

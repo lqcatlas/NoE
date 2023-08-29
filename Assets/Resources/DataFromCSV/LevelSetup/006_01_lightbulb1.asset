@@ -44,5 +44,5 @@ MonoBehaviour:
     - coord: {x: 1, y: 1}
       value: 2
       status: 0
-    toolCount: 4
+    toolCount: 6
     toolStatus: 0

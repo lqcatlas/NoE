@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 926363918380194026}
   - component: {fileID: 926363918380194027}
-  - component: {fileID: 926363918380194024}
   m_Layer: 0
   m_Name: lightbulbTemplate
   m_TagString: Untagged
@@ -85,32 +84,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &926363918380194024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926363918380194025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa742788990db734b9665dadd2b1aff4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentSprite: {fileID: 0}
-  slides:
-  - {fileID: 170430977, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: 2019611272, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: -1691713925, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: -452774770, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: 90361197, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: -961180665, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: 692642002, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: 1661466280, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: -476586744, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: 480742791, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: -1521693884, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: 1014170568, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  fixedIntervalBySeconds: 1
-  additionalIntervalRangeBySeconds: 0
-  SwitchByOrder: 1

@@ -45,6 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76ec7d0c7389ae341800c1b05becefd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulbSprites:
+  - {fileID: 935129763, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+  - {fileID: 1976225001, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+  bulbToolSprite: {fileID: 935129763, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   cellBgHolder: {fileID: 4068668159233435932}
   bulbBgTemplate: {fileID: 926363918380194025, guid: b477c3a2af6924b4e8f99bfd629a6552, type: 3}
 --- !u!1 &8390322059011748740

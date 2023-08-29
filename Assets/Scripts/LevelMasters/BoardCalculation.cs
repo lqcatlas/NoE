@@ -9,6 +9,10 @@ public class BoardCalculation
 {
     //shared board related calculation functions
     //used in goal and play calculation across themes
+    static public int Manhattan_Dist(Vector2Int coord1, Vector2Int coord2)
+    {
+        return Mathf.Abs(coord1.x - coord2.x) + Mathf.Abs(coord1.y - coord2.y);
+    }
     static public int ModX_Range(int X, Vector2Int Range)
     {
         int rangeDistance = Range.y - Range.x + 1;

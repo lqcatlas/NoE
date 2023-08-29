@@ -50,13 +50,60 @@ public class LM_006_LightBulb : LevelMasterBase
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
-        //TBD
-        // cell +1 etc.
+        Vector2Int numberRange = new Vector2Int(1, 5);
+        //cell number rule
+        //lv 1
+        //cell +1
+        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 2)
+        {
+            for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+            {
+                if (levelData.curBoard.cells[i].coord == coord)
+                {
+                    levelData.curBoard.cells[i].value += 1;
+                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                }
+
+            }
+        }
+        //lv 3+
+        //cross cells +1
+        else if (levelData.levelIndex >= 3 && levelData.levelIndex <= 8)
+        {
+            for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+            {
+                if (BoardCalculation.Manhattan_Dist(levelData.curBoard.cells[i].coord, coord) <= 1)
+                {
+                    levelData.curBoard.cells[i].value += 1;
+                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError(string.Format("master script of {0} reaches undefined level", levelData.theme));
+        }
+        
     }
     public override void HandleEnvironment(Vector2Int coord)
     {
-        //TBD
-        //calculate cell status(light up or not)
+        int LightOnReq = 2;
+        //double pass on cells to update light on/off
+        for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+        {
+            int SameCount = 0;
+            for (int j = 0; j < levelData.curBoard.cells.Count; j++)
+            {
+                if (BoardCalculation.Manhattan_Dist(levelData.curBoard.cells[i].coord, levelData.curBoard.cells[j].coord) == 1)
+                {
+                    if (levelData.curBoard.cells[i].value == levelData.curBoard.cells[j].value)
+                    {
+                        SameCount += 1;
+                    }
+                }
+            }
+            levelData.curBoard.cells[i].status = SameCount >= LightOnReq ? 1 : 0;
+        }
     }
     public override void UpdateCells(Vector2Int coord)
     {
@@ -64,55 +111,43 @@ public class LM_006_LightBulb : LevelMasterBase
         //cell bg update addition
         for (int i = 0; i < lightbulbHub.lightBulbs.Count; i++)
         {
-            if (lightbulbHub.lightBulbs[i].Key.coord == coord)
-            {
-                //lightbulbHub.lightBulbs[i].Value.SetActive(true);
-                DataCell prev_cellData = levelData.previousBoard.GetCellDataByCoord(lightbulbHub.lightBulbs[i].Key.coord);
-                DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(lightbulbHub.lightBulbs[i].Key.coord);
-                lightbulbHub.lightBulbs[i].Value.GetComponent<SpriteRenderer>().sprite = lightbulbHub.bulbSprites[temp_cellData.status];
-
-                //TBD light on/off VFX
-                //FoodPlaceAnimation(sushiHub.sushiPlates[i].Value, prev_cellData.status, levelData.curBoard.toolStatus, temp_cellData.status);
-                //Debug.Log(string.Format("food animation input params {0},{1},{2}", prev_cellData.status, levelData.curBoard.toolStatus, temp_cellData.status));
-                break;
-            }
+            DataCell prev_cellData = levelData.previousBoard.GetCellDataByCoord(lightbulbHub.lightBulbs[i].Key.coord);
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(lightbulbHub.lightBulbs[i].Key.coord);
+            lightbulbHub.lightBulbs[i].Value.GetComponent<SpriteRenderer>().sprite = lightbulbHub.bulbSprites[temp_cellData.status];
         }
     }
     public override bool CheckWinCondition()
     {
         /*
-        将日历设为8月10日
-        让某一行成为8月13日
-        让某一行和某一列成为8月15日
-        让所有格子成为相同数字
-        让所有格子成为不同数字
-        经历3次完整月相
-        让所有格子为6
-        经历两次月食后，让所有格子回到最初值
-         */
+        点亮2盏灯泡
+        点亮5盏灯泡
+        点亮5盏灯泡
+        点亮全部灯泡
+        熄灭全部灯泡
+        只点亮角落里的灯泡
+        同一时间点亮5盏灯泡
+        同时点亮全部灯泡
+        */
         bool result = false;
         if (levelData.levelIndex == 1)
         {
-            List<int> targetLineNumber = new List<int>() { 0, 8, 1, 0 };
-            return BoardCalculation.ExactLineMatchX(levelData.curBoard, targetLineNumber);
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 2);
         }
         else if (levelData.levelIndex == 2)
         {
-            List<int> targetLineNumber = new List<int>() { 0, 8, 1, 3 };
-            return BoardCalculation.ExactLineMatchX(levelData.curBoard, targetLineNumber);
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 5);
         }
         else if (levelData.levelIndex == 3)
         {
-            List<int> targetNumber = new List<int>() { 0, 8, 1, 5 };
-            return BoardCalculation.ExactLineMatchX(levelData.curBoard, targetNumber) || BoardCalculation.ExactRowMatchX(levelData.curBoard, targetNumber);
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 5);
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.Same_All(levelData.curBoard);
+            return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.Unique_All(levelData.curBoard);
+            return BoardCalculation.CountStatusX_All(levelData.curBoard, 0);
         }
         else if (levelData.levelIndex == 6)
         {
