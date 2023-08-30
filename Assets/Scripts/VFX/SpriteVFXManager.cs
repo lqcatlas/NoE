@@ -1,6 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+[System.Serializable]
+public class TimedEvents
+{
+    public CustomizedEvent triggeringEvent;
+    public float interval;
+    public float timer;
+}
 
 public class SpriteVFXManager : MonoBehaviour
 {
@@ -17,27 +24,31 @@ public class SpriteVFXManager : MonoBehaviour
             Destroy(this);
         }
     }
-
-    [SerializeField] CustomizedEvent triggeringEvnet;
+    
+    //[SerializeField] CustomizedEvent triggeringEvnet;
+    //[SerializeField] float regularInterval = 1f;
     [Header("Settings")]
-    [SerializeField] float regularInterval = 1f;
+    [SerializeField] List<TimedEvents> events;
+    
 
     [Header("Debug")]
     [SerializeField] bool testTrigger;
 
-    private float timer;
     private void Update()
     {
-        if (testTrigger && triggeringEvnet != null)
+        for(int i=0;i< events.Count; i++)
         {
-            testTrigger = false;
-            triggeringEvnet.Raise();
+            if (testTrigger && events[i].triggeringEvent != null)
+            {
+                events[i].triggeringEvent.Raise();
+            }
+            events[i].timer += Time.deltaTime;
+            if (events[i].timer >= events[i].interval && events[i].interval > 0f)
+            {
+                events[i].timer -= events[i].interval;
+                events[i].triggeringEvent.Raise();
+            }
         }
-        timer += Time.deltaTime;
-        if(timer >= regularInterval && regularInterval > 0)
-        {
-            timer = 0;
-            triggeringEvnet.Raise();
-        }
+        testTrigger = false;
     }
 }

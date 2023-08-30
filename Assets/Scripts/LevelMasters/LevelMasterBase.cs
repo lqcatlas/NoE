@@ -20,6 +20,8 @@ public class LevelMasterBase : MonoBehaviour
     //Data setup by launcher before calling LevelInit()
     [Header("Setup Data")]
     public SheetItem_LevelSetup levelSetupData;
+    public float ThemeAnimationDelayAfterInit;
+    public float ThemeAnimationDelayAfterPlay;
 
     [Header("In-Level Data")]
     public DataLevel levelData = new DataLevel();
@@ -56,6 +58,8 @@ public class LevelMasterBase : MonoBehaviour
         GetObjectReferences(_themeHub);
         RegisterChildren();
         //GetDataReferences
+        ThemeAnimationDelayAfterInit = dConstants.VFX.CallbackAnimationDelayAfterInit;
+        ThemeAnimationDelayAfterPlay = dConstants.VFX.CallbackAnimationDelayAfterPlay;
     }
     public void LevelInit()
     {
@@ -78,7 +82,7 @@ public class LevelMasterBase : MonoBehaviour
         UpdatePlayable();
         //Below should be called as calledback when all key FX is handled
         Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(dConstants.VFX.CallbackAnimationDelayAfterInit);
+        seq.AppendInterval(ThemeAnimationDelayAfterInit);
         seq.AppendCallback(() => LevelInitCallback());
     }
     public void LevelInitCallback()
@@ -109,7 +113,7 @@ public class LevelMasterBase : MonoBehaviour
         UpdatePlayable();
         //Below should be called as calledback when all key FX is handled
         Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(dConstants.VFX.CallbackAnimationDelayAfterPlay);
+        seq.AppendInterval(ThemeAnimationDelayAfterPlay);
         seq.AppendCallback(() => PlayCallback());
     }
     public void PlayCallback()

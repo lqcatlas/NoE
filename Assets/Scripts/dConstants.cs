@@ -7,7 +7,7 @@ public static class dConstants
     public static class UI
     {
         public const float StandardizedBtnAnimDuration = 0.3f;
-        public static Color BackgroundDefaultBalck = new Color(.15f, .15f, .15f, 1f);
+        public static Color BackgroundDefaultBlack = new Color(.15f, .15f, .15f, 1f);
     }
     public static class VFX
     {
