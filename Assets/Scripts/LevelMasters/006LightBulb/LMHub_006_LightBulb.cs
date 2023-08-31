@@ -12,4 +12,17 @@ public class LMHub_006_LightBulb : MonoBehaviour
     public Transform cellBgHolder;
     public GameObject bulbBgTemplate;
     public List<KeyValuePair<CellMaster, LightbulbCellBg>> lightBulbs;
+    [Header("Play Audio")]
+    public List<AudioClip> switchClips;
+    public AudioClip GetSwitchClip(int index)
+    {
+        if (index > switchClips.Count)
+        {
+            return null;
+        }
+        else
+        {
+            return switchClips[index];
+        }
+    }
 }

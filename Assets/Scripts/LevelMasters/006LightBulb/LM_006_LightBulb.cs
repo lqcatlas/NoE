@@ -58,7 +58,7 @@ public class LM_006_LightBulb : LevelMasterBase
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
-        Vector2Int numberRange = new Vector2Int(1, 5);
+        Vector2Int numberRange = new Vector2Int(1, 3);
         //cell number rule
         //lv 1
         //cell +1
@@ -121,8 +121,11 @@ public class LM_006_LightBulb : LevelMasterBase
         Sequence seq = DOTween.Sequence();
         seq.AppendCallback(() => UpdateCells_PlayCellValueUpdate(coord));
         seq.AppendInterval(POWER_SPREAD_DURATION);
-        seq.AppendCallback(() => UpdateCells_AdjacentCellsValueUpdate(coord));
-        seq.AppendInterval(VFX_INTERVAL_DURATION);
+        if(levelData.levelIndex >= 3 && levelData.levelIndex <= 8)
+        {
+            seq.AppendCallback(() => UpdateCells_AdjacentCellsValueUpdate(coord));
+            seq.AppendInterval(VFX_INTERVAL_DURATION);
+        } 
         seq.AppendCallback(() => UpdateCells_AllCellsStatusUpdate());
     }
     void UpdateCells_PlayCellValueUpdate(Vector2Int coord)
@@ -182,12 +185,12 @@ public class LM_006_LightBulb : LevelMasterBase
             eulerAngle = new Vector3(0f, 0f, 0f);
         }
         elec.transform.localEulerAngles = eulerAngle;
-
         elec.GetComponent<SpriteRenderer>().DOFade(0f, POWER_SPREAD_DURATION).From();
         elec.transform.DOLocalMove(MOVE_DISTANCE * new Vector3((origin.x - target.x), (origin.y - target.y), 0f), POWER_SPREAD_DURATION).From().OnComplete(()=>Destroy(elec));
     }
     void UpdateCells_AllCellsStatusUpdate()
     {
+        bool hasSwitch = false;
         for (int i = 0; i < lightbulbHub.lightBulbs.Count; i++)
         {
             DataCell prev_cellData = levelData.previousBoard.GetCellDataByCoord(lightbulbHub.lightBulbs[i].Key.coord);
@@ -195,13 +198,17 @@ public class LM_006_LightBulb : LevelMasterBase
             if(prev_cellData.status != temp_cellData.status)
             {
                 VFX_LightSwitch(lightbulbHub.lightBulbs[i], temp_cellData.status == 1);
+                hasSwitch = true;
             }
-            //VFX TBD
+        }
+        if (hasSwitch)
+        {
+            AudioDraft.singleton.PlaySFX(lightbulbHub.GetSwitchClip(Random.Range(0, 2)));
         }
     }
     void VFX_LightSwitch(KeyValuePair<CellMaster, LightbulbCellBg> taregtCell, bool isOn)
     {
-        Debug.Log(string.Format("VFX_LightSwitch() called on cell ({0}) set to ({1})", taregtCell.Key.coord, isOn ? "On" : "Off"));
+        //Debug.Log(string.Format("VFX_LightSwitch() called on cell ({0}) set to ({1})", taregtCell.Key.coord, isOn ? "On" : "Off"));
         if (isOn)
         {
             taregtCell.Key.numberTxt.DOColor(dConstants.UI.BackgroundDefaultBlack, LIGHT_SWITCH_DURATION);
