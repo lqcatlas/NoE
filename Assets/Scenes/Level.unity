@@ -2504,8 +2504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56848fb0a884694e84ccf998a5b265d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggeringEvnet: {fileID: 11400000, guid: dddee1ee2eec4e1419b1a4207eb02f20, type: 2}
-  regularInterval: 1.5
   events:
   - triggeringEvent: {fileID: 11400000, guid: dddee1ee2eec4e1419b1a4207eb02f20, type: 2}
     interval: 1.5
@@ -2687,7 +2685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LaunchLevelUID: 0
-  LevelSetup: {fileID: 11400000, guid: b3acfc2641c28274497d5dc03d07b633, type: 2}
+  LevelSetup: {fileID: 11400000, guid: 5311185c1a5eca54582e8dee0692938f, type: 2}
   LAUNCH_IT: 0
   levelSetupTable: []
   themeLookupTable: {fileID: 11400000, guid: 24d4cf5313d2bb346abaa9638ba89e42, type: 2}

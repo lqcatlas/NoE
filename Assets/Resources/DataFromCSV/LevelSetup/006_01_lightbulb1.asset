@@ -29,6 +29,8 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule1_lv601@@'
   - tag: 1
     ruleDesc: '@Loc=rule2_lv601@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule3_lv601@@'
   initBoard:
     boardSize: {x: 2, y: 2}
     cells:
@@ -44,5 +46,5 @@ MonoBehaviour:
     - coord: {x: 1, y: 1}
       value: 2
       status: 0
-    toolCount: 6
+    toolCount: 3
     toolStatus: 0

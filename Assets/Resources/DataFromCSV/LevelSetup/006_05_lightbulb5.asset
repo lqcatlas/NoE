@@ -21,13 +21,11 @@ MonoBehaviour:
   theme: '@Loc=themename_tm6@@'
   title: '@Loc=levelname_lv605@@'
   newInitNarrative: '@Loc=init_lv605@@'
-  newPlayNarratives:
-  - '@Loc=play1_lv605@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=init_lv601@@'
   - '@Loc=init_lv602@@'
   - '@Loc=init_lv603@@'
-  - '@Loc=play1_lv603@@'
   - '@Loc=init_lv604@@'
   - '@Loc=play1_lv604@@'
   goal: '@Loc=goal_lv605@@'
@@ -36,35 +34,37 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule1_lv603@@'
   - tag: 0
     ruleDesc: '@Loc=rule2_lv601@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule3_lv601@@'
   initBoard:
     boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 1
+      value: 3
       status: 0
     - coord: {x: 1, y: 0}
-      value: 8
+      value: 1
       status: 0
     - coord: {x: 2, y: 0}
-      value: 2
+      value: 4
       status: 0
     - coord: {x: 0, y: 1}
-      value: 6
+      value: 4
       status: 0
     - coord: {x: 1, y: 1}
-      value: 0
+      value: 1
       status: 0
     - coord: {x: 2, y: 1}
-      value: 6
+      value: 4
       status: 0
     - coord: {x: 0, y: 2}
-      value: 1
+      value: 4
       status: 0
     - coord: {x: 1, y: 2}
-      value: 7
+      value: 2
       status: 0
     - coord: {x: 2, y: 2}
-      value: 1
+      value: 3
       status: 0
-    toolCount: 8
-    toolStatus: 1
+    toolCount: 10
+    toolStatus: 0

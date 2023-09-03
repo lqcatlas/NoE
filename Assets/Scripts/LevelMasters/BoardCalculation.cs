@@ -89,6 +89,19 @@ public class BoardCalculation
         }
         return targetCount >= requiredTargetCount;
     }
+    static public int CountStatusX(DataBoard board, int X)
+    {
+        int targetCount = 0;
+        int targetValue = X;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            if (board.cells[i].status == targetValue)
+            {
+                targetCount += 1;
+            }
+        }
+        return targetCount;
+    }
     static public bool CountX_All(DataBoard board, int X)
     {
         bool allTarget = true;

@@ -27,46 +27,46 @@ MonoBehaviour:
   - '@Loc=init_lv601@@'
   - '@Loc=init_lv602@@'
   - '@Loc=init_lv603@@'
-  - '@Loc=play1_lv603@@'
   - '@Loc=init_lv604@@'
   - '@Loc=play1_lv604@@'
   - '@Loc=init_lv605@@'
-  - '@Loc=play1_lv605@@'
   goal: '@Loc=goal_lv606@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv603@@'
   - tag: 0
     ruleDesc: '@Loc=rule2_lv601@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule3_lv601@@'
   initBoard:
     boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 5
+      value: 3
       status: 0
     - coord: {x: 1, y: 0}
-      value: 2
+      value: 1
       status: 0
     - coord: {x: 2, y: 0}
-      value: 6
+      value: 4
       status: 0
     - coord: {x: 0, y: 1}
-      value: 0
+      value: 4
       status: 0
     - coord: {x: 1, y: 1}
-      value: 9
+      value: 1
       status: 0
     - coord: {x: 2, y: 1}
-      value: 7
+      value: 4
       status: 0
     - coord: {x: 0, y: 2}
       value: 4
       status: 0
     - coord: {x: 1, y: 2}
-      value: 1
+      value: 2
       status: 0
     - coord: {x: 2, y: 2}
-      value: 8
+      value: 3
       status: 0
-    toolCount: 15
-    toolStatus: 1
+    toolCount: 20
+    toolStatus: 0

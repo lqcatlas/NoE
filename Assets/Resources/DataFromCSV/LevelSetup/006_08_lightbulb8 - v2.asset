@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 006_07_lightbulb7
+  m_Name: 006_08_lightbulb8
   m_EditorClassIdentifier: 
-  levelUID: 607
+  levelUID: 608
   themeIndex: 6
-  levelIndex: 7
-  nextLevelIndex: 608
-  previousLevel: {fileID: 11400000, guid: 8740706cf0edd174b88e292ab5233d9c, type: 2}
-  nextLevel: {fileID: 11400000, guid: bf8dcf9c498c6864babc45ffe4d1ee4e, type: 2}
+  levelIndex: 8
+  nextLevelIndex: 0
+  previousLevel: {fileID: 11400000, guid: 5311185c1a5eca54582e8dee0692938f, type: 2}
+  nextLevel: {fileID: 0}
   theme: '@Loc=themename_tm6@@'
-  title: '@Loc=levelname_lv607@@'
-  newInitNarrative: '@Loc=init_lv607@@'
+  title: '@Loc=levelname_lv608@@'
+  newInitNarrative: '@Loc=init_lv608@@'
   newPlayNarratives:
-  - '@Loc=play1_lv607@@'
+  - '@Loc=play1_lv508@@'
   oldNarratives:
   - '@Loc=init_lv601@@'
   - '@Loc=init_lv602@@'
@@ -32,7 +32,9 @@ MonoBehaviour:
   - '@Loc=init_lv605@@'
   - '@Loc=init_lv606@@'
   - '@Loc=play1_lv606@@'
-  goal: '@Loc=goal_lv607@@'
+  - '@Loc=init_lv607@@'
+  - '@Loc=play1_lv607@@'
+  goal: '@Loc=goal_lv608@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv603@@'
@@ -41,34 +43,55 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule3_lv601@@'
   initBoard:
-    boardSize: {x: 3, y: 3}
+    boardSize: {x: 4, y: 4}
     cells:
     - coord: {x: 0, y: 0}
       value: 1
-      status: 0
+      status: 1
     - coord: {x: 1, y: 0}
-      value: 4
+      value: 1
       status: 1
     - coord: {x: 2, y: 0}
-      value: 4
+      value: 1
+      status: 1
+    - coord: {x: 3, y: 0}
+      value: 1
       status: 1
     - coord: {x: 0, y: 1}
       value: 1
-      status: 0
+      status: 1
     - coord: {x: 1, y: 1}
-      value: 4
+      value: 1
       status: 1
     - coord: {x: 2, y: 1}
-      value: 4
+      value: 1
+      status: 1
+    - coord: {x: 3, y: 1}
+      value: 1
       status: 1
     - coord: {x: 0, y: 2}
-      value: 3
-      status: 0
+      value: 1
+      status: 1
     - coord: {x: 1, y: 2}
-      value: 3
+      value: 1
       status: 1
     - coord: {x: 2, y: 2}
-      value: 3
-      status: 0
-    toolCount: 10
-    toolStatus: 0
+      value: 1
+      status: 1
+    - coord: {x: 3, y: 2}
+      value: 1
+      status: 1
+    - coord: {x: 0, y: 3}
+      value: 1
+      status: 1
+    - coord: {x: 1, y: 3}
+      value: 1
+      status: 1
+    - coord: {x: 2, y: 3}
+      value: 1
+      status: 1
+    - coord: {x: 3, y: 3}
+      value: 1
+      status: 1
+    toolCount: 245
+    toolStatus: 1

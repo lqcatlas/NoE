@@ -13,6 +13,8 @@ public class LM_006_LightBulb : LevelMasterBase
     [Header("Theme Additions")]
     public LMHub_006_LightBulb lightbulbHub;
 
+    private int Count_SwictchToOn;
+
     public override void GetObjectReferences(GameObject _themeHub)
     {
         base.GetObjectReferences(null);
@@ -50,6 +52,7 @@ public class LM_006_LightBulb : LevelMasterBase
                 cellBg.GetComponent<LightbulbCellBg>().fill.transform.localScale = temp_cellData.status == 1 ? Vector3.one : Vector3.zero;   
             }
         }
+        InitCells_AllCellsStatusUpdate();
     }
     public override void InitTool()
     {
@@ -58,7 +61,7 @@ public class LM_006_LightBulb : LevelMasterBase
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
-        Vector2Int numberRange = new Vector2Int(1, 3);
+        Vector2Int numberRange = new Vector2Int(1, 4);
         //cell number rule
         //lv 1
         //cell +1
@@ -95,6 +98,7 @@ public class LM_006_LightBulb : LevelMasterBase
     }
     public override void HandleEnvironment(Vector2Int coord)
     {
+        Count_SwictchToOn = 0;
         int LightOnReq = 2;
         //double pass on cells to update light on/off
         for (int i = 0; i < levelData.curBoard.cells.Count; i++)
@@ -111,6 +115,10 @@ public class LM_006_LightBulb : LevelMasterBase
                 }
             }
             levelData.curBoard.cells[i].status = SameCount >= LightOnReq ? 1 : 0;
+            if(levelData.previousBoard.cells[i].status == 0 && levelData.curBoard.cells[i].status == 1)
+            {
+                Count_SwictchToOn += 1;
+            }
         }
     }
     float POWER_SPREAD_DURATION = .3f;
@@ -206,6 +214,16 @@ public class LM_006_LightBulb : LevelMasterBase
             AudioDraft.singleton.PlaySFX(lightbulbHub.GetSwitchClip(Random.Range(0, 2)));
         }
     }
+    void InitCells_AllCellsStatusUpdate()
+    {
+        //bool hasSwitch = false;
+        for (int i = 0; i < lightbulbHub.lightBulbs.Count; i++)
+        {
+            
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(lightbulbHub.lightBulbs[i].Key.coord);
+            VFX_LightSwitch(lightbulbHub.lightBulbs[i], temp_cellData.status == 1);
+        }
+    }
     void VFX_LightSwitch(KeyValuePair<CellMaster, LightbulbCellBg> taregtCell, bool isOn)
     {
         //Debug.Log(string.Format("VFX_LightSwitch() called on cell ({0}) set to ({1})", taregtCell.Key.coord, isOn ? "On" : "Off"));
@@ -227,19 +245,19 @@ public class LM_006_LightBulb : LevelMasterBase
     public override bool CheckWinCondition()
     {
         /*
-        点亮2盏灯泡
+        点亮1盏灯泡
         点亮5盏灯泡
-        点亮5盏灯泡
+        点亮4盏灯泡
+        点亮6盏灯泡
+        一次性点亮4盏灯泡
+        一次性点亮8盏灯泡
+        用完所有灯泡，<br>保持点亮的灯泡<br>在4-6盏之间
         点亮全部灯泡
-        熄灭全部灯泡
-        只点亮角落里的灯泡
-        同一时间点亮5盏灯泡
-        同时点亮全部灯泡
         */
         bool result = false;
         if (levelData.levelIndex == 1)
         {
-            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 2);
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 1);
         }
         else if (levelData.levelIndex == 2)
         {
@@ -251,28 +269,48 @@ public class LM_006_LightBulb : LevelMasterBase
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 6);
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.CountStatusX_All(levelData.curBoard, 0);
+            return Count_SwictchToOn >= 4;
         }
         else if (levelData.levelIndex == 6)
         {
-            return false;
+            return Count_SwictchToOn >= 8;
         }
         else if (levelData.levelIndex == 7)
         {
-            return false;
+            return levelData.curBoard.toolCount == 0;
         }
         else if (levelData.levelIndex == 8)
         {
-            return false;
+            return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
         }
         else
         {
             Debug.LogError(string.Format("reach undefined level in CheckWinCondition of ({0})", levelData.theme));
         }
         return result;
+    }
+    public override bool CheckLoseCondition()
+    {
+        if (levelData.curBoard.toolCount == 0)
+        {
+            return true;
+        }
+        int lightOnCount = BoardCalculation.CountStatusX(levelData.curBoard, 1);
+        if (levelData.levelIndex == 7)
+        {
+            if (lightOnCount >= 4 && lightOnCount <= 6)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

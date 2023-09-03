@@ -21,8 +21,7 @@ MonoBehaviour:
   theme: '@Loc=themename_tm6@@'
   title: '@Loc=levelname_lv603@@'
   newInitNarrative: '@Loc=init_lv603@@'
-  newPlayNarratives:
-  - '@Loc=play1_lv603@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=init_lv601@@'
   - '@Loc=init_lv602@@'
@@ -32,6 +31,8 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule1_lv603@@'
   - tag: 0
     ruleDesc: '@Loc=rule2_lv601@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule3_lv601@@'
   initBoard:
     boardSize: {x: 2, y: 2}
     cells:
@@ -47,5 +48,5 @@ MonoBehaviour:
     - coord: {x: 1, y: 1}
       value: 2
       status: 0
-    toolCount: 20
+    toolCount: 8
     toolStatus: 0
