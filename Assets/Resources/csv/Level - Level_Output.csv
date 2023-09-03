@@ -36,6 +36,6 @@ UID,themeindex,levelindex,nextlevelindex,themename,levelname,init,play1,play2,pl
 603,6,3,604,@Loc=themename_tm6@@,@Loc=levelname_lv603@@,@Loc=init_lv603@@,,,,@Loc=goal_lv603@@,Transition,@Loc=rule1_lv603@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
 604,6,4,605,@Loc=themename_tm6@@,@Loc=levelname_lv604@@,@Loc=init_lv604@@,@Loc=play1_lv604@@,,,@Loc=goal_lv604@@,None,@Loc=rule1_lv603@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
 605,6,5,606,@Loc=themename_tm6@@,@Loc=levelname_lv605@@,@Loc=init_lv605@@,,,,@Loc=goal_lv605@@,None,@Loc=rule1_lv603@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
-606,6,6,607,@Loc=themename_tm6@@,@Loc=levelname_lv606@@,@Loc=init_lv606@@,@Loc=play1_lv606@@,,,@Loc=goal_lv606@@,None,@Loc=rule1_lv603@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
+606,6,6,607,@Loc=themename_tm6@@,@Loc=levelname_lv606@@,@Loc=init_lv606@@,,,,@Loc=goal_lv606@@,None,@Loc=rule1_lv603@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
 607,6,7,608,@Loc=themename_tm6@@,@Loc=levelname_lv607@@,@Loc=init_lv607@@,@Loc=play1_lv607@@,,,@Loc=goal_lv607@@,None,@Loc=rule1_lv603@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
-608,6,8,,@Loc=themename_tm6@@,@Loc=levelname_lv608@@,@Loc=init_lv608@@,,,,@Loc=goal_lv608@@,None,@Loc=rule1_lv603@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
+608,6,8,,@Loc=themename_tm6@@,@Loc=levelname_lv608@@,@Loc=init_lv608@@,@Loc=play1_lv608@@,,,@Loc=goal_lv608@@,None,@Loc=rule1_lv603@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,

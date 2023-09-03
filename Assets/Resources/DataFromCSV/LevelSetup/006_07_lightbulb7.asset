@@ -17,7 +17,7 @@ MonoBehaviour:
   levelIndex: 7
   nextLevelIndex: 608
   previousLevel: {fileID: 11400000, guid: 8740706cf0edd174b88e292ab5233d9c, type: 2}
-  nextLevel: {fileID: 11400000, guid: bf8dcf9c498c6864babc45ffe4d1ee4e, type: 2}
+  nextLevel: {fileID: 11400000, guid: 93d95e41aa4d9854c856a4abbabb6a04, type: 2}
   theme: '@Loc=themename_tm6@@'
   title: '@Loc=levelname_lv607@@'
   newInitNarrative: '@Loc=init_lv607@@'
@@ -31,7 +31,6 @@ MonoBehaviour:
   - '@Loc=play1_lv604@@'
   - '@Loc=init_lv605@@'
   - '@Loc=init_lv606@@'
-  - '@Loc=play1_lv606@@'
   goal: '@Loc=goal_lv607@@'
   ruleset:
   - tag: 0

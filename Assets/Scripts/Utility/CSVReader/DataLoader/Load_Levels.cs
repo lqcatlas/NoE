@@ -101,11 +101,11 @@ public class Load_Levels : MonoBehaviour
             }
         }
         result = null;
+        level.newPlayNarratives.Clear();
         if (levelDic.TryGetValue("play1", out result))
         {
             if (((string)result).Length > 0)
             {
-                level.newPlayNarratives.Clear();
                 level.newPlayNarratives.Add((string)result);
             }
         }

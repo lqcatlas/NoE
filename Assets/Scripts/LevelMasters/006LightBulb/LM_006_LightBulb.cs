@@ -242,6 +242,28 @@ public class LM_006_LightBulb : LevelMasterBase
             taregtCell.Value.fill.transform.DOScale(1f, LIGHT_SWITCH_DURATION).From();
         }
     }
+    private bool narrative_lv4_1 = false;
+    private bool narrative_lv7_1 = false;
+    private bool narrative_lv8_1 = false;
+    public override void AddtionalUpdate_Theme(Vector2Int coord)
+    {
+        //in-play narrative
+        if (!narrative_lv4_1 && levelData.levelIndex == 4 && BoardCalculation.CountStatusX(levelData.curBoard, 1) >= 2)
+        {
+            narrative_lv4_1 = true;
+            TryTypeNextPlayLine(0);
+        }
+        if (!narrative_lv7_1 && levelData.levelIndex == 7 && levelData.curBoard.toolCount <= 5)
+        {
+            narrative_lv7_1 = true;
+            TryTypeNextPlayLine(0);
+        }
+        if (!narrative_lv8_1 && levelData.levelIndex == 8 && BoardCalculation.CountStatusX(levelData.curBoard, 1) >= 12)
+        {
+            narrative_lv8_1 = true;
+            TryTypeNextPlayLine(0);
+        }
+    }
     public override bool CheckWinCondition()
     {
         /*

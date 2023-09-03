@@ -22,7 +22,7 @@ MonoBehaviour:
   title: '@Loc=levelname_lv608@@'
   newInitNarrative: '@Loc=init_lv608@@'
   newPlayNarratives:
-  - '@Loc=play1_lv508@@'
+  - '@Loc=play1_lv608@@'
   oldNarratives:
   - '@Loc=init_lv601@@'
   - '@Loc=init_lv602@@'
@@ -31,7 +31,6 @@ MonoBehaviour:
   - '@Loc=play1_lv604@@'
   - '@Loc=init_lv605@@'
   - '@Loc=init_lv606@@'
-  - '@Loc=play1_lv606@@'
   - '@Loc=init_lv607@@'
   - '@Loc=play1_lv607@@'
   goal: '@Loc=goal_lv608@@'
