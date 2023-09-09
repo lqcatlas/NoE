@@ -17,13 +17,28 @@ public class SelectorTheme : MonoBehaviour
     [SerializeField] int themeIndex;
     [SerializeField] List<SelectorNode> nodes;
 
-    [Header("Children Objs")]
+    [Header("Selector Data")]
+    [SerializeField] float NodeStartDegree = 0f;
+    [SerializeField] List<Sprite> ThemeSpriteByStatus;
+    [SerializeField] List<string> ThemeDescByStatus;
+    
+    [Header("Children")]
+    [SerializeField] ObjFloating FloatingGroup;
+    [SerializeField] ObjSwinging SwingingGroup;
     [SerializeField] Transform NodesParent;
-    [SerializeField] SpriteRenderer frame;
+
+    [Header("Theme")]
+    [SerializeField] SpriteRenderer themeFrame;
+    [SerializeField] SpriteRenderer themeBackground;
+    [SerializeField] SpriteRenderer themeIcon;
+    [SerializeField] TextMeshPro themeDesc;
+
+    [Header("Tokens")]
     [SerializeField] SpriteRenderer tokenFrame;
-    [SerializeField] TextMeshPro title;
     [SerializeField] SpriteRenderer tokenIcon;
     [SerializeField] TextMeshPro tokenNeed;
+
+    
     public void HoverOn()
     {
         if (status == ThemeStatus.locked)
@@ -129,28 +144,48 @@ public class SelectorTheme : MonoBehaviour
     void SetToLocked()
     {
         status = ThemeStatus.locked;
-        title.gameObject.SetActive(false);
-        
+
+        themeFrame.gameObject.SetActive(true);
+        themeFrame.color = dConstants.UI.DefaultColor_4th;
+        themeBackground.gameObject.SetActive(true);
+        themeBackground.color = dConstants.UI.DefaultColor_4th;
+        themeDesc.SetText(ThemeDescByStatus[0]);
+        themeDesc.color = dConstants.UI.DefaultColor_3rd;
+        themeIcon.sprite = ThemeSpriteByStatus[0];
+        themeIcon.color = dConstants.UI.DefaultColor_3rd;
+
         tokenFrame.gameObject.SetActive(true);
-        tokenFrame.color = new Color(1f, 1f, 1f, 1f);
+        tokenFrame.color = dConstants.UI.DefaultColor_1st;
         tokenIcon.gameObject.SetActive(true);
-        tokenIcon.color = new Color(1f, 1f, 1f, 0f);
+        tokenIcon.color = new Color(dConstants.UI.DefaultColor_1st.r, dConstants.UI.DefaultColor_1st.g, dConstants.UI.DefaultColor_1st.b, 0f);
         tokenNeed.gameObject.SetActive(true);
-        tokenNeed.color = new Color(1f, 1f, 1f, 1f);
+        tokenNeed.color = dConstants.UI.DefaultColor_1st;
         tokenNeed.SetText(UnlockTokenRequired.ToString());
+
+        FloatingGroup.enabled = false;
+        SwingingGroup.enabled = false;
     }
     void SetToUnlocked()
     {
         status = ThemeStatus.unlocked;
-        title.gameObject.SetActive(true);
+
+        themeFrame.gameObject.SetActive(false);
+        themeBackground.gameObject.SetActive(false);
+        themeDesc.SetText(ThemeDescByStatus[0]);
+        themeDesc.color = dConstants.UI.DefaultColor_2nd;
+        themeIcon.sprite = ThemeSpriteByStatus[1];
+        themeIcon.color = dConstants.UI.DefaultColor_1st;
 
         tokenFrame.gameObject.SetActive(false);
         tokenIcon.gameObject.SetActive(false);
         tokenNeed.gameObject.SetActive(false);
+
+        FloatingGroup.enabled = true;
+        SwingingGroup.enabled = true;
     }
     void AnimateToUnlocked()
     {
-        title.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).From().OnComplete(()=> SetToUnlocked());
+        themeDesc.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).From().OnComplete(()=> SetToUnlocked());
         tokenFrame.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
         tokenIcon.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
         tokenNeed.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
@@ -162,19 +197,33 @@ public class SelectorTheme : MonoBehaviour
 
     void SetToFinished()
     {
-        //for now same as unlocked, manifesto to be added
-        SetToUnlocked();
         status = ThemeStatus.finished;
+
+        themeFrame.gameObject.SetActive(false);
+        themeBackground.gameObject.SetActive(false);
+        themeDesc.SetText(ThemeDescByStatus[1]);
+        themeDesc.color = dConstants.UI.DefaultColor_2nd;
+        themeIcon.sprite = ThemeSpriteByStatus[1];
+        themeIcon.color = dConstants.UI.DefaultColor_1st;
+
+        tokenFrame.gameObject.SetActive(false);
+        tokenIcon.gameObject.SetActive(false);
+        tokenNeed.gameObject.SetActive(false);
+
+        FloatingGroup.enabled = true;
+        SwingingGroup.enabled = true;
+        
     }
     void NodeReposition()
     {
-        int minNodeCount = 10;
-        float radius = 7f;
-        float degree = Mathf.PI * 1.9f / nodes.Count;
-        float startDegree = Mathf.PI / 3;
-        for(int i = 0; i < nodes.Count; i++)
+        int maxNodeCount = 14;
+        float radius = 8.5f;
+        float offsetPerNode = Mathf.PI * 2f / maxNodeCount;
+        float startOffset = Mathf.PI * 2f * (NodeStartDegree / 360f);
+
+        for (int i = 0; i < nodes.Count; i++)
         {
-            float finalDegree = startDegree - degree * i;
+            float finalDegree = startOffset - offsetPerNode * i;
             //Debug.Log(string.Format("angle at {0}", finalDegree));
             nodes[i].transform.localPosition = radius * new Vector3(Mathf.Cos(finalDegree), Mathf.Sin(finalDegree), 0);
         }

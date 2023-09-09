@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 8766112270133532080}
   - component: {fileID: 1384168102130192093}
   m_Layer: 0
-  m_Name: selector2level transition
+  m_Name: selector2level_transition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

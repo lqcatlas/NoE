@@ -229,7 +229,7 @@ public class LM_006_LightBulb : LevelMasterBase
         //Debug.Log(string.Format("VFX_LightSwitch() called on cell ({0}) set to ({1})", taregtCell.Key.coord, isOn ? "On" : "Off"));
         if (isOn)
         {
-            taregtCell.Key.numberTxt.DOColor(dConstants.UI.BackgroundDefaultBlack, LIGHT_SWITCH_DURATION);
+            taregtCell.Key.numberTxt.DOColor(dConstants.UI.DefaultColor_Black, LIGHT_SWITCH_DURATION);
             taregtCell.Value.fill.DOFade(1f, LIGHT_SWITCH_DURATION);
             taregtCell.Value.fill.transform.localScale = Vector3.one;
             taregtCell.Value.fill.transform.DOScale(0f, LIGHT_SWITCH_DURATION).From();

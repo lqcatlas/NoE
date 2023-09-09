@@ -1238,6 +1238,10 @@ PrefabInstance:
       propertyPath: themeIndex
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5138411361348791074, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_607
@@ -1246,6 +1250,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: node_603
       objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: themeIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[0]
+      value: "\u4EE3\u8868\u7740\u7075\u611F\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[1]
+      value: "\u706F\u6CE1\u4EE3\u8868\u7740\u7075\u611F\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[0]
+      value: 
+      objectReference: {fileID: -81264564, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[1]
+      value: 
+      objectReference: {fileID: -81264564, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     - target: {fileID: 5593159267777510844, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_601
@@ -1308,11 +1336,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 101.5
+      value: 85.6
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -39
+      value: -40.6
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1416,6 +1444,10 @@ PrefabInstance:
       propertyPath: themeIndex
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 5138411361348791074, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_407
@@ -1424,6 +1456,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: node_403
       objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: themeIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[0]
+      value: "\u7B80\u7EA6\u53C8\u590D\u6742\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[1]
+      value: "\u5BFF\u53F8\u7B80\u7EA6\u53C8\u590D\u6742\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[0]
+      value: 
+      objectReference: {fileID: 1983163683, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[1]
+      value: 
+      objectReference: {fileID: 1983163683, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     - target: {fileID: 5593159267777510844, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_401
@@ -1486,11 +1542,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 54.6
+      value: 49.2
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -39
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1550,6 +1606,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 58489355, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+    - target: {fileID: 3801119216495987846, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: mouseUpFuncs.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3801119216495987846, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: mouseExitFuncs.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3801119216495987846, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: mouseEnterFuncs.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4346134455982857764, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_text
       value: "\u6C38\u4E0D\u505C\u6B47\u3002"
@@ -1558,6 +1626,34 @@ PrefabInstance:
       propertyPath: themeIndex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: themeIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[0]
+      value: "\u6C38\u4E0D\u505C\u6B47\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[1]
+      value: "\u65F6\u95F4\u6C38\u4E0D\u505C\u6B47\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[0]
+      value: 
+      objectReference: {fileID: 58489355, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[1]
+      value: 
+      objectReference: {fileID: 58489355, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1642,7 +1738,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
 --- !u!224 &7562443855256877228 stripped
 RectTransform:
@@ -1712,6 +1809,10 @@ PrefabInstance:
       propertyPath: themeIndex
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 5138411361348791074, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_507
@@ -1720,6 +1821,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: node_503
       objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: themeIndex
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[0]
+      value: "\u9759\u9759\u5730\u89C1\u8BC1\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[1]
+      value: "\u6708\u4EAE\u9759\u9759\u5730\u89C1\u8BC1\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[0]
+      value: 
+      objectReference: {fileID: -348473210, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[1]
+      value: 
+      objectReference: {fileID: -348473210, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     - target: {fileID: 5593159267777510844, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_501
@@ -1782,11 +1907,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 76.5
+      value: 66.3
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -57.3
+      value: -55.7
       objectReference: {fileID: 0}
     - target: {fileID: 5604843215745988170, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1870,6 +1995,18 @@ PrefabInstance:
       propertyPath: setupData
       value: 
       objectReference: {fileID: 11400000, guid: d886d20ef904cf84faa043c15565ae66, type: 2}
+    - target: {fileID: 3801119216495987846, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: mouseUpFuncs.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3801119216495987846, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: mouseExitFuncs.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3801119216495987846, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: mouseEnterFuncs.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3831071251571854164, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_205
@@ -1890,6 +2027,10 @@ PrefabInstance:
       propertyPath: themeIndex
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 5138411361348791074, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_207
@@ -1898,6 +2039,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: node_203
       objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: themeIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: NodeStartDegree
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[0]
+      value: "\u8BB0\u5F55\u7740\u5386\u53F2\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[1]
+      value: "\u786C\u5E01\u8BB0\u5F55\u7740\u5386\u53F2\u3002"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[0]
+      value: 
+      objectReference: {fileID: -347663578, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: ThemeSpriteByStatus.Array.data[1]
+      value: 
+      objectReference: {fileID: -347663578, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     - target: {fileID: 5593159267777510844, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: m_Name
       value: node_201
@@ -2006,7 +2171,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: node_208
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5073448619944558041, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
 --- !u!224 &4589560078791213203 stripped
 RectTransform:

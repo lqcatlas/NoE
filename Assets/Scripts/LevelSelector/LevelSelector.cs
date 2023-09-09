@@ -125,7 +125,7 @@ public class LevelSelector : MonoBehaviour
             }
             nodes.AddRange(themes[i].CollectMyNodes()); ;
         }
-        Debug.Log(string.Format("Level Selector launched, with {0} themes loaded. {1} locked, {2} unlocked, {3} finished.", nodes.Count, LockCount, UnlockCount, FinishCount));
+        Debug.Log(string.Format("Level Selector launched, with {0} themes loaded. {1} locked, {2} unlocked, {3} finished.", themes.Count, LockCount, UnlockCount, FinishCount));
         int NodeLockCount = 0;
         int NodeUnlockCount = 0;
         int NodeFinishCount = 0;

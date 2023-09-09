@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class ObjFloating : MonoBehaviour
 {
@@ -12,8 +13,14 @@ public class ObjFloating : MonoBehaviour
     {
         bool startReversedX = Random.Range(0, 2) == 1;
         bool startReversedY = Random.Range(0, 2) == 1;
-        
+
+        transform.localPosition = Vector3.zero;
         transform.DOLocalMoveX(Random.Range(FLOATING_RANGE_X.x, FLOATING_RANGE_X.y) * (startReversedX ? 1 : -1), Random.Range(FLOATING_LOOP_TIME.x, FLOATING_LOOP_TIME.y)).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine).SetRelative(true);
         transform.DOLocalMoveY(Random.Range(FLOATING_RANGE_Y.x, FLOATING_RANGE_Y.y) * (startReversedY ? 1 : -1), Random.Range(FLOATING_LOOP_TIME.x, FLOATING_LOOP_TIME.y)).SetLoops(-1, LoopType.Yoyo).SetEase(Ease.InOutSine).SetRelative(true);
+    }
+    private void OnDisable()
+    {
+        DOTween.Kill(transform);
+        transform.localPosition = Vector3.zero;
     }
 }

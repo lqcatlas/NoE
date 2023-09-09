@@ -19,7 +19,7 @@ public class LevelRecords : ScriptableObject
                 return true;
             }
         }
-        Debug.Log(string.Format("check level UID {0} in finished level, return false", uid));
+        //Debug.Log(string.Format("check level UID {0} in finished level, return false", uid));
         return false;
     }
     public bool isThemeUnlocked(int uid)
