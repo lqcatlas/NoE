@@ -1019,8 +1019,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e40d9aca728bbaa4d91f78883e335c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SWINGING_RANGE: {x: 0, y: 0}
-  SWINGING_LOOP_TIME: {x: 0, y: 0}
+  SWINGING_RANGE: {x: 2, y: 3.5}
+  SWINGING_LOOP_TIME: {x: 1.8, y: 3}
 --- !u!1 &9136079472732443694
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,9 +1072,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80a020d389c5c5438afeaacd96f08e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FLOATING_RANGE_X: {x: 0.5, y: 0.9}
-  FLOATING_RANGE_Y: {x: 2, y: 3}
-  FLOATING_LOOP_TIME: {x: 6, y: 10}
+  FLOATING_RANGE_X: {x: 0.1, y: 0.3}
+  FLOATING_RANGE_Y: {x: 0.3, y: 0.6}
+  FLOATING_LOOP_TIME: {x: 3.5, y: 5}
 --- !u!1001 &1698219143059632709
 PrefabInstance:
   m_ObjectHideFlags: 0
