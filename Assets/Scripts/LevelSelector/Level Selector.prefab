@@ -1260,11 +1260,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[0]
-      value: "\u4EE3\u8868\u7740\u7075\u611F\u3002"
+      value: '@Loc=themedesc_short_tm6@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[1]
-      value: "\u706F\u6CE1\u4EE3\u8868\u7740\u7075\u611F\u3002"
+      value: '@Loc=themedesc_long_tm6@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeSpriteByStatus.Array.data[0]
@@ -1466,11 +1466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[0]
-      value: "\u7B80\u7EA6\u53C8\u590D\u6742\u3002"
+      value: '@Loc=themedesc_short_tm4@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[1]
-      value: "\u5BFF\u53F8\u7B80\u7EA6\u53C8\u590D\u6742\u3002"
+      value: '@Loc=themedesc_long_tm4@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeSpriteByStatus.Array.data[0]
@@ -1640,11 +1640,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[0]
-      value: "\u6C38\u4E0D\u505C\u6B47\u3002"
+      value: '@Loc=themedesc_short_tm1@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[1]
-      value: "\u65F6\u95F4\u6C38\u4E0D\u505C\u6B47\u3002"
+      value: '@Loc=themedesc_long_tm1@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeSpriteByStatus.Array.data[0]
@@ -1831,11 +1831,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[0]
-      value: "\u9759\u9759\u5730\u89C1\u8BC1\u3002"
+      value: '@Loc=themedesc_short_tm5@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[1]
-      value: "\u6708\u4EAE\u9759\u9759\u5730\u89C1\u8BC1\u3002"
+      value: '@Loc=themedesc_long_tm5@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeSpriteByStatus.Array.data[0]
@@ -2049,11 +2049,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[0]
-      value: "\u8BB0\u5F55\u7740\u5386\u53F2\u3002"
+      value: '@Loc=themedesc_short_tm2@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[1]
-      value: "\u786C\u5E01\u8BB0\u5F55\u7740\u5386\u53F2\u3002"
+      value: '@Loc=themedesc_long_tm2@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeSpriteByStatus.Array.data[0]

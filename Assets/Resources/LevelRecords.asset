@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 651183b73e2c31748b5f74623257b2f2, type: 3}
   m_Name: LevelRecords
   m_EditorClassIdentifier: 
-  tokens: 10
-  finishedLevels: 65000000660000006700000068000000
+  tokens: 2
+  finishedLevels: 65000000660000006700000068000000680000006800000068000000680000006800000068000000
   unlockedThemes: 0100000002000000

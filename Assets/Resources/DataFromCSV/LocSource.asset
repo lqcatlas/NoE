@@ -506,3 +506,33 @@ MonoBehaviour:
   - key: rule3_lv601
     EN: '  when adjacent to 2+ same numbers'
     CN: "  \u5219\u70B9\u4EAE\u683C\u5B50"
+  - key: themedesc_short_tm1
+    EN: "\u6C38\u4E0D\u505C\u6B47\u3002"
+    CN: "\u6C38\u4E0D\u505C\u6B47\u3002"
+  - key: themedesc_short_tm2
+    EN: "\u8BB0\u5F55\u5386\u53F2\u3002"
+    CN: "\u8BB0\u5F55\u5386\u53F2\u3002"
+  - key: themedesc_short_tm4
+    EN: "\u7B80\u7EA6\u53C8\u590D\u6742\u3002"
+    CN: "\u7B80\u7EA6\u53C8\u590D\u6742\u3002"
+  - key: themedesc_short_tm5
+    EN: "\u9759\u9759\u5730\u89C1\u8BC1\u3002"
+    CN: "\u9759\u9759\u5730\u89C1\u8BC1\u3002"
+  - key: themedesc_short_tm6
+    EN: "\u4EE3\u8868\u7740\u7075\u611F\u3002"
+    CN: "\u4EE3\u8868\u7740\u7075\u611F\u3002"
+  - key: themedesc_long_tm1
+    EN: "<b>\u65F6\u95F4</b>\u6C38\u4E0D\u505C\u6B47\u3002"
+    CN: "<b>\u65F6\u95F4</b>\u6C38\u4E0D\u505C\u6B47\u3002"
+  - key: themedesc_long_tm2
+    EN: "<b>\u786C\u5E01</b>\u8BB0\u5F55\u5386\u53F2\u3002"
+    CN: "<b>\u786C\u5E01</b>\u8BB0\u5F55\u5386\u53F2\u3002"
+  - key: themedesc_long_tm4
+    EN: "<b>\u5BFF\u53F8</b>\u7B80\u7EA6\u53C8\u590D\u6742\u3002"
+    CN: "<b>\u5BFF\u53F8</b>\u7B80\u7EA6\u53C8\u590D\u6742\u3002"
+  - key: themedesc_long_tm5
+    EN: "<b>\u6708\u4EAE</b>\u9759\u9759\u5730\u89C1\u8BC1\u3002"
+    CN: "<b>\u6708\u4EAE</b>\u9759\u9759\u5730\u89C1\u8BC1\u3002"
+  - key: themedesc_long_tm6
+    EN: "<b>\u706F\u6CE1</b>\u4EE3\u8868\u7740\u7075\u611F\u3002"
+    CN: "<b>\u706F\u6CE1</b>\u4EE3\u8868\u7740\u7075\u611F\u3002"

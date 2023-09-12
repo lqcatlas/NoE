@@ -46,6 +46,7 @@ public class SelectorTheme : MonoBehaviour
             if (isUnlockable())
             {
                 tokenIcon.DOFade(0.5f, dConstants.UI.StandardizedBtnAnimDuration);
+                themeFrame.DOColor(dConstants.UI.DefaultColor_3rd, dConstants.UI.StandardizedBtnAnimDuration);
             }
         }
     }
@@ -56,6 +57,7 @@ public class SelectorTheme : MonoBehaviour
             if (isUnlockable())
             {
                 tokenIcon.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+                themeFrame.DOColor(dConstants.UI.DefaultColor_4th, dConstants.UI.StandardizedBtnAnimDuration);
             }
         }
     }
@@ -149,7 +151,7 @@ public class SelectorTheme : MonoBehaviour
         themeFrame.color = dConstants.UI.DefaultColor_4th;
         themeBackground.gameObject.SetActive(true);
         themeBackground.color = dConstants.UI.DefaultColor_4th;
-        themeDesc.SetText(ThemeDescByStatus[0]);
+        themeDesc.SetText(LocalizedAssetLookup.singleton.Translate(ThemeDescByStatus[0]));
         themeDesc.color = dConstants.UI.DefaultColor_3rd;
         themeIcon.sprite = ThemeSpriteByStatus[0];
         themeIcon.color = dConstants.UI.DefaultColor_3rd;
@@ -171,7 +173,7 @@ public class SelectorTheme : MonoBehaviour
 
         themeFrame.gameObject.SetActive(false);
         themeBackground.gameObject.SetActive(false);
-        themeDesc.SetText(ThemeDescByStatus[0]);
+        themeDesc.SetText(LocalizedAssetLookup.singleton.Translate(ThemeDescByStatus[1]));
         themeDesc.color = dConstants.UI.DefaultColor_2nd;
         themeIcon.sprite = ThemeSpriteByStatus[1];
         themeIcon.color = dConstants.UI.DefaultColor_1st;
@@ -185,10 +187,14 @@ public class SelectorTheme : MonoBehaviour
     }
     void AnimateToUnlocked()
     {
-        themeDesc.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).From().OnComplete(()=> SetToUnlocked());
+        themeFrame.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+        themeBackground.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+        themeDesc.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration / 2f).OnComplete(()=> themeDesc.SetText(LocalizedAssetLookup.singleton.Translate(ThemeDescByStatus[1])));
+        themeDesc.DOFade(1f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetDelay(dConstants.UI.StandardizedBtnAnimDuration / 2f);
         tokenFrame.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
         tokenIcon.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
         tokenNeed.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration);
+        themeIcon.DOColor(dConstants.UI.DefaultColor_1st, dConstants.UI.StandardizedBtnAnimDuration).OnComplete(() => SetToUnlocked());
         for (int i = 0; i < nodes.Count; i++)
         {
             nodes[i].AnimateToLocked();
@@ -201,7 +207,7 @@ public class SelectorTheme : MonoBehaviour
 
         themeFrame.gameObject.SetActive(false);
         themeBackground.gameObject.SetActive(false);
-        themeDesc.SetText(ThemeDescByStatus[1]);
+        themeDesc.SetText(LocalizedAssetLookup.singleton.Translate(ThemeDescByStatus[1]));
         themeDesc.color = dConstants.UI.DefaultColor_2nd;
         themeIcon.sprite = ThemeSpriteByStatus[1];
         themeIcon.color = dConstants.UI.DefaultColor_1st;

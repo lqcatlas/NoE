@@ -163,3 +163,13 @@ UID,Key,EN,CN
 162,rule1_lv603,Played and adjacent cells +1,打出及相邻的格子 +1
 163,rule2_lv601,Cell is turned ON,与两个及以上相同数字相邻
 164,rule3_lv601,  when adjacent to 2+ same numbers,  则点亮格子
+165,themedesc_short_tm1,永不停歇。,永不停歇。
+166,themedesc_short_tm2,记录历史。,记录历史。
+167,themedesc_short_tm4,简约又复杂。,简约又复杂。
+168,themedesc_short_tm5,静静地见证。,静静地见证。
+169,themedesc_short_tm6,代表着灵感。,代表着灵感。
+170,themedesc_long_tm1,<b>时间</b>永不停歇。,<b>时间</b>永不停歇。
+171,themedesc_long_tm2,<b>硬币</b>记录历史。,<b>硬币</b>记录历史。
+172,themedesc_long_tm4,<b>寿司</b>简约又复杂。,<b>寿司</b>简约又复杂。
+173,themedesc_long_tm5,<b>月亮</b>静静地见证。,<b>月亮</b>静静地见证。
+174,themedesc_long_tm6,<b>灯泡</b>代表着灵感。,<b>灯泡</b>代表着灵感。

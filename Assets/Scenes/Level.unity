@@ -2862,6 +2862,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6209104198497732354, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: ThemeDescByStatus.Array.data[1]
+      value: '@loc=themedesc_long_tm1@@'
+      objectReference: {fileID: 0}
     - target: {fileID: 7238218988093005246, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
       propertyPath: m_Name
       value: Level Selector
