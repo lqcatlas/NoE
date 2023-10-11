@@ -1,23 +1,55 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EndlessNoise : MonoBehaviour
 {
-    [SerializeField] ThemeResourceLookup ThemeResourceHub;
-    [SerializeField] Vector2 ScreenRange;
-    [SerializeField] Vector2 SizeRange;
-    [SerializeField] Vector2 DurationRange;
-    [SerializeField] float Frequency;
+    [Header("Anim Params")]
+    [SerializeField] ThemeResourceLookup resourceHub;
+    [SerializeField] Vector2 screenRangeX;
+    [SerializeField] Vector2 screenRangeY;
+    [SerializeField] Vector2 sizeRange;
+    [SerializeField] Vector2 durationRange;
+    [SerializeField] Color taregtClr;
+
+    [SerializeField] float frequencyPerSec;
+    [SerializeField] int flakesPerSplash = 1;
+
+    [Header("Children Objs")]
+    [SerializeField] GameObject flakeTemplate;
+
+    float timer;
     // Start is called before the first frame update
     void Start()
     {
-        
+        timer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+        if(timer >= 1 / frequencyPerSec)
+        {
+            for (int i = 0; i < flakesPerSplash; i++)
+            {
+                GenerateOneFlake();
+            }
+            timer = 0;
+        }
+    }
+    void GenerateOneFlake()
+    {
+        int rng = Random.Range(0, resourceHub.ThemeXResource.Count);
+        GameObject obj = Instantiate(flakeTemplate, transform);
+        obj.GetComponent<SpriteRenderer>().sprite = resourceHub.ThemeXResource[rng].ThemeSprite;
+        obj.transform.localScale = Vector3.one * Random.Range(sizeRange.x, sizeRange.y);
+        obj.transform.localPosition = new Vector3(Random.Range(screenRangeX.x, screenRangeX.y), Random.Range(screenRangeY.x, screenRangeY.y), 0);
+        float duration  = Random.Range(durationRange.x, durationRange.y);
+
+        obj.GetComponent<SpriteRenderer>().color = new Color(taregtClr.r, taregtClr.g, taregtClr.b, 0f);
+        obj.GetComponent<SpriteRenderer>().DOFade(taregtClr.a, duration / 2f).OnStart(() => obj.SetActive(true)).OnComplete(() => Destroy(obj)).SetLoops(2, LoopType.Yoyo);
     }
 }

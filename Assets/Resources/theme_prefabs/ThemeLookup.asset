@@ -23,11 +23,6 @@ MonoBehaviour:
     MasterScript: {fileID: 11500000, guid: fadc98ce7ffce204fb91768efde8d605, type: 3}
     ThemeSpecialHub: {fileID: 4404011959201444184, guid: 748139364fa414f41bb0831e34d2a26a, type: 3}
     ThemeSprite: {fileID: 584681723, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
-  - Theme: climber
-    ThemeID: 3
-    MasterScript: {fileID: 11500000, guid: fadc98ce7ffce204fb91768efde8d605, type: 3}
-    ThemeSpecialHub: {fileID: 4404011959201444184, guid: 748139364fa414f41bb0831e34d2a26a, type: 3}
-    ThemeSprite: {fileID: -2092366638, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
   - Theme: sushi
     ThemeID: 4
     MasterScript: {fileID: 11500000, guid: 984d1d00befe24249a42ed4a4a6aac88, type: 3}
