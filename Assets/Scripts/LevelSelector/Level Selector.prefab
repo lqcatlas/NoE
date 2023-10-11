@@ -286,7 +286,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1883952604201645091
 Transform:
   m_ObjectHideFlags: 0
@@ -896,7 +896,7 @@ SpriteRenderer:
   m_SortingLayerID: 423832989
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -418628789, guid: fdb2cdea34ce34349a3f5043b05ead7b, type: 3}
+  m_Sprite: {fileID: -1456085482, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -962,7 +962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7238218986845516741
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1141,7 +1141,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7238218988093005246}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1264,7 +1264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[1]
-      value: '@Loc=themedesc_long_tm6@@'
+      value: '@loc=themedesc_long_tm1@@'
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeSpriteByStatus.Array.data[0]

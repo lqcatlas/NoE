@@ -84,6 +84,7 @@ public class LevelMasterBase : MonoBehaviour
         Sequence seq = DOTween.Sequence();
         seq.AppendInterval(ThemeAnimationDelayAfterInit);
         seq.AppendCallback(() => LevelInitCallback());
+        gameObject.SetActive(true);
     }
     public void LevelInitCallback()
     {

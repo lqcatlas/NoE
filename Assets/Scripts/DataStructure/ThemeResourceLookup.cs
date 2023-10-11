@@ -10,6 +10,7 @@ public class ThemeResource
     public int ThemeID;
     public MonoScript MasterScript;
     public GameObject ThemeSpecialHub;
+    public Sprite ThemeSprite;
 }
 [CreateAssetMenu(menuName = "Lookup/ThemeResource")]
 public class ThemeResourceLookup : ScriptableObject
