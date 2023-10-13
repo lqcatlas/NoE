@@ -2960,6 +2960,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NoisyBackground
       objectReference: {fileID: 0}
+    - target: {fileID: 4321477810865330738, guid: 8606e832c7f3c644993951c02716fc06, type: 3}
+      propertyPath: frequencyPerSec
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5413635398707839799, guid: 8606e832c7f3c644993951c02716fc06, type: 3}
       propertyPath: m_RootOrder
       value: 7

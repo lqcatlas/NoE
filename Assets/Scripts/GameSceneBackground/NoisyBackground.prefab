@@ -527,9 +527,9 @@ MonoBehaviour:
   resourceHub: {fileID: 11400000, guid: 24d4cf5313d2bb346abaa9638ba89e42, type: 2}
   screenRangeX: {x: -50, y: 50}
   screenRangeY: {x: -30, y: 30}
-  sizeRange: {x: 20, y: 25}
+  sizeRange: {x: 60, y: 70}
   durationRange: {x: 6, y: 8}
-  taregtClr: {r: 0.17, g: 0.17, b: 0.17, a: 0.6}
-  frequencyPerSec: 0.15
+  taregtClr: {r: 0.14, g: 0.14, b: 0.14, a: 1}
+  frequencyPerSec: 0.8
   flakesPerSplash: 1
   flakeTemplate: {fileID: 4098073382123625759}
