@@ -158,7 +158,7 @@ public class LevelMasterBase : MonoBehaviour
     public void LevelExit()
     {
         gameObject.SetActive(false);
-        LevelSelector.singleton.SelectorShow();
+        LevelSelector.singleton.GoToSelector();
     }
     #region atomic methods
     //Atomic Funtions that can be overwritten by Theme-Specific LevlMaster Script

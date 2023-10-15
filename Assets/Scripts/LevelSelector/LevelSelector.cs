@@ -29,12 +29,13 @@ public class LevelSelector : MonoBehaviour
     [SerializeField] List<SelectorNode> nodes;
     [SerializeField] List<SelectorTheme> themes;
     [Header("Children Objs")]
+    [SerializeField] GameObject page;
     [SerializeField] Transform nodeParent;
     [SerializeField] TextMeshPro tokenCount;
     
 
 
-    public void SelectorShow()
+    public void GoToSelector()
     {
         for(int i = 0; i < themes.Count; i++)
         {
@@ -44,7 +45,11 @@ public class LevelSelector : MonoBehaviour
         {
             nodes[i].UpdateStatus();
         }
-        gameObject.SetActive(true);
+        page.SetActive(true);
+    }
+    public void CloseSelector()
+    {
+        page.SetActive(false);
     }
 
     private void Update()
@@ -71,6 +76,8 @@ public class LevelSelector : MonoBehaviour
         //CollectAllNodes();
 
         TokenCountAdjust(0);
+
+        page.SetActive(false);
     }
     public void UnlockTheme(int themeIndex, int tokenCost)
     {
@@ -103,7 +110,7 @@ public class LevelSelector : MonoBehaviour
     }
     void CollectAllThemes()
     {
-        themes = nodeParent.GetComponentsInChildren<SelectorTheme>().ToList();
+        themes = nodeParent.GetComponentsInChildren<SelectorTheme>(true).ToList();
         int LockCount = 0;
         int UnlockCount = 0;
         int FinishCount = 0;

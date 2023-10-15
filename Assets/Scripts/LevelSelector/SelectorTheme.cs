@@ -107,7 +107,7 @@ public class SelectorTheme : MonoBehaviour
     }
     public List<SelectorNode> CollectMyNodes()
     {
-        nodes = NodesParent.GetComponentsInChildren<SelectorNode>().ToList();
+        nodes = NodesParent.GetComponentsInChildren<SelectorNode>(true).ToList();
         int LockCount = 0;
         int UnlockCount = 0;
         int FinishCount = 0;

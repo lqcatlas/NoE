@@ -64,7 +64,7 @@ public class SelectorNode : MonoBehaviour
             Sequence seq = DOTween.Sequence();
             seq.AppendInterval(dConstants.VFX.SelectorToLevelAnimTransitionPhase1);
             seq.AppendCallback(() => LevelLauncher.singleton.LaunchLevelByUID(setupData.levelUID));
-            seq.AppendCallback(() => LevelSelector.singleton.gameObject.SetActive(false));
+            seq.AppendCallback(() => LevelSelector.singleton.CloseSelector());
         }
     }
     public int InitStatus()
