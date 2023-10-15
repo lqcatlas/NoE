@@ -15,7 +15,7 @@ public class LevelRecords : ScriptableObject
         {
             if (finishedLevels[i] == uid)
             {
-                Debug.Log(string.Format("check level UID {0} in finished level, return true", uid));
+                //Debug.Log(string.Format("check level UID {0} in finished level, return true", uid));
                 return true;
             }
         }

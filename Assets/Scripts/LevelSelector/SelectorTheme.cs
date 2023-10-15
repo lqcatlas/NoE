@@ -105,6 +105,11 @@ public class SelectorTheme : MonoBehaviour
             SetToLocked();
         }
     }
+    public void AnimateToPopup()
+    {
+        FloatingGroup.transform.DOScale(0f, dConstants.UI.StandardizedBtnAnimDuration).From();
+        gameObject.SetActive(true);
+    }
     public List<SelectorNode> CollectMyNodes()
     {
         nodes = NodesParent.GetComponentsInChildren<SelectorNode>(true).ToList();

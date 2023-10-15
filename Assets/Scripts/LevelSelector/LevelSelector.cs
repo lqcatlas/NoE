@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.Rendering.Universal;
 using TMPro;
+using DG.Tweening;
 
 public class LevelSelector : MonoBehaviour
 {
@@ -45,7 +46,22 @@ public class LevelSelector : MonoBehaviour
         {
             nodes[i].UpdateStatus();
         }
+        
         page.SetActive(true);
+
+        //vfx
+        for (int i = 0; i < themes.Count; i++)
+        {
+            themes[i].gameObject.SetActive(false);
+        }
+        Sequence seq = DOTween.Sequence();
+        for (int i = 0; i < themes.Count; i++)
+        {
+            SelectorTheme temp = themes[i];
+            seq.AppendCallback(() => temp.AnimateToPopup());
+            seq.AppendInterval(0.15f);
+        }
+        //vfx end
     }
     public void CloseSelector()
     {
