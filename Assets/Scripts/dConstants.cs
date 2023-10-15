@@ -26,6 +26,7 @@ public static class dConstants
     public static class Gameplay
     {
         public const int DefaultThemeUnlockTokenRequirement = 6;
+        public enum GamePhase { Title = 0, Selector = 1, Level = 2 };
     }
     //below is deprecated
     public enum GameTheme { Clock = 1, Coin = 2};

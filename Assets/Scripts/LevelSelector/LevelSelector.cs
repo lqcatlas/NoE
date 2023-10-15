@@ -48,6 +48,7 @@ public class LevelSelector : MonoBehaviour
         }
         
         page.SetActive(true);
+        BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Selector);
 
         //vfx
         for (int i = 0; i < themes.Count; i++)

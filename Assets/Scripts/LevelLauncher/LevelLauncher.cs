@@ -84,6 +84,7 @@ public class LevelLauncher : MonoBehaviour
             {
                 //found = true;
                 LaunchLevelBySheetItem(levelSetupTable[i]);
+                BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Level);
                 return true;
             }
         }
