@@ -8,6 +8,7 @@ public class SelectorMove : MonoBehaviour
     [SerializeField] float movingSpeedTier1;
     [SerializeField] float movingSpeedTier2;
     [SerializeField] Vector3 moveDirection;
+    [SerializeField] Vector2 movingLimits;
 
     [SerializeField] Transform movingGroup;
     [SerializeField] SpriteRenderer bar;
@@ -29,6 +30,14 @@ public class SelectorMove : MonoBehaviour
         else if (tier1)
         {
             movingGroup.GetComponent<RectTransform>().localPosition += moveDirection * Time.fixedDeltaTime * movingSpeedTier1;
+        }
+        if (movingGroup.GetComponent<RectTransform>().localPosition.x <= movingLimits.x)
+        {
+            movingGroup.GetComponent<RectTransform>().localPosition -= new Vector3(1f, 0f, 0f) * (movingGroup.GetComponent<RectTransform>().localPosition.x - movingLimits.x);
+        }
+        else if (movingGroup.GetComponent<RectTransform>().localPosition.x >= movingLimits.y)
+        {
+            movingGroup.GetComponent<RectTransform>().localPosition -= new Vector3(1f, 0f, 0f) * (movingGroup.GetComponent<RectTransform>().localPosition.x - movingLimits.y);
         }
     }
     void BarInit()

@@ -26,6 +26,7 @@ public class SelectorTheme : MonoBehaviour
     [SerializeField] ObjFloating FloatingGroup;
     [SerializeField] ObjSwinging SwingingGroup;
     [SerializeField] Transform NodesParent;
+    [SerializeField] GameObject DesignerNoteLauncher;
 
     [Header("Theme")]
     [SerializeField] SpriteRenderer themeFrame;
@@ -77,6 +78,13 @@ public class SelectorTheme : MonoBehaviour
             //to do: manifesto
         }
     }
+    public void ShowNote()
+    {
+        //open note box
+        string _title = "test";
+        string _desc = "desc";
+        LevelSelector.singleton.DesignerNoteBox.ShowBox(_title, _desc);
+    }
     public int InitStatus()
     {
         //title.SetText(LocalizedAssetLookup.singleton.Translate(setupData.title));
@@ -92,10 +100,14 @@ public class SelectorTheme : MonoBehaviour
             return 1;
         }
     }
+    
     public void UpdateStatus()
     {
-        //title.SetText(LocalizedAssetLookup.singleton.Translate(setupData.title));
-        if (master.playerLevelRecords.isThemeUnlocked(themeIndex))
+        if (isThemeFInished())
+        {
+            SetToFinished();
+        }
+        else if (master.playerLevelRecords.isThemeUnlocked(themeIndex))
         {
             //finished status check TBD
             SetToUnlocked();
@@ -137,6 +149,17 @@ public class SelectorTheme : MonoBehaviour
         return nodes;
         //Debug.Log(string.Format("level selector launched, with {0} level nodes loaded. {1} locked, {2} unlocked, {3} finished.", nodes.Count, LockCount, UnlockCount, FinishCount));
     }
+    bool isThemeFInished()
+    {
+        for (int i = 0; i < nodes.Count; i++)
+        {
+            if (nodes[i].status != SelectorNode.NodeStatus.finished)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
     bool isUnlockable()
     {
         if (master != null)
@@ -171,6 +194,7 @@ public class SelectorTheme : MonoBehaviour
 
         FloatingGroup.enabled = false;
         SwingingGroup.enabled = false;
+        DesignerNoteLauncher.SetActive(false);
     }
     void SetToUnlocked()
     {
@@ -189,6 +213,7 @@ public class SelectorTheme : MonoBehaviour
 
         FloatingGroup.enabled = true;
         SwingingGroup.enabled = true;
+        DesignerNoteLauncher.SetActive(false);
     }
     void AnimateToUnlocked()
     {
@@ -223,7 +248,8 @@ public class SelectorTheme : MonoBehaviour
 
         FloatingGroup.enabled = true;
         SwingingGroup.enabled = true;
-        
+        DesignerNoteLauncher.SetActive(true);
+
     }
     void NodeReposition()
     {

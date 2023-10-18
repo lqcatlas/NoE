@@ -33,20 +33,20 @@ public class LevelSelector : MonoBehaviour
     [SerializeField] GameObject page;
     [SerializeField] Transform nodeParent;
     [SerializeField] TextMeshPro tokenCount;
-    
-
+    public MsgBox DesignerNoteBox;
 
     public void GoToSelector()
     {
-        for(int i = 0; i < themes.Count; i++)
-        {
-            themes[i].UpdateStatus();
-        }
+        
         for (int i = 0; i < nodes.Count; i++)
         {
             nodes[i].UpdateStatus();
         }
-        
+        for (int i = 0; i < themes.Count; i++)
+        {
+            themes[i].UpdateStatus();
+        }
+
         page.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Selector);
 
@@ -68,7 +68,6 @@ public class LevelSelector : MonoBehaviour
     {
         page.SetActive(false);
     }
-
     private void Update()
     {
         if (unlockAll)
