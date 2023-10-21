@@ -21,7 +21,8 @@ public class SelectorTheme : MonoBehaviour
     [SerializeField] float NodeStartDegree = 0f;
     [SerializeField] List<Sprite> ThemeSpriteByStatus;
     [SerializeField] List<string> ThemeDescByStatus;
-    
+    [SerializeField] string DesignNoteLoc;
+
     [Header("Children")]
     [SerializeField] ObjFloating FloatingGroup;
     [SerializeField] ObjSwinging SwingingGroup;
@@ -81,8 +82,8 @@ public class SelectorTheme : MonoBehaviour
     public void ShowNote()
     {
         //open note box
-        string _title = "test";
-        string _desc = "desc";
+        string _title = "@Loc=ui_designer_note_title@@";
+        string _desc = DesignNoteLoc;
         LevelSelector.singleton.DesignerNoteBox.ShowBox(_title, _desc);
     }
     public int InitStatus()
