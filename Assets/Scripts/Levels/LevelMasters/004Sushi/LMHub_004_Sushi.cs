@@ -6,6 +6,7 @@ public class LMHub_004_Sushi : MonoBehaviour
 {
     [Header("Assets")]
     public List<Sprite> statusSprites;
+    public List<string> toolDisplayName = new List<string>();
     [Header("Cells")]
     public Transform cellBgHolder;
     public GameObject sushiPlateTemplate;

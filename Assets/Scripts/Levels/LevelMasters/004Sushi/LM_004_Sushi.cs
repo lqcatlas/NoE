@@ -18,6 +18,8 @@ public class LM_004_Sushi : LevelMasterBase
     float CellFoodTrasitionDuration = 1f;
     float originalFoodAlpha = 0.4f;
 
+    
+
     public override void GetObjectReferences(GameObject _themeHub)
     {
         base.GetObjectReferences(null);
@@ -55,6 +57,7 @@ public class LM_004_Sushi : LevelMasterBase
     {
         base.InitTool();
         hub.toolMaster.toolIcon.sprite = sushiHub.statusSprites[levelData.curBoard.toolStatus];
+        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(sushiHub.toolDisplayName[levelData.curBoard.toolStatus]));
     }
     public override void AddtionalInit_Theme()
     {
@@ -184,6 +187,7 @@ public class LM_004_Sushi : LevelMasterBase
     {
         base.UpdateTool(coord);
         hub.toolMaster.toolIcon.sprite = sushiHub.statusSprites[levelData.curBoard.toolStatus];
+        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(sushiHub.toolDisplayName[levelData.curBoard.toolStatus]));
     }
     private bool narrative_lv2_1 = false;
     private bool narrative_lv3_1 = false;

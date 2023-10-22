@@ -249,7 +249,7 @@ public class LevelMasterBase : MonoBehaviour
         }
         hub.rulesetMaster.rulesetDesc.SetText(string.Format("<size=120%>{0}</size>£º<br><indent=5%>{1}", levelData.theme, rulesetCombined));
         */
-        hub.rulesetMaster.ruleTitle.SetRuleLine(levelData.theme);
+        hub.rulesetMaster.ruleTitle.SetRuleLine("@Loc=ui_ruleset_title@@");
         for (int i = 0; i < hub.rulesetMaster.ruleDescs.Count; i++)
         {
             if(i < levelData.ruleset.Count)
@@ -265,6 +265,8 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void InitTool()
     {
+        hub.toolMaster.toolTitle.SetText(LocalizedAssetLookup.singleton.Translate(levelData.theme));
+        hub.toolMaster.toolSubtitle.SetText("");
         hub.toolMaster.toolDesc.SetText(string.Format("x{0}", levelData.initBoard.toolCount));
     }
     public virtual void InitMiscs()

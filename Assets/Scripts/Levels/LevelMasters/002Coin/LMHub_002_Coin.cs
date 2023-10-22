@@ -13,7 +13,8 @@ public class LMHub_002_Coin : MonoBehaviour
     public List<KeyValuePair<CellMaster, GameObject>> coinTags;
     [Header("Coin in Tool")]
     public List<Sprite> coinToolSprites;
-    
+    public List<string> toolDisplayName = new List<string>();
+
     [Header("Play Audio")]
     public List<AudioClip> playClips;
     private int clipIndex = 0;

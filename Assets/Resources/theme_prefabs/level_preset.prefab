@@ -2474,6 +2474,8 @@ MonoBehaviour:
   frame: {fileID: 9188252851910632371}
   toolIcon: {fileID: 9188252852475143290}
   toolDesc: {fileID: 9188252853521842659}
+  toolTitle: {fileID: 2042233529104355636}
+  toolSubtitle: {fileID: 5609019171646095532}
 --- !u!114 &9188252853338786930
 MonoBehaviour:
   m_ObjectHideFlags: 0

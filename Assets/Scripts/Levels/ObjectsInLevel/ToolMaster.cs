@@ -8,4 +8,6 @@ public class ToolMaster : MonoBehaviour
     public SpriteRenderer frame;
     public SpriteRenderer toolIcon;
     public TextMeshPro toolDesc;
+    public TextMeshPro toolTitle;
+    public TextMeshPro toolSubtitle;
 }

@@ -29,11 +29,11 @@ public class MiscMaster : MonoBehaviour
     }
     public void CloseBtnHoverEnter()
     {
-        closeBtn.transform.DOScale(Vector3.one * 2.5f, dConstants.UI.StandardizedBtnAnimDuration);
+        closeBtn.transform.DOScale(Vector3.one * 6f, dConstants.UI.StandardizedBtnAnimDuration);
     }
     public void CloseBtnHoverExit()
     {
-        closeBtn.transform.DOScale(Vector3.one * 2, dConstants.UI.StandardizedBtnAnimDuration);
+        closeBtn.transform.DOScale(Vector3.one * 5f, dConstants.UI.StandardizedBtnAnimDuration);
     }
     #endregion
 

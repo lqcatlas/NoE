@@ -14,6 +14,11 @@ public class LM_002_Coin : LevelMasterBase
         base.GetObjectReferences(null);
         coinHub = _themeHub.GetComponent<LMHub_002_Coin>();
     }
+    public override void InitTool()
+    {
+        base.InitTool();
+        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(coinHub.toolDisplayName[levelData.curBoard.toolStatus]));
+    }
     public override void InitCells()
     {
         coinHub.coinTags = new List<KeyValuePair<CellMaster, GameObject>>();
@@ -177,6 +182,7 @@ public class LM_002_Coin : LevelMasterBase
             seq.AppendCallback(() => hub.toolMaster.toolIcon.GetComponent<Transform>().localScale = Vector3.one * 8f);
             seq.AppendCallback(() => hub.toolMaster.toolIcon.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f));
         }
+        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(coinHub.toolDisplayName[levelData.curBoard.toolStatus]));
     }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
