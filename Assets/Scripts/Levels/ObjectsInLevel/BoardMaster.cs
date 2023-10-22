@@ -7,7 +7,7 @@ using UnityEngine;
 public class BoardMaster : MonoBehaviour
 {
     [Header("Static Params")]
-    [SerializeField] float StandardizedXYSize = 5;
+    [SerializeField] float StandardizedXYSize = 3;
     //use buffer to make smaller board looker bigger but not as same big as the standardized board 
     [SerializeField] float ResizeBuffer = 0.4f;
     public GameObject cellTempalte;

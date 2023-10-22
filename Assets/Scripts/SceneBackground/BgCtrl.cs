@@ -33,12 +33,12 @@ public class BgCtrl : MonoBehaviour
             case dConstants.Gameplay.GamePhase.Selector:
                 HugeTextures.SetActive(true); ;
                 RandomThemeIcon.SetActive(true);
-                ThemeIconNoise.SetActive(false);
+                ThemeIconNoise.SetActive(true);
                 break;
             case dConstants.Gameplay.GamePhase.Level:
                 HugeTextures.SetActive(true); ;
                 RandomThemeIcon.SetActive(false);
-                ThemeIconNoise.SetActive(false);
+                ThemeIconNoise.SetActive(true);
                 break;
             default:
                 HugeTextures.SetActive(true); ;
