@@ -44,7 +44,7 @@ public class LM_002_Coin : LevelMasterBase
             DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if (temp_cellData != null)
             {
-                hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
+                hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
                 //additional
                 GameObject coinTag = Instantiate(coinHub.cellTagTempalte, coinHub.cellTagHolder);
                 coinTag.transform.position = hub.boardMaster.cells[i].transform.position;

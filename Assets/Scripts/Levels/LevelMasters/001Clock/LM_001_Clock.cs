@@ -32,7 +32,7 @@ public class LM_001_Clock : LevelMasterBase
             DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if (temp_cellData != null)
             {
-                hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
+                hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
                 //additional
                 GameObject clockBg = Instantiate(clockHub.runningClockTemplate, clockHub.cellBgHolder);
                 clockBg.transform.position = hub.boardMaster.cells[i].transform.position;
@@ -45,6 +45,7 @@ public class LM_001_Clock : LevelMasterBase
     
     public override void AddtionalInit_Theme()
     {
+        clockHub.clockTool.transform.position = hub.toolMaster.toolIcon.transform.position;
         hub.toolMaster.toolIcon.gameObject.SetActive(false);
         //narrative_lv7_1 = false;
         //narrative_lv8_1 = false;

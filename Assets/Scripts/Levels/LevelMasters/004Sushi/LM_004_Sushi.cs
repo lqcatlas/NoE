@@ -42,7 +42,7 @@ public class LM_004_Sushi : LevelMasterBase
             DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if (temp_cellData != null)
             {
-                hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
+                hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
                 //additional
                 GameObject plateBg = Instantiate(sushiHub.sushiPlateTemplate, sushiHub.cellBgHolder);
                 plateBg.transform.position = hub.boardMaster.cells[i].transform.position;

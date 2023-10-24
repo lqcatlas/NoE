@@ -12,9 +12,13 @@ public class AdvSpriteSlider : MonoBehaviour
     //public bool SwitchByOrder;
     private void Start()
     {
+        ResetBaseSprite();
+    }
+    public void ResetBaseSprite()
+    {
         availableSprites = new List<Sprite>();
         SpriteRenderer comp = null;
-        if(TryGetComponent<SpriteRenderer>(out comp))
+        if (TryGetComponent<SpriteRenderer>(out comp))
         {
             curSprite = comp.sprite;
         }
@@ -31,7 +35,7 @@ public class AdvSpriteSlider : MonoBehaviour
 
             availableSprites.Clear();
             List<Sprite> allSprites = Resources.LoadAll<Sprite>("sprites/spritesheet").ToList();
-            for(int i = 0; i < allSprites.Count; i++)
+            for (int i = 0; i < allSprites.Count; i++)
             {
                 if (allSprites[i].name.Contains(spriteNameLocator) && allSprites[i].name != curSprite.name)
                 {

@@ -10,7 +10,9 @@ public class LMHub_001_Clock : MonoBehaviour
     public Transform cellBgHolder;
     public GameObject runningClockTemplate;
     public List<KeyValuePair<CellMaster, GameObject>> runningClocks;
-    
+    [Header("Clock Sprite in Tool")]
+    public Transform clockTool;
+
     [Header("Play Audio")]
     public List<AudioClip> playClips;
     private int clipIndex = 0;

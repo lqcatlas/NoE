@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0317a5c619654a24c835c06a88d71d62, type: 3}
+  m_Name: NumberSprites
+  m_EditorClassIdentifier: 
+  availableNumbers:
+  - targetNumber: 0
+    matchingSprite: {fileID: 1797534162, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  - targetNumber: 1
+    matchingSprite: {fileID: 225791110, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  - targetNumber: 2
+    matchingSprite: {fileID: -2026269862, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  - targetNumber: 3
+    matchingSprite: {fileID: 1254369216, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  - targetNumber: 4
+    matchingSprite: {fileID: 1581033602, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  - targetNumber: 5
+    matchingSprite: {fileID: -280818320, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  - targetNumber: 6
+    matchingSprite: {fileID: 1517122844, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  - targetNumber: 7
+    matchingSprite: {fileID: 233180441, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  - targetNumber: 8
+    matchingSprite: {fileID: 1657182079, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  - targetNumber: 9
+    matchingSprite: {fileID: -998961558, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}

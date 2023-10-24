@@ -204,7 +204,7 @@ public class LevelMasterBase : MonoBehaviour
             DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if(temp_cellData != null)
             {
-                hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
+                hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
             }
         }
     }
@@ -323,9 +323,9 @@ public class LevelMasterBase : MonoBehaviour
             DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if (temp_cellData != null)
             {
-                if(temp_cellData.value.ToString() != hub.boardMaster.cells[i].numberTxt.text)
+                if(temp_cellData.value != hub.boardMaster.cells[i].curNumber)
                 {
-                    NumberShift(hub.boardMaster.cells[i].numberTxt, temp_cellData.value);
+                    NumberShift(hub.boardMaster.cells[i], temp_cellData.value);
                 }
                 //hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
             }
@@ -403,16 +403,16 @@ public class LevelMasterBase : MonoBehaviour
     #endregion
 
     #region tool methods
-    public void NumberShift(TextMeshPro tmp, int endValue)
+    public void NumberShift(CellMaster cell, int endValue)
     {
         Sequence seq = DOTween.Sequence();
         for(int i=0;i< dConstants.VFX.NumberShiftAnimCount; i++)
         {
-            seq.AppendCallback(() => tmp.SetText(UnityEngine.Random.Range(Mathf.Min(1,Mathf.FloorToInt(endValue/10f))*10+1, endValue).ToString()));
+            seq.AppendCallback(() => cell.DisplayNumber(UnityEngine.Random.Range(Mathf.Min(1,Mathf.FloorToInt(endValue/10f))*10+1, endValue)));
             seq.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
         }
         seq.AppendInterval(UnityEngine.Random.Range(dConstants.VFX.NumberShiftAnimInterval*0.05f, dConstants.VFX.NumberShiftAnimInterval));
-        seq.AppendCallback(() => tmp.SetText(endValue.ToString()));
+        seq.AppendCallback(() => cell.DisplayNumber(endValue));
     }
     #endregion
     bool TryLoadNextLevel()

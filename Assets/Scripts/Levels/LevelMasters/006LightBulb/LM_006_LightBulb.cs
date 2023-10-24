@@ -40,9 +40,9 @@ public class LM_006_LightBulb : LevelMasterBase
             DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if (temp_cellData != null)
             {
-                hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
-                hub.boardMaster.cells[i].numberTxt.fontSize = 9;
-                hub.boardMaster.cells[i].numberTxt.color = Color.white;
+                hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
+                hub.boardMaster.cells[i].numberGroup.localScale = Vector3.one * 0.65f;
+                hub.boardMaster.cells[i].SetColor(Color.white, 0f);
                 //additional
                 GameObject cellBg = Instantiate(lightbulbHub.bulbBgTemplate, lightbulbHub.cellBgHolder);
                 cellBg.transform.position = hub.boardMaster.cells[i].transform.position;
@@ -143,9 +143,9 @@ public class LM_006_LightBulb : LevelMasterBase
             if (hub.boardMaster.cells[i].coord == coord)
             {
                 DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
-                if (temp_cellData.value.ToString() != hub.boardMaster.cells[i].numberTxt.text)
+                if (temp_cellData.value != hub.boardMaster.cells[i].curNumber)
                 {
-                    NumberShift(hub.boardMaster.cells[i].numberTxt, temp_cellData.value);
+                    NumberShift(hub.boardMaster.cells[i], temp_cellData.value);
                 }
 
             }
@@ -162,9 +162,9 @@ public class LM_006_LightBulb : LevelMasterBase
             if (BoardCalculation.Manhattan_Dist(hub.boardMaster.cells[i].coord, coord) == 1)
             {
                 DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
-                if (temp_cellData.value.ToString() != hub.boardMaster.cells[i].numberTxt.text)
+                if (temp_cellData.value != hub.boardMaster.cells[i].curNumber)
                 {
-                    NumberShift(hub.boardMaster.cells[i].numberTxt, temp_cellData.value);
+                    NumberShift(hub.boardMaster.cells[i], temp_cellData.value);
                 }
             }
         }
@@ -229,14 +229,14 @@ public class LM_006_LightBulb : LevelMasterBase
         //Debug.Log(string.Format("VFX_LightSwitch() called on cell ({0}) set to ({1})", taregtCell.Key.coord, isOn ? "On" : "Off"));
         if (isOn)
         {
-            taregtCell.Key.numberTxt.DOColor(dConstants.UI.DefaultColor_Black, LIGHT_SWITCH_DURATION);
+            taregtCell.Key.SetColor(dConstants.UI.DefaultColor_Black, LIGHT_SWITCH_DURATION);
             taregtCell.Value.fill.DOFade(1f, LIGHT_SWITCH_DURATION);
             taregtCell.Value.fill.transform.localScale = Vector3.one;
             taregtCell.Value.fill.transform.DOScale(0f, LIGHT_SWITCH_DURATION).From();
         }
         else
         {
-            taregtCell.Key.numberTxt.DOColor(Color.white, LIGHT_SWITCH_DURATION);
+            taregtCell.Key.SetColor(Color.white, LIGHT_SWITCH_DURATION);
             taregtCell.Value.fill.DOFade(0f, LIGHT_SWITCH_DURATION);
             taregtCell.Value.fill.transform.localScale = Vector3.zero;
             taregtCell.Value.fill.transform.DOScale(1f, LIGHT_SWITCH_DURATION).From();

@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
-using System;
 
 public class CellMaster : MonoBehaviour
 {
@@ -11,16 +10,123 @@ public class CellMaster : MonoBehaviour
     static float MaskFadeTime = 0.3f;
     static float MaskFadeAlpha = 0.5f;
     static float StandardizedCellSize = 2f;
+    //number sprite params
+    static List<float> scalarByDigits = new List<float> { 1f, 1f, 0.9f, 0.7f };
+    static int maxValueSupported = 1000;
+    static int maxDigitsSupported = 3;
     [Header("Data")]
     public Vector2Int coord;
     public LevelMasterBase levelMaster;
+    public NumberSpriteAssets NumberSpriteLookup;
+    public int curNumber;
+    bool usingSprite;
     [Header("Children Objs")]
-    public TextMeshPro numberTxt;
-    public SpriteRenderer numberSprt;
+    public Transform numberGroup;
+    [SerializeField] TextMeshPro numberTxt;
+    [SerializeField] Transform numberInSpriteGroup;
+    [SerializeField] List<SpriteRenderer> numberInSprites;
     public SpriteRenderer frameSprt;
     public SpriteRenderer maskSprt;
 
-    
+    void Awake()
+    {
+        SwitchDisplayMode(false);
+    }
+    public void SwitchDisplayMode(bool spriteMode)
+    {
+        if (spriteMode)
+        {
+            usingSprite = true;
+            numberTxt.gameObject.SetActive(false);
+            for (int i = 0; i < numberInSprites.Count; i++)
+            {
+                numberInSprites[i].gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            usingSprite = false;
+            numberTxt.gameObject.SetActive(true);
+            for (int i = 0; i < numberInSprites.Count; i++)
+            {
+                numberInSprites[i].gameObject.SetActive(false);
+            }
+        }
+    }
+    public void DisplayNumber(int _number)
+    {
+        curNumber = _number;
+        if (_number >= 0 && _number < maxValueSupported)
+        {
+            SwitchDisplayMode(true);
+            SetNumberSprite(_number);
+        }
+        else
+        {
+            SwitchDisplayMode(false);
+            SetNumberTxt(_number);
+            
+        }
+    }
+    public void SetColor(Color _clr, float duration)
+    {
+        if (duration == 0f)
+        {
+            numberTxt.color = _clr;
+            for (int i = 0; i < numberInSprites.Count; i++)
+            {
+                numberInSprites[i].color = _clr;
+            }
+        }
+        else 
+        {
+            numberTxt.DOColor(_clr, duration);
+            for (int i = 0; i < numberInSprites.Count; i++)
+            {
+                numberInSprites[i].DOColor(_clr, duration);
+            }
+        }
+    }
+    void SetNumberTxt(int _number)
+    {
+        numberTxt.SetText(_number.ToString());
+    }
+    void SetNumberSprite(int _number)
+    {
+        int numberLeft = _number;
+        int activatedCount = 0;
+        bool started = false;
+        for(int i=0;i< maxDigitsSupported; i++)
+        {
+            int digitUnit = (int)Mathf.Pow(10, maxDigitsSupported - i - 1);
+            int targetDigit = Mathf.FloorToInt(numberLeft / digitUnit);
+            numberLeft = numberLeft - digitUnit * targetDigit;
+            Debug.Log("digitUnit =" + digitUnit + ", calculated digit =" + targetDigit + ", number left =" + numberLeft);
+            if(targetDigit != 0 || started)
+            {
+                started = true;
+                Sprite sprt = NumberSpriteLookup.GetSprite(targetDigit);
+                if (sprt != null)
+                {
+                    numberInSprites[i].sprite = sprt;
+                    numberInSprites[i].GetComponent<AdvSpriteSlider>().ResetBaseSprite();
+                    numberInSprites[i].gameObject.SetActive(true);
+                    activatedCount += 1;
+                }
+                else
+                {
+                    numberInSprites[i].gameObject.SetActive(false);
+                }
+            }
+            else
+            {
+                numberInSprites[i].gameObject.SetActive(false);
+            }
+        }
+        numberInSpriteGroup.localScale = Vector3.one * scalarByDigits[Mathf.Min(activatedCount, scalarByDigits.Count-1)];
+    }
+
+
     public void InitCellPosition(Vector2Int _coord, Vector2Int _size)
     {
         //reposition cell based on the board size and its coord
