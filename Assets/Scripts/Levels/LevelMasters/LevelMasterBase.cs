@@ -256,6 +256,10 @@ public class LevelMasterBase : MonoBehaviour
             {
                 hub.rulesetMaster.ruleDescs[i].SetRuleLine(levelData.ruleset[i]);
                 hub.rulesetMaster.ruleDescs[i].gameObject.SetActive(true);
+                if (levelData.ruleset[i].tag != RuleItem.RuleItemTag.none)
+                {
+                    hub.rulesetMaster.ruleDescs[i].InitLineAnimation();
+                }
             }
             else
             {

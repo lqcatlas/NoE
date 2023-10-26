@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RuleLine : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class RuleLine : MonoBehaviour
     public SpriteRenderer icon;
     public TextMeshPro text;
     public SpriteRenderer underline;
+    public Transform mask;
 
     public void SetRuleLine(RuleItem rule)
     {
@@ -34,15 +36,28 @@ public class RuleLine : MonoBehaviour
         icon.sprite = iconOptions[0];
         icon.gameObject.SetActive(false);
         underline.gameObject.SetActive(false);
+        mask.gameObject.SetActive(false);
+    }
+    public void InitLineAnimation()
+    {
+        mask.gameObject.SetActive(true);
+        mask.localPosition = new Vector3(3.8f, 0f, 0f);
+        mask.localScale = new Vector3(50f, 5.3f, 1f);
+        icon.gameObject.SetActive(false);
     }
     public void AnimateLine(float delay = 0f)
     {
-        icon.gameObject.SetActive(true);
-        icon.transform.DOScale(0f, 1f).From().SetDelay(delay);
         float shakeDuration = 0.7f;
         float shakeDelayAddition = 0.3f;
-        text.transform.DOShakePosition(shakeDuration, 0.2f, 200, 90, false, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
-        text.transform.DOShakeRotation(shakeDuration, 5f, 200, 90, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
-        text.transform.DOShakeScale(shakeDuration, 0.05f, 200, 90, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
+
+        icon.gameObject.SetActive(true);
+        icon.transform.DOScale(0f, shakeDelayAddition).From().SetDelay(delay);
+        
+        //text.transform.DOShakePosition(shakeDuration, 0.2f, 200, 90, false, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
+        //text.transform.DOShakeRotation(shakeDuration, 5f, 200, 90, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
+        //text.transform.DOShakeScale(shakeDuration, 0.05f, 200, 90, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
+
+        mask.DOLocalMoveX(25f, shakeDuration).SetDelay(delay + shakeDelayAddition).OnComplete(()=>mask.localScale = Vector3.zero);
+
     }
 }
