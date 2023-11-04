@@ -6,7 +6,7 @@ using UnityEngine.Rendering.Universal;
 using TMPro;
 using DG.Tweening;
 
-public class LevelSelector : MonoBehaviour
+public class LevelSelector : MonoBehaviour, ISaveData
 {
     [Header("Debug")]
     [SerializeField] bool unlockAll = false;
@@ -83,16 +83,15 @@ public class LevelSelector : MonoBehaviour
     }
     private void Start()
     {
+        InitSelector();
+    }
+    void InitSelector()
+    {
         NodeParentInit();
-
         themes.Clear();
         nodes.Clear();
-
         CollectAllThemes();
-        //CollectAllNodes();
-
         TokenCountAdjust(0);
-
         page.SetActive(false);
     }
     public void UnlockTheme(int themeIndex, int tokenCost)
@@ -111,6 +110,61 @@ public class LevelSelector : MonoBehaviour
             TokenCountAdjust(1);
         }
     }
+    #region save
+    private const string TOKEN_SAVE_KEY = "record.tokens";
+    private const string LEVEL_SAVE_KEY = "record.finishedLevels";
+    private const string THEME_SAVE_KEY = "record.unlockedThemes";
+    public void LoadFromSaveManager()
+    {
+        string str = SaveManager.controller.Inquire(string.Format(TOKEN_SAVE_KEY));
+        if (str != null)
+        {
+            int.TryParse(SaveManager.controller.Inquire(string.Format(TOKEN_SAVE_KEY)), out playerLevelRecords.tokens);
+        }
+        str = SaveManager.controller.Inquire(string.Format(LEVEL_SAVE_KEY));
+        if (str != null)
+        {
+            playerLevelRecords.finishedLevels.Clear();
+            //convert into level IDs
+            List<string> level_str = str.Split('|').ToList();
+            for (int i = 0; i < level_str.Count; i++)
+            {
+                int.TryParse(level_str[i], out int uid);
+                playerLevelRecords.finishedLevels.Add(uid);
+            }
+        }
+        str = SaveManager.controller.Inquire(string.Format(THEME_SAVE_KEY));
+        if (str != null)
+        {
+            playerLevelRecords.unlockedThemes.Clear();
+            //convert into theme IDs
+            List<string> theme_str = str.Split('|').ToList();
+            for (int i = 0; i < theme_str.Count; i++)
+            {
+                int.TryParse(theme_str[i], out int uid);
+                playerLevelRecords.unlockedThemes.Add(uid);
+            }
+        }
+        //Debug.Log(string.Format("selector load data from file, tokens:{0}, ", playerLevelRecords.tokens));
+    }
+    public void SaveToSaveManager()
+    {
+        //Debug.Log(string.Format("selector save data to file, tokens:{0}", playerLevelRecords.tokens));
+        if (playerLevelRecords.finishedLevels.Count > 0)
+        {
+            //convert level ids into a string
+            string str = string.Join('|', playerLevelRecords.finishedLevels);
+            SaveManager.controller.Insert(string.Format(LEVEL_SAVE_KEY), str);
+        }
+        if (playerLevelRecords.unlockedThemes.Count > 0)
+        {
+            //convert theme ids into a string
+            string str = string.Join('|', playerLevelRecords.unlockedThemes);
+            SaveManager.controller.Insert(string.Format(THEME_SAVE_KEY), str);
+        }
+        SaveManager.controller.Insert(string.Format(TOKEN_SAVE_KEY), playerLevelRecords.tokens.ToString());
+    }
+    #endregion save
     void TokenCountAdjust(int count)
     {
         playerLevelRecords.tokens += count;
