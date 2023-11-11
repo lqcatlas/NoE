@@ -2342,7 +2342,8 @@ PrefabInstance:
       propertyPath: selectorObj
       value: 
       objectReference: {fileID: 1163037863}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2316848653066297052, guid: dc3610efbfb23504a9c3c9d0e0633502, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dc3610efbfb23504a9c3c9d0e0633502, type: 3}
 --- !u!1001 &9041480673254030942
 PrefabInstance:

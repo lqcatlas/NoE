@@ -89,6 +89,7 @@ public class LevelMasterBase : MonoBehaviour
     public void LevelInitCallback()
     {
         EnablePlayerInput();
+        ShowGoalSection();
         AnimateRuleset();
         DelayedInit_Theme();
     }
@@ -235,20 +236,12 @@ public class LevelMasterBase : MonoBehaviour
     {
         hub.goalMaster.title.SetText(LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_section_title@@"));
         hub.goalMaster.lines[0].SetText(LocalizedAssetLookup.singleton.Translate(levelData.goal));
-        hub.goalMaster.lines[1].gameObject.SetActive(false);
-        LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+        hub.goalMaster.lines[1].SetText("");
 
+        hub.goalMaster.goalLayout.gameObject.SetActive(false);
     }
     public virtual void InitRuleset()
     {
-        /*string rulesetCombined = "";
-        for(int i=0;i< levelData.ruleset.Count; i++)
-        {
-            rulesetCombined += levelData.ruleset[i].ruleDesc;
-            rulesetCombined += "<br>";
-        }
-        hub.rulesetMaster.rulesetDesc.SetText(string.Format("<size=120%>{0}</size>£º<br><indent=5%>{1}", levelData.theme, rulesetCombined));
-        */
         hub.rulesetMaster.ruleTitle.SetRuleLine("@Loc=ui_ruleset_title@@");
         for (int i = 0; i < hub.rulesetMaster.ruleDescs.Count; i++)
         {
@@ -299,6 +292,11 @@ public class LevelMasterBase : MonoBehaviour
                 }
             }
         }
+    }
+    public virtual void ShowGoalSection()
+    {
+        hub.goalMaster.goalLayout.gameObject.SetActive(true);
+        LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
     }
     public virtual void DelayedInit_Theme()
     {

@@ -205,7 +205,7 @@ public class LM_002_Coin : LevelMasterBase
         int XYRange = 4;
         randomCoin.transform.position = targetCellLocation.position + new Vector3(Random.Range(-1f, 1f) * XYRange, Random.Range(-1f, 1f) * XYRange, 0f);
         //place animation
-        float distance = 10f;
+        float distance = 6f;
         float duration = 0.3f;
         float start_size = 10f;
         float shake_strength = 0.03f;

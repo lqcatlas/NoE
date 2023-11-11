@@ -110,6 +110,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
             TokenCountAdjust(1);
         }
     }
+    /*
     #region save
     private const string TOKEN_SAVE_KEY = "record.tokens";
     private const string LEVEL_SAVE_KEY = "record.finishedLevels";
@@ -165,6 +166,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         SaveManager.controller.Insert(string.Format(TOKEN_SAVE_KEY), playerLevelRecords.tokens.ToString());
     }
     #endregion save
+    */
     void TokenCountAdjust(int count)
     {
         playerLevelRecords.tokens += count;

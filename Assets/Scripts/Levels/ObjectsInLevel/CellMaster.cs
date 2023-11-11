@@ -93,19 +93,19 @@ public class CellMaster : MonoBehaviour
     }
     void SetNumberSprite(int _number)
     {
-        int numberLeft = _number;
+        int amountLeft = _number;
         int activatedCount = 0;
         bool started = false;
         for(int i=0;i< maxDigitsSupported; i++)
         {
-            int digitUnit = (int)Mathf.Pow(10, maxDigitsSupported - i - 1);
-            int targetDigit = Mathf.FloorToInt(numberLeft / digitUnit);
-            numberLeft = numberLeft - digitUnit * targetDigit;
-            Debug.Log("digitUnit =" + digitUnit + ", calculated digit =" + targetDigit + ", number left =" + numberLeft);
-            if(targetDigit != 0 || started)
+            int digitIndex = (int)Mathf.Pow(10, maxDigitsSupported - i - 1);
+            int displayNumber = Mathf.FloorToInt(amountLeft / digitIndex);
+            amountLeft = amountLeft - digitIndex * displayNumber;
+            //Debug.Log("digitUnit =" + digitUnit + ", calculated digit =" + targetDigit + ", number left =" + numberLeft);
+            if(displayNumber != 0 || started || digitIndex == 1)
             {
                 started = true;
-                Sprite sprt = NumberSpriteLookup.GetSprite(targetDigit);
+                Sprite sprt = NumberSpriteLookup.GetSprite(displayNumber);
                 if (sprt != null)
                 {
                     numberInSprites[i].sprite = sprt;

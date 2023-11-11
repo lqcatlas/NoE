@@ -82,7 +82,9 @@ public class SelectorTheme : MonoBehaviour
     public void ShowNote()
     {
         //open note box
-        string _title = "@Loc=ui_designer_note_title@@";
+        //Debug.Log(LocalizedAssetLookup.singleton.Translate("@Loc=ui_designer_note_title@@"));
+        //Debug.Log(LocalizedAssetLookup.singleton.Translate(string.Format("@Loc=themename_tm{0}@@", themeIndex)));
+        string _title = string.Format("{0}-{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_designer_note_title@@"), string.Format("@Loc=themename_tm{0}@@", themeIndex));
         string _desc = DesignNoteLoc;
         LevelSelector.singleton.DesignerNoteBox.ShowBox(_title, _desc);
     }
