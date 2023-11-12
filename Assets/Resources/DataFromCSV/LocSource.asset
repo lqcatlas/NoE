@@ -294,7 +294,7 @@ MonoBehaviour:
     CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u6570\u5B57"
   - key: goal_lv407
     EN: Set the sum of cells to 20
-    CN: "\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A20"
+    CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u6709\u98DF\u7269\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A20"
   - key: goal_lv408
     EN: Set the sum of cells to 82
     CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u662F\u5BFF\u53F8\u6216\u996D\u56E2\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A82"
@@ -576,3 +576,18 @@ MonoBehaviour:
     EN: On the way to work, passing through a river, <b>things</b> emerges from the
       voice of the winds
     CN: "\u8D70\u5728\u4E0A\u73ED\u7684\u8DEF\u4E0A\uFF0C\u8DEF\u8FC7\u4E00\u6761\u5C0F\u6CB3\uFF0C\u6811\u53F6\u7684\u5A46\u5A11\u58F0\u4E2D\u5939\u6742\u7740<b>\u4E07\u7269</b>\u3002"
+  - key: tool_name_theme5_status1
+    EN: Crescent
+    CN: "\u65B0\u6708"
+  - key: tool_name_theme5_status2
+    EN: Quarter
+    CN: "\u5F26\u6708"
+  - key: tool_name_theme5_status3
+    EN: Full
+    CN: "\u6EE1\u6708"
+  - key: tool_name_theme5_status4
+    EN: Quarter
+    CN: "\u5F26\u6708"
+  - key: tool_name_theme5_status5
+    EN: Crescent
+    CN: "\u65B0\u6708"

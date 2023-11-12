@@ -202,10 +202,10 @@ public class LM_002_Coin : LevelMasterBase
         //place random coin
         GameObject randomCoin = Instantiate(coinHub.RandomCoinTemplate, coinHub.coinBgHolder);
         randomCoin.GetComponent<RandomCoinShapeWidget>().GenerateARandomCoin(levelData.previousBoard.toolStatus);
-        int XYRange = 4;
+        float XYRange = 2.5f;
         randomCoin.transform.position = targetCellLocation.position + new Vector3(Random.Range(-1f, 1f) * XYRange, Random.Range(-1f, 1f) * XYRange, 0f);
         //place animation
-        float distance = 6f;
+        float distance = 10f;
         float duration = 0.3f;
         float start_size = 10f;
         float shake_strength = 0.03f;

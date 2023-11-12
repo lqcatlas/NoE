@@ -135,7 +135,7 @@ public class DataLevel
             Debug.LogError("read level setup from a invalid UID");
             return false;
         }
-        Debug.Log(string.Format("init a level w/ UID: {0}", setupData.levelUID));
+        //Debug.Log(string.Format("init a level w/ UID: {0}", setupData.levelUID));
         levelUID = setupData.levelUID;
         themeIndex = setupData.themeIndex;
         levelIndex = setupData.levelIndex;

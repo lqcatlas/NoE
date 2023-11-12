@@ -492,7 +492,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 423832989
   m_SortingLayer: 1
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: -532130632, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -582,7 +582,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 423832989
   m_SortingLayer: 1
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5331590135555588623
 MonoBehaviour:
@@ -916,7 +916,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 423832989
   m_SortingLayer: 1
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1456085482, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
@@ -1074,6 +1074,7 @@ MonoBehaviour:
   ThemeDescByStatus:
   - "\u6C38\u4E0D\u505C\u6B47\u3002"
   - "\u65F6\u95F4\u6C38\u4E0D\u505C\u6B47\u3002"
+  DesignNoteLoc: 
   FloatingGroup: {fileID: 842355792068915629}
   SwingingGroup: {fileID: 1872722202078880010}
   NodesParent: {fileID: 2694260598734344911}

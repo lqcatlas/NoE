@@ -24,24 +24,13 @@ public class LM_005_Moon : LevelMasterBase
     public override void InitTool()
     {
         base.InitTool();
-        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 2)
-        {
-            hub.toolMaster.toolIcon.sprite = moonHub.statusSprites[levelData.curBoard.toolStatus];
-            moonHub.SetPlateWidget(false);
-        }
-        else if (levelData.levelIndex >= 3)
-        {
-            hub.toolMaster.frame.gameObject.SetActive(false);
-            hub.toolMaster.toolIcon.gameObject.SetActive(false);
-            moonHub.SetPlateWidget(false);
-            
-        }
-        else
-        {
-            Debug.LogError(string.Format("master script of {0} reaches undefined level", levelData.theme));
-        }
+        hub.toolMaster.frame.gameObject.SetActive(false);
+        hub.toolMaster.toolIcon.gameObject.SetActive(false);
+        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(moonHub.toolDisplayName[levelData.curBoard.toolStatus]));
+        moonHub.SetPlateWidget(false);
         //moon phase tablet
-
+        moonHub.InitToolToCycle(levelData.curBoard.toolStatus, levelData.levelIndex);
+        //moonHub.AnimateCycle();
     }
     public override void AddtionalInit_Theme()
     {
@@ -185,7 +174,10 @@ public class LM_005_Moon : LevelMasterBase
     {
         base.UpdateTool(coord);
         //moon phase tablet rotate
-        hub.toolMaster.toolIcon.sprite = moonHub.statusSprites[levelData.curBoard.toolStatus];
+        //hub.toolMaster.toolIcon.sprite = moonHub.statusSprites[levelData.curBoard.toolStatus];\
+        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(moonHub.toolDisplayName[levelData.curBoard.toolStatus]));
+        moonHub.AddPredictedToolToCycle(levelData.curBoard.toolStatus, levelData.levelIndex);
+        moonHub.AnimateCycle();
     }
     public override void DelayedPlay_Theme()
     {

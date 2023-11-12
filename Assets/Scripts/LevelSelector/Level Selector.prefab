@@ -1299,6 +1299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MsgBox
       objectReference: {fileID: 0}
+    - target: {fileID: 7478813790310980973, guid: 714c2c3f2815a1241aece8a94004d41f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7931751905418315436, guid: 714c2c3f2815a1241aece8a94004d41f, type: 3}
       propertyPath: m_SortingOrder
       value: 101

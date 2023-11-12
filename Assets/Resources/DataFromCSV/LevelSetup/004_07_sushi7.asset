@@ -75,5 +75,5 @@ MonoBehaviour:
     - coord: {x: 2, y: 2}
       value: 7
       status: 0
-    toolCount: 7
+    toolCount: 20
     toolStatus: 1

@@ -5,6 +5,7 @@ using System.Linq;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System;
+using Unity.VisualScripting;
 
 [System.Serializable]
 public class SaveData
@@ -67,12 +68,19 @@ public class SaveManager : MonoBehaviour
     [Header("Savings")]
     public SaveData curSave;
 
-    public List<ISaveData> SaveDataModules = new List<ISaveData>();
+    
+    //public List<ScriptableObject> ScriptablesWithSave;
+    private List<ISaveData> SaveDataModules;
     private Dictionary<string, string> dict2save = new Dictionary<string, string>();
     public List<string> dictVisualized = new List<string>();
     private void Start()
     {
         SaveDataModules = FindAllISaveDataModules();
+        /*SaveDataModules = new List<ISaveData>();
+        for (int i=0;i< ScriptablesWithSave.Count; i++)
+        {
+            SaveDataModules.Add(ScriptablesWithSave[i].GetComponent<ISaveData>());
+        }*/
         //Debug.Log(string.Format("Find in total of {0} modules has ISaveData interface", SaveDataModules.Count));
         LoadFromFile();
     }
