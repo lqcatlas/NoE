@@ -1,7 +1,5 @@
 using DG.Tweening;
-using System;
 using TMPro;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -327,7 +325,7 @@ public class LevelMasterBase : MonoBehaviour
             {
                 if(temp_cellData.value != hub.boardMaster.cells[i].curNumber)
                 {
-                    NumberShift(hub.boardMaster.cells[i], temp_cellData.value);
+                    hub.boardMaster.cells[i].NumberShift(temp_cellData.value);
                 }
                 //hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
             }
@@ -404,19 +402,6 @@ public class LevelMasterBase : MonoBehaviour
     }
     #endregion
 
-    #region tool methods
-    public void NumberShift(CellMaster cell, int endValue)
-    {
-        Sequence seq = DOTween.Sequence();
-        for(int i=0;i< dConstants.VFX.NumberShiftAnimCount; i++)
-        {
-            seq.AppendCallback(() => cell.DisplayNumber(UnityEngine.Random.Range(Mathf.Min(1,Mathf.FloorToInt(endValue/10f))*10+1, endValue)));
-            seq.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
-        }
-        seq.AppendInterval(UnityEngine.Random.Range(dConstants.VFX.NumberShiftAnimInterval*0.05f, dConstants.VFX.NumberShiftAnimInterval));
-        seq.AppendCallback(() => cell.DisplayNumber(endValue));
-    }
-    #endregion
     bool TryLoadNextLevel()
     {
         //temp method, will be revamp with level launcher
@@ -440,7 +425,7 @@ public class LevelMasterBase : MonoBehaviour
             hub.narrativeMaster.TypeALine(levelData.newPlayNarratives[index]);
             return true;
         }
-        catch (Exception e)
+        catch (System.Exception e)
         {
             Debug.LogError(string.Format("invalid play narrative caught on level ID ({0})", levelData.levelUID));
             return false;

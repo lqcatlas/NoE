@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
   audioVolume: 0.5
-  introCount: 0
+  introCount: 1000

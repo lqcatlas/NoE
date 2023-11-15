@@ -35,9 +35,11 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule2_lv501@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv503@@'
+    ruleDesc: '@Loc=rule3_lv502@@'
   - tag: 0
-    ruleDesc: '@Loc=rule5_lv502@@'
+    ruleDesc: '@Loc=rule4_lv504@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule5_lv503@@'
   initBoard:
     boardSize: {x: 3, y: 3}
     cells:

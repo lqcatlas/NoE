@@ -45,7 +45,7 @@ public class AdvSpriteSlider : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning(string.Format("sprite renderer on game object ({0}) has no valid brothers sprites", gameObject.name));
+            //Debug.LogWarning(string.Format("sprite renderer on game object ({0}) has no valid brothers sprites", gameObject.name));
             return;
         }
     }

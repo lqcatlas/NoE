@@ -13,7 +13,7 @@ UID,Key,EN,CN
 12,levelname_lv202,Greek Drachma,德拉克马
 13,levelname_lv203,Ban Liang,秦半两
 14,levelname_lv204,Dinar,达里克
-15,levelname_lv205,Bezant,拜占庭贝卡特
+15,levelname_lv205,Bezant,贝卡特
 16,levelname_lv206,Pound Sterling,英镑
 17,levelname_lv207,Maple Leaf coin,枫叶币
 18,levelname_lv208,Bitcoin,比特币
@@ -36,7 +36,7 @@ UID,Key,EN,CN
 35,play1_lv107,转瞬之间，又唏嘘时间的短暂。,转瞬之间，又唏嘘时间的短暂。
 36,play1_lv108,是时候休息了。,是时候休息了。
 37,play1_lv202,硬币的形式无穷尽。,硬币的形式无穷尽。
-38,play1_lv203,始终保持两面，,始终保持两面，
+38,play1_lv203,始终保持两面，,始终保持两面。
 39,goal_lv101,Set all cells to 8,将所有格子变为8
 40,goal_lv102,Set all cells to 10,将所有格子变为10
 41,goal_lv103,Set all cells to 1,将所有格子变为1
@@ -71,7 +71,7 @@ UID,Key,EN,CN
 70,levelname_lv404,Ikura,鱼子
 71,levelname_lv405,Sake,三文鱼
 72,levelname_lv406,Tako,章鱼
-73,levelname_lv407,Toro,金枪鱼大腹
+73,levelname_lv407,Toro,大腹
 74,levelname_lv408,Uni,海胆
 75,init_lv401,寿司,寿司
 76,init_lv402,将鲜嫩的鱼肉切成薄片，,将鲜嫩的鱼肉切成薄片，
@@ -91,7 +91,7 @@ UID,Key,EN,CN
 90,goal_lv403,Set all cells to 4,将所有格子变为4
 91,goal_lv404,Set all cells to 7,将所有格子变为7
 92,goal_lv405,Set all cells to either 2 or 7,将所有格子为2或7
-93,goal_lv406,Set all cells to UNIQUE,将所有格子变为不同数字
+93,goal_lv406,Set all cells to UNIQUE,将所有格子变为不同值
 94,goal_lv407,Set the sum of cells to 20,每个格子都有食物时，<br>将数字总和变为20
 95,goal_lv408,Set the sum of cells to 82,每个格子都是寿司或饭团时，<br>将数字总和变为82
 96,rule1_lv401,Fish: +3,鱼： +3
@@ -114,23 +114,23 @@ UID,Key,EN,CN
 113,init_lv504,满月寄托了思念，期待团圆。,满月寄托了思念，期待团圆。
 114,init_lv505,满月也带来灾祸，唤起狼人。,满月也带来灾祸，唤起狼人。
 115,init_lv506,反复观测月相，掌握规律。,反复观测月相，掌握规律。
-116,init_lv507,神迹因此成为传说。,神迹因此成为传说。
+116,init_lv507,神迹因此成为传说。,月相不再是是神迹。
 117,init_lv508,周而复始，秩序与癫狂的轮回。,周而复始，秩序与癫狂的轮回。
 118,play1_lv507,月食！秩序再次被吞噬。,月食！秩序再次被吞噬。
 119,play1_lv508,月亮静静地见证着。,月亮静静地见证着。
-120,goal_lv501,Set calendar to 08/10,将日历设为8月10日
-121,goal_lv502,Set a line to 08/13,让某一行成为8月13日
-122,goal_lv503,Set a line and a row to 08/15,让某一行和列同时成为8月15日
-123,goal_lv504,Set all cells to SAME,让所有格子成为相同数字
-124,goal_lv505,Set all cells to UNIQUE,让所有格子成为不同数字
-125,goal_lv506,See 3 full moon cycles,经历3次完整月相
-126,goal_lv507,See 5 full moon cycles,经历5次完整月相
-127,goal_lv508,"After 2 eclipses, set all cells to 3",经历2次月食后，让所有格子回到最初值
+120,goal_lv501,Set calendar to 08/10,让所有格子为7
+121,goal_lv502,Set a line to 08/13,让所有格子成为相同数字
+122,goal_lv503,Set a line and a row to 08/15,让所有格子成为相同数字
+123,goal_lv504,Set all cells to SAME,让所有格子为7
+124,goal_lv505,Set all cells to UNIQUE,让至少7个格子为1
+125,goal_lv506,See 3 full moon cycles,让数字总和成为32
+126,goal_lv507,See 5 full moon cycles,月食时，让所有格子回归初值
+127,goal_lv508,"After 2 eclipses, set all cells to 3",月食时，让所有格子回归初值
 128,rule1_lv501,Crescent: +1,新月：+1
 129,rule2_lv501,Quarter: +3,弦月：+3
-130,rule3_lv503,Full: +5,满月：+5
-131,rule4_lv507,Eclipse(Full + 9): All cells -5,月食（满月+9）：全场 -5
-132,rule5_lv502,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
+130,rule3_lv502,Full: +5,满月：+5
+131,rule4_lv504,Eclipse(Full + 9): All cells -5,9+满月：月食
+132,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
 133,themename_tm6,Lightbulb,灯泡
 134,levelname_lv601,1,1
 135,levelname_lv602,2,2
@@ -157,11 +157,11 @@ UID,Key,EN,CN
 156,goal_lv604,6+ cells are ON.,点亮6盏灯泡
 157,goal_lv605,Turn on 4 cells simultaneously.,一次性点亮4盏灯泡
 158,goal_lv606,Turn on 8 cells simultaneously.,一次性点亮8盏灯泡
-159,goal_lv607,"Use actions. <br>Meanwhile, keep the number of ON cells stays between 4 to 6.",用完所有行动，<br>保持点亮的灯泡<br>在4-6盏之间
+159,goal_lv607,"Use actions. <br>Meanwhile, keep the number of ON cells stays between 4 to 6.",用完所有灯泡，<br>保持点亮的灯泡<br>在4-6盏之间
 160,goal_lv608,All cells are ON.,点亮全部灯泡
 161,rule1_lv601,Played cell +1,打出的格子 +1
 162,rule1_lv603,Played and adjacent cells +1,打出及相邻的格子 +1
-163,rule2_lv601,Cell is turned ON,与两个及以上相同数字相邻
+163,rule2_lv601,Cell is turned ON,与两个或以上的相同数字相邻
 164,rule3_lv601,  when adjacent to 2+ same numbers,  则点亮格子
 165,themedesc_short_tm1,永不停歇。,永不停歇。
 166,themedesc_short_tm2,记录历史。,记录历史。

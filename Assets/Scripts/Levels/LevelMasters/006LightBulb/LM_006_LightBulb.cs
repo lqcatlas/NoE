@@ -145,7 +145,7 @@ public class LM_006_LightBulb : LevelMasterBase
                 DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
                 if (temp_cellData.value != hub.boardMaster.cells[i].curNumber)
                 {
-                    NumberShift(hub.boardMaster.cells[i], temp_cellData.value);
+                    hub.boardMaster.cells[i].NumberShift(temp_cellData.value);
                 }
 
             }
@@ -164,7 +164,7 @@ public class LM_006_LightBulb : LevelMasterBase
                 DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
                 if (temp_cellData.value != hub.boardMaster.cells[i].curNumber)
                 {
-                    NumberShift(hub.boardMaster.cells[i], temp_cellData.value);
+                    hub.boardMaster.cells[i].NumberShift(temp_cellData.value);
                 }
             }
         }

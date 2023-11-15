@@ -57,7 +57,7 @@ MonoBehaviour:
     CN: "\u8FBE\u91CC\u514B"
   - key: levelname_lv205
     EN: Bezant
-    CN: "\u62DC\u5360\u5EAD\u8D1D\u5361\u7279"
+    CN: "\u8D1D\u5361\u7279"
   - key: levelname_lv206
     EN: Pound Sterling
     CN: "\u82F1\u9551"
@@ -126,7 +126,7 @@ MonoBehaviour:
     CN: "\u786C\u5E01\u7684\u5F62\u5F0F\u65E0\u7A77\u5C3D\u3002"
   - key: play1_lv203
     EN: "\u59CB\u7EC8\u4FDD\u6301\u4E24\u9762\uFF0C"
-    CN: "\u59CB\u7EC8\u4FDD\u6301\u4E24\u9762\uFF0C"
+    CN: "\u59CB\u7EC8\u4FDD\u6301\u4E24\u9762\u3002"
   - key: goal_lv101
     EN: Set all cells to 8
     CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A8"
@@ -231,7 +231,7 @@ MonoBehaviour:
     CN: "\u7AE0\u9C7C"
   - key: levelname_lv407
     EN: Toro
-    CN: "\u91D1\u67AA\u9C7C\u5927\u8179"
+    CN: "\u5927\u8179"
   - key: levelname_lv408
     EN: Uni
     CN: "\u6D77\u80C6"
@@ -291,7 +291,7 @@ MonoBehaviour:
     CN: "\u5C06\u6240\u6709\u683C\u5B50\u4E3A2\u62167"
   - key: goal_lv406
     EN: Set all cells to UNIQUE
-    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u6570\u5B57"
+    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u503C"
   - key: goal_lv407
     EN: Set the sum of cells to 20
     CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u6709\u98DF\u7269\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A20"
@@ -360,7 +360,7 @@ MonoBehaviour:
     CN: "\u53CD\u590D\u89C2\u6D4B\u6708\u76F8\uFF0C\u638C\u63E1\u89C4\u5F8B\u3002"
   - key: init_lv507
     EN: "\u795E\u8FF9\u56E0\u6B64\u6210\u4E3A\u4F20\u8BF4\u3002"
-    CN: "\u795E\u8FF9\u56E0\u6B64\u6210\u4E3A\u4F20\u8BF4\u3002"
+    CN: "\u6708\u76F8\u4E0D\u518D\u662F\u662F\u795E\u8FF9\u3002"
   - key: init_lv508
     EN: "\u5468\u800C\u590D\u59CB\uFF0C\u79E9\u5E8F\u4E0E\u766B\u72C2\u7684\u8F6E\u56DE\u3002"
     CN: "\u5468\u800C\u590D\u59CB\uFF0C\u79E9\u5E8F\u4E0E\u766B\u72C2\u7684\u8F6E\u56DE\u3002"
@@ -372,41 +372,41 @@ MonoBehaviour:
     CN: "\u6708\u4EAE\u9759\u9759\u5730\u89C1\u8BC1\u7740\u3002"
   - key: goal_lv501
     EN: Set calendar to 08/10
-    CN: "\u5C06\u65E5\u5386\u8BBE\u4E3A8\u670810\u65E5"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: goal_lv502
     EN: Set a line to 08/13
-    CN: "\u8BA9\u67D0\u4E00\u884C\u6210\u4E3A8\u670813\u65E5"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
   - key: goal_lv503
     EN: Set a line and a row to 08/15
-    CN: "\u8BA9\u67D0\u4E00\u884C\u548C\u5217\u540C\u65F6\u6210\u4E3A8\u670815\u65E5"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
   - key: goal_lv504
     EN: Set all cells to SAME
-    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: goal_lv505
     EN: Set all cells to UNIQUE
-    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u4E0D\u540C\u6570\u5B57"
+    CN: "\u8BA9\u81F3\u5C117\u4E2A\u683C\u5B50\u4E3A1"
   - key: goal_lv506
     EN: See 3 full moon cycles
-    CN: "\u7ECF\u53863\u6B21\u5B8C\u6574\u6708\u76F8"
+    CN: "\u8BA9\u6570\u5B57\u603B\u548C\u6210\u4E3A32"
   - key: goal_lv507
     EN: See 5 full moon cycles
-    CN: "\u7ECF\u53865\u6B21\u5B8C\u6574\u6708\u76F8"
+    CN: "\u6708\u98DF\u65F6\uFF0C\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5F52\u521D\u503C"
   - key: goal_lv508
     EN: After 2 eclipses, set all cells to 3
-    CN: "\u7ECF\u53862\u6B21\u6708\u98DF\u540E\uFF0C\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5230\u6700\u521D\u503C"
+    CN: "\u6708\u98DF\u65F6\uFF0C\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5F52\u521D\u503C"
   - key: rule1_lv501
     EN: 'Crescent: +1'
     CN: "\u65B0\u6708\uFF1A+1"
   - key: rule2_lv501
     EN: 'Quarter: +3'
     CN: "\u5F26\u6708\uFF1A+3"
-  - key: rule3_lv503
+  - key: rule3_lv502
     EN: 'Full: +5'
     CN: "\u6EE1\u6708\uFF1A+5"
-  - key: rule4_lv507
+  - key: rule4_lv504
     EN: 'Eclipse(Full + 9): All cells -5'
-    CN: "\u6708\u98DF\uFF08\u6EE1\u6708+9\uFF09\uFF1A\u5168\u573A -5"
-  - key: rule5_lv502
+    CN: "9+\u6EE1\u6708\uFF1A\u6708\u98DF"
+  - key: rule5_lv503
     EN: '10+: Sunrise! LOSE'
     CN: "\u8D85\u8FC79\uFF1A\u592A\u9633\u5347\u8D77\uFF0C\u6E38\u620F\u5931\u8D25"
   - key: themename_tm6
@@ -490,7 +490,7 @@ MonoBehaviour:
   - key: goal_lv607
     EN: Use actions. <br>Meanwhile, keep the number of ON cells stays between 4 to
       6.
-    CN: "\u7528\u5B8C\u6240\u6709\u884C\u52A8\uFF0C<br>\u4FDD\u6301\u70B9\u4EAE\u7684\u706F\u6CE1<br>\u57284-6\u76CF\u4E4B\u95F4"
+    CN: "\u7528\u5B8C\u6240\u6709\u706F\u6CE1\uFF0C<br>\u4FDD\u6301\u70B9\u4EAE\u7684\u706F\u6CE1<br>\u57284-6\u76CF\u4E4B\u95F4"
   - key: goal_lv608
     EN: All cells are ON.
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
@@ -502,7 +502,7 @@ MonoBehaviour:
     CN: "\u6253\u51FA\u53CA\u76F8\u90BB\u7684\u683C\u5B50 +1"
   - key: rule2_lv601
     EN: Cell is turned ON
-    CN: "\u4E0E\u4E24\u4E2A\u53CA\u4EE5\u4E0A\u76F8\u540C\u6570\u5B57\u76F8\u90BB"
+    CN: "\u4E0E\u4E24\u4E2A\u6216\u4EE5\u4E0A\u7684\u76F8\u540C\u6570\u5B57\u76F8\u90BB"
   - key: rule3_lv601
     EN: '  when adjacent to 2+ same numbers'
     CN: "  \u5219\u70B9\u4EAE\u683C\u5B50"

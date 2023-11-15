@@ -150,6 +150,20 @@ public class CellMaster : MonoBehaviour
             Debug.LogError(string.Format("cell({0}) clicked with no level master owner", gameObject.name));
         }
     }
+    public void NumberShift(int endValue, float shuffleDuration = 0)
+    {
+        Sequence seq = DOTween.Sequence();
+        int ShiftTimes = Mathf.FloorToInt(shuffleDuration / dConstants.VFX.NumberShiftAnimInterval);
+        for (int i = 0; i < ShiftTimes; i++)
+        {
+            int digits = Mathf.FloorToInt(endValue / 10f);
+            seq.AppendCallback(() => DisplayNumber(Random.Range(digits * 10, (digits + 1) * 10 - 1)));
+            seq.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
+        }
+        seq.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
+        seq.AppendCallback(() => DisplayNumber(endValue));
+    }
+
     public void ResetCellHover()
     {
         maskSprt.DOFade(0f, 0.001f);

@@ -40,12 +40,12 @@ public class LM_005_Moon : LevelMasterBase
     }
     public override void DelayedInit_Theme()
     {
-        if(levelData.levelIndex >= 3)
-        {
+        //if(levelData.levelIndex >= 3)
+        //{
             moonHub.SetPlateWidget(true);
             moonHub.SetTabletToDegree(0);
             moonHub.AnimateTabletToDegree(levelData.curBoard.toolStatus);
-        }
+        //}
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -77,7 +77,7 @@ public class LM_005_Moon : LevelMasterBase
         }     
         //lv 2+
         //crescent +1, quarter +3, full +5
-        else if (levelData.levelIndex >= 2 && levelData.levelIndex <= 6)
+        else if (levelData.levelIndex >= 2 && levelData.levelIndex <= 3)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -102,7 +102,7 @@ public class LM_005_Moon : LevelMasterBase
                 }
             }
         }
-        else if (levelData.levelIndex >= 7 && levelData.levelIndex <= 8)
+        else if (levelData.levelIndex >= 4 && levelData.levelIndex <= 8)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -139,9 +139,9 @@ public class LM_005_Moon : LevelMasterBase
     }
     public override void HandleEnvironment(Vector2Int coord)
     {
-        //lv 1-2
+        //lv 1
         //crescent/quarter alternate
-        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 2)
+        if (levelData.levelIndex == 1)
         {
             if(levelData.curBoard.toolStatus == (int)MoonPhase.crescent_1)
             {
@@ -153,9 +153,9 @@ public class LM_005_Moon : LevelMasterBase
                 fullPhaseCount += 1;
             }
         }
-        //lv 3-8
+        //lv 2-8
         //phase rotate
-        else if (levelData.levelIndex >= 3)
+        else if (levelData.levelIndex >= 2)
         {
             levelData.curBoard.toolStatus = levelData.curBoard.toolStatus + 1;
             if(levelData.curBoard.toolStatus == 6)
@@ -182,7 +182,8 @@ public class LM_005_Moon : LevelMasterBase
     public override void DelayedPlay_Theme()
     {
         Vector2Int numberRange = new Vector2Int(0, 10000);
-        //eclipse number change
+        /*
+        //old eclipse
         if (eclipseTriggered)
         {
             eclipseTriggered = false;
@@ -194,55 +195,102 @@ public class LM_005_Moon : LevelMasterBase
                 //levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
             }
             UpdateCells(eclipseCoord); 
-        } 
+        }
+        */
+        //new eclipse number change
+        if (eclipseTriggered)
+        {
+            eclipseTriggered = false;
+            //eclipseCoord = Vector2Int.zero;
+            List<int> newBoardValues = new List<int>();
+            //calculate all new cell values
+            for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+            {
+                Vector2Int curCoord = levelData.curBoard.cells[i].coord;
+                Vector2Int targetCoord = new Vector2Int(levelData.curBoard.boardSize.x - curCoord.x - 1, levelData.curBoard.boardSize.y - curCoord.y - 1);
+                bool foundMirroredCell = false;
+                for (int j = 0; j < levelData.curBoard.cells.Count; j++)
+                {
+                    if (levelData.curBoard.cells[j].coord == targetCoord)
+                    {
+                        foundMirroredCell = true;
+                        newBoardValues.Add(BoardCalculation.ConstrainX_Range(Mathf.FloorToInt(levelData.curBoard.cells[j].value / 2f), numberRange));
+                    }
+                }
+                if (!foundMirroredCell)
+                {
+                    newBoardValues.Add(BoardCalculation.ConstrainX_Range(Mathf.FloorToInt(levelData.curBoard.cells[i].value / 2f), numberRange));
+                }
+            }
+            //set all cell values into new values
+            for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+            {
+                levelData.curBoard.cells[i].value = newBoardValues[i];
+            }
+            //update with a longer number shift vfx
+            for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+            {
+                DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+                if (temp_cellData != null)
+                {
+                    if (temp_cellData.value != hub.boardMaster.cells[i].curNumber)
+                    {
+                        hub.boardMaster.cells[i].NumberShift(temp_cellData.value, 3f);
+                    }
+                    //hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
+                }
+            }
+        }
     }
     public override bool CheckWinCondition()
     {
         /*
-        将日历设为8月10日
-        让某一行成为8月13日
-        让某一行和某一列成为8月15日
+        让所有格子为7
         让所有格子成为相同数字
-        让所有格子成为不同数字
-        经历3次完整月相
-        让所有格子为6
-        经历两次月食后，让所有格子回到最初值
+        让所有格子成为相同数字
+        让所有格子为7
+        让至少7个格子为1
+        让数字总和成为32
+        月食时，让所有格子回归初值。
+        月食时，让所有格子回归初值。
          */
         bool result = false;
         if (levelData.levelIndex == 1)
         {
-            List<int> targetLineNumber = new List<int>() { 0, 8, 1, 0 };
-            return BoardCalculation.ExactLineMatchX(levelData.curBoard, targetLineNumber);
+            //List<int> targetLineNumber = new List<int>() { 0, 8, 1, 0 };
+            return BoardCalculation.CountX_All(levelData.curBoard, 7);
         }
         else if (levelData.levelIndex == 2)
         {
-            List<int> targetLineNumber = new List<int>() { 0, 8, 1, 3 };
-            return BoardCalculation.ExactLineMatchX(levelData.curBoard, targetLineNumber);
+            //List<int> targetLineNumber = new List<int>() { 0, 8, 1, 3 };
+            return BoardCalculation.Same_All(levelData.curBoard);
         }
         else if (levelData.levelIndex == 3)
         {
-            List<int> targetNumber = new List<int>() { 0, 8, 1, 5 };
-            return BoardCalculation.ExactLineMatchX(levelData.curBoard, targetNumber) || BoardCalculation.ExactRowMatchX(levelData.curBoard, targetNumber);
+            //List<int> targetNumber = new List<int>() { 0, 8, 1, 5 };
+            return BoardCalculation.Same_All(levelData.curBoard);
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.Same_All(levelData.curBoard);
+            return BoardCalculation.CountX_All(levelData.curBoard, 7);
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.Unique_All(levelData.curBoard);
+            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 1, 7);
         }
         else if (levelData.levelIndex == 6)
         {
-            return fullPhaseCount >= 3;
+            return BoardCalculation.Sum_As_X(levelData.curBoard, 32);
         }
         else if (levelData.levelIndex == 7)
         {
-            return fullPhaseCount >= 5;
+            //todo 
+            return false;
         }
         else if (levelData.levelIndex == 8)
         {
-            return (fullPhaseCount >= 2 && BoardCalculation.CountX_All(levelData.curBoard, 2));
+            //todo 
+            return false;
         }
         else
         {
@@ -257,7 +305,7 @@ public class LM_005_Moon : LevelMasterBase
             endReason = 0;
             return true;
         }
-        else if(BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 10, 1))
+        else if(BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 10, 1) && levelData.levelIndex >= 3)
         {
             endReason = 1;
             return true;

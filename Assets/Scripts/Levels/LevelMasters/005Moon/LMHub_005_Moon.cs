@@ -52,7 +52,7 @@ public class LMHub_005_Moon : MonoBehaviour
     }
     public void AddPredictedToolToCycle(int toolStatus, int level)
     {
-        if (level >= 1 && level <= 2)
+        if (level == 1)
         {
             AddToolToCycle((toolStatus + 2) % 2 + 1);
         }
@@ -97,7 +97,7 @@ public class LMHub_005_Moon : MonoBehaviour
     public void InitToolToCycle(int startToolStatus, int level)
     {
         ResetToolCycle();
-        if (level >= 1 && level <= 2)
+        if (level == 1)
         {
             AddToolToCycle(0);
             AddToolToCycle(0);
