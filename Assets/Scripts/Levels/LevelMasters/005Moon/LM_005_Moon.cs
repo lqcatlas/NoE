@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LM_005_Moon : LevelMasterBase
 {
@@ -11,7 +12,8 @@ public class LM_005_Moon : LevelMasterBase
     public LMHub_005_Moon moonHub;
     public int fullPhaseCount = 0;
     public int endReason = -1;
-    public bool eclipseTriggered = false;
+    public bool eclipseTrigger = false;
+    public bool eclipsed = false;
     public Vector2Int eclipseCoord;
 
     public override void GetObjectReferences(GameObject _themeHub)
@@ -36,7 +38,15 @@ public class LM_005_Moon : LevelMasterBase
     {
         fullPhaseCount = 0;
         endReason = -1;
-        eclipseTriggered = false;
+        eclipseTrigger = false;
+        eclipsed = false;
+
+        if (levelData.levelIndex == 4)
+        {
+            hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
+            hub.goalMaster.lines[1].gameObject.SetActive(true);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+        }
     }
     public override void DelayedInit_Theme()
     {
@@ -120,7 +130,7 @@ public class LM_005_Moon : LevelMasterBase
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full && levelData.curBoard.cells[i].value == 9)
                     {
-                        eclipseTriggered = true;
+                        eclipseTrigger = true;
                         eclipseCoord = coord;
                         moonHub.eclipseVFX.SetActive(true);
                     }
@@ -179,6 +189,15 @@ public class LM_005_Moon : LevelMasterBase
         moonHub.AddPredictedToolToCycle(levelData.curBoard.toolStatus, levelData.levelIndex);
         moonHub.AnimateCycle();
     }
+    public override void AddtionalUpdate_Theme(Vector2Int coord)
+    {
+        if (levelData.levelIndex == 4)
+        {
+            hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
+            hub.goalMaster.lines[1].gameObject.SetActive(true);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+        }
+    }
     public override void DelayedPlay_Theme()
     {
         Vector2Int numberRange = new Vector2Int(0, 10000);
@@ -198,11 +217,12 @@ public class LM_005_Moon : LevelMasterBase
         }
         */
         //new eclipse number change
-        if (eclipseTriggered)
+        if (eclipseTrigger)
         {
-            eclipseTriggered = false;
+            //eclipseTrigger = false;
             //eclipseCoord = Vector2Int.zero;
             List<int> newBoardValues = new List<int>();
+            /*
             //calculate all new cell values
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -227,6 +247,48 @@ public class LM_005_Moon : LevelMasterBase
             {
                 levelData.curBoard.cells[i].value = newBoardValues[i];
             }
+            */
+            //calculate all new cell values
+            for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+            {
+                Vector2Int curCoord = levelData.curBoard.cells[i].coord;
+                Vector2Int targetCoord = new Vector2Int(levelData.curBoard.boardSize.x - curCoord.x - 1, levelData.curBoard.boardSize.y - curCoord.y - 1);
+                bool foundMirroredCell = false;
+                int targetValue = 0;
+                for (int j = 0; j < levelData.curBoard.cells.Count; j++)
+                {
+                    if (levelData.curBoard.cells[j].coord == targetCoord)
+                    {
+                        foundMirroredCell = true;
+                        targetValue = levelData.curBoard.cells[j].value;
+                    }
+                }
+                if (!foundMirroredCell)
+                {
+                    targetValue = levelData.curBoard.cells[i].value;
+                }
+                if (targetValue == 1)
+                {
+                    newBoardValues.Add(0);
+                }
+                else if(targetValue == 3 || targetValue == 5)
+                {
+                    newBoardValues.Add(1);
+                }
+                else if (targetValue == 7 || targetValue == 9)
+                {
+                    newBoardValues.Add(3);
+                }
+                else
+                {
+                    newBoardValues.Add(targetValue);
+                }
+            }
+            //set all cell values into new values
+            for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+            {
+                levelData.curBoard.cells[i].value = newBoardValues[i];
+            }
             //update with a longer number shift vfx
             for (int i = 0; i < hub.boardMaster.cells.Count; i++)
             {
@@ -240,6 +302,13 @@ public class LM_005_Moon : LevelMasterBase
                     //hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
                 }
             }
+            //update sum calculation
+            if (levelData.levelIndex == 4)
+            {
+                hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
+                hub.goalMaster.lines[1].gameObject.SetActive(true);
+                LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+            }
         }
     }
     public override bool CheckWinCondition()
@@ -248,11 +317,11 @@ public class LM_005_Moon : LevelMasterBase
         让所有格子为7
         让所有格子成为相同数字
         让所有格子成为相同数字
-        让所有格子为7
-        让至少7个格子为1
-        让数字总和成为32
-        月食时，让所有格子回归初值。
-        月食时，让所有格子回归初值。
+        让数字总和下降至20以下
+        让左侧一列格子为0
+        将所有格子变成不同值
+        让所有格子回归初值
+        月食时，让所有格子回归初值
          */
         bool result = false;
         if (levelData.levelIndex == 1)
@@ -272,25 +341,48 @@ public class LM_005_Moon : LevelMasterBase
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.CountX_All(levelData.curBoard, 7);
+            return BoardCalculation.Sum_Lesser_X(levelData.curBoard, 10);
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 1, 7);
+            return (
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 0)).value == 0 && 
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 1)).value == 0 && 
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 0
+                );
         }
         else if (levelData.levelIndex == 6)
         {
-            return BoardCalculation.Sum_As_X(levelData.curBoard, 32);
+            return BoardCalculation.Even_All(levelData.curBoard);
         }
         else if (levelData.levelIndex == 7)
         {
-            //todo 
-            return false;
+            return (
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 1 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2)).value == 3 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 1)).value == 4 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1)).value == 5 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1)).value == 6 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 0)).value == 7 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 0)).value == 8 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0)).value == 9
+                );
         }
         else if (levelData.levelIndex == 8)
         {
-            //todo 
-            return false;
+            return (
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 1 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2)).value == 3 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 1)).value == 1 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1)).value == 3 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 0)).value == 1 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 0)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0)).value == 3 &&
+                eclipseTrigger
+                );
         }
         else
         {
@@ -300,6 +392,7 @@ public class LM_005_Moon : LevelMasterBase
     }
     public override bool CheckLoseCondition()
     {
+        eclipseTrigger = false;
         if (levelData.curBoard.toolCount == 0)
         {
             endReason = 0;

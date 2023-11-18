@@ -118,7 +118,6 @@ public class LevelMasterBase : MonoBehaviour
     }
     public void PlayCallback()
     {
-        EnablePlayerInput();
         DelayedPlay_Theme();
         if (CheckWinCondition())
         {
@@ -129,8 +128,8 @@ public class LevelMasterBase : MonoBehaviour
         {
             Debug.Log("ooops! you lose!");
             LoseALevel();
-
         }
+        EnablePlayerInput();
     }
     public void LevelRetry()
     {

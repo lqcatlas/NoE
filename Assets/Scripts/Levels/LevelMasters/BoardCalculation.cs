@@ -330,4 +330,36 @@ public class BoardCalculation
         }
         return false;
     }
+    static public bool Odd_All(DataBoard board)
+    {
+        bool allOdd = true;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            for (int j = i + 1; j < board.cells.Count; j++)
+            {
+                if (board.cells[i].value % 2 != 1)
+                {
+                    allOdd = false;
+                    return allOdd;
+                }
+            }
+        }
+        return allOdd;
+    }
+    static public bool Even_All(DataBoard board)
+    {
+        bool allEven = true;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            for (int j = i + 1; j < board.cells.Count; j++)
+            {
+                if (board.cells[i].value % 2 != 0)
+                {
+                    allEven = false;
+                    return allEven;
+                }
+            }
+        }
+        return allEven;
+    }
 }

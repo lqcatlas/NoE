@@ -118,14 +118,14 @@ UID,Key,EN,CN
 117,init_lv508,周而复始，秩序与癫狂的轮回。,周而复始，秩序与癫狂的轮回。
 118,play1_lv507,月食！秩序再次被吞噬。,月食！秩序再次被吞噬。
 119,play1_lv508,月亮静静地见证着。,月亮静静地见证着。
-120,goal_lv501,Set calendar to 08/10,让所有格子为7
-121,goal_lv502,Set a line to 08/13,让所有格子成为相同数字
-122,goal_lv503,Set a line and a row to 08/15,让所有格子成为相同数字
-123,goal_lv504,Set all cells to SAME,让所有格子为7
-124,goal_lv505,Set all cells to UNIQUE,让至少7个格子为1
-125,goal_lv506,See 3 full moon cycles,让数字总和成为32
-126,goal_lv507,See 5 full moon cycles,月食时，让所有格子回归初值
-127,goal_lv508,"After 2 eclipses, set all cells to 3",月食时，让所有格子回归初值
+120,goal_lv501,让所有格子为7,让所有格子为7
+121,goal_lv502,让所有格子成为相同数字,让所有格子成为相同数字
+122,goal_lv503,让所有格子成为相同数字,让所有格子成为相同数字
+123,goal_lv504,让数字总和下降至20以下,让数字总和下降至20以下
+124,goal_lv505,让左侧一列格子为0,让左侧一列格子为0
+125,goal_lv506,将所有格子变成不同值,将所有格子变成不同值
+126,goal_lv507,让所有格子回归初值,让所有格子回归初值
+127,goal_lv508,月食时，让所有格子回归初值,月食时，让所有格子回归初值
 128,rule1_lv501,Crescent: +1,新月：+1
 129,rule2_lv501,Quarter: +3,弦月：+3
 130,rule3_lv502,Full: +5,满月：+5
