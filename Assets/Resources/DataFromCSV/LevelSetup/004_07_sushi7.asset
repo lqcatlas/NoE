@@ -21,7 +21,8 @@ MonoBehaviour:
   theme: '@Loc=themename_tm4@@'
   title: '@Loc=levelname_lv407@@'
   newInitNarrative: '@Loc=init_lv407@@'
-  newPlayNarratives: []
+  newPlayNarratives:
+  - '@Loc=play1_lv407@@'
   oldNarratives:
   - '@Loc=init_lv401@@'
   - '@Loc=init_lv402@@'
@@ -33,6 +34,7 @@ MonoBehaviour:
   - '@Loc=init_lv405@@'
   - '@Loc=play1_lv405@@'
   - '@Loc=init_lv406@@'
+  - '@Loc=play1_lv406@@'
   goal: '@Loc=goal_lv407@@'
   ruleset:
   - tag: 0

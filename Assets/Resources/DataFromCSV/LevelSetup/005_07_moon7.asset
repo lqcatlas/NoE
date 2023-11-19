@@ -26,10 +26,15 @@ MonoBehaviour:
   oldNarratives:
   - '@Loc=init_lv501@@'
   - '@Loc=init_lv502@@'
+  - '@Loc=play1_lv502@@'
   - '@Loc=init_lv503@@'
+  - '@Loc=play1_lv503@@'
   - '@Loc=init_lv504@@'
+  - '@Loc=play1_lv504@@'
   - '@Loc=init_lv505@@'
+  - '@Loc=play1_lv505@@'
   - '@Loc=init_lv506@@'
+  - '@Loc=play1_lv506@@'
   goal: '@Loc=goal_lv507@@'
   ruleset:
   - tag: 0

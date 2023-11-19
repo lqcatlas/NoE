@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -24,8 +25,10 @@ public class LevelMasterBase : MonoBehaviour
     [Header("In-Level Data")]
     public DataLevel levelData = new DataLevel();
     public enum LevelStatus { PLAYBLE, PROCESSING, END, };
+    public enum NarrativeLineStatus { INQUEUE, PLAYED, NONE };
     public LevelStatus status = LevelStatus.PLAYBLE;
 
+    public List<NarrativeLineStatus> lineStatus = new List<NarrativeLineStatus>();
     //Objects controlled by LevelMaster 
     [Header("Obj Hub")]
     public LevelObjHub hub;
@@ -228,6 +231,14 @@ public class LevelMasterBase : MonoBehaviour
         {
             hub.narrativeMaster.TypeALine(levelData.newInitNarrative);
         }
+        lineStatus.Clear();
+        if (levelData.newPlayNarratives.Count > 0)
+        {
+            for(int i=0;i< levelData.newPlayNarratives.Count; i++)
+            {
+                lineStatus.Add(NarrativeLineStatus.INQUEUE);
+            }
+        }
     }
     public virtual void InitGoal()
     {
@@ -333,7 +344,33 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void UpdateNarrative()
     {
-        //not needed so far
+        //trigger 1st play
+        if(levelData.curBoard.toolCount <= levelData.initBoard.toolCount / 2f && lineStatus.Count >= 1)
+        {
+            if (lineStatus[0] == NarrativeLineStatus.INQUEUE)
+            {
+                TryTypeNextPlayLine(0);
+                lineStatus[0] = NarrativeLineStatus.PLAYED;
+            }
+        }
+        //trigger 2nd play
+        if (levelData.curBoard.toolCount <= levelData.initBoard.toolCount / 4f && lineStatus.Count >= 2)
+        {
+            if (lineStatus[1] == NarrativeLineStatus.INQUEUE)
+            {
+                TryTypeNextPlayLine(1);
+                lineStatus[1] = NarrativeLineStatus.PLAYED;
+            }
+        }
+        //trigger 3rd play
+        if (levelData.curBoard.toolCount <= levelData.initBoard.toolCount / 8f && lineStatus.Count >= 3)
+        {
+            if (lineStatus[2] == NarrativeLineStatus.INQUEUE)
+            {
+                TryTypeNextPlayLine(2);
+                lineStatus[2] = NarrativeLineStatus.PLAYED;
+            }
+        }
     }
     public virtual void UpdateGoal()
     {

@@ -47,8 +47,6 @@ public class LM_001_Clock : LevelMasterBase
     {
         clockHub.clockTool.transform.position = hub.toolMaster.toolIcon.transform.position;
         hub.toolMaster.toolIcon.gameObject.SetActive(false);
-        //narrative_lv7_1 = false;
-        //narrative_lv8_1 = false;
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -92,8 +90,8 @@ public class LM_001_Clock : LevelMasterBase
             Debug.LogError(string.Format("master script of {0} reaches undefined level", levelData.theme));
         }
     }
-    private bool narrative_lv7_1 = false;
-    private bool narrative_lv8_1 = false;
+    //private bool narrative_lv7_1 = false;
+    //private bool narrative_lv8_1 = false;
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
         //cell bg update addition
@@ -104,7 +102,9 @@ public class LM_001_Clock : LevelMasterBase
         }
         clockHub.runningClockBg.DOFade(0.2f, 0.05f).SetEase(Ease.OutCubic);
         clockHub.runningClockBg.DOFade(0f, 1.15f).SetDelay(0.05f).SetEase(Ease.InCubic);
-        //narrative update addition
+        
+        /*
+         * //narrative update addition
         if (!narrative_lv7_1 && levelData.levelIndex == 7 && levelData.curBoard.toolCount <= 8)
         {
             narrative_lv7_1 = true;
@@ -115,6 +115,7 @@ public class LM_001_Clock : LevelMasterBase
             narrative_lv8_1 = true;
             TryTypeNextPlayLine(0);
         }
+        */
     }
     public override bool CheckWinCondition()
     {

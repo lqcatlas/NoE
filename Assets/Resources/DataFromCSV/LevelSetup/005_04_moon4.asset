@@ -21,11 +21,14 @@ MonoBehaviour:
   theme: '@Loc=themename_tm5@@'
   title: '@Loc=levelname_lv504@@'
   newInitNarrative: '@Loc=init_lv504@@'
-  newPlayNarratives: []
+  newPlayNarratives:
+  - '@Loc=play1_lv504@@'
   oldNarratives:
   - '@Loc=init_lv501@@'
   - '@Loc=init_lv502@@'
+  - '@Loc=play1_lv502@@'
   - '@Loc=init_lv503@@'
+  - '@Loc=play1_lv503@@'
   goal: '@Loc=goal_lv504@@'
   ruleset:
   - tag: 0

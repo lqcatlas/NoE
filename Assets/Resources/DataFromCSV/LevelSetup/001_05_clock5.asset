@@ -27,6 +27,7 @@ MonoBehaviour:
   - '@Loc=init_lv102@@'
   - '@Loc=init_lv103@@'
   - '@Loc=init_lv104@@'
+  - '@Loc=play1_lv104@@'
   goal: '@Loc=goal_lv105@@'
   ruleset:
   - tag: 0

@@ -23,16 +23,17 @@ MonoBehaviour:
   newInitNarrative: '@Loc=init_lv608@@'
   newPlayNarratives:
   - '@Loc=play1_lv608@@'
+  - '@Loc=play2_lv608@@'
   oldNarratives:
   - '@Loc=init_lv601@@'
   - '@Loc=init_lv602@@'
   - '@Loc=init_lv603@@'
   - '@Loc=init_lv604@@'
-  - '@Loc=play1_lv604@@'
   - '@Loc=init_lv605@@'
+  - '@Loc=play1_lv605@@'
   - '@Loc=init_lv606@@'
+  - '@Loc=play1_lv606@@'
   - '@Loc=init_lv607@@'
-  - '@Loc=play1_lv607@@'
   goal: '@Loc=goal_lv608@@'
   ruleset:
   - tag: 0

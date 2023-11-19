@@ -189,11 +189,11 @@ public class LM_004_Sushi : LevelMasterBase
         hub.toolMaster.toolIcon.sprite = sushiHub.statusSprites[levelData.curBoard.toolStatus];
         hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(sushiHub.toolDisplayName[levelData.curBoard.toolStatus]));
     }
-    private bool narrative_lv2_1 = false;
-    private bool narrative_lv3_1 = false;
-    private bool narrative_lv4_1 = false;
-    private bool narrative_lv5_1 = false;
-    private bool narrative_lv8_1 = false;
+    //private bool narrative_lv2_1 = false;
+    //private bool narrative_lv3_1 = false;
+    //private bool narrative_lv4_1 = false;
+    //private bool narrative_lv7_1 = false;
+    //private bool narrative_lv8_1 = false;
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
         //update current goal status
@@ -206,24 +206,14 @@ public class LM_004_Sushi : LevelMasterBase
 
         
         //in-play narrative
-        if (!narrative_lv2_1 && levelData.levelIndex == 2 && BoardCalculation.CountX_Ytimes(levelData.curBoard, 5, 4))
-        {
-            narrative_lv2_1 = true;
-            TryTypeNextPlayLine(0);
-        }
-        if (!narrative_lv3_1 && levelData.levelIndex == 3 && BoardCalculation.CountX_Ytimes(levelData.curBoard, 4, 7))
+        /*if (!narrative_lv3_1 && levelData.levelIndex == 3 && BoardCalculation.CountX_Ytimes(levelData.curBoard, 4, 7))
         {
             narrative_lv3_1 = true;
             TryTypeNextPlayLine(0);
         }
-        if (!narrative_lv4_1 && levelData.levelIndex == 4 && BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, (int)SushiStatus.sushi, 1))
+        if (!narrative_lv7_1 && levelData.levelIndex == 7 && levelData.curBoard.toolCount == 5)
         {
-            narrative_lv4_1 = true;
-            TryTypeNextPlayLine(0);
-        }
-        if (!narrative_lv5_1 && levelData.levelIndex == 5 && BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, (int)SushiStatus.onigiri, 1))
-        {
-            narrative_lv5_1 = true;
+            narrative_lv7_1 = true;
             TryTypeNextPlayLine(0);
         }
         if (!narrative_lv8_1 && levelData.levelIndex == 8 && levelData.curBoard.toolCount == 10)
@@ -231,7 +221,7 @@ public class LM_004_Sushi : LevelMasterBase
             narrative_lv8_1 = true;
             TryTypeNextPlayLine(0);
         }
-        
+        */
     }
     public override bool CheckWinCondition()
     {

@@ -26,7 +26,6 @@ MonoBehaviour:
   oldNarratives:
   - '@Loc=init_lv201@@'
   - '@Loc=init_lv202@@'
-  - '@Loc=play1_lv202@@'
   goal: '@Loc=goal_lv203@@'
   ruleset:
   - tag: 0

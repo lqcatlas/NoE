@@ -21,16 +21,16 @@ MonoBehaviour:
   theme: '@Loc=themename_tm6@@'
   title: '@Loc=levelname_lv607@@'
   newInitNarrative: '@Loc=init_lv607@@'
-  newPlayNarratives:
-  - '@Loc=play1_lv607@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=init_lv601@@'
   - '@Loc=init_lv602@@'
   - '@Loc=init_lv603@@'
   - '@Loc=init_lv604@@'
-  - '@Loc=play1_lv604@@'
   - '@Loc=init_lv605@@'
+  - '@Loc=play1_lv605@@'
   - '@Loc=init_lv606@@'
+  - '@Loc=play1_lv606@@'
   goal: '@Loc=goal_lv607@@'
   ruleset:
   - tag: 0

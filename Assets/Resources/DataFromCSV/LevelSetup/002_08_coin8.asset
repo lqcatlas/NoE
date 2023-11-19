@@ -21,17 +21,21 @@ MonoBehaviour:
   theme: '@Loc=themename_tm2@@'
   title: '@Loc=levelname_lv208@@'
   newInitNarrative: '@Loc=init_lv208@@'
-  newPlayNarratives: []
+  newPlayNarratives:
+  - '@Loc=play1_lv208@@'
   oldNarratives:
   - '@Loc=init_lv201@@'
   - '@Loc=init_lv202@@'
-  - '@Loc=play1_lv202@@'
   - '@Loc=init_lv203@@'
   - '@Loc=play1_lv203@@'
   - '@Loc=init_lv204@@'
+  - '@Loc=play1_lv204@@'
   - '@Loc=init_lv205@@'
+  - '@Loc=play1_lv205@@'
   - '@Loc=init_lv206@@'
+  - '@Loc=play1_lv206@@'
   - '@Loc=init_lv207@@'
+  - '@Loc=play1_lv207@@'
   goal: '@Loc=goal_lv208@@'
   ruleset:
   - tag: 0

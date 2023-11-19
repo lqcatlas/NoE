@@ -34,9 +34,13 @@ public class Load_Levels : MonoBehaviour
                 }
             }
         }
-        for(int i = 0; i < levels.Count; i++)
+        for (int i = 0; i < levels.Count; i++)
         {
             levels[i].oldNarratives.Clear();
+        }
+        for (int i = 0; i < levels.Count; i++)
+        {
+            //levels[i].oldNarratives.Clear();
             if(levels[i].previousLevel != null)
             {
                 levels[i].oldNarratives.AddRange(levels[i].previousLevel.oldNarratives);
