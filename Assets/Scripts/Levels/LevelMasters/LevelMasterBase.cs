@@ -161,6 +161,14 @@ public class LevelMasterBase : MonoBehaviour
         gameObject.SetActive(false);
         LevelSelector.singleton.GoToSelector();
     }
+    public void StartNextLevel()
+    {
+        LevelSelector.singleton.FinishLevel(levelData.levelUID);
+        hub.miscMaster.ScreenMaskFadeIn();
+        bool result = false;
+        Sequence seq = DOTween.Sequence();
+        seq.AppendInterval(1.5f).AppendCallback(() => result = TryLoadNextLevel());
+    }
     #region atomic methods
     //Atomic Funtions that can be overwritten by Theme-Specific LevlMaster Script
     public virtual void GetObjectReferences(GameObject _themeHub)
@@ -170,6 +178,7 @@ public class LevelMasterBase : MonoBehaviour
     public void RegisterChildren()
     {
         GetComponent<MiscMaster>().RegisterLevelMaster(this);
+        GetComponent<GoalMaster>().RegisterLevelMaster(this);
     }
     public virtual void DisablePlayerInput()
     {
@@ -177,7 +186,10 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void EnablePlayerInput()
     {
-        status = LevelStatus.PLAYBLE;
+        if(status != LevelStatus.END)
+        {
+            status = LevelStatus.PLAYBLE;
+        }
     }
     public virtual void OnlyInFirstEntry()
     {
@@ -409,14 +421,8 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void WinALevel()
     {
-        LevelSelector.singleton.FinishLevel(levelData.levelUID);
-
-        hub.miscMaster.ScreenMaskFadeIn();
-        bool result = false;
-        Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(1.5f).AppendCallback(() => result = TryLoadNextLevel());
-
-        
+        status = LevelStatus.END;
+        hub.goalMaster.nextBtn.gameObject.SetActive(true);
         /*if (!result)
         {
             Debug.Log(string.Format("Theme ends. Plz go back to theme selector"));
@@ -432,6 +438,7 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void LoseALevel()
     {
+        status = LevelStatus.END;
         hub.miscMaster.retryHint.gameObject.SetActive(true);
         hub.miscMaster.loseBanner.SetActive(true);
         hub.miscMaster.loseBanner.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f).From();
