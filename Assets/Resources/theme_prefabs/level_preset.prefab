@@ -3029,6 +3029,10 @@ PrefabInstance:
       value: "\u6545\u4E8BTitle"
       objectReference: {fileID: 0}
     - target: {fileID: 8951945008459836895, guid: df81dbef9c308aa4a849e2d251af215b, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951945008459836895, guid: df81dbef9c308aa4a849e2d251af215b, type: 3}
       propertyPath: m_fontSizeBase
       value: 24
       objectReference: {fileID: 0}

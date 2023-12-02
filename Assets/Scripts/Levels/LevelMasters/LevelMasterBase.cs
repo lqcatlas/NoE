@@ -136,6 +136,7 @@ public class LevelMasterBase : MonoBehaviour
     }
     public void LevelRetry()
     {
+        status = LevelStatus.PROCESSING;
         InitBoardData();
         GenerateBoard();
         InitCells();

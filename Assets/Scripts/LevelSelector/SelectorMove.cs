@@ -49,7 +49,7 @@ public class SelectorMove : MonoBehaviour
     public void HoverOn()
     {
         tier1 = true;
-        bar.DOFade(0.6f, dConstants.UI.StandardizedBtnAnimDuration);
+        bar.DOFade(0.4f, dConstants.UI.StandardizedBtnAnimDuration);
     }
     public void HoverOff()
     {

@@ -30,7 +30,7 @@ public class TitlePage : MonoBehaviour, ISaveData
     
     private void Start()
     {
-        line_tmp.color = new Color(dConstants.UI.DefaultColor_1st.r, dConstants.UI.DefaultColor_1st.g, dConstants.UI.DefaultColor_1st.b, 0f);
+        //line_tmp.color = new Color(dConstants.UI.DefaultColor_1st.r, dConstants.UI.DefaultColor_1st.g, dConstants.UI.DefaultColor_1st.b, 0f);
     }
     
     public void GoToTitlePage()
@@ -53,6 +53,7 @@ public class TitlePage : MonoBehaviour, ISaveData
     public void OpenSelector()
     {
         LevelSelector.singleton.GoToSelector();
+        BgCtrl.singleton.ResetToDefaultBg();
         gameObject.SetActive(false);
     }
     void LineEmerge(float duration, string txt)
@@ -62,6 +63,7 @@ public class TitlePage : MonoBehaviour, ISaveData
 
         line_tmp.SetText(LocalizedAssetLookup.singleton.Translate(txt));
         line_tmp.DOFade(1f, duration).SetLoops(2, LoopType.Yoyo).OnComplete(() => OpenSelector());
+        BgCtrl.singleton.SetToLightBg(duration);
     }
     #region save
     private const string AUDIOVOLUME_SAVE_KEY = "setting.volume";

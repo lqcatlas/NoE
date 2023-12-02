@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,8 @@ public class BgCtrl : MonoBehaviour
     [SerializeField] GameObject HugeTextures;
     [SerializeField] GameObject RandomThemeIcon;
     [SerializeField] GameObject ThemeIconNoise;
-    
+    [SerializeField] SpriteRenderer LightBackground;
+
     static public BgCtrl singleton;
     private void Awake()
     {
@@ -46,5 +48,13 @@ public class BgCtrl : MonoBehaviour
                 ThemeIconNoise.SetActive(true);
                 break;
         }
+    }
+    public void SetToLightBg(float fadeTime = 0.05f)
+    {
+        LightBackground.DOFade(1f, fadeTime);
+    }
+    public void ResetToDefaultBg(float fadeTime = 0.05f)
+    {
+        LightBackground.DOFade(0f, fadeTime);
     }
 }
