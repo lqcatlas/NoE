@@ -15,6 +15,7 @@ public class LevelMasterBase : MonoBehaviour
     [SerializeField] bool PlayTrigger;
     [SerializeField] Vector2Int PlayCoord;
     [SerializeField] bool RewindTrigger;
+    [SerializeField] bool SuccessTrigger;
     
     //Data setup by launcher before calling LevelInit()
     [Header("Setup Data")]
@@ -51,6 +52,15 @@ public class LevelMasterBase : MonoBehaviour
         {
             RewindTrigger = false;
             Rewind();
+        }
+        if (Input.GetKeyUp(KeyCode.P))
+        {
+            SuccessTrigger = true;
+        }
+        if (SuccessTrigger)
+        {
+            SuccessTrigger = false;
+            WinALevel();
         }
     }
     //Key Actions assembling from atomic functions
@@ -293,6 +303,8 @@ public class LevelMasterBase : MonoBehaviour
         hub.miscMaster.retryHint.gameObject.SetActive(false);
         hub.miscMaster.retryBtn.SetActive(true);
         hub.miscMaster.loseBanner.SetActive(false);
+        //set new theme hint to be true if there are at least 1 unlockable themes;
+        hub.miscMaster.newthemeHint.gameObject.SetActive(LevelSelector.singleton.LocateFirstUnlockableTheme() >= 0);
     }
     public virtual void AddtionalInit_Theme()
     {

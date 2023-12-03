@@ -98,14 +98,16 @@ public class LevelLauncher : MonoBehaviour
         //clone a level preset to start setup
         GameObject levelObj = Instantiate(levelPreset, levelHolder.transform);
         //get correct master script and assign to the level object
-        MonoScript master = themeLookupTable.GetThemeScript(setupData.themeIndex);
-        if (master == null)
+        //MonoScript master = themeLookupTable.GetThemeScript(setupData.themeIndex);
+        string masterScriptName = themeLookupTable.GetThemeScriptName(setupData.themeIndex);
+        if (masterScriptName == "")
         {
             return;
         }
         else
         {
-            levelObj.AddComponent(master.GetClass());
+            //levelObj.AddComponent(master.GetClass());
+            levelObj.AddComponent(System.Type.GetType(masterScriptName));
         }
         //get correct additional hub object. if exist, clone it and assign
         GameObject addition = themeLookupTable.GetThemeSpecialHub(setupData.themeIndex);

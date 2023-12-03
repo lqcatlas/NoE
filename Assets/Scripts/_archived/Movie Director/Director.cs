@@ -96,7 +96,7 @@ public class Director : MonoBehaviour
     {
         //GM.InitFirstPuzzle();
         ThemeSelector.ShowPage();
-        audioCtrl.PuzzleStart();
+        audioCtrl.PuzzleMusicStart();
         DOTween.ToAlpha(() => FinalBg1.color, x => FinalBg1.color = x, 1f, 0.5f);
         DOTween.ToAlpha(() => FinalBg2.color, x => FinalBg2.color = x, 1f, 0.5f);
     }

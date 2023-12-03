@@ -68,6 +68,18 @@ public class LevelSelector : MonoBehaviour, ISaveData
     {
         page.SetActive(false);
     }
+    public int LocateFirstUnlockableTheme()
+    {
+        int result = -1;
+        for(int i = 0; i < themes.Count; i++)
+        {
+            if (themes[i].isUnlockable())
+            {
+                result = i;
+            }
+        }
+        return result;
+    }
     private void Update()
     {
         if (unlockAll)
@@ -75,9 +87,13 @@ public class LevelSelector : MonoBehaviour, ISaveData
             Debug_UnlockAllNodes();
             unlockAll = false;
         }
+        if (Input.GetKeyUp(KeyCode.T))
+        {
+            TokenCountAdjust(10);
+        }
         if (getTokens)
         {
-            TokenCountAdjust(20);
+            TokenCountAdjust(10);
             getTokens = false;
         }
     }
@@ -187,10 +203,15 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             int.TryParse(SaveManager.controller.Inquire(string.Format(TOKEN_SAVE_KEY)), out playerLevelRecords.tokens);
         }
+        else
+        {
+            playerLevelRecords.tokens = 5;
+        }
         str = SaveManager.controller.Inquire(string.Format(LEVEL_SAVE_KEY));
+        playerLevelRecords.finishedLevels.Clear();
         if (str != null)
         {
-            playerLevelRecords.finishedLevels.Clear();
+            //playerLevelRecords.finishedLevels.Clear();
             //convert into level IDs
             List<string> level_str = str.Split('|').ToList();
             for (int i = 0; i < level_str.Count; i++)
@@ -200,9 +221,9 @@ public class LevelSelector : MonoBehaviour, ISaveData
             }
         }
         str = SaveManager.controller.Inquire(string.Format(THEME_SAVE_KEY));
+        playerLevelRecords.unlockedThemes.Clear();
         if (str != null)
         {
-            playerLevelRecords.unlockedThemes.Clear();
             //convert into theme IDs
             List<string> theme_str = str.Split('|').ToList();
             for (int i = 0; i < theme_str.Count; i++)
@@ -211,7 +232,9 @@ public class LevelSelector : MonoBehaviour, ISaveData
                 playerLevelRecords.unlockedThemes.Add(uid);
             }
         }
+        //playerLevelRecords.SetDirty();
         //Debug.Log(string.Format("selector load data from file, tokens:{0}, ", playerLevelRecords.tokens));
+        InitSelector();
     }
     public void SaveToSaveManager()
     {

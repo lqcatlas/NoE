@@ -16,25 +16,30 @@ MonoBehaviour:
   - Theme: clock
     ThemeID: 1
     MasterScript: {fileID: 11500000, guid: af00fd74cc6ede14193ea6d757c4a2d2, type: 3}
+    ScriptName: LM_001_Clock
     ThemeSpecialHub: {fileID: 4929449583468539589, guid: 53e783262bb415a47ab02125b3dd51ba, type: 3}
     ThemeSprite: {fileID: 1536629255, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
   - Theme: coin
     ThemeID: 2
     MasterScript: {fileID: 11500000, guid: fadc98ce7ffce204fb91768efde8d605, type: 3}
+    ScriptName: LM_002_Coin
     ThemeSpecialHub: {fileID: 4404011959201444184, guid: 748139364fa414f41bb0831e34d2a26a, type: 3}
     ThemeSprite: {fileID: 584681723, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
   - Theme: sushi
     ThemeID: 4
     MasterScript: {fileID: 11500000, guid: 984d1d00befe24249a42ed4a4a6aac88, type: 3}
+    ScriptName: LM_004_Sushi
     ThemeSpecialHub: {fileID: 5242734479810822178, guid: 284f4d5063bddca4d920c939660afb91, type: 3}
     ThemeSprite: {fileID: -1284633540, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
   - Theme: moon
     ThemeID: 5
     MasterScript: {fileID: 11500000, guid: 0fac2e1dd510cb946b11cc225f33840f, type: 3}
+    ScriptName: LM_005_Moon
     ThemeSpecialHub: {fileID: 4644139329102416059, guid: 7f32a5fd5de3ddc43bca66f9f6e10a69, type: 3}
     ThemeSprite: {fileID: 2024725601, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
   - Theme: lightbulb
     ThemeID: 6
     MasterScript: {fileID: 11500000, guid: 1d213bf90f9f58f4ebc561c775c36e66, type: 3}
+    ScriptName: LM_006_LightBulb
     ThemeSpecialHub: {fileID: 5242734479810822178, guid: df91e5e460decb9459e82338f7113b1e, type: 3}
     ThemeSprite: {fileID: -1481849294, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}

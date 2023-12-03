@@ -2015,6 +2015,10 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
+      propertyPath: UnlockTokenRequired
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294156031576786659, guid: 5f7c18fd2a67d504bad4cc0233ecb4d2, type: 3}
       propertyPath: ThemeDescByStatus.Array.data[0]
       value: '@Loc=themedesc_short_tm1@@'
       objectReference: {fileID: 0}

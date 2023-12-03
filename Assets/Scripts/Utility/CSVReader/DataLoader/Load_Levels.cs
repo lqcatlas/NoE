@@ -10,6 +10,7 @@ public class Load_Levels : MonoBehaviour
     public CSVSheetData dataSheet = new CSVSheetData();
     [SerializeField] string filename;
     public List<SheetItem_LevelSetup> levels;
+#if UNITY_EDITOR
     private void Start()
     {
         dataSheet.sheet = CSVReader.Read("csv/" + filename);
@@ -195,4 +196,5 @@ public class Load_Levels : MonoBehaviour
         }
 
     }
+#endif
 }

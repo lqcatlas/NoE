@@ -19,6 +19,12 @@ public class AudioDraft : MonoBehaviour
             Destroy(this);
         }
     }
+    [Header("Player Settings")]
+    [SerializeField] PlayerSettings playerSettings;
+    [SerializeField] float MAX_MUSIC_VOLUME = 0.4f;
+    [SerializeField] float MAX_SFX_VOLUME = 0.6f;
+
+    [Header("Children Objs")]
     [SerializeField] List<AudioClip> keynotes;
     [SerializeField] AudioSource introSource;
     [SerializeField] AudioSource puzzleSource;
@@ -27,17 +33,18 @@ public class AudioDraft : MonoBehaviour
     void Start()
     {
         //IntroStart();
-        PuzzleStart();
+        VolumeReset();
+        PuzzleMusicStart();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     AudioSource GetValidSFXSource()
     {
-        for(int i = 0; i < SFXSources.Count; i++)
+        for (int i = 0; i < SFXSources.Count; i++)
         {
             if (!SFXSources[i].isPlaying)
             {
@@ -54,12 +61,12 @@ public class AudioDraft : MonoBehaviour
             source.clip = _clip;
             source.Play();
             source.DOFade(0f, _clip.length * 0.2f).From();
-        }        
+        }
     }
     public void PlayKeynote(int index)
     {
         //check if a keynote item is allocated to the given index
-        if(keynotes.Count > index)
+        if (keynotes.Count > index)
         {
             //check if a keynote clip is given
             if (keynotes[index])
@@ -85,10 +92,18 @@ public class AudioDraft : MonoBehaviour
     {
         introSource.DOFade(0f, 3f);
     }
-    public void PuzzleStart()
+    public void PuzzleMusicStart()
     {
         IntroEnd();
         puzzleSource.gameObject.SetActive(true);
-        puzzleSource.DOFade(0.4f, 5f);
+        puzzleSource.DOFade(0f, 5f).From();
+    }
+    public void VolumeReset()
+    {
+        puzzleSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume;
+        for (int i = 0; i < SFXSources.Count; i++)
+        {
+            SFXSources[i].volume = MAX_SFX_VOLUME * playerSettings.audioVolume;
+        }
     }
 }

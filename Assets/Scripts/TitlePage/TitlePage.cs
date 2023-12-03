@@ -39,7 +39,7 @@ public class TitlePage : MonoBehaviour, ISaveData
     }
     public void IntroLineCheck()
     {
-        if(playerSettings.introCount <= levelRecords.finishedLevels.Count)
+        if(playerSettings.introCount * 3 <= levelRecords.finishedLevels.Count)
         {
             int rng = Random.Range(0, intro.lines.Count);
             LineEmerge(LINE_EMERGE_DURATION, intro.lines[rng]);
@@ -75,10 +75,18 @@ public class TitlePage : MonoBehaviour, ISaveData
         {
             float.TryParse(SaveManager.controller.Inquire(string.Format(AUDIOVOLUME_SAVE_KEY)), out playerSettings.audioVolume);
         }
+        else
+        {
+            playerSettings.audioVolume = 0.5f;
+        }
         str = SaveManager.controller.Inquire(string.Format(INTROCOUNT_SAVE_KEY));
         if (str != null)
         {
             int.TryParse(SaveManager.controller.Inquire(string.Format(INTROCOUNT_SAVE_KEY)), out playerSettings.introCount);
+        }
+        else
+        {
+            playerSettings.introCount = 0;
         }
     }
     public void SaveToSaveManager()

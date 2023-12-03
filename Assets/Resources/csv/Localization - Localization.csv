@@ -28,7 +28,7 @@ UID,Key,EN,CN
 27,goal_lv503,,让所有格子成为相同数字
 28,goal_lv504,,让数字总和下降至20以下
 29,goal_lv505,,让左侧一列格子为0
-30,goal_lv506,,将所有格子变成不同值
+30,goal_lv506,,让所有格子为偶数
 31,goal_lv507,,让所有格子回归初值
 32,goal_lv508,,月食时，让所有格子回归初值
 33,goal_lv601,1+ cell is ON.,点亮1盏灯泡
@@ -177,15 +177,15 @@ UID,Key,EN,CN
 176,theme_manifesto_4,,寿司是第三个主题，也是在demo之后的第一个正式主题。表达的要点是日本料理中运用简单食材，通过不同的烹调、比重、组合的方式产生食物种类、口感、味道上丰富可能。在实际的谜题中展现为通过两种食材的次序，就可以产生迥然相异的结果。
 177,theme_manifesto_5,,月亮全部的开发焦点在于用月食机制将情绪推向最高潮，日期的铺垫，月相的规律，月食的反向减法，全屏幕视觉特效都是在为此努力。希望玩家在第一次见到月食效果时，心中有过一丝触动。
 178,theme_manifesto_6,,灯泡的原型来源是大学计算机课程中一道经典的动态规划问题：灯泡问题。把原本是计算机才能解决的问题让人脑来解决，最大的挑战就是如何做得更加简单更加直观。最终的谜题依然有些复杂了，这是在保留问题精髓情况下能达到的最好结果。
-179,themedesc_long_tm1,<b>时间</b>永不停歇。,<b>时间</b>永不停歇。
-180,themedesc_long_tm2,<b>硬币</b>记录历史。,<b>硬币</b>记录历史。
-181,themedesc_long_tm4,<b>寿司</b>简约又复杂。,<b>寿司</b>简约又复杂。
-182,themedesc_long_tm5,<b>月亮</b>静静地见证。,<b>月亮</b>静静地见证。
-183,themedesc_long_tm6,<b>灯泡</b>代表着灵感。,<b>灯泡</b>代表着灵感。
+179,themedesc_long_tm1,,<b>时间</b>永不停歇。
+180,themedesc_long_tm2,,<b>硬币</b>决定命运。
+181,themedesc_long_tm4,,<b>寿司</b>简约又精致。
+182,themedesc_long_tm5,,<b>月亮</b>有无规律？
+183,themedesc_long_tm6,,<b>灯泡</b>代表着灵感。
 184,themedesc_short_tm1,,永不停歇。
-185,themedesc_short_tm2,,记录历史。
-186,themedesc_short_tm4,,简约又复杂。
-187,themedesc_short_tm5,,静静地见证。
+185,themedesc_short_tm2,,决定命运。
+186,themedesc_short_tm4,,简约又精致。
+187,themedesc_short_tm5,,有无规律？
 188,themedesc_short_tm6,,代表着灵感。
 189,themename_tm1,Clock,时钟
 190,themename_tm2,Coin,硬币

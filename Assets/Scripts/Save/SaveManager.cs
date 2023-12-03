@@ -63,7 +63,15 @@ public class SaveManager : MonoBehaviour
         }
         //DontDestroyOnLoad(controller);
         //ResetCurSave();
+        ClearAllSaves = false;
+        SavesCleared = false;
+        SaveDataModules = FindAllISaveDataModules();
+        LoadFromFile();
     }
+
+    [Header("Debug")]
+    public bool ClearAllSaves;
+    private bool SavesCleared;
 
     [Header("Savings")]
     public SaveData curSave;
@@ -75,18 +83,39 @@ public class SaveManager : MonoBehaviour
     public List<string> dictVisualized = new List<string>();
     private void Start()
     {
-        SaveDataModules = FindAllISaveDataModules();
+
         /*SaveDataModules = new List<ISaveData>();
         for (int i=0;i< ScriptablesWithSave.Count; i++)
         {
             SaveDataModules.Add(ScriptablesWithSave[i].GetComponent<ISaveData>());
         }*/
         //Debug.Log(string.Format("Find in total of {0} modules has ISaveData interface", SaveDataModules.Count));
-        LoadFromFile();
+    }
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            ClearAllSaves = true;
+        }
+        if (ClearAllSaves && !SavesCleared)
+        {
+            //ClearAllSaves = false;
+            SavesCleared = true;
+            ClearSaveFile();
+        }
     }
     private void OnApplicationQuit()
     {
-        SaveToFile();
+        if (!ClearAllSaves)
+        {
+            PrepareSaveFromAllModules();
+            SaveToFile();
+        }
+        else
+        {
+            SaveToFile();
+        }
+        
     }
     public void ResetCurSave()
     {
@@ -154,13 +183,15 @@ public class SaveManager : MonoBehaviour
             SaveDataModules[i].LoadFromSaveManager();
         }
     }
-    public void SaveToFile()
+    public void PrepareSaveFromAllModules()
     {
         for (int i = 0; i < SaveDataModules.Count; i++)
         {
             SaveDataModules[i].SaveToSaveManager();
         }
-
+    }
+    public void SaveToFile()
+    {
         try
         {
             BinaryFormatter bf = new BinaryFormatter();

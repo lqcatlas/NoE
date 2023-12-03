@@ -7,6 +7,7 @@ public class Load_Localization : MonoBehaviour
 {
     [SerializeField] string filename;
     [SerializeField] LocalizationSource source;
+#if UNITY_EDITOR
     private void Start()
     {
         CSVSheetData dataSheet = new CSVSheetData();
@@ -25,4 +26,5 @@ public class Load_Localization : MonoBehaviour
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
     }
+#endif
 }

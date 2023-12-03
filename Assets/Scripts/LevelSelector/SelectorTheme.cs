@@ -13,7 +13,7 @@ public class SelectorTheme : MonoBehaviour
     [Header("Gameplay Data")]
     public LevelSelector master;
     public ThemeStatus status = ThemeStatus.locked;
-    [SerializeField] int UnlockTokenRequired = dConstants.Gameplay.DefaultThemeUnlockTokenRequirement;
+    public int UnlockTokenRequired = dConstants.Gameplay.DefaultThemeUnlockTokenRequirement;
     [SerializeField] int themeIndex;
     [SerializeField] List<SelectorNode> nodes;
 
@@ -163,7 +163,7 @@ public class SelectorTheme : MonoBehaviour
         }
         return true;
     }
-    bool isUnlockable()
+    public bool isUnlockable()
     {
         if (master != null)
         {
@@ -187,13 +187,26 @@ public class SelectorTheme : MonoBehaviour
         themeIcon.sprite = ThemeSpriteByStatus[0];
         themeIcon.color = dConstants.UI.DefaultColor_3rd;
 
-        tokenFrame.gameObject.SetActive(true);
-        tokenFrame.color = dConstants.UI.DefaultColor_1st;
-        tokenIcon.gameObject.SetActive(true);
-        tokenIcon.color = new Color(dConstants.UI.DefaultColor_1st.r, dConstants.UI.DefaultColor_1st.g, dConstants.UI.DefaultColor_1st.b, 0f);
-        tokenNeed.gameObject.SetActive(true);
-        tokenNeed.color = dConstants.UI.DefaultColor_1st;
-        tokenNeed.SetText(UnlockTokenRequired.ToString());
+        if (isUnlockable())
+        {
+            tokenFrame.gameObject.SetActive(true);
+            tokenFrame.color = dConstants.UI.DefaultColor_1st;
+            tokenIcon.gameObject.SetActive(true);
+            tokenIcon.color = new Color(dConstants.UI.DefaultColor_1st.r, dConstants.UI.DefaultColor_1st.g, dConstants.UI.DefaultColor_1st.b, 0f);
+            tokenNeed.gameObject.SetActive(true);
+            tokenNeed.color = dConstants.UI.DefaultColor_1st;
+            tokenNeed.SetText(UnlockTokenRequired.ToString());
+        }
+        else
+        {
+            tokenFrame.gameObject.SetActive(true);
+            tokenFrame.color = dConstants.UI.DefaultColor_2nd;
+            tokenIcon.gameObject.SetActive(true);
+            tokenIcon.color = new Color(dConstants.UI.DefaultColor_2nd.r, dConstants.UI.DefaultColor_2nd.g, dConstants.UI.DefaultColor_2nd.b, 0f);
+            tokenNeed.gameObject.SetActive(true);
+            tokenNeed.color = dConstants.UI.DefaultColor_2nd;
+            tokenNeed.SetText(UnlockTokenRequired.ToString());
+        }
 
         FloatingGroup.enabled = false;
         SwingingGroup.enabled = false;
