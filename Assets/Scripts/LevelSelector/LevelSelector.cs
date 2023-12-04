@@ -205,7 +205,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         else
         {
-            playerLevelRecords.tokens = 5;
+            playerLevelRecords.tokens = dConstants.Gameplay.DefaultInitialTokenCount;
         }
         str = SaveManager.controller.Inquire(string.Format(LEVEL_SAVE_KEY));
         playerLevelRecords.finishedLevels.Clear();

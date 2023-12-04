@@ -161,11 +161,15 @@ public class SaveManager : MonoBehaviour
         try
         {
             BinaryFormatter bf = new BinaryFormatter();
-            if (!File.Exists(Path.Combine(Application.persistentDataPath, "gamesave.save")))
+            string save_filename = "gamesave.save";
+#if UNITY_EDITOR
+            save_filename = "editor_gamesave.save";
+#endif
+            if (!File.Exists(Path.Combine(Application.persistentDataPath, save_filename)))
             {
                 ClearSaveFile();
             }
-            FileStream file = File.Open(Path.Combine(Application.persistentDataPath, "gamesave.save"), FileMode.Open);
+            FileStream file = File.Open(Path.Combine(Application.persistentDataPath, save_filename), FileMode.Open);
             //Debug.Log(Application.persistentDataPath);
             curSave.save_str = (string)bf.Deserialize(file);
             dict2save = curSave.ConvertToDictionary(curSave.save_str);
@@ -195,7 +199,11 @@ public class SaveManager : MonoBehaviour
         try
         {
             BinaryFormatter bf = new BinaryFormatter();
-            FileStream file = File.Create(Path.Combine(Application.persistentDataPath, "gamesave.save"));
+            string save_filename = "gamesave.save";
+#if UNITY_EDITOR
+            save_filename = "editor_gamesave.save";
+#endif
+            FileStream file = File.Create(Path.Combine(Application.persistentDataPath, save_filename));
             curSave.save_str = curSave.ConvertToString(dict2save);
             bf.Serialize(file, curSave.save_str);
             file.Close();
