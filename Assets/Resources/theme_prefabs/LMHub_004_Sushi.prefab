@@ -258,6 +258,7 @@ MonoBehaviour:
   - 
   - '@Loc=tool_name_theme4_status1@@'
   - '@Loc=tool_name_theme4_status2@@'
+  chopsticks: {fileID: 8210950266377086147}
   cellBgHolder: {fileID: 4068668159233435932}
   sushiPlateTemplate: {fileID: 7440367047798593944, guid: 640b437b764681f47a4c5738650e1205, type: 3}
   playClips:

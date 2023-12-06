@@ -50,12 +50,12 @@ public class LM_005_Moon : LevelMasterBase
     }
     public override void DelayedInit_Theme()
     {
-        //if(levelData.levelIndex >= 3)
-        //{
+        if(levelData.levelIndex >= 3)
+        {
             moonHub.SetPlateWidget(true);
             moonHub.SetTabletToDegree(0);
             moonHub.AnimateTabletToDegree(levelData.curBoard.toolStatus);
-        //}
+        }
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {

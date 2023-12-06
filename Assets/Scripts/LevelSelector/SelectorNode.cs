@@ -181,6 +181,7 @@ public class SelectorNode : MonoBehaviour
     }
     public void AnimateToLocked()
     {
+        frame.gameObject.SetActive(true);
         outter_frame.DOFade(1f, dConstants.UI.StandardizedBtnAnimDuration);
         outter_bg.DOFade(1f, dConstants.UI.StandardizedBtnAnimDuration);
         transform.DOLocalMove(Vector3.zero, dConstants.UI.StandardizedBtnAnimDuration).From().OnComplete(()=> UpdateStatus());

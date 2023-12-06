@@ -67,6 +67,7 @@ public class LM_004_Sushi : LevelMasterBase
             hub.goalMaster.lines[1].gameObject.SetActive(true);
             LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
         }
+        sushiHub.chopsticks.DOFade(1f,0.01f);
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -278,6 +279,8 @@ public class LM_004_Sushi : LevelMasterBase
     {
         AudioDraft.singleton.PlaySFX(sushiHub.GetEndingClip(levelData.levelIndex));
         base.WinALevel();
+        //pick up chopstick after voice over
+        sushiHub.chopsticks.DOFade(0f, 1f);
     }
 
     void FoodPlaceAnimation(GameObject sushiPlate, int curStatus, int toolStatus, int finalStatus)

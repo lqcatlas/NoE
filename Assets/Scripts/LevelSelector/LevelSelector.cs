@@ -73,7 +73,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         int result = -1;
         for(int i = 0; i < themes.Count; i++)
         {
-            if (themes[i].isUnlockable())
+            if (themes[i].isUnlockable() && themes[i].status == SelectorTheme.ThemeStatus.locked)
             {
                 result = i;
             }
