@@ -160,6 +160,20 @@ public class BoardCalculation
         }
         return allTarget;
     }
+    static public bool CountStatusNotX_All(DataBoard board, int X)
+    {
+        bool allTarget = true;
+        int negationValue = X;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            if (board.cells[i].status == negationValue)
+            {
+                allTarget = false;
+                return allTarget;
+            }
+        }
+        return allTarget;
+    }
     static public bool Same_All(DataBoard board)
     {
         bool allSame = true;

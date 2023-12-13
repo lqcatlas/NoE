@@ -263,7 +263,7 @@ public class LM_004_Sushi : LevelMasterBase
         }
         else if (levelData.levelIndex == 7)
         {
-            return BoardCalculation.Sum_As_X(levelData.curBoard, 20) && (BoardCalculation.CountStatusXorY_All(levelData.curBoard, 3, 4) || BoardCalculation.CountStatusXorY_All(levelData.curBoard, 1, 2));
+            return BoardCalculation.Sum_As_X(levelData.curBoard, 20) && BoardCalculation.CountStatusNotX_All(levelData.curBoard, 0);
         }
         else if (levelData.levelIndex == 8)
         {
