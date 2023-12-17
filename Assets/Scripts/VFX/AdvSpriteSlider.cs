@@ -34,7 +34,7 @@ public class AdvSpriteSlider : MonoBehaviour
             //Debug.Log(string.Format("looking for sprite with name of {0}", spriteNameLocator, locator));
 
             availableSprites.Clear();
-            List<Sprite> allSprites = Resources.LoadAll<Sprite>("sprites/spritesheet").ToList();
+            List<Sprite> allSprites = Resources.LoadAll<Sprite>("sprites").ToList();
             for (int i = 0; i < allSprites.Count; i++)
             {
                 if (allSprites[i].name.Contains(spriteNameLocator) && allSprites[i].name != curSprite.name)

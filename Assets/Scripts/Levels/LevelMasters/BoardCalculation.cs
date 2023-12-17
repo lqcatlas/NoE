@@ -243,7 +243,7 @@ public class BoardCalculation
         {
             sum += board.cells[i].value;
         }
-        Debug.Log(string.Format("Sum_As_X() now sum is {0}", sum));
+        //Debug.Log(string.Format("Sum_As_X() now sum is {0}", sum));
         return sum == requiredSum;
     }
     static public bool Sum_Larger_X(DataBoard board, int X)
