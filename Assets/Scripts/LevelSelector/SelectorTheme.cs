@@ -122,7 +122,7 @@ public class SelectorTheme : MonoBehaviour
     }
     public void AnimateToPopup()
     {
-        FloatingGroup.transform.DOScale(0f, dConstants.UI.StandardizedBtnAnimDuration).From();
+        FloatingGroup.transform.DOScale(0f, dConstants.UI.StandardizedBtnAnimDuration).From().SetEase(Ease.InOutSine);
         gameObject.SetActive(true);
     }
     public List<SelectorNode> CollectMyNodes()

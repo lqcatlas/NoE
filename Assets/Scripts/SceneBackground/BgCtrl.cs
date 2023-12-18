@@ -8,6 +8,7 @@ public class BgCtrl : MonoBehaviour
     [SerializeField] GameObject HugeTextures;
     [SerializeField] GameObject RandomThemeIcon;
     [SerializeField] GameObject ThemeIconNoise;
+    [SerializeField] GameObject ScratchedBlackboard;
     [SerializeField] SpriteRenderer LightBackground;
 
     static public BgCtrl singleton;
@@ -25,12 +26,16 @@ public class BgCtrl : MonoBehaviour
     }
     public void SetToPhase(dConstants.Gameplay.GamePhase phase)
     {
+        HugeTextures.SetActive(false);
+        RandomThemeIcon.SetActive(false);
+        ThemeIconNoise.SetActive(false);
+        ScratchedBlackboard.SetActive(false);
         switch (phase)
         {
             case dConstants.Gameplay.GamePhase.Title:
-                HugeTextures.SetActive(true); ;
-                RandomThemeIcon.SetActive(false);
+                //HugeTextures.SetActive(true);
                 ThemeIconNoise.SetActive(true);
+                ScratchedBlackboard.SetActive(true);
                 break;
             case dConstants.Gameplay.GamePhase.Selector:
                 HugeTextures.SetActive(true); ;
@@ -39,12 +44,10 @@ public class BgCtrl : MonoBehaviour
                 break;
             case dConstants.Gameplay.GamePhase.Level:
                 HugeTextures.SetActive(true); ;
-                RandomThemeIcon.SetActive(false);
                 ThemeIconNoise.SetActive(true);
                 break;
             default:
                 HugeTextures.SetActive(true); ;
-                RandomThemeIcon.SetActive(false);
                 ThemeIconNoise.SetActive(true);
                 break;
         }

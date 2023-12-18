@@ -1985,7 +1985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   events:
   - triggeringEvent: {fileID: 11400000, guid: dddee1ee2eec4e1419b1a4207eb02f20, type: 2}
-    interval: 0.3
+    interval: 0.9
     timer: 0
   - triggeringEvent: {fileID: 11400000, guid: 56b54e679fa175f4eb1d2591f658509f, type: 2}
     interval: 0.3
