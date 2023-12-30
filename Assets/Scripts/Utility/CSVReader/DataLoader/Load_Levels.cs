@@ -52,6 +52,7 @@ public class Load_Levels : MonoBehaviour
         }
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
+        Debug.Log(string.Format("level setup data loaded. total of {0} level processed", levels.Count));
     }
     void UpdateLevelDataFromCSV(SheetItem_LevelSetup level, CSVSheetData csv)
     {

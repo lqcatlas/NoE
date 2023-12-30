@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88475076ca3eee4e87cd8290fc59a71, type: 3}
+  m_Name: 001_clock
+  m_EditorClassIdentifier: 
+  themeUID: 1
+  unlockPrereq: 0
+  unlockCost: 3
+  themeTitle: '@Loc=themename_tm1@@'
+  lockedLine: '@Loc=locked_tm1@@'
+  unlockedLine: '@Loc=unlocked_tm1@@'
+  hint: '@Loc=hint_tm1@@'
+  date: '@Loc=date_tm1@@'
+  manifesto: '@Loc=manifesto_tm1@@'
+  narratives:
+  - '@Loc=narrative_tm1_ln1@@'
+  - '@Loc=narrative_tm1_ln2@@'
+  - '@Loc=narrative_tm1_ln3@@'
+  - '@Loc=narrative_tm1_ln4@@'
+  - '@Loc=narrative_tm1_ln5@@'
+  - '@Loc=narrative_tm1_ln6@@'
+  - '@Loc=narrative_tm1_ln7@@'
+  - '@Loc=narrative_tm1_ln8@@'
+  - '@Loc=narrative_tm1_ln9@@'
+  - '@Loc=narrative_tm1_ln10@@'
+  - '@Loc=narrative_tm1_ln11@@'
+  - '@Loc=narrative_tm1_ln12@@'

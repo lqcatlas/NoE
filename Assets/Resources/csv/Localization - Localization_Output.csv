@@ -1,0 +1,218 @@
+UID,Key,EN,CN
+1,goal_lv101,Set all cells to 8,将所有格子变为8
+2,goal_lv102,Set all cells to 10,将所有格子变为10
+3,goal_lv103,Set all cells to 1,将所有格子变为1
+4,goal_lv104,Set all cells to UNIQUE,将所有格子变为不同的值
+5,goal_lv105,Set all cells to 3,将所有格子变为3
+6,goal_lv106,Set all cells to 4,将所有格子变为4
+7,goal_lv107,Set all cells to UNIQUE(at least 8 steps),将所有格子变为不同的值（最少需要8步）
+8,goal_lv108,Set all cells to 6(at least 35 steps),将所有格子变为6（最少需要35步）
+9,goal_lv201,Set all cells to 4,将所有格子变为4
+10,goal_lv202,Set all cells to 4,将所有格子变为4
+11,goal_lv203,Set all cells to SAME,将所有格子变为相同的值
+12,goal_lv204,Set at least 2 cells to 9,将至少2个格子变为9
+13,goal_lv205,Set at least 2 cells to 1,将至少2个格子变为1
+14,goal_lv206,Set all cells to SAME,将所有格子变为相同的值
+15,goal_lv207,Set all cells to UNIQUE,将所有格子变为不同的值
+16,goal_lv208,Set all cells to SAME,将所有格子变为相同的值
+17,goal_lv401,Set at least 3 cells to 3,将至少3个格子变为3
+18,goal_lv402,Set at least 5 cells to 5,将至少5个格子变为5
+19,goal_lv403,Set all cells to 4,将所有格子变为4
+20,goal_lv404,Set all cells to 7,将所有格子变为7
+21,goal_lv405,Set all cells to either 2 or 7,将所有格子为2或7
+22,goal_lv406,Set all cells to UNIQUE,将所有格子变为不同值
+23,goal_lv407,Set the sum of cells to 20,每个格子都有食物时，<br>将数字总和变为20
+24,goal_lv408,Set the sum of cells to 82,每个格子都是寿司或饭团时，<br>将数字总和变为82
+25,goal_lv501,,让所有格子为7
+26,goal_lv502,,让所有格子成为相同数字
+27,goal_lv503,,让所有格子成为相同数字
+28,goal_lv504,,让数字总和下降至10以下
+29,goal_lv505,,让左侧一列格子为0
+30,goal_lv506,,让所有格子为偶数
+31,goal_lv507,,让所有格子回归初值
+32,goal_lv508,,月食时，让所有格子回归初值
+33,goal_lv601,1+ cell is ON.,点亮1盏灯泡
+34,goal_lv602,5+ cells are ON.,点亮5盏灯泡
+35,goal_lv603,4+ cells are ON.,点亮4盏灯泡
+36,goal_lv604,6+ cells are ON.,点亮6盏灯泡
+37,goal_lv605,Turn on 4 cells simultaneously.,一次性点亮4盏灯泡
+38,goal_lv606,Turn on 8 cells simultaneously.,一次性点亮8盏灯泡
+39,goal_lv607,"Use actions. <br>Meanwhile, keep the number of ON cells stays between 4 to 6.",用完所有灯泡，<br>保持点亮的灯泡<br>在4-6盏之间
+40,goal_lv608,All cells are ON.,点亮全部灯泡
+41,intro_line_1,"Friday night. Get back home, <b>things</b> emerges from darkness.",周五晚上，打开房门，回到漆黑的家中，黑暗之中<b>万物</b>浮现。
+42,intro_line_2,"On the way to work, passing through a river, <b>things</b> emerges from the voice of the winds",走在上班的路上，路过一条小河，树叶的婆娑声中夹杂着<b>万物</b>。
+43,levelname_lv101,001,001
+44,levelname_lv102,002,002
+45,levelname_lv103,003,003
+46,levelname_lv104,004,004
+47,levelname_lv105,005,005
+48,levelname_lv106,006,006
+49,levelname_lv107,007,007
+50,levelname_lv108,008,008
+51,levelname_lv201,001,001
+52,levelname_lv202,002,002
+53,levelname_lv203,003,003
+54,levelname_lv204,004,004
+55,levelname_lv205,005,005
+56,levelname_lv206,006,006
+57,levelname_lv207,007,007
+58,levelname_lv208,008,008
+59,levelname_lv401,001,001
+60,levelname_lv402,002,002
+61,levelname_lv403,003,003
+62,levelname_lv404,004,004
+63,levelname_lv405,005,005
+64,levelname_lv406,006,006
+65,levelname_lv407,007,007
+66,levelname_lv408,008,008
+67,levelname_lv501,001,001
+68,levelname_lv502,002,002
+69,levelname_lv503,003,003
+70,levelname_lv504,004,004
+71,levelname_lv505,005,005
+72,levelname_lv506,006,006
+73,levelname_lv507,007,007
+74,levelname_lv508,008,008
+75,levelname_lv601,001,001
+76,levelname_lv602,002,002
+77,levelname_lv603,003,003
+78,levelname_lv604,004,004
+79,levelname_lv605,005,005
+80,levelname_lv606,006,006
+81,levelname_lv607,007,007
+82,levelname_lv608,008,008
+83,rule1_lv101,Cell Played +1,打出的格子 +1
+84,rule1_lv201,Head - Cell Played +1,正 - 打出的格子 +1
+85,rule1_lv204,Head - Cell Played +X,正 - 打出的格子 +X
+86,rule1_lv401,Fish: +3,鱼： +3
+87,rule1_lv501,Crescent: +1,新月：+1
+88,rule1_lv601,Played cell +1,打出的格子 +1
+89,rule1_lv603,Played and adjacent cells +1,打出及相邻的格子 +1
+90,rule2_lv103,Cell already with a Clock +1,已有时钟的格子 +1
+91,rule2_lv202,Tail - Cell Played -1,反 - 打出的格子 -1
+92,rule2_lv205,Tail - Cell Played -X,反 - 打出的格子 -X
+93,rule2_lv403,Rice: -3,米： -3
+94,rule2_lv501,Quarter: +3,弦月：+3
+95,rule2_lv601,Cell is turned ON,与两个或以上的相同数字相邻
+96,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
+97,rule3_lv404,Sushi(Rice+Fish): =7,寿司（米+鱼）： =7
+98,rule3_lv502,Full: +5,满月：+5
+99,rule3_lv601,  when adjacent to 2+ same numbers,  则点亮格子
+100,rule4_lv203,FLIP the coin after play,打出后硬币翻面
+101,rule4_lv207,TOSS the coin after play,打出后投掷硬币
+102,rule4_lv405,Onigiri(Rice+Fish): =2,饭团（鱼+米）： =2
+103,rule4_lv504,Eclipse(Full + 9): All cells -5,9+满月：月食
+104,rule5_lv403,Fish and Rice alternate,鱼和米交替出现
+105,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
+106,themename_tm1,Clock,时钟
+107,themename_tm2,Coin,硬币
+108,themename_tm4,Sushi,寿司
+109,themename_tm5,Moon,月亮
+110,themename_tm6,Lightbulb,灯泡
+111,tool_name_theme2_status0,Front,正面
+112,tool_name_theme2_status1,Tail,反面
+113,tool_name_theme4_status1,Fish,鱼生
+114,tool_name_theme4_status2,Rice,白米
+115,tool_name_theme5_status1,Crescent,新月
+116,tool_name_theme5_status2,Quarter,弦月
+117,tool_name_theme5_status3,Full,满月
+118,tool_name_theme5_status4,Quarter,弦月
+119,tool_name_theme5_status5,Crescent,新月
+120,ui_designer_note_title,Designer's Notes,制作笔记
+121,ui_goal_current_sum,Current Sum: ,当前数字之和：
+122,ui_goal_section_title,Goal,目标
+123,ui_ruleset_title,Rules,规则
+124,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
+125,unlocked_tm1,,<b>时间</b>永不停歇。
+126,unlocked_tm2,,<b>硬币</b>决定命运。
+127,unlocked_tm4,,<b>寿司</b>简约又精致。
+128,unlocked_tm5,,<b>月亮</b>有无规律？
+129,unlocked_tm6,,<b>灯泡</b>代表着灵感。
+130,hint_tm1,,它滴答滴答，永不停歇地前进。
+131,hint_tm2,,它一次次地翻动，决定着命运。
+132,hint_tm4,,它虽然简约，却愈显得精致。
+133,hint_tm5,,它不停变化，却总会回到熟悉的样子。
+134,hint_tm6,,它代表了灵感、顿悟。
+135,date_tm1,,2022/12/04
+136,date_tm2,,2023/01/15
+137,date_tm4,,2023/06/25
+138,date_tm5,,2023/08/13
+139,date_tm6,,2023/09/03
+140,manifesto_tm1,,时钟是第一个主题，它的出现比游戏名“万物之数“还要早。一定程度上，它是整个游戏项目开始的起点。<br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
+141,manifesto_tm2,,硬币是第二个主题，它的灵感来源于通过掷硬币来做决策这一时刻。在生活中，嘴里说着不知怎么选，就通过掷硬币来决定。可其实往往掷出结果后如果不是自己满意的那个又会找理由反悔，“再掷一次吧”。因此掷硬币不是决定我的命运，而是来帮助我更好地走进内心，真正看清自己。
+142,manifesto_tm4,,寿司是第三个主题，也是在demo之后的第一个正式主题。表达的要点是日本料理中运用简单食材，通过不同的烹调、比重、组合的方式产生食物种类、口感、味道上丰富可能。在实际的谜题中展现为通过两种食材的次序，就可以产生迥然相异的结果。
+143,manifesto_tm5,,月亮主题的表面是月食带来的混乱，并在混乱中寻求秩序。这背后的开发焦点在于对规律的观察与掌握。月相的轮替规则是入门的介绍，之后的关卡则围绕着如何逐渐理解月食的规律而展开。
+144,manifesto_tm6,,灯泡的原型来源是大学计算机课程中一道经典的动态规划问题：灯泡问题。把原本是计算机才能解决的问题让人脑来解决，最大的挑战就是如何做得更加简单更加直观。最终的谜题依然有些复杂了，这是在保留问题精髓情况下能达到的最好结果。
+145,narrative_tm1_ln1,,溜走的时间
+146,narrative_tm1_ln2,,滴答滴答滴答，
+147,narrative_tm1_ln3,,时钟不知疲倦地前进。
+148,narrative_tm1_ln4,,微博、连载、直播，
+149,narrative_tm1_ln5,,开启新的节律，
+150,narrative_tm1_ln6,,时间在你的指尖默默滑动。
+151,narrative_tm1_ln7,,夜的旅者，
+152,narrative_tm1_ln8,,在黑暗中跋涉。
+153,narrative_tm1_ln9,,拖着疲惫的身躯，
+154,narrative_tm1_ln10,,最终抵达晨曦。
+155,narrative_tm1_ln11,,意识逐渐模糊，
+156,narrative_tm1_ln12,,是时候休息了。
+157,narrative_tm2_ln1,,来自硬币的命运
+158,narrative_tm2_ln2,,硬币有无数种形式。
+159,narrative_tm2_ln3,,它穿越历史，
+160,narrative_tm2_ln4,,始终保持着两面。
+161,narrative_tm2_ln5,,正面象征前进，
+162,narrative_tm2_ln6,,也可能是盲从；
+163,narrative_tm2_ln7,,反面代表保留，
+164,narrative_tm2_ln8,,或者叫放弃。
+165,narrative_tm2_ln9,,两面交错，
+166,narrative_tm2_ln10,,创造命运的波澜。
+167,narrative_tm2_ln11,,你再次投掷，
+168,narrative_tm2_ln12,,等待宿命落下的回响。
+169,narrative_tm2_ln13,,不甘于此，
+170,narrative_tm2_ln14,,就用智慧进行解读。
+171,narrative_tm4_ln1,,寿司的精致
+172,narrative_tm4_ln2,,你夹起一片鱼生，
+173,narrative_tm4_ln3,,晶莹剔透。
+174,narrative_tm4_ln4,,拿起一团白饭，
+175,narrative_tm4_ln5,,在碗中勾勒出弧线。
+176,narrative_tm4_ln6,,轻轻捏合，
+177,narrative_tm4_ln7,,创造出寿司细腻的口感。
+178,narrative_tm4_ln8,,缓缓卷起，
+179,narrative_tm4_ln9,,就开启了饭团丰盈的味觉。
+180,narrative_tm4_ln10,,仅用两种原料，
+181,narrative_tm4_ln11,,却交织出丰富组合。
+182,narrative_tm4_ln12,,来自大地与深海的碰撞，
+183,narrative_tm4_ln13,,诉说简约的美。
+184,narrative_tm4_ln14,,用对食材的尊重，
+185,narrative_tm4_ln15,,表达对味觉的深刻理解。
+186,narrative_tm5_ln1,,月的规律
+187,narrative_tm5_ln2,,亏盈交替，
+188,narrative_tm5_ln3,,圆缺变迁。
+189,narrative_tm5_ln4,,亘古不变的，
+190,narrative_tm5_ln5,,是夜空的指引。
+191,narrative_tm5_ln6,,突如其来的月食，
+192,narrative_tm5_ln7,,散播混沌。
+193,narrative_tm5_ln8,,借着微弱光辉，
+194,narrative_tm5_ln9,,你在迷惘中前行。
+195,narrative_tm5_ln10,,用反思和总结，
+196,narrative_tm5_ln11,,让秩序浮现。
+197,narrative_tm5_ln12,,表面的无序，
+198,narrative_tm5_ln13,,藏着更深的规则。
+199,narrative_tm5_ln14,,在曲折中领悟，
+200,narrative_tm5_ln15,,获得再次的掌控。
+201,narrative_tm6_ln1,,灵感之光
+202,narrative_tm6_ln2,,电灯总用来代表灵感。
+203,narrative_tm6_ln3,,火花在脑中跃动，
+204,narrative_tm6_ln4,,思路逐渐便变得清晰。
+205,narrative_tm6_ln5,,光明涌现，
+206,narrative_tm6_ln6,,产生璀璨的印记。
+207,narrative_tm6_ln7,,过度的汹涌，
+208,narrative_tm6_ln8,,让你失去了方向。
+209,narrative_tm6_ln9,,保留恰如其分的灵感。
+210,narrative_tm6_ln10,,在发明灯泡以前，
+211,narrative_tm6_ln11,,在那无边黑暗的岁月里，
+212,narrative_tm6_ln12,,光明永驻于心间。
+213,locked_tm1,,█ █ 永不停歇。
+214,locked_tm2,,█ █ 决定命运。
+215,locked_tm4,,█ █ 简约又精致。
+216,locked_tm5,,█ █ 有无规律？
+217,locked_tm6,,█ █ 代表着灵感。

@@ -27,6 +27,15 @@ public class CSVSheetData
         Debug.LogError(string.Format("GetLine() searching for a invalid UID({0}) in sheet({1})", uid, sheetName));
         return null;
     }
+    public Dictionary<string, object> GetLineByRow(int row)
+    {
+        if(row < sheet.Count)
+        {
+            return sheet[row];
+        }
+        Debug.LogError(string.Format("GetLine() searching for a invalid row({0}) in sheet({1})", row, sheetName));
+        return null;
+    }
     public object GetCell(string searchCol, object searchKey, string returnCol)
     {
         if(sheet.Count == 0)

@@ -134,126 +134,6 @@ MonoBehaviour:
   - key: goal_lv608
     EN: All cells are ON.
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
-  - key: init_lv101
-    EN: Clock
-    CN: "\u6E9C\u8D70\u7684\u65F6\u95F4"
-  - key: init_lv102
-    EN: Tick, tick, tick,
-    CN: "\u6EF4\u7B54\u6EF4\u7B54\u6EF4\u7B54\uFF0C"
-  - key: init_lv103
-    EN: 
-    CN: "\u65F6\u949F\u4E0D\u77E5\u75B2\u5026\u5730\u524D\u8FDB\u3002"
-  - key: init_lv104
-    EN: 
-    CN: "\u5FAE\u535A\u3001\u8FDE\u8F7D\u3001\u76F4\u64AD\uFF0C"
-  - key: init_lv105
-    EN: 
-    CN: "\u65F6\u95F4\u5728\u4F60\u7684\u6307\u5C16\u9ED8\u9ED8\u6ED1\u52A8\u3002"
-  - key: init_lv106
-    EN: 
-    CN: "\u591C\u7684\u65C5\u8005\uFF0C"
-  - key: init_lv107
-    EN: 
-    CN: "\u62D6\u7740\u75B2\u60EB\u7684\u8EAB\u8EAF\uFF0C"
-  - key: init_lv108
-    EN: 
-    CN: "\u610F\u8BC6\u9010\u6E10\u6A21\u7CCA\uFF0C"
-  - key: init_lv201
-    EN: 
-    CN: "\u6765\u81EA\u786C\u5E01\u7684\u547D\u8FD0"
-  - key: init_lv202
-    EN: 
-    CN: "\u786C\u5E01\u6709\u65E0\u6570\u79CD\u5F62\u5F0F\u3002"
-  - key: init_lv203
-    EN: 
-    CN: "\u5B83\u7A7F\u8D8A\u5386\u53F2\uFF0C"
-  - key: init_lv204
-    EN: 
-    CN: "\u6B63\u9762\u8C61\u5F81\u524D\u8FDB\uFF0C"
-  - key: init_lv205
-    EN: 
-    CN: "\u53CD\u9762\u4EE3\u8868\u4FDD\u7559\uFF0C"
-  - key: init_lv206
-    EN: 
-    CN: "\u4E24\u9762\u4EA4\u9519\uFF0C"
-  - key: init_lv207
-    EN: 
-    CN: "\u4F60\u518D\u6B21\u6295\u63B7\uFF0C"
-  - key: init_lv208
-    EN: 
-    CN: "\u4E0D\u7518\u4E8E\u6B64\uFF0C"
-  - key: init_lv401
-    EN: 
-    CN: "\u5BFF\u53F8\u7684\u7CBE\u81F4"
-  - key: init_lv402
-    EN: 
-    CN: "\u4F60\u5939\u8D77\u4E00\u7247\u9C7C\u751F\uFF0C"
-  - key: init_lv403
-    EN: 
-    CN: "\u62FF\u8D77\u4E00\u56E2\u767D\u996D\uFF0C"
-  - key: init_lv404
-    EN: 
-    CN: "\u8F7B\u8F7B\u634F\u5408\uFF0C"
-  - key: init_lv405
-    EN: 
-    CN: "\u7F13\u7F13\u5377\u8D77\uFF0C"
-  - key: init_lv406
-    EN: 
-    CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C"
-  - key: init_lv407
-    EN: 
-    CN: "\u6765\u81EA\u5927\u5730\u4E0E\u6DF1\u6D77\u7684\u78B0\u649E\uFF0C"
-  - key: init_lv408
-    EN: 
-    CN: "\u7528\u5BF9\u98DF\u6750\u7684\u5C0A\u91CD\uFF0C"
-  - key: init_lv501
-    EN: Moon
-    CN: "\u6708\u7684\u89C4\u5F8B"
-  - key: init_lv502
-    EN: 
-    CN: "\u4E8F\u76C8\u4EA4\u66FF\uFF0C"
-  - key: init_lv503
-    EN: 
-    CN: "\u4E98\u53E4\u4E0D\u53D8\u7684\uFF0C"
-  - key: init_lv504
-    EN: 
-    CN: "\u7A81\u5982\u5176\u6765\u7684\u6708\u98DF\uFF0C"
-  - key: init_lv505
-    EN: 
-    CN: "\u501F\u7740\u5FAE\u5F31\u5149\u8F89\uFF0C"
-  - key: init_lv506
-    EN: 
-    CN: "\u7528\u53CD\u601D\u548C\u603B\u7ED3\uFF0C"
-  - key: init_lv507
-    EN: 
-    CN: "\u8868\u9762\u7684\u65E0\u5E8F\uFF0C"
-  - key: init_lv508
-    EN: 
-    CN: "\u5728\u66F2\u6298\u4E2D\u9886\u609F\uFF0C"
-  - key: init_lv601
-    EN: Lightbulb
-    CN: "\u7075\u611F\u4E4B\u5149"
-  - key: init_lv602
-    EN: 
-    CN: "\u7535\u706F\u603B\u7528\u6765\u4EE3\u8868\u7075\u611F\u3002"
-  - key: init_lv603
-    EN: 
-    CN: "\u706B\u82B1\u5728\u8111\u4E2D\u8DC3\u52A8\uFF0C"
-  - key: init_lv604
-    EN: 
-    CN: "\u601D\u8DEF\u9010\u6E10\u4FBF\u53D8\u5F97\u6E05\u6670\u3002"
-  - key: init_lv605
-    EN: 
-    CN: "\u5149\u660E\u6D8C\u73B0\uFF0C"
-  - key: init_lv606
-    EN: 
-    CN: "\u8FC7\u5EA6\u7684\u6C79\u6D8C\uFF0C"
-  - key: init_lv607
-    EN: 
-    CN: "\u4FDD\u7559\u6070\u5982\u5176\u5206\u7684\u7075\u611F\u3002"
-  - key: init_lv608
-    EN: 
-    CN: "\u5728\u53D1\u660E\u706F\u6CE1\u4EE5\u524D\uFF0C"
   - key: intro_line_1
     EN: Friday night. Get back home, <b>things</b> emerges from darkness.
     CN: "\u5468\u4E94\u665A\u4E0A\uFF0C\u6253\u5F00\u623F\u95E8\uFF0C\u56DE\u5230\u6F06\u9ED1\u7684\u5BB6\u4E2D\uFF0C\u9ED1\u6697\u4E4B\u4E2D<b>\u4E07\u7269</b>\u6D6E\u73B0\u3002"
@@ -262,101 +142,101 @@ MonoBehaviour:
       voice of the winds
     CN: "\u8D70\u5728\u4E0A\u73ED\u7684\u8DEF\u4E0A\uFF0C\u8DEF\u8FC7\u4E00\u6761\u5C0F\u6CB3\uFF0C\u6811\u53F6\u7684\u5A46\u5A11\u58F0\u4E2D\u5939\u6742\u7740<b>\u4E07\u7269</b>\u3002"
   - key: levelname_lv101
-    EN: 8:00 PM
-    CN: 8:00 PM
+    EN: 1
+    CN: 1
   - key: levelname_lv102
-    EN: 10:00 PM
-    CN: 10:00 PM
+    EN: 2
+    CN: 2
   - key: levelname_lv103
-    EN: 1:00 AM
-    CN: 1:00 AM
+    EN: 3
+    CN: 3
   - key: levelname_lv104
-    EN: 2:00 AM
-    CN: 2:00 AM
+    EN: 4
+    CN: 4
   - key: levelname_lv105
-    EN: 3:00 AM
-    CN: 3:00 AM
+    EN: 5
+    CN: 5
   - key: levelname_lv106
-    EN: 4:00 AM
-    CN: 4:00 AM
+    EN: 6
+    CN: 6
   - key: levelname_lv107
-    EN: 5:00 AM
-    CN: 5:00 AM
+    EN: 7
+    CN: 7
   - key: levelname_lv108
-    EN: 6:00 AM
-    CN: 6:00 AM
+    EN: 8
+    CN: 8
   - key: levelname_lv201
-    EN: Coin
-    CN: "\u786C\u5E01"
+    EN: 1
+    CN: 1
   - key: levelname_lv202
-    EN: Greek Drachma
-    CN: "\u5FB7\u62C9\u514B\u9A6C"
+    EN: 2
+    CN: 2
   - key: levelname_lv203
-    EN: Ban Liang
-    CN: "\u79E6\u534A\u4E24"
+    EN: 3
+    CN: 3
   - key: levelname_lv204
-    EN: Dinar
-    CN: "\u8FBE\u91CC\u514B"
+    EN: 4
+    CN: 4
   - key: levelname_lv205
-    EN: Bezant
-    CN: "\u8D1D\u5361\u7279"
+    EN: 5
+    CN: 5
   - key: levelname_lv206
-    EN: Pound Sterling
-    CN: "\u82F1\u9551"
+    EN: 6
+    CN: 6
   - key: levelname_lv207
-    EN: Maple Leaf coin
-    CN: "\u67AB\u53F6\u5E01"
+    EN: 7
+    CN: 7
   - key: levelname_lv208
-    EN: Bitcoin
-    CN: "\u6BD4\u7279\u5E01"
+    EN: 8
+    CN: 8
   - key: levelname_lv401
-    EN: Nigiri
-    CN: "\u5BFF\u53F8"
+    EN: 1
+    CN: 1
   - key: levelname_lv402
-    EN: Ahi
-    CN: "\u91D1\u67AA\u9C7C"
+    EN: 2
+    CN: 2
   - key: levelname_lv403
-    EN: Ebi
-    CN: "\u864E\u867E"
+    EN: 3
+    CN: 3
   - key: levelname_lv404
-    EN: Ikura
-    CN: "\u9C7C\u5B50"
+    EN: 4
+    CN: 4
   - key: levelname_lv405
-    EN: Sake
-    CN: "\u4E09\u6587\u9C7C"
+    EN: 5
+    CN: 5
   - key: levelname_lv406
-    EN: Tako
-    CN: "\u7AE0\u9C7C"
+    EN: 6
+    CN: 6
   - key: levelname_lv407
-    EN: Toro
-    CN: "\u5927\u8179"
+    EN: 7
+    CN: 7
   - key: levelname_lv408
-    EN: Uni
-    CN: "\u6D77\u80C6"
+    EN: 8
+    CN: 8
   - key: levelname_lv501
-    EN: Moon
-    CN: "\u6708\u4EAE"
+    EN: 1
+    CN: 1
   - key: levelname_lv502
-    EN: New Moon
-    CN: "\u65B0\u6708"
+    EN: 2
+    CN: 2
   - key: levelname_lv503
-    EN: Waxing Crescent
-    CN: "\u7709\u6708"
+    EN: 3
+    CN: 3
   - key: levelname_lv504
-    EN: First Quarter
-    CN: "\u4E0A\u5F26\u6708"
+    EN: 4
+    CN: 4
   - key: levelname_lv505
-    EN: Full Moon
-    CN: "\u6EE1\u6708"
+    EN: 5
+    CN: 5
   - key: levelname_lv506
-    EN: Last Quarter
-    CN: "\u4E0B\u5F26\u6708"
+    EN: 6
+    CN: 6
   - key: levelname_lv507
-    EN: Wanning Crescent
-    CN: "\u6B8B\u6708"
+    EN: 7
+    CN: 7
   - key: levelname_lv508
-    EN: Eclipse
-    CN: "\u6708\u98DF"
+    EN: 8
+    CN: 8
   - key: levelname_lv601
     EN: 1
     CN: 1
@@ -381,90 +261,6 @@ MonoBehaviour:
   - key: levelname_lv608
     EN: 8
     CN: 8
-  - key: play1_lv104
-    EN: 
-    CN: "\u5F00\u542F\u65B0\u7684\u8282\u5F8B\uFF0C"
-  - key: play1_lv106
-    EN: 
-    CN: "\u5728\u9ED1\u6697\u4E2D\u8DCB\u6D89\u3002"
-  - key: play1_lv107
-    EN: 
-    CN: "\u6700\u7EC8\u62B5\u8FBE\u6668\u66E6\u3002"
-  - key: play1_lv108
-    EN: 
-    CN: "\u662F\u65F6\u5019\u4F11\u606F\u4E86\u3002"
-  - key: play1_lv203
-    EN: 
-    CN: "\u59CB\u7EC8\u4FDD\u6301\u7740\u4E24\u9762\u3002"
-  - key: play1_lv204
-    EN: 
-    CN: "\u4E5F\u53EF\u80FD\u662F\u76F2\u4ECE\uFF1B"
-  - key: play1_lv205
-    EN: 
-    CN: "\u6216\u8005\u53EB\u653E\u5F03\u3002"
-  - key: play1_lv206
-    EN: 
-    CN: "\u521B\u9020\u547D\u8FD0\u7684\u6CE2\u6F9C\u3002"
-  - key: play1_lv207
-    EN: 
-    CN: "\u7B49\u5F85\u5BBF\u547D\u843D\u4E0B\u7684\u56DE\u54CD\u3002"
-  - key: play1_lv208
-    EN: 
-    CN: "\u5C31\u7528\u667A\u6167\u8FDB\u884C\u89E3\u8BFB\u3002"
-  - key: play1_lv402
-    EN: 
-    CN: "\u6676\u83B9\u5254\u900F\u3002"
-  - key: play1_lv403
-    EN: 
-    CN: "\u5728\u7897\u4E2D\u52FE\u52D2\u51FA\u5F27\u7EBF\u3002"
-  - key: play1_lv404
-    EN: 
-    CN: "\u521B\u9020\u51FA\u5BFF\u53F8\u7EC6\u817B\u7684\u53E3\u611F\u3002"
-  - key: play1_lv405
-    EN: 
-    CN: "\u5C31\u5F00\u542F\u4E86\u996D\u56E2\u4E30\u76C8\u7684\u5473\u89C9\u3002"
-  - key: play1_lv406
-    EN: 
-    CN: "\u5374\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7EC4\u5408\u3002"
-  - key: play1_lv407
-    EN: 
-    CN: "\u8BC9\u8BF4\u7B80\u7EA6\u7684\u7F8E\u3002"
-  - key: play1_lv408
-    EN: 
-    CN: "\u8868\u8FBE\u5BF9\u5473\u89C9\u7684\u6DF1\u523B\u7406\u89E3\u3002"
-  - key: play1_lv502
-    EN: 
-    CN: "\u5706\u7F3A\u53D8\u8FC1\u3002"
-  - key: play1_lv503
-    EN: 
-    CN: "\u662F\u591C\u7A7A\u7684\u6307\u5F15\u3002"
-  - key: play1_lv504
-    EN: 
-    CN: "\u6563\u64AD\u6DF7\u6C8C\u3002"
-  - key: play1_lv505
-    EN: 
-    CN: "\u4F60\u5728\u8FF7\u60D8\u4E2D\u524D\u884C\u3002"
-  - key: play1_lv506
-    EN: 
-    CN: "\u8BA9\u79E9\u5E8F\u6D6E\u73B0\u3002"
-  - key: play1_lv507
-    EN: 
-    CN: "\u85CF\u7740\u66F4\u6DF1\u7684\u89C4\u5219\u3002"
-  - key: play1_lv508
-    EN: 
-    CN: "\u83B7\u5F97\u518D\u6B21\u7684\u638C\u63A7\u3002"
-  - key: play1_lv605
-    EN: 
-    CN: "\u4EA7\u751F\u7480\u74A8\u7684\u5370\u8BB0\u3002"
-  - key: play1_lv606
-    EN: 
-    CN: "\u8BA9\u4F60\u5931\u53BB\u4E86\u65B9\u5411\u3002"
-  - key: play1_lv608
-    EN: 
-    CN: "\u5728\u90A3\u65E0\u8FB9\u9ED1\u6697\u7684\u5C81\u6708\u91CC\uFF0C"
-  - key: play2_lv608
-    EN: 
-    CN: "\u5149\u660E\u6C38\u9A7B\u4E8E\u5FC3\u95F4\u3002"
   - key: rule1_lv101
     EN: Cell Played +1
     CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
@@ -534,51 +330,6 @@ MonoBehaviour:
   - key: rule5_lv503
     EN: '10+: Sunrise! LOSE'
     CN: "\u8D85\u8FC79\uFF1A\u592A\u9633\u5347\u8D77\uFF0C\u6E38\u620F\u5931\u8D25"
-  - key: theme_manifesto_1
-    EN: 
-    CN: "\u65F6\u949F\u662F\u7B2C\u4E00\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u51FA\u73B0\u6BD4\u6E38\u620F\u540D\u201C\u4E07\u7269\u4E4B\u6570\u5B57\u8FD8\u8981\u65E9\u3002\u4E00\u5B9A\u7A0B\u5EA6\u4E0A\uFF0C\u5B83\u662F\u6574\u4E2A\u6E38\u620F\u9879\u76EE\u5F00\u59CB\u7684\u8D77\u70B9\u3002\u71AC\u591C\u5374\u65E0\u6240\u4E8B\u4E8B\u662F\u4E00\u79CD\u8868\u9762\u4E0A\u73CD\u60DC\u65F6\u95F4\uFF0C\u5374\u53C8\u614C\u4E71\u5730\u6D6A\u8D39\u4E86\u65F6\u95F4\u7684\u884C\u4E3A\u3002\u65F6\u949F\u4E3B\u9898\u60F3\u901A\u8FC7\u8FD9\u4E2A\u60C5\u666F\u6765\u8868\u8FBE\u4E2A\u4F53\u5728\u65F6\u5149\u6D41\u901D\u9762\u524D\u7684\u65E0\u529B\u3002"
-  - key: theme_manifesto_2
-    EN: 
-    CN: "\u786C\u5E01\u662F\u7B2C\u4E8C\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u7075\u611F\u6765\u6E90\u4E8E\u901A\u8FC7\u63B7\u786C\u5E01\u6765\u505A\u51B3\u7B56\u8FD9\u4E00\u65F6\u523B\u3002\u5728\u751F\u6D3B\u4E2D\uFF0C\u5634\u91CC\u8BF4\u7740\u4E0D\u77E5\u600E\u4E48\u9009\uFF0C\u5C31\u901A\u8FC7\u63B7\u786C\u5E01\u6765\u51B3\u5B9A\u3002\u53EF\u5176\u5B9E\u5F80\u5F80\u63B7\u51FA\u7ED3\u679C\u540E\u5982\u679C\u4E0D\u662F\u81EA\u5DF1\u6EE1\u610F\u7684\u90A3\u4E2A\u53C8\u4F1A\u627E\u7406\u7531\u53CD\u6094\uFF0C\u201C\u518D\u63B7\u4E00\u6B21\u5427\u201D\u3002\u56E0\u6B64\u63B7\u786C\u5E01\u4E0D\u662F\u51B3\u5B9A\u6211\u7684\u547D\u8FD0\uFF0C\u800C\u662F\u6765\u5E2E\u52A9\u6211\u66F4\u597D\u5730\u8D70\u8FDB\u5185\u5FC3\uFF0C\u771F\u6B63\u770B\u6E05\u81EA\u5DF1\u3002"
-  - key: theme_manifesto_4
-    EN: 
-    CN: "\u5BFF\u53F8\u662F\u7B2C\u4E09\u4E2A\u4E3B\u9898\uFF0C\u4E5F\u662F\u5728demo\u4E4B\u540E\u7684\u7B2C\u4E00\u4E2A\u6B63\u5F0F\u4E3B\u9898\u3002\u8868\u8FBE\u7684\u8981\u70B9\u662F\u65E5\u672C\u6599\u7406\u4E2D\u8FD0\u7528\u7B80\u5355\u98DF\u6750\uFF0C\u901A\u8FC7\u4E0D\u540C\u7684\u70F9\u8C03\u3001\u6BD4\u91CD\u3001\u7EC4\u5408\u7684\u65B9\u5F0F\u4EA7\u751F\u98DF\u7269\u79CD\u7C7B\u3001\u53E3\u611F\u3001\u5473\u9053\u4E0A\u4E30\u5BCC\u53EF\u80FD\u3002\u5728\u5B9E\u9645\u7684\u8C1C\u9898\u4E2D\u5C55\u73B0\u4E3A\u901A\u8FC7\u4E24\u79CD\u98DF\u6750\u7684\u6B21\u5E8F\uFF0C\u5C31\u53EF\u4EE5\u4EA7\u751F\u8FE5\u7136\u76F8\u5F02\u7684\u7ED3\u679C\u3002"
-  - key: theme_manifesto_5
-    EN: 
-    CN: "\u6708\u4EAE\u4E3B\u9898\u7684\u8868\u9762\u662F\u6708\u98DF\u5E26\u6765\u7684\u6DF7\u4E71\uFF0C\u5E76\u5728\u6DF7\u4E71\u4E2D\u5BFB\u6C42\u79E9\u5E8F\u3002\u8FD9\u80CC\u540E\u7684\u5F00\u53D1\u7126\u70B9\u5728\u4E8E\u5BF9\u89C4\u5F8B\u7684\u89C2\u5BDF\u4E0E\u638C\u63E1\u3002\u6708\u76F8\u7684\u8F6E\u66FF\u89C4\u5219\u662F\u5165\u95E8\u7684\u4ECB\u7ECD\uFF0C\u4E4B\u540E\u7684\u5173\u5361\u5219\u56F4\u7ED5\u7740\u5982\u4F55\u9010\u6E10\u7406\u89E3\u6708\u98DF\u7684\u89C4\u5F8B\u800C\u5C55\u5F00\u3002"
-  - key: theme_manifesto_6
-    EN: 
-    CN: "\u706F\u6CE1\u7684\u539F\u578B\u6765\u6E90\u662F\u5927\u5B66\u8BA1\u7B97\u673A\u8BFE\u7A0B\u4E2D\u4E00\u9053\u7ECF\u5178\u7684\u52A8\u6001\u89C4\u5212\u95EE\u9898\uFF1A\u706F\u6CE1\u95EE\u9898\u3002\u628A\u539F\u672C\u662F\u8BA1\u7B97\u673A\u624D\u80FD\u89E3\u51B3\u7684\u95EE\u9898\u8BA9\u4EBA\u8111\u6765\u89E3\u51B3\uFF0C\u6700\u5927\u7684\u6311\u6218\u5C31\u662F\u5982\u4F55\u505A\u5F97\u66F4\u52A0\u7B80\u5355\u66F4\u52A0\u76F4\u89C2\u3002\u6700\u7EC8\u7684\u8C1C\u9898\u4F9D\u7136\u6709\u4E9B\u590D\u6742\u4E86\uFF0C\u8FD9\u662F\u5728\u4FDD\u7559\u95EE\u9898\u7CBE\u9AD3\u60C5\u51B5\u4E0B\u80FD\u8FBE\u5230\u7684\u6700\u597D\u7ED3\u679C\u3002"
-  - key: themedesc_long_tm1
-    EN: 
-    CN: "<b>\u65F6\u95F4</b>\u6C38\u4E0D\u505C\u6B47\u3002"
-  - key: themedesc_long_tm2
-    EN: 
-    CN: "<b>\u786C\u5E01</b>\u51B3\u5B9A\u547D\u8FD0\u3002"
-  - key: themedesc_long_tm4
-    EN: 
-    CN: "<b>\u5BFF\u53F8</b>\u7B80\u7EA6\u53C8\u7CBE\u81F4\u3002"
-  - key: themedesc_long_tm5
-    EN: 
-    CN: "<b>\u6708\u4EAE</b>\u6709\u65E0\u89C4\u5F8B\uFF1F"
-  - key: themedesc_long_tm6
-    EN: 
-    CN: "<b>\u706F\u6CE1</b>\u4EE3\u8868\u7740\u7075\u611F\u3002"
-  - key: themedesc_short_tm1
-    EN: 
-    CN: "\u6C38\u4E0D\u505C\u6B47\u3002"
-  - key: themedesc_short_tm2
-    EN: 
-    CN: "\u51B3\u5B9A\u547D\u8FD0\u3002"
-  - key: themedesc_short_tm4
-    EN: 
-    CN: "\u7B80\u7EA6\u53C8\u7CBE\u81F4\u3002"
-  - key: themedesc_short_tm5
-    EN: 
-    CN: "\u6709\u65E0\u89C4\u5F8B\uFF1F"
-  - key: themedesc_short_tm6
-    EN: 
-    CN: "\u4EE3\u8868\u7740\u7075\u611F\u3002"
   - key: themename_tm1
     EN: Clock
     CN: "\u65F6\u949F"
@@ -636,3 +387,282 @@ MonoBehaviour:
   - key: themedesc_more
     EN: More themes <br>to come...
     CN: "\u66F4\u591A\u4E3B\u9898\uFF0C<br>\u656C\u8BF7\u671F\u5F85\u3002"
+  - key: unlocked_tm1
+    EN: 
+    CN: "<b>\u65F6\u95F4</b>\u6C38\u4E0D\u505C\u6B47\u3002"
+  - key: unlocked_tm2
+    EN: 
+    CN: "<b>\u786C\u5E01</b>\u51B3\u5B9A\u547D\u8FD0\u3002"
+  - key: unlocked_tm4
+    EN: 
+    CN: "<b>\u5BFF\u53F8</b>\u7B80\u7EA6\u53C8\u7CBE\u81F4\u3002"
+  - key: unlocked_tm5
+    EN: 
+    CN: "<b>\u6708\u4EAE</b>\u6709\u65E0\u89C4\u5F8B\uFF1F"
+  - key: unlocked_tm6
+    EN: 
+    CN: "<b>\u706F\u6CE1</b>\u4EE3\u8868\u7740\u7075\u611F\u3002"
+  - key: hint_tm1
+    EN: 
+    CN: "\u5B83\u6EF4\u7B54\u6EF4\u7B54\uFF0C\u6C38\u4E0D\u505C\u6B47\u5730\u524D\u8FDB\u3002"
+  - key: hint_tm2
+    EN: 
+    CN: "\u5B83\u4E00\u6B21\u6B21\u5730\u7FFB\u52A8\uFF0C\u51B3\u5B9A\u7740\u547D\u8FD0\u3002"
+  - key: hint_tm4
+    EN: 
+    CN: "\u5B83\u867D\u7136\u7B80\u7EA6\uFF0C\u5374\u6108\u663E\u5F97\u7CBE\u81F4\u3002"
+  - key: hint_tm5
+    EN: 
+    CN: "\u5B83\u4E0D\u505C\u53D8\u5316\uFF0C\u5374\u603B\u4F1A\u56DE\u5230\u719F\u6089\u7684\u6837\u5B50\u3002"
+  - key: hint_tm6
+    EN: 
+    CN: "\u5B83\u4EE3\u8868\u4E86\u7075\u611F\u3001\u987F\u609F\u3002"
+  - key: date_tm1
+    EN: 
+    CN: 2022/12/04
+  - key: date_tm2
+    EN: 
+    CN: 2023/01/15
+  - key: date_tm4
+    EN: 
+    CN: 2023/06/25
+  - key: date_tm5
+    EN: 
+    CN: 2023/08/13
+  - key: date_tm6
+    EN: 
+    CN: 2023/09/03
+  - key: manifesto_tm1
+    EN: 
+    CN: "\u65F6\u949F\u662F\u7B2C\u4E00\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u51FA\u73B0\u6BD4\u6E38\u620F\u540D\u201C\u4E07\u7269\u4E4B\u6570\u201C\u8FD8\u8981\u65E9\u3002\u4E00\u5B9A\u7A0B\u5EA6\u4E0A\uFF0C\u5B83\u662F\u6574\u4E2A\u6E38\u620F\u9879\u76EE\u5F00\u59CB\u7684\u8D77\u70B9\u3002<br>\u71AC\u591C\u5374\u65E0\u6240\u4E8B\u4E8B\u662F\u4E00\u79CD\u8868\u9762\u4E0A\u73CD\u60DC\u65F6\u95F4\uFF0C\u5374\u53C8\u614C\u4E71\u5730\u6D6A\u8D39\u4E86\u65F6\u95F4\u7684\u884C\u4E3A\u3002\u65F6\u949F\u4E3B\u9898\u60F3\u901A\u8FC7\u8FD9\u4E2A\u60C5\u666F\u6765\u8868\u8FBE\u4E2A\u4F53\u5728\u65F6\u5149\u6D41\u901D\u9762\u524D\u7684\u65E0\u529B\u3002"
+  - key: manifesto_tm2
+    EN: 
+    CN: "\u786C\u5E01\u662F\u7B2C\u4E8C\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u7075\u611F\u6765\u6E90\u4E8E\u901A\u8FC7\u63B7\u786C\u5E01\u6765\u505A\u51B3\u7B56\u8FD9\u4E00\u65F6\u523B\u3002\u5728\u751F\u6D3B\u4E2D\uFF0C\u5634\u91CC\u8BF4\u7740\u4E0D\u77E5\u600E\u4E48\u9009\uFF0C\u5C31\u901A\u8FC7\u63B7\u786C\u5E01\u6765\u51B3\u5B9A\u3002\u53EF\u5176\u5B9E\u5F80\u5F80\u63B7\u51FA\u7ED3\u679C\u540E\u5982\u679C\u4E0D\u662F\u81EA\u5DF1\u6EE1\u610F\u7684\u90A3\u4E2A\u53C8\u4F1A\u627E\u7406\u7531\u53CD\u6094\uFF0C\u201C\u518D\u63B7\u4E00\u6B21\u5427\u201D\u3002\u56E0\u6B64\u63B7\u786C\u5E01\u4E0D\u662F\u51B3\u5B9A\u6211\u7684\u547D\u8FD0\uFF0C\u800C\u662F\u6765\u5E2E\u52A9\u6211\u66F4\u597D\u5730\u8D70\u8FDB\u5185\u5FC3\uFF0C\u771F\u6B63\u770B\u6E05\u81EA\u5DF1\u3002"
+  - key: manifesto_tm4
+    EN: 
+    CN: "\u5BFF\u53F8\u662F\u7B2C\u4E09\u4E2A\u4E3B\u9898\uFF0C\u4E5F\u662F\u5728demo\u4E4B\u540E\u7684\u7B2C\u4E00\u4E2A\u6B63\u5F0F\u4E3B\u9898\u3002\u8868\u8FBE\u7684\u8981\u70B9\u662F\u65E5\u672C\u6599\u7406\u4E2D\u8FD0\u7528\u7B80\u5355\u98DF\u6750\uFF0C\u901A\u8FC7\u4E0D\u540C\u7684\u70F9\u8C03\u3001\u6BD4\u91CD\u3001\u7EC4\u5408\u7684\u65B9\u5F0F\u4EA7\u751F\u98DF\u7269\u79CD\u7C7B\u3001\u53E3\u611F\u3001\u5473\u9053\u4E0A\u4E30\u5BCC\u53EF\u80FD\u3002\u5728\u5B9E\u9645\u7684\u8C1C\u9898\u4E2D\u5C55\u73B0\u4E3A\u901A\u8FC7\u4E24\u79CD\u98DF\u6750\u7684\u6B21\u5E8F\uFF0C\u5C31\u53EF\u4EE5\u4EA7\u751F\u8FE5\u7136\u76F8\u5F02\u7684\u7ED3\u679C\u3002"
+  - key: manifesto_tm5
+    EN: 
+    CN: "\u6708\u4EAE\u4E3B\u9898\u7684\u8868\u9762\u662F\u6708\u98DF\u5E26\u6765\u7684\u6DF7\u4E71\uFF0C\u5E76\u5728\u6DF7\u4E71\u4E2D\u5BFB\u6C42\u79E9\u5E8F\u3002\u8FD9\u80CC\u540E\u7684\u5F00\u53D1\u7126\u70B9\u5728\u4E8E\u5BF9\u89C4\u5F8B\u7684\u89C2\u5BDF\u4E0E\u638C\u63E1\u3002\u6708\u76F8\u7684\u8F6E\u66FF\u89C4\u5219\u662F\u5165\u95E8\u7684\u4ECB\u7ECD\uFF0C\u4E4B\u540E\u7684\u5173\u5361\u5219\u56F4\u7ED5\u7740\u5982\u4F55\u9010\u6E10\u7406\u89E3\u6708\u98DF\u7684\u89C4\u5F8B\u800C\u5C55\u5F00\u3002"
+  - key: manifesto_tm6
+    EN: 
+    CN: "\u706F\u6CE1\u7684\u539F\u578B\u6765\u6E90\u662F\u5927\u5B66\u8BA1\u7B97\u673A\u8BFE\u7A0B\u4E2D\u4E00\u9053\u7ECF\u5178\u7684\u52A8\u6001\u89C4\u5212\u95EE\u9898\uFF1A\u706F\u6CE1\u95EE\u9898\u3002\u628A\u539F\u672C\u662F\u8BA1\u7B97\u673A\u624D\u80FD\u89E3\u51B3\u7684\u95EE\u9898\u8BA9\u4EBA\u8111\u6765\u89E3\u51B3\uFF0C\u6700\u5927\u7684\u6311\u6218\u5C31\u662F\u5982\u4F55\u505A\u5F97\u66F4\u52A0\u7B80\u5355\u66F4\u52A0\u76F4\u89C2\u3002\u6700\u7EC8\u7684\u8C1C\u9898\u4F9D\u7136\u6709\u4E9B\u590D\u6742\u4E86\uFF0C\u8FD9\u662F\u5728\u4FDD\u7559\u95EE\u9898\u7CBE\u9AD3\u60C5\u51B5\u4E0B\u80FD\u8FBE\u5230\u7684\u6700\u597D\u7ED3\u679C\u3002"
+  - key: narrative_tm1_ln1
+    EN: 
+    CN: "\u6E9C\u8D70\u7684\u65F6\u95F4"
+  - key: narrative_tm1_ln2
+    EN: 
+    CN: "\u6EF4\u7B54\u6EF4\u7B54\u6EF4\u7B54\uFF0C"
+  - key: narrative_tm1_ln3
+    EN: 
+    CN: "\u65F6\u949F\u4E0D\u77E5\u75B2\u5026\u5730\u524D\u8FDB\u3002"
+  - key: narrative_tm1_ln4
+    EN: 
+    CN: "\u5FAE\u535A\u3001\u8FDE\u8F7D\u3001\u76F4\u64AD\uFF0C"
+  - key: narrative_tm1_ln5
+    EN: 
+    CN: "\u5F00\u542F\u65B0\u7684\u8282\u5F8B\uFF0C"
+  - key: narrative_tm1_ln6
+    EN: 
+    CN: "\u65F6\u95F4\u5728\u4F60\u7684\u6307\u5C16\u9ED8\u9ED8\u6ED1\u52A8\u3002"
+  - key: narrative_tm1_ln7
+    EN: 
+    CN: "\u591C\u7684\u65C5\u8005\uFF0C"
+  - key: narrative_tm1_ln8
+    EN: 
+    CN: "\u5728\u9ED1\u6697\u4E2D\u8DCB\u6D89\u3002"
+  - key: narrative_tm1_ln9
+    EN: 
+    CN: "\u62D6\u7740\u75B2\u60EB\u7684\u8EAB\u8EAF\uFF0C"
+  - key: narrative_tm1_ln10
+    EN: 
+    CN: "\u6700\u7EC8\u62B5\u8FBE\u6668\u66E6\u3002"
+  - key: narrative_tm1_ln11
+    EN: 
+    CN: "\u610F\u8BC6\u9010\u6E10\u6A21\u7CCA\uFF0C"
+  - key: narrative_tm1_ln12
+    EN: 
+    CN: "\u662F\u65F6\u5019\u4F11\u606F\u4E86\u3002"
+  - key: narrative_tm2_ln1
+    EN: 
+    CN: "\u6765\u81EA\u786C\u5E01\u7684\u547D\u8FD0"
+  - key: narrative_tm2_ln2
+    EN: 
+    CN: "\u786C\u5E01\u6709\u65E0\u6570\u79CD\u5F62\u5F0F\u3002"
+  - key: narrative_tm2_ln3
+    EN: 
+    CN: "\u5B83\u7A7F\u8D8A\u5386\u53F2\uFF0C"
+  - key: narrative_tm2_ln4
+    EN: 
+    CN: "\u59CB\u7EC8\u4FDD\u6301\u7740\u4E24\u9762\u3002"
+  - key: narrative_tm2_ln5
+    EN: 
+    CN: "\u6B63\u9762\u8C61\u5F81\u524D\u8FDB\uFF0C"
+  - key: narrative_tm2_ln6
+    EN: 
+    CN: "\u4E5F\u53EF\u80FD\u662F\u76F2\u4ECE\uFF1B"
+  - key: narrative_tm2_ln7
+    EN: 
+    CN: "\u53CD\u9762\u4EE3\u8868\u4FDD\u7559\uFF0C"
+  - key: narrative_tm2_ln8
+    EN: 
+    CN: "\u6216\u8005\u53EB\u653E\u5F03\u3002"
+  - key: narrative_tm2_ln9
+    EN: 
+    CN: "\u4E24\u9762\u4EA4\u9519\uFF0C"
+  - key: narrative_tm2_ln10
+    EN: 
+    CN: "\u521B\u9020\u547D\u8FD0\u7684\u6CE2\u6F9C\u3002"
+  - key: narrative_tm2_ln11
+    EN: 
+    CN: "\u4F60\u518D\u6B21\u6295\u63B7\uFF0C"
+  - key: narrative_tm2_ln12
+    EN: 
+    CN: "\u7B49\u5F85\u5BBF\u547D\u843D\u4E0B\u7684\u56DE\u54CD\u3002"
+  - key: narrative_tm2_ln13
+    EN: 
+    CN: "\u4E0D\u7518\u4E8E\u6B64\uFF0C"
+  - key: narrative_tm2_ln14
+    EN: 
+    CN: "\u5C31\u7528\u667A\u6167\u8FDB\u884C\u89E3\u8BFB\u3002"
+  - key: narrative_tm4_ln1
+    EN: 
+    CN: "\u5BFF\u53F8\u7684\u7CBE\u81F4"
+  - key: narrative_tm4_ln2
+    EN: 
+    CN: "\u4F60\u5939\u8D77\u4E00\u7247\u9C7C\u751F\uFF0C"
+  - key: narrative_tm4_ln3
+    EN: 
+    CN: "\u6676\u83B9\u5254\u900F\u3002"
+  - key: narrative_tm4_ln4
+    EN: 
+    CN: "\u62FF\u8D77\u4E00\u56E2\u767D\u996D\uFF0C"
+  - key: narrative_tm4_ln5
+    EN: 
+    CN: "\u5728\u7897\u4E2D\u52FE\u52D2\u51FA\u5F27\u7EBF\u3002"
+  - key: narrative_tm4_ln6
+    EN: 
+    CN: "\u8F7B\u8F7B\u634F\u5408\uFF0C"
+  - key: narrative_tm4_ln7
+    EN: 
+    CN: "\u521B\u9020\u51FA\u5BFF\u53F8\u7EC6\u817B\u7684\u53E3\u611F\u3002"
+  - key: narrative_tm4_ln8
+    EN: 
+    CN: "\u7F13\u7F13\u5377\u8D77\uFF0C"
+  - key: narrative_tm4_ln9
+    EN: 
+    CN: "\u5C31\u5F00\u542F\u4E86\u996D\u56E2\u4E30\u76C8\u7684\u5473\u89C9\u3002"
+  - key: narrative_tm4_ln10
+    EN: 
+    CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C"
+  - key: narrative_tm4_ln11
+    EN: 
+    CN: "\u5374\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7EC4\u5408\u3002"
+  - key: narrative_tm4_ln12
+    EN: 
+    CN: "\u6765\u81EA\u5927\u5730\u4E0E\u6DF1\u6D77\u7684\u78B0\u649E\uFF0C"
+  - key: narrative_tm4_ln13
+    EN: 
+    CN: "\u8BC9\u8BF4\u7B80\u7EA6\u7684\u7F8E\u3002"
+  - key: narrative_tm4_ln14
+    EN: 
+    CN: "\u7528\u5BF9\u98DF\u6750\u7684\u5C0A\u91CD\uFF0C"
+  - key: narrative_tm4_ln15
+    EN: 
+    CN: "\u8868\u8FBE\u5BF9\u5473\u89C9\u7684\u6DF1\u523B\u7406\u89E3\u3002"
+  - key: narrative_tm5_ln1
+    EN: 
+    CN: "\u6708\u7684\u89C4\u5F8B"
+  - key: narrative_tm5_ln2
+    EN: 
+    CN: "\u4E8F\u76C8\u4EA4\u66FF\uFF0C"
+  - key: narrative_tm5_ln3
+    EN: 
+    CN: "\u5706\u7F3A\u53D8\u8FC1\u3002"
+  - key: narrative_tm5_ln4
+    EN: 
+    CN: "\u4E98\u53E4\u4E0D\u53D8\u7684\uFF0C"
+  - key: narrative_tm5_ln5
+    EN: 
+    CN: "\u662F\u591C\u7A7A\u7684\u6307\u5F15\u3002"
+  - key: narrative_tm5_ln6
+    EN: 
+    CN: "\u7A81\u5982\u5176\u6765\u7684\u6708\u98DF\uFF0C"
+  - key: narrative_tm5_ln7
+    EN: 
+    CN: "\u6563\u64AD\u6DF7\u6C8C\u3002"
+  - key: narrative_tm5_ln8
+    EN: 
+    CN: "\u501F\u7740\u5FAE\u5F31\u5149\u8F89\uFF0C"
+  - key: narrative_tm5_ln9
+    EN: 
+    CN: "\u4F60\u5728\u8FF7\u60D8\u4E2D\u524D\u884C\u3002"
+  - key: narrative_tm5_ln10
+    EN: 
+    CN: "\u7528\u53CD\u601D\u548C\u603B\u7ED3\uFF0C"
+  - key: narrative_tm5_ln11
+    EN: 
+    CN: "\u8BA9\u79E9\u5E8F\u6D6E\u73B0\u3002"
+  - key: narrative_tm5_ln12
+    EN: 
+    CN: "\u8868\u9762\u7684\u65E0\u5E8F\uFF0C"
+  - key: narrative_tm5_ln13
+    EN: 
+    CN: "\u85CF\u7740\u66F4\u6DF1\u7684\u89C4\u5219\u3002"
+  - key: narrative_tm5_ln14
+    EN: 
+    CN: "\u5728\u66F2\u6298\u4E2D\u9886\u609F\uFF0C"
+  - key: narrative_tm5_ln15
+    EN: 
+    CN: "\u83B7\u5F97\u518D\u6B21\u7684\u638C\u63A7\u3002"
+  - key: narrative_tm6_ln1
+    EN: 
+    CN: "\u7075\u611F\u4E4B\u5149"
+  - key: narrative_tm6_ln2
+    EN: 
+    CN: "\u7535\u706F\u603B\u7528\u6765\u4EE3\u8868\u7075\u611F\u3002"
+  - key: narrative_tm6_ln3
+    EN: 
+    CN: "\u706B\u82B1\u5728\u8111\u4E2D\u8DC3\u52A8\uFF0C"
+  - key: narrative_tm6_ln4
+    EN: 
+    CN: "\u601D\u8DEF\u9010\u6E10\u4FBF\u53D8\u5F97\u6E05\u6670\u3002"
+  - key: narrative_tm6_ln5
+    EN: 
+    CN: "\u5149\u660E\u6D8C\u73B0\uFF0C"
+  - key: narrative_tm6_ln6
+    EN: 
+    CN: "\u4EA7\u751F\u7480\u74A8\u7684\u5370\u8BB0\u3002"
+  - key: narrative_tm6_ln7
+    EN: 
+    CN: "\u8FC7\u5EA6\u7684\u6C79\u6D8C\uFF0C"
+  - key: narrative_tm6_ln8
+    EN: 
+    CN: "\u8BA9\u4F60\u5931\u53BB\u4E86\u65B9\u5411\u3002"
+  - key: narrative_tm6_ln9
+    EN: 
+    CN: "\u4FDD\u7559\u6070\u5982\u5176\u5206\u7684\u7075\u611F\u3002"
+  - key: narrative_tm6_ln10
+    EN: 
+    CN: "\u5728\u53D1\u660E\u706F\u6CE1\u4EE5\u524D\uFF0C"
+  - key: narrative_tm6_ln11
+    EN: 
+    CN: "\u5728\u90A3\u65E0\u8FB9\u9ED1\u6697\u7684\u5C81\u6708\u91CC\uFF0C"
+  - key: narrative_tm6_ln12
+    EN: 
+    CN: "\u5149\u660E\u6C38\u9A7B\u4E8E\u5FC3\u95F4\u3002"
+  - key: locked_tm1
+    EN: 
+    CN: "\u2588 \u2588 \u6C38\u4E0D\u505C\u6B47\u3002"
+  - key: locked_tm2
+    EN: 
+    CN: "\u2588 \u2588 \u51B3\u5B9A\u547D\u8FD0\u3002"
+  - key: locked_tm4
+    EN: 
+    CN: "\u2588 \u2588 \u7B80\u7EA6\u53C8\u7CBE\u81F4\u3002"
+  - key: locked_tm5
+    EN: 
+    CN: "\u2588 \u2588 \u6709\u65E0\u89C4\u5F8B\uFF1F"
+  - key: locked_tm6
+    EN: 
+    CN: "\u2588 \u2588 \u4EE3\u8868\u7740\u7075\u611F\u3002"

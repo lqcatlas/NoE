@@ -2981,7 +2981,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3002,7 +3002,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3010,6 +3010,111 @@ TextureImporter:
       bones: []
       spriteID: cecefa8a620cf7f48be8965644735c1f
       internalID: -1559598106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sign_complete
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f908909da8af24497f051a85be5d7d
+      internalID: 894229184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: currency_star
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef77cd0b1fc40c469f4074884ac57d7
+      internalID: -2054183618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: currency_gem
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb49be2c3e179d4db8fa545592879c8
+      internalID: -173911021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: currency_star_frame
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb65a4078f2aa148bc6c7fa88fa8b91
+      internalID: -435409087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: currency_gem_frame
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb07eab592f870e47b871fdad89c0658
+      internalID: 1380928617
       vertices: []
       indices: 
       edges: []
@@ -3081,6 +3186,7 @@ TextureImporter:
       window5_full: -872146286
       star1_v1: 521555965
       bulb_off@v1: 1880714286
+      currency_star: -2054183618
       window2_fill: 480405304
       star6_v3: -781750752
       coin_shape_20: -920651032
@@ -3106,6 +3212,7 @@ TextureImporter:
       rule_sign_addition: 1169092994
       window4_full: 1684832504
       star5_v3: 1932512887
+      currency_gem: -173911021
       star1_v4: -692310129
       coin_shape_16: 1689295449
       ILSH_I_v1: 175602717
@@ -3120,6 +3227,7 @@ TextureImporter:
       sushi@v1: 1983163683
       window5_fill: 692586796
       window3_v1: -268414213
+      currency_star_frame: -435409087
       full_moon@v1: 15978782
       coin_shape_19: 1010904879
       star6_v4: 1937736281
@@ -3139,6 +3247,7 @@ TextureImporter:
       star2_v3: 830675439
       coin_shape_12: 961981626
       coin_shape_13: -937068970
+      currency_gem_frame: 1380928617
       moon_v2: 988482311
       clocktime_tool_v5: -961180665
       coin_tool_head_v1: -347663578
@@ -3150,6 +3259,7 @@ TextureImporter:
       cell_frame@v1: -1833856617
       window3_full: -633744324
       retry_v1: -425375840
+      sign_complete: 894229184
       clocktime_tool_v2: -1691713925
       window4_v2: 940230836
       exit_v1: 1334681943

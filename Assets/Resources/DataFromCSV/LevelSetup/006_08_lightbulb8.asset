@@ -20,20 +20,20 @@ MonoBehaviour:
   nextLevel: {fileID: 0}
   theme: '@Loc=themename_tm6@@'
   title: '@Loc=levelname_lv608@@'
-  newInitNarrative: '@Loc=init_lv608@@'
+  newInitNarrative: '@Loc=narrative_tm6_ln10@@'
   newPlayNarratives:
-  - '@Loc=play1_lv608@@'
-  - '@Loc=play2_lv608@@'
+  - '@Loc=narrative_tm6_ln11@@'
+  - missing narrative line
   oldNarratives:
-  - '@Loc=init_lv601@@'
-  - '@Loc=init_lv602@@'
-  - '@Loc=init_lv603@@'
-  - '@Loc=init_lv604@@'
-  - '@Loc=init_lv605@@'
-  - '@Loc=play1_lv605@@'
-  - '@Loc=init_lv606@@'
-  - '@Loc=play1_lv606@@'
-  - '@Loc=init_lv607@@'
+  - '@Loc=narrative_tm6_ln1@@'
+  - '@Loc=narrative_tm6_ln2@@'
+  - '@Loc=narrative_tm6_ln3@@'
+  - '@Loc=narrative_tm6_ln4@@'
+  - '@Loc=narrative_tm6_ln5@@'
+  - '@Loc=narrative_tm6_ln6@@'
+  - '@Loc=narrative_tm6_ln7@@'
+  - '@Loc=narrative_tm6_ln8@@'
+  - '@Loc=narrative_tm6_ln9@@'
   goal: '@Loc=goal_lv608@@'
   ruleset:
   - tag: 0

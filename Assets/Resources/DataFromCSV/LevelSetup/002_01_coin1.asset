@@ -20,7 +20,7 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 979b904b855e442449a0241a7b9389a1, type: 2}
   theme: '@Loc=themename_tm2@@'
   title: '@Loc=levelname_lv201@@'
-  newInitNarrative: '@Loc=init_lv201@@'
+  newInitNarrative: '@Loc=narrative_tm2_ln1@@'
   newPlayNarratives: []
   oldNarratives: []
   goal: '@Loc=goal_lv201@@'

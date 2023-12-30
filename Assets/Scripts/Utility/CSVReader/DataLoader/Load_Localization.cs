@@ -25,6 +25,7 @@ public class Load_Localization : MonoBehaviour
         EditorUtility.SetDirty(source);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
+        Debug.Log(string.Format("localization data loaded. total of {0} lines", source.locList.Count));
     }
 #endif
 }

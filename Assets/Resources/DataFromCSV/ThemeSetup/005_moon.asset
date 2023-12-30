@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88475076ca3eee4e87cd8290fc59a71, type: 3}
+  m_Name: 005_moon
+  m_EditorClassIdentifier: 
+  themeUID: 5
+  unlockPrereq: 0
+  unlockCost: 6
+  themeTitle: '@Loc=themename_tm5@@'
+  lockedLine: '@Loc=locked_tm5@@'
+  unlockedLine: '@Loc=unlocked_tm5@@'
+  hint: '@Loc=hint_tm5@@'
+  date: '@Loc=date_tm5@@'
+  manifesto: '@Loc=manifesto_tm5@@'
+  narratives:
+  - '@Loc=narrative_tm5_ln1@@'
+  - '@Loc=narrative_tm5_ln2@@'
+  - '@Loc=narrative_tm5_ln3@@'
+  - '@Loc=narrative_tm5_ln4@@'
+  - '@Loc=narrative_tm5_ln5@@'
+  - '@Loc=narrative_tm5_ln6@@'
+  - '@Loc=narrative_tm5_ln7@@'
+  - '@Loc=narrative_tm5_ln8@@'
+  - '@Loc=narrative_tm5_ln9@@'
+  - '@Loc=narrative_tm5_ln10@@'
+  - '@Loc=narrative_tm5_ln11@@'
+  - '@Loc=narrative_tm5_ln12@@'
+  - '@Loc=narrative_tm5_ln13@@'
+  - '@Loc=narrative_tm5_ln14@@'
+  - '@Loc=narrative_tm5_ln15@@'

@@ -49,4 +49,8 @@ public class DataTheme
 
         themeTitle = copyTheme.themeTitle;
     }
+    public bool LoadThemeFromSheetItem(SheetItem_ThemeSetup setupData)
+    {
+        return false;
+    }
 }

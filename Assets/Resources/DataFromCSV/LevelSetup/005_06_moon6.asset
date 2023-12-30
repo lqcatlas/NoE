@@ -20,19 +20,19 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 4ace574475991b949b13a87873a9d4e5, type: 2}
   theme: '@Loc=themename_tm5@@'
   title: '@Loc=levelname_lv506@@'
-  newInitNarrative: '@Loc=init_lv506@@'
+  newInitNarrative: '@Loc=narrative_tm5_ln10@@'
   newPlayNarratives:
-  - '@Loc=play1_lv506@@'
+  - '@Loc=narrative_tm5_ln11@@'
   oldNarratives:
-  - '@Loc=init_lv501@@'
-  - '@Loc=init_lv502@@'
-  - '@Loc=play1_lv502@@'
-  - '@Loc=init_lv503@@'
-  - '@Loc=play1_lv503@@'
-  - '@Loc=init_lv504@@'
-  - '@Loc=play1_lv504@@'
-  - '@Loc=init_lv505@@'
-  - '@Loc=play1_lv505@@'
+  - '@Loc=narrative_tm5_ln1@@'
+  - '@Loc=narrative_tm5_ln2@@'
+  - '@Loc=narrative_tm5_ln3@@'
+  - '@Loc=narrative_tm5_ln4@@'
+  - '@Loc=narrative_tm5_ln5@@'
+  - '@Loc=narrative_tm5_ln6@@'
+  - '@Loc=narrative_tm5_ln7@@'
+  - '@Loc=narrative_tm5_ln8@@'
+  - '@Loc=narrative_tm5_ln9@@'
   goal: '@Loc=goal_lv506@@'
   ruleset:
   - tag: 0
