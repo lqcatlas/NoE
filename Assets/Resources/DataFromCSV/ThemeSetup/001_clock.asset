@@ -34,3 +34,12 @@ MonoBehaviour:
   - '@Loc=narrative_tm1_ln10@@'
   - '@Loc=narrative_tm1_ln11@@'
   - '@Loc=narrative_tm1_ln12@@'
+  levels:
+  - {fileID: 11400000, guid: c447032e55b71954f8d13850a5899c26, type: 2}
+  - {fileID: 11400000, guid: 2b440d5970ed86b48a9224e6cbe95fc2, type: 2}
+  - {fileID: 11400000, guid: 31dcd4ea70c6dab4ab297e053b030469, type: 2}
+  - {fileID: 11400000, guid: cf89ff4ae26ad3d49912b8b2164f2957, type: 2}
+  - {fileID: 11400000, guid: 6a80989a5d6327c4b91de345c881f35d, type: 2}
+  - {fileID: 11400000, guid: 79035aa545ea1f648bd12d1f0bc7ae73, type: 2}
+  - {fileID: 11400000, guid: 0e3c0c9178c427f44a8868a88b2a4d73, type: 2}
+  - {fileID: 11400000, guid: ef1c8813a880ab64f949025104697af8, type: 2}

@@ -29,14 +29,14 @@ public class Load_Themes : MonoBehaviour
             UpdateThemeDataFromCSV(themes[i], dataSheet);
             EditorUtility.SetDirty(themes[i]);
         }
-        //read narrative data
+        //load narrative data
         dataSheet.sheet = CSVReader.Read("csv/" + filename_narrative);
         dataSheet.sheetName = filename_narrative;
         UpdateNarrativceDataFromCSV(ref themes, dataSheet);
         
         Debug.Log(string.Format("theme setup data loaded. total of {0} theme processed", themes.Count));
 
-        //read level data
+        //load level data
         dataSheet.sheet = CSVReader.Read("csv/" + filename_level);
         dataSheet.sheetName = filename_level;
         levels = new List<SheetItem_LevelSetup>();
@@ -46,6 +46,7 @@ public class Load_Themes : MonoBehaviour
         for (int i = 0; i < levels.Count; i++)
         {
             UpdateLevelDataFromCSV(levels[i], dataSheet);
+            RegisterLevelOnTheme(ref themes, levels[i]);
         }
         //doing a 2nd pass to generate previous level narratives and next level reference
         for (int i = 0; i < levels.Count; i++)
@@ -366,6 +367,18 @@ public class Load_Themes : MonoBehaviour
             }
         }
         return "missing narrative line";
+    }
+    bool RegisterLevelOnTheme(ref List<SheetItem_ThemeSetup> themes, SheetItem_LevelSetup level)
+    {
+        for(int i = 0; i < themes.Count; i++)
+        {
+            if (themes[i].themeUID == level.themeIndex)
+            {
+                themes[i].levels.Add(level);
+                return true;
+            }
+        }
+        return false;
     }
 #endif
 }

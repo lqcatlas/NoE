@@ -37,3 +37,12 @@ MonoBehaviour:
   - '@Loc=narrative_tm4_ln13@@'
   - '@Loc=narrative_tm4_ln14@@'
   - '@Loc=narrative_tm4_ln15@@'
+  levels:
+  - {fileID: 11400000, guid: c34364ed97b493347ac77bf7c52b9f51, type: 2}
+  - {fileID: 11400000, guid: a0f8a5ebf5fc9f74681064272c6938d8, type: 2}
+  - {fileID: 11400000, guid: 78afa7a2a27e0a447b3b5962c4da1e7b, type: 2}
+  - {fileID: 11400000, guid: 5ea183e2548a00e4da4f1e2c9064ad79, type: 2}
+  - {fileID: 11400000, guid: c23198ae9187aae4095398851f32d236, type: 2}
+  - {fileID: 11400000, guid: 6bc524b47455ba346a7946193a92d876, type: 2}
+  - {fileID: 11400000, guid: d5355cadfbb1b76449e072ec7f744bcb, type: 2}
+  - {fileID: 11400000, guid: bed15825859d9594684d0909a3d03272, type: 2}

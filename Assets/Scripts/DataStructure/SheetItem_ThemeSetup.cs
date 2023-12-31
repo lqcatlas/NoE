@@ -27,11 +27,12 @@ public class SheetItem_ThemeSetup : ScriptableObject
     public string date;
     //manifesto about the design of the theme
     public string manifesto;
-
     //narrative lines used in levels
     public List<string> narratives;
 
-    /*[Header("prefabs")]
+    [Header("levels")]
+    public List<SheetItem_LevelSetup> levels;
+    /*
     //gameplay page for hidden object 
     public GameObject objectScene;
     //theme-specific master script that overwrite original levelmaster
