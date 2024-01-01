@@ -35,6 +35,11 @@ public class ThemePhotoGroup : MonoBehaviour
 
     int curStars = 0;
     int curGems = 0;
+    public void InitPhotoGroup()
+    {
+        curStatus = DetermineCurStatus();
+        UIUpdateBasedOnStatus();
+    }
     ThemePhotoStatus DetermineCurStatus()
     {
         LevelRecords records = LevelSelector.singleton.playerLevelRecords;
@@ -89,7 +94,7 @@ public class ThemePhotoGroup : MonoBehaviour
         }
         
     }
-    void UIUpdateBasedOnStatus()
+    public void UIUpdateBasedOnStatus()
     {
         if (curStatus == ThemePhotoStatus.hidden)
         {
@@ -114,7 +119,7 @@ public class ThemePhotoGroup : MonoBehaviour
             infoGroup.gameObject.SetActive(true);
 
             photoCover.GetComponent<SpriteRenderer>().enabled = false;
-            unlockReq.gameObject.SetActive(true);
+            unlockReq.gameObject.SetActive(false);
             themeIcon.SetActive(true);
             photoLine.SetText(LocalizedAssetLookup.singleton.Translate(themeData.unlockedLine));
 
@@ -125,10 +130,10 @@ public class ThemePhotoGroup : MonoBehaviour
     void StaticTextUpdate()
     {
         //init all texts that used in a theme photo group whenever progress changed
-        unlockReq.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("<sprite name=currency_star_frame> {0}<br>½âËø"), themeData.unlockCost));
+        unlockReq.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("@Loc=ui_themephoto_unlockreq@@"), themeData.unlockCost));
         themeName.SetText(LocalizedAssetLookup.singleton.Translate(themeData.themeTitle));
-        starCollection.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("<sprite name=currency_star> {0}/{1}"), curStars, themeData.TotalStars));
-        gemCollection.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("<sprite name=currency_gem> {0}/{1}"), curGems, themeData.TotalGems));
+        starCollection.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("@Loc=ui_themephoto_starcollection@@"), curStars, themeData.TotalStars));
+        gemCollection.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("@Loc=ui_themephoto_gemcollection@@"), curGems, themeData.TotalGems));
     }
     #region BtnFunc
     void EnterPageAnimation()

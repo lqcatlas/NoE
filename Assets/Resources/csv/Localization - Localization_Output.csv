@@ -216,3 +216,6 @@ UID,Key,EN,CN
 215,locked_tm4,,█ █ 简约又精致。
 216,locked_tm5,,█ █ 有无规律？
 217,locked_tm6,,█ █ 代表着灵感。
+218,ui_themephoto_unlockreq,<sprite name=currency_star_frame> {0}<br>to unlock,<sprite name=currency_star_frame> {0}<br>解锁
+219,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
+220,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}

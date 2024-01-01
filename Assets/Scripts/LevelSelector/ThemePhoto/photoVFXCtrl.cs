@@ -40,7 +40,7 @@ public class photoVFXCtrl : MonoBehaviour
 
     public void ZoomIn(float duration)
     {
-        Debug.Log("photo zoom in vfx called");
+        //Debug.Log("photo zoom in vfx called");
         transform.DOScale(SCALE_AFTER_ZOOM, duration);
     }
     public void ZoomReset(float duration)

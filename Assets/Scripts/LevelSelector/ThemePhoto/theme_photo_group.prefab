@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 5225112302734122395}
   - component: {fileID: 4572725916067549575}
   - component: {fileID: 1739295236569784343}
+  - component: {fileID: 6069200271253217140}
   m_Layer: 0
   m_Name: cover
   m_TagString: Untagged
@@ -336,10 +337,21 @@ SpriteMask:
   m_BackSortingLayerID: 423832989
   m_FrontSortingLayer: 1
   m_BackSortingLayer: 1
-  m_FrontSortingOrder: 1
+  m_FrontSortingOrder: 2
   m_BackSortingOrder: 0
   m_IsCustomRangeActive: 1
   m_SpriteSortPoint: 0
+--- !u!210 &6069200271253217140
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068865136440698553}
+  m_Enabled: 1
+  m_SortingLayerID: 423832989
+  m_SortingLayer: 1
+  m_SortingOrder: 2
 --- !u!1 &1145070276807908828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1481,7 @@ Transform:
   m_GameObject: {fileID: 5423204044052301074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1103474427204378551}
@@ -1569,7 +1581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -18}
+  m_AnchoredPosition: {x: 0, y: -20}
   m_SizeDelta: {x: 20, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &214525644421182930
@@ -1659,7 +1671,7 @@ MonoBehaviour:
   themeIcon: {fileID: 1145070276807908828}
   completeSign: {fileID: 785097519046078545}
   photoLine: {fileID: 305481290618731356}
-  themeName: {fileID: 0}
+  themeName: {fileID: 1629623338202886398}
   starCollection: {fileID: 4416927850474246318}
   gemCollection: {fileID: 3650715566528029156}
   designNote: {fileID: 179225388577457656}

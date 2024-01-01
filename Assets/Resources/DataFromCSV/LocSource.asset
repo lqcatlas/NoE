@@ -666,3 +666,12 @@ MonoBehaviour:
   - key: locked_tm6
     EN: 
     CN: "\u2588 \u2588 \u4EE3\u8868\u7740\u7075\u611F\u3002"
+  - key: ui_themephoto_unlockreq
+    EN: <sprite name=currency_star_frame> {0}<br>to unlock
+    CN: "<sprite name=currency_star_frame> {0}<br>\u89E3\u9501"
+  - key: ui_themephoto_starcollection
+    EN: <sprite name=currency_star> {0}/{1}
+    CN: <sprite name=currency_star> {0}/{1}
+  - key: ui_themephoto_gemcollection
+    EN: <sprite name=currency_gem> {0}/{1}
+    CN: <sprite name=currency_gem> {0}/{1}

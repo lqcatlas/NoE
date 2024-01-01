@@ -8,6 +8,7 @@ public class LevelRecords : ScriptableObject
 {
     public int tokens;
     public int spentTokens;
+    public int gems;
     public List<int> finishedLevels;
     public List<int> unlockedThemes;
 

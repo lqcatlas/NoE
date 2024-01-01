@@ -27,31 +27,33 @@ public class LevelSelector : MonoBehaviour, ISaveData
     [Header("Player Data")]
     public LevelRecords playerLevelRecords;
     [Header("Gameplay Data")]
-    [SerializeField] List<SelectorNode> nodes;
-    [SerializeField] List<SelectorTheme> themes;
+    //[SerializeField] List<SelectorNode> nodes;
+    //[SerializeField] List<SelectorTheme> themes;
+    [SerializeField] List<ThemePhotoGroup> photos;
     [Header("Children Objs")]
     [SerializeField] GameObject page;
     [SerializeField] Transform nodeParent;
-    [SerializeField] TextMeshPro tokenCount;
+    [SerializeField] TextMeshPro curStarCount;
+    [SerializeField] TextMeshPro gemCount;
     public MsgBox DesignerNoteBox;
 
     public void GoToSelector()
     {
         
-        for (int i = 0; i < nodes.Count; i++)
+        /*for (int i = 0; i < nodes.Count; i++)
         {
             nodes[i].UpdateStatus();
         }
         for (int i = 0; i < themes.Count; i++)
         {
             themes[i].UpdateStatus();
-        }
+        }*/
 
         page.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Selector);
 
         //vfx
-        for (int i = 0; i < themes.Count; i++)
+        /*for (int i = 0; i < themes.Count; i++)
         {
             themes[i].gameObject.SetActive(false);
         }
@@ -61,7 +63,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
             SelectorTheme temp = themes[i];
             seq.AppendCallback(() => temp.AnimateToPopup());
             seq.AppendInterval(0.15f);
-        }
+        }*/
         //vfx end
     }
     public void CloseSelector()
@@ -71,13 +73,13 @@ public class LevelSelector : MonoBehaviour, ISaveData
     public int LocateFirstUnlockableTheme()
     {
         int result = -1;
-        for(int i = 0; i < themes.Count; i++)
+        /*for(int i = 0; i < themes.Count; i++)
         {
             if (themes[i].isUnlockable() && themes[i].status == SelectorTheme.ThemeStatus.locked)
             {
                 result = i;
             }
-        }
+        }*/
         return result;
     }
     private void Update()
@@ -87,13 +89,10 @@ public class LevelSelector : MonoBehaviour, ISaveData
             Debug_UnlockAllNodes();
             unlockAll = false;
         }
-        if (Input.GetKeyUp(KeyCode.T))
+        if (Input.GetKeyUp(KeyCode.T)||getTokens)
         {
             TokenEarned(10);
-        }
-        if (getTokens)
-        {
-            TokenEarned(10);
+            GemEarned(1);
             getTokens = false;
         }
     }
@@ -104,10 +103,13 @@ public class LevelSelector : MonoBehaviour, ISaveData
     void InitSelector()
     {
         NodeParentInit();
-        themes.Clear();
-        nodes.Clear();
-        CollectAllThemes();
+        //themes.Clear();
+        //nodes.Clear();
+        photos.Clear();
+        //CollectAllThemes();
+        CollectAllPhotos();
         TokenEarned(0);
+        GemEarned(0);
         page.SetActive(false);
     }
     public void UnlockTheme(int themeIndex, int tokenCost)
@@ -118,12 +120,20 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         TokenSpent(tokenCost);
     }
-    public void FinishLevel(int levelUID)
+    public void FinishLevel(int levelUID, bool isHard = false)
     {
         if (!playerLevelRecords.isLevelFinished(levelUID))
         {
             playerLevelRecords.finishedLevels.Add(levelUID);
-            TokenEarned(1);
+            if (!isHard)
+            {
+                TokenEarned(1);
+            }
+            else
+            {
+                GemEarned(1);
+            }
+            
         }
     }
     void TokenEarned(int count)
@@ -131,9 +141,9 @@ public class LevelSelector : MonoBehaviour, ISaveData
         playerLevelRecords.tokens += count;
         if (playerLevelRecords.tokens < 0)
         {
-            Debug.LogError(string.Format("Selector Token Count Reacn invalid number:{0}.", playerLevelRecords.tokens));
+            Debug.LogError(string.Format("Selector Token Count Reach invalid number:{0}.", playerLevelRecords.tokens));
         }
-        tokenCount.SetText(playerLevelRecords.tokens.ToString());
+        curStarCount.SetText(playerLevelRecords.tokens.ToString());
     }
     void TokenSpent(int count)
     {
@@ -143,13 +153,30 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             Debug.LogError(string.Format("Selector Token Count Reacn invalid number:{0}.", playerLevelRecords.tokens));
         }
-        tokenCount.SetText(playerLevelRecords.tokens.ToString());
+        curStarCount.SetText(playerLevelRecords.tokens.ToString());
+    }
+    void GemEarned(int count)
+    {
+        playerLevelRecords.tokens += count;
+        if (playerLevelRecords.tokens < 0)
+        {
+            Debug.LogError(string.Format("Selector Token Count Reach invalid number:{0}.", playerLevelRecords.tokens));
+        }
+        gemCount.SetText(playerLevelRecords.gems.ToString());
     }
     void NodeParentInit()
     {
         nodeParent.localPosition = new Vector3(-45f, 0f, 0f);
     }
-    void CollectAllThemes()
+    void CollectAllPhotos()
+    {
+        photos = nodeParent.GetComponentsInChildren<ThemePhotoGroup>(true).ToList();
+        for(int i = 0; i < photos.Count; i++)
+        {
+            photos[i].InitPhotoGroup();
+        }
+    }
+    /*void CollectAllThemes()
     {
         themes = nodeParent.GetComponentsInChildren<SelectorTheme>(true).ToList();
         int LockCount = 0;
@@ -194,17 +221,24 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         Debug.Log(string.Format("Additional, with {0} levels loaded. {1} locked, {2} unlocked, {3} finished.", nodes.Count, NodeLockCount, NodeUnlockCount, NodeFinishCount));
     }
+    */
     public void Debug_UnlockAllNodes()
     {
-        for (int i = 0; i < nodes.Count; i++)
+        /*for (int i = 0; i < nodes.Count; i++)
         {
             nodes[i].Debug_UnlockNode();
+        }*/
+        for (int i = 0; i < photos.Count; i++)
+        {
+            photos[i].curStatus = ThemePhotoGroup.ThemePhotoStatus.perfect;
+            photos[i].UIUpdateBasedOnStatus();
         }
-        Debug.Log(string.Format("{0} level nodes unlocked by debug", nodes.Count));
+        Debug.Log(string.Format("{0} photos unlocked by debug", photos.Count));
     }
     #region save
     private const string TOKEN_SAVE_KEY = "record.tokens";
     private const string TOKEN_SPENT_SAVE_KEY = "record.spentTokens";
+    private const string GEM_SAVE_KEY = "record.gems";
     private const string LEVEL_SAVE_KEY = "record.finishedLevels";
     private const string THEME_SAVE_KEY = "record.unlockedThemes";
     public void LoadFromSaveManager()
@@ -218,7 +252,6 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             playerLevelRecords.tokens = dConstants.Gameplay.DefaultInitialTokenCount;
         }
-        
         str = SaveManager.controller.Inquire(string.Format(TOKEN_SPENT_SAVE_KEY));
         if (str != null)
         {
@@ -227,6 +260,15 @@ public class LevelSelector : MonoBehaviour, ISaveData
         else
         {
             playerLevelRecords.spentTokens = 0;
+        }
+        str = SaveManager.controller.Inquire(string.Format(GEM_SAVE_KEY));
+        if (str != null)
+        {
+            int.TryParse(SaveManager.controller.Inquire(string.Format(GEM_SAVE_KEY)), out playerLevelRecords.gems);
+        }
+        else
+        {
+            playerLevelRecords.gems = 0;
         }
 
         str = SaveManager.controller.Inquire(string.Format(LEVEL_SAVE_KEY));
@@ -275,6 +317,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         SaveManager.controller.Insert(string.Format(TOKEN_SAVE_KEY), playerLevelRecords.tokens.ToString());
         SaveManager.controller.Insert(string.Format(TOKEN_SPENT_SAVE_KEY), playerLevelRecords.spentTokens.ToString());
+        SaveManager.controller.Insert(string.Format(GEM_SAVE_KEY), playerLevelRecords.gems.ToString());
     }
     #endregion save
 }
