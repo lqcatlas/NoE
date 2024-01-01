@@ -89,11 +89,11 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         if (Input.GetKeyUp(KeyCode.T))
         {
-            TokenCountAdjust(10);
+            TokenEarned(10);
         }
         if (getTokens)
         {
-            TokenCountAdjust(10);
+            TokenEarned(10);
             getTokens = false;
         }
     }
@@ -107,7 +107,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         themes.Clear();
         nodes.Clear();
         CollectAllThemes();
-        TokenCountAdjust(0);
+        TokenEarned(0);
         page.SetActive(false);
     }
     public void UnlockTheme(int themeIndex, int tokenCost)
@@ -116,20 +116,30 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             playerLevelRecords.unlockedThemes.Add(themeIndex);
         }
-        TokenCountAdjust(-tokenCost);
+        TokenSpent(tokenCost);
     }
     public void FinishLevel(int levelUID)
     {
         if (!playerLevelRecords.isLevelFinished(levelUID))
         {
             playerLevelRecords.finishedLevels.Add(levelUID);
-            TokenCountAdjust(1);
+            TokenEarned(1);
         }
     }
-    void TokenCountAdjust(int count)
+    void TokenEarned(int count)
     {
         playerLevelRecords.tokens += count;
-        if(playerLevelRecords.tokens < 0)
+        if (playerLevelRecords.tokens < 0)
+        {
+            Debug.LogError(string.Format("Selector Token Count Reacn invalid number:{0}.", playerLevelRecords.tokens));
+        }
+        tokenCount.SetText(playerLevelRecords.tokens.ToString());
+    }
+    void TokenSpent(int count)
+    {
+        playerLevelRecords.tokens -= count;
+        playerLevelRecords.spentTokens += count;
+        if (playerLevelRecords.tokens < 0)
         {
             Debug.LogError(string.Format("Selector Token Count Reacn invalid number:{0}.", playerLevelRecords.tokens));
         }
@@ -194,6 +204,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     }
     #region save
     private const string TOKEN_SAVE_KEY = "record.tokens";
+    private const string TOKEN_SPENT_SAVE_KEY = "record.spentTokens";
     private const string LEVEL_SAVE_KEY = "record.finishedLevels";
     private const string THEME_SAVE_KEY = "record.unlockedThemes";
     public void LoadFromSaveManager()
@@ -207,6 +218,17 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             playerLevelRecords.tokens = dConstants.Gameplay.DefaultInitialTokenCount;
         }
+        
+        str = SaveManager.controller.Inquire(string.Format(TOKEN_SPENT_SAVE_KEY));
+        if (str != null)
+        {
+            int.TryParse(SaveManager.controller.Inquire(string.Format(TOKEN_SPENT_SAVE_KEY)), out playerLevelRecords.spentTokens);
+        }
+        else
+        {
+            playerLevelRecords.spentTokens = 0;
+        }
+
         str = SaveManager.controller.Inquire(string.Format(LEVEL_SAVE_KEY));
         playerLevelRecords.finishedLevels.Clear();
         if (str != null)
@@ -252,6 +274,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
             SaveManager.controller.Insert(string.Format(THEME_SAVE_KEY), str);
         }
         SaveManager.controller.Insert(string.Format(TOKEN_SAVE_KEY), playerLevelRecords.tokens.ToString());
+        SaveManager.controller.Insert(string.Format(TOKEN_SPENT_SAVE_KEY), playerLevelRecords.spentTokens.ToString());
     }
     #endregion save
 }

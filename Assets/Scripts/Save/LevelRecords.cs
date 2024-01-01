@@ -7,6 +7,7 @@ using System.Linq;
 public class LevelRecords : ScriptableObject
 {
     public int tokens;
+    public int spentTokens;
     public List<int> finishedLevels;
     public List<int> unlockedThemes;
 

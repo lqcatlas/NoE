@@ -32,6 +32,8 @@ public class SheetItem_ThemeSetup : ScriptableObject
 
     [Header("levels")]
     public List<SheetItem_LevelSetup> levels;
+    public int TotalStars;
+    public int TotalGems;
     /*
     //gameplay page for hidden object 
     public GameObject objectScene;

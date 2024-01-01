@@ -152,6 +152,9 @@ public class Load_Themes : MonoBehaviour
             }
         }
         theme.narratives.Clear();
+        theme.levels.Clear();
+        theme.TotalStars = 0;
+        theme.TotalGems = 0;
     }
     void UpdateNarrativceDataFromCSV(ref List<SheetItem_ThemeSetup> themes, CSVSheetData csv)
     {
@@ -375,6 +378,14 @@ public class Load_Themes : MonoBehaviour
             if (themes[i].themeUID == level.themeIndex)
             {
                 themes[i].levels.Add(level);
+                if (level.isHard)
+                {
+                    themes[i].TotalGems += 1;
+                }
+                else
+                {
+                    themes[i].TotalStars += 1;
+                }
                 return true;
             }
         }

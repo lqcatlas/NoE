@@ -46,6 +46,7 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule3_lv204@@'
   - tag: 0
     ruleDesc: '@Loc=rule4_lv207@@'
+  isHard: 1
   initBoard:
     boardSize: {x: 4, y: 4}
     cells:

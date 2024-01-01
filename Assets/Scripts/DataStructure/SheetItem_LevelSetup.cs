@@ -32,6 +32,7 @@ public class SheetItem_LevelSetup : ScriptableObject
     public List<RuleItem> ruleset;
 
     [Header("Board Setup")]
+    public bool isHard;
     public DataBoard initBoard;
 
     

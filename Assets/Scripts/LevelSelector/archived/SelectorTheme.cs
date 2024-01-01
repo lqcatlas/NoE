@@ -39,7 +39,6 @@ public class SelectorTheme : MonoBehaviour
     [SerializeField] SpriteRenderer tokenFrame;
     [SerializeField] SpriteRenderer tokenIcon;
     [SerializeField] TextMeshPro tokenNeed;
-
     
     public void HoverOn()
     {
