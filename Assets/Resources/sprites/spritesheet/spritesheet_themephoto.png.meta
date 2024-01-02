@@ -125,7 +125,7 @@ TextureImporter:
         width: 600
         height: 600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -146,7 +146,7 @@ TextureImporter:
         width: 480
         height: 480
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -167,7 +167,7 @@ TextureImporter:
         width: 240
         height: 120
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,6 +175,48 @@ TextureImporter:
       bones: []
       spriteID: ef91cfc15c163af41b16bfee574b6c19
       internalID: -1502076661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: themephoto_string@v1
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1850
+        width: 840
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46bc87bdbb104364fb7b25d0e713110c
+      internalID: 479771474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: themephoto_string@v2
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1730
+        width: 840
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a511cc52f8f8ede478d19dbc4523d331
+      internalID: -2057877710
       vertices: []
       indices: 
       edges: []
@@ -190,7 +232,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      themephoto_string@v2: -2057877710
       themephoto_photocover: -380027413
+      themephoto_string@v1: 479771474
       themephoto_label: -1502076661
       themephoto_background: 813241668
   spritePackingTag: 

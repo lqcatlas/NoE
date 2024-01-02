@@ -39,7 +39,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
 
     public void GoToSelector()
     {
-        
+
         /*for (int i = 0; i < nodes.Count; i++)
         {
             nodes[i].UpdateStatus();
@@ -48,7 +48,11 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             themes[i].UpdateStatus();
         }*/
+        for (int i = 0; i < photos.Count; i++)
+        {
 
+            photos[i].UpdatePhotoGroup();
+        }
         page.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Selector);
 
@@ -133,7 +137,6 @@ public class LevelSelector : MonoBehaviour, ISaveData
             {
                 GemEarned(1);
             }
-            
         }
     }
     void TokenEarned(int count)
@@ -173,7 +176,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         photos = nodeParent.GetComponentsInChildren<ThemePhotoGroup>(true).ToList();
         for(int i = 0; i < photos.Count; i++)
         {
-            photos[i].InitPhotoGroup();
+            photos[i].UpdatePhotoGroup();
         }
     }
     /*void CollectAllThemes()

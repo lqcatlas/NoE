@@ -174,7 +174,7 @@ public class LevelMasterBase : MonoBehaviour
     }
     public void StartNextLevel()
     {
-        LevelSelector.singleton.FinishLevel(levelData.levelUID);
+        LevelSelector.singleton.FinishLevel(levelData.levelUID, levelData.isHard);
         hub.miscMaster.ScreenMaskFadeIn();
         bool result = false;
         Sequence seq = DOTween.Sequence();

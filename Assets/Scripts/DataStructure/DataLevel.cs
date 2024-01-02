@@ -78,6 +78,7 @@ public class DataLevel
     public List<RuleItem> ruleset;
 
     [Header("Boards")]
+    public bool isHard;
     //4 boards: record current, initial, previous, preview state of a level
     public DataBoard curBoard;
     public DataBoard initBoard;
@@ -102,6 +103,7 @@ public class DataLevel
         goal = "level goal";
         ruleset = new List<RuleItem>();
 
+        isHard = false;
     }
     public DataLevel(DataLevel copyLevel)
     {
@@ -122,6 +124,7 @@ public class DataLevel
         {
             ruleset.Add(new RuleItem(copyLevel.ruleset[i]));
         }
+        isHard = false;
     }
     public bool LoadLevelFromSheetItem(SheetItem_LevelSetup setupData)
     {
@@ -153,6 +156,7 @@ public class DataLevel
         {
             ruleset.Add(new RuleItem(setupData.ruleset[i]));
         }
+        isHard = setupData.isHard;
         return true;
     }
 }

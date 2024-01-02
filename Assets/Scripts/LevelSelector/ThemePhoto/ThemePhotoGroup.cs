@@ -2,7 +2,6 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -33,9 +32,12 @@ public class ThemePhotoGroup : MonoBehaviour
     public TextMeshPro gemCollection;
     public NoteLauncher designNote;
 
+    [Header("VFX Prefabs")]
+    [SerializeField] GameObject SelectorTransitionFX;
+
     int curStars = 0;
     int curGems = 0;
-    public void InitPhotoGroup()
+    public void UpdatePhotoGroup()
     {
         curStatus = DetermineCurStatus();
         UIUpdateBasedOnStatus();
@@ -142,7 +144,19 @@ public class ThemePhotoGroup : MonoBehaviour
     }
     public void PhotoOnSelection()
     {
-        photo.GetComponent<photoVFXCtrl>().ZoomIn(dConstants.UI.StandardizedBtnAnimDuration);
+        if(curStatus == ThemePhotoStatus.locked)
+        {
+            if(themeData.unlockCost <= LevelSelector.singleton.playerLevelRecords.tokens)
+            {
+                //unlockable
+                photo.GetComponent<photoVFXCtrl>().ZoomIn(dConstants.UI.StandardizedBtnAnimDuration);
+            }
+        }
+        else
+        {
+            photo.GetComponent<photoVFXCtrl>().ZoomIn(dConstants.UI.StandardizedBtnAnimDuration);
+        }
+        
     }
     public void PhotoExitSelection()
     {
@@ -151,6 +165,18 @@ public class ThemePhotoGroup : MonoBehaviour
     public void PhotoOnClick()
     {
         //enter hidden obj or level
+        if (curStatus == ThemePhotoStatus.locked)
+        {
+            if (themeData.unlockCost <= LevelSelector.singleton.playerLevelRecords.tokens)
+            {
+                //LevelSelector.singleton.UnlockTheme(themeData.themeUID, themeData.unlockCost);
+                //enter hidden obj
+            }
+        }
+        else if(curStatus == ThemePhotoStatus.unlocked || curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect)
+        {
+            GoToLatestLevel();
+        }
     }
     public void NoteOnSelection()
     {
@@ -164,7 +190,36 @@ public class ThemePhotoGroup : MonoBehaviour
     }
     public void NoteOnClick()
     {
-
+        string _title = string.Format("{0}-{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_designer_note_title@@"), LocalizedAssetLookup.singleton.Translate(string.Format("@Loc=themename_tm{0}@@", themeData.themeUID)));
+        string _desc = themeData.manifesto;
+        LevelSelector.singleton.DesignerNoteBox.ShowBox(_title, _desc);
     }
     #endregion
+
+    void GoToLatestLevel()
+    {
+        int targetLevelUID = GetLatestLevelUID();
+        GameObject obj = Instantiate(SelectorTransitionFX, transform);
+        obj.transform.parent = VFXHolder.singleton.transform;
+        Sequence seq = DOTween.Sequence();
+        seq.AppendInterval(dConstants.VFX.SelectorToLevelAnimTransitionPhase1);
+        seq.AppendCallback(() => LevelLauncher.singleton.LaunchLevelByUID(targetLevelUID));
+        seq.AppendCallback(() => LevelSelector.singleton.CloseSelector());
+    }
+    int GetLatestLevelUID()
+    {
+        LevelRecords records = LevelSelector.singleton.playerLevelRecords;
+        for (int i = 0; i < themeData.levels.Count; i++)
+        {
+            if (records.isLevelFinished(themeData.levels[i].levelUID))
+            {
+                continue;
+            }
+            else
+            {
+                return themeData.levels[i].levelUID;
+            }
+        }
+        return themeData.levels[themeData.levels.Count - 1].levelUID;
+    }
 }
