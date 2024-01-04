@@ -7,17 +7,16 @@ public class photoVFXCtrl : MonoBehaviour
 {
     public SpriteRenderer sprtRender;
     [Header("VFX Param")]
-    public bool SCALE_VFX_ENABLED;
+    public bool SCALE_VFX_ENABLED = false;
     public float SCALE_BEFORE_ZOOM;
     public float SCALE_AFTER_ZOOM;
 
-    public bool LOC_VFX_ENABLED;
+    public bool LOC_VFX_ENABLED = false;
     public Vector3 LOC_ORIGINAL;
     public Vector3 LOC_MOVING_RANGE;
 
-    public bool CLR_VFX_ENABLED;
-    public Color CLR_ORIGINAL;
-    public Color CLR_FADED;
+    public bool REPLACE_VFX_ENABLED = false;
+    public SpriteRenderer PHOTO_REPLACE;
 
     // Start is called before the first frame update
     void Start()
@@ -32,9 +31,9 @@ public class photoVFXCtrl : MonoBehaviour
         {
             transform.localPosition = LOC_ORIGINAL;
         }
-        if (SCALE_VFX_ENABLED)
+        if (REPLACE_VFX_ENABLED && PHOTO_REPLACE != null)
         {
-            sprtRender.color = CLR_ORIGINAL;
+            PHOTO_REPLACE.color = new Color(1f, 1f, 1f, 0f);
         }
     }
 
@@ -47,12 +46,18 @@ public class photoVFXCtrl : MonoBehaviour
     {
         transform.DOScale(SCALE_BEFORE_ZOOM, duration);
     }
-    public void ColorFade(float duration)
+    public void Replace(float duration)
     {
-
+        if (PHOTO_REPLACE != null)
+        {
+            PHOTO_REPLACE.DOFade(1f, duration);
+        }
     }
     public void ColorReset(float duration)
     {
-
+        if (PHOTO_REPLACE != null)
+        {
+            PHOTO_REPLACE.DOFade(0f, duration);
+        }
     }
 }

@@ -41,11 +41,14 @@ TagManager:
   - name: Background
     uniqueID: 3771753225
     locked: 0
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: LevelSelector
     uniqueID: 423832989
+    locked: 0
+  - name: HiddenObject
+    uniqueID: 3791972237
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: ScreenMask
     uniqueID: 4256120175

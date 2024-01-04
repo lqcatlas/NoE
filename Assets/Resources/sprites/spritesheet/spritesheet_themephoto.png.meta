@@ -188,7 +188,7 @@ TextureImporter:
         width: 840
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -209,7 +209,7 @@ TextureImporter:
         width: 840
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -217,6 +217,48 @@ TextureImporter:
       bones: []
       spriteID: a511cc52f8f8ede478d19dbc4523d331
       internalID: -2057877710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: popup_box_small
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1440
+        width: 600
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 957e960ce63e7f04da1e3f85e763f7dc
+      internalID: -1900411356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hiddenobj_hint_ring
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 480
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045ef84fc1ae8f44aa6ee0bee4f0579c
+      internalID: 1307241472
       vertices: []
       indices: 
       edges: []
@@ -234,8 +276,10 @@ TextureImporter:
     nameFileIdTable:
       themephoto_string@v2: -2057877710
       themephoto_photocover: -380027413
+      hiddenobj_hint_ring: 1307241472
       themephoto_string@v1: 479771474
       themephoto_label: -1502076661
+      popup_box_small: -1900411356
       themephoto_background: 813241668
   spritePackingTag: 
   pSDRemoveMatte: 0
