@@ -88,7 +88,7 @@ public class LevelLauncher : MonoBehaviour
                 return true;
             }
         }
-        Debug.Log(string.Format("unable to find level setup data for levleUID {0}", uid));
+        Debug.Log(string.Format("unable to find level setup data for levelUID {0}", uid));
         return false;
     }
     public void LaunchLevelBySheetItem(SheetItem_LevelSetup setupData)
@@ -109,6 +109,7 @@ public class LevelLauncher : MonoBehaviour
             //levelObj.AddComponent(master.GetClass());
             levelObj.AddComponent(System.Type.GetType(masterScriptName));
         }
+        HiddenObjectLauncher.singleton.LaunchBackgroundPage(setupData.themeIndex);
         //get correct additional hub object. if exist, clone it and assign
         GameObject addition = themeLookupTable.GetThemeSpecialHub(setupData.themeIndex);
         if (addition != null)

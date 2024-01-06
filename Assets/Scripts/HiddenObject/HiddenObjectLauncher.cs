@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TreeEditor;
 using UnityEngine;
 
 public class HiddenObjectLauncher : MonoBehaviour
@@ -20,7 +21,7 @@ public class HiddenObjectLauncher : MonoBehaviour
     public ThemeResourceLookup themeResourceLookup;
     public Transform pageHolder;
 
-    public void LauncherHiddenObjectPage(SheetItem_ThemeSetup themeData)
+    public void LaunchHiddenObjectPage(SheetItem_ThemeSetup themeData)
     {
         ClearExistingPages();
         GameObject templatePage = themeResourceLookup.GetThemeHiddenObjectPage(themeData.themeUID);
@@ -31,7 +32,19 @@ public class HiddenObjectLauncher : MonoBehaviour
         GameObject newPage = Instantiate(templatePage, pageHolder);
         newPage.GetComponent<HiddenObjectPage>().StartHiddenObject(themeData);
     }
-    void ClearExistingPages()
+    public void LaunchBackgroundPage(int themeUID)
+    {
+        ClearExistingPages();
+        GameObject templatePage = themeResourceLookup.GetThemeHiddenObjectPage(themeUID);
+        if (templatePage == null)
+        {
+            return;
+        }
+        GameObject newPage = Instantiate(templatePage, pageHolder);
+        newPage.GetComponent<HiddenObjectPage>().SetAsBackground();
+    }
+
+    public void ClearExistingPages()
     {
         List<HiddenObjectPage> currentPages = pageHolder.GetComponentsInChildren<HiddenObjectPage>().ToList();
         for(int i=0;i< currentPages.Count; i++)

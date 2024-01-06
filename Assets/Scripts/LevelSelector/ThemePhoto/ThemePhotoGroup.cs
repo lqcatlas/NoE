@@ -171,7 +171,8 @@ public class ThemePhotoGroup : MonoBehaviour
             {
                 //LevelSelector.singleton.UnlockTheme(themeData.themeUID, themeData.unlockCost);
                 //enter hidden obj
-                HiddenObjectLauncher.singleton.LauncherHiddenObjectPage(themeData);
+                HiddenObjectLauncher.singleton.LaunchHiddenObjectPage(themeData);
+                LevelSelector.singleton.CloseSelector();
             }
         }
         else if(curStatus == ThemePhotoStatus.unlocked || curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect)

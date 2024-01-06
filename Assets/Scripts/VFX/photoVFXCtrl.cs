@@ -14,6 +14,7 @@ public class photoVFXCtrl : MonoBehaviour
     public bool LOC_VFX_ENABLED = false;
     public Vector2 LOC_ORIGINAL;
     public Vector2 LOC_MOVING_RANGE;
+    public float LOC_MOVEMENT_SCALE = 1f;
 
     public bool REPLACE_VFX_ENABLED = false;
     public SpriteRenderer PHOTO_REPLACE;
@@ -29,11 +30,13 @@ public class photoVFXCtrl : MonoBehaviour
         }
         if (LOC_VFX_ENABLED)
         {
+            //LOC_MOVEMENT_SCALE = 1f;
             transform.localPosition = LOC_ORIGINAL;
         }
         if (REPLACE_VFX_ENABLED && PHOTO_REPLACE != null)
         {
-            PHOTO_REPLACE.color = new Color(1f, 1f, 1f, 0f);
+            Color clr = new Color(PHOTO_REPLACE.color.r, PHOTO_REPLACE.color.g, PHOTO_REPLACE.color.b, 0f);
+            PHOTO_REPLACE.color = clr;
         }
     }
     private void Update()
@@ -46,11 +49,15 @@ public class photoVFXCtrl : MonoBehaviour
     }
     void PositionOffset(float x_offset, float y_offset)
     {
-        transform.localPosition = new Vector3(LOC_ORIGINAL.x - x_offset * LOC_MOVING_RANGE.x, LOC_ORIGINAL.y - y_offset * LOC_MOVING_RANGE.y, 0f);
+        transform.localPosition = new Vector3(LOC_ORIGINAL.x - x_offset * LOC_MOVING_RANGE.x * LOC_MOVEMENT_SCALE, LOC_ORIGINAL.y - y_offset * LOC_MOVING_RANGE.y * LOC_MOVEMENT_SCALE, 0f);
     }
     public void PositionReset(float duration)
     {
         transform.DOLocalMove(LOC_ORIGINAL, duration);
+    }
+    public void ReduceOffsetMovement()
+    {
+        LOC_MOVEMENT_SCALE = 0.3f;
     }
     public void ZoomIn(float duration)
     {

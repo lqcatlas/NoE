@@ -19,7 +19,7 @@ public class CustomizedInputSystem : MonoBehaviour
     }
     static float MaxRaycastDistance = 500f;
     public GameObject CurrentPointerObject;
-    public List<GameObject> allHitObjs;
+    //public List<GameObject> allHitObjs;
     public float CursorOffsetPct_X;
     public float CursorOffsetPct_Y;
 
@@ -60,7 +60,7 @@ public class CustomizedInputSystem : MonoBehaviour
         int currentSpriteOrder = int.MinValue;
 
         //debug
-        allHitObjs.Clear();
+        //allHitObjs.Clear();
 
         GameObject hitObj = null;
         if(allHits.Count() > 0)
@@ -68,13 +68,13 @@ public class CustomizedInputSystem : MonoBehaviour
             for(int i=0;i< allHits.Count(); i++)
             {
                 hitObj = allHits[i].transform.gameObject;
-                allHitObjs.Add(hitObj);
+                //allHitObjs.Add(hitObj);
                 SpriteRenderer render = hitObj.GetComponent<SpriteRenderer>();
                 if (render)
                 {
                     if(SortingLayer.GetLayerValueFromID(render.sortingLayerID) >= SortingLayer.GetLayerValueFromID(currentSpriteLayer) && render.sortingOrder > currentSpriteOrder)
                     {
-                        Debug.Log(string.Format("layer name: {0}, layer ID {1}", render.sortingLayerName, SortingLayer.GetLayerValueFromID(render.sortingLayerID)));
+                        //Debug.Log(string.Format("layer name: {0}, layer ID {1}", render.sortingLayerName, SortingLayer.GetLayerValueFromID(render.sortingLayerID)));
                         currentSpriteOrder = render.sortingOrder;
                         currentSpriteLayer = render.sortingLayerID;
                         picked = hitObj;

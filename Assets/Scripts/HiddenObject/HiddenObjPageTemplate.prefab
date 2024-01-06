@@ -276,6 +276,7 @@ MonoBehaviour:
   LOC_VFX_ENABLED: 1
   LOC_ORIGINAL: {x: 0, y: 0}
   LOC_MOVING_RANGE: {x: 0.7, y: 0.3}
+  LOC_MOVEMENT_SCALE: 1
   REPLACE_VFX_ENABLED: 1
   PHOTO_REPLACE: {fileID: 5771900889420048243}
 --- !u!61 &3294543269655907753
@@ -832,7 +833,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7368009483227539402}
-  - {fileID: 67715524230276725}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -849,11 +849,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   themeData: {fileID: 0}
+  curStatus: 0
   ANIM_DURATION: 4
   HINT_DELAY: 10
   objectGroup: {fileID: 7368009482225554674}
   riddleGroup: {fileID: 7368009482900974102}
+  closeGroup: {fileID: 67715524230276726}
   photo: {fileID: 7368009481696967956}
+  photo_black: {fileID: 7815636856675035566}
   riddleTitle: {fileID: 7368009483155329647}
   riddleDesc: {fileID: 7368009482585916826}
   themeIcon: {fileID: 7368009483269715708}
@@ -892,7 +895,7 @@ Transform:
   - {fileID: 7368009483155329646}
   - {fileID: 7368009482585916825}
   m_Father: {fileID: 7368009483227539402}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7368009483155329645
 GameObject:
@@ -1096,6 +1099,7 @@ Transform:
   m_Children:
   - {fileID: 2465242596841105825}
   - {fileID: 7368009481696967957}
+  - {fileID: 67715524230276725}
   - {fileID: 7368009482900974103}
   m_Father: {fileID: 7368009482608765855}
   m_RootOrder: 0
@@ -1258,7 +1262,7 @@ SpriteRenderer:
   m_SortingLayer: -1
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: b7ac273d6f8f65140ad5b0528164a5fb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.3, g: 0.3, b: 0.3, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1273,11 +1277,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 7368009482608765855}
+    m_TransformParent: {fileID: 7368009483227539402}
     m_Modifications:
     - target: {fileID: 2776243385169771093, guid: 082fd873814745b4e9114c6931905e4c, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2776243385169771093, guid: 082fd873814745b4e9114c6931905e4c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1340,5 +1344,10 @@ PrefabInstance:
 --- !u!4 &67715524230276725 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2776243385169771093, guid: 082fd873814745b4e9114c6931905e4c, type: 3}
+  m_PrefabInstance: {fileID: 2771860358318791712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &67715524230276726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2776243385169771094, guid: 082fd873814745b4e9114c6931905e4c, type: 3}
   m_PrefabInstance: {fileID: 2771860358318791712}
   m_PrefabAsset: {fileID: 0}

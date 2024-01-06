@@ -8,9 +8,11 @@ using UnityEngine;
 
 public class HiddenObjectPage : MonoBehaviour
 {
+    public enum HiddenObjectStatus { close = 0, searching = 1, found = 2};
     [Header("Gameplay Data")]
     //public LevelSelector selector;
     [SerializeField] SheetItem_ThemeSetup themeData;
+    public HiddenObjectStatus curStatus = HiddenObjectStatus.close;
 
     [Header("Animation Params")]
     public float ANIM_DURATION;
@@ -18,7 +20,9 @@ public class HiddenObjectPage : MonoBehaviour
     [Header("Children Objs")]
     public GameObject objectGroup;
     public GameObject riddleGroup;
+    public GameObject closeGroup;
     public GameObject photo;
+    //public GameObject photo_black;
 
     public TextMeshPro riddleTitle;
     public TextMeshPro riddleDesc;
@@ -33,7 +37,8 @@ public class HiddenObjectPage : MonoBehaviour
     }
     public void StartHiddenObject(SheetItem_ThemeSetup source = null)
     {
-        displayOn = true;
+        curStatus = HiddenObjectStatus.searching;
+        //displayOn = true;
         if(source != null)
         {
             themeData = source;
@@ -44,9 +49,19 @@ public class HiddenObjectPage : MonoBehaviour
         themeIcon.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
         hintRing.SetActive(false);
     }
+    public void SetAsBackground(SheetItem_ThemeSetup source = null)
+    {
+        curStatus = HiddenObjectStatus.found;
+        riddleGroup.SetActive(false);
+        objectGroup.SetActive(false);
+        closeGroup.SetActive(false);
+        photo.GetComponent<photoVFXCtrl>().ZoomIn(0.0001f);
+        photo.GetComponent<photoVFXCtrl>().Replace(0.0001f);
+        photo.GetComponent<photoVFXCtrl>().ReduceOffsetMovement();
+    }
     private void FixedUpdate()
     {
-        if (displayOn)
+        if (curStatus == HiddenObjectStatus.searching)
         {
             hintTimer += Time.fixedDeltaTime;
         }
@@ -59,14 +74,31 @@ public class HiddenObjectPage : MonoBehaviour
     #region BtnFunc
     public void OnIconClick()
     {
-        //play found animation
-        themeIcon.GetComponent<SpriteRenderer>().DOFade(1f, ANIM_DURATION);
-        photo.GetComponent<photoVFXCtrl>().ZoomIn(ANIM_DURATION);
-        photo.GetComponent<photoVFXCtrl>().Replace(ANIM_DURATION);
+        if(curStatus == HiddenObjectStatus.searching)
+        {
+            //status change
+            curStatus = HiddenObjectStatus.found;
+            hintRing.gameObject.SetActive(false);
+            closeGroup.SetActive(false);
+            //unlock given theme
+            LevelSelector.singleton.UnlockTheme(themeData.themeUID, themeData.unlockCost);
+            //play found animation. Then transit to level
+            themeIcon.GetComponent<SpriteRenderer>().DOFade(1f, ANIM_DURATION).OnComplete(() => StartLevelDelayed());
+            photo.GetComponent<photoVFXCtrl>().ZoomIn(ANIM_DURATION);
+            photo.GetComponent<photoVFXCtrl>().Replace(ANIM_DURATION);
+        }
+    }
+    void StartLevelDelayed()
+    {
+        LevelLauncher.singleton.LaunchLevelByUID(themeData.levels[0].levelUID);
+        riddleGroup.SetActive(false);
+        objectGroup.SetActive(false);
+        photo.GetComponent<photoVFXCtrl>().ReduceOffsetMovement();
     }
     public void OnCloseClick()
     {
         Destroy(gameObject);
+        LevelSelector.singleton.GoToSelector();
     }
     #endregion
 }

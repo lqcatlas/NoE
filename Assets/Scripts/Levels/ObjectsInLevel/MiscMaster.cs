@@ -27,6 +27,7 @@ public class MiscMaster : MonoBehaviour
     public void CloseLevel()
     {
         levelMaster.LevelExit();
+        HiddenObjectLauncher.singleton.ClearExistingPages();
     }
     /*public void CloseBtnHoverEnter()
     {
