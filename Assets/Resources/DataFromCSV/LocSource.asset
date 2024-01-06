@@ -675,3 +675,6 @@ MonoBehaviour:
   - key: ui_themephoto_gemcollection
     EN: <sprite name=currency_gem> {0}/{1}
     CN: <sprite name=currency_gem> {0}/{1}
+  - key: ui_hiddenobject_riddletitle
+    EN: 'Find the <b>object</b> according to the following riddle:'
+    CN: "\u6839\u636E\u8C1C\u8BED\u627E\u5230<b>\u7269\u4EF6</b>\uFF1A"

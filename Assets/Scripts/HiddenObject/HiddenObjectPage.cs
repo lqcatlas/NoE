@@ -31,11 +31,14 @@ public class HiddenObjectPage : MonoBehaviour
     {
         displayOn = false;
     }
-    public void StartHiddenObject(SheetItem_ThemeSetup source)
+    public void StartHiddenObject(SheetItem_ThemeSetup source = null)
     {
         displayOn = true;
-        themeData = source;
-        riddleTitle.SetText(LocalizedAssetLookup.singleton.Translate("TBD"));
+        if(source != null)
+        {
+            themeData = source;
+        }
+        riddleTitle.SetText(LocalizedAssetLookup.singleton.Translate("@Loc=ui_hiddenobject_riddletitle@@"));
         riddleDesc.SetText(LocalizedAssetLookup.singleton.Translate(themeData.hint));
         hintTimer = 0;
         themeIcon.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);

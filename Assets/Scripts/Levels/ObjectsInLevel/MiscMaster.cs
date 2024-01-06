@@ -28,14 +28,14 @@ public class MiscMaster : MonoBehaviour
     {
         levelMaster.LevelExit();
     }
-    public void CloseBtnHoverEnter()
+    /*public void CloseBtnHoverEnter()
     {
         closeBtn.transform.DOScale(Vector3.one * 6f, dConstants.UI.StandardizedBtnAnimDuration);
     }
     public void CloseBtnHoverExit()
     {
         closeBtn.transform.DOScale(Vector3.one * 5f, dConstants.UI.StandardizedBtnAnimDuration);
-    }
+    }*/
     #endregion
 
     #region retry

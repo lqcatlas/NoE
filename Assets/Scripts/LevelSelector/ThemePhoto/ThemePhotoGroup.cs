@@ -142,7 +142,7 @@ public class ThemePhotoGroup : MonoBehaviour
     {
 
     }
-    public void PhotoOnSelection()
+    public void PhotoEnterSelection()
     {
         if(curStatus == ThemePhotoStatus.locked)
         {
@@ -162,7 +162,7 @@ public class ThemePhotoGroup : MonoBehaviour
     {
         photo.GetComponent<photoVFXCtrl>().ZoomReset(dConstants.UI.StandardizedBtnAnimDuration);
     }
-    public void PhotoOnClick()
+    public void PhotoConfirmSelection()
     {
         //enter hidden obj or level
         if (curStatus == ThemePhotoStatus.locked)
@@ -171,6 +171,7 @@ public class ThemePhotoGroup : MonoBehaviour
             {
                 //LevelSelector.singleton.UnlockTheme(themeData.themeUID, themeData.unlockCost);
                 //enter hidden obj
+                HiddenObjectLauncher.singleton.LauncherHiddenObjectPage(themeData);
             }
         }
         else if(curStatus == ThemePhotoStatus.unlocked || curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect)
@@ -178,7 +179,7 @@ public class ThemePhotoGroup : MonoBehaviour
             GoToLatestLevel();
         }
     }
-    public void NoteOnSelection()
+    public void NoteEnterSelection()
     {
         designNote.label.DOColor(dConstants.UI.DefaultColor_3rd, dConstants.UI.StandardizedBtnAnimDuration);
         designNote.text.DOColor(dConstants.UI.DefaultColor_1st, dConstants.UI.StandardizedBtnAnimDuration);
@@ -188,7 +189,7 @@ public class ThemePhotoGroup : MonoBehaviour
         designNote.label.DOColor(dConstants.UI.DefaultColor_1st, dConstants.UI.StandardizedBtnAnimDuration);
         designNote.text.DOColor(dConstants.UI.DefaultColor_Black, dConstants.UI.StandardizedBtnAnimDuration);
     }
-    public void NoteOnClick()
+    public void NoteConfirmSelection()
     {
         string _title = string.Format("{0}-{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_designer_note_title@@"), LocalizedAssetLookup.singleton.Translate(string.Format("@Loc=themename_tm{0}@@", themeData.themeUID)));
         string _desc = themeData.manifesto;

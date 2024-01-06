@@ -130,7 +130,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7992856594694713711}
         m_TargetAssemblyTypeName: ThemePhotoGroup, Assembly-CSharp
-        m_MethodName: NoteOnClick
+        m_MethodName: NoteConfirmSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -148,7 +148,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7992856594694713711}
         m_TargetAssemblyTypeName: ThemePhotoGroup, Assembly-CSharp
-        m_MethodName: NoteOnSelection
+        m_MethodName: NoteEnterSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1169,7 +1169,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7992856594694713711}
         m_TargetAssemblyTypeName: ThemePhotoGroup, Assembly-CSharp
-        m_MethodName: PhotoOnClick
+        m_MethodName: PhotoConfirmSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1187,7 +1187,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7992856594694713711}
         m_TargetAssemblyTypeName: ThemePhotoGroup, Assembly-CSharp
-        m_MethodName: PhotoOnSelection
+        m_MethodName: PhotoEnterSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2084,8 +2084,8 @@ MonoBehaviour:
   SCALE_BEFORE_ZOOM: 0.4
   SCALE_AFTER_ZOOM: 0.42
   LOC_VFX_ENABLED: 0
-  LOC_ORIGINAL: {x: 0, y: 0, z: 0}
-  LOC_MOVING_RANGE: {x: 0, y: 0, z: 0}
+  LOC_ORIGINAL: {x: 0, y: 0}
+  LOC_MOVING_RANGE: {x: 0, y: 0}
   REPLACE_VFX_ENABLED: 0
   PHOTO_REPLACE: {fileID: 0}
 --- !u!212 &527454254473059365

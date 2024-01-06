@@ -29,6 +29,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     [Header("Gameplay Data")]
     //[SerializeField] List<SelectorNode> nodes;
     //[SerializeField] List<SelectorTheme> themes;
+    //public ThemeResourceLookup themeResourceLookup;
     [SerializeField] List<ThemePhotoGroup> photos;
     [Header("Children Objs")]
     [SerializeField] GameObject page;

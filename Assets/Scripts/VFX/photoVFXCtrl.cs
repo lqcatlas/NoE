@@ -12,8 +12,8 @@ public class photoVFXCtrl : MonoBehaviour
     public float SCALE_AFTER_ZOOM;
 
     public bool LOC_VFX_ENABLED = false;
-    public Vector3 LOC_ORIGINAL;
-    public Vector3 LOC_MOVING_RANGE;
+    public Vector2 LOC_ORIGINAL;
+    public Vector2 LOC_MOVING_RANGE;
 
     public bool REPLACE_VFX_ENABLED = false;
     public SpriteRenderer PHOTO_REPLACE;
@@ -36,7 +36,22 @@ public class photoVFXCtrl : MonoBehaviour
             PHOTO_REPLACE.color = new Color(1f, 1f, 1f, 0f);
         }
     }
-
+    private void Update()
+    {
+        if (LOC_VFX_ENABLED)
+        {
+            Vector2 offset = CustomizedInputSystem.singleton.GetCursorOffsetPct();
+            PositionOffset(offset.x, offset.y);
+        }
+    }
+    void PositionOffset(float x_offset, float y_offset)
+    {
+        transform.localPosition = new Vector3(LOC_ORIGINAL.x - x_offset * LOC_MOVING_RANGE.x, LOC_ORIGINAL.y - y_offset * LOC_MOVING_RANGE.y, 0f);
+    }
+    public void PositionReset(float duration)
+    {
+        transform.DOLocalMove(LOC_ORIGINAL, duration);
+    }
     public void ZoomIn(float duration)
     {
         //Debug.Log("photo zoom in vfx called");
