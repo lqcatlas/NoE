@@ -16,16 +16,18 @@ public class ThemePhotoGroup : MonoBehaviour
     public ThemePhotoStatus curStatus;
 
     [Header("Children Objs")]
-    public Transform photoGroup;
+    public RectTransform photoGroup;
     public Transform infoGroup;
 
     public GameObject photoBg;
     public GameObject photoCover;
     public TextMeshPro unlockReq;
     public GameObject photo;
+    public GameObject photo_black;
     public GameObject themeIcon;
     public GameObject completeSign;
     public TextMeshPro photoLine;
+    public GameObject connectingString;
 
     public TextMeshPro themeName;
     public TextMeshPro starCollection;
@@ -109,6 +111,7 @@ public class ThemePhotoGroup : MonoBehaviour
             infoGroup.gameObject.SetActive(false);
 
             photoCover.GetComponent<SpriteRenderer>().enabled = true;
+            photo_black.gameObject.SetActive(false);
             unlockReq.gameObject.SetActive(true);
             themeIcon.SetActive(false);
             completeSign.SetActive(false);
@@ -121,6 +124,7 @@ public class ThemePhotoGroup : MonoBehaviour
             infoGroup.gameObject.SetActive(true);
 
             photoCover.GetComponent<SpriteRenderer>().enabled = false;
+            photo_black.gameObject.SetActive(true);
             unlockReq.gameObject.SetActive(false);
             themeIcon.SetActive(true);
             photoLine.SetText(LocalizedAssetLookup.singleton.Translate(themeData.unlockedLine));
@@ -138,9 +142,18 @@ public class ThemePhotoGroup : MonoBehaviour
         gemCollection.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("@Loc=ui_themephoto_gemcollection@@"), curGems, themeData.TotalGems));
     }
     #region BtnFunc
-    void EnterPageAnimation()
+    public void EnterPageAnimation()
     {
-
+        gameObject.SetActive(true);
+        connectingString.SetActive(false);
+        photoGroup.DOScale(1.2f, dConstants.UI.StandardizedBtnAnimDuration).From().SetRelative(true).OnComplete(() => SwingByForce(2f));
+        infoGroup.DOScaleY(0f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(dConstants.UI.StandardizedBtnAnimDuration/2f);
+        connectingString.transform.DOScaleX(0f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(dConstants.UI.StandardizedBtnAnimDuration/2f)
+            .OnStart(() => connectingString.SetActive(true));
+    }
+    public void SwingByForce(float swingDegree)
+    {
+        photoGroup.DORotate(new Vector3(0f, 0f, swingDegree), 6f).SetRelative(true).SetEase(Ease.InOutFlash, 8, 1);
     }
     public void PhotoEnterSelection()
     {

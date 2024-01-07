@@ -27,6 +27,7 @@ public class LevelLauncher : MonoBehaviour
 
     [Header("Data & Objs")]
     public List<SheetItem_LevelSetup> levelSetupTable;
+    public LevelRecords playerRecords;
     public ThemeResourceLookup themeLookupTable;
     public GameObject levelHolder;
     public GameObject levelPreset;
@@ -119,7 +120,5 @@ public class LevelLauncher : MonoBehaviour
         levelObj.GetComponent<LevelMasterBase>().levelSetupData = setupData;
         levelObj.GetComponent<LevelMasterBase>().ObjectInit(addition);
         levelObj.GetComponent<LevelMasterBase>().LevelInit();
-
-
     }
 }

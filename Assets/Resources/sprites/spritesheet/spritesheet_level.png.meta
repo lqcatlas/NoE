@@ -246,10 +246,10 @@ TextureImporter:
       name: ui_close_sign
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1590
-        width: 50
-        height: 50
+        x: 1160
+        y: 1820
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -267,10 +267,10 @@ TextureImporter:
       name: ui_retry_sign
       rect:
         serializedVersion: 2
-        x: 130
-        y: 1590
-        width: 50
-        height: 50
+        x: 1260
+        y: 1820
+        width: 100
+        height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -713,7 +713,7 @@ TextureImporter:
         width: 280
         height: 280
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -734,7 +734,7 @@ TextureImporter:
         width: 280
         height: 280
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -742,6 +742,111 @@ TextureImporter:
       bones: []
       spriteID: 599e8a11cfb39554387c837866982bb0
       internalID: -1489817116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_arrow_sign
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1820
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab908463b9b25104bb641622780f32fe
+      internalID: -1647782255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_rewind_sign
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1820
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872f772ac79e2594fa0eef6446f8f8c5
+      internalID: -1668834661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_split_sign
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 1820
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8829f952d23a736478cd6fd6c93e418c
+      internalID: -742677806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_step_sign
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 1820
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ea431ac998fb14b95556c023366854
+      internalID: 1657405103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_time_sign
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1820
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320fb32dd40ff124a8dde03f4ca39899
+      internalID: 1359382188
       vertices: []
       indices: 
       edges: []
@@ -757,6 +862,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      ui_split_sign: -742677806
       number_5@v1: -280818320
       number_2@v2: 1504684770
       number_4@v2: 1195695166
@@ -769,14 +875,17 @@ TextureImporter:
       ui_cell_frame_v1: 843124394
       ui_level_finished_fill: -1489817116
       number_6@v1: 1517122844
+      ui_rewind_sign: -1668834661
       ui_line_horizontal_v1: 1619020603
       ui_cell_frame_v2: 262004128
+      ui_time_sign: 1359382188
       number_0@v1: 1797534162
       number_9@v1: -998961558
       number_1@v2: -1944275254
       number_8@v2: -828545570
       ui_retry_sign: 1265108339
       ui_line_horizontal_v2: 218509474
+      ui_step_sign: 1657405103
       number_8@v1: 1657182079
       number_0@v2: 544276465
       ui_line_vertical_v2: 1496561048
@@ -786,6 +895,7 @@ TextureImporter:
       ui_line_vertical_v1: -1736352777
       number_2@v1: -2026269862
       number_7@v2: 1586702711
+      ui_arrow_sign: -1647782255
       number_3@v2: 816253418
   spritePackingTag: 
   pSDRemoveMatte: 0

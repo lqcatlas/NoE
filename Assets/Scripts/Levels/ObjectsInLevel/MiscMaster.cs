@@ -13,6 +13,12 @@ public class MiscMaster : MonoBehaviour
     public SpriteRenderer fadeMask;
     public GameObject retryBtn;
     public GameObject closeBtn;
+    public GameObject rewindBtn;
+
+    public GameObject prevBtn;
+    public GameObject nextBtn;
+    public TextMeshPro levelName;
+
     public GameObject loseBanner;
     public TextMeshPro retryHint;
     public TextMeshPro newthemeHint;
@@ -29,14 +35,6 @@ public class MiscMaster : MonoBehaviour
         levelMaster.LevelExit();
         HiddenObjectLauncher.singleton.ClearExistingPages();
     }
-    /*public void CloseBtnHoverEnter()
-    {
-        closeBtn.transform.DOScale(Vector3.one * 6f, dConstants.UI.StandardizedBtnAnimDuration);
-    }
-    public void CloseBtnHoverExit()
-    {
-        closeBtn.transform.DOScale(Vector3.one * 5f, dConstants.UI.StandardizedBtnAnimDuration);
-    }*/
     #endregion
 
     #region retry
@@ -53,6 +51,49 @@ public class MiscMaster : MonoBehaviour
         retryBtn.transform.DORotate(Vector3.zero, dConstants.UI.StandardizedBtnAnimDuration);
     }
     #endregion
+
+    #region rewind
+    public void RewindStep()
+    {
+        levelMaster.Rewind();
+    }
+    public void RewindBtnHoverEnter()
+    {
+        retryBtn.transform.DORotate(new Vector3(0f, 0f, 15f), dConstants.UI.StandardizedBtnAnimDuration);
+    }
+    public void RewindBtnHoverExit()
+    {
+        retryBtn.transform.DORotate(Vector3.zero, dConstants.UI.StandardizedBtnAnimDuration);
+    }
+    #endregion
+
+    #region navigation
+    public void GoToPreviousLevel()
+    {
+        levelMaster.GoToPreviousLevel();
+    }
+    public void GoToNextLevel()
+    {
+        levelMaster.GoToNextLevel();
+    }
+    public void PrevBtnHoverEnter()
+    {
+        prevBtn.transform.DOScale(Vector3.one * 3f, dConstants.UI.StandardizedBtnAnimDuration);
+    }
+    public void PrevBtnHoverExit()
+    {
+        prevBtn.transform.DOScale(Vector3.one * 2.5f, dConstants.UI.StandardizedBtnAnimDuration);
+    }
+    public void NextBtnHoverEnter()
+    {
+        nextBtn.transform.DOScale(Vector3.one * 3f, dConstants.UI.StandardizedBtnAnimDuration);
+    }
+    public void NextBtnHoverExit()
+    {
+        nextBtn.transform.DOScale(Vector3.one * 2.5f, dConstants.UI.StandardizedBtnAnimDuration);
+    }
+    #endregion
+
 
     #region mask
     public void ScreenMaskInit()

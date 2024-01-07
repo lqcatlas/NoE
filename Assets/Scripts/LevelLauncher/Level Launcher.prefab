@@ -81,6 +81,7 @@ MonoBehaviour:
   LevelSetup: {fileID: 11400000, guid: 5311185c1a5eca54582e8dee0692938f, type: 2}
   LAUNCH_IT: 0
   levelSetupTable: []
+  playerRecords: {fileID: 11400000, guid: 450fdbb801f43e743baa8ed62a117cb3, type: 2}
   themeLookupTable: {fileID: 11400000, guid: 24d4cf5313d2bb346abaa9638ba89e42, type: 2}
   levelHolder: {fileID: 9041480673131558273}
   levelPreset: {fileID: 9188252853338786825, guid: d7b6c482e9187004499916d78ceffab6, type: 3}

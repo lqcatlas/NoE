@@ -51,24 +51,22 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }*/
         for (int i = 0; i < photos.Count; i++)
         {
-
             photos[i].UpdatePhotoGroup();
         }
         page.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Selector);
-
         //vfx
-        /*for (int i = 0; i < themes.Count; i++)
+        for (int i = 0; i < photos.Count; i++)
         {
-            themes[i].gameObject.SetActive(false);
+            photos[i].gameObject.SetActive(false);
         }
         Sequence seq = DOTween.Sequence();
-        for (int i = 0; i < themes.Count; i++)
+        for (int i = 0; i < photos.Count; i++)
         {
-            SelectorTheme temp = themes[i];
-            seq.AppendCallback(() => temp.AnimateToPopup());
-            seq.AppendInterval(0.15f);
-        }*/
+            ThemePhotoGroup temp = photos[i];
+            seq.AppendCallback(() => temp.EnterPageAnimation());
+            seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration/2f);
+        }
         //vfx end
     }
     public void CloseSelector()
@@ -228,10 +226,6 @@ public class LevelSelector : MonoBehaviour, ISaveData
     */
     public void Debug_UnlockAllNodes()
     {
-        /*for (int i = 0; i < nodes.Count; i++)
-        {
-            nodes[i].Debug_UnlockNode();
-        }*/
         for (int i = 0; i < photos.Count; i++)
         {
             photos[i].curStatus = ThemePhotoGroup.ThemePhotoStatus.perfect;
