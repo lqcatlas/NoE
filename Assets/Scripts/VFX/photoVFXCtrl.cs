@@ -61,8 +61,16 @@ public class photoVFXCtrl : MonoBehaviour
     }
     public void ZoomIn(float duration)
     {
-        //Debug.Log("photo zoom in vfx called");
-        transform.DOScale(SCALE_AFTER_ZOOM, duration);
+        if (duration == 0)
+        {
+            transform.localScale = SCALE_AFTER_ZOOM * Vector3.one;
+        }
+        else
+        {
+            //Debug.Log("photo zoom in vfx called");
+            transform.DOScale(SCALE_AFTER_ZOOM, duration);
+        }
+        
     }
     public void ZoomReset(float duration)
     {
@@ -72,14 +80,22 @@ public class photoVFXCtrl : MonoBehaviour
     {
         if (PHOTO_REPLACE != null)
         {
-            PHOTO_REPLACE.DOFade(1f, duration);
+            if(duration == 0)
+            {
+                GetComponent<SpriteRenderer>().sprite = PHOTO_REPLACE.sprite;
+                GetComponent<SpriteRenderer>().color = new Color(PHOTO_REPLACE.color.r, PHOTO_REPLACE.color.g, PHOTO_REPLACE.color.b, 1f);
+            }
+            else
+            {
+                PHOTO_REPLACE.DOFade(1f, duration).OnComplete(() => GetComponent<SpriteRenderer>().sprite = PHOTO_REPLACE.sprite);
+            }
         }
     }
-    public void ColorReset(float duration)
+    /*public void ColorReset(float duration)
     {
         if (PHOTO_REPLACE != null)
         {
             PHOTO_REPLACE.DOFade(0f, duration);
         }
-    }
+    }*/
 }

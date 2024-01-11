@@ -11,6 +11,7 @@ public class MiscMaster : MonoBehaviour
     [SerializeField] Color MaskColor;
     public SpriteRenderer background;
     public SpriteRenderer fadeMask;
+    public GameObject fadePhoto;
     public GameObject retryBtn;
     public GameObject closeBtn;
     public GameObject rewindBtn;
@@ -99,16 +100,17 @@ public class MiscMaster : MonoBehaviour
     public void ScreenMaskInit()
     {
         fadeMask.GetComponent<Collider2D>().enabled = true;
-        fadeMask.color = MaskColor;
+        //fadeMask.color = MaskColor;
+        fadePhoto.GetComponent<SpriteRenderer>().color = MaskColor;
     }
     public void ScreenMaskFadeOut(float _duration = ScreenFadeDuration)
     {
-        fadeMask.DOFade(0f, _duration).OnComplete(()=>fadeMask.GetComponent<Collider2D>().enabled = false).SetEase(Ease.InCubic);
+        fadePhoto.GetComponent<SpriteRenderer>().DOFade(0f, _duration).OnComplete(()=>fadeMask.GetComponent<Collider2D>().enabled = false).SetEase(Ease.InCubic);
     }
     public void ScreenMaskFadeIn(float _duration = ScreenFadeDuration)
     {
         fadeMask.GetComponent<Collider2D>().enabled = true;
-        fadeMask.DOFade(1f, _duration).SetEase(Ease.OutCubic);
+        fadePhoto.GetComponent<SpriteRenderer>().DOFade(1f, _duration).SetEase(Ease.OutCubic);
     }
     #endregion
 }

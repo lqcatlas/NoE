@@ -856,7 +856,6 @@ MonoBehaviour:
   riddleGroup: {fileID: 7368009482900974102}
   closeGroup: {fileID: 67715524230276726}
   photo: {fileID: 7368009481696967956}
-  photo_black: {fileID: 7815636856675035566}
   riddleTitle: {fileID: 7368009483155329647}
   riddleDesc: {fileID: 7368009482585916826}
   themeIcon: {fileID: 7368009483269715708}

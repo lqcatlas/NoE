@@ -73,6 +73,11 @@ public class LevelMasterBase : MonoBehaviour
         //GetDataReferences
         ThemeAnimationDelayAfterInit = dConstants.VFX.CallbackAnimationDelayAfterInit;
         ThemeAnimationDelayAfterPlay = dConstants.VFX.CallbackAnimationDelayAfterPlay;
+        //get current background, copy it to the mask
+        hub.miscMaster.fadePhoto = Instantiate(HiddenObjectLauncher.singleton.GetCurrentBgPhotoObject(), hub.miscMaster.fadeMask.transform);
+        hub.miscMaster.fadePhoto.GetComponent<SpriteRenderer>().sortingLayerID = hub.miscMaster.fadeMask.sortingLayerID;
+        hub.miscMaster.fadePhoto.GetComponent<SpriteRenderer>().sortingOrder = hub.miscMaster.fadeMask.sortingOrder + 1;
+        hub.miscMaster.fadePhoto.GetComponent<BoxCollider2D>().enabled = false;
     }
     public void LevelInit()
     {

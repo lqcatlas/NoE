@@ -55,9 +55,13 @@ public class HiddenObjectPage : MonoBehaviour
         riddleGroup.SetActive(false);
         objectGroup.SetActive(false);
         closeGroup.SetActive(false);
-        photo.GetComponent<photoVFXCtrl>().ZoomIn(0.0001f);
-        photo.GetComponent<photoVFXCtrl>().Replace(0.0001f);
+        photo.GetComponent<photoVFXCtrl>().ZoomIn(0);
+        photo.GetComponent<photoVFXCtrl>().Replace(0);
         photo.GetComponent<photoVFXCtrl>().ReduceOffsetMovement();
+    }
+    public GameObject GetCurrentBackgroundPhoto()
+    {
+        return photo;
     }
     private void FixedUpdate()
     {

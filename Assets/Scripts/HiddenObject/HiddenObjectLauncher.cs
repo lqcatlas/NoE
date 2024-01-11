@@ -43,7 +43,10 @@ public class HiddenObjectLauncher : MonoBehaviour
         GameObject newPage = Instantiate(templatePage, pageHolder);
         newPage.GetComponent<HiddenObjectPage>().SetAsBackground();
     }
-
+    public GameObject GetCurrentBgPhotoObject()
+    { 
+        return pageHolder.GetComponentInChildren<HiddenObjectPage>().GetCurrentBackgroundPhoto();
+    }
     public void ClearExistingPages()
     {
         List<HiddenObjectPage> currentPages = pageHolder.GetComponentsInChildren<HiddenObjectPage>().ToList();
