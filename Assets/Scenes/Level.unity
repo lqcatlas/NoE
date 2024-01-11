@@ -339,7 +339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 11400000, guid: d41dc660a95b15847a53d0151318986c, type: 2}
-  curLanguage: 1
+  curLanguage: 0
   defaultLanguage: 0
 --- !u!4 &165104778
 Transform:
@@ -908,6 +908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentPointerObject: {fileID: 0}
+  allHitObjs: []
   CursorOffsetPct_X: 0
   CursorOffsetPct_Y: 0
 --- !u!4 &1113856782

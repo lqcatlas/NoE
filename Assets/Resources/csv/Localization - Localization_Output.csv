@@ -220,3 +220,4 @@ UID,Key,EN,CN
 219,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
 220,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}
 221,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the following riddle:,根据谜语找到<b>物件</b>：
+222,ui_new_tag,NEW,新
