@@ -197,6 +197,7 @@ public class LevelMasterBase : MonoBehaviour
     {
         GetComponent<MiscMaster>().RegisterLevelMaster(this);
         GetComponent<GoalMaster>().RegisterLevelMaster(this);
+        GetComponent<PopupMaster>().RegisterLevelMaster(this);
     }
     public virtual void DisablePlayerInput()
     {

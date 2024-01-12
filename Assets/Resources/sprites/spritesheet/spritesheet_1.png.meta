@@ -3086,7 +3086,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3107,7 +3107,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3115,6 +3115,48 @@ TextureImporter:
       bones: []
       spriteID: eb07eab592f870e47b871fdad89c0658
       internalID: 1380928617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_step_sign
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5b7e572ee9edd4092ea75a004f41e1
+      internalID: 1812712270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui_time_sign
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dc91570097c0a419b5774fdf1080fe
+      internalID: -1800299951
       vertices: []
       indices: 
       edges: []
@@ -3255,6 +3297,7 @@ TextureImporter:
       full_moon@v2: 490159565
       moon_crescent2@v1: -348473210
       bulb_tool@v1: -81264564
+      ui_time_sign: -1800299951
       coin_shape_8: -1168925651
       cell_frame@v1: -1833856617
       window3_full: -633744324
@@ -3265,6 +3308,7 @@ TextureImporter:
       exit_v1: 1334681943
       bulb_light@v2: 935129763
       clocktime_tool_v4: 90361197
+      ui_step_sign: 1812712270
       clocktime_tool_v8: -476586744
       moon_crescent2@v2: 1391890634
       star1_v3: -470244999

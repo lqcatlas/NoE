@@ -935,6 +935,18 @@ MonoBehaviour:
     m_Scale: 1
     m_Name: currency_gem_frame
     m_HashCode: -719490443
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 143
+    m_Scale: 1
+    m_Name: ui_step_sign
+    m_HashCode: -1916246243
+  - m_ElementType: 2
+    m_Unicode: 65534
+    m_GlyphIndex: 144
+    m_Scale: 1
+    m_Name: ui_time_sign
+    m_HashCode: 1257463770
   m_SpriteGlyphTable:
   - m_Index: 0
     m_Metrics:
@@ -3081,5 +3093,35 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     sprite: {fileID: 1380928617, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+  - m_Index: 143
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 100
+      m_HorizontalAdvance: 100
+    m_GlyphRect:
+      m_X: 896
+      m_Y: 640
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: 1812712270, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+  - m_Index: 144
+    m_Metrics:
+      m_Width: 128
+      m_Height: 128
+      m_HorizontalBearingX: 0
+      m_HorizontalBearingY: 100
+      m_HorizontalAdvance: 100
+    m_GlyphRect:
+      m_X: 1024
+      m_Y: 640
+      m_Width: 128
+      m_Height: 128
+    m_Scale: 1
+    m_AtlasIndex: 0
+    sprite: {fileID: -1800299951, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   spriteInfoList: []
   fallbackSpriteAssets: []
