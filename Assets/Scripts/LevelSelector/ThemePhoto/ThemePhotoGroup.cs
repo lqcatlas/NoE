@@ -42,6 +42,7 @@ public class ThemePhotoGroup : MonoBehaviour
     public void UpdatePhotoGroup()
     {
         curStatus = DetermineCurStatus();
+        StaticTextUpdate();
         UIUpdateBasedOnStatus();
     }
     ThemePhotoStatus DetermineCurStatus()
@@ -75,7 +76,6 @@ public class ThemePhotoGroup : MonoBehaviour
                 }
             }
         }
-        StaticTextUpdate();
         if (!preReqMet)
         {
             return ThemePhotoStatus.hidden;
@@ -137,7 +137,16 @@ public class ThemePhotoGroup : MonoBehaviour
     {
         //init all texts that used in a theme photo group whenever progress changed
         unlockReq.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("@Loc=ui_themephoto_unlockreq@@"), themeData.unlockCost));
-        themeName.SetText(LocalizedAssetLookup.singleton.Translate(themeData.themeTitle));
+        string statusSuffix = "";
+        if(curStatus == ThemePhotoStatus.finished)
+        {
+            statusSuffix = LocalizedAssetLookup.singleton.Translate("@Loc=ui_finished_status@@");
+        }
+        else if(curStatus == ThemePhotoStatus.perfect)
+        {
+            statusSuffix = LocalizedAssetLookup.singleton.Translate("@Loc=ui_perfect_status@@");
+        }
+        themeName.SetText(string.Format("{0}{1}",LocalizedAssetLookup.singleton.Translate(themeData.themeTitle), statusSuffix));
         starCollection.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("@Loc=ui_themephoto_starcollection@@"), curStars, themeData.TotalStars));
         gemCollection.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("@Loc=ui_themephoto_gemcollection@@"), curGems, themeData.TotalGems));
     }
@@ -207,7 +216,9 @@ public class ThemePhotoGroup : MonoBehaviour
     {
         string _title = string.Format("{0}-{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_designer_note_title@@"), LocalizedAssetLookup.singleton.Translate(string.Format("@Loc=themename_tm{0}@@", themeData.themeUID)));
         string _desc = themeData.manifesto;
-        LevelSelector.singleton.DesignerNoteBox.ShowBox(_title, _desc);
+        string _prompt = themeData.prompt;
+        Sprite _sprt = LevelSelector.singleton.themeResourceLookup.GetThemePhotoBlack(themeData.themeUID);
+        LevelSelector.singleton.DesignerNoteBox.ShowBox(_title, _desc, _prompt, _sprt);
     }
     #endregion
 

@@ -27,6 +27,8 @@ public class SheetItem_ThemeSetup : ScriptableObject
     public string date;
     //manifesto about the design of the theme
     public string manifesto;
+    //prompt about the design of the theme
+    public string prompt;
     //narrative lines used in levels
     public List<string> narratives;
 

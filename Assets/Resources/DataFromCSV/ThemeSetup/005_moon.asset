@@ -21,6 +21,7 @@ MonoBehaviour:
   hint: '@Loc=hint_tm5@@'
   date: '@Loc=date_tm5@@'
   manifesto: '@Loc=manifesto_tm5@@'
+  prompt: '@Loc=prompt_tm5@@'
   narratives:
   - '@Loc=narrative_tm5_ln1@@'
   - '@Loc=narrative_tm5_ln2@@'

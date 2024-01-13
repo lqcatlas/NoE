@@ -171,6 +171,7 @@ public class LevelMasterBase : MonoBehaviour
     public void LevelExit()
     {
         gameObject.SetActive(false);
+        HiddenObjectLauncher.singleton.ClearExistingPages();
         LevelSelector.singleton.GoToSelector();
     }
     public void StartNextLevel()
@@ -179,7 +180,7 @@ public class LevelMasterBase : MonoBehaviour
         hub.miscMaster.ScreenMaskFadeIn();
         bool result = false;
         Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(1.5f).AppendCallback(() => result = TryLoadNextLevel());
+        seq.AppendInterval(1.5f).AppendCallback(() => result = TryLoadNextLevel(false));
     }
     #region atomic methods
     //Atomic Funtions that can be overwritten by Theme-Specific LevlMaster Script
@@ -463,25 +464,35 @@ public class LevelMasterBase : MonoBehaviour
     }
     #endregion
 
-    bool TryLoadNextLevel()
+    bool TryLoadNextLevel(bool isNavigation = false)
     {
-        //temp method, will be revamp with level launcher
-        if(levelSetupData.nextLevelIndex > 0 && levelSetupData.nextLevel)
+        if(levelSetupData.nextLevelIndex > 0)
         {
-            levelSetupData = levelSetupData.nextLevel;
-            LevelInit();
-            return true;
+            if (levelSetupData.nextLevel.isHard && !isNavigation)
+            {
+                //return to main if next level is hard level
+                LevelExit();
+                return false;
+            }
+            else if (levelSetupData.nextLevelIndex > 0 && levelSetupData.nextLevel)
+            {
+                levelSetupData = levelSetupData.nextLevel;
+                LevelInit();
+                return true;
+            }
         }
         else
         {
             LevelExit();
+            return false;
         }
         return false;
+
     }
     bool TryLoadPreviousLevel()
     {
         //temp method, will be revamp with level launcher
-        if (levelSetupData.nextLevelIndex > 0 && levelSetupData.nextLevel)
+        if (levelSetupData.previousLevel)
         {
             levelSetupData = levelSetupData.previousLevel;
             LevelInit();
@@ -513,7 +524,7 @@ public class LevelMasterBase : MonoBehaviour
         hub.miscMaster.prevBtn.SetActive(false);
         if (levelSetupData.previousLevel != null)
         {
-            Debug.Log(string.Format("previous level ID is {0}", levelSetupData.previousLevel.levelUID));
+            //Debug.Log(string.Format("previous level ID is {0}", levelSetupData.previousLevel.levelUID));
             if (LevelLauncher.singleton.playerRecords.isLevelPlayable(levelSetupData.previousLevel.levelUID))
             {
                 hub.miscMaster.prevBtn.SetActive(true);
@@ -522,7 +533,7 @@ public class LevelMasterBase : MonoBehaviour
         hub.miscMaster.nextBtn.SetActive(false);
         if (levelSetupData.nextLevel != null)
         {
-            Debug.Log(string.Format("next level ID is {0}", levelSetupData.nextLevel.levelUID));
+            //Debug.Log(string.Format("next level ID is {0}", levelSetupData.nextLevel.levelUID));
             if (LevelLauncher.singleton.playerRecords.isLevelPlayable(levelSetupData.nextLevel.levelUID))
             {
                 hub.miscMaster.nextBtn.SetActive(true);
@@ -536,6 +547,6 @@ public class LevelMasterBase : MonoBehaviour
     }
     public void GoToNextLevel()
     {
-        TryLoadNextLevel();
+        TryLoadNextLevel(true);
     }
 }

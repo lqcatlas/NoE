@@ -45,6 +45,7 @@ MonoBehaviour:
   - tag: 2
     ruleDesc: '@Loc=rule4_lv207@@'
   isHard: 0
+  allowRewind: 1
   initBoard:
     boardSize: {x: 3, y: 3}
     cells:

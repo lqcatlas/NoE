@@ -13,6 +13,7 @@ public class ThemeResource
     public GameObject ThemeSpecialHub;
     public GameObject ThemeHiddenObjPage;
     public Sprite ThemeSprite;
+    public Sprite ThemePhoto;
 }
 [CreateAssetMenu(menuName = "Lookup/ThemeResource")]
 public class ThemeResourceLookup : ScriptableObject
@@ -89,6 +90,18 @@ public class ThemeResourceLookup : ScriptableObject
             }
         }
         Debug.LogError(string.Format("unbale to find theme hidden obj page ({0})", _themeID));
+        return null;
+    }
+    public Sprite GetThemePhotoBlack(int _themeID)
+    {
+        for (int i = 0; i < ThemeXResource.Count; i++)
+        {
+            if (ThemeXResource[i].ThemeID == _themeID)
+            {
+                return ThemeXResource[i].ThemePhoto;
+            }
+        }
+        Debug.LogError(string.Format("unbale to find theme photo ({0})", _themeID));
         return null;
     }
 }

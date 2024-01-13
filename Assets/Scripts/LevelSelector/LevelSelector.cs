@@ -29,7 +29,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     [Header("Gameplay Data")]
     //[SerializeField] List<SelectorNode> nodes;
     //[SerializeField] List<SelectorTheme> themes;
-    //public ThemeResourceLookup themeResourceLookup;
+    public ThemeResourceLookup themeResourceLookup;
     [SerializeField] List<ThemePhotoGroup> photos;
     [Header("Children Objs")]
     [SerializeField] GameObject page;
@@ -159,8 +159,8 @@ public class LevelSelector : MonoBehaviour, ISaveData
     }
     void GemEarned(int count)
     {
-        playerLevelRecords.tokens += count;
-        if (playerLevelRecords.tokens < 0)
+        playerLevelRecords.gems += count;
+        if (playerLevelRecords.gems < 0)
         {
             Debug.LogError(string.Format("Selector Token Count Reach invalid number:{0}.", playerLevelRecords.tokens));
         }

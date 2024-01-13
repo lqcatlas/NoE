@@ -151,6 +151,14 @@ public class Load_Themes : MonoBehaviour
                 theme.manifesto = (string)result;
             }
         }
+        result = null;
+        if (csvRow.TryGetValue("prompt", out result))
+        {
+            if (((string)result).Length > 0)
+            {
+                theme.prompt = (string)result;
+            }
+        }
         theme.narratives.Clear();
         theme.levels.Clear();
         theme.TotalStars = 0;
