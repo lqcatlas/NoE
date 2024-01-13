@@ -33,6 +33,7 @@ public class SheetItem_LevelSetup : ScriptableObject
 
     [Header("Board Setup")]
     public bool isHard;
+    public bool allowRewind = true;
     public DataBoard initBoard;
 
     

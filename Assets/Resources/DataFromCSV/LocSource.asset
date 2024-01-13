@@ -681,3 +681,12 @@ MonoBehaviour:
   - key: ui_new_tag
     EN: NEW
     CN: "\u65B0"
+  - key: ui_close_btn
+    EN: Close
+    CN: "\u5173\u95ED"
+  - key: ui_retry_btn
+    EN: Restart
+    CN: "\u91CD\u8BD5"
+  - key: ui_rewind_btn
+    EN: Rewind
+    CN: "\u56DE\u6EAF"

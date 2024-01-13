@@ -79,6 +79,8 @@ public class DataLevel
 
     [Header("Boards")]
     public bool isHard;
+    public bool allowRewind;
+    //public bool canRewind;
     //4 boards: record current, initial, previous, preview state of a level
     public DataBoard curBoard;
     public DataBoard initBoard;
@@ -104,6 +106,7 @@ public class DataLevel
         ruleset = new List<RuleItem>();
 
         isHard = false;
+        allowRewind = false;
     }
     public DataLevel(DataLevel copyLevel)
     {
@@ -125,6 +128,7 @@ public class DataLevel
             ruleset.Add(new RuleItem(copyLevel.ruleset[i]));
         }
         isHard = false;
+        allowRewind = false;
     }
     public bool LoadLevelFromSheetItem(SheetItem_LevelSetup setupData)
     {
@@ -157,6 +161,18 @@ public class DataLevel
             ruleset.Add(new RuleItem(setupData.ruleset[i]));
         }
         isHard = setupData.isHard;
+        allowRewind = setupData.allowRewind;
         return true;
+    }
+    public bool canRewind()
+    {
+        if(allowRewind && previewBoard.toolCount != 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

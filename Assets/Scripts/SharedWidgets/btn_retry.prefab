@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2776243385169771094
+--- !u!1 &7536359979110813594
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2776243385169771093}
-  - component: {fileID: 2776243385169771092}
-  - component: {fileID: 7568438609566454123}
-  - component: {fileID: 8265343925023131705}
-  - component: {fileID: 5347672473683267051}
+  - component: {fileID: 7536359979110813573}
+  - component: {fileID: 718279118386546592}
+  - component: {fileID: 7536359979110813572}
+  - component: {fileID: 7935157668872922224}
+  - component: {fileID: 982847021493789466}
   m_Layer: 0
-  m_Name: btn_close
+  m_Name: btn_retry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2776243385169771093
+--- !u!4 &7536359979110813573
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2776243385169771094}
+  m_GameObject: {fileID: 7536359979110813594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
@@ -35,13 +35,73 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2776243385169771092
+--- !u!114 &718279118386546592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536359979110813594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1c98c6f563d814dbd0e6cb557decce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseUpFuncs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MiscMaster, Assembly-CSharp
+        m_MethodName: RetryLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  mouseDownFuncs:
+    m_PersistentCalls:
+      m_Calls: []
+  mouseEnterFuncs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 982847021493789466}
+        m_TargetAssemblyTypeName: BtnRetry, Assembly-CSharp
+        m_MethodName: RetryBtnHoverEnter
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  mouseExitFuncs:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 982847021493789466}
+        m_TargetAssemblyTypeName: BtnRetry, Assembly-CSharp
+        m_MethodName: RetryBtnHoverExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!212 &7536359979110813572
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2776243385169771094}
+  m_GameObject: {fileID: 7536359979110813594}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,7 +136,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -925844654, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
+  m_Sprite: {fileID: 1265108339, guid: 752b77b28bd14884a924fd7d7750a3fc, type: 3}
   m_Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,87 +147,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7568438609566454123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2776243385169771094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f40900a7e3adaa44c8d49fb77de0b2ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SCALE_ORIGINAL: 2.5
-  SCALE_HOVERON: 3
---- !u!114 &8265343925023131705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2776243385169771094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da1c98c6f563d814dbd0e6cb557decce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseUpFuncs:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: MiscMaster, Assembly-CSharp
-        m_MethodName: CloseLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  mouseDownFuncs:
-    m_PersistentCalls:
-      m_Calls: []
-  mouseEnterFuncs:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7568438609566454123}
-        m_TargetAssemblyTypeName: BtnClose, Assembly-CSharp
-        m_MethodName: CloseBtnHoverEnter
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  mouseExitFuncs:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7568438609566454123}
-        m_TargetAssemblyTypeName: BtnClose, Assembly-CSharp
-        m_MethodName: CloseBtnHoverExit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!61 &5347672473683267051
+--- !u!61 &7935157668872922224
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2776243385169771094}
+  m_GameObject: {fileID: 7536359979110813594}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -187,3 +173,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &982847021493789466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536359979110813594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d690c817cdd65848bad701fdee4acf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

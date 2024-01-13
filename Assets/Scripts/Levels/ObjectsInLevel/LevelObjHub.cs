@@ -10,6 +10,7 @@ public class LevelObjHub : MonoBehaviour
     public GoalMaster goalMaster;
     public RulesetMaster rulesetMaster;
     public MiscMaster miscMaster;
+    public PopupMaster popupMaster;
 
     public void DebugMsg()
     {

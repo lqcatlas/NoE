@@ -28,8 +28,6 @@ public class LevelMasterBase : MonoBehaviour
     public enum LevelStatus { PLAYBLE, PROCESSING, END, };
     public enum NarrativeLineStatus { INQUEUE, PLAYED, NONE };
     public LevelStatus status = LevelStatus.PLAYBLE;
-    public bool allow_rewind;
-    public bool can_rewind;
 
     public List<NarrativeLineStatus> lineStatus = new List<NarrativeLineStatus>();
     //Objects controlled by LevelMaster 
@@ -73,11 +71,7 @@ public class LevelMasterBase : MonoBehaviour
         //GetDataReferences
         ThemeAnimationDelayAfterInit = dConstants.VFX.CallbackAnimationDelayAfterInit;
         ThemeAnimationDelayAfterPlay = dConstants.VFX.CallbackAnimationDelayAfterPlay;
-        //get current background, copy it to the mask
-        hub.miscMaster.fadePhoto = Instantiate(HiddenObjectLauncher.singleton.GetCurrentBgPhotoObject(), hub.miscMaster.fadeMask.transform);
-        hub.miscMaster.fadePhoto.GetComponent<SpriteRenderer>().sortingLayerID = hub.miscMaster.fadeMask.sortingLayerID;
-        hub.miscMaster.fadePhoto.GetComponent<SpriteRenderer>().sortingOrder = hub.miscMaster.fadeMask.sortingOrder + 1;
-        hub.miscMaster.fadePhoto.GetComponent<BoxCollider2D>().enabled = false;
+        hub.miscMaster.InitThemeBackground();
     }
     public void LevelInit()
     {
@@ -307,12 +301,10 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void InitMiscs()
     {
-        hub.miscMaster.closeBtn.SetActive(true);
-        hub.miscMaster.retryHint.gameObject.SetActive(false);
-        hub.miscMaster.retryBtn.SetActive(true);
-        hub.miscMaster.loseBanner.SetActive(false);
+        hub.popupMaster.ResetAllPopups();
+        hub.miscMaster.ResetMiscs();
         //show rewind btn only if it can be rewinded
-        hub.miscMaster.rewindBtn.SetActive(allow_rewind && can_rewind);
+        hub.miscMaster.rewindBtn.SetActive(levelData.canRewind());
         UpdateLevelNavigation();
         //set new theme hint to be true if there are at least 1 unlockable themes;
         hub.miscMaster.newthemeHint.gameObject.SetActive(LevelSelector.singleton.LocateFirstUnlockableTheme() >= 0);
@@ -425,7 +417,7 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void UpdateMiscs()
     {
-        hub.miscMaster.rewindBtn.SetActive(allow_rewind && can_rewind);
+        hub.miscMaster.rewindBtn.SetActive(levelData.canRewind());
     }
     public virtual void AddtionalUpdate_Theme(Vector2Int coord)
     {
@@ -446,7 +438,8 @@ public class LevelMasterBase : MonoBehaviour
     public virtual void WinALevel()
     {
         status = LevelStatus.END;
-        hub.goalMaster.nextBtn.gameObject.SetActive(true);
+        //hub.goalMaster.nextBtn.gameObject.SetActive(true);
+        hub.popupMaster.ShowVictoryPopup(levelData.isHard);
         /*if (!result)
         {
             Debug.Log(string.Format("Theme ends. Plz go back to theme selector"));
@@ -463,9 +456,10 @@ public class LevelMasterBase : MonoBehaviour
     public virtual void LoseALevel()
     {
         status = LevelStatus.END;
-        hub.miscMaster.retryHint.gameObject.SetActive(true);
-        hub.miscMaster.loseBanner.SetActive(true);
-        hub.miscMaster.loseBanner.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f).From();
+        hub.popupMaster.ShowFailurePopup(levelData.canRewind());
+        //hub.miscMaster.retryHint.gameObject.SetActive(true);
+        //hub.miscMaster.loseBanner.SetActive(true);
+        //hub.miscMaster.loseBanner.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f).From();
     }
     #endregion
 
@@ -534,7 +528,6 @@ public class LevelMasterBase : MonoBehaviour
                 hub.miscMaster.nextBtn.SetActive(true);
             }
         }
-
         hub.miscMaster.levelName.SetText(string.Format("{0} {1:000}", LocalizedAssetLookup.singleton.Translate(levelData.theme), levelData.levelIndex));
     }
     public void GoToPreviousLevel()

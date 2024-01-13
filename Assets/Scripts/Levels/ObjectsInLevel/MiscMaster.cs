@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
@@ -10,6 +11,7 @@ public class MiscMaster : MonoBehaviour
     const float ScreenFadeDuration = 1f;
     [SerializeField] Color MaskColor;
     public SpriteRenderer background;
+    public Transform maskGroup;
     public SpriteRenderer fadeMask;
     public GameObject fadePhoto;
     public GameObject retryBtn;
@@ -30,6 +32,35 @@ public class MiscMaster : MonoBehaviour
     {
         levelMaster = _master;
     }
+    public void InitThemeBackground()
+    {
+        //clear all existing children;
+        while(maskGroup.childCount > 0)
+        {
+            Destroy(maskGroup.GetChild(0).gameObject);
+        }
+        /*List<Transform> children = maskGroup.GetComponentsInChildren<Transform>(true).ToList();
+        for(int i = 0; i < children.Count; i++)
+        {
+            Destroy(children[i].gameObject);
+        }
+        */
+        fadePhoto = Instantiate(HiddenObjectLauncher.singleton.GetCurrentBgPhotoObject(), maskGroup);
+        if(fadePhoto == null)
+        {
+            fadePhoto = fadeMask.gameObject;
+        }
+        fadePhoto.GetComponent<SpriteRenderer>().sortingLayerID = fadeMask.sortingLayerID;
+        fadePhoto.GetComponent<SpriteRenderer>().sortingOrder = fadeMask.sortingOrder + 1;
+        fadePhoto.GetComponent<BoxCollider2D>().enabled = false;
+    }
+    public void ResetMiscs()
+    {
+        closeBtn.SetActive(true);
+        retryHint.gameObject.SetActive(false);
+        retryBtn.SetActive(true);
+        loseBanner.SetActive(false);
+    }
     #region close
     public void CloseLevel()
     {
@@ -43,14 +74,7 @@ public class MiscMaster : MonoBehaviour
     {
         levelMaster.LevelRetry();
     }
-    public void RetryBtnHoverEnter()
-    {
-        retryBtn.transform.DORotate(new Vector3(0f, 0f, 90f), dConstants.UI.StandardizedBtnAnimDuration);
-    }
-    public void RetryBtnHoverExit()
-    {
-        retryBtn.transform.DORotate(Vector3.zero, dConstants.UI.StandardizedBtnAnimDuration);
-    }
+    
     #endregion
 
     #region rewind
@@ -58,14 +82,7 @@ public class MiscMaster : MonoBehaviour
     {
         levelMaster.Rewind();
     }
-    public void RewindBtnHoverEnter()
-    {
-        retryBtn.transform.DORotate(new Vector3(0f, 0f, 15f), dConstants.UI.StandardizedBtnAnimDuration);
-    }
-    public void RewindBtnHoverExit()
-    {
-        retryBtn.transform.DORotate(Vector3.zero, dConstants.UI.StandardizedBtnAnimDuration);
-    }
+    
     #endregion
 
     #region navigation

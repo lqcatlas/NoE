@@ -15,4 +15,11 @@ public class StaticAssetLocalize : MonoBehaviour
             localizeTarget.SetText(LocalizedAssetLookup.singleton.Translate(LocalizedKey != "" ? LocalizedKey : localizeTarget.text));
         }
     }
+    private void OnEnable()
+    {
+        if (localizeTarget != null)
+        {
+            localizeTarget.SetText(LocalizedAssetLookup.singleton.Translate(LocalizedKey != "" ? LocalizedKey : localizeTarget.text));
+        }
+    }
 }
