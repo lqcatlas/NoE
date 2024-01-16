@@ -85,6 +85,7 @@ public class DataLevel
     public DataBoard curBoard;
     public DataBoard initBoard;
     public DataBoard previousBoard;
+    public List<DataBoard> previousBoards;
     //preview board is not used for now
     public DataBoard previewBoard;
 
@@ -95,6 +96,7 @@ public class DataLevel
         curBoard = new DataBoard();
         initBoard = new DataBoard();
         previousBoard = new DataBoard();
+        previousBoards = new List<DataBoard>();
         previewBoard = new DataBoard();
 
         theme = "theme of the level";
@@ -115,6 +117,11 @@ public class DataLevel
         curBoard = new DataBoard(copyLevel.curBoard);
         initBoard = new DataBoard(copyLevel.initBoard);
         previousBoard = new DataBoard(copyLevel.previousBoard);
+        previousBoards.Clear();
+        for (int i = 0; i < copyLevel.previousBoards.Count; i++)
+        {
+            previousBoards.Add(new DataBoard(copyLevel.previousBoards[i]));
+        }
         previewBoard = new DataBoard(copyLevel.previewBoard);
 
         theme = copyLevel.theme;
@@ -123,6 +130,7 @@ public class DataLevel
         newPlayNarratives = copyLevel.newPlayNarratives.ToList();
         oldNarratives = copyLevel.oldNarratives.ToList();
         goal = copyLevel.goal;
+        ruleset.Clear();
         for (int i = 0; i < copyLevel.ruleset.Count; i++)
         {
             ruleset.Add(new RuleItem(copyLevel.ruleset[i]));
@@ -148,6 +156,10 @@ public class DataLevel
         levelIndex = setupData.levelIndex;
 
         initBoard = new DataBoard(setupData.initBoard);
+        curBoard = new DataBoard();
+        previousBoard = new DataBoard();
+        previousBoards = new List<DataBoard>();
+        previewBoard = new DataBoard();
 
         theme = setupData.theme;
         title = setupData.title;
@@ -166,7 +178,7 @@ public class DataLevel
     }
     public bool canRewind()
     {
-        if(allowRewind && previewBoard.toolCount != 0)
+        if(allowRewind && previousBoards.Count > 0)
         {
             return true;
         }

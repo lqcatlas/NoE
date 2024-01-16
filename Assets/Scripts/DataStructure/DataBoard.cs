@@ -17,13 +17,14 @@ public class DataBoard
     public int toolCount;
     //tool status: status is the secondary value of a tool to support gameplay. eg. in coin theme, the status represents head/tail of a coin.
     public int toolStatus;
-
+    public Vector2Int curPlayCoord;
     public DataBoard()
     {
         boardSize = new Vector2Int(0, 0);
         cells = new List<DataCell>();
         toolCount = 0;
         toolStatus = 0;
+        curPlayCoord = new Vector2Int(-1, -1);
     }
     public DataBoard(DataBoard copyBoard)
     {
@@ -37,6 +38,7 @@ public class DataBoard
         //cells = copyBoard.cells.ToList();
         toolCount = copyBoard.toolCount;
         toolStatus = copyBoard.toolStatus;
+        curPlayCoord = copyBoard.curPlayCoord;
     }
     public DataCell GetCellDataByCoord(Vector2Int targetCoord)
     {

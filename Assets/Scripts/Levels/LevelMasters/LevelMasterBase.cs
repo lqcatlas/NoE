@@ -51,7 +51,7 @@ public class LevelMasterBase : MonoBehaviour
         if (RewindTrigger)
         {
             RewindTrigger = false;
-            Rewind();
+            LevelRewind();
         }
         if (Input.GetKeyUp(KeyCode.P))
         {
@@ -114,7 +114,7 @@ public class LevelMasterBase : MonoBehaviour
             return;
         }
         DisablePlayerInput();
-        ToolConsume();
+        ToolConsume(coord);
         HandlePlayerInput(coord);
         HandleEnvironment(coord);
         UpdateCells(coord);
@@ -147,7 +147,7 @@ public class LevelMasterBase : MonoBehaviour
     }
     public void LevelRetry()
     {
-        status = LevelStatus.PROCESSING;
+        DisablePlayerInput();
         InitBoardData();
         GenerateBoard();
         InitCells();
@@ -163,10 +163,22 @@ public class LevelMasterBase : MonoBehaviour
         seq.AppendInterval(dConstants.VFX.CallbackAnimationDelayAfterPlay);
         seq.AppendCallback(() => LevelInitCallback());
     }
-    public void Rewind()
+    public void LevelRewind()
     {
-        //invalid check TO DO
-        //reset one step
+        DisablePlayerInput();
+        Vector2Int lastPlayCoord = BoardRestore();
+        InitCells();
+        //InitNarrative();
+        InitGoal();
+        InitRuleset();
+        InitTool();
+        InitMiscs();
+        AddtionalInit_Theme();
+        UpdatePlayable();
+        //Below should be called as calledback when all key FX is handled
+        Sequence seq = DOTween.Sequence();
+        seq.AppendInterval(dConstants.VFX.CallbackAnimationDelayAfterPlay);
+        seq.AppendCallback(() => LevelInitCallback());
     }
     public void LevelExit()
     {
@@ -339,10 +351,29 @@ public class LevelMasterBase : MonoBehaviour
     {
         //this should always be theme-specific
     }
-    public virtual void ToolConsume()
+    public virtual void ToolConsume(Vector2Int coord)
     {
+        //consume tool and save curboard to previous board/boards
+        levelData.curBoard.curPlayCoord = coord;
         levelData.previousBoard = new DataBoard(levelData.curBoard);
+        levelData.previousBoards.Add(new DataBoard(levelData.curBoard));
         levelData.curBoard.toolCount -= 1;
+    }
+    public virtual Vector2Int BoardRestore()
+    {
+        
+        levelData.curBoard = levelData.previousBoards[levelData.previousBoards.Count - 1];
+        levelData.previousBoards.RemoveAt(levelData.previousBoards.Count - 1);
+        if(levelData.previousBoards.Count > 0)
+        {
+            levelData.previousBoard = levelData.previousBoards[levelData.previousBoards.Count - 1];
+        }
+        else
+        {
+            levelData.previousBoard = new DataBoard();
+        }
+
+        return levelData.curBoard.curPlayCoord;
     }
     public virtual void HandlePlayerInput(Vector2Int coord)
     {

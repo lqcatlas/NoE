@@ -80,7 +80,7 @@ public class MiscMaster : MonoBehaviour
     #region rewind
     public void RewindStep()
     {
-        levelMaster.Rewind();
+        levelMaster.LevelRewind();
     }
     
     #endregion
