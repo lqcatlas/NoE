@@ -25,21 +25,25 @@ public class LM_004_Sushi : LevelMasterBase
         base.GetObjectReferences(null);
         sushiHub = _themeHub.GetComponent<LMHub_004_Sushi>();
     }
+    public override void AdditionalGenerateBoard_Theme()
+    {
+
+    }
     public override void InitCells()
     {
         sushiHub.sushiPlates = new List<KeyValuePair<CellMaster, GameObject>>();
         sushiHub.cellBgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
-        //clear old running clocks
+        //clear old cell bgs
         List<Transform> oldBgs = sushiHub.cellBgHolder.GetComponentsInChildren<Transform>().ToList();
         oldBgs.Remove(sushiHub.cellBgHolder.transform);
         for (int i = 0; i < oldBgs.Count; i++)
         {
             Destroy(oldBgs[i].gameObject);
         }
-        //generate new bgs
+        //generate new cell bgs
         for (int i = 0; i < hub.boardMaster.cells.Count; i++)
         {
-            DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if (temp_cellData != null)
             {
                 hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);

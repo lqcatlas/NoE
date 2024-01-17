@@ -83,6 +83,7 @@ public class LevelMasterBase : MonoBehaviour
         DisablePlayerInput();
         OnlyInFirstEntry();
         InitBoardData();
+        AdditionalGenerateBoard_Theme();
         GenerateBoard();
         InitCells();
         InitNarrative();
@@ -149,6 +150,7 @@ public class LevelMasterBase : MonoBehaviour
     {
         DisablePlayerInput();
         InitBoardData();
+        AdditionalGenerateBoard_Theme();
         GenerateBoard();
         InitCells();
         //InitNarrative();
@@ -169,8 +171,8 @@ public class LevelMasterBase : MonoBehaviour
         Vector2Int lastPlayCoord = BoardRestore();
         InitCells();
         //InitNarrative();
-        InitGoal();
-        InitRuleset();
+        UpdateGoal();
+        UpdateRuleset();
         InitTool();
         InitMiscs();
         AddtionalInit_Theme();
@@ -178,7 +180,11 @@ public class LevelMasterBase : MonoBehaviour
         //Below should be called as calledback when all key FX is handled
         Sequence seq = DOTween.Sequence();
         seq.AppendInterval(dConstants.VFX.CallbackAnimationDelayAfterPlay);
-        seq.AppendCallback(() => LevelInitCallback());
+        seq.AppendCallback(() => RewindCallback());
+    }
+    public void RewindCallback()
+    {
+        EnablePlayerInput();
     }
     public void LevelExit()
     {
@@ -233,14 +239,18 @@ public class LevelMasterBase : MonoBehaviour
     //init the right number of cells and placed them in the right location
     {
         hub.boardMaster.levelMaster = this;
-        hub.boardMaster.GenerateBoard_XbyY(levelData.initBoard.boardSize.x, levelData.initBoard.boardSize.y);
+        hub.boardMaster.GenerateBoard_XbyY(levelData.curBoard.boardSize.x, levelData.curBoard.boardSize.y);
+    }
+    public virtual void AdditionalGenerateBoard_Theme()
+    {
+        //this should always be theme-specific
     }
     public virtual void InitCells()
     //setup all cells one by one
     {
         for(int i = 0; i < hub.boardMaster.cells.Count; i++)
         {
-            DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if(temp_cellData != null)
             {
                 hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
@@ -310,7 +320,7 @@ public class LevelMasterBase : MonoBehaviour
     {
         hub.toolMaster.toolTitle.SetText(LocalizedAssetLookup.singleton.Translate(levelData.theme));
         hub.toolMaster.toolSubtitle.SetText("");
-        hub.toolMaster.toolDesc.SetText(string.Format("x{0}", levelData.initBoard.toolCount));
+        hub.toolMaster.toolDesc.SetText(string.Format("x{0}", levelData.curBoard.toolCount));
     }
     public virtual void InitMiscs()
     {

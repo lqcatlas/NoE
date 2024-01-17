@@ -19,6 +19,17 @@ public class LM_002_Coin : LevelMasterBase
         base.InitTool();
         hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(coinHub.toolDisplayName[levelData.curBoard.toolStatus]));
     }
+    public override void AdditionalGenerateBoard_Theme()
+    {
+        //clear old coin bgs
+        coinHub.coinBgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
+        List<Transform> oldBgs = coinHub.coinBgHolder.GetComponentsInChildren<Transform>().ToList();
+        oldBgs.Remove(coinHub.coinBgHolder.transform);
+        for (int i = 0; i < oldBgs.Count; i++)
+        {
+            Destroy(oldBgs[i].gameObject);
+        }
+    }
     public override void InitCells()
     {
         coinHub.coinTags = new List<KeyValuePair<CellMaster, GameObject>>();
@@ -30,18 +41,10 @@ public class LM_002_Coin : LevelMasterBase
         {
             Destroy(oldTags[i].gameObject);
         }
-        //clear old coin bgs
-        coinHub.coinBgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
-        List<Transform> oldBgs = coinHub.coinBgHolder.GetComponentsInChildren<Transform>().ToList();
-        oldBgs.Remove(coinHub.coinBgHolder.transform);
-        for (int i = 0; i < oldBgs.Count; i++)
-        {
-            Destroy(oldBgs[i].gameObject);
-        }
         //generate new coin tag
         for (int i = 0; i < hub.boardMaster.cells.Count; i++)
         {
-            DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if (temp_cellData != null)
             {
                 hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);

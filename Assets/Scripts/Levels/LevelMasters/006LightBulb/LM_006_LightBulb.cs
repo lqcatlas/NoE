@@ -37,7 +37,7 @@ public class LM_006_LightBulb : LevelMasterBase
         //generate new bgs
         for (int i = 0; i < hub.boardMaster.cells.Count; i++)
         {
-            DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if (temp_cellData != null)
             {
                 hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);

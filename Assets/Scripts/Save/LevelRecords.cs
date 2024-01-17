@@ -42,14 +42,14 @@ public class LevelRecords : ScriptableObject
     {
         if(uid % 100 == 1 && isThemeUnlocked(Mathf.CeilToInt(uid/100)))
         {
-            Debug.Log(string.Format("check level UID {0} in playable level, return true coz its first level", uid));
+            //Debug.Log(string.Format("check level UID {0} in playable level, return true coz its first level", uid));
             return true;
         }
         for (int i = 0; i < finishedLevels.Count; i++)
         {
             if(uid == finishedLevels[i] + 1)
             {
-                Debug.Log(string.Format("check level UID {0} in playable level, return true coz {1} is finished", uid, finishedLevels[i]));
+                //Debug.Log(string.Format("check level UID {0} in playable level, return true coz {1} is finished", uid, finishedLevels[i]));
                 return true;
             }
         }

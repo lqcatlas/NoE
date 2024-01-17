@@ -15,12 +15,16 @@ public class LM_001_Clock : LevelMasterBase
         base.GetObjectReferences(null);
         clockHub = _themeHub.GetComponent<LMHub_001_Clock>();
     }
+    public override void AdditionalGenerateBoard_Theme()
+    {
+
+    }
     public override void InitCells()
     {
         clockHub.runningClocks = new List<KeyValuePair<CellMaster, GameObject>>();
         clockHub.cellBgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
-        //clear old running clocks
-        List<Transform> oldBgs = clockHub.cellBgHolder.GetComponentsInChildren<Transform>().ToList();
+        //clear old running clock bgs
+        List<Transform> oldBgs = clockHub.cellBgHolder.GetComponentsInChildren<Transform>(true).ToList();
         oldBgs.Remove(clockHub.cellBgHolder.transform);
         for (int i = 0; i < oldBgs.Count; i++)
         {
@@ -29,7 +33,7 @@ public class LM_001_Clock : LevelMasterBase
         //generate new bgs
         for (int i = 0; i < hub.boardMaster.cells.Count; i++)
         {
-            DataCell temp_cellData = levelData.initBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
             if (temp_cellData != null)
             {
                 hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
