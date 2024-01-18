@@ -58,7 +58,8 @@ public class RuleLine : MonoBehaviour
 
         //icon.gameObject.SetActive(true);
         //icon.transform.DOScale(0f, shakeDelayAddition).From().SetDelay(delay);
-        tagGroup.transform.DOScale(0f, shakeDelayAddition).From().SetDelay(delay).OnStart(()=>tagGroup.SetActive(true));
+        tagGroup.transform.localScale = Vector3.zero;
+        tagGroup.transform.DOScale(1f, shakeDelayAddition).SetDelay(delay).OnStart(()=>tagGroup.SetActive(true));
 
         //text.transform.DOShakePosition(shakeDuration, 0.2f, 200, 90, false, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
         //text.transform.DOShakeRotation(shakeDuration, 5f, 200, 90, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);

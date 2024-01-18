@@ -72,9 +72,12 @@ public class AudioDraft : MonoBehaviour
             if (keynotes[index])
             {
                 AudioSource source = GetValidSFXSource();
-                source.clip = keynotes[index];
-                source.Play();
-                source.DOFade(0f, 0.3f).From();
+                if (source)
+                {
+                    source.clip = keynotes[index];
+                    source.Play();
+                    source.DOFade(0f, 0.3f).From();
+                }                
             }
         }
     }
