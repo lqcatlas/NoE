@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PopupMaster : MonoBehaviour
@@ -19,6 +20,9 @@ public class PopupMaster : MonoBehaviour
 
     public CurrencySet currencySet;
 
+    public TextMeshPro timeUsed;
+    public TextMeshPro stepUsed;
+
     [Header("Parent")]
     public LevelMasterBase levelMaster;
     public void RegisterLevelMaster(LevelMasterBase _master)
@@ -31,10 +35,12 @@ public class PopupMaster : MonoBehaviour
         victoryPopupGroup.SetActive(false);
         failurePopupGroup.SetActive(false);
     }
-    public void ShowVictoryPopup(bool isHard)
+    public void ShowVictoryPopup(bool isHard, string time, string step)
     {
         popupMask.SetActive(true);
         victoryPopupGroup.SetActive(true);
+        timeUsed.SetText(string.Format("<sprite name=ui_time_sign> {0}", time));
+        stepUsed.SetText(string.Format("<sprite name=ui_step_sign> {0}", step));
         star.gameObject.SetActive(true);
         gem.gameObject.SetActive(true);
         starReward.SetActive(!isHard);
@@ -77,7 +83,7 @@ public class PopupMaster : MonoBehaviour
         Sequence seq = DOTween.Sequence();
         seq.Append(gemVFX.transform.DOMove(currencySet.gemIcon.transform.position, dConstants.UI.StandardizedVFXAnimDuration).SetEase(Ease.InSine));
         seq.AppendCallback(() => currencySet.gemIcon.SetActive(true));
-        seq.AppendCallback(() => currencySet.gemIcon.transform.DOScale(1.5f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetRelative(true).SetLoops(2, LoopType.Yoyo));
+        seq.AppendCallback(() => currencySet.gemIcon.transform.DOScale(1.5f, dConstants.UI.StandardizedBtnAnimDuration/2f).SetRelative(true).SetLoops(2, LoopType.Yoyo));
         seq.AppendCallback(() => currencySet.gemCount.gameObject.SetActive(true));
         seq.AppendCallback(() => Destroy(gemVFX));
         seq.AppendCallback(() => currencySet.GemCountAdjustAnimation(1));

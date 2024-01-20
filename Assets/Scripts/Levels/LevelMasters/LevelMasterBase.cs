@@ -30,6 +30,8 @@ public class LevelMasterBase : MonoBehaviour
     public LevelStatus status = LevelStatus.PLAYBLE;
 
     public List<NarrativeLineStatus> lineStatus = new List<NarrativeLineStatus>();
+
+    public float levelPlayTime;
     //Objects controlled by LevelMaster 
     [Header("Obj Hub")]
     public LevelObjHub hub;
@@ -62,6 +64,7 @@ public class LevelMasterBase : MonoBehaviour
             SuccessTrigger = false;
             WinALevel();
         }
+        levelPlayTime += Time.deltaTime;
     }
     //Key Actions assembling from atomic functions
     public void ObjectInit(GameObject _themeHub = null)
@@ -105,6 +108,7 @@ public class LevelMasterBase : MonoBehaviour
         ShowGoalSection();
         AnimateRuleset();
         DelayedInit_Theme();
+        levelPlayTime = 0;
     }
     public void Play(Vector2Int coord)
     {
@@ -194,7 +198,7 @@ public class LevelMasterBase : MonoBehaviour
     }
     public void StartNextLevel()
     {
-        LevelSelector.singleton.FinishLevel(levelData.levelUID, levelData.isHard);
+        //LevelSelector.singleton.FinishLevel(levelData.levelUID, levelData.isHard);
         hub.miscMaster.ScreenMaskFadeIn();
         bool result = false;
         Sequence seq = DOTween.Sequence();
@@ -481,7 +485,12 @@ public class LevelMasterBase : MonoBehaviour
     {
         status = LevelStatus.END;
         //hub.goalMaster.nextBtn.gameObject.SetActive(true);
-        hub.popupMaster.ShowVictoryPopup(levelData.isHard);
+        LevelSelector.singleton.FinishLevel(levelData.levelUID, levelData.isHard);
+        string finalPlayTime = string.Format("{0}:{1}:{2}"
+            , Mathf.FloorToInt(levelPlayTime / 60).ToString("00")
+            , (Mathf.FloorToInt(levelPlayTime) % 60).ToString("00")
+            , Mathf.RoundToInt((levelPlayTime - Mathf.FloorToInt(levelPlayTime)) * 60f).ToString("00"));
+        hub.popupMaster.ShowVictoryPopup(levelData.isHard, finalPlayTime, (levelData.initBoard.toolCount - levelData.curBoard.toolCount).ToString());
         /*if (!result)
         {
             Debug.Log(string.Format("Theme ends. Plz go back to theme selector"));

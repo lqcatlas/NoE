@@ -5922,6 +5922,8 @@ MonoBehaviour:
   gem: {fileID: 3209631547116360789}
   rewindGroup: {fileID: 8567617282191524281}
   currencySet: {fileID: 6871699901888995365}
+  timeUsed: {fileID: 4551997417981350252}
+  stepUsed: {fileID: 7899188308493080166}
   levelMaster: {fileID: 0}
 --- !u!1 &9188252853349018065
 GameObject:
