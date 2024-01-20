@@ -191,10 +191,7 @@ public class ThemePhotoGroup : MonoBehaviour
         {
             if (themeData.unlockCost <= LevelSelector.singleton.playerLevelRecords.tokens)
             {
-                //LevelSelector.singleton.UnlockTheme(themeData.themeUID, themeData.unlockCost);
-                //enter hidden obj
-                HiddenObjectLauncher.singleton.LaunchHiddenObjectPage(themeData);
-                LevelSelector.singleton.CloseSelector();
+                GoToHiddenObject();
             }
         }
         else if(curStatus == ThemePhotoStatus.unlocked || curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect)
@@ -221,7 +218,18 @@ public class ThemePhotoGroup : MonoBehaviour
         LevelSelector.singleton.DesignerNoteBox.ShowBox(_title, _desc, _prompt, _sprt);
     }
     #endregion
+    void GoToHiddenObject()
+    {
+        //LevelSelector.singleton.UnlockTheme(themeData.themeUID, themeData.unlockCost);
+        //enter hidden obj
+        GameObject obj = Instantiate(SelectorTransitionFX, transform);
+        obj.transform.parent = VFXHolder.singleton.transform;
+        Sequence seq = DOTween.Sequence();
+        seq.AppendInterval(dConstants.VFX.SelectorToLevelAnimTransitionPhase1);
+        seq.AppendCallback(() => HiddenObjectLauncher.singleton.LaunchHiddenObjectPage(themeData));
+        seq.AppendCallback(() => LevelSelector.singleton.CloseSelector());
 
+    }
     void GoToLatestLevel()
     {
         int targetLevelUID = GetLatestLevelUID();

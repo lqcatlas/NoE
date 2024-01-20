@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 786667025257563635, guid: 6d519e042bbd16943a358fb74fef1845, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -3.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 786667025257563635, guid: 6d519e042bbd16943a358fb74fef1845, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 5771900889420048243, guid: 6d519e042bbd16943a358fb74fef1845, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -49,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7368009482608765854, guid: 6d519e042bbd16943a358fb74fef1845, type: 3}
       propertyPath: m_Name
-      value: HiddenObjPage_004_Sushi
+      value: HiddenObj_004_Sushi
       objectReference: {fileID: 0}
     - target: {fileID: 7368009482608765855, guid: 6d519e042bbd16943a358fb74fef1845, type: 3}
       propertyPath: m_RootOrder

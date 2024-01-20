@@ -25,6 +25,8 @@ public class MiscMaster : MonoBehaviour
     public GameObject loseBanner;
     public TextMeshPro retryHint;
     public TextMeshPro newthemeHint;
+
+    
     [Header("Parent")]
     public LevelMasterBase levelMaster;
 

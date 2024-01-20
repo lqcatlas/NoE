@@ -15,8 +15,10 @@ public class HiddenObjectPage : MonoBehaviour
     public HiddenObjectStatus curStatus = HiddenObjectStatus.close;
 
     [Header("Animation Params")]
-    public float ANIM_DURATION;
+    public float TRANSIT_ANIM_DURATION;
+    public float FOUND_ANIM_DURATION;
     public float HINT_DELAY;
+    public Transform iconDestination;
     [Header("Children Objs")]
     public GameObject objectGroup;
     public GameObject riddleGroup;
@@ -27,6 +29,7 @@ public class HiddenObjectPage : MonoBehaviour
     public TextMeshPro riddleTitle;
     public TextMeshPro riddleDesc;
     public GameObject themeIcon;
+    public TextMeshPro themeName;
     public GameObject hintRing;
 
     [SerializeField] bool displayOn;
@@ -45,6 +48,7 @@ public class HiddenObjectPage : MonoBehaviour
         }
         riddleTitle.SetText(LocalizedAssetLookup.singleton.Translate("@Loc=ui_hiddenobject_riddletitle@@"));
         riddleDesc.SetText(LocalizedAssetLookup.singleton.Translate(themeData.hint));
+        themeName.SetText(LocalizedAssetLookup.singleton.Translate(themeData.themeTitle));
         hintTimer = 0;
         themeIcon.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
         hintRing.SetActive(false);
@@ -87,17 +91,22 @@ public class HiddenObjectPage : MonoBehaviour
             //unlock given theme
             LevelSelector.singleton.UnlockTheme(themeData.themeUID, themeData.unlockCost);
             //play found animation. Then transit to level
-            themeIcon.GetComponent<SpriteRenderer>().DOFade(1f, ANIM_DURATION).OnComplete(() => StartLevelDelayed());
-            photo.GetComponent<photoVFXCtrl>().ZoomIn(ANIM_DURATION);
-            photo.GetComponent<photoVFXCtrl>().Replace(ANIM_DURATION);
+            photo.GetComponent<photoVFXCtrl>().ZoomIn(FOUND_ANIM_DURATION);
+            photo.GetComponent<photoVFXCtrl>().Replace(FOUND_ANIM_DURATION);
+            //theme icon appear and then fly to target location
+            themeName.DOFade(1f, FOUND_ANIM_DURATION / 2f);
+            themeIcon.GetComponent<SpriteRenderer>().DOFade(1f, FOUND_ANIM_DURATION / 2f);
+            themeIcon.transform.DOMove(iconDestination.position, TRANSIT_ANIM_DURATION).SetDelay(FOUND_ANIM_DURATION / 2f).SetEase(Ease.InSine);
+            themeIcon.transform.DOScale(1.2f, dConstants.UI.StandardizedBtnAnimDuration).SetDelay(TRANSIT_ANIM_DURATION + FOUND_ANIM_DURATION / 2f);
+            themeIcon.GetComponent<SpriteRenderer>().DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).SetDelay(TRANSIT_ANIM_DURATION + FOUND_ANIM_DURATION / 2f).OnComplete(() => StartLevelDelayed());
         }
     }
     void StartLevelDelayed()
     {
-        LevelLauncher.singleton.LaunchLevelByUID(themeData.levels[0].levelUID);
         riddleGroup.SetActive(false);
         objectGroup.SetActive(false);
         photo.GetComponent<photoVFXCtrl>().ReduceOffsetMovement();
+        LevelLauncher.singleton.LaunchLevelByUID(themeData.levels[0].levelUID);
     }
     public void OnCloseClick()
     {

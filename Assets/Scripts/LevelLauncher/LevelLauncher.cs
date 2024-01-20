@@ -54,7 +54,7 @@ public class LevelLauncher : MonoBehaviour
     void LoadAllLevelSetups()
     {
         levelSetupTable = Resources.LoadAll<SheetItem_LevelSetup>("DataFromCSV/LevelSetup").ToList();
-        Debug.Log(string.Format("{0} level setups loaded from setup data folder", levelSetupTable.Count));
+        //Debug.Log(string.Format("{0} level setups loaded from setup data folder", levelSetupTable.Count));
     }
     void ClearExistingLevel()
     {

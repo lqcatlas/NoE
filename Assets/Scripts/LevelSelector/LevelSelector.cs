@@ -34,8 +34,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     [Header("Children Objs")]
     [SerializeField] GameObject page;
     [SerializeField] Transform nodeParent;
-    [SerializeField] TextMeshPro curStarCount;
-    [SerializeField] TextMeshPro gemCount;
+    [SerializeField] CurrencySet currencySet;
     public MsgBox DesignerNoteBox;
 
     public void GoToSelector()
@@ -145,7 +144,8 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             Debug.LogError(string.Format("Selector Token Count Reach invalid number:{0}.", playerLevelRecords.tokens));
         }
-        curStarCount.SetText(playerLevelRecords.tokens.ToString());
+        currencySet.curStarCount.SetText(playerLevelRecords.tokens.ToString());
+        currencySet.StarCountAdjustAnimation(count);
     }
     void TokenSpent(int count)
     {
@@ -155,7 +155,8 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             Debug.LogError(string.Format("Selector Token Count Reacn invalid number:{0}.", playerLevelRecords.tokens));
         }
-        curStarCount.SetText(playerLevelRecords.tokens.ToString());
+        currencySet.curStarCount.SetText(playerLevelRecords.tokens.ToString());
+        currencySet.StarCountAdjustAnimation(-count);
     }
     void GemEarned(int count)
     {
@@ -164,7 +165,8 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             Debug.LogError(string.Format("Selector Token Count Reach invalid number:{0}.", playerLevelRecords.tokens));
         }
-        gemCount.SetText(playerLevelRecords.gems.ToString());
+        currencySet.gemCount.SetText(playerLevelRecords.gems.ToString());
+        currencySet.GemCountAdjustAnimation(count);
     }
     void NodeParentInit()
     {

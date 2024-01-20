@@ -15,8 +15,9 @@ public class PopupMaster : MonoBehaviour
     public GameObject gemReward;
     public GameObject star;
     public GameObject gem;
-
     public GameObject rewindGroup;
+
+    public CurrencySet currencySet;
 
     [Header("Parent")]
     public LevelMasterBase levelMaster;
@@ -34,6 +35,8 @@ public class PopupMaster : MonoBehaviour
     {
         popupMask.SetActive(true);
         victoryPopupGroup.SetActive(true);
+        star.gameObject.SetActive(true);
+        gem.gameObject.SetActive(true);
         starReward.SetActive(!isHard);
         gemReward.SetActive(isHard);
         popupMask.GetComponent<SpriteRenderer>().DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).From();
@@ -52,10 +55,37 @@ public class PopupMaster : MonoBehaviour
 
     public void CollectStar()
     {
-        levelMaster.StartNextLevel();
+        GameObject starVFX = Instantiate(star, star.transform.parent);
+        star.SetActive(false);
+        Sequence seq = DOTween.Sequence();
+        seq.Append(starVFX.transform.DOMove(currencySet.starIcon.transform.position, dConstants.UI.StandardizedVFXAnimDuration).SetEase(Ease.InSine));
+        seq.AppendCallback(() => currencySet.starIcon.SetActive(true));
+        seq.AppendCallback(() => currencySet.starIcon.transform.DOScale(1.5f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetRelative(true).SetLoops(2, LoopType.Yoyo));
+        seq.AppendCallback(() => currencySet.curStarCount.gameObject.SetActive(true));
+        seq.AppendCallback(() => Destroy(starVFX));
+        seq.AppendCallback(() => currencySet.StarCountAdjustAnimation(1));
+        seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration + dConstants.UI.StandardizedVFXAnimDuration);
+        seq.AppendCallback(() => currencySet.starIcon.SetActive(false));
+        seq.AppendCallback(() => currencySet.curStarCount.gameObject.SetActive(false));
+        seq.AppendCallback(() => levelMaster.StartNextLevel());
+        
     }
     public void CollectGem()
     {
-        levelMaster.StartNextLevel();
+        GameObject gemVFX = Instantiate(gem, gem.transform.parent);
+        gem.SetActive(false);
+        Sequence seq = DOTween.Sequence();
+        seq.Append(gemVFX.transform.DOMove(currencySet.gemIcon.transform.position, dConstants.UI.StandardizedVFXAnimDuration).SetEase(Ease.InSine));
+        seq.AppendCallback(() => currencySet.gemIcon.SetActive(true));
+        seq.AppendCallback(() => currencySet.gemIcon.transform.DOScale(1.5f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetRelative(true).SetLoops(2, LoopType.Yoyo));
+        seq.AppendCallback(() => currencySet.gemCount.gameObject.SetActive(true));
+        seq.AppendCallback(() => Destroy(gemVFX));
+        seq.AppendCallback(() => currencySet.GemCountAdjustAnimation(1));
+        seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration + dConstants.UI.StandardizedVFXAnimDuration);
+        seq.AppendCallback(() => currencySet.gemIcon.SetActive(false));
+        seq.AppendCallback(() => currencySet.gemCount.gameObject.SetActive(false));
+        seq.AppendCallback(() => levelMaster.StartNextLevel());
+
     }
+
 }
