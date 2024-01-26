@@ -10,25 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 006_03_lightbulb3
+  m_Name: 006_11_lightbulb11
   m_EditorClassIdentifier: 
-  levelUID: 603
+  levelUID: 611
   themeIndex: 6
-  levelIndex: 3
-  nextLevelIndex: 604
-  previousLevel: {fileID: 11400000, guid: e5bc1e4d4aa26a74da027e33181a4e08, type: 2}
-  nextLevel: {fileID: 11400000, guid: b3acfc2641c28274497d5dc03d07b633, type: 2}
+  levelIndex: 11
+  nextLevelIndex: 612
+  previousLevel: {fileID: 11400000, guid: 764ebf858bb46ac4a8172a00cd549de1, type: 2}
+  nextLevel: {fileID: 11400000, guid: c8d1f10ed916f5343bec6aaab0211ab2, type: 2}
   theme: '@Loc=themename_tm6@@'
-  title: '@Loc=levelname_lv603@@'
-  newInitNarrative: '@Loc=narrative_tm6_ln3@@'
+  title: '@Loc=levelname_lv602@@'
+  newInitNarrative: '@Loc=narrative_tm6_ln2@@'
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm6_ln1@@'
-  - '@Loc=narrative_tm6_ln2@@'
-  goal: '@Loc=goal_lv603@@'
+  goal: '@Loc=goal_lv602@@'
   ruleset:
-  - tag: 2
-    ruleDesc: '@Loc=rule1_lv603@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule1_lv601@@'
   - tag: 0
     ruleDesc: '@Loc=rule2_lv601@@'
   - tag: 0
@@ -36,19 +35,35 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 1
   initBoard:
-    boardSize: {x: 2, y: 2}
+    boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 1
+      value: 3
       status: 0
     - coord: {x: 1, y: 0}
-      value: 3
+      value: 1
+      status: 0
+    - coord: {x: 2, y: 0}
+      value: 4
       status: 0
     - coord: {x: 0, y: 1}
       value: 4
       status: 0
     - coord: {x: 1, y: 1}
+      value: 1
+      status: 0
+    - coord: {x: 2, y: 1}
+      value: 4
+      status: 0
+    - coord: {x: 0, y: 2}
+      value: 1
+      status: 0
+    - coord: {x: 1, y: 2}
       value: 2
       status: 0
-    toolCount: 8
+    - coord: {x: 2, y: 2}
+      value: 3
+      status: 0
+    toolCount: 10
     toolStatus: 0
+    curPlayCoord: {x: -1, y: -1}

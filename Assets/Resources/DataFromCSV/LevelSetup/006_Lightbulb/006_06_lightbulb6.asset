@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
+  m_Name: 006_06_lightbulb6
+  m_EditorClassIdentifier: 
+  levelUID: 606
+  themeIndex: 6
+  levelIndex: 6
+  nextLevelIndex: 607
+  previousLevel: {fileID: 11400000, guid: 1757f531edd13b940b06691a4489695c, type: 2}
+  nextLevel: {fileID: 11400000, guid: 5311185c1a5eca54582e8dee0692938f, type: 2}
+  theme: '@Loc=themename_tm6@@'
+  title: '@Loc=levelname_lv606@@'
+  newInitNarrative: '@Loc=narrative_tm6_ln7@@'
+  newPlayNarratives:
+  - '@Loc=narrative_tm6_ln8@@'
+  oldNarratives:
+  - '@Loc=narrative_tm6_ln1@@'
+  - '@Loc=narrative_tm6_ln2@@'
+  - '@Loc=narrative_tm6_ln3@@'
+  - '@Loc=narrative_tm6_ln4@@'
+  - '@Loc=narrative_tm6_ln5@@'
+  - '@Loc=narrative_tm6_ln6@@'
+  goal: '@Loc=goal_lv606@@'
+  ruleset:
+  - tag: 0
+    ruleDesc: '@Loc=rule1_lv603@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule2_lv601@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule3_lv601@@'
+  isHard: 0
+  allowRewind: 1
+  initBoard:
+    boardSize: {x: 2, y: 2}
+    cells:
+    - coord: {x: 0, y: 0}
+      value: 1
+      status: 0
+    - coord: {x: 1, y: 0}
+      value: 3
+      status: 0
+    - coord: {x: 0, y: 1}
+      value: 4
+      status: 0
+    - coord: {x: 1, y: 1}
+      value: 2
+      status: 0
+    toolCount: 8
+    toolStatus: 0
+    curPlayCoord: {x: -1, y: -1}

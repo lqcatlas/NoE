@@ -63,9 +63,9 @@ public class LM_006_LightBulb : LevelMasterBase
     {
         Vector2Int numberRange = new Vector2Int(1, 4);
         //cell number rule
-        //lv 1
+        //lv 1-4
         //cell +1
-        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 2)
+        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 4)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -77,9 +77,9 @@ public class LM_006_LightBulb : LevelMasterBase
 
             }
         }
-        //lv 3+
-        //cross cells +1
-        else if (levelData.levelIndex >= 3 && levelData.levelIndex <= 8)
+        //lv 5+
+        //cross-shape cells +1
+        else if (levelData.levelIndex >= 5)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -265,11 +265,18 @@ public class LM_006_LightBulb : LevelMasterBase
         /*
         点亮1盏灯泡
         点亮5盏灯泡
-        点亮4盏灯泡
+        点亮全部灯泡
+        点亮全部灯泡
+        5 点亮全部灯泡
+        点亮全部灯泡
+        点亮全部灯泡
         点亮6盏灯泡
-        一次性点亮4盏灯泡
-        一次性点亮8盏灯泡
-        用完所有灯泡，<br>保持点亮的灯泡<br>在4-6盏之间
+        点亮6盏灯泡
+        10 一次将3盏原本熄灭的灯泡点亮
+        一次将4盏原本熄灭的灯泡点亮
+        用掉所有灯泡并保持点亮的灯数量在4-6之间
+        点亮全部灯泡
+        一次将8盏原本熄灭的灯泡点亮
         点亮全部灯泡
         */
         bool result = false;
@@ -283,25 +290,56 @@ public class LM_006_LightBulb : LevelMasterBase
         }
         else if (levelData.levelIndex == 3)
         {
-            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 4);
+            return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 6);
+            return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
+            
         }
         else if (levelData.levelIndex == 5)
         {
-            return Count_SwictchToOn >= 4;
+            return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
+            
         }
         else if (levelData.levelIndex == 6)
         {
-            return Count_SwictchToOn >= 8;
+            return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
+            
         }
         else if (levelData.levelIndex == 7)
         {
-            return levelData.curBoard.toolCount == 0;
+            return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
         }
         else if (levelData.levelIndex == 8)
+        {
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 6);
+        }
+        else if (levelData.levelIndex == 9)
+        {
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 6);
+        }
+        else if (levelData.levelIndex == 10)
+        {
+            return Count_SwictchToOn >= 3;
+        }
+        else if (levelData.levelIndex == 11)
+        {
+            return Count_SwictchToOn >= 4;
+        }
+        else if (levelData.levelIndex == 12)
+        {
+            return levelData.curBoard.toolCount == 0;
+        }
+        else if (levelData.levelIndex == 13)
+        {
+            return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
+        }
+        else if (levelData.levelIndex == 14)
+        {
+            return Count_SwictchToOn >= 8;
+        }
+        else if (levelData.levelIndex == 15)
         {
             return BoardCalculation.CountStatusX_All(levelData.curBoard, 1);
         }
@@ -318,7 +356,7 @@ public class LM_006_LightBulb : LevelMasterBase
             return true;
         }
         int lightOnCount = BoardCalculation.CountStatusX(levelData.curBoard, 1);
-        if (levelData.levelIndex == 7)
+        if (levelData.levelIndex == 12)
         {
             if (lightOnCount >= 4 && lightOnCount <= 6)
             {

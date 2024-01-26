@@ -10,23 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 006_04_lightbulb4
+  m_Name: 006_05_lightbulb5
   m_EditorClassIdentifier: 
-  levelUID: 604
+  levelUID: 605
   themeIndex: 6
-  levelIndex: 4
-  nextLevelIndex: 605
-  previousLevel: {fileID: 11400000, guid: c8d1f10ed916f5343bec6aaab0211ab2, type: 2}
-  nextLevel: {fileID: 11400000, guid: 1757f531edd13b940b06691a4489695c, type: 2}
+  levelIndex: 5
+  nextLevelIndex: 606
+  previousLevel: {fileID: 11400000, guid: b3acfc2641c28274497d5dc03d07b633, type: 2}
+  nextLevel: {fileID: 11400000, guid: 8740706cf0edd174b88e292ab5233d9c, type: 2}
   theme: '@Loc=themename_tm6@@'
-  title: '@Loc=levelname_lv604@@'
-  newInitNarrative: '@Loc=narrative_tm6_ln4@@'
-  newPlayNarratives: []
+  title: '@Loc=levelname_lv605@@'
+  newInitNarrative: '@Loc=narrative_tm6_ln5@@'
+  newPlayNarratives:
+  - '@Loc=narrative_tm6_ln6@@'
   oldNarratives:
   - '@Loc=narrative_tm6_ln1@@'
   - '@Loc=narrative_tm6_ln2@@'
   - '@Loc=narrative_tm6_ln3@@'
-  goal: '@Loc=goal_lv604@@'
+  - '@Loc=narrative_tm6_ln4@@'
+  goal: '@Loc=goal_lv605@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv603@@'
@@ -37,16 +39,13 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 1
   initBoard:
-    boardSize: {x: 3, y: 3}
+    boardSize: {x: 2, y: 2}
     cells:
     - coord: {x: 0, y: 0}
-      value: 3
+      value: 1
       status: 0
     - coord: {x: 1, y: 0}
       value: 1
-      status: 0
-    - coord: {x: 2, y: 0}
-      value: 4
       status: 0
     - coord: {x: 0, y: 1}
       value: 4
@@ -54,17 +53,6 @@ MonoBehaviour:
     - coord: {x: 1, y: 1}
       value: 1
       status: 0
-    - coord: {x: 2, y: 1}
-      value: 4
-      status: 0
-    - coord: {x: 0, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 1, y: 2}
-      value: 2
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 3
-      status: 0
-    toolCount: 12
+    toolCount: 3
     toolStatus: 0
+    curPlayCoord: {x: -1, y: -1}
