@@ -35,6 +35,7 @@ MonoBehaviour:
   - '@Loc=narrative_tm6_ln10@@'
   - '@Loc=narrative_tm6_ln11@@'
   - '@Loc=narrative_tm6_ln12@@'
+  - '@Loc=narrative_tm6_ln13@@'
   levels:
   - {fileID: 11400000, guid: 764ebf858bb46ac4a8172a00cd549de1, type: 2}
   - {fileID: 11400000, guid: e5bc1e4d4aa26a74da027e33181a4e08, type: 2}
@@ -44,5 +45,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8740706cf0edd174b88e292ab5233d9c, type: 2}
   - {fileID: 11400000, guid: 5311185c1a5eca54582e8dee0692938f, type: 2}
   - {fileID: 11400000, guid: bf8dcf9c498c6864babc45ffe4d1ee4e, type: 2}
-  TotalStars: 7
-  TotalGems: 1
+  - {fileID: 11400000, guid: dfa2d5d2c253fd049a7fc527ff7ebe56, type: 2}
+  - {fileID: 11400000, guid: a655ba3e70f18304b9dfa00d2bc66b55, type: 2}
+  - {fileID: 11400000, guid: 8f759e3b1cd9ffd479602a0002f03620, type: 2}
+  - {fileID: 11400000, guid: dace0b191de63c84fb6fca638caa7102, type: 2}
+  - {fileID: 11400000, guid: 5e53a8cb0f86b2241b6c104fdcbc5dd5, type: 2}
+  - {fileID: 11400000, guid: 4351a72aee02780479f6c8752eed9437, type: 2}
+  - {fileID: 11400000, guid: 241a2b8499cecfe49ad7de73ecf87538, type: 2}
+  TotalStars: 12
+  TotalGems: 3

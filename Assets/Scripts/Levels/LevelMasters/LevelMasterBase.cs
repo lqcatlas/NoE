@@ -279,9 +279,12 @@ public class LevelMasterBase : MonoBehaviour
                 hub.narrativeMaster.lines[i].SetText("");
             }
         }
-        if(levelData.newInitNarrative.Length > 0)
+        if (levelData.newInitNarrative != null)
         {
-            hub.narrativeMaster.TypeALine(levelData.newInitNarrative);
+            if (levelData.newInitNarrative.Length > 0)
+            {
+                hub.narrativeMaster.TypeALine(levelData.newInitNarrative);
+            }
         }
         lineStatus.Clear();
         if (levelData.newPlayNarratives.Count > 0)
@@ -485,12 +488,12 @@ public class LevelMasterBase : MonoBehaviour
     {
         status = LevelStatus.END;
         //hub.goalMaster.nextBtn.gameObject.SetActive(true);
-        LevelSelector.singleton.FinishLevel(levelData.levelUID, levelData.isHard);
+        bool isNew = LevelSelector.singleton.FinishLevel(levelData.levelUID, levelData.isHard);
         string finalPlayTime = string.Format("{0}:{1}:{2}"
             , Mathf.FloorToInt(levelPlayTime / 60).ToString("00")
             , (Mathf.FloorToInt(levelPlayTime) % 60).ToString("00")
             , Mathf.RoundToInt((levelPlayTime - Mathf.FloorToInt(levelPlayTime)) * 60f).ToString("00"));
-        hub.popupMaster.ShowVictoryPopup(levelData.isHard, finalPlayTime, (levelData.initBoard.toolCount - levelData.curBoard.toolCount).ToString());
+        hub.popupMaster.ShowVictoryPopup(isNew, levelData.isHard, finalPlayTime, (levelData.initBoard.toolCount - levelData.curBoard.toolCount).ToString());
         /*if (!result)
         {
             Debug.Log(string.Format("Theme ends. Plz go back to theme selector"));

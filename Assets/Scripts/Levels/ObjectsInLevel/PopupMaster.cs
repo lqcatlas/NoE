@@ -23,6 +23,8 @@ public class PopupMaster : MonoBehaviour
     public TextMeshPro timeUsed;
     public TextMeshPro stepUsed;
 
+    private bool isNewLevelFinished;
+
     [Header("Parent")]
     public LevelMasterBase levelMaster;
     public void RegisterLevelMaster(LevelMasterBase _master)
@@ -35,7 +37,7 @@ public class PopupMaster : MonoBehaviour
         victoryPopupGroup.SetActive(false);
         failurePopupGroup.SetActive(false);
     }
-    public void ShowVictoryPopup(bool isHard, string time, string step)
+    public void ShowVictoryPopup(bool isNew, bool isHard, string time, string step)
     {
         popupMask.SetActive(true);
         victoryPopupGroup.SetActive(true);
@@ -49,6 +51,8 @@ public class PopupMaster : MonoBehaviour
         victoryPopupGroup.transform.DOMoveY(-15f, dConstants.UI.StandardizedBtnAnimDuration).From(true, true);
         star.transform.DOScale(0f, dConstants.UI.StandardizedBtnAnimDuration * 2f).From().SetEase(Ease.OutBounce).SetDelay(dConstants.UI.StandardizedBtnAnimDuration);
         gem.transform.DOScale(0f, dConstants.UI.StandardizedBtnAnimDuration * 2f).From().SetEase(Ease.OutBounce).SetDelay(dConstants.UI.StandardizedBtnAnimDuration);
+
+        isNewLevelFinished = isNew;
     }
     public void ShowFailurePopup(bool isRewind)
     {
@@ -61,37 +65,55 @@ public class PopupMaster : MonoBehaviour
 
     public void CollectStar()
     {
-        GameObject starVFX = Instantiate(star, star.transform.parent);
-        star.SetActive(false);
-        Sequence seq = DOTween.Sequence();
-        seq.Append(starVFX.transform.DOMove(currencySet.starIcon.transform.position, dConstants.UI.StandardizedVFXAnimDuration).SetEase(Ease.InSine));
-        seq.AppendCallback(() => currencySet.starIcon.SetActive(true));
-        seq.AppendCallback(() => currencySet.starIcon.transform.DOScale(1.5f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetRelative(true).SetLoops(2, LoopType.Yoyo));
-        seq.AppendCallback(() => currencySet.curStarCount.gameObject.SetActive(true));
-        seq.AppendCallback(() => Destroy(starVFX));
-        seq.AppendCallback(() => currencySet.StarCountAdjustAnimation(1));
-        seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration + dConstants.UI.StandardizedVFXAnimDuration);
-        seq.AppendCallback(() => currencySet.starIcon.SetActive(false));
-        seq.AppendCallback(() => currencySet.curStarCount.gameObject.SetActive(false));
-        seq.AppendCallback(() => levelMaster.StartNextLevel());
+        if (isNewLevelFinished)
+        {
+            GameObject starVFX = Instantiate(star, star.transform.parent);
+            star.SetActive(false);
+            Sequence seq = DOTween.Sequence();
+            seq.Append(starVFX.transform.DOMove(currencySet.starIcon.transform.position, dConstants.UI.StandardizedVFXAnimDuration).SetEase(Ease.InSine));
+            seq.AppendCallback(() => currencySet.starIcon.SetActive(true));
+            seq.AppendCallback(() => currencySet.starIcon.transform.DOScale(1.5f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetRelative(true).SetLoops(2, LoopType.Yoyo));
+            seq.AppendCallback(() => currencySet.curStarCount.gameObject.SetActive(true));
+            seq.AppendCallback(() => Destroy(starVFX));
+            seq.AppendCallback(() => currencySet.StarCountAdjustAnimation(1));
+            seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration + dConstants.UI.StandardizedVFXAnimDuration);
+            seq.AppendCallback(() => currencySet.starIcon.SetActive(false));
+            seq.AppendCallback(() => currencySet.curStarCount.gameObject.SetActive(false));
+            seq.AppendCallback(() => levelMaster.StartNextLevel());
+        }
+        else
+        {
+            star.SetActive(false);
+            Sequence seq = DOTween.Sequence();
+            seq.AppendCallback(() => levelMaster.StartNextLevel());
+        }
         
     }
     public void CollectGem()
     {
-        GameObject gemVFX = Instantiate(gem, gem.transform.parent);
-        gem.SetActive(false);
-        Sequence seq = DOTween.Sequence();
-        seq.Append(gemVFX.transform.DOMove(currencySet.gemIcon.transform.position, dConstants.UI.StandardizedVFXAnimDuration).SetEase(Ease.InSine));
-        seq.AppendCallback(() => currencySet.gemIcon.SetActive(true));
-        seq.AppendCallback(() => currencySet.gemIcon.transform.DOScale(1.5f, dConstants.UI.StandardizedBtnAnimDuration/2f).SetRelative(true).SetLoops(2, LoopType.Yoyo));
-        seq.AppendCallback(() => currencySet.gemCount.gameObject.SetActive(true));
-        seq.AppendCallback(() => Destroy(gemVFX));
-        seq.AppendCallback(() => currencySet.GemCountAdjustAnimation(1));
-        seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration + dConstants.UI.StandardizedVFXAnimDuration);
-        seq.AppendCallback(() => currencySet.gemIcon.SetActive(false));
-        seq.AppendCallback(() => currencySet.gemCount.gameObject.SetActive(false));
-        seq.AppendCallback(() => levelMaster.StartNextLevel());
+        if (isNewLevelFinished)
+        {
 
+            GameObject gemVFX = Instantiate(gem, gem.transform.parent);
+            gem.SetActive(false);
+            Sequence seq = DOTween.Sequence();
+            seq.Append(gemVFX.transform.DOMove(currencySet.gemIcon.transform.position, dConstants.UI.StandardizedVFXAnimDuration).SetEase(Ease.InSine));
+            seq.AppendCallback(() => currencySet.gemIcon.SetActive(true));
+            seq.AppendCallback(() => currencySet.gemIcon.transform.DOScale(1.5f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetRelative(true).SetLoops(2, LoopType.Yoyo));
+            seq.AppendCallback(() => currencySet.gemCount.gameObject.SetActive(true));
+            seq.AppendCallback(() => Destroy(gemVFX));
+            seq.AppendCallback(() => currencySet.GemCountAdjustAnimation(1));
+            seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration + dConstants.UI.StandardizedVFXAnimDuration);
+            seq.AppendCallback(() => currencySet.gemIcon.SetActive(false));
+            seq.AppendCallback(() => currencySet.gemCount.gameObject.SetActive(false));
+            seq.AppendCallback(() => levelMaster.StartNextLevel());
+        }
+        else
+        {
+            star.SetActive(false);
+            Sequence seq = DOTween.Sequence();
+            seq.AppendCallback(() => levelMaster.StartNextLevel());
+        }
     }
 
 }

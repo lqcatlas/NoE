@@ -22,7 +22,7 @@ MonoBehaviour:
   title: '@Loc=levelname_lv208@@'
   newInitNarrative: '@Loc=narrative_tm2_ln13@@'
   newPlayNarratives:
-  - missing narrative line
+  - '@Loc=narrative_tm2_ln14@@'
   oldNarratives:
   - '@Loc=narrative_tm2_ln1@@'
   - '@Loc=narrative_tm2_ln2@@'
@@ -101,3 +101,4 @@ MonoBehaviour:
       status: 0
     toolCount: 76
     toolStatus: 0
+    curPlayCoord: {x: -1, y: -1}

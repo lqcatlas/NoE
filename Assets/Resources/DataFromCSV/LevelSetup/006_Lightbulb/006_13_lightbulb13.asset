@@ -16,20 +16,28 @@ MonoBehaviour:
   themeIndex: 6
   levelIndex: 13
   nextLevelIndex: 614
-  previousLevel: {fileID: 11400000, guid: c8d1f10ed916f5343bec6aaab0211ab2, type: 2}
-  nextLevel: {fileID: 11400000, guid: 1757f531edd13b940b06691a4489695c, type: 2}
+  previousLevel: {fileID: 11400000, guid: dace0b191de63c84fb6fca638caa7102, type: 2}
+  nextLevel: {fileID: 11400000, guid: 4351a72aee02780479f6c8752eed9437, type: 2}
   theme: '@Loc=themename_tm6@@'
-  title: '@Loc=levelname_lv604@@'
-  newInitNarrative: '@Loc=narrative_tm6_ln4@@'
-  newPlayNarratives: []
+  title: '@Loc=levelname_lv613@@'
+  newInitNarrative: 
+  newPlayNarratives:
+  - '@Loc=narrative_tm6_ln11@@'
   oldNarratives:
   - '@Loc=narrative_tm6_ln1@@'
   - '@Loc=narrative_tm6_ln2@@'
   - '@Loc=narrative_tm6_ln3@@'
-  goal: '@Loc=goal_lv604@@'
+  - '@Loc=narrative_tm6_ln4@@'
+  - '@Loc=narrative_tm6_ln5@@'
+  - '@Loc=narrative_tm6_ln6@@'
+  - '@Loc=narrative_tm6_ln7@@'
+  - '@Loc=narrative_tm6_ln8@@'
+  - '@Loc=narrative_tm6_ln9@@'
+  - '@Loc=narrative_tm6_ln10@@'
+  goal: '@Loc=goal_lv613@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv603@@'
+    ruleDesc: '@Loc=rule1_lv605@@'
   - tag: 0
     ruleDesc: '@Loc=rule2_lv601@@'
   - tag: 0

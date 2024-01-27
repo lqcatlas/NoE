@@ -159,7 +159,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 52
   m_Sprite: {fileID: -2054183618, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  m_Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3affc6b1da4b0348a6c7309816b413b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DefaultAlpha: 0.5
 --- !u!1 &461950370268626411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,6 +1260,7 @@ GameObject:
   - component: {fileID: 6386398604759373396}
   - component: {fileID: 3504258914794051873}
   - component: {fileID: 8784257032467567460}
+  - component: {fileID: 610978773311844937}
   m_Layer: 0
   m_Name: title
   m_TagString: Untagged
@@ -1420,6 +1422,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 3504258914794051873}
   m_maskType: 0
+--- !u!114 &610978773311844937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2214955366000870403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c5bb8daca84304f8f1ce78ec59d689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeTarget: {fileID: 8784257032467567460}
+  LocalizedKey: '@Loc=ui_victory_title@@'
 --- !u!1 &2284390860166210765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,7 +1773,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 52
   m_Sprite: {fileID: -173911021, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  m_Color: {r: 0.7, g: 0.7, b: 0.7, a: 1}
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1779,6 +1795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3affc6b1da4b0348a6c7309816b413b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DefaultAlpha: 0.5
 --- !u!1 &3233905962585039845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,6 +3641,7 @@ GameObject:
   - component: {fileID: 7385052017967330526}
   - component: {fileID: 1474834219399119837}
   - component: {fileID: 1499744057038385286}
+  - component: {fileID: 1615251383258132157}
   m_Layer: 0
   m_Name: title
   m_TagString: Untagged
@@ -3713,7 +3731,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u7269\u4EF6\u8017\u5C3D"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0438792a9abcde94ba498411eb1f1ffe, type: 2}
   m_sharedMaterial: {fileID: 579824242631739247, guid: 0438792a9abcde94ba498411eb1f1ffe, type: 2}
@@ -3785,6 +3803,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 1474834219399119837}
   m_maskType: 0
+--- !u!114 &1615251383258132157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6589255795578406549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c5bb8daca84304f8f1ce78ec59d689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeTarget: {fileID: 1499744057038385286}
+  LocalizedKey: '@Loc=ui_failure_title@@'
 --- !u!1 &6840854587157021037
 GameObject:
   m_ObjectHideFlags: 0

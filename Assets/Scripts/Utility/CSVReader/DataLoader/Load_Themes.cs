@@ -70,7 +70,10 @@ public class Load_Themes : MonoBehaviour
             if (levels[i].previousLevel != null)
             {
                 levels[i].oldNarratives.AddRange(levels[i].previousLevel.oldNarratives);
-                levels[i].oldNarratives.Add(levels[i].previousLevel.newInitNarrative);
+                if(levels[i].previousLevel.newInitNarrative != null)
+                {
+                    levels[i].oldNarratives.Add(levels[i].previousLevel.newInitNarrative);
+                }
                 levels[i].oldNarratives.AddRange(levels[i].previousLevel.newPlayNarratives);
             }
             EditorUtility.SetDirty(levels[i]);
@@ -261,6 +264,7 @@ public class Load_Themes : MonoBehaviour
         }
         result = null;
         int line = 0;
+        level.newInitNarrative = null;
         if (levelDic.TryGetValue("init", out result))
         {
             if (((string)result).Length > 0)
@@ -371,7 +375,7 @@ public class Load_Themes : MonoBehaviour
         {
             if (themes[i].themeUID == themeUID)
             {
-                if(line < themes[i].narratives.Count)
+                if(line <= themes[i].narratives.Count)
                 {
                     return themes[i].narratives[line - 1];
                 }

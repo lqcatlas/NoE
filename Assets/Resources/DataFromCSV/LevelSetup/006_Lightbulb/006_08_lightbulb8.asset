@@ -17,27 +17,21 @@ MonoBehaviour:
   levelIndex: 8
   nextLevelIndex: 609
   previousLevel: {fileID: 11400000, guid: 5311185c1a5eca54582e8dee0692938f, type: 2}
-  nextLevel: {fileID: 0}
+  nextLevel: {fileID: 11400000, guid: dfa2d5d2c253fd049a7fc527ff7ebe56, type: 2}
   theme: '@Loc=themename_tm6@@'
   title: '@Loc=levelname_lv608@@'
-  newInitNarrative: '@Loc=narrative_tm6_ln10@@'
+  newInitNarrative: 
   newPlayNarratives:
-  - '@Loc=narrative_tm6_ln11@@'
-  - missing narrative line
+  - '@Loc=narrative_tm6_ln5@@'
   oldNarratives:
   - '@Loc=narrative_tm6_ln1@@'
   - '@Loc=narrative_tm6_ln2@@'
   - '@Loc=narrative_tm6_ln3@@'
   - '@Loc=narrative_tm6_ln4@@'
-  - '@Loc=narrative_tm6_ln5@@'
-  - '@Loc=narrative_tm6_ln6@@'
-  - '@Loc=narrative_tm6_ln7@@'
-  - '@Loc=narrative_tm6_ln8@@'
-  - '@Loc=narrative_tm6_ln9@@'
   goal: '@Loc=goal_lv608@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv603@@'
+    ruleDesc: '@Loc=rule1_lv605@@'
   - tag: 0
     ruleDesc: '@Loc=rule2_lv601@@'
   - tag: 0

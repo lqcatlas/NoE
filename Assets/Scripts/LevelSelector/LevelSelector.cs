@@ -122,10 +122,12 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         TokenSpent(tokenCost);
     }
-    public void FinishLevel(int levelUID, bool isHard = false)
+    public bool FinishLevel(int levelUID, bool isHard = false)
     {
+        bool isNew;
         if (!playerLevelRecords.isLevelFinished(levelUID))
         {
+            isNew = true;
             playerLevelRecords.finishedLevels.Add(levelUID);
             if (!isHard)
             {
@@ -136,6 +138,11 @@ public class LevelSelector : MonoBehaviour, ISaveData
                 GemEarned(1);
             }
         }
+        else
+        {
+            isNew = false;
+        }
+        return isNew;
     }
     void TokenEarned(int count)
     {

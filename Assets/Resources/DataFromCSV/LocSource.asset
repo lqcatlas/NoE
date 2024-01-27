@@ -13,6 +13,21 @@ MonoBehaviour:
   m_Name: LocSource
   m_EditorClassIdentifier: 
   locList:
+  - key: date_tm1
+    EN: 
+    CN: 2022/12/04
+  - key: date_tm2
+    EN: 
+    CN: 2023/01/15
+  - key: date_tm4
+    EN: 
+    CN: 2023/06/25
+  - key: date_tm5
+    EN: 
+    CN: 2023/08/13
+  - key: date_tm6
+    EN: 
+    CN: 2023/09/03
   - key: goal_lv101
     EN: Set all cells to 8
     CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A8"
@@ -80,10 +95,11 @@ MonoBehaviour:
     EN: Set all cells to UNIQUE
     CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u503C"
   - key: goal_lv407
-    EN: Set the sum of cells to 20
+    EN: When all cells have food, <br>set the sum of cells to 20
     CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u6709\u98DF\u7269\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A20"
   - key: goal_lv408
-    EN: Set the sum of cells to 82
+    EN: When all cells have either sushi or onigiri, <br>set the sum of cells to
+      82
     CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u662F\u5BFF\u53F8\u6216\u996D\u56E2\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A82"
   - key: goal_lv501
     EN: 
@@ -110,30 +126,67 @@ MonoBehaviour:
     EN: 
     CN: "\u6708\u98DF\u65F6\uFF0C\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5F52\u521D\u503C"
   - key: goal_lv601
-    EN: 1+ cell is ON.
+    EN: 1+ cell(s) is ON.
     CN: "\u70B9\u4EAE1\u76CF\u706F\u6CE1"
   - key: goal_lv602
     EN: 5+ cells are ON.
     CN: "\u70B9\u4EAE5\u76CF\u706F\u6CE1"
   - key: goal_lv603
-    EN: 4+ cells are ON.
-    CN: "\u70B9\u4EAE4\u76CF\u706F\u6CE1"
+    EN: All cells are ON.
+    CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: goal_lv604
-    EN: 6+ cells are ON.
-    CN: "\u70B9\u4EAE6\u76CF\u706F\u6CE1"
+    EN: All cells are ON.
+    CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: goal_lv605
-    EN: Turn on 4 cells simultaneously.
-    CN: "\u4E00\u6B21\u6027\u70B9\u4EAE4\u76CF\u706F\u6CE1"
+    EN: All cells are ON.
+    CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: goal_lv606
-    EN: Turn on 8 cells simultaneously.
-    CN: "\u4E00\u6B21\u6027\u70B9\u4EAE8\u76CF\u706F\u6CE1"
+    EN: All cells are ON.
+    CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: goal_lv607
     EN: Use actions. <br>Meanwhile, keep the number of ON cells stays between 4 to
       6.
-    CN: "\u7528\u5B8C\u6240\u6709\u706F\u6CE1\uFF0C<br>\u4FDD\u6301\u70B9\u4EAE\u7684\u706F\u6CE1<br>\u57284-6\u76CF\u4E4B\u95F4"
+    CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: goal_lv608
     EN: All cells are ON.
+    CN: "\u70B9\u4EAE6\u76CF\u706F\u6CE1"
+  - key: goal_lv609
+    EN: 6+ cells are ON.
+    CN: "\u70B9\u4EAE6\u76CF\u706F\u6CE1"
+  - key: goal_lv610
+    EN: Turn on 3 cells from OFF simultaneously.
+    CN: "\u4E00\u6B21\u5C063\u76CF\u7184\u706D\u7684\u706F\u6CE1\u70B9\u4EAE"
+  - key: goal_lv611
+    EN: Turn on 4 cells from OFF simultaneously.
+    CN: "\u4E00\u6B21\u5C064\u76CF\u7184\u706D\u7684\u706F\u6CE1\u70B9\u4EAE"
+  - key: goal_lv612
+    EN: Use up all actions. <br>Meanwhile, keep the number of ON cells stay between
+      4 to 6.
+    CN: "\u7528\u6389\u6240\u6709\u706F\u6CE1\uFF0C<br>\u4FDD\u6301\u70B9\u4EAE\u7684\u706F\u6570\u91CF\u57284-6\u4E4B\u95F4"
+  - key: goal_lv613
+    EN: All cells are ON.
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
+  - key: goal_lv614
+    EN: Turn on 8 cells from OFF simultaneously.
+    CN: "\u4E00\u6B21\u5C068\u76CF\u7184\u706D\u7684\u706F\u6CE1\u70B9\u4EAE"
+  - key: goal_lv615
+    EN: All cells are ON.
+    CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
+  - key: hint_tm1
+    EN: 
+    CN: "\u5B83\u6EF4\u7B54\u6EF4\u7B54\uFF0C\u6C38\u4E0D\u505C\u6B47\u5730\u524D\u8FDB\u3002"
+  - key: hint_tm2
+    EN: 
+    CN: "\u5B83\u4E00\u6B21\u6B21\u5730\u7FFB\u52A8\uFF0C\u51B3\u5B9A\u7740\u547D\u8FD0\u3002"
+  - key: hint_tm4
+    EN: 
+    CN: "\u5B83\u867D\u7136\u7B80\u7EA6\uFF0C\u5374\u6108\u663E\u5F97\u7CBE\u81F4\u3002"
+  - key: hint_tm5
+    EN: 
+    CN: "\u5B83\u4E0D\u505C\u53D8\u5316\uFF0C\u5374\u603B\u4F1A\u56DE\u5230\u719F\u6089\u7684\u6837\u5B50\u3002"
+  - key: hint_tm6
+    EN: 
+    CN: "\u5B83\u4EE3\u8868\u4E86\u7075\u611F\u3001\u987F\u609F\u3002"
   - key: intro_line_1
     EN: Friday night. Get back home, <b>things</b> emerges from darkness.
     CN: "\u5468\u4E94\u665A\u4E0A\uFF0C\u6253\u5F00\u623F\u95E8\uFF0C\u56DE\u5230\u6F06\u9ED1\u7684\u5BB6\u4E2D\uFF0C\u9ED1\u6697\u4E4B\u4E2D<b>\u4E07\u7269</b>\u6D6E\u73B0\u3002"
@@ -261,177 +314,42 @@ MonoBehaviour:
   - key: levelname_lv608
     EN: 8
     CN: 8
-  - key: rule1_lv101
-    EN: Cell Played +1
-    CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
-  - key: rule1_lv201
-    EN: Head - Cell Played +1
-    CN: "\u6B63 - \u6253\u51FA\u7684\u683C\u5B50 +1"
-  - key: rule1_lv204
-    EN: Head - Cell Played +X
-    CN: "\u6B63 - \u6253\u51FA\u7684\u683C\u5B50 +X"
-  - key: rule1_lv401
-    EN: 'Fish: +3'
-    CN: "\u9C7C\uFF1A +3"
-  - key: rule1_lv501
-    EN: 'Crescent: +1'
-    CN: "\u65B0\u6708\uFF1A+1"
-  - key: rule1_lv601
-    EN: Played cell +1
-    CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
-  - key: rule1_lv603
-    EN: Played and adjacent cells +1
-    CN: "\u6253\u51FA\u53CA\u76F8\u90BB\u7684\u683C\u5B50 +1"
-  - key: rule2_lv103
-    EN: Cell already with a Clock +1
-    CN: "\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50 +1"
-  - key: rule2_lv202
-    EN: Tail - Cell Played -1
-    CN: "\u53CD - \u6253\u51FA\u7684\u683C\u5B50 -1"
-  - key: rule2_lv205
-    EN: Tail - Cell Played -X
-    CN: "\u53CD - \u6253\u51FA\u7684\u683C\u5B50 -X"
-  - key: rule2_lv403
-    EN: 'Rice: -3'
-    CN: "\u7C73\uFF1A -3"
-  - key: rule2_lv501
-    EN: 'Quarter: +3'
-    CN: "\u5F26\u6708\uFF1A+3"
-  - key: rule2_lv601
-    EN: Cell is turned ON
-    CN: "\u4E0E\u4E24\u4E2A\u6216\u4EE5\u4E0A\u7684\u76F8\u540C\u6570\u5B57\u76F8\u90BB"
-  - key: rule3_lv204
-    EN: X is the number of coins in a Cell
-    CN: "X\u4E3A\u683C\u5B50\u5185\u786C\u5E01\u6570"
-  - key: rule3_lv404
-    EN: 'Sushi(Rice+Fish): =7'
-    CN: "\u5BFF\u53F8\uFF08\u7C73+\u9C7C\uFF09\uFF1A =7"
-  - key: rule3_lv502
-    EN: 'Full: +5'
-    CN: "\u6EE1\u6708\uFF1A+5"
-  - key: rule3_lv601
-    EN: '  when adjacent to 2+ same numbers'
-    CN: "  \u5219\u70B9\u4EAE\u683C\u5B50"
-  - key: rule4_lv203
-    EN: FLIP the coin after play
-    CN: "\u6253\u51FA\u540E\u786C\u5E01\u7FFB\u9762"
-  - key: rule4_lv207
-    EN: TOSS the coin after play
-    CN: "\u6253\u51FA\u540E\u6295\u63B7\u786C\u5E01"
-  - key: rule4_lv405
-    EN: 'Onigiri(Rice+Fish): =2'
-    CN: "\u996D\u56E2\uFF08\u9C7C+\u7C73\uFF09\uFF1A =2"
-  - key: rule4_lv504
-    EN: 'Eclipse(Full + 9): All cells -5'
-    CN: "9+\u6EE1\u6708\uFF1A\u6708\u98DF"
-  - key: rule5_lv403
-    EN: Fish and Rice alternate
-    CN: "\u9C7C\u548C\u7C73\u4EA4\u66FF\u51FA\u73B0"
-  - key: rule5_lv503
-    EN: '10+: Sunrise! LOSE'
-    CN: "\u8D85\u8FC79\uFF1A\u592A\u9633\u5347\u8D77\uFF0C\u6E38\u620F\u5931\u8D25"
-  - key: themename_tm1
-    EN: Clock
-    CN: "\u65F6\u949F"
-  - key: themename_tm2
-    EN: Coin
-    CN: "\u786C\u5E01"
-  - key: themename_tm4
-    EN: Sushi
-    CN: "\u5BFF\u53F8"
-  - key: themename_tm5
-    EN: Moon
-    CN: "\u6708\u4EAE"
-  - key: themename_tm6
-    EN: Lightbulb
-    CN: "\u706F\u6CE1"
-  - key: tool_name_theme2_status0
-    EN: Front
-    CN: "\u6B63\u9762"
-  - key: tool_name_theme2_status1
-    EN: Tail
-    CN: "\u53CD\u9762"
-  - key: tool_name_theme4_status1
-    EN: Fish
-    CN: "\u9C7C\u751F"
-  - key: tool_name_theme4_status2
-    EN: Rice
-    CN: "\u767D\u7C73"
-  - key: tool_name_theme5_status1
-    EN: Crescent
-    CN: "\u65B0\u6708"
-  - key: tool_name_theme5_status2
-    EN: Quarter
-    CN: "\u5F26\u6708"
-  - key: tool_name_theme5_status3
-    EN: Full
-    CN: "\u6EE1\u6708"
-  - key: tool_name_theme5_status4
-    EN: Quarter
-    CN: "\u5F26\u6708"
-  - key: tool_name_theme5_status5
-    EN: Crescent
-    CN: "\u65B0\u6708"
-  - key: ui_designer_note_title
-    EN: Designer's Notes
-    CN: "\u5236\u4F5C\u7B14\u8BB0"
-  - key: ui_goal_current_sum
-    EN: 'Current Sum: '
-    CN: "\u5F53\u524D\u6570\u5B57\u4E4B\u548C\uFF1A"
-  - key: ui_goal_section_title
-    EN: Goal
-    CN: "\u76EE\u6807"
-  - key: ui_ruleset_title
-    EN: Rules
-    CN: "\u89C4\u5219"
-  - key: themedesc_more
-    EN: More themes <br>to come...
-    CN: "\u66F4\u591A\u4E3B\u9898\uFF0C<br>\u656C\u8BF7\u671F\u5F85\u3002"
-  - key: unlocked_tm1
+  - key: levelname_lv609
     EN: 
-    CN: "<b>\u65F6\u95F4</b>\u6C38\u4E0D\u505C\u6B47\u3002"
-  - key: unlocked_tm2
+    CN: 9
+  - key: levelname_lv610
     EN: 
-    CN: "<b>\u786C\u5E01</b>\u51B3\u5B9A\u547D\u8FD0\u3002"
-  - key: unlocked_tm4
+    CN: 10
+  - key: levelname_lv611
     EN: 
-    CN: "<b>\u5BFF\u53F8</b>\u7B80\u7EA6\u53C8\u7CBE\u81F4\u3002"
-  - key: unlocked_tm5
+    CN: 11
+  - key: levelname_lv612
     EN: 
-    CN: "<b>\u6708\u4EAE</b>\u6709\u65E0\u89C4\u5F8B\uFF1F"
-  - key: unlocked_tm6
+    CN: 12
+  - key: levelname_lv613
     EN: 
-    CN: "<b>\u706F\u6CE1</b>\u4EE3\u8868\u7740\u7075\u611F\u3002"
-  - key: hint_tm1
+    CN: 13
+  - key: levelname_lv614
     EN: 
-    CN: "\u5B83\u6EF4\u7B54\u6EF4\u7B54\uFF0C\u6C38\u4E0D\u505C\u6B47\u5730\u524D\u8FDB\u3002"
-  - key: hint_tm2
+    CN: 14
+  - key: levelname_lv615
     EN: 
-    CN: "\u5B83\u4E00\u6B21\u6B21\u5730\u7FFB\u52A8\uFF0C\u51B3\u5B9A\u7740\u547D\u8FD0\u3002"
-  - key: hint_tm4
+    CN: 15
+  - key: locked_tm1
     EN: 
-    CN: "\u5B83\u867D\u7136\u7B80\u7EA6\uFF0C\u5374\u6108\u663E\u5F97\u7CBE\u81F4\u3002"
-  - key: hint_tm5
+    CN: "\u2588 \u2588 \u6C38\u4E0D\u505C\u6B47\u3002"
+  - key: locked_tm2
     EN: 
-    CN: "\u5B83\u4E0D\u505C\u53D8\u5316\uFF0C\u5374\u603B\u4F1A\u56DE\u5230\u719F\u6089\u7684\u6837\u5B50\u3002"
-  - key: hint_tm6
+    CN: "\u2588 \u2588 \u51B3\u5B9A\u547D\u8FD0\u3002"
+  - key: locked_tm4
     EN: 
-    CN: "\u5B83\u4EE3\u8868\u4E86\u7075\u611F\u3001\u987F\u609F\u3002"
-  - key: date_tm1
+    CN: "\u2588 \u2588 \u7B80\u7EA6\u53C8\u7CBE\u81F4\u3002"
+  - key: locked_tm5
     EN: 
-    CN: 2022/12/04
-  - key: date_tm2
+    CN: "\u2588 \u2588 \u6709\u65E0\u89C4\u5F8B\uFF1F"
+  - key: locked_tm6
     EN: 
-    CN: 2023/01/15
-  - key: date_tm4
-    EN: 
-    CN: 2023/06/25
-  - key: date_tm5
-    EN: 
-    CN: 2023/08/13
-  - key: date_tm6
-    EN: 
-    CN: 2023/09/03
+    CN: "\u2588 \u2588 \u4EE3\u8868\u7740\u7075\u611F\u3002"
   - key: manifesto_tm1
     EN: 
     CN: "\u65F6\u949F\u662F\u7B2C\u4E00\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u51FA\u73B0\u6BD4\u6E38\u620F\u540D\u201C\u4E07\u7269\u4E4B\u6570\u201C\u8FD8\u8981\u65E9\u3002\u4E00\u5B9A\u7A0B\u5EA6\u4E0A\uFF0C\u5B83\u662F\u6574\u4E2A\u6E38\u620F\u9879\u76EE\u5F00\u59CB\u7684\u8D77\u70B9\u3002<br>\u71AC\u591C\u5374\u65E0\u6240\u4E8B\u4E8B\u662F\u4E00\u79CD\u8868\u9762\u4E0A\u73CD\u60DC\u65F6\u95F4\uFF0C\u5374\u53C8\u614C\u4E71\u5730\u6D6A\u8D39\u4E86\u65F6\u95F4\u7684\u884C\u4E3A\u3002\u65F6\u949F\u4E3B\u9898\u60F3\u901A\u8FC7\u8FD9\u4E2A\u60C5\u666F\u6765\u8868\u8FBE\u4E2A\u4F53\u5728\u65F6\u5149\u6D41\u901D\u9762\u524D\u7684\u65E0\u529B\u3002"
@@ -450,6 +368,15 @@ MonoBehaviour:
   - key: narrative_tm1_ln1
     EN: 
     CN: "\u6E9C\u8D70\u7684\u65F6\u95F4"
+  - key: narrative_tm1_ln10
+    EN: 
+    CN: "\u6700\u7EC8\u62B5\u8FBE\u6668\u66E6\u3002"
+  - key: narrative_tm1_ln11
+    EN: 
+    CN: "\u610F\u8BC6\u9010\u6E10\u6A21\u7CCA\uFF0C"
+  - key: narrative_tm1_ln12
+    EN: 
+    CN: "\u662F\u65F6\u5019\u4F11\u606F\u4E86\u3002"
   - key: narrative_tm1_ln2
     EN: 
     CN: "\u6EF4\u7B54\u6EF4\u7B54\u6EF4\u7B54\uFF0C"
@@ -474,18 +401,24 @@ MonoBehaviour:
   - key: narrative_tm1_ln9
     EN: 
     CN: "\u62D6\u7740\u75B2\u60EB\u7684\u8EAB\u8EAF\uFF0C"
-  - key: narrative_tm1_ln10
-    EN: 
-    CN: "\u6700\u7EC8\u62B5\u8FBE\u6668\u66E6\u3002"
-  - key: narrative_tm1_ln11
-    EN: 
-    CN: "\u610F\u8BC6\u9010\u6E10\u6A21\u7CCA\uFF0C"
-  - key: narrative_tm1_ln12
-    EN: 
-    CN: "\u662F\u65F6\u5019\u4F11\u606F\u4E86\u3002"
   - key: narrative_tm2_ln1
     EN: 
     CN: "\u6765\u81EA\u786C\u5E01\u7684\u547D\u8FD0"
+  - key: narrative_tm2_ln10
+    EN: 
+    CN: "\u521B\u9020\u547D\u8FD0\u7684\u6CE2\u6F9C\u3002"
+  - key: narrative_tm2_ln11
+    EN: 
+    CN: "\u4F60\u518D\u6B21\u6295\u63B7\uFF0C"
+  - key: narrative_tm2_ln12
+    EN: 
+    CN: "\u7B49\u5F85\u5BBF\u547D\u843D\u4E0B\u7684\u56DE\u54CD\u3002"
+  - key: narrative_tm2_ln13
+    EN: 
+    CN: "\u4E0D\u7518\u4E8E\u6B64\uFF0C"
+  - key: narrative_tm2_ln14
+    EN: 
+    CN: "\u5C31\u7528\u667A\u6167\u8FDB\u884C\u89E3\u8BFB\u3002"
   - key: narrative_tm2_ln2
     EN: 
     CN: "\u786C\u5E01\u6709\u65E0\u6570\u79CD\u5F62\u5F0F\u3002"
@@ -510,24 +443,27 @@ MonoBehaviour:
   - key: narrative_tm2_ln9
     EN: 
     CN: "\u4E24\u9762\u4EA4\u9519\uFF0C"
-  - key: narrative_tm2_ln10
-    EN: 
-    CN: "\u521B\u9020\u547D\u8FD0\u7684\u6CE2\u6F9C\u3002"
-  - key: narrative_tm2_ln11
-    EN: 
-    CN: "\u4F60\u518D\u6B21\u6295\u63B7\uFF0C"
-  - key: narrative_tm2_ln12
-    EN: 
-    CN: "\u7B49\u5F85\u5BBF\u547D\u843D\u4E0B\u7684\u56DE\u54CD\u3002"
-  - key: narrative_tm2_ln13
-    EN: 
-    CN: "\u4E0D\u7518\u4E8E\u6B64\uFF0C"
-  - key: narrative_tm2_ln14
-    EN: 
-    CN: "\u5C31\u7528\u667A\u6167\u8FDB\u884C\u89E3\u8BFB\u3002"
   - key: narrative_tm4_ln1
     EN: 
     CN: "\u5BFF\u53F8\u7684\u7CBE\u81F4"
+  - key: narrative_tm4_ln10
+    EN: 
+    CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C"
+  - key: narrative_tm4_ln11
+    EN: 
+    CN: "\u5374\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7EC4\u5408\u3002"
+  - key: narrative_tm4_ln12
+    EN: 
+    CN: "\u6765\u81EA\u5927\u5730\u4E0E\u6DF1\u6D77\u7684\u78B0\u649E\uFF0C"
+  - key: narrative_tm4_ln13
+    EN: 
+    CN: "\u8BC9\u8BF4\u7B80\u7EA6\u7684\u7F8E\u3002"
+  - key: narrative_tm4_ln14
+    EN: 
+    CN: "\u7528\u5BF9\u98DF\u6750\u7684\u5C0A\u91CD\uFF0C"
+  - key: narrative_tm4_ln15
+    EN: 
+    CN: "\u8868\u8FBE\u5BF9\u5473\u89C9\u7684\u6DF1\u523B\u7406\u89E3\u3002"
   - key: narrative_tm4_ln2
     EN: 
     CN: "\u4F60\u5939\u8D77\u4E00\u7247\u9C7C\u751F\uFF0C"
@@ -552,27 +488,27 @@ MonoBehaviour:
   - key: narrative_tm4_ln9
     EN: 
     CN: "\u5C31\u5F00\u542F\u4E86\u996D\u56E2\u4E30\u76C8\u7684\u5473\u89C9\u3002"
-  - key: narrative_tm4_ln10
-    EN: 
-    CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C"
-  - key: narrative_tm4_ln11
-    EN: 
-    CN: "\u5374\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7EC4\u5408\u3002"
-  - key: narrative_tm4_ln12
-    EN: 
-    CN: "\u6765\u81EA\u5927\u5730\u4E0E\u6DF1\u6D77\u7684\u78B0\u649E\uFF0C"
-  - key: narrative_tm4_ln13
-    EN: 
-    CN: "\u8BC9\u8BF4\u7B80\u7EA6\u7684\u7F8E\u3002"
-  - key: narrative_tm4_ln14
-    EN: 
-    CN: "\u7528\u5BF9\u98DF\u6750\u7684\u5C0A\u91CD\uFF0C"
-  - key: narrative_tm4_ln15
-    EN: 
-    CN: "\u8868\u8FBE\u5BF9\u5473\u89C9\u7684\u6DF1\u523B\u7406\u89E3\u3002"
   - key: narrative_tm5_ln1
     EN: 
     CN: "\u6708\u7684\u89C4\u5F8B"
+  - key: narrative_tm5_ln10
+    EN: 
+    CN: "\u7528\u53CD\u601D\u548C\u603B\u7ED3\uFF0C"
+  - key: narrative_tm5_ln11
+    EN: 
+    CN: "\u8BA9\u79E9\u5E8F\u6D6E\u73B0\u3002"
+  - key: narrative_tm5_ln12
+    EN: 
+    CN: "\u8868\u9762\u7684\u65E0\u5E8F\uFF0C"
+  - key: narrative_tm5_ln13
+    EN: 
+    CN: "\u85CF\u7740\u66F4\u6DF1\u7684\u89C4\u5219\u3002"
+  - key: narrative_tm5_ln14
+    EN: 
+    CN: "\u5728\u66F2\u6298\u4E2D\u9886\u609F\uFF0C"
+  - key: narrative_tm5_ln15
+    EN: 
+    CN: "\u83B7\u5F97\u518D\u6B21\u7684\u638C\u63A7\u3002"
   - key: narrative_tm5_ln2
     EN: 
     CN: "\u4E8F\u76C8\u4EA4\u66FF\uFF0C"
@@ -597,27 +533,21 @@ MonoBehaviour:
   - key: narrative_tm5_ln9
     EN: 
     CN: "\u4F60\u5728\u8FF7\u60D8\u4E2D\u524D\u884C\u3002"
-  - key: narrative_tm5_ln10
-    EN: 
-    CN: "\u7528\u53CD\u601D\u548C\u603B\u7ED3\uFF0C"
-  - key: narrative_tm5_ln11
-    EN: 
-    CN: "\u8BA9\u79E9\u5E8F\u6D6E\u73B0\u3002"
-  - key: narrative_tm5_ln12
-    EN: 
-    CN: "\u8868\u9762\u7684\u65E0\u5E8F\uFF0C"
-  - key: narrative_tm5_ln13
-    EN: 
-    CN: "\u85CF\u7740\u66F4\u6DF1\u7684\u89C4\u5219\u3002"
-  - key: narrative_tm5_ln14
-    EN: 
-    CN: "\u5728\u66F2\u6298\u4E2D\u9886\u609F\uFF0C"
-  - key: narrative_tm5_ln15
-    EN: 
-    CN: "\u83B7\u5F97\u518D\u6B21\u7684\u638C\u63A7\u3002"
   - key: narrative_tm6_ln1
     EN: 
     CN: "\u7075\u611F\u4E4B\u5149"
+  - key: narrative_tm6_ln10
+    EN: 
+    CN: "\u5728\u4E8E\u4FDD\u7559\u6070\u5982\u5176\u5206\u7684\u7075\u611F\u3002"
+  - key: narrative_tm6_ln11
+    EN: 
+    CN: "\u5728\u53D1\u660E\u706F\u6CE1\u4EE5\u524D\uFF0C"
+  - key: narrative_tm6_ln12
+    EN: 
+    CN: "\u5728\u90A3\u65E0\u8FB9\u9ED1\u6697\u7684\u5C81\u6708\u91CC\uFF0C"
+  - key: narrative_tm6_ln13
+    EN: 
+    CN: "\u5149\u660E\u6C38\u9A7B\u4E8E\u5FC3\u95F4\u3002"
   - key: narrative_tm6_ln2
     EN: 
     CN: "\u7535\u706F\u603B\u7528\u6765\u4EE3\u8868\u7075\u611F\u3002"
@@ -641,61 +571,7 @@ MonoBehaviour:
     CN: "\u8BA9\u4F60\u5931\u53BB\u4E86\u65B9\u5411\u3002"
   - key: narrative_tm6_ln9
     EN: 
-    CN: "\u4FDD\u7559\u6070\u5982\u5176\u5206\u7684\u7075\u611F\u3002"
-  - key: narrative_tm6_ln10
-    EN: 
-    CN: "\u5728\u53D1\u660E\u706F\u6CE1\u4EE5\u524D\uFF0C"
-  - key: narrative_tm6_ln11
-    EN: 
-    CN: "\u5728\u90A3\u65E0\u8FB9\u9ED1\u6697\u7684\u5C81\u6708\u91CC\uFF0C"
-  - key: narrative_tm6_ln12
-    EN: 
-    CN: "\u5149\u660E\u6C38\u9A7B\u4E8E\u5FC3\u95F4\u3002"
-  - key: locked_tm1
-    EN: 
-    CN: "\u2588 \u2588 \u6C38\u4E0D\u505C\u6B47\u3002"
-  - key: locked_tm2
-    EN: 
-    CN: "\u2588 \u2588 \u51B3\u5B9A\u547D\u8FD0\u3002"
-  - key: locked_tm4
-    EN: 
-    CN: "\u2588 \u2588 \u7B80\u7EA6\u53C8\u7CBE\u81F4\u3002"
-  - key: locked_tm5
-    EN: 
-    CN: "\u2588 \u2588 \u6709\u65E0\u89C4\u5F8B\uFF1F"
-  - key: locked_tm6
-    EN: 
-    CN: "\u2588 \u2588 \u4EE3\u8868\u7740\u7075\u611F\u3002"
-  - key: ui_themephoto_unlockreq
-    EN: <sprite name=currency_star_frame> {0}<br>to unlock
-    CN: "<sprite name=currency_star_frame> {0}<br>\u89E3\u9501"
-  - key: ui_themephoto_starcollection
-    EN: <sprite name=currency_star> {0}/{1}
-    CN: <sprite name=currency_star> {0}/{1}
-  - key: ui_themephoto_gemcollection
-    EN: <sprite name=currency_gem> {0}/{1}
-    CN: <sprite name=currency_gem> {0}/{1}
-  - key: ui_hiddenobject_riddletitle
-    EN: 'Find the <b>object</b> according to the following riddle:'
-    CN: "\u6839\u636E\u8C1C\u8BED\u627E\u5230<b>\u7269\u4EF6</b>\uFF1A"
-  - key: ui_new_tag
-    EN: NEW
-    CN: "\u65B0"
-  - key: ui_close_btn
-    EN: Close
-    CN: "\u5173\u95ED"
-  - key: ui_retry_btn
-    EN: Restart
-    CN: "\u91CD\u8BD5"
-  - key: ui_rewind_btn
-    EN: Rewind
-    CN: "\u56DE\u6EAF"
-  - key: ui_finished_status
-    EN: (Passed)
-    CN: "\uFF08\u5B8C\u6210\uFF09"
-  - key: ui_perfect_status
-    EN: (Perfect)
-    CN: "\uFF08\u5B8C\u7F8E\u901A\u5173\uFF09"
+    CN: "\u771F\u6B63\u7684\u667A\u6167\uFF0C"
   - key: prompt_tm1
     EN: Photo is created by Midjourney using the following prompt:<br>A realistic
       photo of a tiny bedroom in modern city at night. There are an old alarm clock
@@ -753,3 +629,180 @@ MonoBehaviour:
       photo of modern electric laboratory view. There are a notebook, one lightbulb,
       and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia
       film. --ar 16:9 --v 6.0
+  - key: rule1_lv101
+    EN: Cell Played +1
+    CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
+  - key: rule1_lv201
+    EN: Head - Cell Played +1
+    CN: "\u6B63 - \u6253\u51FA\u7684\u683C\u5B50 +1"
+  - key: rule1_lv204
+    EN: Head - Cell Played +X
+    CN: "\u6B63 - \u6253\u51FA\u7684\u683C\u5B50 +X"
+  - key: rule1_lv401
+    EN: 'Fish: +3'
+    CN: "\u9C7C\uFF1A +3"
+  - key: rule1_lv501
+    EN: 'Crescent: +1'
+    CN: "\u65B0\u6708\uFF1A+1"
+  - key: rule1_lv601
+    EN: Played cell +1
+    CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
+  - key: rule1_lv605
+    EN: Played and adjacent cells +1
+    CN: "\u6253\u51FA\u53CA\u76F8\u90BB\u7684\u683C\u5B50 +1"
+  - key: rule2_lv103
+    EN: Cell already with a Clock +1
+    CN: "\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50 +1"
+  - key: rule2_lv202
+    EN: Tail - Cell Played -1
+    CN: "\u53CD - \u6253\u51FA\u7684\u683C\u5B50 -1"
+  - key: rule2_lv205
+    EN: Tail - Cell Played -X
+    CN: "\u53CD - \u6253\u51FA\u7684\u683C\u5B50 -X"
+  - key: rule2_lv403
+    EN: 'Rice: -3'
+    CN: "\u7C73\uFF1A -3"
+  - key: rule2_lv501
+    EN: 'Quarter: +3'
+    CN: "\u5F26\u6708\uFF1A+3"
+  - key: rule2_lv601
+    EN: Cell is turned ON
+    CN: "\u4E0E\u4E24\u4E2A\u6216\u4EE5\u4E0A\u7684\u76F8\u540C\u6570\u5B57\u76F8\u90BB"
+  - key: rule3_lv204
+    EN: X is the number of coins in a Cell
+    CN: "X\u4E3A\u683C\u5B50\u5185\u786C\u5E01\u6570"
+  - key: rule3_lv404
+    EN: 'Sushi(Rice+Fish): =7'
+    CN: "\u5BFF\u53F8\uFF08\u7C73+\u9C7C\uFF09\uFF1A =7"
+  - key: rule3_lv502
+    EN: 'Full: +5'
+    CN: "\u6EE1\u6708\uFF1A+5"
+  - key: rule3_lv601
+    EN: '  when adjacent to 2+ same numbers'
+    CN: "  \u5219\u70B9\u4EAE\u683C\u5B50"
+  - key: rule4_lv203
+    EN: FLIP the coin after play
+    CN: "\u6253\u51FA\u540E\u786C\u5E01\u7FFB\u9762"
+  - key: rule4_lv207
+    EN: TOSS the coin after play
+    CN: "\u6253\u51FA\u540E\u6295\u63B7\u786C\u5E01"
+  - key: rule4_lv405
+    EN: 'Onigiri(Rice+Fish): =2'
+    CN: "\u996D\u56E2\uFF08\u9C7C+\u7C73\uFF09\uFF1A =2"
+  - key: rule4_lv504
+    EN: 'Eclipse(Full + 9): All cells -5'
+    CN: "9+\u6EE1\u6708\uFF1A\u6708\u98DF"
+  - key: rule5_lv403
+    EN: Fish and Rice alternate
+    CN: "\u9C7C\u548C\u7C73\u4EA4\u66FF\u51FA\u73B0"
+  - key: rule5_lv503
+    EN: '10+: Sunrise! LOSE'
+    CN: "\u8D85\u8FC79\uFF1A\u592A\u9633\u5347\u8D77\uFF0C\u6E38\u620F\u5931\u8D25"
+  - key: themedesc_more
+    EN: More themes <br>to come...
+    CN: "\u66F4\u591A\u4E3B\u9898\uFF0C<br>\u656C\u8BF7\u671F\u5F85\u3002"
+  - key: themename_tm1
+    EN: Clock
+    CN: "\u65F6\u949F"
+  - key: themename_tm2
+    EN: Coin
+    CN: "\u786C\u5E01"
+  - key: themename_tm4
+    EN: Sushi
+    CN: "\u5BFF\u53F8"
+  - key: themename_tm5
+    EN: Moon
+    CN: "\u6708\u4EAE"
+  - key: themename_tm6
+    EN: Lightbulb
+    CN: "\u706F\u6CE1"
+  - key: tool_name_theme2_status0
+    EN: Front
+    CN: "\u6B63\u9762"
+  - key: tool_name_theme2_status1
+    EN: Tail
+    CN: "\u53CD\u9762"
+  - key: tool_name_theme4_status1
+    EN: Fish
+    CN: "\u9C7C\u751F"
+  - key: tool_name_theme4_status2
+    EN: Rice
+    CN: "\u767D\u7C73"
+  - key: tool_name_theme5_status1
+    EN: Crescent
+    CN: "\u65B0\u6708"
+  - key: tool_name_theme5_status2
+    EN: Quarter
+    CN: "\u5F26\u6708"
+  - key: tool_name_theme5_status3
+    EN: Full
+    CN: "\u6EE1\u6708"
+  - key: tool_name_theme5_status4
+    EN: Quarter
+    CN: "\u5F26\u6708"
+  - key: tool_name_theme5_status5
+    EN: Crescent
+    CN: "\u65B0\u6708"
+  - key: ui_close_btn
+    EN: Close
+    CN: "\u5173\u95ED"
+  - key: ui_designer_note_title
+    EN: Designer's Notes
+    CN: "\u5236\u4F5C\u7B14\u8BB0"
+  - key: ui_finished_status
+    EN: (Passed)
+    CN: "\uFF08\u5B8C\u6210\uFF09"
+  - key: ui_goal_current_sum
+    EN: 'Current Sum: '
+    CN: "\u5F53\u524D\u6570\u5B57\u4E4B\u548C\uFF1A"
+  - key: ui_goal_section_title
+    EN: Goal
+    CN: "\u76EE\u6807"
+  - key: ui_hiddenobject_riddletitle
+    EN: 'Find the <b>object</b> according to the following riddle:'
+    CN: "\u6839\u636E\u8C1C\u8BED\u627E\u5230<b>\u7269\u4EF6</b>\uFF1A"
+  - key: ui_new_tag
+    EN: NEW
+    CN: "\u65B0"
+  - key: ui_perfect_status
+    EN: (Perfect)
+    CN: "\uFF08\u5B8C\u7F8E\u901A\u5173\uFF09"
+  - key: ui_retry_btn
+    EN: Restart
+    CN: "\u91CD\u8BD5"
+  - key: ui_rewind_btn
+    EN: Rewind
+    CN: "\u56DE\u6EAF"
+  - key: ui_ruleset_title
+    EN: Rules
+    CN: "\u89C4\u5219"
+  - key: ui_themephoto_gemcollection
+    EN: <sprite name=currency_gem> {0}/{1}
+    CN: <sprite name=currency_gem> {0}/{1}
+  - key: ui_themephoto_starcollection
+    EN: <sprite name=currency_star> {0}/{1}
+    CN: <sprite name=currency_star> {0}/{1}
+  - key: ui_themephoto_unlockreq
+    EN: <sprite name=currency_star_frame> {0}<br>to unlock
+    CN: "<sprite name=currency_star_frame> {0}<br>\u89E3\u9501"
+  - key: unlocked_tm1
+    EN: 
+    CN: "<b>\u65F6\u95F4</b>\u6C38\u4E0D\u505C\u6B47\u3002"
+  - key: unlocked_tm2
+    EN: 
+    CN: "<b>\u786C\u5E01</b>\u51B3\u5B9A\u547D\u8FD0\u3002"
+  - key: unlocked_tm4
+    EN: 
+    CN: "<b>\u5BFF\u53F8</b>\u7B80\u7EA6\u53C8\u7CBE\u81F4\u3002"
+  - key: unlocked_tm5
+    EN: 
+    CN: "<b>\u6708\u4EAE</b>\u6709\u65E0\u89C4\u5F8B\uFF1F"
+  - key: unlocked_tm6
+    EN: 
+    CN: "<b>\u706F\u6CE1</b>\u4EE3\u8868\u7740\u7075\u611F\u3002"
+  - key: ui_victory_title
+    EN: 
+    CN: "\u606D\u559C\u901A\u5173"
+  - key: ui_failure_title
+    EN: 
+    CN: "\u6311\u6218\u5931\u8D25"

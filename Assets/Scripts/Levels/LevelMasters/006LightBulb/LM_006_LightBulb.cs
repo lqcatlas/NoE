@@ -129,7 +129,7 @@ public class LM_006_LightBulb : LevelMasterBase
         Sequence seq = DOTween.Sequence();
         seq.AppendCallback(() => UpdateCells_PlayCellValueUpdate(coord));
         seq.AppendInterval(POWER_SPREAD_DURATION);
-        if(levelData.levelIndex >= 3 && levelData.levelIndex <= 8)
+        if(levelData.levelIndex >= 5)
         {
             seq.AppendCallback(() => UpdateCells_AdjacentCellsValueUpdate(coord));
             seq.AppendInterval(VFX_INTERVAL_DURATION);
@@ -147,9 +147,8 @@ public class LM_006_LightBulb : LevelMasterBase
                 {
                     hub.boardMaster.cells[i].NumberShift(temp_cellData.value);
                 }
-
             }
-            else if (BoardCalculation.Manhattan_Dist(hub.boardMaster.cells[i].coord, coord) == 1 && levelData.levelIndex >= 3 && levelData.levelIndex <= 8)
+            else if (BoardCalculation.Manhattan_Dist(hub.boardMaster.cells[i].coord, coord) == 1 && levelData.levelIndex >= 5)
             {
                 VFX_GetElectricity(coord, hub.boardMaster.cells[i].coord, hub.boardMaster.cells[i].transform);
             }
@@ -216,10 +215,26 @@ public class LM_006_LightBulb : LevelMasterBase
     }
     void InitCells_AllCellsStatusUpdate()
     {
+        int LightOnReq = 2;
+        //check all cells to update light on/off
+        for (int i = 0; i < levelData.curBoard.cells.Count; i++)
+        {
+            int SameCount = 0;
+            for (int j = 0; j < levelData.curBoard.cells.Count; j++)
+            {
+                if (BoardCalculation.Manhattan_Dist(levelData.curBoard.cells[i].coord, levelData.curBoard.cells[j].coord) == 1)
+                {
+                    if (levelData.curBoard.cells[i].value == levelData.curBoard.cells[j].value)
+                    {
+                        SameCount += 1;
+                    }
+                }
+            }
+            levelData.curBoard.cells[i].status = SameCount >= LightOnReq ? 1 : 0;
+        }
         //bool hasSwitch = false;
         for (int i = 0; i < lightbulbHub.lightBulbs.Count; i++)
         {
-            
             DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(lightbulbHub.lightBulbs[i].Key.coord);
             VFX_LightSwitch(lightbulbHub.lightBulbs[i], temp_cellData.status == 1);
         }

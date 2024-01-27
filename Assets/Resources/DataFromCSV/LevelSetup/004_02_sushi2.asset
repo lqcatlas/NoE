@@ -63,3 +63,4 @@ MonoBehaviour:
       status: 0
     toolCount: 12
     toolStatus: 1
+    curPlayCoord: {x: -1, y: -1}

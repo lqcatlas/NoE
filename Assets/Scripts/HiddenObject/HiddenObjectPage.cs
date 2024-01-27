@@ -92,7 +92,7 @@ public class HiddenObjectPage : MonoBehaviour
             LevelSelector.singleton.UnlockTheme(themeData.themeUID, themeData.unlockCost);
             //play found animation. Then transit to level
             photo.GetComponent<photoVFXCtrl>().ZoomIn(FOUND_ANIM_DURATION);
-            photo.GetComponent<photoVFXCtrl>().Replace(FOUND_ANIM_DURATION);
+            photo.GetComponent<photoVFXCtrl>().Replace(FOUND_ANIM_DURATION / 2f);
             //theme icon appear and then fly to target location
             themeName.DOFade(1f, FOUND_ANIM_DURATION / 2f);
             themeIcon.GetComponent<SpriteRenderer>().DOFade(1f, FOUND_ANIM_DURATION / 2f);
