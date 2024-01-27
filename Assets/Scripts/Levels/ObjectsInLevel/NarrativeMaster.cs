@@ -17,6 +17,10 @@ public class NarrativeMaster : MonoBehaviour
     static float TypeInterval = 0.2f;
     public TextMeshPro title;
     public List<TextMeshPro> lines;
+
+    string QueuedText = "";
+    int curCharacters = 0;
+    Sequence seq;
     public void ClearAllLines()
     {
         for(int i = 0; i < lines.Count; i++)
@@ -52,12 +56,10 @@ public class NarrativeMaster : MonoBehaviour
         if(curCharacters < QueuedText.Length)
         {
             _targetLine.SetText(QueuedText.Substring(0, ++curCharacters));
-            Sequence seq = DOTween.Sequence();
+            seq.Kill();
+            seq = DOTween.Sequence();
             seq.AppendInterval(TypeInterval)
                 .AppendCallback(() => TryTypeCharacter(_targetLine));
         }
     }
-    string QueuedText = "";
-    int curCharacters = 0;
-
 }

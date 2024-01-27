@@ -78,6 +78,7 @@ public class LevelMasterBase : MonoBehaviour
     }
     public void LevelInit()
     {
+        
         if (!levelData.LoadLevelFromSheetItem(levelSetupData))
         {
             return;
@@ -89,7 +90,7 @@ public class LevelMasterBase : MonoBehaviour
         AdditionalGenerateBoard_Theme();
         GenerateBoard();
         InitCells();
-        InitNarrative();
+        bool hasInitNarrative = InitNarrative();
         InitGoal();
         InitRuleset();
         InitTool();
@@ -98,7 +99,7 @@ public class LevelMasterBase : MonoBehaviour
         UpdatePlayable();
         //Below should be called as calledback when all key FX is handled
         Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(ThemeAnimationDelayAfterInit);
+        seq.AppendInterval(hasInitNarrative ? ThemeAnimationDelayAfterInit + dConstants.VFX.AdditionalDelayWithNarrative : ThemeAnimationDelayAfterInit);
         seq.AppendCallback(() => LevelInitCallback());
         gameObject.SetActive(true);
     }
@@ -261,8 +262,9 @@ public class LevelMasterBase : MonoBehaviour
             }
         }
     }
-    public virtual void InitNarrative()
+    public virtual bool InitNarrative()
     {
+        bool hasInitNarrative = false;
         hub.narrativeMaster.title.SetText(LocalizedAssetLookup.singleton.Translate(levelData.title));
         //narrative lines
         hub.narrativeMaster.ClearAllLines();
@@ -283,6 +285,7 @@ public class LevelMasterBase : MonoBehaviour
         {
             if (levelData.newInitNarrative.Length > 0)
             {
+                hasInitNarrative = true;
                 hub.narrativeMaster.TypeALine(levelData.newInitNarrative);
             }
         }
@@ -294,6 +297,7 @@ public class LevelMasterBase : MonoBehaviour
                 lineStatus.Add(NarrativeLineStatus.INQUEUE);
             }
         }
+        return hasInitNarrative;
     }
     public virtual void InitGoal()
     {

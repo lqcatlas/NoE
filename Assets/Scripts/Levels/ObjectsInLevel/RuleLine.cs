@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -17,22 +18,14 @@ public class RuleLine : MonoBehaviour
     public SpriteRenderer underline;
     public Transform mask;
 
+    private Sequence seq;
     public void SetRuleLine(RuleItem rule)
     {
         tagGroup.gameObject.SetActive(false);
         notificationTag.SetText(LocalizedAssetLookup.singleton.Translate("@Loc=ui_new_tag@@"));
         text.SetText(LocalizedAssetLookup.singleton.Translate(rule.ruleDesc));
-        //text.SetText(LocalizedAssetLookup.singleton.TranslateKey(rule.ruleDesc));
-        //icon.sprite = iconOptions[(int)rule.tag];
-        //icon.gameObject.SetActive(false);
-        if (rule.tag == RuleItem.RuleItemTag.addition || rule.tag == RuleItem.RuleItemTag.transition)
-        {
-            underline.gameObject.SetActive(false);
-        }
-        else
-        {
-            underline.gameObject.SetActive(false);
-        }
+        mask.gameObject.SetActive(false);
+        underline.gameObject.SetActive(false);
     }
     public void SetRuleLine(string txt)
     {
@@ -49,23 +42,28 @@ public class RuleLine : MonoBehaviour
         mask.gameObject.SetActive(true);
         mask.localPosition = new Vector3(2.5f, 0f, 0f);
         mask.localScale = new Vector3(60f, 5.4f, 1f);
+        tagGroup.SetActive(false);
         //icon.gameObject.SetActive(false);
     }
     public void AnimateLine(float delay = 0f)
     {
         float shakeDuration = 0.7f;
         float shakeDelayAddition = 0.3f;
-
+        tagGroup.transform.localScale = Vector3.zero;
+        seq.Pause();
+        seq.Kill();
+        //DOTween.Kill(mask);
+        //DOTween.Kill(tagGroup.transform);
+        seq = DOTween.Sequence();
+        seq.AppendInterval(delay);
         //icon.gameObject.SetActive(true);
         //icon.transform.DOScale(0f, shakeDelayAddition).From().SetDelay(delay);
-        tagGroup.transform.localScale = Vector3.zero;
-        tagGroup.transform.DOScale(1f, shakeDelayAddition).SetDelay(delay).OnStart(()=>tagGroup.SetActive(true));
-
+        seq.Append(mask.DOLocalMoveX(30f, shakeDuration).OnComplete(() => mask.localScale = Vector3.zero));
+        seq.Insert(delay + shakeDuration / 2f, tagGroup.transform.DOScale(1f, shakeDelayAddition).OnStart(()=>tagGroup.SetActive(true)));
         //text.transform.DOShakePosition(shakeDuration, 0.2f, 200, 90, false, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
         //text.transform.DOShakeRotation(shakeDuration, 5f, 200, 90, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
         //text.transform.DOShakeScale(shakeDuration, 0.05f, 200, 90, true, ShakeRandomnessMode.Full).SetDelay(delay + shakeDelayAddition);
-
-        mask.DOLocalMoveX(30f, shakeDuration).SetDelay(delay + shakeDelayAddition).OnComplete(()=>mask.localScale = Vector3.zero);
+        
 
     }
 }
