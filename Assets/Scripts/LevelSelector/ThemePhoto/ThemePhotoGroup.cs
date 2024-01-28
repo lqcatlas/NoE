@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 
@@ -32,6 +33,7 @@ public class ThemePhotoGroup : MonoBehaviour
     public TextMeshPro themeName;
     public TextMeshPro starCollection;
     public TextMeshPro gemCollection;
+    public GameObject gemInfo;
     public NoteLauncher designNote;
 
     [Header("VFX Prefabs")]
@@ -129,6 +131,7 @@ public class ThemePhotoGroup : MonoBehaviour
             themeIcon.SetActive(true);
             photoLine.SetText(LocalizedAssetLookup.singleton.Translate(themeData.unlockedLine));
 
+            gemInfo.gameObject.SetActive(curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect);
             designNote.gameObject.SetActive(curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect);
             completeSign.gameObject.SetActive(curStatus == ThemePhotoStatus.perfect);
         }

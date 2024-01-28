@@ -525,7 +525,7 @@ public class LevelMasterBase : MonoBehaviour
     {
         if(levelSetupData.nextLevelIndex > 0)
         {
-            if (levelSetupData.nextLevel.isHard && !isNavigation)
+            if (levelSetupData.nextLevel.isHard && !isNavigation && !levelSetupData.isHard)
             {
                 //return to main if next level is hard level
                 LevelExit();
