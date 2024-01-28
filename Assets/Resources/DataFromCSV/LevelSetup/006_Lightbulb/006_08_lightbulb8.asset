@@ -22,12 +22,12 @@ MonoBehaviour:
   title: '@Loc=levelname_lv608@@'
   newInitNarrative: 
   newPlayNarratives:
-  - '@Loc=narrative_tm6_ln5@@'
+  - '@Loc=narrative_tm6_ln005@@'
   oldNarratives:
-  - '@Loc=narrative_tm6_ln1@@'
-  - '@Loc=narrative_tm6_ln2@@'
-  - '@Loc=narrative_tm6_ln3@@'
-  - '@Loc=narrative_tm6_ln4@@'
+  - '@Loc=narrative_tm6_ln001@@'
+  - '@Loc=narrative_tm6_ln002@@'
+  - '@Loc=narrative_tm6_ln003@@'
+  - '@Loc=narrative_tm6_ln004@@'
   goal: '@Loc=goal_lv608@@'
   ruleset:
   - tag: 0
@@ -45,10 +45,10 @@ MonoBehaviour:
       value: 2
       status: 0
     - coord: {x: 1, y: 0}
-      value: 4
+      value: 1
       status: 0
     - coord: {x: 2, y: 0}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 0, y: 1}
       value: 1
@@ -57,7 +57,7 @@ MonoBehaviour:
       value: 2
       status: 0
     - coord: {x: 2, y: 1}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 0, y: 2}
       value: 4
@@ -68,6 +68,6 @@ MonoBehaviour:
     - coord: {x: 2, y: 2}
       value: 4
       status: 0
-    toolCount: 6
+    toolCount: 5
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

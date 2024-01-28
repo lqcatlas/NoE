@@ -22,10 +22,10 @@ MonoBehaviour:
   title: '@Loc=levelname_lv605@@'
   newInitNarrative: 
   newPlayNarratives:
-  - '@Loc=narrative_tm6_ln3@@'
+  - '@Loc=narrative_tm6_ln003@@'
   oldNarratives:
-  - '@Loc=narrative_tm6_ln1@@'
-  - '@Loc=narrative_tm6_ln2@@'
+  - '@Loc=narrative_tm6_ln001@@'
+  - '@Loc=narrative_tm6_ln002@@'
   goal: '@Loc=goal_lv605@@'
   ruleset:
   - tag: 2

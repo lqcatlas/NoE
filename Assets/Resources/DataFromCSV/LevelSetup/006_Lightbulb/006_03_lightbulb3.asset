@@ -23,7 +23,7 @@ MonoBehaviour:
   newInitNarrative: 
   newPlayNarratives: []
   oldNarratives:
-  - '@Loc=narrative_tm6_ln1@@'
+  - '@Loc=narrative_tm6_ln001@@'
   goal: '@Loc=goal_lv603@@'
   ruleset:
   - tag: 0

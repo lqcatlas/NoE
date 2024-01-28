@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using TMPro;
 //using Unity.VisualScripting;
 using UnityEngine;
@@ -19,7 +20,10 @@ public class NarrativeMaster : MonoBehaviour
     public List<TextMeshPro> lines;
 
     string QueuedText = "";
+    string FinalText = "";
     int curCharacters = 0;
+
+    //List<string> QueuedWords;
     Sequence seq;
     public void ClearAllLines()
     {
@@ -30,6 +34,7 @@ public class NarrativeMaster : MonoBehaviour
     }
     public void TypeALine(string _text)
     {
+        UpdateTypingSppeed();
         _text = LocalizedAssetLookup.singleton.Translate(_text);
         TextMeshPro targetLine = null;
         for(int i=0;i< lines.Count; i++)
@@ -42,7 +47,8 @@ public class NarrativeMaster : MonoBehaviour
         }
         if (targetLine)
         {
-            QueuedText = _text;
+            FinalText = _text;
+            QueuedText = GetQueuedTexts(_text);
             curCharacters = 0;
             TryTypeCharacter(targetLine);
         }
@@ -60,6 +66,27 @@ public class NarrativeMaster : MonoBehaviour
             seq = DOTween.Sequence();
             seq.AppendInterval(TypeInterval)
                 .AppendCallback(() => TryTypeCharacter(_targetLine));
+        }
+        else
+        {
+            _targetLine.SetText(FinalText);
+        }
+    }
+    string GetQueuedTexts(string richtextSentence)
+    {
+        //List<string> splitWords = new List<string>();
+        return Regex.Replace(richtextSentence, "<.*?>", string.Empty);
+    }
+    void UpdateTypingSppeed()
+    {
+        LanguageOption curLan = LocalizedAssetLookup.singleton.curLanguage;
+        if(curLan == LanguageOption.EN)
+        {
+            TypeInterval = dConstants.VFX.ENTypingInterval;
+        }
+        else if(curLan == LanguageOption.CN)
+        {
+            TypeInterval = dConstants.VFX.CNTypingInterval;
         }
     }
 }

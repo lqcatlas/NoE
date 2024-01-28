@@ -16,14 +16,17 @@ public static class dConstants
     }
     public static class VFX
     {
-        public const float CallbackAnimationDelayAfterInit = 2f;
+        public const float CallbackAnimationDelayAfterInit = 1f;
         public const float AdditionalDelayWithNarrative = 2f;
         public const float CallbackAnimationDelayAfterPlay = 0.2f;
         public const float NumberShiftAnimInterval = 0.05f;
-        //public const int NumberShiftAnimCount = 0;
+        
         public const float SelectorToLevelAnimTransitionPhase1 = 1.2f;
         public const float SelectorToLevelAnimTransitionPhase2 = 0.8f;
         public const float SelectorToLevelAnimTransitionOnHold = 0f;
+
+        public const float ENTypingInterval = 0.025f;
+        public const float CNTypingInterval = 0.2f;
     }
     public static class Gameplay
     {

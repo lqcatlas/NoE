@@ -20,20 +20,20 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 756cfcca75293c7459cf5f352f8a2164, type: 2}
   theme: '@Loc=themename_tm2@@'
   title: '@Loc=levelname_lv207@@'
-  newInitNarrative: '@Loc=narrative_tm2_ln11@@'
+  newInitNarrative: '@Loc=narrative_tm2_ln011@@'
   newPlayNarratives:
-  - '@Loc=narrative_tm2_ln12@@'
+  - '@Loc=narrative_tm2_ln012@@'
   oldNarratives:
-  - '@Loc=narrative_tm2_ln1@@'
-  - '@Loc=narrative_tm2_ln2@@'
-  - '@Loc=narrative_tm2_ln3@@'
-  - '@Loc=narrative_tm2_ln4@@'
-  - '@Loc=narrative_tm2_ln5@@'
-  - '@Loc=narrative_tm2_ln6@@'
-  - '@Loc=narrative_tm2_ln7@@'
-  - '@Loc=narrative_tm2_ln8@@'
-  - '@Loc=narrative_tm2_ln9@@'
-  - '@Loc=narrative_tm2_ln10@@'
+  - '@Loc=narrative_tm2_ln001@@'
+  - '@Loc=narrative_tm2_ln002@@'
+  - '@Loc=narrative_tm2_ln003@@'
+  - '@Loc=narrative_tm2_ln004@@'
+  - '@Loc=narrative_tm2_ln005@@'
+  - '@Loc=narrative_tm2_ln006@@'
+  - '@Loc=narrative_tm2_ln007@@'
+  - '@Loc=narrative_tm2_ln008@@'
+  - '@Loc=narrative_tm2_ln009@@'
+  - '@Loc=narrative_tm2_ln010@@'
   goal: '@Loc=goal_lv207@@'
   ruleset:
   - tag: 0

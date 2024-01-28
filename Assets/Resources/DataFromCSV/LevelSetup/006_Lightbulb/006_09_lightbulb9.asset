@@ -22,13 +22,13 @@ MonoBehaviour:
   title: '@Loc=levelname_lv609@@'
   newInitNarrative: 
   newPlayNarratives:
-  - '@Loc=narrative_tm6_ln6@@'
+  - '@Loc=narrative_tm6_ln006@@'
   oldNarratives:
-  - '@Loc=narrative_tm6_ln1@@'
-  - '@Loc=narrative_tm6_ln2@@'
-  - '@Loc=narrative_tm6_ln3@@'
-  - '@Loc=narrative_tm6_ln4@@'
-  - '@Loc=narrative_tm6_ln5@@'
+  - '@Loc=narrative_tm6_ln001@@'
+  - '@Loc=narrative_tm6_ln002@@'
+  - '@Loc=narrative_tm6_ln003@@'
+  - '@Loc=narrative_tm6_ln004@@'
+  - '@Loc=narrative_tm6_ln005@@'
   goal: '@Loc=goal_lv609@@'
   ruleset:
   - tag: 0

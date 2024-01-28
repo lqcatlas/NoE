@@ -20,11 +20,11 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 78afa7a2a27e0a447b3b5962c4da1e7b, type: 2}
   theme: '@Loc=themename_tm4@@'
   title: '@Loc=levelname_lv402@@'
-  newInitNarrative: '@Loc=narrative_tm4_ln2@@'
+  newInitNarrative: '@Loc=narrative_tm4_ln002@@'
   newPlayNarratives:
-  - '@Loc=narrative_tm4_ln3@@'
+  - '@Loc=narrative_tm4_ln003@@'
   oldNarratives:
-  - '@Loc=narrative_tm4_ln1@@'
+  - '@Loc=narrative_tm4_ln001@@'
   goal: '@Loc=goal_lv402@@'
   ruleset:
   - tag: 0

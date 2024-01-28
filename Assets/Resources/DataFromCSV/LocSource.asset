@@ -364,214 +364,214 @@ MonoBehaviour:
     CN: "\u6708\u4EAE\u4E3B\u9898\u7684\u8868\u9762\u662F\u6708\u98DF\u5E26\u6765\u7684\u6DF7\u4E71\uFF0C\u5E76\u5728\u6DF7\u4E71\u4E2D\u5BFB\u6C42\u79E9\u5E8F\u3002\u8FD9\u80CC\u540E\u7684\u5F00\u53D1\u7126\u70B9\u5728\u4E8E\u5BF9\u89C4\u5F8B\u7684\u89C2\u5BDF\u4E0E\u638C\u63E1\u3002\u6708\u76F8\u7684\u8F6E\u66FF\u89C4\u5219\u662F\u5165\u95E8\u7684\u4ECB\u7ECD\uFF0C\u4E4B\u540E\u7684\u5173\u5361\u5219\u56F4\u7ED5\u7740\u5982\u4F55\u9010\u6E10\u7406\u89E3\u6708\u98DF\u7684\u89C4\u5F8B\u800C\u5C55\u5F00\u3002"
   - key: manifesto_tm6
     EN: 
-    CN: "\u706F\u6CE1\u7684\u539F\u578B\u6765\u6E90\u662F\u5927\u5B66\u8BA1\u7B97\u673A\u8BFE\u7A0B\u4E2D\u4E00\u9053\u7ECF\u5178\u7684\u52A8\u6001\u89C4\u5212\u95EE\u9898\uFF1A\u706F\u6CE1\u95EE\u9898\u3002\u628A\u539F\u672C\u662F\u8BA1\u7B97\u673A\u624D\u80FD\u89E3\u51B3\u7684\u95EE\u9898\u8BA9\u4EBA\u8111\u6765\u89E3\u51B3\uFF0C\u6700\u5927\u7684\u6311\u6218\u5C31\u662F\u5982\u4F55\u505A\u5F97\u66F4\u52A0\u7B80\u5355\u66F4\u52A0\u76F4\u89C2\u3002\u6700\u7EC8\u7684\u8C1C\u9898\u4F9D\u7136\u6709\u4E9B\u590D\u6742\u4E86\uFF0C\u8FD9\u662F\u5728\u4FDD\u7559\u95EE\u9898\u7CBE\u9AD3\u60C5\u51B5\u4E0B\u80FD\u8FBE\u5230\u7684\u6700\u597D\u7ED3\u679C\u3002"
-  - key: narrative_tm1_ln1
+    CN: "\u706F\u6CE1\u7684\u7075\u611F\u6765\u6E90\u662F\u8868\u8FBE\u6211\u5BF9\u201C\u52A8\u6001\u89C4\u5212\u4E2D\u7684\u706F\u6CE1\u95EE\u9898\u201D\u6DF1\u6DF1\u7684\u9707\u64BC\u3002<br><br>\u201C\u706F\u6CE1\u95EE\u9898\u201D\u662F\u5927\u5B66\u8BA1\u7B97\u673A\u8BFE\u7A0B\u4E2D\u4E00\u7C7B\u6700\u7ECF\u5178\u9700\u8981\u4F7F\u7528\u52A8\u6001\u89C4\u5212\u7B97\u6CD5\u6765\u89E3\u51B3\u7684\u95EE\u9898\u3002\u5728\u5F53\u65F6\u7684\u6211\u770B\u6765\uFF0C\u52A8\u6001\u89C4\u5212\u7B97\u6CD5\u662F\u7B2C\u4E00\u6B21\u8BA9\u6211\u610F\u8BC6\u5230\u8BA1\u7B97\u673A\u7684\u7B97\u529B\u8D85\u8D8A\u4E86\u4EBA\u7C7B\u7684\u8BA4\u77E5\uFF0C\u505A\u7740\u4EBA\u8111\u5F88\u96BE\u5B8C\u6210\u7684\u4EFB\u52A1\u3002<br><br>\u8BBE\u8BA1\u8FD9\u4E2A\u8C1C\u9898\u662F\u5BF9\u5B83\u518D\u4E00\u6B21\u7684\u56DE\u987E\u4E0E\u63A2\u7D22\u3002\u901A\u8FC7\u6570\u5B57\u8C1C\u9898\u7684\u5F62\u5F0F\uFF0C\u80FD\u5426\u628A\u5982\u6B64\u6666\u6DA9\u62BD\u8C61\u7684\u95EE\u9898\u4EE5\u66F4\u52A0\u6709\u4E50\u8DA3\u7684\u5F62\u5F0F\u5C55\u73B0\u51FA\u6765\u5462\uFF1F"
+  - key: narrative_tm1_ln001
     EN: 
     CN: "\u6E9C\u8D70\u7684\u65F6\u95F4"
-  - key: narrative_tm1_ln10
-    EN: 
-    CN: "\u6700\u7EC8\u62B5\u8FBE\u6668\u66E6\u3002"
-  - key: narrative_tm1_ln11
-    EN: 
-    CN: "\u610F\u8BC6\u9010\u6E10\u6A21\u7CCA\uFF0C"
-  - key: narrative_tm1_ln12
-    EN: 
-    CN: "\u662F\u65F6\u5019\u4F11\u606F\u4E86\u3002"
-  - key: narrative_tm1_ln2
+  - key: narrative_tm1_ln002
     EN: 
     CN: "\u6EF4\u7B54\u6EF4\u7B54\u6EF4\u7B54\uFF0C"
-  - key: narrative_tm1_ln3
+  - key: narrative_tm1_ln003
     EN: 
     CN: "\u65F6\u949F\u4E0D\u77E5\u75B2\u5026\u5730\u524D\u8FDB\u3002"
-  - key: narrative_tm1_ln4
+  - key: narrative_tm1_ln004
     EN: 
     CN: "\u5FAE\u535A\u3001\u8FDE\u8F7D\u3001\u76F4\u64AD\uFF0C"
-  - key: narrative_tm1_ln5
+  - key: narrative_tm1_ln005
     EN: 
     CN: "\u5F00\u542F\u65B0\u7684\u8282\u5F8B\uFF0C"
-  - key: narrative_tm1_ln6
+  - key: narrative_tm1_ln006
     EN: 
     CN: "\u65F6\u95F4\u5728\u4F60\u7684\u6307\u5C16\u9ED8\u9ED8\u6ED1\u52A8\u3002"
-  - key: narrative_tm1_ln7
+  - key: narrative_tm1_ln007
     EN: 
     CN: "\u591C\u7684\u65C5\u8005\uFF0C"
-  - key: narrative_tm1_ln8
+  - key: narrative_tm1_ln008
     EN: 
     CN: "\u5728\u9ED1\u6697\u4E2D\u8DCB\u6D89\u3002"
-  - key: narrative_tm1_ln9
+  - key: narrative_tm1_ln009
     EN: 
     CN: "\u62D6\u7740\u75B2\u60EB\u7684\u8EAB\u8EAF\uFF0C"
-  - key: narrative_tm2_ln1
+  - key: narrative_tm1_ln010
+    EN: 
+    CN: "\u6700\u7EC8\u62B5\u8FBE\u6668\u66E6\u3002"
+  - key: narrative_tm1_ln011
+    EN: 
+    CN: "\u610F\u8BC6\u9010\u6E10\u6A21\u7CCA\uFF0C"
+  - key: narrative_tm1_ln012
+    EN: 
+    CN: "\u662F\u65F6\u5019\u4F11\u606F\u4E86\u3002"
+  - key: narrative_tm2_ln001
     EN: 
     CN: "\u6765\u81EA\u786C\u5E01\u7684\u547D\u8FD0"
-  - key: narrative_tm2_ln10
-    EN: 
-    CN: "\u521B\u9020\u547D\u8FD0\u7684\u6CE2\u6F9C\u3002"
-  - key: narrative_tm2_ln11
-    EN: 
-    CN: "\u4F60\u518D\u6B21\u6295\u63B7\uFF0C"
-  - key: narrative_tm2_ln12
-    EN: 
-    CN: "\u7B49\u5F85\u5BBF\u547D\u843D\u4E0B\u7684\u56DE\u54CD\u3002"
-  - key: narrative_tm2_ln13
-    EN: 
-    CN: "\u4E0D\u7518\u4E8E\u6B64\uFF0C"
-  - key: narrative_tm2_ln14
-    EN: 
-    CN: "\u5C31\u7528\u667A\u6167\u8FDB\u884C\u89E3\u8BFB\u3002"
-  - key: narrative_tm2_ln2
+  - key: narrative_tm2_ln002
     EN: 
     CN: "\u786C\u5E01\u6709\u65E0\u6570\u79CD\u5F62\u5F0F\u3002"
-  - key: narrative_tm2_ln3
+  - key: narrative_tm2_ln003
     EN: 
     CN: "\u5B83\u7A7F\u8D8A\u5386\u53F2\uFF0C"
-  - key: narrative_tm2_ln4
+  - key: narrative_tm2_ln004
     EN: 
     CN: "\u59CB\u7EC8\u4FDD\u6301\u7740\u4E24\u9762\u3002"
-  - key: narrative_tm2_ln5
+  - key: narrative_tm2_ln005
     EN: 
     CN: "\u6B63\u9762\u8C61\u5F81\u524D\u8FDB\uFF0C"
-  - key: narrative_tm2_ln6
+  - key: narrative_tm2_ln006
     EN: 
     CN: "\u4E5F\u53EF\u80FD\u662F\u76F2\u4ECE\uFF1B"
-  - key: narrative_tm2_ln7
+  - key: narrative_tm2_ln007
     EN: 
     CN: "\u53CD\u9762\u4EE3\u8868\u4FDD\u7559\uFF0C"
-  - key: narrative_tm2_ln8
+  - key: narrative_tm2_ln008
     EN: 
     CN: "\u6216\u8005\u53EB\u653E\u5F03\u3002"
-  - key: narrative_tm2_ln9
+  - key: narrative_tm2_ln009
     EN: 
     CN: "\u4E24\u9762\u4EA4\u9519\uFF0C"
-  - key: narrative_tm4_ln1
+  - key: narrative_tm2_ln010
+    EN: 
+    CN: "\u521B\u9020\u547D\u8FD0\u7684\u6CE2\u6F9C\u3002"
+  - key: narrative_tm2_ln011
+    EN: 
+    CN: "\u4F60\u518D\u6B21\u6295\u63B7\uFF0C"
+  - key: narrative_tm2_ln012
+    EN: 
+    CN: "\u7B49\u5F85\u5BBF\u547D\u843D\u4E0B\u7684\u56DE\u54CD\u3002"
+  - key: narrative_tm2_ln013
+    EN: 
+    CN: "\u4E0D\u7518\u4E8E\u6B64\uFF0C"
+  - key: narrative_tm2_ln014
+    EN: 
+    CN: "\u5C31\u7528\u667A\u6167\u8FDB\u884C\u89E3\u8BFB\u3002"
+  - key: narrative_tm4_ln001
     EN: 
     CN: "\u5BFF\u53F8\u7684\u7CBE\u81F4"
-  - key: narrative_tm4_ln10
-    EN: 
-    CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C"
-  - key: narrative_tm4_ln11
-    EN: 
-    CN: "\u5374\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7EC4\u5408\u3002"
-  - key: narrative_tm4_ln12
-    EN: 
-    CN: "\u6765\u81EA\u5927\u5730\u4E0E\u6DF1\u6D77\u7684\u78B0\u649E\uFF0C"
-  - key: narrative_tm4_ln13
-    EN: 
-    CN: "\u8BC9\u8BF4\u7B80\u7EA6\u7684\u7F8E\u3002"
-  - key: narrative_tm4_ln14
-    EN: 
-    CN: "\u7528\u5BF9\u98DF\u6750\u7684\u5C0A\u91CD\uFF0C"
-  - key: narrative_tm4_ln15
-    EN: 
-    CN: "\u8868\u8FBE\u5BF9\u5473\u89C9\u7684\u6DF1\u523B\u7406\u89E3\u3002"
-  - key: narrative_tm4_ln2
+  - key: narrative_tm4_ln002
     EN: 
     CN: "\u4F60\u5939\u8D77\u4E00\u7247\u9C7C\u751F\uFF0C"
-  - key: narrative_tm4_ln3
+  - key: narrative_tm4_ln003
     EN: 
     CN: "\u6676\u83B9\u5254\u900F\u3002"
-  - key: narrative_tm4_ln4
+  - key: narrative_tm4_ln004
     EN: 
     CN: "\u62FF\u8D77\u4E00\u56E2\u767D\u996D\uFF0C"
-  - key: narrative_tm4_ln5
+  - key: narrative_tm4_ln005
     EN: 
     CN: "\u5728\u7897\u4E2D\u52FE\u52D2\u51FA\u5F27\u7EBF\u3002"
-  - key: narrative_tm4_ln6
+  - key: narrative_tm4_ln006
     EN: 
     CN: "\u8F7B\u8F7B\u634F\u5408\uFF0C"
-  - key: narrative_tm4_ln7
+  - key: narrative_tm4_ln007
     EN: 
     CN: "\u521B\u9020\u51FA\u5BFF\u53F8\u7EC6\u817B\u7684\u53E3\u611F\u3002"
-  - key: narrative_tm4_ln8
+  - key: narrative_tm4_ln008
     EN: 
     CN: "\u7F13\u7F13\u5377\u8D77\uFF0C"
-  - key: narrative_tm4_ln9
+  - key: narrative_tm4_ln009
     EN: 
     CN: "\u5C31\u5F00\u542F\u4E86\u996D\u56E2\u4E30\u76C8\u7684\u5473\u89C9\u3002"
-  - key: narrative_tm5_ln1
+  - key: narrative_tm4_ln010
+    EN: 
+    CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C"
+  - key: narrative_tm4_ln011
+    EN: 
+    CN: "\u5374\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7EC4\u5408\u3002"
+  - key: narrative_tm4_ln012
+    EN: 
+    CN: "\u6765\u81EA\u5927\u5730\u4E0E\u6DF1\u6D77\u7684\u78B0\u649E\uFF0C"
+  - key: narrative_tm4_ln013
+    EN: 
+    CN: "\u8BC9\u8BF4\u7B80\u7EA6\u7684\u7F8E\u3002"
+  - key: narrative_tm4_ln014
+    EN: 
+    CN: "\u7528\u5BF9\u98DF\u6750\u7684\u5C0A\u91CD\uFF0C"
+  - key: narrative_tm4_ln015
+    EN: 
+    CN: "\u8868\u8FBE\u5BF9\u5473\u89C9\u7684\u6DF1\u523B\u7406\u89E3\u3002"
+  - key: narrative_tm5_ln001
     EN: 
     CN: "\u6708\u7684\u89C4\u5F8B"
-  - key: narrative_tm5_ln10
-    EN: 
-    CN: "\u7528\u53CD\u601D\u548C\u603B\u7ED3\uFF0C"
-  - key: narrative_tm5_ln11
-    EN: 
-    CN: "\u8BA9\u79E9\u5E8F\u6D6E\u73B0\u3002"
-  - key: narrative_tm5_ln12
-    EN: 
-    CN: "\u8868\u9762\u7684\u65E0\u5E8F\uFF0C"
-  - key: narrative_tm5_ln13
-    EN: 
-    CN: "\u85CF\u7740\u66F4\u6DF1\u7684\u89C4\u5219\u3002"
-  - key: narrative_tm5_ln14
-    EN: 
-    CN: "\u5728\u66F2\u6298\u4E2D\u9886\u609F\uFF0C"
-  - key: narrative_tm5_ln15
-    EN: 
-    CN: "\u83B7\u5F97\u518D\u6B21\u7684\u638C\u63A7\u3002"
-  - key: narrative_tm5_ln2
+  - key: narrative_tm5_ln002
     EN: 
     CN: "\u4E8F\u76C8\u4EA4\u66FF\uFF0C"
-  - key: narrative_tm5_ln3
+  - key: narrative_tm5_ln003
     EN: 
     CN: "\u5706\u7F3A\u53D8\u8FC1\u3002"
-  - key: narrative_tm5_ln4
+  - key: narrative_tm5_ln004
     EN: 
     CN: "\u4E98\u53E4\u4E0D\u53D8\u7684\uFF0C"
-  - key: narrative_tm5_ln5
+  - key: narrative_tm5_ln005
     EN: 
     CN: "\u662F\u591C\u7A7A\u7684\u6307\u5F15\u3002"
-  - key: narrative_tm5_ln6
+  - key: narrative_tm5_ln006
     EN: 
     CN: "\u7A81\u5982\u5176\u6765\u7684\u6708\u98DF\uFF0C"
-  - key: narrative_tm5_ln7
+  - key: narrative_tm5_ln007
     EN: 
     CN: "\u6563\u64AD\u6DF7\u6C8C\u3002"
-  - key: narrative_tm5_ln8
+  - key: narrative_tm5_ln008
     EN: 
     CN: "\u501F\u7740\u5FAE\u5F31\u5149\u8F89\uFF0C"
-  - key: narrative_tm5_ln9
+  - key: narrative_tm5_ln009
     EN: 
     CN: "\u4F60\u5728\u8FF7\u60D8\u4E2D\u524D\u884C\u3002"
-  - key: narrative_tm6_ln1
+  - key: narrative_tm5_ln010
+    EN: 
+    CN: "\u7528\u53CD\u601D\u548C\u603B\u7ED3\uFF0C"
+  - key: narrative_tm5_ln011
+    EN: 
+    CN: "\u8BA9\u79E9\u5E8F\u6D6E\u73B0\u3002"
+  - key: narrative_tm5_ln012
+    EN: 
+    CN: "\u8868\u9762\u7684\u65E0\u5E8F\uFF0C"
+  - key: narrative_tm5_ln013
+    EN: 
+    CN: "\u85CF\u7740\u66F4\u6DF1\u7684\u89C4\u5219\u3002"
+  - key: narrative_tm5_ln014
+    EN: 
+    CN: "\u5728\u66F2\u6298\u4E2D\u9886\u609F\uFF0C"
+  - key: narrative_tm5_ln015
+    EN: 
+    CN: "\u83B7\u5F97\u518D\u6B21\u7684\u638C\u63A7\u3002"
+  - key: narrative_tm6_ln001
     EN: 
     CN: "\u7075\u611F\u4E4B\u5149"
-  - key: narrative_tm6_ln10
+  - key: narrative_tm6_ln002
     EN: 
-    CN: "\u5728\u4E8E\u4FDD\u7559\u6070\u5982\u5176\u5206\u7684\u7075\u611F\u3002"
-  - key: narrative_tm6_ln11
+    CN: "\u7535\u706F\u603B\u7528\u6765\u4EE3\u8868<b>\u7075\u611F</b>\u3002"
+  - key: narrative_tm6_ln003
     EN: 
-    CN: "\u5728\u53D1\u660E\u706F\u6CE1\u4EE5\u524D\uFF0C"
-  - key: narrative_tm6_ln12
-    EN: 
-    CN: "\u5728\u90A3\u65E0\u8FB9\u9ED1\u6697\u7684\u5C81\u6708\u91CC\uFF0C"
-  - key: narrative_tm6_ln13
-    EN: 
-    CN: "\u5149\u660E\u6C38\u9A7B\u4E8E\u5FC3\u95F4\u3002"
-  - key: narrative_tm6_ln2
-    EN: 
-    CN: "\u7535\u706F\u603B\u7528\u6765\u4EE3\u8868\u7075\u611F\u3002"
-  - key: narrative_tm6_ln3
-    EN: 
-    CN: "\u706B\u82B1\u5728\u8111\u4E2D\u8DC3\u52A8\uFF0C"
-  - key: narrative_tm6_ln4
+    CN: "<b>\u706B\u82B1</b>\u5728\u8111\u4E2D\u8DC3\u52A8\uFF0C"
+  - key: narrative_tm6_ln004
     EN: 
     CN: "\u601D\u8DEF\u9010\u6E10\u4FBF\u53D8\u5F97\u6E05\u6670\u3002"
-  - key: narrative_tm6_ln5
+  - key: narrative_tm6_ln005
     EN: 
-    CN: "\u5149\u660E\u6D8C\u73B0\uFF0C"
-  - key: narrative_tm6_ln6
+    CN: "\u5149\u660E<b>\u6D8C\u73B0</b>\uFF0C"
+  - key: narrative_tm6_ln006
     EN: 
     CN: "\u4EA7\u751F\u7480\u74A8\u7684\u5370\u8BB0\u3002"
-  - key: narrative_tm6_ln7
+  - key: narrative_tm6_ln007
     EN: 
-    CN: "\u8FC7\u5EA6\u7684\u6C79\u6D8C\uFF0C"
-  - key: narrative_tm6_ln8
+    CN: "\u8FC7\u5EA6\u7684<b>\u6C79\u6D8C</b>\uFF0C"
+  - key: narrative_tm6_ln008
     EN: 
     CN: "\u8BA9\u4F60\u5931\u53BB\u4E86\u65B9\u5411\u3002"
-  - key: narrative_tm6_ln9
+  - key: narrative_tm6_ln009
     EN: 
     CN: "\u771F\u6B63\u7684\u667A\u6167\uFF0C"
+  - key: narrative_tm6_ln010
+    EN: 
+    CN: "\u5728\u4E8E\u4FDD\u7559<b>\u6070\u5982\u5176\u5206</b>\u7684\u7075\u611F\u3002"
+  - key: narrative_tm6_ln011
+    EN: 
+    CN: "\u5728\u53D1\u660E\u706F\u6CE1\u4EE5\u524D\uFF0C"
+  - key: narrative_tm6_ln012
+    EN: 
+    CN: "\u5728\u90A3\u65E0\u8FB9\u9ED1\u6697\u7684\u5C81\u6708\u91CC\uFF0C"
+  - key: narrative_tm6_ln013
+    EN: 
+    CN: "\u5149\u660E\u6C38\u9A7B\u4E8E\u5FC3\u95F4\u3002"
   - key: prompt_tm1
     EN: Photo is created by Midjourney using the following prompt:<br>A realistic
       photo of a tiny bedroom in modern city at night. There are an old alarm clock

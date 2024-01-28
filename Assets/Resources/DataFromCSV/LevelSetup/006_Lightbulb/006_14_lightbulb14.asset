@@ -22,19 +22,19 @@ MonoBehaviour:
   title: '@Loc=levelname_lv614@@'
   newInitNarrative: 
   newPlayNarratives:
-  - '@Loc=narrative_tm6_ln12@@'
+  - '@Loc=narrative_tm6_ln012@@'
   oldNarratives:
-  - '@Loc=narrative_tm6_ln1@@'
-  - '@Loc=narrative_tm6_ln2@@'
-  - '@Loc=narrative_tm6_ln3@@'
-  - '@Loc=narrative_tm6_ln4@@'
-  - '@Loc=narrative_tm6_ln5@@'
-  - '@Loc=narrative_tm6_ln6@@'
-  - '@Loc=narrative_tm6_ln7@@'
-  - '@Loc=narrative_tm6_ln8@@'
-  - '@Loc=narrative_tm6_ln9@@'
-  - '@Loc=narrative_tm6_ln10@@'
-  - '@Loc=narrative_tm6_ln11@@'
+  - '@Loc=narrative_tm6_ln001@@'
+  - '@Loc=narrative_tm6_ln002@@'
+  - '@Loc=narrative_tm6_ln003@@'
+  - '@Loc=narrative_tm6_ln004@@'
+  - '@Loc=narrative_tm6_ln005@@'
+  - '@Loc=narrative_tm6_ln006@@'
+  - '@Loc=narrative_tm6_ln007@@'
+  - '@Loc=narrative_tm6_ln008@@'
+  - '@Loc=narrative_tm6_ln009@@'
+  - '@Loc=narrative_tm6_ln010@@'
+  - '@Loc=narrative_tm6_ln011@@'
   goal: '@Loc=goal_lv614@@'
   ruleset:
   - tag: 0

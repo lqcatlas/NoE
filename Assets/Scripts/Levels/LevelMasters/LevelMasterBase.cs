@@ -339,7 +339,7 @@ public class LevelMasterBase : MonoBehaviour
         hub.miscMaster.ResetMiscs();
         //show rewind btn only if it can be rewinded
         hub.miscMaster.rewindBtn.SetActive(levelData.canRewind());
-        UpdateLevelNavigation();
+        InitLevelNavigation();
         //set new theme hint to be true if there are at least 1 unlockable themes;
         hub.miscMaster.newthemeHint.gameObject.SetActive(LevelSelector.singleton.LocateFirstUnlockableTheme() >= 0);
     }
@@ -576,7 +576,7 @@ public class LevelMasterBase : MonoBehaviour
         }
     }
     
-    void UpdateLevelNavigation()
+    void InitLevelNavigation()
     {
         hub.miscMaster.prevBtn.SetActive(false);
         if (levelSetupData.previousLevel != null)
@@ -596,7 +596,7 @@ public class LevelMasterBase : MonoBehaviour
                 hub.miscMaster.nextBtn.SetActive(true);
             }
         }
-        hub.miscMaster.levelName.SetText(string.Format("{0} {1:000}", LocalizedAssetLookup.singleton.Translate(levelData.theme), levelData.levelIndex));
+        hub.miscMaster.levelName.SetText(string.Format("{0} {1:000}{2}", LocalizedAssetLookup.singleton.Translate(levelData.theme), levelData.levelIndex, levelData.isHard? " <sprite name=currency_gem>":""));
     }
     public void GoToPreviousLevel()
     {

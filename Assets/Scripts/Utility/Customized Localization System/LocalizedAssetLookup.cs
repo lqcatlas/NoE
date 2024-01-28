@@ -20,7 +20,7 @@ public class LocalizedAssetLookup : MonoBehaviour
         }
     }
     [SerializeField] LocalizationSource source;
-    [SerializeField] LanguageOption curLanguage;
+    public LanguageOption curLanguage;
     [SerializeField] LanguageOption defaultLanguage;
     public string Translate(string txt)
     {
