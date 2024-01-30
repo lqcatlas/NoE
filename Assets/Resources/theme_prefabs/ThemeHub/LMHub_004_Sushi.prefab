@@ -254,13 +254,17 @@ MonoBehaviour:
   - {fileID: 92953782, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   - {fileID: 1983163683, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   - {fileID: -41299935, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  toolDisplayName:
-  - 
-  - '@Loc=tool_name_theme4_status1@@'
-  - '@Loc=tool_name_theme4_status2@@'
   chopsticks: {fileID: 8210950266377086147}
   cellBgHolder: {fileID: 4068668159233435932}
   sushiPlateTemplate: {fileID: 7440367047798593944, guid: 640b437b764681f47a4c5738650e1205, type: 3}
+  toolStatusGroup:
+    toolStatus:
+    - statusName: 
+      playInfograph: {fileID: 0}
+    - statusName: '@Loc=tool_name_theme4_status1@@'
+      playInfograph: {fileID: 1978449073, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+    - statusName: '@Loc=tool_name_theme4_status2@@'
+      playInfograph: {fileID: -1229434406, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   playClips:
   - {fileID: 8300000, guid: fb45d559bcc779848963d1204ea40414, type: 3}
   - {fileID: 8300000, guid: 29064dfbf68209c42becc6b2aed78f2e, type: 3}

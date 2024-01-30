@@ -47,6 +47,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulbToolSprite: {fileID: -81264564, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   electricity: {fileID: 1056449791849857847, guid: 338c14e18362b5949b794d64d7cffeac, type: 3}
+  toolStatusGroupV1:
+    toolStatus:
+    - statusName: 
+      playInfograph: {fileID: 2120586445, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+  toolStatusGroupV2:
+    toolStatus:
+    - statusName: 
+      playInfograph: {fileID: -416036338, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   cellBgHolder: {fileID: 4068668159233435932}
   bulbBgTemplate: {fileID: 926363918380194025, guid: b477c3a2af6924b4e8f99bfd629a6552, type: 3}
   switchClips:

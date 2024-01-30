@@ -702,6 +702,20 @@ MonoBehaviour:
   tools: []
   toolGroup: {fileID: 6898941850644644797}
   toolTemplate: {fileID: 152894234604576857}
+  toolStatusGroup:
+    toolStatus:
+    - statusName: 
+      playInfograph: {fileID: 0}
+    - statusName: '@Loc=tool_name_theme5_status1@@'
+      playInfograph: {fileID: 2120586445, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+    - statusName: '@Loc=tool_name_theme5_status2@@'
+      playInfograph: {fileID: 1978449073, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+    - statusName: '@Loc=tool_name_theme5_status3@@'
+      playInfograph: {fileID: -2072555304, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+    - statusName: '@Loc=tool_name_theme5_status4@@'
+      playInfograph: {fileID: 1978449073, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+    - statusName: '@Loc=tool_name_theme5_status5@@'
+      playInfograph: {fileID: 2120586445, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   MAX_TOOL_COUNT_IN_CYCLE: 7
   eclipseVFX: {fileID: 3716812399485767969}
   phaseRotate: {fileID: 8557199609628433335}

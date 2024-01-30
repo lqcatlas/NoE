@@ -28,7 +28,7 @@ public class LM_005_Moon : LevelMasterBase
         base.InitTool();
         hub.toolMaster.frame.gameObject.SetActive(false);
         hub.toolMaster.toolIcon.gameObject.SetActive(false);
-        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(moonHub.toolDisplayName[levelData.curBoard.toolStatus]));
+        UpdateToolStatusDisplay();
         moonHub.SetPlateWidget(false);
         //moon phase tablet
         moonHub.InitToolToCycle(levelData.curBoard.toolStatus, levelData.levelIndex);
@@ -185,7 +185,7 @@ public class LM_005_Moon : LevelMasterBase
         base.UpdateTool(coord);
         //moon phase tablet rotate
         //hub.toolMaster.toolIcon.sprite = moonHub.statusSprites[levelData.curBoard.toolStatus];\
-        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(moonHub.toolDisplayName[levelData.curBoard.toolStatus]));
+        UpdateToolStatusDisplay();
         moonHub.AddPredictedToolToCycle(levelData.curBoard.toolStatus, levelData.levelIndex);
         moonHub.AnimateCycle();
     }
@@ -406,5 +406,25 @@ public class LM_005_Moon : LevelMasterBase
         return false;
     }
     //to do add a special lose banner of sun
-    
+    void UpdateToolStatusDisplay()
+    {
+        hub.toolMaster.toolIcon.sprite = moonHub.statusSprites[levelData.curBoard.toolStatus];
+
+        ToolStatusGroup targetDisplayTemplate = moonHub.toolStatusGroup;
+        string toolName = targetDisplayTemplate.GetStatusName(levelData.curBoard.toolStatus);
+        if (toolName != null)
+        {
+            hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(toolName));
+        }
+        Sprite toolInfograph = targetDisplayTemplate.GetStatusInfograph(levelData.curBoard.toolStatus);
+        if (toolInfograph != null)
+        {
+            hub.toolMaster.infographGroup.SetActive(true);
+            hub.toolMaster.infograph.sprite = toolInfograph;
+        }
+        else
+        {
+            hub.toolMaster.infographGroup.SetActive(false);
+        }
+    }
 }

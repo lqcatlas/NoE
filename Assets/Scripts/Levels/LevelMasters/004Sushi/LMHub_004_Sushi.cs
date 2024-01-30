@@ -6,7 +6,7 @@ public class LMHub_004_Sushi : MonoBehaviour
 {
     [Header("Assets")]
     public List<Sprite> statusSprites;
-    public List<string> toolDisplayName = new List<string>();
+    //public List<string> toolDisplayName = new List<string>();
     [Header("Background")]
     public SpriteRenderer chopsticks;
 
@@ -14,6 +14,9 @@ public class LMHub_004_Sushi : MonoBehaviour
     public Transform cellBgHolder;
     public GameObject sushiPlateTemplate;
     public List<KeyValuePair<CellMaster, GameObject>> sushiPlates;
+
+    [Header("Tool Display")]
+    public ToolStatusGroup toolStatusGroup;
 
     [Header("Play Audio")]
     public List<AudioClip> playClips;

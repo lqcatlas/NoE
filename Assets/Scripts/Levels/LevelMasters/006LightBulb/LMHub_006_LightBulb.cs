@@ -8,6 +8,9 @@ public class LMHub_006_LightBulb : MonoBehaviour
     //public List<Sprite> bulbSprites;
     public Sprite bulbToolSprite;
     public GameObject electricity;
+    [Header("Tool Display")]
+    public ToolStatusGroup toolStatusGroupV1;
+    public ToolStatusGroup toolStatusGroupV2;
     [Header("Cells")]
     public Transform cellBgHolder;
     public GameObject bulbBgTemplate;

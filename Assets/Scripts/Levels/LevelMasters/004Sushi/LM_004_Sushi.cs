@@ -60,8 +60,7 @@ public class LM_004_Sushi : LevelMasterBase
     public override void InitTool()
     {
         base.InitTool();
-        hub.toolMaster.toolIcon.sprite = sushiHub.statusSprites[levelData.curBoard.toolStatus];
-        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(sushiHub.toolDisplayName[levelData.curBoard.toolStatus]));
+        UpdateToolStatusDisplay();
     }
     public override void AddtionalInit_Theme()
     {
@@ -191,8 +190,7 @@ public class LM_004_Sushi : LevelMasterBase
     public override void UpdateTool(Vector2Int coord)
     {
         base.UpdateTool(coord);
-        hub.toolMaster.toolIcon.sprite = sushiHub.statusSprites[levelData.curBoard.toolStatus];
-        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(sushiHub.toolDisplayName[levelData.curBoard.toolStatus]));
+        UpdateToolStatusDisplay();
     }
     //private bool narrative_lv2_1 = false;
     //private bool narrative_lv3_1 = false;
@@ -323,5 +321,26 @@ public class LM_004_Sushi : LevelMasterBase
         //.OnComplete(() => Destroy(temp_sprite))
         //sushiHub.sushiPlates[i].Value.SetActive(temp_cellData.status != 0);
         //sushiHub.sushiPlates[i].Value.GetComponent<SpriteRenderer>().sprite = sushiHub.statusSprites[temp_cellData.status];
+    }
+    void UpdateToolStatusDisplay()
+    {
+        hub.toolMaster.toolIcon.sprite = sushiHub.statusSprites[levelData.curBoard.toolStatus];
+
+        ToolStatusGroup targetDisplayTemplate = sushiHub.toolStatusGroup;
+        string toolName = targetDisplayTemplate.GetStatusName(levelData.curBoard.toolStatus);
+        if (toolName != null)
+        {
+            hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(toolName));
+        }
+        Sprite toolInfograph = targetDisplayTemplate.GetStatusInfograph(levelData.curBoard.toolStatus);
+        if (toolInfograph != null)
+        {
+            hub.toolMaster.infographGroup.SetActive(true);
+            hub.toolMaster.infograph.sprite = toolInfograph;
+        }
+        else
+        {
+            hub.toolMaster.infographGroup.SetActive(false);
+        }
     }
 }

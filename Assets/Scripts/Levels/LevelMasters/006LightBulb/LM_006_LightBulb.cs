@@ -58,6 +58,7 @@ public class LM_006_LightBulb : LevelMasterBase
     {
         base.InitTool();
         hub.toolMaster.toolIcon.sprite = lightbulbHub.bulbToolSprite;
+        UpdateToolStatusDisplay();
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -383,5 +384,34 @@ public class LM_006_LightBulb : LevelMasterBase
             }
         }
         return false;
+    }
+    void UpdateToolStatusDisplay()
+    {
+        
+        ToolStatusGroup targetDisplayTemplate;
+        if (levelData.levelIndex <= 4)
+        {
+            targetDisplayTemplate = lightbulbHub.toolStatusGroupV1;
+        }
+        else
+        {
+            targetDisplayTemplate = lightbulbHub.toolStatusGroupV2;
+        }
+
+        string toolName = targetDisplayTemplate.GetStatusName(levelData.curBoard.toolStatus);
+        if (toolName != null)
+        {
+            hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(toolName));
+        }
+        Sprite toolInfograph = targetDisplayTemplate.GetStatusInfograph(levelData.curBoard.toolStatus);
+        if (toolInfograph != null)
+        {
+            hub.toolMaster.infographGroup.SetActive(true);
+            hub.toolMaster.infograph.sprite = toolInfograph;
+        }
+        else
+        {
+            hub.toolMaster.infographGroup.SetActive(false);
+        }
     }
 }

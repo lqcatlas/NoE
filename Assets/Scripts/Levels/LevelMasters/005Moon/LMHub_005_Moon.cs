@@ -8,11 +8,14 @@ public class LMHub_005_Moon : MonoBehaviour
 {
     [Header("Tool")]
     public List<Sprite> statusSprites;
-    public List<string> toolDisplayName = new List<string>();
+    //public List<string> toolDisplayName = new List<string>();
     public List<GameObject> toolCoords;
     public List<SpriteRenderer> tools = new List<SpriteRenderer>();
     public Transform toolGroup;
     public GameObject toolTemplate;
+
+    [Header("Tool Display")]
+    public ToolStatusGroup toolStatusGroup;
 
     public int MAX_TOOL_COUNT_IN_CYCLE = 7;
 
