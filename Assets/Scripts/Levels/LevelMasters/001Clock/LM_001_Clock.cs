@@ -51,6 +51,7 @@ public class LM_001_Clock : LevelMasterBase
     {
         clockHub.clockTool.transform.position = hub.toolMaster.toolIcon.transform.position;
         hub.toolMaster.toolIcon.gameObject.SetActive(false);
+        UpdateToolStatusDisplay();
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -170,5 +171,25 @@ public class LM_001_Clock : LevelMasterBase
         }
         bool result = false;
         return result;
+    }
+
+    void UpdateToolStatusDisplay()
+    {
+        ToolStatusGroup targetDisplayTemplate = clockHub.toolStatusGroup;
+        string toolName = targetDisplayTemplate.GetStatusName(levelData.curBoard.toolStatus);
+        if (toolName != null)
+        {
+            hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(toolName));
+        }
+        Sprite toolInfograph = targetDisplayTemplate.GetStatusInfograph(levelData.curBoard.toolStatus);
+        if (toolInfograph != null)
+        {
+            hub.toolMaster.infographGroup.SetActive(true);
+            hub.toolMaster.infograph.sprite = toolInfograph;
+        }
+        else
+        {
+            hub.toolMaster.infographGroup.SetActive(false);
+        }
     }
 }

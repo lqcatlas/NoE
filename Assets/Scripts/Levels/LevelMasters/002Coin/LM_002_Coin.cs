@@ -17,7 +17,7 @@ public class LM_002_Coin : LevelMasterBase
     public override void InitTool()
     {
         base.InitTool();
-        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(coinHub.toolDisplayName[levelData.curBoard.toolStatus]));
+        UpdateToolStatusDisplay();
     }
     public override void AdditionalGenerateBoard_Theme()
     {
@@ -67,7 +67,7 @@ public class LM_002_Coin : LevelMasterBase
     }
     public override void AddtionalInit_Theme()
     {
-        hub.toolMaster.toolIcon.sprite = coinHub.coinToolSprites[levelData.curBoard.toolStatus];
+        
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -185,7 +185,7 @@ public class LM_002_Coin : LevelMasterBase
             seq.AppendCallback(() => hub.toolMaster.toolIcon.GetComponent<Transform>().localScale = Vector3.one * 8f);
             seq.AppendCallback(() => hub.toolMaster.toolIcon.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f));
         }
-        hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(coinHub.toolDisplayName[levelData.curBoard.toolStatus]));
+        UpdateToolStatusDisplay();
     }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
@@ -260,5 +260,38 @@ public class LM_002_Coin : LevelMasterBase
             Debug.LogError(string.Format("reach undefined level in CheckWinCondition of ({0})", levelData.theme));
         }
         return result;
+    }
+    void UpdateToolStatusDisplay()
+    {
+        hub.toolMaster.toolIcon.sprite = coinHub.coinToolSprites[levelData.curBoard.toolStatus];
+
+        ToolStatusGroup targetDisplayTemplate;
+        if(levelData.levelIndex <= 3)
+        {
+            targetDisplayTemplate = coinHub.toolStatusGroupV1;
+        }
+        else if (levelData.levelIndex == 4)
+        {
+            targetDisplayTemplate = coinHub.toolStatusGroupV2;
+        }
+        else
+        {
+            targetDisplayTemplate = coinHub.toolStatusGroupV3;
+        }
+        string toolName = targetDisplayTemplate.GetStatusName(levelData.curBoard.toolStatus);
+        if (toolName != null)
+        {
+            hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(toolName));
+        }
+        Sprite toolInfograph = targetDisplayTemplate.GetStatusInfograph(levelData.curBoard.toolStatus);
+        if (toolInfograph != null)
+        {
+            hub.toolMaster.infographGroup.SetActive(true);
+            hub.toolMaster.infograph.sprite = toolInfograph;
+        }
+        else
+        {
+            hub.toolMaster.infographGroup.SetActive(false);
+        }
     }
 }

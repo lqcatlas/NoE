@@ -83,6 +83,10 @@ MonoBehaviour:
   cellBgHolder: {fileID: 3809996211600672763}
   runningClockTemplate: {fileID: 926363918380194025, guid: e0d2a02173f8cff45af2eb858abae4a1, type: 3}
   clockTool: {fileID: 3753856669264760703}
+  toolStatusGroup:
+    toolStatus:
+    - statusName: 
+      playInfograph: {fileID: 2120586445, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   playClips:
   - {fileID: 8300000, guid: 06cab83737a25404b995d08d3e801f26, type: 3}
   - {fileID: 8300000, guid: c5919d8a5f4e83b46b3bd9d05218cede, type: 3}

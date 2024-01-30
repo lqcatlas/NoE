@@ -12,6 +12,8 @@ public class LMHub_001_Clock : MonoBehaviour
     public List<KeyValuePair<CellMaster, GameObject>> runningClocks;
     [Header("Clock Sprite in Tool")]
     public Transform clockTool;
+    [Header("Tool Display")]
+    public ToolStatusGroup toolStatusGroup;
 
     [Header("Play Audio")]
     public List<AudioClip> playClips;

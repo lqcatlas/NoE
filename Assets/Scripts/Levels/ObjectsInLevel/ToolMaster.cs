@@ -10,4 +10,7 @@ public class ToolMaster : MonoBehaviour
     public TextMeshPro toolDesc;
     public TextMeshPro toolTitle;
     public TextMeshPro toolSubtitle;
+
+    public GameObject infographGroup;
+    public SpriteRenderer infograph;
 }

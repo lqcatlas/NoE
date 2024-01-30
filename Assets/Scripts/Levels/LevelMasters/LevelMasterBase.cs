@@ -330,8 +330,11 @@ public class LevelMasterBase : MonoBehaviour
     public virtual void InitTool()
     {
         hub.toolMaster.toolTitle.SetText(LocalizedAssetLookup.singleton.Translate(levelData.theme));
-        hub.toolMaster.toolSubtitle.SetText("");
         hub.toolMaster.toolDesc.SetText(string.Format("x{0}", levelData.curBoard.toolCount));
+
+        hub.toolMaster.toolSubtitle.SetText("");
+        hub.toolMaster.infographGroup.SetActive(false);
+
     }
     public virtual void InitMiscs()
     {
@@ -606,4 +609,5 @@ public class LevelMasterBase : MonoBehaviour
     {
         TryLoadNextLevel(true);
     }
+
 }

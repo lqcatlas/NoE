@@ -147,9 +147,24 @@ MonoBehaviour:
   coinToolSprites:
   - {fileID: -1036423111, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   - {fileID: -1806039361, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  toolDisplayName:
-  - '@Loc=tool_name_theme2_status0@@'
-  - '@Loc=tool_name_theme2_status1@@'
+  toolStatusGroupV1:
+    toolStatus:
+    - statusName: '@Loc=tool_name_theme2_status0@@'
+      playInfograph: {fileID: 2120586445, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+    - statusName: '@Loc=tool_name_theme2_status1@@'
+      playInfograph: {fileID: 638765539, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+  toolStatusGroupV2:
+    toolStatus:
+    - statusName: '@Loc=tool_name_theme2_status0@@'
+      playInfograph: {fileID: 1335975241, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+    - statusName: '@Loc=tool_name_theme2_status1@@'
+      playInfograph: {fileID: 638765539, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+  toolStatusGroupV3:
+    toolStatus:
+    - statusName: '@Loc=tool_name_theme2_status0@@'
+      playInfograph: {fileID: 1335975241, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+    - statusName: '@Loc=tool_name_theme2_status1@@'
+      playInfograph: {fileID: 425153711, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   playClips:
   - {fileID: 8300000, guid: 2ad97e84cc0ef174ca31b82a1f800d3b, type: 3}
   - {fileID: 8300000, guid: 902abaf1ac70bde4da18582f251f835f, type: 3}

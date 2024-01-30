@@ -11,9 +11,13 @@ public class LMHub_002_Coin : MonoBehaviour
     public Transform cellTagHolder;
     public GameObject cellTagTempalte;
     public List<KeyValuePair<CellMaster, GameObject>> coinTags;
-    [Header("Coin in Tool")]
+    [Header("Tool Display")]
     public List<Sprite> coinToolSprites;
-    public List<string> toolDisplayName = new List<string>();
+    //public List<string> toolDisplayName = new List<string>();
+
+    public ToolStatusGroup toolStatusGroupV1;
+    public ToolStatusGroup toolStatusGroupV2;
+    public ToolStatusGroup toolStatusGroupV3;
 
     [Header("Play Audio")]
     public List<AudioClip> playClips;
