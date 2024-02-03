@@ -28,14 +28,20 @@ UID,Key,EN,CN
 27,goal_lv406,Set all cells to UNIQUE,将所有格子变为不同值
 28,goal_lv407,"When all cells have food, <br>set the sum of cells to 20",每个格子都有食物时，<br>将数字总和变为20
 29,goal_lv408,"When all cells have either sushi or onigiri, <br>set the sum of cells to 82",每个格子都是寿司或饭团时，<br>将数字总和变为82
-30,goal_lv501,,让所有格子为7
-31,goal_lv502,,让所有格子成为相同数字
-32,goal_lv503,,让所有格子成为相同数字
-33,goal_lv504,,让数字总和下降至10以下
-34,goal_lv505,,让左侧一列格子为0
-35,goal_lv506,,让所有格子为偶数
-36,goal_lv507,,让所有格子回归初值
-37,goal_lv508,,月食时，让所有格子回归初值
+30,goal_lv501,Set all cells to 7,让所有格子为7
+31,goal_lv502,Set all cells to SAME,让所有格子成为相同数字
+32,goal_lv503,Set all cells to SAME,让所有格子成为相同数字
+33,goal_lv504,Set all cells to SAME,让所有格子成为相同数字
+34,goal_lv505,Trigger eclipse twice,触发2次月食
+35,goal_lv506,Trigger eclipse third times,触发3次月食
+36,goal_lv507,set the sum of cells to 10 or below,让数字总和下降至10以下
+37,goal_lv508,Set all cells to EVEN,让所有格子为偶数
+256,goal_lv509,set the sum of cells to 10 or below,让数字总和下降至10以下
+257,goal_lv510,,让左侧一列格子为0
+258,goal_lv511,,让左侧一列格子为0，<br>右侧一列格子为2
+259,goal_lv512,,月食时，让所有格子回归初值
+260,goal_lv513,,让所有格子回归初值
+261,goal_lv514,,月食时，让所有格子回归初值
 38,goal_lv601,1+ cell(s) is ON.,点亮1盏灯泡
 39,goal_lv602,5+ cells are ON.,点亮5盏灯泡
 40,goal_lv603,All cells are ON.,点亮全部灯泡
@@ -90,6 +96,12 @@ UID,Key,EN,CN
 89,levelname_lv506,006,006
 90,levelname_lv507,007,007
 91,levelname_lv508,008,008
+250,levelname_lv509,009,009
+251,levelname_lv510,010,010
+252,levelname_lv511,011,011
+253,levelname_lv512,012,012
+254,levelname_lv513,013,013
+255,levelname_lv514,014,014
 92,levelname_lv601,001,001
 93,levelname_lv602,002,002
 94,levelname_lv603,003,003
@@ -209,7 +221,7 @@ UID,Key,EN,CN
 208,rule4_lv203,FLIP the coin after play,打出后硬币翻面
 209,rule4_lv207,TOSS the coin after play,打出后投掷硬币
 210,rule4_lv405,Onigiri(Rice+Fish): =2,饭团（鱼+米）： =2
-211,rule4_lv504,Eclipse(Full + 9): All cells -5,9+满月：月食
+211,rule4_lv505,Eclipse(Full + 9): All cells -5,9+满月：月食
 212,rule5_lv403,Fish and Rice alternate,鱼和米交替出现
 213,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
 214,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
@@ -229,6 +241,7 @@ UID,Key,EN,CN
 228,tool_name_theme5_status5,Crescent,新月
 229,ui_close_btn,Close,关闭
 230,ui_designer_note_title,Designer's Notes,制作笔记
+249,ui_failure_title,,挑战失败
 231,ui_finished_status,(Passed),（完成）
 232,ui_goal_current_sum,Current Sum: ,当前数字之和：
 233,ui_goal_section_title,Goal,目标
@@ -241,10 +254,9 @@ UID,Key,EN,CN
 240,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}
 241,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
 242,ui_themephoto_unlockreq,<sprite name=currency_star_frame> {0}<br>to unlock,<sprite name=currency_star_frame> {0}<br>解锁
+248,ui_victory_title,,恭喜通关
 243,unlocked_tm1,,<b>时间</b>永不停歇。
 244,unlocked_tm2,,<b>硬币</b>决定命运。
 245,unlocked_tm4,,<b>寿司</b>简约又精致。
 246,unlocked_tm5,,<b>月亮</b>有无规律？
 247,unlocked_tm6,,<b>灯泡</b>代表着灵感。
-248,ui_victory_title,,恭喜通关
-249,ui_failure_title,,挑战失败

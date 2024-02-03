@@ -14,6 +14,7 @@ public class LM_005_Moon : LevelMasterBase
     public int endReason = -1;
     public bool eclipseTrigger = false;
     public bool eclipsed = false;
+    public int eclipseCount = 0;
     public Vector2Int eclipseCoord;
 
     public override void GetObjectReferences(GameObject _themeHub)
@@ -40,8 +41,9 @@ public class LM_005_Moon : LevelMasterBase
         endReason = -1;
         eclipseTrigger = false;
         eclipsed = false;
+        eclipseCount = 0;
 
-        if (levelData.levelIndex == 4)
+        if (levelData.levelIndex == 7 || levelData.levelIndex == 9)
         {
             hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
             hub.goalMaster.lines[1].gameObject.SetActive(true);
@@ -87,7 +89,7 @@ public class LM_005_Moon : LevelMasterBase
         }     
         //lv 2+
         //crescent +1, quarter +3, full +5
-        else if (levelData.levelIndex >= 2 && levelData.levelIndex <= 3)
+        else if (levelData.levelIndex >= 2 && levelData.levelIndex <= 4)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -112,7 +114,7 @@ public class LM_005_Moon : LevelMasterBase
                 }
             }
         }
-        else if (levelData.levelIndex >= 4 && levelData.levelIndex <= 8)
+        else if (levelData.levelIndex >= 5)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -131,6 +133,7 @@ public class LM_005_Moon : LevelMasterBase
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full && levelData.curBoard.cells[i].value == 9)
                     {
                         eclipseTrigger = true;
+                        eclipseCount += 1;
                         eclipseCoord = coord;
                         moonHub.eclipseVFX.SetActive(true);
                     }
@@ -191,7 +194,7 @@ public class LM_005_Moon : LevelMasterBase
     }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
-        if (levelData.levelIndex == 4)
+        if (levelData.levelIndex == 7 || levelData.levelIndex == 9)
         {
             hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
             hub.goalMaster.lines[1].gameObject.SetActive(true);
@@ -303,7 +306,7 @@ public class LM_005_Moon : LevelMasterBase
                 }
             }
             //update sum calculation
-            if (levelData.levelIndex == 4)
+            if (levelData.levelIndex == 7 || levelData.levelIndex == 9)
             {
                 hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
                 hub.goalMaster.lines[1].gameObject.SetActive(true);
@@ -336,14 +339,35 @@ public class LM_005_Moon : LevelMasterBase
         }
         else if (levelData.levelIndex == 3)
         {
-            //List<int> targetNumber = new List<int>() { 0, 8, 1, 5 };
+            //List<int> targetLineNumber = new List<int>() { 0, 8, 1, 3 };
             return BoardCalculation.Same_All(levelData.curBoard);
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.Sum_Lesser_X(levelData.curBoard, 10);
+            //List<int> targetNumber = new List<int>() { 0, 8, 1, 5 };
+            return BoardCalculation.Same_All(levelData.curBoard);
         }
         else if (levelData.levelIndex == 5)
+        {
+            return eclipseCount == 2;
+        }
+        else if (levelData.levelIndex == 6)
+        {
+            return eclipseCount == 3;
+        }
+        else if (levelData.levelIndex == 7)
+        {
+            return BoardCalculation.Sum_Lesser_X(levelData.curBoard, 10);
+        }
+        else if (levelData.levelIndex == 8)
+        {
+            return BoardCalculation.Even_All(levelData.curBoard);
+        }
+        else if (levelData.levelIndex == 9)
+        {
+            return BoardCalculation.Sum_Lesser_X(levelData.curBoard, 10);
+        }
+        else if (levelData.levelIndex == 10)
         {
             return (
                 levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 0)).value == 0 && 
@@ -351,11 +375,33 @@ public class LM_005_Moon : LevelMasterBase
                 levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 0
                 );
         }
-        else if (levelData.levelIndex == 6)
+        else if (levelData.levelIndex == 11)
         {
-            return BoardCalculation.Even_All(levelData.curBoard);
+            return (
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 0)).value == 0 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 1)).value == 0 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 0 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2)).value == 2
+                );
         }
-        else if (levelData.levelIndex == 7)
+        else if (levelData.levelIndex == 12)
+        {
+            return (
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 0 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2)).value == 6 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 1)).value == 4 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1)).value == 4 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 0)).value == 6 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 0)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0)).value == 0 &&
+                eclipseTrigger
+                );
+        }
+        else if (levelData.levelIndex == 13)
         {
             return (
                 levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 1 &&
@@ -369,7 +415,7 @@ public class LM_005_Moon : LevelMasterBase
                 levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0)).value == 9
                 );
         }
-        else if (levelData.levelIndex == 8)
+        else if (levelData.levelIndex == 14)
         {
             return (
                 levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 1 &&

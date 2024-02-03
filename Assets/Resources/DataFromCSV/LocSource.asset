@@ -102,27 +102,45 @@ MonoBehaviour:
       82
     CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u662F\u5BFF\u53F8\u6216\u996D\u56E2\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A82"
   - key: goal_lv501
-    EN: 
+    EN: Set all cells to 7
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: goal_lv502
-    EN: 
+    EN: Set all cells to SAME
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
   - key: goal_lv503
-    EN: 
+    EN: Set all cells to SAME
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
   - key: goal_lv504
-    EN: 
-    CN: "\u8BA9\u6570\u5B57\u603B\u548C\u4E0B\u964D\u81F310\u4EE5\u4E0B"
+    EN: Set all cells to SAME
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
   - key: goal_lv505
+    EN: Trigger eclipse twice
+    CN: "\u89E6\u53D12\u6B21\u6708\u98DF"
+  - key: goal_lv506
+    EN: Trigger eclipse third times
+    CN: "\u89E6\u53D13\u6B21\u6708\u98DF"
+  - key: goal_lv507
+    EN: set the sum of cells to 10 or below
+    CN: "\u8BA9\u6570\u5B57\u603B\u548C\u4E0B\u964D\u81F310\u4EE5\u4E0B"
+  - key: goal_lv508
+    EN: Set all cells to EVEN
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A\u5076\u6570"
+  - key: goal_lv509
+    EN: set the sum of cells to 10 or below
+    CN: "\u8BA9\u6570\u5B57\u603B\u548C\u4E0B\u964D\u81F310\u4EE5\u4E0B"
+  - key: goal_lv510
     EN: 
     CN: "\u8BA9\u5DE6\u4FA7\u4E00\u5217\u683C\u5B50\u4E3A0"
-  - key: goal_lv506
+  - key: goal_lv511
     EN: 
-    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A\u5076\u6570"
-  - key: goal_lv507
+    CN: "\u8BA9\u5DE6\u4FA7\u4E00\u5217\u683C\u5B50\u4E3A0\uFF0C<br>\u53F3\u4FA7\u4E00\u5217\u683C\u5B50\u4E3A2"
+  - key: goal_lv512
+    EN: 
+    CN: "\u6708\u98DF\u65F6\uFF0C\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5F52\u521D\u503C"
+  - key: goal_lv513
     EN: 
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5F52\u521D\u503C"
-  - key: goal_lv508
+  - key: goal_lv514
     EN: 
     CN: "\u6708\u98DF\u65F6\uFF0C\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5F52\u521D\u503C"
   - key: goal_lv601
@@ -290,6 +308,24 @@ MonoBehaviour:
   - key: levelname_lv508
     EN: 8
     CN: 8
+  - key: levelname_lv509
+    EN: 9
+    CN: 9
+  - key: levelname_lv510
+    EN: 10
+    CN: 10
+  - key: levelname_lv511
+    EN: 11
+    CN: 11
+  - key: levelname_lv512
+    EN: 12
+    CN: 12
+  - key: levelname_lv513
+    EN: 13
+    CN: 13
+  - key: levelname_lv514
+    EN: 14
+    CN: 14
   - key: levelname_lv601
     EN: 1
     CN: 1
@@ -689,7 +725,7 @@ MonoBehaviour:
   - key: rule4_lv405
     EN: 'Onigiri(Rice+Fish): =2'
     CN: "\u996D\u56E2\uFF08\u9C7C+\u7C73\uFF09\uFF1A =2"
-  - key: rule4_lv504
+  - key: rule4_lv505
     EN: 'Eclipse(Full + 9): All cells -5'
     CN: "9+\u6EE1\u6708\uFF1A\u6708\u98DF"
   - key: rule5_lv403
@@ -749,6 +785,9 @@ MonoBehaviour:
   - key: ui_designer_note_title
     EN: Designer's Notes
     CN: "\u5236\u4F5C\u7B14\u8BB0"
+  - key: ui_failure_title
+    EN: 
+    CN: "\u6311\u6218\u5931\u8D25"
   - key: ui_finished_status
     EN: (Passed)
     CN: "\uFF08\u5B8C\u6210\uFF09"
@@ -785,6 +824,9 @@ MonoBehaviour:
   - key: ui_themephoto_unlockreq
     EN: <sprite name=currency_star_frame> {0}<br>to unlock
     CN: "<sprite name=currency_star_frame> {0}<br>\u89E3\u9501"
+  - key: ui_victory_title
+    EN: 
+    CN: "\u606D\u559C\u901A\u5173"
   - key: unlocked_tm1
     EN: 
     CN: "<b>\u65F6\u95F4</b>\u6C38\u4E0D\u505C\u6B47\u3002"
@@ -800,9 +842,3 @@ MonoBehaviour:
   - key: unlocked_tm6
     EN: 
     CN: "<b>\u706F\u6CE1</b>\u4EE3\u8868\u7740\u7075\u611F\u3002"
-  - key: ui_victory_title
-    EN: 
-    CN: "\u606D\u559C\u901A\u5173"
-  - key: ui_failure_title
-    EN: 
-    CN: "\u6311\u6218\u5931\u8D25"
