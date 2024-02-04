@@ -10,11 +10,12 @@ public class LM_005_Moon : LevelMasterBase
 
     [Header("Theme Additions")]
     public LMHub_005_Moon moonHub;
-    public int fullPhaseCount = 0;
+    //public int fullPhaseCount = 0;
     public int endReason = -1;
     public bool eclipseTrigger = false;
     public bool eclipsed = false;
-    public int eclipseCount = 0;
+    //public int eclipseCount = 0;
+    public List<int> eclipseMoments;
     public Vector2Int eclipseCoord;
 
     public override void GetObjectReferences(GameObject _themeHub)
@@ -35,13 +36,27 @@ public class LM_005_Moon : LevelMasterBase
         moonHub.InitToolToCycle(levelData.curBoard.toolStatus, levelData.levelIndex);
         //moonHub.AnimateCycle();
     }
-    public override void AddtionalInit_Theme()
+    public override void AddtionalInit_Theme(bool isRewind = false)
     {
-        fullPhaseCount = 0;
         endReason = -1;
         eclipseTrigger = false;
         eclipsed = false;
-        eclipseCount = 0;
+        if (!isRewind)
+        {
+            //fullPhaseCount = 0;
+            eclipseMoments = new List<int>();
+        }
+        else
+        {
+            for(int i=0;i< eclipseMoments.Count; i++)
+            {
+                if (levelData.curBoard.toolCount-1 == eclipseMoments[i])
+                {
+                    eclipseMoments.RemoveAt(i);
+                }
+            }
+            
+        }
 
         if (levelData.levelIndex == 7 || levelData.levelIndex == 9)
         {
@@ -133,7 +148,7 @@ public class LM_005_Moon : LevelMasterBase
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full && levelData.curBoard.cells[i].value == 9)
                     {
                         eclipseTrigger = true;
-                        eclipseCount += 1;
+                        eclipseMoments.Add(levelData.curBoard.toolCount);
                         eclipseCoord = coord;
                         moonHub.eclipseVFX.SetActive(true);
                     }
@@ -163,7 +178,6 @@ public class LM_005_Moon : LevelMasterBase
             else if(levelData.curBoard.toolStatus == (int)MoonPhase.quarter_1)
             {
                 levelData.curBoard.toolStatus = (int)MoonPhase.crescent_1;
-                fullPhaseCount += 1;
             }
         }
         //lv 2-8
@@ -174,7 +188,6 @@ public class LM_005_Moon : LevelMasterBase
             if(levelData.curBoard.toolStatus == 6)
             {
                 levelData.curBoard.toolStatus = (int)MoonPhase.crescent_1;
-                fullPhaseCount += 1;
             }
         }
         else
@@ -349,11 +362,11 @@ public class LM_005_Moon : LevelMasterBase
         }
         else if (levelData.levelIndex == 5)
         {
-            return eclipseCount == 2;
+            return eclipseMoments.Count == 2;
         }
         else if (levelData.levelIndex == 6)
         {
-            return eclipseCount == 3;
+            return eclipseMoments.Count == 3;
         }
         else if (levelData.levelIndex == 7)
         {
@@ -389,15 +402,15 @@ public class LM_005_Moon : LevelMasterBase
         else if (levelData.levelIndex == 12)
         {
             return (
-                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 0 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2)).value == 6 &&
                 levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2)).value == 2 &&
-                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2)).value == 6 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2)).value == 0 &&
                 levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 1)).value == 4 &&
-                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1)).value == 2 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1)).value == 3 &&
                 levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1)).value == 4 &&
-                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 0)).value == 6 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 0)).value == 0 &&
                 levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 0)).value == 2 &&
-                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0)).value == 0 &&
+                levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0)).value == 6 &&
                 eclipseTrigger
                 );
         }

@@ -54,22 +54,22 @@ MonoBehaviour:
       value: 6
       status: 0
     - coord: {x: 1, y: 0}
-      value: 6
+      value: 2
       status: 0
     - coord: {x: 2, y: 0}
-      value: 8
+      value: 2
       status: 0
     - coord: {x: 0, y: 1}
-      value: 4
-      status: 0
-    - coord: {x: 1, y: 1}
-      value: 0
-      status: 0
-    - coord: {x: 2, y: 1}
       value: 8
       status: 0
-    - coord: {x: 0, y: 2}
+    - coord: {x: 1, y: 1}
+      value: 9
+      status: 0
+    - coord: {x: 2, y: 1}
       value: 2
+      status: 0
+    - coord: {x: 0, y: 2}
+      value: 8
       status: 0
     - coord: {x: 1, y: 2}
       value: 8
@@ -77,6 +77,6 @@ MonoBehaviour:
     - coord: {x: 2, y: 2}
       value: 4
       status: 0
-    toolCount: 19
-    toolStatus: 1
+    toolCount: 16
+    toolStatus: 3
     curPlayCoord: {x: -1, y: -1}

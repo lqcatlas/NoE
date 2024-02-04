@@ -180,7 +180,7 @@ public class LevelMasterBase : MonoBehaviour
         UpdateRuleset();
         InitTool();
         InitMiscs();
-        AddtionalInit_Theme();
+        AddtionalInit_Theme(true);
         UpdatePlayable();
         //Below should be called as calledback when all key FX is handled
         Sequence seq = DOTween.Sequence();
@@ -346,10 +346,11 @@ public class LevelMasterBase : MonoBehaviour
         //set new theme hint to be true if there are at least 1 unlockable themes;
         hub.miscMaster.newthemeHint.gameObject.SetActive(LevelSelector.singleton.LocateFirstUnlockableTheme() >= 0);
     }
-    public virtual void AddtionalInit_Theme()
+    public virtual void AddtionalInit_Theme(bool isRewind = false)
     {
         //this should always be theme-specific
     }
+    
     public virtual void AnimateRuleset()
     {
         float delayPerLine = 0.3f;

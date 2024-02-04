@@ -42,7 +42,8 @@ public class LMHub_005_Moon : MonoBehaviour
     }
     public void AnimateTabletToDegree(int phaseIndex)
     {
-        phaseRotate.transform.DORotate(new Vector3(0f, 0f, phaseDegrees[phaseIndex]), PLATE_ROTATION_DURATION_PLAY);
+        phaseRotate.transform.DORotate(new Vector3(0f, 0f, -10f), PLATE_ROTATION_DURATION_PLAY).SetRelative(true);
+        //phaseRotate.transform.DORotate(new Vector3(0f, 0f, phaseDegrees[phaseIndex]), PLATE_ROTATION_DURATION_PLAY);
     }
     public void ResetToolCycle()
     {

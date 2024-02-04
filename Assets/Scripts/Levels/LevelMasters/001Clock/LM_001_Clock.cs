@@ -47,7 +47,7 @@ public class LM_001_Clock : LevelMasterBase
         }
     }
     
-    public override void AddtionalInit_Theme()
+    public override void AddtionalInit_Theme(bool isRewind = false)
     {
         clockHub.clockTool.transform.position = hub.toolMaster.toolIcon.transform.position;
         hub.toolMaster.toolIcon.gameObject.SetActive(false);

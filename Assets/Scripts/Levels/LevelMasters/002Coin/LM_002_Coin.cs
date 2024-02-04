@@ -65,10 +65,6 @@ public class LM_002_Coin : LevelMasterBase
             }
         }
     }
-    public override void AddtionalInit_Theme()
-    {
-        
-    }
     public override void HandlePlayerInput(Vector2Int coord)
     {
 

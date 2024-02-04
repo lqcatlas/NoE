@@ -17,7 +17,7 @@ MonoBehaviour:
   levelIndex: 14
   nextLevelIndex: 0
   previousLevel: {fileID: 11400000, guid: e97d0fac27ee1eb46b31133e0ad9e166, type: 2}
-  nextLevel: {fileID: 11400000, guid: 4ace574475991b949b13a87873a9d4e5, type: 2}
+  nextLevel: {fileID: 0}
   theme: '@Loc=themename_tm5@@'
   title: '@Loc=levelname_lv514@@'
   newInitNarrative: 
@@ -50,7 +50,7 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule4_lv505@@'
   - tag: 0
     ruleDesc: '@Loc=rule5_lv503@@'
-  isHard: 0
+  isHard: 1
   allowRewind: 1
   initBoard:
     boardSize: {x: 3, y: 3}

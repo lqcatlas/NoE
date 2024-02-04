@@ -62,7 +62,7 @@ public class LM_004_Sushi : LevelMasterBase
         base.InitTool();
         UpdateToolStatusDisplay();
     }
-    public override void AddtionalInit_Theme()
+    public override void AddtionalInit_Theme(bool isRewind = false)
     {
         if(levelData.levelIndex == 7 || levelData.levelIndex == 8)
         {
