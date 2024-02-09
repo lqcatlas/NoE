@@ -64,7 +64,7 @@ public class LM_004_Sushi : LevelMasterBase
     }
     public override void AddtionalInit_Theme(bool isRewind = false)
     {
-        if(levelData.levelIndex == 7 || levelData.levelIndex == 8)
+        if(levelData.levelIndex == 11 || levelData.levelIndex == 12 || levelData.levelIndex == 13)
         {
             hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
             hub.goalMaster.lines[1].gameObject.SetActive(true);
@@ -78,7 +78,7 @@ public class LM_004_Sushi : LevelMasterBase
         //cell number rule
         //lv 1-3
         //fish +3, rice -3
-        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 3)
+        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 5)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -95,7 +95,7 @@ public class LM_004_Sushi : LevelMasterBase
         }
         //lv 4
         //fish +3, rice -3, sushi =7
-        else if (levelData.levelIndex == 4)
+        else if (levelData.levelIndex >= 6 && levelData.levelIndex <= 9)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -121,7 +121,7 @@ public class LM_004_Sushi : LevelMasterBase
         }
         //lv 5 - 8
         //fish +3, rice -3, sushi =7, maki =2
-        else if (levelData.levelIndex >= 5 && levelData.levelIndex <= 8)
+        else if (levelData.levelIndex >= 10 && levelData.levelIndex <= 14)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -172,13 +172,13 @@ public class LM_004_Sushi : LevelMasterBase
     {
         //lv 1-2
         //only fish
-        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 2)
+        if (levelData.levelIndex >= 1 && levelData.levelIndex <= 3)
         {
             levelData.curBoard.toolStatus = (int)SushiStatus.fish;
         }
         //lv 3-8
         //fish, rice alternate
-        else if (levelData.levelIndex >= 3 && levelData.levelIndex <= 8)
+        else if (levelData.levelIndex >= 4 && levelData.levelIndex <= 14)
         {
             levelData.curBoard.toolStatus = levelData.curBoard.toolStatus == (int)SushiStatus.fish ? (int)SushiStatus.rice : (int)SushiStatus.fish;
         }
@@ -200,7 +200,7 @@ public class LM_004_Sushi : LevelMasterBase
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
         //update current goal status
-        if (levelData.levelIndex == 7 || levelData.levelIndex == 8)
+        if (levelData.levelIndex == 11 || levelData.levelIndex == 12 || levelData.levelIndex == 13)
         {
             hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
             hub.goalMaster.lines[1].gameObject.SetActive(true);
@@ -241,35 +241,62 @@ public class LM_004_Sushi : LevelMasterBase
         bool result = false;
         if (levelData.levelIndex == 1)
         {
-            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 3, 3);
+            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 1, 1);
         }
         else if (levelData.levelIndex == 2)
         {
-            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 5, 5);
+            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 2, 2);
         }
         else if (levelData.levelIndex == 3)
         {
-            return BoardCalculation.CountX_All(levelData.curBoard, 4);
+            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 5, 5);
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.CountX_All(levelData.curBoard, 7);
+            return BoardCalculation.CountX_All(levelData.curBoard, 6);
         }
         else if (levelData.levelIndex == 5)
         {
+            return BoardCalculation.Same_All(levelData.curBoard);
             return BoardCalculation.CountXorY_All(levelData.curBoard, 2, 7);
         }
         else if (levelData.levelIndex == 6)
         {
-            return BoardCalculation.Unique_All(levelData.curBoard);
+            return BoardCalculation.CountX_All(levelData.curBoard, 7);
+            
         }
         else if (levelData.levelIndex == 7)
         {
-            return BoardCalculation.Sum_As_X(levelData.curBoard, 20) && BoardCalculation.CountStatusNotX_All(levelData.curBoard, 0);
+            return BoardCalculation.CountX_All(levelData.curBoard, 7);
+            
         }
         else if (levelData.levelIndex == 8)
         {
-            return (BoardCalculation.Sum_As_X(levelData.curBoard, 82) && BoardCalculation.CountStatusXorY_All(levelData.curBoard, 3, 4));
+            return BoardCalculation.CountX_All(levelData.curBoard, 7);
+        }
+        else if (levelData.levelIndex == 9)
+        {
+            return BoardCalculation.CountX_All(levelData.curBoard, 7);
+        }
+        else if (levelData.levelIndex == 10)
+        {
+            return BoardCalculation.CountStatusXorY_All(levelData.curBoard, 3, 4);
+        }
+        else if (levelData.levelIndex == 11)
+        {
+            return BoardCalculation.Sum_As_X(levelData.curBoard, 18) && BoardCalculation.CountStatusNotX_All(levelData.curBoard, 0);
+        }
+        else if (levelData.levelIndex == 12)
+        {
+            return BoardCalculation.Sum_As_X(levelData.curBoard, 36) && BoardCalculation.CountStatusXorY_All(levelData.curBoard, 1, 3);
+        }
+        else if (levelData.levelIndex == 13)
+        {
+            return BoardCalculation.Sum_As_X(levelData.curBoard, 36) && BoardCalculation.CountStatusXorY_All(levelData.curBoard, 2, 4);
+        }
+        else if (levelData.levelIndex == 14)
+        {
+            return BoardCalculation.Unique_All(levelData.curBoard);
         }
         else
         {

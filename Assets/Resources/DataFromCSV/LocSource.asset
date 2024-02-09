@@ -14,19 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   locList:
   - key: date_tm1
-    EN: 
+    EN: 2022/12/04
     CN: 2022/12/04
   - key: date_tm2
-    EN: 
+    EN: 2023/01/15
     CN: 2023/01/15
   - key: date_tm4
-    EN: 
+    EN: 2023/06/25
     CN: 2023/06/25
   - key: date_tm5
-    EN: 
+    EN: 2023/08/13
     CN: 2023/08/13
   - key: date_tm6
-    EN: 
+    EN: 2023/09/03
     CN: 2023/09/03
   - key: goal_lv101
     EN: Set all cells to 8
@@ -77,30 +77,47 @@ MonoBehaviour:
     EN: Set all cells to SAME
     CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u76F8\u540C\u7684\u503C"
   - key: goal_lv401
-    EN: Set at least 3 cells to 3
-    CN: "\u5C06\u81F3\u5C113\u4E2A\u683C\u5B50\u53D8\u4E3A3"
+    EN: Set at least 1 cell to 1
+    CN: "\u8BA91\u4E2A\u683C\u5B50\u4E3A1"
   - key: goal_lv402
-    EN: Set at least 5 cells to 5
-    CN: "\u5C06\u81F3\u5C115\u4E2A\u683C\u5B50\u53D8\u4E3A5"
+    EN: Set at least 2 cells to 2
+    CN: "\u8BA92\u4E2A\u683C\u5B50\u4E3A2"
   - key: goal_lv403
-    EN: Set all cells to 4
-    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A4"
+    EN: Set at least 5 cells to 5
+    CN: "\u8BA95\u4E2A\u683C\u5B50\u4E3A5"
   - key: goal_lv404
-    EN: Set all cells to 7
-    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A7"
+    EN: Set all cells to 6
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A6"
   - key: goal_lv405
-    EN: Set all cells to either 2 or 7
-    CN: "\u5C06\u6240\u6709\u683C\u5B50\u4E3A2\u62167"
+    EN: Set all cells to SAME
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6570\u5B57\u76F8\u540C"
   - key: goal_lv406
-    EN: Set all cells to UNIQUE
-    CN: "\u5C06\u6240\u6709\u683C\u5B50\u53D8\u4E3A\u4E0D\u540C\u503C"
+    EN: Set all cells to 7
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: goal_lv407
-    EN: When all cells have food, <br>set the sum of cells to 20
-    CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u6709\u98DF\u7269\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A20"
+    EN: Set all cells to 7
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: goal_lv408
-    EN: When all cells have either sushi or onigiri, <br>set the sum of cells to
-      82
-    CN: "\u6BCF\u4E2A\u683C\u5B50\u90FD\u662F\u5BFF\u53F8\u6216\u996D\u56E2\u65F6\uFF0C<br>\u5C06\u6570\u5B57\u603B\u548C\u53D8\u4E3A82"
+    EN: Set all cells to 7
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
+  - key: goal_lv409
+    EN: Set all cells to 7
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
+  - key: goal_lv410
+    EN: Set each cell to Sushi or Onigiri
+    CN: "\u8BA9\u6BCF\u4E2A\u683C\u5B50\u90FD\u53D8\u6210\u5BFF\u53F8\u6216\u996D\u56E2"
+  - key: goal_lv411
+    EN: Set the sum of cells to 18, <br>when there are Fish, Rice, Sushi, Onigiri.
+    CN: "\u523A\u8EAB\u3001\u7C73\u996D\u3001\u5BFF\u53F8\u3001\u996D\u56E2\u5404\u4E00\u4E2A\u65F6\uFF0C\u6570\u5B57\u603B\u548C\u4E3A18"
+  - key: goal_lv412
+    EN: Set the sum of cells to 36, <br>when there are only Fish and Sushi.
+    CN: "\u6BCF\u4E2A\u683C\u5B50\u662F\u523A\u8EAB\u6216\u5BFF\u53F8\u7684\u60C5\u51B5\u4E0B\uFF0C\u6570\u5B57\u603B\u548C\u4E3A36"
+  - key: goal_lv413
+    EN: Set the sum of cells to 36, <br>when there are only  Rice and Onigiri.
+    CN: "\u5728\u6BCF\u4E2A\u683C\u5B50\u90FD\u662F\u7C73\u996D\u6216\u996D\u56E2\u7684\u60C5\u51B5\u4E0B\uFF0C\u8BA9\u6570\u5B57\u603B\u548C\u4E3A36"
+  - key: goal_lv414
+    EN: Set all cells to UNIQUE
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u90FD\u4E3A\u4E0D\u540C\u503C"
   - key: goal_lv501
     EN: Set all cells to 7
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
@@ -120,13 +137,13 @@ MonoBehaviour:
     EN: Trigger eclipse third times
     CN: "\u89E6\u53D13\u6B21\u6708\u98DF"
   - key: goal_lv507
-    EN: set the sum of cells to 10 or below
+    EN: Set the sum of cells to 10 or below
     CN: "\u8BA9\u6570\u5B57\u603B\u548C\u4E0B\u964D\u81F310\u4EE5\u4E0B"
   - key: goal_lv508
     EN: Set all cells to EVEN
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A\u5076\u6570"
   - key: goal_lv509
-    EN: set the sum of cells to 10 or below
+    EN: Set the sum of cells to 10 or below
     CN: "\u8BA9\u6570\u5B57\u603B\u548C\u4E0B\u964D\u81F310\u4EE5\u4E0B"
   - key: goal_lv510
     EN: 
@@ -284,6 +301,24 @@ MonoBehaviour:
   - key: levelname_lv408
     EN: 8
     CN: 8
+  - key: levelname_lv409
+    EN: 9
+    CN: 9
+  - key: levelname_lv410
+    EN: 10
+    CN: 10
+  - key: levelname_lv411
+    EN: 11
+    CN: 11
+  - key: levelname_lv412
+    EN: 12
+    CN: 12
+  - key: levelname_lv413
+    EN: 13
+    CN: 13
+  - key: levelname_lv414
+    EN: 14
+    CN: 14
   - key: levelname_lv501
     EN: 1
     CN: 1
@@ -351,25 +386,25 @@ MonoBehaviour:
     EN: 8
     CN: 8
   - key: levelname_lv609
-    EN: 
+    EN: 9
     CN: 9
   - key: levelname_lv610
-    EN: 
+    EN: 10
     CN: 10
   - key: levelname_lv611
-    EN: 
+    EN: 11
     CN: 11
   - key: levelname_lv612
-    EN: 
+    EN: 12
     CN: 12
   - key: levelname_lv613
-    EN: 
+    EN: 13
     CN: 13
   - key: levelname_lv614
-    EN: 
+    EN: 14
     CN: 14
   - key: levelname_lv615
-    EN: 
+    EN: 15
     CN: 15
   - key: locked_tm1
     EN: 
@@ -481,10 +516,10 @@ MonoBehaviour:
     CN: "\u5C31\u7528\u667A\u6167\u8FDB\u884C\u89E3\u8BFB\u3002"
   - key: narrative_tm4_ln001
     EN: 
-    CN: "\u5BFF\u53F8\u7684\u7CBE\u81F4"
+    CN: "\u5BFF\u53F8\u7684\u7B80\u7EA6"
   - key: narrative_tm4_ln002
     EN: 
-    CN: "\u4F60\u5939\u8D77\u4E00\u7247\u9C7C\u751F\uFF0C"
+    CN: "\u5939\u8D77\u4E00\u7247\u9C7C\u751F\uFF0C"
   - key: narrative_tm4_ln003
     EN: 
     CN: "\u6676\u83B9\u5254\u900F\u3002"
@@ -496,34 +531,34 @@ MonoBehaviour:
     CN: "\u5728\u7897\u4E2D\u52FE\u52D2\u51FA\u5F27\u7EBF\u3002"
   - key: narrative_tm4_ln006
     EN: 
-    CN: "\u8F7B\u8F7B\u634F\u5408\uFF0C"
+    CN: "\u4E00\u7F15\u767D\u7C73\u53E0\u4E0A\u9C7C\u751F\uFF0C"
   - key: narrative_tm4_ln007
     EN: 
-    CN: "\u521B\u9020\u51FA\u5BFF\u53F8\u7EC6\u817B\u7684\u53E3\u611F\u3002"
+    CN: "\u8F7B\u8F7B\u634F\u5408\uFF0C"
   - key: narrative_tm4_ln008
     EN: 
-    CN: "\u7F13\u7F13\u5377\u8D77\uFF0C"
+    CN: "\u521B\u9020\u51FA\u5BFF\u53F8\u7EC6\u817B\u7684\u53E3\u611F\u3002"
   - key: narrative_tm4_ln009
     EN: 
-    CN: "\u5C31\u5F00\u542F\u4E86\u996D\u56E2\u4E30\u76C8\u7684\u5473\u89C9\u3002"
+    CN: "\u4E00\u52FA\u9C7C\u8089\u653E\u8FDB\u767D\u7C73\uFF0C"
   - key: narrative_tm4_ln010
     EN: 
-    CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C"
+    CN: "\u7F13\u7F13\u5377\u8D77\uFF0C"
   - key: narrative_tm4_ln011
     EN: 
-    CN: "\u5374\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7EC4\u5408\u3002"
+    CN: "\u5C31\u5F00\u542F\u4E86\u996D\u56E2\u4E30\u76C8\u7684\u5473\u89C9\u3002"
   - key: narrative_tm4_ln012
     EN: 
-    CN: "\u6765\u81EA\u5927\u5730\u4E0E\u6DF1\u6D77\u7684\u78B0\u649E\uFF0C"
+    CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C"
   - key: narrative_tm4_ln013
     EN: 
-    CN: "\u8BC9\u8BF4\u7B80\u7EA6\u7684\u7F8E\u3002"
+    CN: "\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7684\u7EC4\u5408\uFF0C"
   - key: narrative_tm4_ln014
     EN: 
-    CN: "\u7528\u5BF9\u98DF\u6750\u7684\u5C0A\u91CD\uFF0C"
+    CN: "\u8BC9\u8BF4\u7B80\u7EA6\u7684\u7F8E\u3002"
   - key: narrative_tm4_ln015
     EN: 
-    CN: "\u8868\u8FBE\u5BF9\u5473\u89C9\u7684\u6DF1\u523B\u7406\u89E3\u3002"
+    CN: 
   - key: narrative_tm5_ln001
     EN: 
     CN: "\u6708\u7684\u89C4\u5F8B"
@@ -676,7 +711,7 @@ MonoBehaviour:
     CN: "\u6B63 - \u6253\u51FA\u7684\u683C\u5B50 +X"
   - key: rule1_lv401
     EN: 'Fish: +3'
-    CN: "\u9C7C\uFF1A +3"
+    CN: "\u9C7C\uFF1A+3"
   - key: rule1_lv501
     EN: 'Crescent: +1'
     CN: "\u65B0\u6708\uFF1A+1"
@@ -695,9 +730,9 @@ MonoBehaviour:
   - key: rule2_lv205
     EN: Tail - Cell Played -X
     CN: "\u53CD - \u6253\u51FA\u7684\u683C\u5B50 -X"
-  - key: rule2_lv403
+  - key: rule2_lv404
     EN: 'Rice: -3'
-    CN: "\u7C73\uFF1A -3"
+    CN: "\u7C73\uFF1A-3"
   - key: rule2_lv501
     EN: 'Quarter: +3'
     CN: "\u5F26\u6708\uFF1A+3"
@@ -707,9 +742,9 @@ MonoBehaviour:
   - key: rule3_lv204
     EN: X is the number of coins in a Cell
     CN: "X\u4E3A\u683C\u5B50\u5185\u786C\u5E01\u6570"
-  - key: rule3_lv404
-    EN: 'Sushi(Rice+Fish): =7'
-    CN: "\u5BFF\u53F8\uFF08\u7C73+\u9C7C\uFF09\uFF1A =7"
+  - key: rule3_lv406
+    EN: 'Rice+Fish: Sushi(=7)'
+    CN: "\u7C73+\u9C7C\uFF1A \u5BFF\u53F8\uFF08=7\uFF09"
   - key: rule3_lv502
     EN: 'Full: +5'
     CN: "\u6EE1\u6708\uFF1A+5"
@@ -717,19 +752,19 @@ MonoBehaviour:
     EN: '  when adjacent to 2+ same numbers'
     CN: "  \u5219\u70B9\u4EAE\u683C\u5B50"
   - key: rule4_lv203
-    EN: FLIP the coin after play
+    EN: FLIP the coin after playing
     CN: "\u6253\u51FA\u540E\u786C\u5E01\u7FFB\u9762"
   - key: rule4_lv207
-    EN: TOSS the coin after play
+    EN: TOSS the coin after playing
     CN: "\u6253\u51FA\u540E\u6295\u63B7\u786C\u5E01"
-  - key: rule4_lv405
-    EN: 'Onigiri(Rice+Fish): =2'
-    CN: "\u996D\u56E2\uFF08\u9C7C+\u7C73\uFF09\uFF1A =2"
+  - key: rule4_lv410
+    EN: 'Fish+Rice: Onigiri(=2)'
+    CN: "\u9C7C+\u7C73\uFF1A \u996D\u56E2\uFF08=2\uFF09"
   - key: rule4_lv505
-    EN: 'Eclipse(Full + 9): All cells -5'
-    CN: "9+\u6EE1\u6708\uFF1A\u6708\u98DF"
-  - key: rule5_lv403
-    EN: Fish and Rice alternate
+    EN: '9+Full: Eclipse!'
+    CN: "9+\u6EE1\u6708\uFF1A\u6708\u98DF\uFF01"
+  - key: rule5_lv404
+    EN: Fish and Rice appears alternatively
     CN: "\u9C7C\u548C\u7C73\u4EA4\u66FF\u51FA\u73B0"
   - key: rule5_lv503
     EN: '10+: Sunrise! LOSE'

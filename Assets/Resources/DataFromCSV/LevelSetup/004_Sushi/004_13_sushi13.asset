@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 004_08_sushi8
+  m_Name: 004_13_sushi13
   m_EditorClassIdentifier: 
-  levelUID: 408
+  levelUID: 413
   themeIndex: 4
-  levelIndex: 8
-  nextLevelIndex: 0
-  previousLevel: {fileID: 11400000, guid: d5355cadfbb1b76449e072ec7f744bcb, type: 2}
-  nextLevel: {fileID: 0}
+  levelIndex: 13
+  nextLevelIndex: 414
+  previousLevel: {fileID: 11400000, guid: 2c53f8ef059fa71468e8e7c828c2516d, type: 2}
+  nextLevel: {fileID: 11400000, guid: 80e4347f9234f1043a53d7f548e4865d, type: 2}
   theme: '@Loc=themename_tm4@@'
-  title: '@Loc=levelname_lv408@@'
-  newInitNarrative: '@Loc=narrative_tm4_ln014@@'
+  title: '@Loc=levelname_lv413@@'
+  newInitNarrative: 
   newPlayNarratives:
-  - '@Loc=narrative_tm4_ln015@@'
+  - '@Loc=narrative_tm4_ln013@@'
   oldNarratives:
   - '@Loc=narrative_tm4_ln001@@'
   - '@Loc=narrative_tm4_ln002@@'
@@ -36,72 +36,50 @@ MonoBehaviour:
   - '@Loc=narrative_tm4_ln010@@'
   - '@Loc=narrative_tm4_ln011@@'
   - '@Loc=narrative_tm4_ln012@@'
-  - '@Loc=narrative_tm4_ln013@@'
-  goal: '@Loc=goal_lv408@@'
+  goal: '@Loc=goal_lv413@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv401@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv403@@'
+    ruleDesc: '@Loc=rule2_lv404@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv404@@'
+    ruleDesc: '@Loc=rule3_lv406@@'
   - tag: 0
-    ruleDesc: '@Loc=rule4_lv405@@'
+    ruleDesc: '@Loc=rule4_lv410@@'
   - tag: 0
-    ruleDesc: '@Loc=rule5_lv403@@'
+    ruleDesc: '@Loc=rule5_lv404@@'
   isHard: 1
   allowRewind: 1
   initBoard:
-    boardSize: {x: 4, y: 4}
+    boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 1
-      status: 0
+      value: 0
+      status: 1
     - coord: {x: 1, y: 0}
-      value: 8
-      status: 0
-    - coord: {x: 2, y: 0}
-      value: 1
-      status: 0
-    - coord: {x: 3, y: 0}
-      value: 9
-      status: 0
-    - coord: {x: 0, y: 1}
-      value: 7
-      status: 0
-    - coord: {x: 1, y: 1}
-      value: 5
-      status: 0
-    - coord: {x: 2, y: 1}
-      value: 5
-      status: 0
-    - coord: {x: 3, y: 1}
-      value: 1
-      status: 0
-    - coord: {x: 0, y: 2}
-      value: 8
-      status: 0
-    - coord: {x: 1, y: 2}
-      value: 6
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 3
-      status: 0
-    - coord: {x: 3, y: 2}
-      value: 7
-      status: 0
-    - coord: {x: 0, y: 3}
-      value: 4
-      status: 0
-    - coord: {x: 1, y: 3}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 3}
-      value: 7
-      status: 0
-    - coord: {x: 3, y: 3}
       value: 2
-      status: 0
-    toolCount: 40
+      status: 2
+    - coord: {x: 2, y: 0}
+      value: 9
+      status: 1
+    - coord: {x: 0, y: 1}
+      value: 4
+      status: 2
+    - coord: {x: 1, y: 1}
+      value: 0
+      status: 1
+    - coord: {x: 2, y: 1}
+      value: 6
+      status: 2
+    - coord: {x: 0, y: 2}
+      value: 1
+      status: 1
+    - coord: {x: 1, y: 2}
+      value: 3
+      status: 2
+    - coord: {x: 2, y: 2}
+      value: 2
+      status: 1
+    toolCount: 10
     toolStatus: 1
     curPlayCoord: {x: -1, y: -1}
