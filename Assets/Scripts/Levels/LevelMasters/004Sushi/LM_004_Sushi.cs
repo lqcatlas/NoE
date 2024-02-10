@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UI;
 
 public class LM_004_Sushi : LevelMasterBase
@@ -18,7 +19,6 @@ public class LM_004_Sushi : LevelMasterBase
     float CellFoodTrasitionDuration = 1f;
     float originalFoodAlpha = 0.4f;
 
-    
 
     public override void GetObjectReferences(GameObject _themeHub)
     {
@@ -258,7 +258,6 @@ public class LM_004_Sushi : LevelMasterBase
         else if (levelData.levelIndex == 5)
         {
             return BoardCalculation.Same_All(levelData.curBoard);
-            return BoardCalculation.CountXorY_All(levelData.curBoard, 2, 7);
         }
         else if (levelData.levelIndex == 6)
         {
@@ -348,6 +347,11 @@ public class LM_004_Sushi : LevelMasterBase
         //.OnComplete(() => Destroy(temp_sprite))
         //sushiHub.sushiPlates[i].Value.SetActive(temp_cellData.status != 0);
         //sushiHub.sushiPlates[i].Value.GetComponent<SpriteRenderer>().sprite = sushiHub.statusSprites[temp_cellData.status];
+        if(finalStatus == 3 || finalStatus == 4)
+        {
+            sushiPlate.transform.DOScale(1.6f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetDelay(CellFoodTrasitionDuration/2f);
+            sushiPlate.transform.DOScale(1.4f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetDelay(CellFoodTrasitionDuration / 2f + dConstants.UI.StandardizedBtnAnimDuration / 2f);
+        }
     }
     void UpdateToolStatusDisplay()
     {

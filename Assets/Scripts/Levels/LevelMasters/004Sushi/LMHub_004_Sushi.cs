@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class LMHub_004_Sushi : MonoBehaviour
 {
@@ -35,13 +36,15 @@ public class LMHub_004_Sushi : MonoBehaviour
     }
     public AudioClip GetEndingClip(int level)
     {
-        if (level >= endingClips.Count)
+        int rng = Random.Range(Mathf.Min(endingClips.Count, level), 1);
+        if (rng >= endingClips.Count)
         {
+            Debug.LogError("invalid sushi ending VO");
             return null;
         }
         else
         {
-            return endingClips[level-1];
+            return endingClips[rng];
         }
     }
 }

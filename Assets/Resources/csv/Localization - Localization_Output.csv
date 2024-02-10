@@ -4,271 +4,277 @@ UID,Key,EN,CN
 3,date_tm4,2023/06/25,2023/06/25
 4,date_tm5,2023/08/13,2023/08/13
 5,date_tm6,2023/09/03,2023/09/03
-6,goal_lv101,Set all cells to 8,将所有格子变为8
-7,goal_lv102,Set all cells to 10,将所有格子变为10
-8,goal_lv103,Set all cells to 1,将所有格子变为1
-9,goal_lv104,Set all cells to UNIQUE,将所有格子变为不同的值
-10,goal_lv105,Set all cells to 3,将所有格子变为3
-11,goal_lv106,Set all cells to 4,将所有格子变为4
-12,goal_lv107,Set all cells to UNIQUE(at least 8 steps),将所有格子变为不同的值（最少需要8步）
-13,goal_lv108,Set all cells to 6(at least 35 steps),将所有格子变为6（最少需要35步）
-14,goal_lv201,Set all cells to 4,将所有格子变为4
-15,goal_lv202,Set all cells to 4,将所有格子变为4
-16,goal_lv203,Set all cells to SAME,将所有格子变为相同的值
-17,goal_lv204,Set at least 2 cells to 9,将至少2个格子变为9
-18,goal_lv205,Set at least 2 cells to 1,将至少2个格子变为1
-19,goal_lv206,Set all cells to SAME,将所有格子变为相同的值
-20,goal_lv207,Set all cells to UNIQUE,将所有格子变为不同的值
-21,goal_lv208,Set all cells to SAME,将所有格子变为相同的值
-22,goal_lv401,Set at least 1 cell to 1,让1个格子为1
-23,goal_lv402,Set at least 2 cells to 2,让2个格子为2
-24,goal_lv403,Set at least 5 cells to 5,让5个格子为5
-25,goal_lv404,Set all cells to 6,让所有格子为6
-26,goal_lv405,Set all cells to SAME,让所有格子数字相同
-27,goal_lv406,Set all cells to 7,让所有格子为7
-28,goal_lv407,Set all cells to 7,让所有格子为7
-29,goal_lv408,Set all cells to 7,让所有格子为7
-30,goal_lv409,Set all cells to 7,让所有格子为7
-31,goal_lv410,Set each cell to Sushi or Onigiri,让每个格子都变成寿司或饭团
-32,goal_lv411,"Set the sum of cells to 18, <br>when there are Fish, Rice, Sushi, Onigiri.",刺身、米饭、寿司、饭团各一个时，数字总和为18
-33,goal_lv412,"Set the sum of cells to 36, <br>when there are only Fish and Sushi.",每个格子是刺身或寿司的情况下，数字总和为36
-34,goal_lv413,"Set the sum of cells to 36, <br>when there are only  Rice and Onigiri.",在每个格子都是米饭或饭团的情况下，让数字总和为36
-35,goal_lv414,Set all cells to UNIQUE,让所有格子都为不同值
-36,goal_lv501,Set all cells to 7,让所有格子为7
-37,goal_lv502,Set all cells to SAME,让所有格子成为相同数字
-38,goal_lv503,Set all cells to SAME,让所有格子成为相同数字
-39,goal_lv504,Set all cells to SAME,让所有格子成为相同数字
-40,goal_lv505,Trigger eclipse twice,触发2次月食
-41,goal_lv506,Trigger eclipse third times,触发3次月食
-42,goal_lv507,Set the sum of cells to 10 or below,让数字总和下降至10以下
-43,goal_lv508,Set all cells to EVEN,让所有格子为偶数
-44,goal_lv509,Set the sum of cells to 10 or below,让数字总和下降至10以下
-45,goal_lv510,,让左侧一列格子为0
-46,goal_lv511,,让左侧一列格子为0，<br>右侧一列格子为2
-47,goal_lv512,,月食时，让所有格子回归初值
-48,goal_lv513,,让所有格子回归初值
-49,goal_lv514,,月食时，让所有格子回归初值
-50,goal_lv601,1+ cell(s) is ON.,点亮1盏灯泡
-51,goal_lv602,5+ cells are ON.,点亮5盏灯泡
-52,goal_lv603,All cells are ON.,点亮全部灯泡
-53,goal_lv604,All cells are ON.,点亮全部灯泡
-54,goal_lv605,All cells are ON.,点亮全部灯泡
-55,goal_lv606,All cells are ON.,点亮全部灯泡
-56,goal_lv607,"Use actions. <br>Meanwhile, keep the number of ON cells stays between 4 to 6.",点亮全部灯泡
-57,goal_lv608,All cells are ON.,点亮6盏灯泡
-58,goal_lv609,6+ cells are ON.,点亮6盏灯泡
-59,goal_lv610,Turn on 3 cells from OFF simultaneously.,一次将3盏熄灭的灯泡点亮
-60,goal_lv611,Turn on 4 cells from OFF simultaneously.,一次将4盏熄灭的灯泡点亮
-61,goal_lv612,"Use up all actions. <br>Meanwhile, keep the number of ON cells stay between 4 to 6.",用掉所有灯泡，<br>保持点亮的灯数量在4-6之间
-62,goal_lv613,All cells are ON.,点亮全部灯泡
-63,goal_lv614,Turn on 8 cells from OFF simultaneously.,一次将8盏熄灭的灯泡点亮
-64,goal_lv615,All cells are ON.,点亮全部灯泡
-65,hint_tm1,,它滴答滴答，永不停歇地前进。
-66,hint_tm2,,它一次次地翻动，决定着命运。
-67,hint_tm4,,它虽然简约，却愈显得精致。
-68,hint_tm5,,它不停变化，却总会回到熟悉的样子。
-69,hint_tm6,,它代表了灵感、顿悟。
-70,intro_line_1,"Friday night. Get back home, <b>things</b> emerges from darkness.",周五晚上，打开房门，回到漆黑的家中，黑暗之中<b>万物</b>浮现。
-71,intro_line_2,"On the way to work, passing through a river, <b>things</b> emerges from the voice of the winds",走在上班的路上，路过一条小河，树叶的婆娑声中夹杂着<b>万物</b>。
-72,levelname_lv101,001,001
-73,levelname_lv102,002,002
-74,levelname_lv103,003,003
-75,levelname_lv104,004,004
-76,levelname_lv105,005,005
-77,levelname_lv106,006,006
-78,levelname_lv107,007,007
-79,levelname_lv108,008,008
-80,levelname_lv201,001,001
-81,levelname_lv202,002,002
-82,levelname_lv203,003,003
-83,levelname_lv204,004,004
-84,levelname_lv205,005,005
-85,levelname_lv206,006,006
-86,levelname_lv207,007,007
-87,levelname_lv208,008,008
-88,levelname_lv401,001,001
-89,levelname_lv402,002,002
-90,levelname_lv403,003,003
-91,levelname_lv404,004,004
-92,levelname_lv405,005,005
-93,levelname_lv406,006,006
-94,levelname_lv407,007,007
-95,levelname_lv408,008,008
-96,levelname_lv409,009,009
-97,levelname_lv410,010,010
-98,levelname_lv411,011,011
-99,levelname_lv412,012,012
-100,levelname_lv413,013,013
-101,levelname_lv414,014,014
-102,levelname_lv501,001,001
-103,levelname_lv502,002,002
-104,levelname_lv503,003,003
-105,levelname_lv504,004,004
-106,levelname_lv505,005,005
-107,levelname_lv506,006,006
-108,levelname_lv507,007,007
-109,levelname_lv508,008,008
-110,levelname_lv509,009,009
-111,levelname_lv510,010,010
-112,levelname_lv511,011,011
-113,levelname_lv512,012,012
-114,levelname_lv513,013,013
-115,levelname_lv514,014,014
-116,levelname_lv601,001,001
-117,levelname_lv602,002,002
-118,levelname_lv603,003,003
-119,levelname_lv604,004,004
-120,levelname_lv605,005,005
-121,levelname_lv606,006,006
-122,levelname_lv607,007,007
-123,levelname_lv608,008,008
-124,levelname_lv609,009,009
-125,levelname_lv610,010,010
-126,levelname_lv611,011,011
-127,levelname_lv612,012,012
-128,levelname_lv613,013,013
-129,levelname_lv614,014,014
-130,levelname_lv615,015,015
-131,locked_tm1,,█ █ 永不停歇。
-132,locked_tm2,,█ █ 决定命运。
-133,locked_tm4,,█ █ 简约又精致。
-134,locked_tm5,,█ █ 有无规律？
-135,locked_tm6,,█ █ 代表着灵感。
-136,manifesto_tm1,,时钟是第一个主题，它的出现比游戏名“万物之数“还要早。一定程度上，它是整个游戏项目开始的起点。<br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
-137,manifesto_tm2,,硬币是第二个主题，它的灵感来源于通过掷硬币来做决策这一时刻。在生活中，嘴里说着不知怎么选，就通过掷硬币来决定。可其实往往掷出结果后如果不是自己满意的那个又会找理由反悔，“再掷一次吧”。因此掷硬币不是决定我的命运，而是来帮助我更好地走进内心，真正看清自己。
-138,manifesto_tm4,,寿司是第三个主题，也是在demo之后的第一个正式主题。表达的要点是日本料理中运用简单食材，通过不同的烹调、比重、组合的方式产生食物种类、口感、味道上丰富可能。在实际的谜题中展现为通过两种食材的次序，就可以产生迥然相异的结果。
-139,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期是月相交替变化，容易掌握。引入月食规则的时候则使用了一些具有迷惑性的手段，从动画效果和文字上都暗示着它的无序。然后在通过一系列的挑战来引导大家对其内在规律的探索。<br><br>看到这段文字的你真的已经完全掌握了月食吗？就用后续的钻石挑战来确认一下吧。
-140,manifesto_tm6,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
-141,narrative_tm1_ln001,,溜走的时间
-142,narrative_tm1_ln002,,滴答滴答滴答，
-143,narrative_tm1_ln003,,时钟不知疲倦地前进。
-144,narrative_tm1_ln004,,微博、连载、直播，
-145,narrative_tm1_ln005,,开启新的节律，
-146,narrative_tm1_ln006,,时间在你的指尖默默滑动。
-147,narrative_tm1_ln007,,夜的旅者，
-148,narrative_tm1_ln008,,在黑暗中跋涉。
-149,narrative_tm1_ln009,,拖着疲惫的身躯，
-150,narrative_tm1_ln010,,最终抵达晨曦。
-151,narrative_tm1_ln011,,意识逐渐模糊，
-152,narrative_tm1_ln012,,是时候休息了。
-153,narrative_tm2_ln001,,来自硬币的命运
-154,narrative_tm2_ln002,,硬币有无数种形式。
-155,narrative_tm2_ln003,,它穿越历史，
-156,narrative_tm2_ln004,,始终保持着两面。
-157,narrative_tm2_ln005,,正面象征前进，
-158,narrative_tm2_ln006,,也可能是盲从；
-159,narrative_tm2_ln007,,反面代表保留，
-160,narrative_tm2_ln008,,或者叫放弃。
-161,narrative_tm2_ln009,,两面交错，
-162,narrative_tm2_ln010,,创造命运的波澜。
-163,narrative_tm2_ln011,,你再次投掷，
-164,narrative_tm2_ln012,,等待宿命落下的回响。
-165,narrative_tm2_ln013,,不甘于此，
-166,narrative_tm2_ln014,,就用智慧进行解读。
-167,narrative_tm4_ln001,,寿司的简约
-168,narrative_tm4_ln002,,夹起一片鱼生，
-169,narrative_tm4_ln003,,晶莹剔透。
-170,narrative_tm4_ln004,,拿起一团白饭，
-171,narrative_tm4_ln005,,在碗中勾勒出弧线。
-172,narrative_tm4_ln006,,一缕白米叠上鱼生，
-173,narrative_tm4_ln007,,轻轻捏合，
-174,narrative_tm4_ln008,,创造出寿司细腻的口感。
-175,narrative_tm4_ln009,,一勺鱼肉放进白米，
-176,narrative_tm4_ln010,,缓缓卷起，
-177,narrative_tm4_ln011,,就开启了饭团丰盈的味觉。
-178,narrative_tm4_ln012,,仅用两种原料，
-179,narrative_tm4_ln013,,交织出丰富的组合，
-180,narrative_tm4_ln014,,诉说简约的美。
-181,narrative_tm4_ln015,,
-182,narrative_tm5_ln001,,月的规律
-183,narrative_tm5_ln002,,亏盈交替，
-184,narrative_tm5_ln003,,圆缺变迁。
-185,narrative_tm5_ln004,,亘古不变的，
-186,narrative_tm5_ln005,,是夜空的指引。
-187,narrative_tm5_ln006,,突如其来的月食，
-188,narrative_tm5_ln007,,散播混沌。
-189,narrative_tm5_ln008,,借着微弱光辉，
-190,narrative_tm5_ln009,,你在迷惘中前行。
-191,narrative_tm5_ln010,,用反思和总结，
-192,narrative_tm5_ln011,,让秩序浮现。
-193,narrative_tm5_ln012,,表面的无序，
-194,narrative_tm5_ln013,,藏着更深的规则。
-195,narrative_tm5_ln014,,在曲折中领悟，
-196,narrative_tm5_ln015,,获得再次的掌控。
-197,narrative_tm6_ln001,,灵感之光
-198,narrative_tm6_ln002,,电灯总用来代表<b>灵感</b>。
-199,narrative_tm6_ln003,,<b>火花</b>在脑中跃动，
-200,narrative_tm6_ln004,,思路逐渐便变得清晰。
-201,narrative_tm6_ln005,,光明<b>涌现</b>，
-202,narrative_tm6_ln006,,产生璀璨的印记。
-203,narrative_tm6_ln007,,过度的<b>汹涌</b>，
-204,narrative_tm6_ln008,,让你失去了方向。
-205,narrative_tm6_ln009,,真正的智慧，
-206,narrative_tm6_ln010,,在于保留<b>恰如其分</b>的灵感。
-207,narrative_tm6_ln011,,在发明灯泡以前，
-208,narrative_tm6_ln012,,在那无边黑暗的岁月里，
-209,narrative_tm6_ln013,,光明永驻于心间。
-210,prompt_tm1,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-211,prompt_tm2,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-212,prompt_tm4,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-213,prompt_tm5,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-214,prompt_tm6,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-215,rule1_lv101,Cell Played +1,打出的格子 +1
-216,rule1_lv201,Head - Cell Played +1,正 - 打出的格子 +1
-217,rule1_lv204,Head - Cell Played +X,正 - 打出的格子 +X
-218,rule1_lv401,Fish: +3,鱼：+3
-219,rule1_lv501,Crescent: +1,新月：+1
-220,rule1_lv601,Played cell +1,打出的格子 +1
-221,rule1_lv605,Played and adjacent cells +1,打出及相邻的格子 +1
-222,rule2_lv103,Cell already with a Clock +1,已有时钟的格子 +1
-223,rule2_lv202,Tail - Cell Played -1,反 - 打出的格子 -1
-224,rule2_lv205,Tail - Cell Played -X,反 - 打出的格子 -X
-225,rule2_lv404,Rice: -3,米：-3
-226,rule2_lv501,Quarter: +3,弦月：+3
-227,rule2_lv601,Cell is turned ON,与两个或以上的相同数字相邻
-228,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
-229,rule3_lv406,Rice+Fish: Sushi(=7),米+鱼： 寿司（=7）
-230,rule3_lv502,Full: +5,满月：+5
-231,rule3_lv601,  when adjacent to 2+ same numbers,  则点亮格子
-232,rule4_lv203,FLIP the coin after playing,打出后硬币翻面
-233,rule4_lv207,TOSS the coin after playing,打出后投掷硬币
-234,rule4_lv410,Fish+Rice: Onigiri(=2),鱼+米： 饭团（=2）
-235,rule4_lv505,9+Full: Eclipse!,9+满月：月食！
-236,rule5_lv404,Fish and Rice appears alternatively,鱼和米交替出现
-237,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
-238,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
-239,themename_tm1,Clock,时钟
-240,themename_tm2,Coin,硬币
-241,themename_tm4,Sushi,寿司
-242,themename_tm5,Moon,月亮
-243,themename_tm6,Lightbulb,灯泡
-244,tool_name_theme2_status0,Front,正面
-245,tool_name_theme2_status1,Tail,反面
-246,tool_name_theme4_status1,Fish,鱼生
-247,tool_name_theme4_status2,Rice,白米
-248,tool_name_theme5_status1,Crescent,新月
-249,tool_name_theme5_status2,Quarter,弦月
-250,tool_name_theme5_status3,Full,满月
-251,tool_name_theme5_status4,Quarter,弦月
-252,tool_name_theme5_status5,Crescent,新月
-253,ui_close_btn,Close,关闭
-254,ui_designer_note_title,Designer's Notes,制作笔记
-255,ui_failure_title,,挑战失败
-256,ui_finished_status,(Passed),（完成）
-257,ui_goal_current_sum,Current Sum: ,当前数字之和：
-258,ui_goal_section_title,Goal,目标
-259,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the following riddle:,根据谜语找到<b>物件</b>：
-260,ui_new_tag,NEW,新
-261,ui_perfect_status,(Perfect),（完美通关）
-262,ui_retry_btn,Restart,重试
-263,ui_rewind_btn,Rewind,回溯
-264,ui_ruleset_title,Rules,规则
-265,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}
-266,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
-267,ui_themephoto_unlockreq,<sprite name=currency_star_frame> {0}<br>to unlock,<sprite name=currency_star_frame> {0}<br>解锁
-268,ui_victory_title,,恭喜通关
-269,unlocked_tm1,,<b>时间</b>永不停歇。
-270,unlocked_tm2,,<b>硬币</b>决定命运。
-271,unlocked_tm4,,<b>寿司</b>简约又精致。
-272,unlocked_tm5,,<b>月亮</b>有无规律？
-273,unlocked_tm6,,<b>灯泡</b>代表着灵感。
+6,goal_lv101,Set all cells to 8,让所有格子为8
+7,goal_lv102,Set all cells to 10,让所有格子为10
+8,goal_lv103,Set all cells to 1,让所有格子为1
+9,goal_lv104,Set all cells to UNIQUE,让所有格子数字不同
+10,goal_lv105,Set all cells to 3,让所有格子为3
+11,goal_lv106,Set all cells to 4,让所有格子为4
+12,goal_lv107,Set all cells to UNIQUE,让所有格子数字不同
+13,goal_lv108,Set all cells to 6,让所有格子为6
+14,goal_lv201,Set all cells to 4,让所有格子为4
+15,goal_lv202,Set all cells to 4,让所有格子为4
+16,goal_lv203,Set all cells to SAME,让所有格子数字相同
+17,goal_lv204,Set all cells to 9,让所有格子为9
+18,goal_lv205,Set all cells to 0,让所有格子为0
+19,goal_lv206,Set all cells to 5,让所有格子为5
+20,goal_lv207,Set all cells to SAME,让所有格子数字相同
+21,goal_lv208,Set all cells to SAME,让所有格子数字相同
+22,goal_lv209,Set all cells to UNIQUE,让所有格子数字不同
+23,goal_lv210,Set all cells to UNIQUE,让所有格子数字不同
+24,goal_lv211,Set all cells to SAME,让所有格子数字相同
+25,goal_lv401,Set at least 1 cell to 1,让1个格子为1
+26,goal_lv402,Set at least 2 cells to 2,让2个格子为2
+27,goal_lv403,Set at least 5 cells to 5,让5个格子为5
+28,goal_lv404,Set all cells to 6,让所有格子为6
+29,goal_lv405,Set all cells to SAME,让所有格子数字相同
+30,goal_lv406,Set all cells to 7,让所有格子为7
+31,goal_lv407,Set all cells to 7,让所有格子为7
+32,goal_lv408,Set all cells to 7,让所有格子为7
+33,goal_lv409,Set all cells to 7,让所有格子为7
+34,goal_lv410,Set each cell to Sushi or Onigiri,让每个格子都变成寿司或饭团
+35,goal_lv411,"Set the sum of cells to 18, <br>when there are Fish, Rice, Sushi, Onigiri.",刺身、米饭、寿司、饭团各一个时，数字总和为18
+36,goal_lv412,"Set the sum of cells to 36, <br>when there are only Fish and Sushi.",每个格子是刺身或寿司的情况下，数字总和为36
+37,goal_lv413,"Set the sum of cells to 36, <br>when there are only  Rice and Onigiri.",在每个格子都是米饭或饭团的情况下，让数字总和为36
+38,goal_lv414,Set all cells to UNIQUE,让所有格子都为不同值
+39,goal_lv501,Set all cells to 7,让所有格子为7
+40,goal_lv502,Set all cells to SAME,让所有格子成为相同数字
+41,goal_lv503,Set all cells to SAME,让所有格子成为相同数字
+42,goal_lv504,Set all cells to SAME,让所有格子成为相同数字
+43,goal_lv505,Trigger eclipse twice,触发2次月食
+44,goal_lv506,Trigger eclipse third times,触发3次月食
+45,goal_lv507,Set the sum of cells to 10 or below,让数字总和下降至10以下
+46,goal_lv508,Set all cells to EVEN,让所有格子为偶数
+47,goal_lv509,Set the sum of cells to 10 or below,让数字总和下降至10以下
+48,goal_lv510,,让左侧一列格子为0
+49,goal_lv511,,让左侧一列格子为0，<br>右侧一列格子为2
+50,goal_lv512,,月食时，让所有格子回归初值
+51,goal_lv513,,让所有格子回归初值
+52,goal_lv514,,月食时，让所有格子回归初值
+53,goal_lv601,1+ cell(s) is ON.,点亮1盏灯泡
+54,goal_lv602,5+ cells are ON.,点亮5盏灯泡
+55,goal_lv603,All cells are ON.,点亮全部灯泡
+56,goal_lv604,All cells are ON.,点亮全部灯泡
+57,goal_lv605,All cells are ON.,点亮全部灯泡
+58,goal_lv606,All cells are ON.,点亮全部灯泡
+59,goal_lv607,"Use actions. <br>Meanwhile, keep the number of ON cells stays between 4 to 6.",点亮全部灯泡
+60,goal_lv608,All cells are ON.,点亮6盏灯泡
+61,goal_lv609,6+ cells are ON.,点亮6盏灯泡
+62,goal_lv610,Turn on 3 cells from OFF simultaneously.,一次将3盏熄灭的灯泡点亮
+63,goal_lv611,Turn on 4 cells from OFF simultaneously.,一次将4盏熄灭的灯泡点亮
+64,goal_lv612,"Use up all actions. <br>Meanwhile, keep the number of ON cells stay between 4 to 6.",用掉所有灯泡，<br>保持点亮的灯数量在4-6之间
+65,goal_lv613,All cells are ON.,点亮全部灯泡
+66,goal_lv614,Turn on 8 cells from OFF simultaneously.,一次将8盏熄灭的灯泡点亮
+67,goal_lv615,All cells are ON.,点亮全部灯泡
+68,hint_tm1,,它滴答滴答，永不停歇地前进。
+69,hint_tm2,,它一次次地翻动，决定着命运。
+70,hint_tm4,,它虽然简约，却愈显得精致。
+71,hint_tm5,,它不停变化，却总会回到熟悉的样子。
+72,hint_tm6,,它代表了灵感、顿悟。
+73,intro_line_1,"Friday night. Get back home, <b>things</b> emerges from darkness.",周五晚上，打开房门，回到漆黑的家中，黑暗之中<b>万物</b>浮现。
+74,intro_line_2,"On the way to work, passing through a river, <b>things</b> emerges from the voice of the winds",走在上班的路上，路过一条小河，树叶的婆娑声中夹杂着<b>万物</b>。
+75,levelname_lv101,001,001
+76,levelname_lv102,002,002
+77,levelname_lv103,003,003
+78,levelname_lv104,004,004
+79,levelname_lv105,005,005
+80,levelname_lv106,006,006
+81,levelname_lv107,007,007
+82,levelname_lv108,008,008
+83,levelname_lv201,001,001
+84,levelname_lv202,002,002
+85,levelname_lv203,003,003
+86,levelname_lv204,004,004
+87,levelname_lv205,005,005
+88,levelname_lv206,006,006
+89,levelname_lv207,007,007
+90,levelname_lv208,008,008
+91,levelname_lv209,009,009
+92,levelname_lv210,010,010
+93,levelname_lv211,011,011
+94,levelname_lv401,001,001
+95,levelname_lv402,002,002
+96,levelname_lv403,003,003
+97,levelname_lv404,004,004
+98,levelname_lv405,005,005
+99,levelname_lv406,006,006
+100,levelname_lv407,007,007
+101,levelname_lv408,008,008
+102,levelname_lv409,009,009
+103,levelname_lv410,010,010
+104,levelname_lv411,011,011
+105,levelname_lv412,012,012
+106,levelname_lv413,013,013
+107,levelname_lv414,014,014
+108,levelname_lv501,001,001
+109,levelname_lv502,002,002
+110,levelname_lv503,003,003
+111,levelname_lv504,004,004
+112,levelname_lv505,005,005
+113,levelname_lv506,006,006
+114,levelname_lv507,007,007
+115,levelname_lv508,008,008
+116,levelname_lv509,009,009
+117,levelname_lv510,010,010
+118,levelname_lv511,011,011
+119,levelname_lv512,012,012
+120,levelname_lv513,013,013
+121,levelname_lv514,014,014
+122,levelname_lv601,001,001
+123,levelname_lv602,002,002
+124,levelname_lv603,003,003
+125,levelname_lv604,004,004
+126,levelname_lv605,005,005
+127,levelname_lv606,006,006
+128,levelname_lv607,007,007
+129,levelname_lv608,008,008
+130,levelname_lv609,009,009
+131,levelname_lv610,010,010
+132,levelname_lv611,011,011
+133,levelname_lv612,012,012
+134,levelname_lv613,013,013
+135,levelname_lv614,014,014
+136,levelname_lv615,015,015
+137,locked_tm1,,█ █ 永不停歇。
+138,locked_tm2,,█ █ 决定命运。
+139,locked_tm4,,█ █ 简约又精致。
+140,locked_tm5,,█ █ 有无规律？
+141,locked_tm6,,█ █ 代表着灵感。
+142,manifesto_tm1,,时钟是第一个主题，它的出现比游戏名“万物之数“还要早。一定程度上，它是整个游戏项目开始的起点。<br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
+143,manifesto_tm2,,硬币是第二个主题，它的灵感来源于通过掷硬币来做决策这一时刻。在生活中，嘴里说着不知怎么选，就通过掷硬币来决定。可其实往往掷出结果后如果不是自己满意的那个又会找理由反悔，“再掷一次吧”。因此掷硬币不是决定我的命运，而是来帮助我更好地走进内心，真正看清自己。
+144,manifesto_tm4,,寿司是进入工程正规流程之后的第一个正式主题。它表达的要点是日本料理中运用最简单食材，通过不同的烹调与组合的变化产生出口感与味道上丰富可能。在实际的谜题中展现为通过两种食材不同的次序，就可以产生迥然相异的数字变化来解决谜题。
+145,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期是月相交替变化，容易掌握。引入月食规则的时候则使用了一些具有迷惑性的手段，从动画效果和文字上都暗示着它的无序。然后在通过一系列的挑战来引导大家对其内在规律的探索。<br><br>看到这段文字的你真的已经完全掌握了月食吗？就用后续的钻石挑战来确认一下吧。
+146,manifesto_tm6,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
+147,narrative_tm1_ln001,,溜走的时间
+148,narrative_tm1_ln002,,滴答滴答滴答，
+149,narrative_tm1_ln003,,时钟不知疲倦地前进。
+150,narrative_tm1_ln004,,微博、连载、直播，
+151,narrative_tm1_ln005,,开启新的节律，
+152,narrative_tm1_ln006,,时间在你的指尖默默滑动。
+153,narrative_tm1_ln007,,夜的旅者，
+154,narrative_tm1_ln008,,在黑暗中跋涉。
+155,narrative_tm1_ln009,,拖着疲惫的身躯，
+156,narrative_tm1_ln010,,最终抵达晨曦。
+157,narrative_tm1_ln011,,意识逐渐模糊，
+158,narrative_tm1_ln012,,是时候休息了。
+159,narrative_tm2_ln001,,来自硬币的命运
+160,narrative_tm2_ln002,,硬币有无数种形式。
+161,narrative_tm2_ln003,,它穿越历史，
+162,narrative_tm2_ln004,,始终保持着两面。
+163,narrative_tm2_ln005,,正面象征前进，
+164,narrative_tm2_ln006,,也可能是盲从；
+165,narrative_tm2_ln007,,反面代表保留，
+166,narrative_tm2_ln008,,或者叫放弃。
+167,narrative_tm2_ln009,,两面交错，
+168,narrative_tm2_ln010,,创造命运的波澜。
+169,narrative_tm2_ln011,,你再次投掷，
+170,narrative_tm2_ln012,,等待宿命落下的回响。
+171,narrative_tm2_ln013,,不甘于此，
+172,narrative_tm2_ln014,,就用智慧进行解读。
+173,narrative_tm4_ln001,,寿司的简约
+174,narrative_tm4_ln002,,夹起一片鱼生，
+175,narrative_tm4_ln003,,晶莹剔透。
+176,narrative_tm4_ln004,,拿起一团白饭，
+177,narrative_tm4_ln005,,在碗中勾勒出弧线。
+178,narrative_tm4_ln006,,一缕白米叠上鱼生，
+179,narrative_tm4_ln007,,轻轻捏合，
+180,narrative_tm4_ln008,,创造出寿司细腻的口感。
+181,narrative_tm4_ln009,,一勺鱼肉放进白米，
+182,narrative_tm4_ln010,,缓缓卷起，
+183,narrative_tm4_ln011,,就开启了饭团丰盈的味觉。
+184,narrative_tm4_ln012,,仅用两种原料，
+185,narrative_tm4_ln013,,交织出丰富的组合，
+186,narrative_tm4_ln014,,诉说简约的美。
+187,narrative_tm4_ln015,,
+188,narrative_tm5_ln001,,月的规律
+189,narrative_tm5_ln002,,亏盈交替，
+190,narrative_tm5_ln003,,圆缺变迁。
+191,narrative_tm5_ln004,,亘古不变的，
+192,narrative_tm5_ln005,,是夜空的指引。
+193,narrative_tm5_ln006,,突如其来的月食，
+194,narrative_tm5_ln007,,散播混沌。
+195,narrative_tm5_ln008,,借着微弱光辉，
+196,narrative_tm5_ln009,,你在迷惘中前行。
+197,narrative_tm5_ln010,,用反思和总结，
+198,narrative_tm5_ln011,,让秩序浮现。
+199,narrative_tm5_ln012,,表面的无序，
+200,narrative_tm5_ln013,,藏着更深的规则。
+201,narrative_tm5_ln014,,在曲折中领悟，
+202,narrative_tm5_ln015,,获得再次的掌控。
+203,narrative_tm6_ln001,,灵感之光
+204,narrative_tm6_ln002,,电灯总用来代表<b>灵感</b>。
+205,narrative_tm6_ln003,,<b>火花</b>在脑中跃动，
+206,narrative_tm6_ln004,,思路逐渐便变得清晰。
+207,narrative_tm6_ln005,,光明<b>涌现</b>，
+208,narrative_tm6_ln006,,产生璀璨的印记。
+209,narrative_tm6_ln007,,过度的<b>汹涌</b>，
+210,narrative_tm6_ln008,,让你失去了方向。
+211,narrative_tm6_ln009,,真正的智慧，
+212,narrative_tm6_ln010,,在于保留<b>恰如其分</b>的灵感。
+213,narrative_tm6_ln011,,在发明灯泡以前，
+214,narrative_tm6_ln012,,在那无边黑暗的岁月里，
+215,narrative_tm6_ln013,,光明永驻于心间。
+216,prompt_tm1,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+217,prompt_tm2,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+218,prompt_tm4,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+219,prompt_tm5,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+220,prompt_tm6,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+221,rule1_lv101,Cell Played +1,打出的格子 +1
+222,rule1_lv201,Head - Cell Played +1,正面：+1
+223,rule1_lv204,Head - Cell Played +X,正面：+X
+224,rule1_lv401,Fish: +3,鱼：+3
+225,rule1_lv501,Crescent: +1,新月：+1
+226,rule1_lv601,Played cell +1,打出的格子 +1
+227,rule1_lv605,Played and adjacent cells +1,打出及相邻的格子 +1
+228,rule2_lv103,Cell already with a Clock +1,已有时钟的格子 +1
+229,rule2_lv202,Tail - Cell Played -1,反面：-1
+230,rule2_lv205,Tail - Cell Played -X,反面：-X
+231,rule2_lv404,Rice: -3,米：-3
+232,rule2_lv501,Quarter: +3,弦月：+3
+233,rule2_lv601,Cell is turned ON,与两个或以上的相同数字相邻
+234,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
+235,rule3_lv406,Rice+Fish: Sushi(=7),米+鱼： 寿司（=7）
+236,rule3_lv502,Full: +5,满月：+5
+237,rule3_lv601,  when adjacent to 2+ same numbers,  则点亮格子
+238,rule4_lv203,FLIP the coin after playing,打出后硬币翻面
+239,rule4_lv210,TOSS the coin after playing,打出后投掷硬币
+240,rule4_lv410,Fish+Rice: Onigiri(=2),鱼+米： 饭团（=2）
+241,rule4_lv505,9+Full: Eclipse!,9+满月：月食！
+242,rule5_lv404,Fish and Rice appears alternatively,鱼和米交替出现
+243,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
+244,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
+245,themename_tm1,Clock,时钟
+246,themename_tm2,Coin,硬币
+247,themename_tm4,Sushi,寿司
+248,themename_tm5,Moon,月亮
+249,themename_tm6,Lightbulb,灯泡
+250,tool_name_theme2_status0,Front,正面
+251,tool_name_theme2_status1,Tail,反面
+252,tool_name_theme4_status1,Fish,鱼生
+253,tool_name_theme4_status2,Rice,白米
+254,tool_name_theme5_status1,Crescent,新月
+255,tool_name_theme5_status2,Quarter,弦月
+256,tool_name_theme5_status3,Full,满月
+257,tool_name_theme5_status4,Quarter,弦月
+258,tool_name_theme5_status5,Crescent,新月
+259,ui_close_btn,Close,关闭
+260,ui_designer_note_title,Designer's Notes,制作笔记
+261,ui_failure_title,,挑战失败
+262,ui_finished_status,(Passed),（完成）
+263,ui_goal_current_sum,Current Sum: ,当前数字之和：
+264,ui_goal_section_title,Goal,目标
+265,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the following riddle:,根据谜语找到<b>物件</b>：
+266,ui_new_tag,NEW,新
+267,ui_perfect_status,(Perfect),（完美通关）
+268,ui_retry_btn,Restart,重试
+269,ui_rewind_btn,Rewind,回溯
+270,ui_ruleset_title,Rules,规则
+271,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}
+272,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
+273,ui_themephoto_unlockreq,<sprite name=currency_star_frame> {0}<br>to unlock,<sprite name=currency_star_frame> {0}<br>解锁
+274,ui_victory_title,,恭喜通关
+275,unlocked_tm1,,<b>时间</b>永不停歇。
+276,unlocked_tm2,,<b>硬币</b>决定命运。
+277,unlocked_tm4,,<b>寿司</b>简约又精致。
+278,unlocked_tm5,,<b>月亮</b>有无规律？
+279,unlocked_tm6,,<b>灯泡</b>代表着灵感。

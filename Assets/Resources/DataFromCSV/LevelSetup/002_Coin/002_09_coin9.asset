@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 002_07_coin7
+  m_Name: 002_09_coin9
   m_EditorClassIdentifier: 
-  levelUID: 207
+  levelUID: 209
   themeIndex: 2
-  levelIndex: 7
-  nextLevelIndex: 208
-  previousLevel: {fileID: 11400000, guid: 47eacb1ea2bb3ea48ac54488e6da4d12, type: 2}
-  nextLevel: {fileID: 11400000, guid: 756cfcca75293c7459cf5f352f8a2164, type: 2}
+  levelIndex: 9
+  nextLevelIndex: 210
+  previousLevel: {fileID: 11400000, guid: 756cfcca75293c7459cf5f352f8a2164, type: 2}
+  nextLevel: {fileID: 11400000, guid: 0519b0a6d4c466943a267c6a219f4a89, type: 2}
   theme: '@Loc=themename_tm2@@'
-  title: '@Loc=levelname_lv207@@'
-  newInitNarrative: '@Loc=narrative_tm2_ln011@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm2_ln012@@'
+  title: '@Loc=levelname_lv209@@'
+  newInitNarrative: 
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm2_ln001@@'
   - '@Loc=narrative_tm2_ln002@@'
@@ -34,7 +33,9 @@ MonoBehaviour:
   - '@Loc=narrative_tm2_ln008@@'
   - '@Loc=narrative_tm2_ln009@@'
   - '@Loc=narrative_tm2_ln010@@'
-  goal: '@Loc=goal_lv207@@'
+  - '@Loc=narrative_tm2_ln011@@'
+  - '@Loc=narrative_tm2_ln012@@'
+  goal: '@Loc=goal_lv209@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv204@@'
@@ -42,8 +43,8 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule2_lv205@@'
   - tag: 0
     ruleDesc: '@Loc=rule3_lv204@@'
-  - tag: 2
-    ruleDesc: '@Loc=rule4_lv207@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule4_lv203@@'
   isHard: 0
   allowRewind: 1
   initBoard:

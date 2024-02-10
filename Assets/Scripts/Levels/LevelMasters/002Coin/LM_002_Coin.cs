@@ -97,7 +97,7 @@ public class LM_002_Coin : LevelMasterBase
             }
         }
         //head +X, tail -X
-        else if (levelData.levelIndex >= 5 && levelData.levelIndex <= 8)
+        else if (levelData.levelIndex >= 5 && levelData.levelIndex <= 11)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -123,12 +123,12 @@ public class LM_002_Coin : LevelMasterBase
             //do nothing
         }
         //coin flip
-        else if (levelData.levelIndex >= 3 && levelData.levelIndex <= 6)
+        else if (levelData.levelIndex >= 3 && levelData.levelIndex <= 9)
         {
             levelData.curBoard.toolStatus = (levelData.curBoard.toolStatus + 1) % 2;
         }
         //coin toss
-        else if(levelData.levelIndex >= 7 && levelData.levelIndex <= 8)
+        else if(levelData.levelIndex >= 10 && levelData.levelIndex <= 11)
         {
             int rng = Random.Range(0, 2);
             levelData.curBoard.toolStatus = rng;
@@ -141,7 +141,7 @@ public class LM_002_Coin : LevelMasterBase
     public override void UpdateTool(Vector2Int coord)
     {
         base.UpdateTool(coord);
-        if (levelData.levelIndex >= 7)
+        if (levelData.levelIndex >= 10)
         {
             // strong toss
             float duration = 0.5f;
@@ -233,21 +233,33 @@ public class LM_002_Coin : LevelMasterBase
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 9, 2);
+            return BoardCalculation.CountX_All(levelData.curBoard, 8);
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 1, 2);
+            return BoardCalculation.CountX_All(levelData.curBoard, 5);
         }
         else if (levelData.levelIndex == 6)
         {
-            return BoardCalculation.Same_All(levelData.curBoard);
+            return BoardCalculation.CountX_All(levelData.curBoard, 5);
         }
         else if (levelData.levelIndex == 7)
         {
-            return BoardCalculation.Unique_All(levelData.curBoard);
+            return BoardCalculation.Same_All(levelData.curBoard);
         }
         else if (levelData.levelIndex == 8)
+        {
+            return BoardCalculation.Same_All(levelData.curBoard);
+        }
+        else if (levelData.levelIndex == 9)
+        {
+            return BoardCalculation.Unique_All(levelData.curBoard);
+        }
+        else if (levelData.levelIndex == 10)
+        {
+            return BoardCalculation.Unique_All(levelData.curBoard);
+        }
+        else if (levelData.levelIndex == 11)
         {
             return BoardCalculation.Same_All(levelData.curBoard);
         }
