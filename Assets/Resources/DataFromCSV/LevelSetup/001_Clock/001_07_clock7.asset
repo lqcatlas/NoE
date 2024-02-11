@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 001_08_clock8
+  m_Name: 001_07_clock7
   m_EditorClassIdentifier: 
-  levelUID: 108
+  levelUID: 107
   themeIndex: 1
-  levelIndex: 8
-  nextLevelIndex: 0
-  previousLevel: {fileID: 11400000, guid: 0e3c0c9178c427f44a8868a88b2a4d73, type: 2}
-  nextLevel: {fileID: 0}
+  levelIndex: 7
+  nextLevelIndex: 108
+  previousLevel: {fileID: 11400000, guid: 79035aa545ea1f648bd12d1f0bc7ae73, type: 2}
+  nextLevel: {fileID: 11400000, guid: 0e3c0c9178c427f44a8868a88b2a4d73, type: 2}
   theme: '@Loc=themename_tm1@@'
-  title: '@Loc=levelname_lv108@@'
-  newInitNarrative: '@Loc=narrative_tm1_ln011@@'
+  title: '@Loc=levelname_lv107@@'
+  newInitNarrative: '@Loc=narrative_tm1_ln009@@'
   newPlayNarratives:
-  - '@Loc=narrative_tm1_ln012@@'
+  - '@Loc=narrative_tm1_ln010@@'
   oldNarratives:
   - '@Loc=narrative_tm1_ln001@@'
   - '@Loc=narrative_tm1_ln002@@'
@@ -32,67 +32,44 @@ MonoBehaviour:
   - '@Loc=narrative_tm1_ln006@@'
   - '@Loc=narrative_tm1_ln007@@'
   - '@Loc=narrative_tm1_ln008@@'
-  - '@Loc=narrative_tm1_ln009@@'
-  - '@Loc=narrative_tm1_ln010@@'
-  goal: '@Loc=goal_lv108@@'
+  goal: '@Loc=goal_lv107@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv101@@'
   - tag: 0
     ruleDesc: '@Loc=rule2_lv103@@'
-  isHard: 1
+  isHard: 0
   allowRewind: 1
   initBoard:
-    boardSize: {x: 4, y: 4}
+    boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 1
+      value: 8
       status: 0
     - coord: {x: 1, y: 0}
-      value: 10
-      status: 0
-    - coord: {x: 2, y: 0}
-      value: 1
-      status: 0
-    - coord: {x: 3, y: 0}
-      value: 11
-      status: 0
-    - coord: {x: 0, y: 1}
-      value: 7
-      status: 0
-    - coord: {x: 1, y: 1}
       value: 5
       status: 0
-    - coord: {x: 2, y: 1}
-      value: 10
+    - coord: {x: 2, y: 0}
+      value: 2
       status: 0
-    - coord: {x: 3, y: 1}
-      value: 1
+    - coord: {x: 0, y: 1}
+      value: 4
+      status: 0
+    - coord: {x: 1, y: 1}
+      value: 3
+      status: 0
+    - coord: {x: 2, y: 1}
+      value: 5
       status: 0
     - coord: {x: 0, y: 2}
-      value: 10
+      value: 11
       status: 0
     - coord: {x: 1, y: 2}
-      value: 6
+      value: 8
       status: 0
     - coord: {x: 2, y: 2}
-      value: 10
-      status: 0
-    - coord: {x: 3, y: 2}
       value: 11
       status: 0
-    - coord: {x: 0, y: 3}
-      value: 11
-      status: 0
-    - coord: {x: 1, y: 3}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 3}
-      value: 7
-      status: 0
-    - coord: {x: 3, y: 3}
-      value: 10
-      status: 0
-    toolCount: 60
+    toolCount: 11
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

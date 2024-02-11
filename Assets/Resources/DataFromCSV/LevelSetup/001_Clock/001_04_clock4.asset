@@ -10,25 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 001_05_clock5
+  m_Name: 001_04_clock4
   m_EditorClassIdentifier: 
-  levelUID: 105
+  levelUID: 104
   themeIndex: 1
-  levelIndex: 5
-  nextLevelIndex: 106
-  previousLevel: {fileID: 11400000, guid: cf89ff4ae26ad3d49912b8b2164f2957, type: 2}
-  nextLevel: {fileID: 11400000, guid: 79035aa545ea1f648bd12d1f0bc7ae73, type: 2}
+  levelIndex: 4
+  nextLevelIndex: 105
+  previousLevel: {fileID: 11400000, guid: 31dcd4ea70c6dab4ab297e053b030469, type: 2}
+  nextLevel: {fileID: 11400000, guid: 6a80989a5d6327c4b91de345c881f35d, type: 2}
   theme: '@Loc=themename_tm1@@'
-  title: '@Loc=levelname_lv105@@'
-  newInitNarrative: '@Loc=narrative_tm1_ln006@@'
-  newPlayNarratives: []
+  title: '@Loc=levelname_lv104@@'
+  newInitNarrative: '@Loc=narrative_tm1_ln004@@'
+  newPlayNarratives:
+  - '@Loc=narrative_tm1_ln005@@'
   oldNarratives:
   - '@Loc=narrative_tm1_ln001@@'
   - '@Loc=narrative_tm1_ln002@@'
   - '@Loc=narrative_tm1_ln003@@'
-  - '@Loc=narrative_tm1_ln004@@'
-  - '@Loc=narrative_tm1_ln005@@'
-  goal: '@Loc=goal_lv105@@'
+  goal: '@Loc=goal_lv104@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv101@@'
@@ -40,17 +39,17 @@ MonoBehaviour:
     boardSize: {x: 2, y: 2}
     cells:
     - coord: {x: 0, y: 0}
-      value: 10
+      value: 1
       status: 0
     - coord: {x: 1, y: 0}
-      value: 11
+      value: 1
       status: 0
     - coord: {x: 0, y: 1}
-      value: 11
+      value: 2
       status: 0
     - coord: {x: 1, y: 1}
       value: 2
       status: 0
-    toolCount: 5
+    toolCount: 4
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

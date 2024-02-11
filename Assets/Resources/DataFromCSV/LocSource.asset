@@ -36,20 +36,23 @@ MonoBehaviour:
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A10"
   - key: goal_lv103
     EN: Set all cells to 1
-    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A1"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A12"
   - key: goal_lv104
     EN: Set all cells to UNIQUE
-    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6570\u5B57\u4E0D\u540C"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A\u4E0D\u540C\u6570\u5B57"
   - key: goal_lv105
+    EN: Set all cells to 2
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A2"
+  - key: goal_lv106
     EN: Set all cells to 3
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A3"
-  - key: goal_lv106
+  - key: goal_lv107
     EN: Set all cells to 4
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A4"
-  - key: goal_lv107
-    EN: Set all cells to UNIQUE
-    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6570\u5B57\u4E0D\u540C"
   - key: goal_lv108
+    EN: Set all cells to UNIQUE
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A\u4E0D\u540C\u6570\u5B57"
+  - key: goal_lv109
     EN: Set all cells to 6
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A6"
   - key: goal_lv201
@@ -262,6 +265,9 @@ MonoBehaviour:
   - key: levelname_lv108
     EN: 8
     CN: 8
+  - key: levelname_lv109
+    EN: 9
+    CN: 9
   - key: levelname_lv201
     EN: 1
     CN: 1

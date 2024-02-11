@@ -135,7 +135,7 @@ public class LM_001_Clock : LevelMasterBase
         }
         else if (levelData.levelIndex == 3)
         {
-            return BoardCalculation.CountX_All(levelData.curBoard, 1);
+            return BoardCalculation.CountX_All(levelData.curBoard, 12);
         }
         else if (levelData.levelIndex == 4)
         {
@@ -143,17 +143,21 @@ public class LM_001_Clock : LevelMasterBase
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.CountX_All(levelData.curBoard, 3);
+            return BoardCalculation.CountX_All(levelData.curBoard, 2);
         }
         else if (levelData.levelIndex == 6)
         {
-            return BoardCalculation.CountX_All(levelData.curBoard, 4);
+            return BoardCalculation.CountX_All(levelData.curBoard, 3);
         }
         else if (levelData.levelIndex == 7)
         {
-            return BoardCalculation.Unique_All(levelData.curBoard);
+            return BoardCalculation.CountX_All(levelData.curBoard, 4);
         }
         else if (levelData.levelIndex == 8)
+        {
+            return BoardCalculation.Unique_All(levelData.curBoard);
+        }
+        else if (levelData.levelIndex == 9)
         {
             return BoardCalculation.CountX_All(levelData.curBoard, 6);
         }
