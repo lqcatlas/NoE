@@ -12,7 +12,7 @@ UID,Key,EN,CN
 11,goal_lv106,Set all cells to 3,让所有格子为3
 12,goal_lv107,Set all cells to 4,让所有格子为4
 13,goal_lv108,Set all cells to UNIQUE,让所有格子为不同数字
-14,goal_lv109,Set all cells to 6,让所有格子为6
+14,goal_lv109,Set all cells to 5,让所有格子为5
 15,goal_lv201,Set all cells to 4,让所有格子为4
 16,goal_lv202,Set all cells to 4,让所有格子为4
 17,goal_lv203,Set all cells to SAME,让所有格子数字相同
@@ -280,3 +280,5 @@ UID,Key,EN,CN
 279,unlocked_tm4,,<b>寿司</b>简约又精致。
 280,unlocked_tm5,,<b>月亮</b>有无规律？
 281,unlocked_tm6,,<b>灯泡</b>代表着灵感。
+282,goal_lv110,Set all cells to 6,让所有格子为6
+283,levelname_lv110,010,010

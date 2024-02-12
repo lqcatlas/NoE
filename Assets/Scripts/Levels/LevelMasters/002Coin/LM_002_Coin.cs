@@ -77,7 +77,7 @@ public class LM_002_Coin : LevelMasterBase
                 if (levelData.curBoard.cells[i].coord == coord)
                 {
                     levelData.curBoard.cells[i].value += levelData.curBoard.toolStatus == 0 ? 1 : -1;
-                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, new Vector2Int(1, 9));
+                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, new Vector2Int(0, 9));
                     levelData.curBoard.cells[i].status += 1;
                 }
             }
@@ -91,7 +91,7 @@ public class LM_002_Coin : LevelMasterBase
                 {
                     
                     levelData.curBoard.cells[i].value += levelData.curBoard.toolStatus == 0 ? levelData.curBoard.cells[i].status : -1;
-                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, new Vector2Int(1, 9));
+                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, new Vector2Int(0, 9));
                     levelData.curBoard.cells[i].status += 1;
                 }
             }
@@ -105,7 +105,7 @@ public class LM_002_Coin : LevelMasterBase
                 {
 
                     levelData.curBoard.cells[i].value += levelData.curBoard.toolStatus == 0 ? levelData.curBoard.cells[i].status : -levelData.curBoard.cells[i].status;
-                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, new Vector2Int(1, 9));
+                    levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, new Vector2Int(0, 9));
                     levelData.curBoard.cells[i].status += 1;
                 }
             }

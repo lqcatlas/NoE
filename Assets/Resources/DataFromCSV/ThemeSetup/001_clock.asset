@@ -45,5 +45,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a416fd0952039364090fb029e71fabb8, type: 2}
   - {fileID: 11400000, guid: 0e3c0c9178c427f44a8868a88b2a4d73, type: 2}
   - {fileID: 11400000, guid: ef1c8813a880ab64f949025104697af8, type: 2}
+  - {fileID: 11400000, guid: 8db8c505dae58b648b885c4d6d8e877f, type: 2}
   TotalStars: 8
-  TotalGems: 1
+  TotalGems: 2
