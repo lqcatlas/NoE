@@ -305,7 +305,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         //playerLevelRecords.SetDirty();
         //Debug.Log(string.Format("selector load data from file, tokens:{0}, ", playerLevelRecords.tokens));
-        InitSelector();
+        //InitSelector();
     }
     public void SaveToSaveManager()
     {
