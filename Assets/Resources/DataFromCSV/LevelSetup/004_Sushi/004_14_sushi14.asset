@@ -17,7 +17,7 @@ MonoBehaviour:
   levelIndex: 14
   nextLevelIndex: 0
   previousLevel: {fileID: 11400000, guid: afab8f1e177e32b48b20110adc35c92e, type: 2}
-  nextLevel: {fileID: 11400000, guid: 6bc524b47455ba346a7946193a92d876, type: 2}
+  nextLevel: {fileID: 11400000, guid: e392a1f19198f9e4a9bc2bbab2c3ccc2, type: 2}
   theme: '@Loc=themename_tm4@@'
   title: '@Loc=levelname_lv414@@'
   newInitNarrative: 

@@ -271,6 +271,10 @@ PrefabInstance:
       propertyPath: MaskColor.r
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 9041480673706616852, guid: 5f0f6cb217fe83d418c44b09027ba0dd, type: 3}
+      propertyPath: LevelSetup
+      value: 
+      objectReference: {fileID: 11400000, guid: 6bff52cfb97ee3041ae660cb5a4db251, type: 2}
     - target: {fileID: 9041480673706616853, guid: 5f0f6cb217fe83d418c44b09027ba0dd, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -2423,6 +2427,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1265552430135266908, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265552430135266908, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265552430135266908, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1265552430135266908, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1328985947874127394, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2455,6 +2475,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2468865994858162633, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468865994858162633, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468865994858162633, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2468865994858162633, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2987584989573103515, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2480,6 +2516,34 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3178969820813345513, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594843086304481233, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594843086304481233, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3594843086304481233, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785418629491585699, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785418629491585699, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785418629491585699, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3785418629491585699, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}

@@ -3128,7 +3128,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3149,7 +3149,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3157,6 +3157,48 @@ TextureImporter:
       bones: []
       spriteID: 58dc91570097c0a419b5774fdf1080fe
       internalID: -1800299951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scissor@v1
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f13043f47dfb14797e83b35617cea6
+      internalID: -1887631101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scissor@v2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d95e989a32b5b048b089a3829920447
+      internalID: -905120408
       vertices: []
       indices: 
       edges: []
@@ -3205,6 +3247,7 @@ TextureImporter:
       rule_sign_update: 959238756
       rice@v1: 92953782
       coin_shape_14: 1814891975
+      scissor@v2: -905120408
       star4_v4: -171714075
       window1_v1_fill: -1768017671
       window4_v1: 603203415
@@ -3279,6 +3322,7 @@ TextureImporter:
       cell_frame@v7: 1671980107
       sushi@v2: 570420139
       ILSH_H_v1: 1115350096
+      scissor@v1: -1887631101
       star2_v1: 1350227895
       coin_shape_7: 472513175
       coin_shape_18: 583874050

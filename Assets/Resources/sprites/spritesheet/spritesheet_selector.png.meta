@@ -536,6 +536,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: bonsai_themeicon
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780db7f385b65e24f81c920cb5a11e3d
+      internalID: -1290517677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -633,6 +654,7 @@ TextureImporter:
       level_node_fill@v1: 1705124810
       spritesheet_selector_14: -1996945094
       spritesheet_selector_65: 232368777
+      bonsai_themeicon: -1290517677
       token_empty@v1: -532130632
       spritesheet_selector_81: 1824104443
       spritesheet_selector_16: -684206114

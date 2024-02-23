@@ -25,6 +25,7 @@ public class CellMaster : MonoBehaviour
     [SerializeField] TextMeshPro numberTxt;
     [SerializeField] Transform numberInSpriteGroup;
     [SerializeField] List<SpriteRenderer> numberInSprites;
+    [SerializeField] BoxCollider2D cellCollider;
     public SpriteRenderer frameSprt;
     public SpriteRenderer maskSprt;
 
@@ -38,20 +39,14 @@ public class CellMaster : MonoBehaviour
         {
             usingSprite = true;
             numberTxt.gameObject.SetActive(false);
-            for (int i = 0; i < numberInSprites.Count; i++)
-            {
-                numberInSprites[i].gameObject.SetActive(false);
-            }
+            //ResetToEmpty();
         }
         else
         {
             usingSprite = false;
             numberTxt.gameObject.SetActive(true);
-            for (int i = 0; i < numberInSprites.Count; i++)
-            {
-                numberInSprites[i].gameObject.SetActive(false);
-            }
         }
+        ResetToEmpty();
     }
     public void DisplayNumber(int _number)
     {
@@ -65,8 +60,8 @@ public class CellMaster : MonoBehaviour
         {
             SwitchDisplayMode(false);
             SetNumberTxt(_number);
-            
         }
+        //SetCellActive(true);
     }
     public void SetColor(Color _clr, float duration)
     {
@@ -125,8 +120,22 @@ public class CellMaster : MonoBehaviour
         }
         numberInSpriteGroup.localScale = Vector3.one * scalarByDigits[Mathf.Min(activatedCount, scalarByDigits.Count-1)];
     }
-
-
+    public void SetCellActive(bool isActive)
+    {
+        cellCollider.enabled = isActive;
+        if (!isActive)
+        {
+            ResetToEmpty();
+        }
+    }
+    void ResetToEmpty()
+    {
+        numberTxt.SetText("");
+        for (int i = 0; i < numberInSprites.Count; i++)
+        {
+            numberInSprites[i].gameObject.SetActive(false);
+        }
+    }
     public void InitCellPosition(Vector2Int _coord, Vector2Int _size)
     {
         //reposition cell based on the board size and its coord

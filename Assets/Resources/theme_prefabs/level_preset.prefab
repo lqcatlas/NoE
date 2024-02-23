@@ -6033,6 +6033,7 @@ MonoBehaviour:
   levelMaster: {fileID: 0}
   cells: []
   cellHolder: {fileID: 9188252852056530818}
+  boardHolder: {fileID: 9188252853366442429}
 --- !u!114 &9188252853338786933
 MonoBehaviour:
   m_ObjectHideFlags: 0

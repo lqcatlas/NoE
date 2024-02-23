@@ -17,6 +17,7 @@ public class BoardMaster : MonoBehaviour
     [Header("Children Objs")]
     public List<CellMaster> cells;
     public Transform cellHolder;
+    public Transform boardHolder;
 
     //BoardMaster should handle tool and board data as well TODO
 

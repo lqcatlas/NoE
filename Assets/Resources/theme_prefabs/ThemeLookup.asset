@@ -48,3 +48,10 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: d63766f59868661468a79ab83bfa2980, type: 3}
     ThemeSprite: {fileID: -1481849294, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}
+  - Theme: bonsai
+    ThemeID: 7
+    ScriptName: LM_007_Bonsai
+    ThemeSpecialHub: {fileID: 5242734479810822178, guid: e98c4debe8b7ba748b87b80f46fc2edd, type: 3}
+    ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: 22a34d57a8d004149bbbf325f06e478b, type: 3}
+    ThemeSprite: {fileID: -1290517677, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
+    ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}

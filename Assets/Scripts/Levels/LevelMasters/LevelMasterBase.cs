@@ -425,7 +425,6 @@ public class LevelMasterBase : MonoBehaviour
                 //hub.boardMaster.cells[i].numberTxt.SetText(temp_cellData.value.ToString());
             }
         }
-        //TODO how to create anim fx for cell that number changes
     }
     public virtual void UpdateNarrative()
     {

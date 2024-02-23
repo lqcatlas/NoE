@@ -108,6 +108,7 @@ public class LevelLauncher : MonoBehaviour
         else
         {
             //levelObj.AddComponent(master.GetClass());
+            Debug.Log(string.Format("get master script name as {0}", masterScriptName));
             levelObj.AddComponent(System.Type.GetType(masterScriptName));
         }
         HiddenObjectLauncher.singleton.LaunchBackgroundPage(setupData.themeIndex);

@@ -63,3 +63,6 @@ UID,themeindex,levelindex,nextlevelindex,themename,levelname,init,play1,play2,pl
 613,6,13,614,@Loc=themename_tm6@@,@Loc=levelname_lv613@@,,11,,,@Loc=goal_lv613@@,None,@Loc=rule1_lv605@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
 614,6,14,615,@Loc=themename_tm6@@,@Loc=levelname_lv614@@,,12,,,@Loc=goal_lv614@@,None,@Loc=rule1_lv605@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
 615,6,15,,@Loc=themename_tm6@@,@Loc=levelname_lv615@@,,13,,,@Loc=goal_lv615@@,None,@Loc=rule1_lv605@@,None,@Loc=rule2_lv601@@,None,@Loc=rule3_lv601@@,,,,
+701,7,1,702,@Loc=themename_tm7@@,@Loc=levelname_lv701@@,1,,,,@Loc=goal_lv701@@,Addition,@Loc=rule1_lv701@@,,,,,,,,
+702,7,2,703,@Loc=themename_tm7@@,@Loc=levelname_lv702@@,,2,,,@Loc=goal_lv702@@,None,@Loc=rule1_lv701@@,,,,,,,,
+703,7,3,704,@Loc=themename_tm7@@,@Loc=levelname_lv703@@,,3,,,@Loc=goal_lv703@@,None,@Loc=rule1_lv701@@,,,,,,,,
