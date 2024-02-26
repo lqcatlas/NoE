@@ -91,18 +91,33 @@ public class LM_007_Bonsai : LevelMasterBase
     }
     public override void UpdateCells(Vector2Int coord)
     {
-        for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+        for (int i = 0; i < bonsaiHub.leaves.Count; i++)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
-            if (temp_cellData != null)
+            if(bonsaiHub.leaves[i].Key.coord == coord)
             {
+                DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(bonsaiHub.leaves[i].Key.coord);
                 if (temp_cellData.status == -1)
                 {
-                    hub.boardMaster.cells[i].SetCellActive(false);
-                    //TO DO: cut anim
+                    bonsaiHub.leaves[i].Key.SetCellActive(false);
+                    VFX_LeafFall(bonsaiHub.leaves[i].Value);
                 }
             }
         }
+    }
+    void VFX_LeafFall(GameObject fallingLeaf)
+    {
+        float fallingAnimTime = 1f;
+        Vector2 fallingDist = new Vector2(2, -8);
+        float tiltingDegree = -30f;
+        GameObject leaf = Instantiate(fallingLeaf, bonsaiHub.cellBgHolder);
+        fallingLeaf.gameObject.SetActive(false);
+        leaf.gameObject.SetActive(true);
+        leaf.transform.DOMoveY(fallingDist.y, fallingAnimTime).SetRelative(true).SetEase(Ease.OutQuad);
+        leaf.transform.DOMoveX(fallingDist.x, fallingAnimTime).SetRelative(true).SetEase(Ease.Linear);
+        leaf.transform.DORotate(new Vector3(0f, 0f, tiltingDegree), fallingAnimTime).SetRelative(true).SetEase(Ease.OutQuad);
+        //leaf.transform.DOScale(0.2f, fallingAnimTime).SetRelative(true).SetEase(Ease.OutQuad);
+        leaf.GetComponentInChildren<SpriteRenderer>().DOFade(0f, fallingAnimTime).SetEase(Ease.OutQuad).OnComplete(()=>Destroy(leaf));
+
     }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
@@ -118,6 +133,11 @@ public class LM_007_Bonsai : LevelMasterBase
         if (levelData.levelIndex == 1)
         {
             DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1,2));
+            return temp_cellData.status == -1;
+        }
+        if (levelData.levelIndex == 2)
+        {
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
             return temp_cellData.status == -1;
         }
         else
