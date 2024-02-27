@@ -295,17 +295,43 @@ UID,Key,EN,CN
 294,narrative_tm7_ln011,,盆景欣赏指南11
 295,narrative_tm7_ln012,,盆景欣赏指南12
 296,narrative_tm7_ln013,,盆景欣赏指南13
-297,locked_tm7,,█ █ 来自人类与自然。
-298,unlocked_tm7,,<b>盆景</b>来自人类与自然。
-299,hint_tm7,,它是人类与自然共创的艺术。
-300,date_tm7,,2024/02/15
-301,manifesto_tm7,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
-302,prompt_tm7,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-303,themename_tm7,,盆景
-304,levelname_lv701,,001
-305,levelname_lv702,,002
-306,levelname_lv703,,003
-307,goal_lv701,,点亮1盏灯泡
-308,goal_lv702,,点亮5盏灯泡
-309,goal_lv703,,点亮全部灯泡
-310,rule1_lv701,,移除格子内的数字
+297,goal_lv701,,点亮1盏灯泡
+298,goal_lv702,,点亮5盏灯泡
+299,goal_lv703,,点亮全部灯泡
+300,rule1_lv701,,移除格子内的数字
+301,locked_tm7,,人与自然共创█ █ 。
+302,unlocked_tm7,,人与自然共创<b>盆景</b>。
+303,hint_tm7,,它是人类与自然共创的艺术。
+304,date_tm7,,2024/02/15
+305,manifesto_tm7,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
+306,prompt_tm7,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+307,themename_tm7,,盆景
+308,levelname_lv701,,001
+309,levelname_lv702,,002
+310,levelname_lv703,,003
+311,levelname_lv704,,004
+312,levelname_lv705,,005
+313,levelname_lv706,,006
+314,levelname_lv707,,007
+315,levelname_lv708,,008
+316,levelname_lv709,,009
+317,levelname_lv710,,010
+318,levelname_lv711,,011
+319,levelname_lv712,,012
+320,levelname_lv713,,013
+321,levelname_lv714,,014
+322,levelname_lv715,,015
+323,levelname_lv716,,016
+324,goal_lv704,,创造最美盆景
+325,goal_lv705,,创造最美盆景
+326,goal_lv706,,创造最美盆景
+327,goal_lv707,,创造最美盆景
+328,goal_lv708,,创造最美盆景
+329,goal_lv709,,创造最美盆景
+330,goal_lv710,,创造最美盆景
+331,goal_lv711,,创造最美盆景
+332,goal_lv712,,创造最美盆景
+333,goal_lv713,,创造最美盆景
+334,goal_lv714,,创造最美盆景
+335,goal_lv715,,创造最美盆景
+336,goal_lv716,,创造最美盆景

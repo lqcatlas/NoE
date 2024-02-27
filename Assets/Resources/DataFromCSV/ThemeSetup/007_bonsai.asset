@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   themeUID: 7
   unlockPrereq: 0
-  unlockCost: 6
+  unlockCost: 12
   themeTitle: '@Loc=themename_tm7@@'
   lockedLine: '@Loc=locked_tm7@@'
   unlockedLine: '@Loc=unlocked_tm7@@'
   hint: '@Loc=hint_tm7@@'
   date: '@Loc=date_tm7@@'
   manifesto: '@Loc=manifesto_tm7@@'
-  prompt: '@Loc=prompt_tm6@@'
+  prompt: '@Loc=prompt_tm7@@'
   narratives:
   - '@Loc=narrative_tm7_ln001@@'
   - '@Loc=narrative_tm7_ln002@@'
@@ -40,5 +40,18 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6bff52cfb97ee3041ae660cb5a4db251, type: 2}
   - {fileID: 11400000, guid: c22503fdab84f9341ac2a68e6bf07545, type: 2}
   - {fileID: 11400000, guid: 66bd772104b853041af960394b35b225, type: 2}
-  TotalStars: 3
-  TotalGems: 0
+  - {fileID: 11400000, guid: 07b4ecea74ef72949829b58cce11e287, type: 2}
+  - {fileID: 11400000, guid: d934b5ab55974154589f58d71634fb37, type: 2}
+  - {fileID: 11400000, guid: 70b32f0ee79ba614d97a86f3ca776ba1, type: 2}
+  - {fileID: 11400000, guid: 89690a8bdea334446a60acdd81a8f16b, type: 2}
+  - {fileID: 11400000, guid: d76e7520f81e64c438a76d51f5b31dce, type: 2}
+  - {fileID: 11400000, guid: 7ee96ecedc316cc4aba31b48cd5aee19, type: 2}
+  - {fileID: 11400000, guid: d279c3d9d44e8804d85c4ef94a045842, type: 2}
+  - {fileID: 11400000, guid: 09dd53b25f79133469afef6a5ea447f0, type: 2}
+  - {fileID: 11400000, guid: a52299c4ac80dba438ae18877615d45f, type: 2}
+  - {fileID: 11400000, guid: 45dc73e10e9df784fa3a2eedbcf1cd99, type: 2}
+  - {fileID: 11400000, guid: 98fa5a293fd76874b97ed1aca9c50986, type: 2}
+  - {fileID: 11400000, guid: c684d3dc4d490744bab890a64f09bd9f, type: 2}
+  - {fileID: 11400000, guid: b744058088daeec46854a1d6b2e8f255, type: 2}
+  TotalStars: 14
+  TotalGems: 2

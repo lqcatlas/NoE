@@ -10,30 +10,40 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 007_03_bonsai3
+  m_Name: 007_15_bonsai15
   m_EditorClassIdentifier: 
-  levelUID: 703
+  levelUID: 715
   themeIndex: 7
-  levelIndex: 3
-  nextLevelIndex: 704
-  previousLevel: {fileID: 11400000, guid: c22503fdab84f9341ac2a68e6bf07545, type: 2}
-  nextLevel: {fileID: 11400000, guid: 07b4ecea74ef72949829b58cce11e287, type: 2}
+  levelIndex: 15
+  nextLevelIndex: 716
+  previousLevel: {fileID: 11400000, guid: 98fa5a293fd76874b97ed1aca9c50986, type: 2}
+  nextLevel: {fileID: 11400000, guid: b744058088daeec46854a1d6b2e8f255, type: 2}
   theme: '@Loc=themename_tm7@@'
-  title: '@Loc=levelname_lv703@@'
+  title: '@Loc=levelname_lv715@@'
   newInitNarrative: 
-  newPlayNarratives:
-  - '@Loc=narrative_tm7_ln003@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm7_ln001@@'
   - '@Loc=narrative_tm7_ln002@@'
-  goal: '@Loc=goal_lv703@@'
+  - '@Loc=narrative_tm7_ln003@@'
+  - '@Loc=narrative_tm7_ln004@@'
+  - '@Loc=narrative_tm7_ln005@@'
+  - '@Loc=narrative_tm7_ln006@@'
+  - '@Loc=narrative_tm7_ln007@@'
+  - '@Loc=narrative_tm7_ln008@@'
+  - '@Loc=narrative_tm7_ln009@@'
+  - '@Loc=narrative_tm7_ln010@@'
+  - '@Loc=narrative_tm7_ln011@@'
+  - '@Loc=narrative_tm7_ln012@@'
+  - '@Loc=narrative_tm7_ln013@@'
+  goal: '@Loc=goal_lv715@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv701@@'
-  isHard: 0
+  isHard: 1
   allowRewind: 0
   initBoard:
-    boardSize: {x: 5, y: 5}
+    boardSize: {x: 4, y: 4}
     cells:
     - coord: {x: 0, y: 0}
       value: 0
@@ -47,9 +57,6 @@ MonoBehaviour:
     - coord: {x: 3, y: 0}
       value: 0
       status: -1
-    - coord: {x: 4, y: 0}
-      value: 0
-      status: -1
     - coord: {x: 0, y: 1}
       value: 6
       status: 0
@@ -57,57 +64,33 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 2, y: 1}
-      value: 0
-      status: -1
+      value: 9
+      status: 0
     - coord: {x: 3, y: 1}
       value: 0
       status: -1
-    - coord: {x: 4, y: 1}
-      value: 9
-      status: 0
     - coord: {x: 0, y: 2}
-      value: 0
-      status: -1
+      value: 6
+      status: 0
     - coord: {x: 1, y: 2}
-      value: 4
+      value: 3
       status: 0
     - coord: {x: 2, y: 2}
       value: 0
       status: -1
     - coord: {x: 3, y: 2}
-      value: 4
+      value: 1
       status: 0
-    - coord: {x: 4, y: 2}
-      value: 0
-      status: -1
     - coord: {x: 0, y: 3}
       value: 0
       status: -1
     - coord: {x: 1, y: 3}
-      value: 4
+      value: 2
       status: 0
     - coord: {x: 2, y: 3}
-      value: 0
-      status: -1
+      value: 3
+      status: 0
     - coord: {x: 3, y: 3}
-      value: 5
-      status: 0
-    - coord: {x: 4, y: 3}
-      value: 0
-      status: -1
-    - coord: {x: 0, y: 4}
-      value: 0
-      status: -1
-    - coord: {x: 1, y: 4}
-      value: 0
-      status: -1
-    - coord: {x: 2, y: 4}
-      value: 8
-      status: 0
-    - coord: {x: 3, y: 4}
-      value: 0
-      status: -1
-    - coord: {x: 4, y: 4}
       value: 0
       status: -1
     toolCount: 1

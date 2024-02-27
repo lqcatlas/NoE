@@ -171,6 +171,19 @@ MonoBehaviour:
   trunkSprites:
   - {fileID: 21300000, guid: bac73d211665aa347817a2279927f283, type: 3}
   - {fileID: 21300000, guid: eb05cb2dfc20a1e4996a39e0ec12a503, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
+  - {fileID: 21300000, guid: bef83a5516fe5d342bb95a48a1b35305, type: 3}
   cellBgHolder: {fileID: 4068668159233435932}
   leafTemplate: {fileID: 3920627677804469945, guid: 26b15417cbb1ff4468bdbc151d016e1c, type: 3}
 --- !u!1 &8390322059011748740
