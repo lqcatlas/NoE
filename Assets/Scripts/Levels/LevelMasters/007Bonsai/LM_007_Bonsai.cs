@@ -80,7 +80,6 @@ public class LM_007_Bonsai : LevelMasterBase
             }
         }
     }
-
     public override void InitTool()
     {
         base.InitTool();
@@ -152,74 +151,78 @@ public class LM_007_Bonsai : LevelMasterBase
         }
         else if (levelData.levelIndex == 3)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 3));
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
             return temp_cellData.status == -1;
         }
         else if (levelData.levelIndex == 4)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
             return temp_cellData.status == -1;
         }
         else if (levelData.levelIndex == 5)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 3));
+            return temp_cellData1.status == -1 || temp_cellData2.status == -1;
         }
         else if (levelData.levelIndex == 6)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
         }
         else if (levelData.levelIndex == 7)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
         }
         else if (levelData.levelIndex == 8)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
         }
         else if (levelData.levelIndex == 9)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 3));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 3));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
         }
         else if (levelData.levelIndex == 10)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(4, 2));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
         }
         else if (levelData.levelIndex == 11)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 0));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
         }
         else if (levelData.levelIndex == 12)
         {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
-            return temp_cellData1.status == -1 || temp_cellData2.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 3));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
         }
         else if (levelData.levelIndex == 13)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(4, 1));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 3));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
         }
         else if (levelData.levelIndex == 14)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
-            return temp_cellData.status == -1;
-        }
-        else if (levelData.levelIndex == 15)
-        {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
-            return temp_cellData.status == -1;
-        }
-        else if (levelData.levelIndex == 16)
-        {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(4, 1));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
         }
         else
         {
@@ -227,14 +230,21 @@ public class LM_007_Bonsai : LevelMasterBase
         }
         return result;
     }
-    public override bool CheckLoseCondition()
+    /*
+    public override void WinALevel()
     {
-        if (levelData.curBoard.toolCount == 0)
-        {
-            return true;
-        }
-        return false;
+        status = LevelStatus.END;
+        //hub.goalMaster.nextBtn.gameObject.SetActive(true);
+        bool isNew = LevelSelector.singleton.FinishLevel(levelData.levelUID, levelData.isHard);
+        string finalPlayTime = string.Format("{0}:{1}:{2}"
+            , Mathf.FloorToInt(levelPlayTime / 60).ToString("00")
+            , (Mathf.FloorToInt(levelPlayTime) % 60).ToString("00")
+            , Mathf.RoundToInt((levelPlayTime - Mathf.FloorToInt(levelPlayTime)) * 60f).ToString("00"));
+        string answerTxt = string.Format("@Loc=answer_tm7_lv{0}@@", levelData.levelUID);
+        //Debug.Log("answerTxt ="+answerTxt);
+        hub.popupMaster.ShowVictoryPopup(isNew, levelData.isHard, finalPlayTime, (levelData.initBoard.toolCount - levelData.curBoard.toolCount).ToString(), answerTxt);
     }
+    */
     void UpdateToolStatusDisplay()
     {
         ToolStatusGroup targetDisplayTemplate = bonsaiHub.toolStatusGroup;

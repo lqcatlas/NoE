@@ -20,7 +20,7 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 70b32f0ee79ba614d97a86f3ca776ba1, type: 2}
   theme: '@Loc=themename_tm7@@'
   title: '@Loc=levelname_lv705@@'
-  newInitNarrative: '@Loc=narrative_tm7_ln005@@'
+  newInitNarrative: 
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm7_ln001@@'
@@ -31,6 +31,8 @@ MonoBehaviour:
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv701@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule2_lv704@@'
   isHard: 0
   allowRewind: 0
   initBoard:
@@ -49,8 +51,8 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 0, y: 1}
-      value: 0
-      status: -1
+      value: 5
+      status: 0
     - coord: {x: 1, y: 1}
       value: 0
       status: -1
@@ -58,28 +60,28 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 3, y: 1}
-      value: 3
+      value: 6
       status: 0
     - coord: {x: 0, y: 2}
-      value: 5
+      value: 2
       status: 0
     - coord: {x: 1, y: 2}
-      value: 0
-      status: -1
+      value: 1
+      status: 0
     - coord: {x: 2, y: 2}
-      value: 4
+      value: 3
       status: 0
     - coord: {x: 3, y: 2}
-      value: 0
-      status: -1
+      value: 4
+      status: 0
     - coord: {x: 0, y: 3}
       value: 0
       status: -1
     - coord: {x: 1, y: 3}
-      value: 2
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 2, y: 3}
-      value: 2
+      value: 1
       status: 0
     - coord: {x: 3, y: 3}
       value: 0

@@ -20,7 +20,7 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: d76e7520f81e64c438a76d51f5b31dce, type: 2}
   theme: '@Loc=themename_tm7@@'
   title: '@Loc=levelname_lv707@@'
-  newInitNarrative: '@Loc=narrative_tm7_ln007@@'
+  newInitNarrative: '@Loc=narrative_tm7_ln006@@'
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm7_ln001@@'
@@ -28,11 +28,14 @@ MonoBehaviour:
   - '@Loc=narrative_tm7_ln003@@'
   - '@Loc=narrative_tm7_ln004@@'
   - '@Loc=narrative_tm7_ln005@@'
-  - '@Loc=narrative_tm7_ln006@@'
   goal: '@Loc=goal_lv707@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv701@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule2_lv704@@'
+  - tag: 2
+    ruleDesc: '@Loc=rule3_lv707@@'
   isHard: 0
   allowRewind: 0
   initBoard:
@@ -42,17 +45,17 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 1, y: 0}
-      value: 4
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 2, y: 0}
-      value: 4
+      value: 0
       status: -1
     - coord: {x: 3, y: 0}
       value: 0
       status: -1
     - coord: {x: 0, y: 1}
-      value: 0
-      status: -1
+      value: 4
+      status: 0
     - coord: {x: 1, y: 1}
       value: 0
       status: -1
@@ -60,32 +63,32 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 3, y: 1}
-      value: 3
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 0, y: 2}
       value: 0
       status: -1
     - coord: {x: 1, y: 2}
-      value: 0
-      status: -1
+      value: 5
+      status: 0
     - coord: {x: 2, y: 2}
-      value: 4
+      value: 3
       status: 0
     - coord: {x: 3, y: 2}
-      value: 2
+      value: 6
       status: 0
     - coord: {x: 0, y: 3}
       value: 0
       status: -1
     - coord: {x: 1, y: 3}
-      value: 2
+      value: 4
       status: 0
     - coord: {x: 2, y: 3}
-      value: 3
+      value: 2
       status: 0
     - coord: {x: 3, y: 3}
       value: 0
       status: -1
-    toolCount: 1
+    toolCount: 2
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

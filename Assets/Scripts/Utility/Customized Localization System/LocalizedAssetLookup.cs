@@ -24,6 +24,10 @@ public class LocalizedAssetLookup : MonoBehaviour
     [SerializeField] LanguageOption defaultLanguage;
     public string Translate(string txt)
     {
+        if(txt == "")
+        {
+            return txt;
+        }
         string TRIM_CHARS_START = "@Loc=";
         string TRIM_CHARS_END = "@@";
         //Debug.Log(string.Format("input txt is {0}", txt));

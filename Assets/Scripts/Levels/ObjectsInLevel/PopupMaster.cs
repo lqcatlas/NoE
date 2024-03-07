@@ -22,6 +22,7 @@ public class PopupMaster : MonoBehaviour
 
     public TextMeshPro timeUsed;
     public TextMeshPro stepUsed;
+    public TextMeshPro additionalTxt;
 
     private bool isNewLevelFinished;
 
@@ -37,12 +38,13 @@ public class PopupMaster : MonoBehaviour
         victoryPopupGroup.SetActive(false);
         failurePopupGroup.SetActive(false);
     }
-    public void ShowVictoryPopup(bool isNew, bool isHard, string time, string step)
+    public void ShowVictoryPopup(bool isNew, bool isHard, string time, string step, string txt = "")
     {
         popupMask.SetActive(true);
         victoryPopupGroup.SetActive(true);
         timeUsed.SetText(string.Format("<sprite name=ui_time_sign> {0}", time));
         stepUsed.SetText(string.Format("<sprite name=ui_step_sign> {0}", step));
+        additionalTxt.SetText(LocalizedAssetLookup.singleton.Translate(txt));
         star.gameObject.SetActive(true);
         gem.gameObject.SetActive(true);
         starReward.SetActive(!isHard);

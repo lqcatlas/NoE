@@ -36,6 +36,8 @@ MonoBehaviour:
   - '@Loc=narrative_tm7_ln011@@'
   - '@Loc=narrative_tm7_ln012@@'
   - '@Loc=narrative_tm7_ln013@@'
+  - '@Loc=narrative_tm7_ln014@@'
+  - '@Loc=narrative_tm7_ln015@@'
   levels:
   - {fileID: 11400000, guid: 6bff52cfb97ee3041ae660cb5a4db251, type: 2}
   - {fileID: 11400000, guid: c22503fdab84f9341ac2a68e6bf07545, type: 2}
@@ -51,7 +53,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a52299c4ac80dba438ae18877615d45f, type: 2}
   - {fileID: 11400000, guid: 45dc73e10e9df784fa3a2eedbcf1cd99, type: 2}
   - {fileID: 11400000, guid: 98fa5a293fd76874b97ed1aca9c50986, type: 2}
-  - {fileID: 11400000, guid: c684d3dc4d490744bab890a64f09bd9f, type: 2}
-  - {fileID: 11400000, guid: b744058088daeec46854a1d6b2e8f255, type: 2}
-  TotalStars: 14
+  TotalStars: 12
   TotalGems: 2

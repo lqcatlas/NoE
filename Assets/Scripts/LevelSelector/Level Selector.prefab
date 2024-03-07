@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingSpeedTier1: 20
-  movingSpeedTier2: 80
+  movingSpeedTier2: 120
   moveDirection: {x: -1, y: 0, z: 0}
   movingLimits: {x: -130, y: -45}
   movingGroup: {fileID: 5718106933962749381}
@@ -650,7 +650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movingSpeedTier1: 20
-  movingSpeedTier2: 80
+  movingSpeedTier2: 120
   moveDirection: {x: 1, y: 0, z: 0}
   movingLimits: {x: -130, y: -45}
   movingGroup: {fileID: 5718106933962749381}

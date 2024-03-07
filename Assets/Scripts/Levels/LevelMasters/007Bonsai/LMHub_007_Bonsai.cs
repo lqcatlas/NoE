@@ -13,8 +13,10 @@ public class LMHub_007_Bonsai : MonoBehaviour
     public Transform trunkHolder;
     public SpriteRenderer trunk;
     public List<Sprite> trunkSprites;
+
     [Header("Cells")]
     public Transform cellBgHolder;
     public GameObject leafTemplate;
     public List<KeyValuePair<CellMaster, GameObject>> leaves;
+
 }
