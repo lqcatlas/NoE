@@ -6,7 +6,6 @@ using DG.Tweening;
 
 public class LM_007_Bonsai : LevelMasterBase
 {
-    //enum BulbStatus : int { on = 0, off = 1};
     [Header("Theme Additions")]
     public LMHub_007_Bonsai bonsaiHub;
 
@@ -88,8 +87,8 @@ public class LM_007_Bonsai : LevelMasterBase
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
-        //Vector2Int numberRange = new Vector2Int(1, 4);
-        //remove cell
+        
+        //remove cell, status:-1 = cell removed
         for (int i = 0; i < levelData.curBoard.cells.Count; i++)
         {
             if (levelData.curBoard.cells[i].coord == coord)
