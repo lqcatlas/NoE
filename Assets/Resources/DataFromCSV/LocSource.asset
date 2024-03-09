@@ -332,7 +332,7 @@ MonoBehaviour:
     CN: "\u5B83\u4EE3\u8868\u4E86\u7075\u611F\u3001\u987F\u609F\u3002"
   - key: hint_tm7
     EN: 
-    CN: "\u5B83\u662F\u4EBA\u7C7B\u4E0E\u81EA\u7136\u5171\u521B\u7684\u827A\u672F\u3002"
+    CN: "\u5B83\u662F\u901A\u8FC7\u4FEE\u526A\u81EA\u7136\u5F97\u5230\u7684\u827A\u672F\u54C1\u3002"
   - key: intro_line_1
     EN: Friday night. Get back home, <b>things</b> emerges from darkness.
     CN: "\u5468\u4E94\u665A\u4E0A\uFF0C\u6253\u5F00\u623F\u95E8\uFF0C\u56DE\u5230\u6F06\u9ED1\u7684\u5BB6\u4E2D\uFF0C\u9ED1\u6697\u4E4B\u4E2D<b>\u4E07\u7269</b>\u6D6E\u73B0\u3002"
@@ -822,7 +822,7 @@ MonoBehaviour:
     CN: "\u76C6\u4E2D\u7684\u98CE\u666F"
   - key: narrative_tm7_ln002
     EN: 
-    CN: "\u7F8E\u6765\u81EA\u4E8E\u548C\u8C10\u3002"
+    CN: "\u7F8E\u6765\u81EA\u4E8E<b>\u548C\u8C10</b>\u3002"
   - key: narrative_tm7_ln003
     EN: 
     CN: "\u53BB\u6389\u53EF\u89C1\u7684\u7A81\u5140\uFF0C"
@@ -831,7 +831,7 @@ MonoBehaviour:
     CN: "\u4FDD\u7559\u81EA\u7136\u7684\u7F8E\u597D\u3002"
   - key: narrative_tm7_ln005
     EN: 
-    CN: "\u7F8E\u6765\u81EA\u4E8E\u5E73\u8861\uFF0C"
+    CN: "\u7F8E\u6765\u81EA\u4E8E<b>\u5E73\u8861</b>\uFF0C"
   - key: narrative_tm7_ln006
     EN: 
     CN: "\u8DDF\u968F\u4E8E\u6811\u6728\u7684\u751F\u957F\uFF0C"
@@ -840,7 +840,7 @@ MonoBehaviour:
     CN: "\u611F\u53D7\u81EA\u7136\u7684\u4E3B\u5BFC\u3002"
   - key: narrative_tm7_ln008
     EN: 
-    CN: "\u4E0D\u53D7\u89C4\u5219\u7684\u675F\u7F1A\uFF0C"
+    CN: "\u4E0D\u53D7\u89C4\u5219\u7684<b>\u675F\u7F1A</b>\uFF0C"
   - key: narrative_tm7_ln009
     EN: 
     CN: "\u76C6\u666F\u662F\u5BF9\u7F8E\u7684\u53D1\u73B0\uFF0C"
@@ -967,13 +967,13 @@ MonoBehaviour:
   - key: rule2_lv601
     EN: Cell is turned ON
     CN: "\u4E0E\u4E24\u4E2A\u6216\u4EE5\u4E0A\u7684\u76F8\u540C\u6570\u5B57\u76F8\u90BB"
-  - key: rule2_lv702
+  - key: rule3_lv702
     EN: 
-    CN: "\u539F\u52191\uFF1A\u79FB\u9664\u2588 \u2588 \u6570\u5B57"
-  - key: rule2_lv703
+    CN: "\u539F\u52191\uFF1A\u79FB\u9664 \u2588 \u2588 \u6570\u5B57"
+  - key: rule3_lv703
     EN: 
-    CN: "\u539F\u52191\uFF1A\u79FB\u9664\u2588 \u4E0D\u540C\u7684\u6570\u5B57"
-  - key: rule2_lv704
+    CN: "\u539F\u52191\uFF1A\u79FB\u9664 \u2588 \u4E0D\u540C\u7684\u6570\u5B57"
+  - key: rule3_lv704
     EN: 
     CN: "\u539F\u52191\uFF1A\u79FB\u9664\u4E0E\u4F17\u4E0D\u540C\u7684\u6570\u5B57"
   - key: rule3_lv204
@@ -988,13 +988,13 @@ MonoBehaviour:
   - key: rule3_lv601
     EN: '  when adjacent to 2+ same numbers'
     CN: "  \u5219\u70B9\u4EAE\u683C\u5B50"
-  - key: rule3_lv706
+  - key: rule4_lv706
     EN: 
-    CN: "\u539F\u52192\uFF1A\u2588 \u2588 \u5E73\u8861"
-  - key: rule3_lv707
+    CN: "\u539F\u52192\uFF1A \u2588 \u2588 \u5E73\u8861"
+  - key: rule4_lv707
     EN: 
-    CN: "\u539F\u52192\uFF1A\u2588 \u603B\u548C\u5E73\u8861"
-  - key: rule3_lv708
+    CN: "\u539F\u52192\uFF1A \u2588 \u603B\u548C\u5E73\u8861"
+  - key: rule4_lv708
     EN: 
     CN: "\u539F\u52192\uFF1A\u6CBF\u679D\u5E72\u7684\u603B\u548C\u5E73\u8861"
   - key: rule4_lv203
@@ -1009,7 +1009,7 @@ MonoBehaviour:
   - key: rule4_lv505
     EN: '9+Full: Eclipse!'
     CN: "9+\u6EE1\u6708\uFF1A\u6708\u98DF\uFF01"
-  - key: rule4_lv710
+  - key: rule5_lv710
     EN: 
     CN: "\u539F\u52193\uFF1A\u56E0\u52BF\u9020\u578B\uFF0C\u987A\u5176\u81EA\u7136"
   - key: rule5_lv404
@@ -1132,3 +1132,147 @@ MonoBehaviour:
   - key: unlocked_tm7
     EN: 
     CN: "\u4EBA\u4E0E\u81EA\u7136\u5171\u521B<b>\u76C6\u666F</b>\u3002"
+  - key: themename_tm8
+    EN: 
+    CN: "\u738B\u51A0"
+  - key: locked_tm8
+    EN: 
+    CN: "\u2588 \u2588 \u8D8A\u91CD\u8D8A\u597D\u3002"
+  - key: unlocked_tm8
+    EN: 
+    CN: "<b>\u738B\u51A0</b>\u8D8A\u91CD\u8D8A\u597D\u3002"
+  - key: hint_tm8
+    EN: 
+    CN: "\u5B83\u7528\u91CD\u91CF\u8C61\u5F81\u6743\u529B\u3002"
+  - key: date_tm8
+    EN: 
+    CN: 2024/03/09
+  - key: manifesto_tm8
+    EN: 
+    CN: "\u738B\u51A0\u7684\u6545\u4E8B\u6709\u5F85\u4E66\u5199\u3002"
+  - key: prompt_tm8
+    EN: 
+    CN: Photo is created by Midjourney using the following prompt:<br>A realistic
+      photo of modern electric laboratory view. There are a notebook, one lightbulb,
+      and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia
+      film. --ar 16:9 --v 6.0
+  - key: narrative_tm8_ln001
+    EN: 
+    CN: "\u738B\u51A0\u7684\u91CD\u91CF"
+  - key: narrative_tm8_ln002
+    EN: 
+    CN: "\u6B32\u6234\u5176\u51A0\uFF0C"
+  - key: narrative_tm8_ln003
+    EN: 
+    CN: "\u5FC5\u627F\u5176\u91CD\u3002"
+  - key: narrative_tm8_ln004
+    EN: 
+    CN: "\u738B\u51A0\u9AD8\u8038\uFF0C"
+  - key: narrative_tm8_ln005
+    EN: 
+    CN: "\u8C61\u5F81\u81F3\u9AD8\u7684\u6743\u5229\uFF0C"
+  - key: narrative_tm8_ln006
+    EN: 
+    CN: "\u4F69\u6234\u8005\u9010\u6E10\u8FF7\u5931\u521D\u5FC3\uFF0C"
+  - key: narrative_tm8_ln007
+    EN: 
+    CN: "\u76F4\u5230\u5B83\u7830\u7136\u843D\u4E0B\u3002"
+  - key: narrative_tm8_ln008
+    EN: 
+    CN: "\u6BD2\u836F\u3001\u9634\u8C0B\u3001\u6218\u4E71\uFF0C"
+  - key: narrative_tm8_ln009
+    EN: 
+    CN: "\u6743\u529B\u7ECF\u5386\u7740\u65E0\u6570\u7684\u8003\u9A8C\u3002"
+  - key: narrative_tm8_ln010
+    EN: 
+    CN: "\u6743\u529B\u4E0D\u505C\u5730\u66F4\u8FED\uFF0C"
+  - key: narrative_tm8_ln011
+    EN: 
+    CN: "\u738B\u51A0\u4E0D\u65AD\u5730\u6613\u624B\u3002"
+  - key: narrative_tm8_ln012
+    EN: 
+    CN: "\u5728\u8D77\u4F0F\u4E2D\u4E0D\u65AD\u524D\u8FDB\uFF0C"
+  - key: narrative_tm8_ln013
+    EN: 
+    CN: "\u5149\u8F89\u548C\u8363\u8000\u6210\u4E3A\u53F2\u8BD7\u4F20\u9882\u3002"
+  - key: narrative_tm8_ln014
+    EN: 
+    CN: 
+  - key: narrative_tm8_ln015
+    EN: 
+    CN: 
+  - key: levelname_lv801
+    EN: 
+    CN: 1
+  - key: levelname_lv802
+    EN: 
+    CN: 2
+  - key: levelname_lv803
+    EN: 
+    CN: 3
+  - key: levelname_lv804
+    EN: 
+    CN: 4
+  - key: levelname_lv805
+    EN: 
+    CN: 5
+  - key: levelname_lv806
+    EN: 
+    CN: 6
+  - key: levelname_lv807
+    EN: 
+    CN: 7
+  - key: levelname_lv808
+    EN: 
+    CN: 8
+  - key: levelname_lv809
+    EN: 
+    CN: 9
+  - key: goal_lv801
+    EN: 
+    CN: "\u8BA92\u4E2A\u683C\u5B50\u4E3A9"
+  - key: goal_lv802
+    EN: 
+    CN: "\u8BA92\u4E2A\u683C\u5B50\u4E3A9"
+  - key: goal_lv803
+    EN: 
+    CN: "\u8BA95\u4E2A\u683C\u5B50\u4E3A0"
+  - key: goal_lv804
+    EN: 
+    CN: "\u8BA96\u4E2A\u683C\u5B50\u4E3A9"
+  - key: goal_lv805
+    EN: 
+    CN: "\u8BA96\u4E2A\u683C\u5B50\u4E3A9"
+  - key: goal_lv806
+    EN: 
+    CN: "\u540C\u65F6\u67095\u4E2A\u738B\u51A0\u5728\u573A"
+  - key: goal_lv807
+    EN: 
+    CN: "\u8FDB\u884C8\u6B21\u738B\u51A0\u593A\u53D6"
+  - key: goal_lv808
+    EN: 
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u53D8\u4E3A7\u53CA\u4EE5\u4E0A"
+  - key: goal_lv809
+    EN: 
+    CN: "\u540C\u65F6\u593A\u53D64\u4E2A\u738B\u51A0<br>\u5E76\u6210\u4E3A\u5728\u573A\u7684\u552F\u4E00\u738B\u51A0"
+  - key: rule1_lv801
+    EN: 
+    CN: "\u6253\u51FA\u7684\u9886\u571F +3"
+  - key: rule1_lv803
+    EN: 
+    CN: "\u6253\u51FA\u7684\u9886\u571F +3\uFF0C\u5E76\u52A0\u5195"
+  - key: rule2_lv803
+    EN: 
+    CN: "\u52A0\u5195\u540E\u6570\u5B57\u6BD4\u4EFB\u610F\u76F8\u90BB\u9886\u571F\u5C0F"
+  - key: rule3_lv803
+    EN: 
+    CN: "  \u5219\u52A0\u5195\u5931\u8D25\uFF1A=0"
+  - key: rule4_lv807
+    EN: 
+    CN: "\u52A0\u5195\u540E\u6570\u5B57\u6BD4\u76F8\u90BB\u9886\u571F\u5927"
+  - key: rule5_lv807
+    EN: 
+    CN: "  \u5219\u76F8\u90BB\u9886\u571F\u4E22\u6389\u738B\u51A0\uFF1A-2"
+  - key: rule2_lv701
+    EN: 
+    CN: "\u79FB\u9664\u679D\u53F6\uFF0C\u8BA9\u76C6\u666F\u53D8\u7F8E"

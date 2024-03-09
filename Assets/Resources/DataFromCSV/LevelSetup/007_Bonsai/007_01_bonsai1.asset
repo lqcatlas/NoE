@@ -27,6 +27,8 @@ MonoBehaviour:
   ruleset:
   - tag: 1
     ruleDesc: '@Loc=rule1_lv701@@'
+  - tag: 1
+    ruleDesc: '@Loc=rule2_lv701@@'
   isHard: 0
   allowRewind: 0
   initBoard:

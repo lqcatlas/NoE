@@ -55,3 +55,10 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: 22a34d57a8d004149bbbf325f06e478b, type: 3}
     ThemeSprite: {fileID: -1290517677, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}
+  - Theme: crown
+    ThemeID: 8
+    ScriptName: LM_008_Crown
+    ThemeSpecialHub: {fileID: 5242734479810822178, guid: 000387005ee48c84aa65132552da1eb4, type: 3}
+    ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: 2bbbe2f7767f8fa489fa1f493aaea7c5, type: 3}
+    ThemeSprite: {fileID: 229841254, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
+    ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}

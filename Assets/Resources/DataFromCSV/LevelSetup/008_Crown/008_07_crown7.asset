@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
+  m_Name: 008_07_crown7
+  m_EditorClassIdentifier: 
+  levelUID: 807
+  themeIndex: 8
+  levelIndex: 7
+  nextLevelIndex: 808
+  previousLevel: {fileID: 11400000, guid: e4bedb56c9043fb418cd63e442649c42, type: 2}
+  nextLevel: {fileID: 11400000, guid: de67d7e4376ad1f42b02d88a4a558e6c, type: 2}
+  theme: '@Loc=themename_tm8@@'
+  title: '@Loc=levelname_lv807@@'
+  newInitNarrative: '@Loc=narrative_tm8_ln009@@'
+  newPlayNarratives:
+  - '@Loc=narrative_tm8_ln010@@'
+  oldNarratives:
+  - '@Loc=narrative_tm8_ln001@@'
+  - '@Loc=narrative_tm8_ln002@@'
+  - '@Loc=narrative_tm8_ln003@@'
+  - '@Loc=narrative_tm8_ln004@@'
+  - '@Loc=narrative_tm8_ln005@@'
+  - '@Loc=narrative_tm8_ln006@@'
+  - '@Loc=narrative_tm8_ln007@@'
+  - '@Loc=narrative_tm8_ln008@@'
+  goal: '@Loc=goal_lv807@@'
+  ruleset:
+  - tag: 0
+    ruleDesc: '@Loc=rule1_lv803@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule2_lv803@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule3_lv803@@'
+  - tag: 1
+    ruleDesc: '@Loc=rule4_lv807@@'
+  - tag: 1
+    ruleDesc: '@Loc=rule5_lv807@@'
+  isHard: 0
+  allowRewind: 1
+  initBoard:
+    boardSize: {x: 3, y: 3}
+    cells:
+    - coord: {x: 0, y: 0}
+      value: 0
+      status: 0
+    - coord: {x: 1, y: 0}
+      value: 2
+      status: 0
+    - coord: {x: 2, y: 0}
+      value: 3
+      status: 0
+    - coord: {x: 0, y: 1}
+      value: 3
+      status: 0
+    - coord: {x: 1, y: 1}
+      value: 4
+      status: 0
+    - coord: {x: 2, y: 1}
+      value: 5
+      status: 0
+    - coord: {x: 0, y: 2}
+      value: 2
+      status: 0
+    - coord: {x: 1, y: 2}
+      value: 1
+      status: 0
+    - coord: {x: 2, y: 2}
+      value: 4
+      status: 0
+    toolCount: 12
+    toolStatus: 0
+    curPlayCoord: {x: -1, y: -1}

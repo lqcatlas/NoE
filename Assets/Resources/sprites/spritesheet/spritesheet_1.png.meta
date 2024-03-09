@@ -2851,7 +2851,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1280
-        y: 769
+        y: 768
         width: 128
         height: 128
       alignment: 0
@@ -3170,7 +3170,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3191,7 +3191,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3199,6 +3199,69 @@ TextureImporter:
       bones: []
       spriteID: 8d95e989a32b5b048b089a3829920447
       internalID: -905120408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crown@v1
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b984576ad21e1348901cf2b1540e6ae
+      internalID: 1320047159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crown@v2
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59dd54399fc60e641820234dc9fd3835
+      internalID: 1621451177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword@v1
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da71334d502d1ff4cb258c01ba6a41b0
+      internalID: 503426635
       vertices: []
       indices: 
       edges: []
@@ -3311,8 +3374,10 @@ TextureImporter:
       star3_v1: -950381411
       sushi@v1: 1983163683
       window5_fill: 692586796
+      sword@v1: 503426635
       window3_v1: -268414213
       currency_star_frame: -435409087
+      crown@v2: 1621451177
       full_moon@v1: 15978782
       coin_shape_19: 1010904879
       star6_v4: 1937736281
@@ -3320,6 +3385,7 @@ TextureImporter:
       moon_quarter2@v1: 153082221
       rice@v2: 1031155536
       cell_frame@v7: 1671980107
+      crown@v1: 1320047159
       sushi@v2: 570420139
       ILSH_H_v1: 1115350096
       scissor@v1: -1887631101

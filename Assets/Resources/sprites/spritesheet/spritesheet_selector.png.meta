@@ -545,7 +545,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -553,6 +553,27 @@ TextureImporter:
       bones: []
       spriteID: 780db7f385b65e24f81c920cb5a11e3d
       internalID: -1290517677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: crown_themeicon
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1200
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09b517a8a21f7d45b01518eb3e97f0c
+      internalID: 229841254
       vertices: []
       indices: 
       edges: []
@@ -626,6 +647,7 @@ TextureImporter:
       spritesheet_selector_59: -827046935
       level_node_bg@v1: 1608164595
       spritesheet_selector_69: -306087282
+      crown_themeicon: 229841254
       spritesheet_selector_10: -298547945
       moon_themeicon: 2024725601
       level_node_fill@v2: -385207590

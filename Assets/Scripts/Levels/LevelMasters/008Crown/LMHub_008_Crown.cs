@@ -11,7 +11,7 @@ public class LMHub_008_Crown : MonoBehaviour
     [Header("Cells")]
     public Transform cellBgHolder;
     public GameObject crownTemplate;
-    public List<KeyValuePair<CellMaster, GameObject>> crowns;
+    public List<KeyValuePair<CellMaster, GameObject>> crownBgs;
 
     [Header("War")]
     public GameObject warTemplate;

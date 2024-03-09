@@ -20,6 +20,7 @@ public class LevelMasterBase : MonoBehaviour
     //Data setup by launcher before calling LevelInit()
     [Header("Setup Data")]
     public SheetItem_LevelSetup levelSetupData;
+    public ThemeResourceLookup themeLookupTable;
     public float ThemeAnimationDelayAfterInit;
     public float ThemeAnimationDelayAfterPlay;
 
@@ -70,6 +71,7 @@ public class LevelMasterBase : MonoBehaviour
     public void ObjectInit(GameObject _themeHub = null)
     {
         GetObjectReferences(_themeHub);
+        themeLookupTable = Resources.Load<ThemeResourceLookup>("theme_prefabs/ThemeLookup");
         RegisterChildren();
         //GetDataReferences
         ThemeAnimationDelayAfterInit = dConstants.VFX.CallbackAnimationDelayAfterInit;
@@ -329,6 +331,7 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void InitTool()
     {
+        hub.toolMaster.toolIcon.sprite = themeLookupTable.GetThemeIcon(levelData.themeIndex);
         hub.toolMaster.toolTitle.SetText(LocalizedAssetLookup.singleton.Translate(levelData.theme));
         hub.toolMaster.toolDesc.SetText(string.Format("x{0}", levelData.curBoard.toolCount));
 

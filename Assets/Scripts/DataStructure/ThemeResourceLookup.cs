@@ -104,4 +104,16 @@ public class ThemeResourceLookup : ScriptableObject
         Debug.LogError(string.Format("unbale to find theme photo ({0})", _themeID));
         return null;
     }
+    public Sprite GetThemeIcon(int _themeID)
+    {
+        for (int i = 0; i < ThemeXResource.Count; i++)
+        {
+            if (ThemeXResource[i].ThemeID == _themeID)
+            {
+                return ThemeXResource[i].ThemeSprite;
+            }
+        }
+        Debug.LogError(string.Format("unbale to find theme ({0})", _themeID));
+        return null;
+    }
 }

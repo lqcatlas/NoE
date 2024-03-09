@@ -35,9 +35,11 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv701@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv704@@'
+    ruleDesc: '@Loc=rule2_lv701@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv708@@'
+    ruleDesc: '@Loc=rule3_lv704@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule4_lv708@@'
   isHard: 0
   allowRewind: 0
   initBoard:
