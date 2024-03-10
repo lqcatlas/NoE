@@ -16,8 +16,8 @@ MonoBehaviour:
   themeIndex: 7
   levelIndex: 3
   nextLevelIndex: 704
-  previousLevel: {fileID: 11400000, guid: c22503fdab84f9341ac2a68e6bf07545, type: 2}
-  nextLevel: {fileID: 11400000, guid: 07b4ecea74ef72949829b58cce11e287, type: 2}
+  previousLevel: {fileID: 11400000, guid: 96f1415e8a87d494f9dfb45e55d05b0c, type: 2}
+  nextLevel: {fileID: 11400000, guid: 976bc4f0ade21af468b58179f050f335, type: 2}
   theme: '@Loc=themename_tm7@@'
   title: '@Loc=levelname_lv703@@'
   newInitNarrative: '@Loc=narrative_tm7_ln003@@'
@@ -36,7 +36,7 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 0
   initBoard:
-    boardSize: {x: 5, y: 5}
+    boardSize: {x: 4, y: 4}
     cells:
     - coord: {x: 0, y: 0}
       value: 0
@@ -50,12 +50,9 @@ MonoBehaviour:
     - coord: {x: 3, y: 0}
       value: 0
       status: -1
-    - coord: {x: 4, y: 0}
+    - coord: {x: 0, y: 1}
       value: 0
       status: -1
-    - coord: {x: 0, y: 1}
-      value: 5
-      status: 0
     - coord: {x: 1, y: 1}
       value: 0
       status: -1
@@ -63,54 +60,30 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 3, y: 1}
-      value: 0
-      status: -1
-    - coord: {x: 4, y: 1}
-      value: 7
+      value: 6
       status: 0
     - coord: {x: 0, y: 2}
-      value: 3
+      value: 2
       status: 0
     - coord: {x: 1, y: 2}
       value: 0
       status: -1
     - coord: {x: 2, y: 2}
-      value: 4
+      value: 3
       status: 0
     - coord: {x: 3, y: 2}
-      value: 0
-      status: -1
-    - coord: {x: 4, y: 2}
-      value: 2
+      value: 4
       status: 0
     - coord: {x: 0, y: 3}
       value: 0
       status: -1
     - coord: {x: 1, y: 3}
-      value: 2
+      value: 8
       status: 0
     - coord: {x: 2, y: 3}
       value: 0
       status: -1
     - coord: {x: 3, y: 3}
-      value: 3
-      status: 0
-    - coord: {x: 4, y: 3}
-      value: 0
-      status: -1
-    - coord: {x: 0, y: 4}
-      value: 0
-      status: -1
-    - coord: {x: 1, y: 4}
-      value: 0
-      status: -1
-    - coord: {x: 2, y: 4}
-      value: 5
-      status: 0
-    - coord: {x: 3, y: 4}
-      value: 0
-      status: -1
-    - coord: {x: 4, y: 4}
       value: 0
       status: -1
     toolCount: 1

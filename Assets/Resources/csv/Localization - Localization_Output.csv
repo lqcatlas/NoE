@@ -301,105 +301,118 @@ UID,Key,EN,CN
 300,rule2_lv404,Rice: -3,米：-3
 301,rule2_lv501,Quarter: +3,弦月：+3
 302,rule2_lv601,Cell is turned ON,与两个或以上的相同数字相邻
-303,rule3_lv702,,原则1：移除 █ █ 数字
-304,rule3_lv703,,原则1：移除 █ 不同的数字
-305,rule3_lv704,,原则1：移除与众不同的数字
+303,rule3_lv702,,和谐： █ █ █ █ 数字
+304,rule3_lv703,,和谐：移除 █ █ 数字
+305,rule3_lv704,,和谐：移除 █ 不同的数字
 306,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
 307,rule3_lv406,Rice+Fish: Sushi(=7),米+鱼： 寿司（=7）
 308,rule3_lv502,Full: +5,满月：+5
 309,rule3_lv601,  when adjacent to 2+ same numbers,  则点亮格子
-310,rule4_lv706,,原则2： █ █ 平衡
-311,rule4_lv707,,原则2： █ 总和平衡
-312,rule4_lv708,,原则2：沿枝干的总和平衡
-313,rule4_lv203,FLIP the coin after playing,打出后硬币翻面
-314,rule4_lv210,TOSS the coin after playing,打出后投掷硬币
-315,rule4_lv410,Fish+Rice: Onigiri(=2),鱼+米： 饭团（=2）
-316,rule4_lv505,9+Full: Eclipse!,9+满月：月食！
-317,rule5_lv710,,原则3：因势造型，顺其自然
-318,rule5_lv404,Fish and Rice appears alternatively,鱼和米交替出现
-319,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
-320,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
-321,themename_tm1,Clock,时钟
-322,themename_tm2,Coin,硬币
-323,themename_tm4,Sushi,寿司
-324,themename_tm5,Moon,月亮
-325,themename_tm6,Lightbulb,灯泡
-326,themename_tm7,Bonsai,盆景
-327,tool_name_theme2_status0,Front,正面
-328,tool_name_theme2_status1,Tail,反面
-329,tool_name_theme4_status1,Fish,鱼生
-330,tool_name_theme4_status2,Rice,白米
-331,tool_name_theme5_status1,Crescent,新月
-332,tool_name_theme5_status2,Quarter,弦月
-333,tool_name_theme5_status3,Full,满月
-334,tool_name_theme5_status4,Quarter,弦月
-335,tool_name_theme5_status5,Crescent,新月
-336,ui_close_btn,Close,关闭
-337,ui_designer_note_title,Designer's Notes,制作笔记
-338,ui_failure_title,,挑战失败
-339,ui_finished_status,(Passed),（完成）
-340,ui_goal_current_sum,Current Sum: ,当前数字之和：
-341,ui_goal_section_title,Goal,目标
-342,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the following riddle:,根据谜语找到<b>物件</b>：
-343,ui_new_tag,NEW,新
-344,ui_perfect_status,(Perfect),（完美通关）
-345,ui_retry_btn,Restart,重试
-346,ui_rewind_btn,Rewind,回溯
-347,ui_ruleset_title,Rules,规则
-348,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}
-349,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
-350,ui_themephoto_unlockreq,<sprite name=currency_star_frame> {0}<br>to unlock,<sprite name=currency_star_frame> {0}<br>解锁
-351,ui_victory_title,,恭喜通关
-352,unlocked_tm1,,<b>时间</b>永不停歇。
-353,unlocked_tm2,,<b>硬币</b>决定命运。
-354,unlocked_tm4,,<b>寿司</b>简约又精致。
-355,unlocked_tm5,,<b>月亮</b>有无规律？
-356,unlocked_tm6,,<b>灯泡</b>代表着灵感。
-357,unlocked_tm7,,人与自然共创<b>盆景</b>。
-358,themename_tm8,,王冠
-359,locked_tm8,,█ █ 越重越好。
-360,unlocked_tm8,,<b>王冠</b>越重越好。
-361,hint_tm8,,它用重量象征权力。
-362,date_tm8,,2024/03/09
-363,manifesto_tm8,,王冠的故事有待书写。
-364,prompt_tm8,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-365,narrative_tm8_ln001,,王冠的重量
-366,narrative_tm8_ln002,,欲戴其冠，
-367,narrative_tm8_ln003,,必承其重。
-368,narrative_tm8_ln004,,王冠高耸，
-369,narrative_tm8_ln005,,象征至高的权利，
-370,narrative_tm8_ln006,,佩戴者逐渐迷失初心，
-371,narrative_tm8_ln007,,直到它砰然落下。
-372,narrative_tm8_ln008,,毒药、阴谋、战乱，
-373,narrative_tm8_ln009,,权力经历着无数的考验。
-374,narrative_tm8_ln010,,权力不停地更迭，
-375,narrative_tm8_ln011,,王冠不断地易手。
-376,narrative_tm8_ln012,,在起伏中不断前进，
-377,narrative_tm8_ln013,,光辉和荣耀成为史诗传颂。
-378,narrative_tm8_ln014,,
-379,narrative_tm8_ln015,,
-387,levelname_lv801,,001
-388,levelname_lv802,,002
-389,levelname_lv803,,003
-390,levelname_lv804,,004
-391,levelname_lv805,,005
-392,levelname_lv806,,006
-393,levelname_lv807,,007
-394,levelname_lv808,,008
-395,levelname_lv809,,009
-396,goal_lv801,,让2个格子为9
-397,goal_lv802,,让2个格子为9
-398,goal_lv803,,让5个格子为0
-399,goal_lv804,,让6个格子为9
-400,goal_lv805,,让6个格子为9
-401,goal_lv806,,同时有5个王冠在场
-402,goal_lv807,,进行8次王冠夺取
-403,goal_lv808,,让所有格子变为7及以上
-404,goal_lv809,,同时夺取4个王冠<br>并成为在场的唯一王冠
-405,rule1_lv801,,打出的领土 +3
-406,rule1_lv803,,打出的领土 +3，并加冕
-407,rule2_lv803,,加冕后数字比任意相邻领土小
-408,rule3_lv803,,  则加冕失败：=0
-409,rule4_lv807,,加冕后数字比相邻领土大
-410,rule5_lv807,,  则相邻领土丢掉王冠：-2
-411,rule2_lv701,,移除枝叶，让盆景变美
+310,rule4_lv203,FLIP the coin after playing,打出后硬币翻面
+311,rule4_lv210,TOSS the coin after playing,打出后投掷硬币
+312,rule4_lv410,Fish+Rice: Onigiri(=2),鱼+米： 饭团（=2）
+313,rule4_lv505,9+Full: Eclipse!,9+满月：月食！
+314,rule5_lv404,Fish and Rice appears alternatively,鱼和米交替出现
+315,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
+316,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
+317,themename_tm1,Clock,时钟
+318,themename_tm2,Coin,硬币
+319,themename_tm4,Sushi,寿司
+320,themename_tm5,Moon,月亮
+321,themename_tm6,Lightbulb,灯泡
+322,themename_tm7,Bonsai,盆景
+323,tool_name_theme2_status0,Front,正面
+324,tool_name_theme2_status1,Tail,反面
+325,tool_name_theme4_status1,Fish,鱼生
+326,tool_name_theme4_status2,Rice,白米
+327,tool_name_theme5_status1,Crescent,新月
+328,tool_name_theme5_status2,Quarter,弦月
+329,tool_name_theme5_status3,Full,满月
+330,tool_name_theme5_status4,Quarter,弦月
+331,tool_name_theme5_status5,Crescent,新月
+332,ui_close_btn,Close,关闭
+333,ui_designer_note_title,Designer's Notes,制作笔记
+334,ui_failure_title,,挑战失败
+335,ui_finished_status,(Passed),（完成）
+336,ui_goal_current_sum,Current Sum: ,当前数字之和：
+337,ui_goal_section_title,Goal,目标
+338,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the following riddle:,根据谜语找到<b>物件</b>：
+339,ui_new_tag,NEW,新
+340,ui_perfect_status,(Perfect),（完美通关）
+341,ui_retry_btn,Restart,重试
+342,ui_rewind_btn,Rewind,回溯
+343,ui_ruleset_title,Rules,规则
+344,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}
+345,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
+346,ui_themephoto_unlockreq,<sprite name=currency_star_frame> {0}<br>to unlock,<sprite name=currency_star_frame> {0}<br>解锁
+347,ui_victory_title,,恭喜通关
+348,unlocked_tm1,,<b>时间</b>永不停歇。
+349,unlocked_tm2,,<b>硬币</b>决定命运。
+350,unlocked_tm4,,<b>寿司</b>简约又精致。
+351,unlocked_tm5,,<b>月亮</b>有无规律？
+352,unlocked_tm6,,<b>灯泡</b>代表着灵感。
+353,unlocked_tm7,,人与自然共创<b>盆景</b>。
+354,themename_tm8,,王冠
+355,locked_tm8,,█ █ 越重越好。
+356,unlocked_tm8,,<b>王冠</b>越重越好。
+357,hint_tm8,,它用重量象征权力。
+358,date_tm8,,2024/03/09
+359,manifesto_tm8,,王冠的故事有待书写。
+360,prompt_tm8,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+361,narrative_tm8_ln001,,王冠的重量
+362,narrative_tm8_ln002,,欲戴其冠，
+363,narrative_tm8_ln003,,必承其重。
+364,narrative_tm8_ln004,,王冠高耸，
+365,narrative_tm8_ln005,,象征至高的权利，
+366,narrative_tm8_ln006,,佩戴者逐渐迷失初心，
+367,narrative_tm8_ln007,,直到它砰然落下。
+368,narrative_tm8_ln008,,毒药、阴谋、战乱，
+369,narrative_tm8_ln009,,权力经历着无数的考验。
+370,narrative_tm8_ln010,,权力不停地更迭，
+371,narrative_tm8_ln011,,王冠不断地易手。
+372,narrative_tm8_ln012,,在起伏中不断前进，
+373,narrative_tm8_ln013,,光辉和荣耀成为史诗传颂。
+374,narrative_tm8_ln014,,
+375,narrative_tm8_ln015,,
+376,levelname_lv801,,001
+377,levelname_lv802,,002
+378,levelname_lv803,,003
+379,levelname_lv804,,004
+380,levelname_lv805,,005
+381,levelname_lv806,,006
+382,levelname_lv807,,007
+383,levelname_lv808,,008
+384,levelname_lv809,,009
+385,goal_lv801,,让2个格子为9
+386,goal_lv802,,让2个格子为9
+387,goal_lv803,,让5个格子为0
+388,goal_lv804,,让6个格子为9
+389,goal_lv805,,让6个格子为9
+390,goal_lv806,,同时有5个王冠在场
+391,goal_lv807,,进行8次王冠夺取
+392,goal_lv808,,让所有格子变为7及以上
+393,goal_lv809,,同时夺取4个王冠<br>并成为在场的唯一王冠
+394,rule1_lv801,,打出的领土 +3
+395,rule1_lv803,,打出的领土 +3，并加冕
+396,rule2_lv803,,加冕后，若数字比任意相邻领土小
+397,rule3_lv803,,  则加冕失败：=0
+398,rule2_lv701,,移除枝叶，让盆景变美
+399,levelname_lv715,,015
+400,levelname_lv716,,016
+401,levelname_lv717,,017
+402,levelname_lv718,,018
+403,levelname_lv719,,019
+404,levelname_lv720,,020
+405,goal_lv715,,创造最美盆景
+406,goal_lv716,,创造最美盆景
+407,goal_lv717,,创造最美盆景
+408,goal_lv718,,创造最美盆景
+409,goal_lv719,,创造最美盆景
+410,goal_lv720,,创造最美盆景
+411,rule3_lv705,,和谐：移除与众不同的数字
+412,rule4_lv716,,平衡： █ █ 相同
+413,rule4_lv717,,平衡： █ 总和相同
+414,rule4_lv718,,平衡： 各枝干总和相同
+415,rule4_lv720,,平衡： 各枝干总和相同
+416,rule4_lv806,,加冕后，若数字比相邻领土大
+417,rule5_lv806,,则相邻领土丢掉王冠：-2

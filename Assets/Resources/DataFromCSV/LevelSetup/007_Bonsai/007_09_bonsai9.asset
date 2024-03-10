@@ -16,8 +16,8 @@ MonoBehaviour:
   themeIndex: 7
   levelIndex: 9
   nextLevelIndex: 710
-  previousLevel: {fileID: 11400000, guid: d76e7520f81e64c438a76d51f5b31dce, type: 2}
-  nextLevel: {fileID: 11400000, guid: d279c3d9d44e8804d85c4ef94a045842, type: 2}
+  previousLevel: {fileID: 11400000, guid: da7a461037d04dc449a86b87baea5bb0, type: 2}
+  nextLevel: {fileID: 11400000, guid: 68b9c05cee97afa4f926ff8c767bd2a5, type: 2}
   theme: '@Loc=themename_tm7@@'
   title: '@Loc=levelname_lv709@@'
   newInitNarrative: '@Loc=narrative_tm7_ln008@@'
@@ -37,9 +37,7 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule2_lv701@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv704@@'
-  - tag: 0
-    ruleDesc: '@Loc=rule4_lv708@@'
+    ruleDesc: '@Loc=rule3_lv705@@'
   isHard: 0
   allowRewind: 0
   initBoard:
@@ -49,17 +47,17 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 1, y: 0}
-      value: 2
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 2, y: 0}
-      value: 5
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 3, y: 0}
       value: 0
       status: -1
     - coord: {x: 0, y: 1}
-      value: 0
-      status: -1
+      value: 5
+      status: 0
     - coord: {x: 1, y: 1}
       value: 0
       status: -1
@@ -67,32 +65,32 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 3, y: 1}
-      value: 5
+      value: 6
       status: 0
     - coord: {x: 0, y: 2}
-      value: 4
+      value: 2
       status: 0
     - coord: {x: 1, y: 2}
-      value: 0
-      status: -1
+      value: 1
+      status: 0
     - coord: {x: 2, y: 2}
       value: 3
       status: 0
     - coord: {x: 3, y: 2}
-      value: 2
+      value: 4
       status: 0
     - coord: {x: 0, y: 3}
       value: 0
       status: -1
     - coord: {x: 1, y: 3}
-      value: 7
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 2, y: 3}
-      value: 4
+      value: 1
       status: 0
     - coord: {x: 3, y: 3}
       value: 0
       status: -1
-    toolCount: 2
+    toolCount: 1
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

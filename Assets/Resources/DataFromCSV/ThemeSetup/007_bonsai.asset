@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   themeUID: 7
   unlockPrereq: 0
-  unlockCost: 12
+  unlockCost: 16
   themeTitle: '@Loc=themename_tm7@@'
   lockedLine: '@Loc=locked_tm7@@'
   unlockedLine: '@Loc=unlocked_tm7@@'
@@ -40,18 +40,24 @@ MonoBehaviour:
   - '@Loc=narrative_tm7_ln015@@'
   levels:
   - {fileID: 11400000, guid: 6bff52cfb97ee3041ae660cb5a4db251, type: 2}
+  - {fileID: 11400000, guid: 96f1415e8a87d494f9dfb45e55d05b0c, type: 2}
   - {fileID: 11400000, guid: c22503fdab84f9341ac2a68e6bf07545, type: 2}
+  - {fileID: 11400000, guid: 976bc4f0ade21af468b58179f050f335, type: 2}
+  - {fileID: 11400000, guid: 41ff4c3328a98024aa66f494857385d2, type: 2}
   - {fileID: 11400000, guid: 66bd772104b853041af960394b35b225, type: 2}
   - {fileID: 11400000, guid: 07b4ecea74ef72949829b58cce11e287, type: 2}
+  - {fileID: 11400000, guid: da7a461037d04dc449a86b87baea5bb0, type: 2}
   - {fileID: 11400000, guid: d934b5ab55974154589f58d71634fb37, type: 2}
+  - {fileID: 11400000, guid: 68b9c05cee97afa4f926ff8c767bd2a5, type: 2}
+  - {fileID: 11400000, guid: f62b98184139eb343af5de9abaf37bea, type: 2}
+  - {fileID: 11400000, guid: ca2bbf0db8504a84a88b5873fa639b1d, type: 2}
+  - {fileID: 11400000, guid: c3bb8b7fdbf508644bc865f470f9c28f, type: 2}
+  - {fileID: 11400000, guid: 8339ca938114d6c4eabb651cf21dbd33, type: 2}
+  - {fileID: 11400000, guid: 7631dbed32313a4408792cbb2549aaeb, type: 2}
   - {fileID: 11400000, guid: 70b32f0ee79ba614d97a86f3ca776ba1, type: 2}
   - {fileID: 11400000, guid: 89690a8bdea334446a60acdd81a8f16b, type: 2}
-  - {fileID: 11400000, guid: d76e7520f81e64c438a76d51f5b31dce, type: 2}
   - {fileID: 11400000, guid: 7ee96ecedc316cc4aba31b48cd5aee19, type: 2}
-  - {fileID: 11400000, guid: d279c3d9d44e8804d85c4ef94a045842, type: 2}
-  - {fileID: 11400000, guid: 09dd53b25f79133469afef6a5ea447f0, type: 2}
-  - {fileID: 11400000, guid: a52299c4ac80dba438ae18877615d45f, type: 2}
-  - {fileID: 11400000, guid: 45dc73e10e9df784fa3a2eedbcf1cd99, type: 2}
   - {fileID: 11400000, guid: 98fa5a293fd76874b97ed1aca9c50986, type: 2}
-  TotalStars: 12
-  TotalGems: 2
+  - {fileID: 11400000, guid: 897720d8523a3b1428f7db1631d98ce0, type: 2}
+  TotalStars: 19
+  TotalGems: 1

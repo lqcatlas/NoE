@@ -16,8 +16,8 @@ MonoBehaviour:
   themeIndex: 7
   levelIndex: 11
   nextLevelIndex: 712
-  previousLevel: {fileID: 11400000, guid: d279c3d9d44e8804d85c4ef94a045842, type: 2}
-  nextLevel: {fileID: 11400000, guid: a52299c4ac80dba438ae18877615d45f, type: 2}
+  previousLevel: {fileID: 11400000, guid: 68b9c05cee97afa4f926ff8c767bd2a5, type: 2}
+  nextLevel: {fileID: 11400000, guid: ca2bbf0db8504a84a88b5873fa639b1d, type: 2}
   theme: '@Loc=themename_tm7@@'
   title: '@Loc=levelname_lv711@@'
   newInitNarrative: '@Loc=narrative_tm7_ln010@@'
@@ -39,11 +39,7 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule2_lv701@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv704@@'
-  - tag: 0
-    ruleDesc: '@Loc=rule4_lv708@@'
-  - tag: 0
-    ruleDesc: '@Loc=rule5_lv710@@'
+    ruleDesc: '@Loc=rule3_lv705@@'
   isHard: 0
   allowRewind: 0
   initBoard:
@@ -53,8 +49,8 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 1, y: 0}
-      value: 1
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 2, y: 0}
       value: 0
       status: -1
@@ -62,37 +58,37 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 0, y: 1}
-      value: 2
+      value: 4
       status: 0
     - coord: {x: 1, y: 1}
-      value: 6
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 2, y: 1}
-      value: 1
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 3, y: 1}
-      value: 7
+      value: 6
       status: 0
     - coord: {x: 0, y: 2}
-      value: 6
+      value: 2
       status: 0
     - coord: {x: 1, y: 2}
-      value: 2
+      value: 4
       status: 0
     - coord: {x: 2, y: 2}
       value: 3
       status: 0
     - coord: {x: 3, y: 2}
-      value: 7
+      value: 5
       status: 0
     - coord: {x: 0, y: 3}
       value: 0
       status: -1
     - coord: {x: 1, y: 3}
-      value: 3
+      value: 7
       status: 0
     - coord: {x: 2, y: 3}
-      value: 1
+      value: 4
       status: 0
     - coord: {x: 3, y: 3}
       value: 0

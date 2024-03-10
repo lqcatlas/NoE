@@ -44,9 +44,9 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule3_lv803@@'
   - tag: 0
-    ruleDesc: '@Loc=rule4_lv807@@'
+    ruleDesc: '@Loc=rule4_lv806@@'
   - tag: 0
-    ruleDesc: '@Loc=rule5_lv807@@'
+    ruleDesc: '@Loc=rule5_lv806@@'
   isHard: 1
   allowRewind: 1
   initBoard:

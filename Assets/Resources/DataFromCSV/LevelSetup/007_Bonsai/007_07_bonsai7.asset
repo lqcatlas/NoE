@@ -16,8 +16,8 @@ MonoBehaviour:
   themeIndex: 7
   levelIndex: 7
   nextLevelIndex: 708
-  previousLevel: {fileID: 11400000, guid: 70b32f0ee79ba614d97a86f3ca776ba1, type: 2}
-  nextLevel: {fileID: 11400000, guid: d76e7520f81e64c438a76d51f5b31dce, type: 2}
+  previousLevel: {fileID: 11400000, guid: 66bd772104b853041af960394b35b225, type: 2}
+  nextLevel: {fileID: 11400000, guid: da7a461037d04dc449a86b87baea5bb0, type: 2}
   theme: '@Loc=themename_tm7@@'
   title: '@Loc=levelname_lv707@@'
   newInitNarrative: '@Loc=narrative_tm7_ln006@@'
@@ -35,13 +35,11 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule2_lv701@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv704@@'
-  - tag: 2
-    ruleDesc: '@Loc=rule4_lv707@@'
+    ruleDesc: '@Loc=rule3_lv705@@'
   isHard: 0
   allowRewind: 0
   initBoard:
-    boardSize: {x: 4, y: 4}
+    boardSize: {x: 5, y: 5}
     cells:
     - coord: {x: 0, y: 0}
       value: 0
@@ -55,9 +53,12 @@ MonoBehaviour:
     - coord: {x: 3, y: 0}
       value: 0
       status: -1
+    - coord: {x: 4, y: 0}
+      value: 0
+      status: -1
     - coord: {x: 0, y: 1}
-      value: 4
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 1, y: 1}
       value: 0
       status: -1
@@ -67,30 +68,54 @@ MonoBehaviour:
     - coord: {x: 3, y: 1}
       value: 0
       status: -1
-    - coord: {x: 0, y: 2}
+    - coord: {x: 4, y: 1}
       value: 0
       status: -1
+    - coord: {x: 0, y: 2}
+      value: 5
+      status: 0
     - coord: {x: 1, y: 2}
       value: 5
       status: 0
     - coord: {x: 2, y: 2}
-      value: 3
-      status: 0
+      value: 0
+      status: -1
     - coord: {x: 3, y: 2}
-      value: 6
+      value: 4
+      status: 0
+    - coord: {x: 4, y: 2}
+      value: 2
       status: 0
     - coord: {x: 0, y: 3}
       value: 0
       status: -1
     - coord: {x: 1, y: 3}
-      value: 4
-      status: 0
-    - coord: {x: 2, y: 3}
-      value: 2
-      status: 0
-    - coord: {x: 3, y: 3}
       value: 0
       status: -1
-    toolCount: 2
+    - coord: {x: 2, y: 3}
+      value: 0
+      status: -1
+    - coord: {x: 3, y: 3}
+      value: 2
+      status: 0
+    - coord: {x: 4, y: 3}
+      value: 0
+      status: -1
+    - coord: {x: 0, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 1, y: 4}
+      value: 3
+      status: 0
+    - coord: {x: 2, y: 4}
+      value: 3
+      status: 0
+    - coord: {x: 3, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 4, y: 4}
+      value: 0
+      status: -1
+    toolCount: 1
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

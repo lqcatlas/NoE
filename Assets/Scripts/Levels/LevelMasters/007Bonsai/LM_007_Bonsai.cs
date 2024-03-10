@@ -133,10 +133,6 @@ public class LM_007_Bonsai : LevelMasterBase
     }
     public override bool CheckWinCondition()
     {
-        /*
-        2,3
-        2,3
-        */
         bool result = false;
         if (levelData.levelIndex == 1)
         {
@@ -145,8 +141,9 @@ public class LM_007_Bonsai : LevelMasterBase
         }
         else if (levelData.levelIndex == 2)
         {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
-            return temp_cellData.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
         }
         else if (levelData.levelIndex == 3)
         {
@@ -155,73 +152,126 @@ public class LM_007_Bonsai : LevelMasterBase
         }
         else if (levelData.levelIndex == 4)
         {
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
+        }
+        else if (levelData.levelIndex == 5)
+        {
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            return temp_cellData.status == -1;
+        }
+        else if (levelData.levelIndex == 6)
+        {
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 3));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
+        }
+        else if (levelData.levelIndex == 7)
+        {
             DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
             return temp_cellData.status == -1;
         }
-        else if (levelData.levelIndex == 5)
+        else if (levelData.levelIndex == 8)
+        {
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 3));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
+        }
+        else if (levelData.levelIndex == 9)
         {
             DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
             DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 3));
             return temp_cellData1.status == -1 || temp_cellData2.status == -1;
         }
-        else if (levelData.levelIndex == 6)
-        {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1));
-            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
-        }
-        else if (levelData.levelIndex == 7)
-        {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
-            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
-        }
-        else if (levelData.levelIndex == 8)
-        {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0));
-            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
-        }
-        else if (levelData.levelIndex == 9)
-        {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 3));
-            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
-        }
         else if (levelData.levelIndex == 10)
         {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1));
-            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0));
-            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
+            return ((temp_cellData1.status == -1 ? 1 : 0) + (temp_cellData2.status == -1 ? 1 : 0) + (temp_cellData3.status == -1 ? 1 : 0)) >= 2;
         }
         else if (levelData.levelIndex == 11)
         {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 0));
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
             DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
-            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
             return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
         }
         else if (levelData.levelIndex == 12)
         {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 3));
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
             DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
             DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
             return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
         }
         else if (levelData.levelIndex == 13)
         {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
-            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 3));
-            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
+            DataCell temp_cellData1a = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData2a = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1));
+            DataCell temp_cellData3a = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 0));
+            DataCell temp_cellData1b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+            DataCell temp_cellData2b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
+            DataCell temp_cellData3b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 1));
+            return (temp_cellData1a.status == -1 || temp_cellData1b.status == -1) && (temp_cellData2a.status == -1 || temp_cellData2b.status == -1) && (temp_cellData3a.status == -1 || temp_cellData3b.status == -1);
         }
         else if (levelData.levelIndex == 14)
+        {
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 0));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
+        }
+        else if (levelData.levelIndex == 15)
+        {
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 1));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 1));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+
+            DataCell temp_cellData1b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
+            DataCell temp_cellData2b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 4));
+            return (temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1) || (temp_cellData1b.status == -1 && temp_cellData2b.status == -1);
+        }
+        else if (levelData.levelIndex == 16)
+        {
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 1));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
+        }
+        else if (levelData.levelIndex == 17)
+        {
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
+        }
+        else if (levelData.levelIndex == 18)
+        {
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 3));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
+        }
+        else if (levelData.levelIndex == 19)
         {
             DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(4, 1));
             DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
             DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
             return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
+        }
+        else if (levelData.levelIndex == 20)
+        {
+            DataCell temp_cellData1ab = levelData.curBoard.GetCellDataByCoord(new Vector2Int(4, 1));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            DataCell temp_cellData4 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            DataCell temp_cellData5 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+
+            DataCell temp_cellData2b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
+            DataCell temp_cellData3b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            DataCell temp_cellData4b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+
+            return 
+                (temp_cellData1ab.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1 && temp_cellData4.status == -1 && temp_cellData5.status == -1) ||
+                (temp_cellData1ab.status == -1 && temp_cellData2b.status == -1 && temp_cellData3b.status == -1 && temp_cellData4b.status == -1);
         }
         else
         {

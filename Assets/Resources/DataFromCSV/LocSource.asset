@@ -969,13 +969,13 @@ MonoBehaviour:
     CN: "\u4E0E\u4E24\u4E2A\u6216\u4EE5\u4E0A\u7684\u76F8\u540C\u6570\u5B57\u76F8\u90BB"
   - key: rule3_lv702
     EN: 
-    CN: "\u539F\u52191\uFF1A\u79FB\u9664 \u2588 \u2588 \u6570\u5B57"
+    CN: "\u548C\u8C10\uFF1A \u2588 \u2588 \u2588 \u2588 \u6570\u5B57"
   - key: rule3_lv703
     EN: 
-    CN: "\u539F\u52191\uFF1A\u79FB\u9664 \u2588 \u4E0D\u540C\u7684\u6570\u5B57"
+    CN: "\u548C\u8C10\uFF1A\u79FB\u9664 \u2588 \u2588 \u6570\u5B57"
   - key: rule3_lv704
     EN: 
-    CN: "\u539F\u52191\uFF1A\u79FB\u9664\u4E0E\u4F17\u4E0D\u540C\u7684\u6570\u5B57"
+    CN: "\u548C\u8C10\uFF1A\u79FB\u9664 \u2588 \u4E0D\u540C\u7684\u6570\u5B57"
   - key: rule3_lv204
     EN: X is the number of coins in a Cell
     CN: "X\u4E3A\u683C\u5B50\u5185\u786C\u5E01\u6570"
@@ -988,15 +988,6 @@ MonoBehaviour:
   - key: rule3_lv601
     EN: '  when adjacent to 2+ same numbers'
     CN: "  \u5219\u70B9\u4EAE\u683C\u5B50"
-  - key: rule4_lv706
-    EN: 
-    CN: "\u539F\u52192\uFF1A \u2588 \u2588 \u5E73\u8861"
-  - key: rule4_lv707
-    EN: 
-    CN: "\u539F\u52192\uFF1A \u2588 \u603B\u548C\u5E73\u8861"
-  - key: rule4_lv708
-    EN: 
-    CN: "\u539F\u52192\uFF1A\u6CBF\u679D\u5E72\u7684\u603B\u548C\u5E73\u8861"
   - key: rule4_lv203
     EN: FLIP the coin after playing
     CN: "\u6253\u51FA\u540E\u786C\u5E01\u7FFB\u9762"
@@ -1009,9 +1000,6 @@ MonoBehaviour:
   - key: rule4_lv505
     EN: '9+Full: Eclipse!'
     CN: "9+\u6EE1\u6708\uFF1A\u6708\u98DF\uFF01"
-  - key: rule5_lv710
-    EN: 
-    CN: "\u539F\u52193\uFF1A\u56E0\u52BF\u9020\u578B\uFF0C\u987A\u5176\u81EA\u7136"
   - key: rule5_lv404
     EN: Fish and Rice appears alternatively
     CN: "\u9C7C\u548C\u7C73\u4EA4\u66FF\u51FA\u73B0"
@@ -1263,16 +1251,67 @@ MonoBehaviour:
     CN: "\u6253\u51FA\u7684\u9886\u571F +3\uFF0C\u5E76\u52A0\u5195"
   - key: rule2_lv803
     EN: 
-    CN: "\u52A0\u5195\u540E\u6570\u5B57\u6BD4\u4EFB\u610F\u76F8\u90BB\u9886\u571F\u5C0F"
+    CN: "\u52A0\u5195\u540E\uFF0C\u82E5\u6570\u5B57\u6BD4\u4EFB\u610F\u76F8\u90BB\u9886\u571F\u5C0F"
   - key: rule3_lv803
     EN: 
     CN: "  \u5219\u52A0\u5195\u5931\u8D25\uFF1A=0"
-  - key: rule4_lv807
-    EN: 
-    CN: "\u52A0\u5195\u540E\u6570\u5B57\u6BD4\u76F8\u90BB\u9886\u571F\u5927"
-  - key: rule5_lv807
-    EN: 
-    CN: "  \u5219\u76F8\u90BB\u9886\u571F\u4E22\u6389\u738B\u51A0\uFF1A-2"
   - key: rule2_lv701
     EN: 
     CN: "\u79FB\u9664\u679D\u53F6\uFF0C\u8BA9\u76C6\u666F\u53D8\u7F8E"
+  - key: levelname_lv715
+    EN: 
+    CN: 15
+  - key: levelname_lv716
+    EN: 
+    CN: 16
+  - key: levelname_lv717
+    EN: 
+    CN: 17
+  - key: levelname_lv718
+    EN: 
+    CN: 18
+  - key: levelname_lv719
+    EN: 
+    CN: 19
+  - key: levelname_lv720
+    EN: 
+    CN: 20
+  - key: goal_lv715
+    EN: 
+    CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
+  - key: goal_lv716
+    EN: 
+    CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
+  - key: goal_lv717
+    EN: 
+    CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
+  - key: goal_lv718
+    EN: 
+    CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
+  - key: goal_lv719
+    EN: 
+    CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
+  - key: goal_lv720
+    EN: 
+    CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
+  - key: rule3_lv705
+    EN: 
+    CN: "\u548C\u8C10\uFF1A\u79FB\u9664\u4E0E\u4F17\u4E0D\u540C\u7684\u6570\u5B57"
+  - key: rule4_lv716
+    EN: 
+    CN: "\u5E73\u8861\uFF1A \u2588 \u2588 \u76F8\u540C"
+  - key: rule4_lv717
+    EN: 
+    CN: "\u5E73\u8861\uFF1A \u2588 \u603B\u548C\u76F8\u540C"
+  - key: rule4_lv718
+    EN: 
+    CN: "\u5E73\u8861\uFF1A \u5404\u679D\u5E72\u603B\u548C\u76F8\u540C"
+  - key: rule4_lv720
+    EN: 
+    CN: "\u5E73\u8861\uFF1A \u5404\u679D\u5E72\u603B\u548C\u76F8\u540C"
+  - key: rule4_lv806
+    EN: 
+    CN: "\u52A0\u5195\u540E\uFF0C\u82E5\u6570\u5B57\u6BD4\u76F8\u90BB\u9886\u571F\u5927"
+  - key: rule5_lv806
+    EN: 
+    CN: "\u5219\u76F8\u90BB\u9886\u571F\u4E22\u6389\u738B\u51A0\uFF1A-2"
