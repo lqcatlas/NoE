@@ -20,7 +20,7 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 897720d8523a3b1428f7db1631d98ce0, type: 2}
   theme: '@Loc=themename_tm7@@'
   title: '@Loc=levelname_lv719@@'
-  newInitNarrative: 
+  newInitNarrative: '@Loc=narrative_tm7_ln010@@'
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm7_ln001@@'
@@ -29,20 +29,19 @@ MonoBehaviour:
   - '@Loc=narrative_tm7_ln004@@'
   - '@Loc=narrative_tm7_ln005@@'
   - '@Loc=narrative_tm7_ln006@@'
-  - '@Loc=narrative_tm7_ln007@@'
-  - '@Loc=narrative_tm7_ln008@@'
   - '@Loc=narrative_tm7_ln009@@'
-  - '@Loc=narrative_tm7_ln010@@'
   goal: '@Loc=goal_lv719@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv701@@'
-  - tag: 0
-    ruleDesc: '@Loc=rule2_lv701@@'
+  - tag: 2
+    ruleDesc: '@Loc=rule2_lv719@@'
   - tag: 0
     ruleDesc: '@Loc=rule3_lv705@@'
   - tag: 0
-    ruleDesc: '@Loc=rule4_lv718@@'
+    ruleDesc: '@Loc=rule4_lv711@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule5_lv718@@'
   isHard: 0
   allowRewind: 0
   initBoard:

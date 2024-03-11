@@ -1,20 +1,24 @@
 UID,Key,EN,CN
-1,answer_tm7_lv701,,秘诀：移除唯一不同数字
-2,answer_tm7_lv702,,秘诀：移除奇数
-3,answer_tm7_lv703,,秘诀：移除质数
-4,answer_tm7_lv704,,秘诀：移除唯一不成对数字
-5,answer_tm7_lv705,,秘诀：主干两侧平衡
-6,answer_tm7_lv706,,秘诀：左右对称
-7,answer_tm7_lv707,,秘诀：上下两侧平衡
-8,answer_tm7_lv708,,秘诀：主干两侧对称
-9,answer_tm7_lv709,,秘诀：从左到右顺序
-10,answer_tm7_lv710,,秘诀：从上到下顺序
-11,answer_tm7_lv711,,秘诀：从左到右从下到上顺序
-12,answer_tm7_lv712,,秘诀：两簇数字相同
-13,answer_tm7_lv713,,秘诀：每一簇总和相同
-14,answer_tm7_lv714,,秘诀：右侧为空
-15,answer_tm7_lv715,,秘诀：左侧为偶数，右侧为奇数
-16,answer_tm7_lv716,,秘诀：同层右边数字是左边的两倍
+1,answer_tm7_lv701,,
+2,answer_tm7_lv702,,揭秘：让数字全相等
+3,answer_tm7_lv703,,
+4,answer_tm7_lv704,,揭秘：让奇偶性一致
+5,answer_tm7_lv705,,
+6,answer_tm7_lv706,,揭秘：保留全部质数
+7,answer_tm7_lv707,,
+8,answer_tm7_lv708,,揭秘：让数字成对
+9,answer_tm7_lv709,,
+10,answer_tm7_lv710,,揭秘：让数字都不同
+11,answer_tm7_lv711,,
+12,answer_tm7_lv712,,
+13,answer_tm7_lv713,,
+14,answer_tm7_lv714,,
+15,answer_tm7_lv715,,
+16,answer_tm7_lv716,,
+13,answer_tm7_lv717,,
+14,answer_tm7_lv718,,
+15,answer_tm7_lv719,,
+16,answer_tm7_lv720,,
 17,date_tm1,2022/12/04,2022/12/04
 18,date_tm2,2023/01/15,2023/01/15
 19,date_tm4,2023/06/25,2023/06/25
@@ -301,7 +305,7 @@ UID,Key,EN,CN
 300,rule2_lv404,Rice: -3,米：-3
 301,rule2_lv501,Quarter: +3,弦月：+3
 302,rule2_lv601,Cell is turned ON,与两个或以上的相同数字相邻
-303,rule3_lv702,,和谐： █ █ █ █ 数字
+303,rule3_lv702,,和谐： █ █ █ 数字
 304,rule3_lv703,,和谐：移除 █ █ 数字
 305,rule3_lv704,,和谐：移除 █ 不同的数字
 306,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
@@ -396,7 +400,7 @@ UID,Key,EN,CN
 395,rule1_lv803,,打出的领土 +3，并加冕
 396,rule2_lv803,,加冕后，若数字比任意相邻领土小
 397,rule3_lv803,,  则加冕失败：=0
-398,rule2_lv701,,移除枝叶，让盆景变美
+398,rule2_lv701,,通过尝试，发现美的规则
 399,levelname_lv715,,015
 400,levelname_lv716,,016
 401,levelname_lv717,,017
@@ -410,9 +414,16 @@ UID,Key,EN,CN
 409,goal_lv719,,创造最美盆景
 410,goal_lv720,,创造最美盆景
 411,rule3_lv705,,和谐：移除与众不同的数字
-412,rule4_lv716,,平衡： █ █ 相同
-413,rule4_lv717,,平衡： █ 总和相同
-414,rule4_lv718,,平衡： 各枝干总和相同
-415,rule4_lv720,,平衡： 各枝干总和相同
-416,rule4_lv806,,加冕后，若数字比相邻领土大
-417,rule5_lv806,,则相邻领土丢掉王冠：-2
+412,rule4_lv806,,加冕后，若数字比相邻领土大
+413,rule5_lv806,,则相邻领土丢掉王冠：-2
+414,rule2_lv719,,创造最美的盆景
+415,rule2_lv720,,创造最美的盆景
+416,rule4_lv703,,（相等、 █ ）
+417,rule4_lv705,,（相等、奇偶、 █ ）
+418,rule4_lv707,,（相等、奇偶、质数、 █ ）
+419,rule4_lv709,,（相等、奇偶、质数、成对、 █ ）
+420,rule4_lv711,,（相等、奇偶、质数、成对、不同）
+421,rule5_lv716,,平衡： █ █ 相等
+422,rule5_lv717,,平衡： █ 总和相等
+423,rule5_lv718,,平衡：各枝干总和相等
+424,rule5_lv720,,平衡：各枝干总和相等

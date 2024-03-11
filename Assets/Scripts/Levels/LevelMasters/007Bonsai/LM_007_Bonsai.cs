@@ -193,17 +193,15 @@ public class LM_007_Bonsai : LevelMasterBase
         }
         else if (levelData.levelIndex == 11)
         {
-            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
-            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
-            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
+            DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
         }
         else if (levelData.levelIndex == 12)
         {
             DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
-            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
-            return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            return temp_cellData1.status == -1 && temp_cellData2.status == -1;
         }
         else if (levelData.levelIndex == 13)
         {
@@ -218,7 +216,7 @@ public class LM_007_Bonsai : LevelMasterBase
         else if (levelData.levelIndex == 14)
         {
             DataCell temp_cellData1 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 0));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1));
             DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
             return temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1;
         }
@@ -279,7 +277,7 @@ public class LM_007_Bonsai : LevelMasterBase
         }
         return result;
     }
-    /*
+    
     public override void WinALevel()
     {
         status = LevelStatus.END;
@@ -293,7 +291,7 @@ public class LM_007_Bonsai : LevelMasterBase
         //Debug.Log("answerTxt ="+answerTxt);
         hub.popupMaster.ShowVictoryPopup(isNew, levelData.isHard, finalPlayTime, (levelData.initBoard.toolCount - levelData.curBoard.toolCount).ToString(), answerTxt);
     }
-    */
+    
     void UpdateToolStatusDisplay()
     {
         ToolStatusGroup targetDisplayTemplate = bonsaiHub.toolStatusGroup;

@@ -29,8 +29,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm7_ln004@@'
   - '@Loc=narrative_tm7_ln005@@'
   - '@Loc=narrative_tm7_ln006@@'
-  - '@Loc=narrative_tm7_ln007@@'
-  - '@Loc=narrative_tm7_ln008@@'
   - '@Loc=narrative_tm7_ln009@@'
   - '@Loc=narrative_tm7_ln010@@'
   goal: '@Loc=goal_lv720@@'
@@ -38,11 +36,13 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv701@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv701@@'
+    ruleDesc: '@Loc=rule2_lv720@@'
   - tag: 0
     ruleDesc: '@Loc=rule3_lv705@@'
   - tag: 0
-    ruleDesc: '@Loc=rule4_lv720@@'
+    ruleDesc: '@Loc=rule4_lv711@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule5_lv720@@'
   isHard: 1
   allowRewind: 0
   initBoard:

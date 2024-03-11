@@ -20,18 +20,13 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: ca2bbf0db8504a84a88b5873fa639b1d, type: 2}
   theme: '@Loc=themename_tm7@@'
   title: '@Loc=levelname_lv711@@'
-  newInitNarrative: '@Loc=narrative_tm7_ln010@@'
+  newInitNarrative: 
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm7_ln001@@'
   - '@Loc=narrative_tm7_ln002@@'
   - '@Loc=narrative_tm7_ln003@@'
   - '@Loc=narrative_tm7_ln004@@'
-  - '@Loc=narrative_tm7_ln005@@'
-  - '@Loc=narrative_tm7_ln006@@'
-  - '@Loc=narrative_tm7_ln007@@'
-  - '@Loc=narrative_tm7_ln008@@'
-  - '@Loc=narrative_tm7_ln009@@'
   goal: '@Loc=goal_lv711@@'
   ruleset:
   - tag: 0
@@ -40,6 +35,8 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule2_lv701@@'
   - tag: 0
     ruleDesc: '@Loc=rule3_lv705@@'
+  - tag: 2
+    ruleDesc: '@Loc=rule4_lv711@@'
   isHard: 0
   allowRewind: 0
   initBoard:
@@ -76,16 +73,16 @@ MonoBehaviour:
       value: 4
       status: 0
     - coord: {x: 2, y: 2}
-      value: 3
+      value: 5
       status: 0
     - coord: {x: 3, y: 2}
-      value: 5
+      value: 2
       status: 0
     - coord: {x: 0, y: 3}
       value: 0
       status: -1
     - coord: {x: 1, y: 3}
-      value: 7
+      value: 3
       status: 0
     - coord: {x: 2, y: 3}
       value: 4
@@ -93,6 +90,6 @@ MonoBehaviour:
     - coord: {x: 3, y: 3}
       value: 0
       status: -1
-    toolCount: 3
+    toolCount: 2
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

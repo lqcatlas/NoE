@@ -15,52 +15,64 @@ MonoBehaviour:
   locList:
   - key: answer_tm7_lv701
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u79FB\u9664\u552F\u4E00\u4E0D\u540C\u6570\u5B57"
+    CN: 
   - key: answer_tm7_lv702
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u79FB\u9664\u5947\u6570"
+    CN: "\u63ED\u79D8\uFF1A\u8BA9\u6570\u5B57\u5168\u76F8\u7B49"
   - key: answer_tm7_lv703
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u79FB\u9664\u8D28\u6570"
+    CN: 
   - key: answer_tm7_lv704
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u79FB\u9664\u552F\u4E00\u4E0D\u6210\u5BF9\u6570\u5B57"
+    CN: "\u63ED\u79D8\uFF1A\u8BA9\u5947\u5076\u6027\u4E00\u81F4"
   - key: answer_tm7_lv705
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u4E3B\u5E72\u4E24\u4FA7\u5E73\u8861"
+    CN: 
   - key: answer_tm7_lv706
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u5DE6\u53F3\u5BF9\u79F0"
+    CN: "\u63ED\u79D8\uFF1A\u4FDD\u7559\u5168\u90E8\u8D28\u6570"
   - key: answer_tm7_lv707
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u4E0A\u4E0B\u4E24\u4FA7\u5E73\u8861"
+    CN: 
   - key: answer_tm7_lv708
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u4E3B\u5E72\u4E24\u4FA7\u5BF9\u79F0"
+    CN: "\u63ED\u79D8\uFF1A\u8BA9\u6570\u5B57\u6210\u5BF9"
   - key: answer_tm7_lv709
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u4ECE\u5DE6\u5230\u53F3\u987A\u5E8F"
+    CN: 
   - key: answer_tm7_lv710
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u4ECE\u4E0A\u5230\u4E0B\u987A\u5E8F"
+    CN: "\u63ED\u79D8\uFF1A\u8BA9\u6570\u5B57\u90FD\u4E0D\u540C"
   - key: answer_tm7_lv711
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u4ECE\u5DE6\u5230\u53F3\u4ECE\u4E0B\u5230\u4E0A\u987A\u5E8F"
+    CN: 
   - key: answer_tm7_lv712
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u4E24\u7C07\u6570\u5B57\u76F8\u540C"
+    CN: 
   - key: answer_tm7_lv713
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u6BCF\u4E00\u7C07\u603B\u548C\u76F8\u540C"
+    CN: 
   - key: answer_tm7_lv714
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u53F3\u4FA7\u4E3A\u7A7A"
+    CN: 
   - key: answer_tm7_lv715
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u5DE6\u4FA7\u4E3A\u5076\u6570\uFF0C\u53F3\u4FA7\u4E3A\u5947\u6570"
+    CN: 
   - key: answer_tm7_lv716
     EN: 
-    CN: "\u79D8\u8BC0\uFF1A\u540C\u5C42\u53F3\u8FB9\u6570\u5B57\u662F\u5DE6\u8FB9\u7684\u4E24\u500D"
+    CN: 
+  - key: answer_tm7_lv717
+    EN: 
+    CN: 
+  - key: answer_tm7_lv718
+    EN: 
+    CN: 
+  - key: answer_tm7_lv719
+    EN: 
+    CN: 
+  - key: answer_tm7_lv720
+    EN: 
+    CN: 
   - key: date_tm1
     EN: 2022/12/04
     CN: 2022/12/04
@@ -969,7 +981,7 @@ MonoBehaviour:
     CN: "\u4E0E\u4E24\u4E2A\u6216\u4EE5\u4E0A\u7684\u76F8\u540C\u6570\u5B57\u76F8\u90BB"
   - key: rule3_lv702
     EN: 
-    CN: "\u548C\u8C10\uFF1A \u2588 \u2588 \u2588 \u2588 \u6570\u5B57"
+    CN: "\u548C\u8C10\uFF1A \u2588 \u2588 \u2588 \u6570\u5B57"
   - key: rule3_lv703
     EN: 
     CN: "\u548C\u8C10\uFF1A\u79FB\u9664 \u2588 \u2588 \u6570\u5B57"
@@ -1257,7 +1269,7 @@ MonoBehaviour:
     CN: "  \u5219\u52A0\u5195\u5931\u8D25\uFF1A=0"
   - key: rule2_lv701
     EN: 
-    CN: "\u79FB\u9664\u679D\u53F6\uFF0C\u8BA9\u76C6\u666F\u53D8\u7F8E"
+    CN: "\u901A\u8FC7\u5C1D\u8BD5\uFF0C\u53D1\u73B0\u7F8E\u7684\u89C4\u5219"
   - key: levelname_lv715
     EN: 
     CN: 15
@@ -1297,21 +1309,43 @@ MonoBehaviour:
   - key: rule3_lv705
     EN: 
     CN: "\u548C\u8C10\uFF1A\u79FB\u9664\u4E0E\u4F17\u4E0D\u540C\u7684\u6570\u5B57"
-  - key: rule4_lv716
-    EN: 
-    CN: "\u5E73\u8861\uFF1A \u2588 \u2588 \u76F8\u540C"
-  - key: rule4_lv717
-    EN: 
-    CN: "\u5E73\u8861\uFF1A \u2588 \u603B\u548C\u76F8\u540C"
-  - key: rule4_lv718
-    EN: 
-    CN: "\u5E73\u8861\uFF1A \u5404\u679D\u5E72\u603B\u548C\u76F8\u540C"
-  - key: rule4_lv720
-    EN: 
-    CN: "\u5E73\u8861\uFF1A \u5404\u679D\u5E72\u603B\u548C\u76F8\u540C"
   - key: rule4_lv806
     EN: 
     CN: "\u52A0\u5195\u540E\uFF0C\u82E5\u6570\u5B57\u6BD4\u76F8\u90BB\u9886\u571F\u5927"
   - key: rule5_lv806
     EN: 
     CN: "\u5219\u76F8\u90BB\u9886\u571F\u4E22\u6389\u738B\u51A0\uFF1A-2"
+  - key: rule2_lv719
+    EN: 
+    CN: "\u521B\u9020\u6700\u7F8E\u7684\u76C6\u666F"
+  - key: rule2_lv720
+    EN: 
+    CN: "\u521B\u9020\u6700\u7F8E\u7684\u76C6\u666F"
+  - key: rule4_lv703
+    EN: 
+    CN: "\uFF08\u76F8\u7B49\u3001 \u2588 \uFF09"
+  - key: rule4_lv705
+    EN: 
+    CN: "\uFF08\u76F8\u7B49\u3001\u5947\u5076\u3001 \u2588 \uFF09"
+  - key: rule4_lv707
+    EN: 
+    CN: "\uFF08\u76F8\u7B49\u3001\u5947\u5076\u3001\u8D28\u6570\u3001 \u2588 \uFF09"
+  - key: rule4_lv709
+    EN: 
+    CN: "\uFF08\u76F8\u7B49\u3001\u5947\u5076\u3001\u8D28\u6570\u3001\u6210\u5BF9\u3001
+      \u2588 \uFF09"
+  - key: rule4_lv711
+    EN: 
+    CN: "\uFF08\u76F8\u7B49\u3001\u5947\u5076\u3001\u8D28\u6570\u3001\u6210\u5BF9\u3001\u4E0D\u540C\uFF09"
+  - key: rule5_lv716
+    EN: 
+    CN: "\u5E73\u8861\uFF1A \u2588 \u2588 \u76F8\u7B49"
+  - key: rule5_lv717
+    EN: 
+    CN: "\u5E73\u8861\uFF1A \u2588 \u603B\u548C\u76F8\u7B49"
+  - key: rule5_lv718
+    EN: 
+    CN: "\u5E73\u8861\uFF1A\u5404\u679D\u5E72\u603B\u548C\u76F8\u7B49"
+  - key: rule5_lv720
+    EN: 
+    CN: "\u5E73\u8861\uFF1A\u5404\u679D\u5E72\u603B\u548C\u76F8\u7B49"

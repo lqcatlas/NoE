@@ -33,6 +33,8 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule2_lv701@@'
   - tag: 2
     ruleDesc: '@Loc=rule3_lv703@@'
+  - tag: 1
+    ruleDesc: '@Loc=rule4_lv703@@'
   isHard: 0
   allowRewind: 0
   initBoard:

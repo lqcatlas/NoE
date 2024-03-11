@@ -27,12 +27,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm7_ln002@@'
   - '@Loc=narrative_tm7_ln003@@'
   - '@Loc=narrative_tm7_ln004@@'
-  - '@Loc=narrative_tm7_ln005@@'
-  - '@Loc=narrative_tm7_ln006@@'
-  - '@Loc=narrative_tm7_ln007@@'
-  - '@Loc=narrative_tm7_ln008@@'
-  - '@Loc=narrative_tm7_ln009@@'
-  - '@Loc=narrative_tm7_ln010@@'
   goal: '@Loc=goal_lv714@@'
   ruleset:
   - tag: 0
@@ -41,6 +35,8 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule2_lv701@@'
   - tag: 0
     ruleDesc: '@Loc=rule3_lv705@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule4_lv711@@'
   isHard: 0
   allowRewind: 0
   initBoard:
@@ -62,7 +58,7 @@ MonoBehaviour:
       value: 6
       status: 0
     - coord: {x: 1, y: 1}
-      value: 6
+      value: 4
       status: 0
     - coord: {x: 2, y: 1}
       value: 3
@@ -71,7 +67,7 @@ MonoBehaviour:
       value: 3
       status: 0
     - coord: {x: 0, y: 2}
-      value: 4
+      value: 6
       status: 0
     - coord: {x: 1, y: 2}
       value: 2

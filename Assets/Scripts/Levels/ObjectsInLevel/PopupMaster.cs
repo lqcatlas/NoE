@@ -48,7 +48,9 @@ public class PopupMaster : MonoBehaviour
         star.gameObject.SetActive(true);
         gem.gameObject.SetActive(true);
         starReward.SetActive(!isHard);
+        starReward.GetComponent<Collider2D>().enabled = true;
         gemReward.SetActive(isHard);
+        gemReward.GetComponent<Collider2D>().enabled = true;
         popupMask.GetComponent<SpriteRenderer>().DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).From();
         victoryPopupGroup.transform.DOMoveY(-15f, dConstants.UI.StandardizedBtnAnimDuration).From(true, true);
         star.transform.DOScale(0f, dConstants.UI.StandardizedBtnAnimDuration * 2f).From().SetEase(Ease.OutBounce).SetDelay(dConstants.UI.StandardizedBtnAnimDuration);
@@ -67,6 +69,7 @@ public class PopupMaster : MonoBehaviour
 
     public void CollectStar()
     {
+        starReward.GetComponent<Collider2D>().enabled = false;
         if (isNewLevelFinished)
         {
             GameObject starVFX = Instantiate(star, star.transform.parent);
@@ -93,9 +96,9 @@ public class PopupMaster : MonoBehaviour
     }
     public void CollectGem()
     {
+        gemReward.GetComponent<Collider2D>().enabled = false;
         if (isNewLevelFinished)
         {
-
             GameObject gemVFX = Instantiate(gem, gem.transform.parent);
             gem.SetActive(false);
             Sequence seq = DOTween.Sequence();
