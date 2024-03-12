@@ -188,7 +188,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a5616f3846c8fd041940897d98c27ca8, type: 3}
   - {fileID: 21300000, guid: c4a2e1f46e736c34caccccec3142c1ce, type: 3}
   - {fileID: 21300000, guid: 2c1ca98130c954147ae08e7cc252d81d, type: 3}
-  - {fileID: 21300000, guid: 2c1ca98130c954147ae08e7cc252d81d, type: 3}
+  - {fileID: 21300000, guid: 745687ad5b7fc0343b1ec04329e632d9, type: 3}
   cellBgHolder: {fileID: 4068668159233435932}
   leafTemplate: {fileID: 3920627677804469945, guid: 26b15417cbb1ff4468bdbc151d016e1c, type: 3}
 --- !u!1 &8390322059011748740

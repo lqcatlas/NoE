@@ -227,7 +227,7 @@ public class LM_007_Bonsai : LevelMasterBase
             DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 2));
 
             DataCell temp_cellData1b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 3));
-            DataCell temp_cellData2b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(2, 4));
+            DataCell temp_cellData2b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(4, 2));
             return (temp_cellData1.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1) || (temp_cellData1b.status == -1 && temp_cellData2b.status == -1);
         }
         else if (levelData.levelIndex == 16)
@@ -257,15 +257,15 @@ public class LM_007_Bonsai : LevelMasterBase
         }
         else if (levelData.levelIndex == 20)
         {
-            DataCell temp_cellData1ab = levelData.curBoard.GetCellDataByCoord(new Vector2Int(4, 1));
-            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
-            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
-            DataCell temp_cellData4 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
-            DataCell temp_cellData5 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            DataCell temp_cellData1ab = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 0));
+            DataCell temp_cellData2 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 0));
+            DataCell temp_cellData3 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(4, 2));
+            DataCell temp_cellData4 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 3));
+            DataCell temp_cellData5 = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 4));
 
-            DataCell temp_cellData2b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 2));
-            DataCell temp_cellData3b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
-            DataCell temp_cellData4b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(3, 2));
+            DataCell temp_cellData2b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 1));
+            DataCell temp_cellData3b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(0, 2));
+            DataCell temp_cellData4b = levelData.curBoard.GetCellDataByCoord(new Vector2Int(1, 1));
 
             return 
                 (temp_cellData1ab.status == -1 && temp_cellData2.status == -1 && temp_cellData3.status == -1 && temp_cellData4.status == -1 && temp_cellData5.status == -1) ||
