@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using System.Runtime.CompilerServices;
 
 public class LM_008_Crown : LevelMasterBase
 {
@@ -59,6 +58,7 @@ public class LM_008_Crown : LevelMasterBase
                 else
                 {
                     obj.gameObject.SetActive(false);
+                    obj.transform.localScale = Vector3.one;
                 }
             }
         }
@@ -106,6 +106,7 @@ public class LM_008_Crown : LevelMasterBase
         Vector2Int numberCap = new Vector2Int(0, 9);
         DataCell crownCell = levelData.curBoard.GetCellDataByCoord(coord);
         //level 3+, check if crowning is a success, level
+        bool isSuccess = true;
         if (levelData.levelIndex >= 3)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
@@ -114,13 +115,18 @@ public class LM_008_Crown : LevelMasterBase
                 {
                     if (crownCell.value < levelData.curBoard.cells[i].value)
                     {
-                        crownCell.value = 0;
-                        crownCell.status = (int)CrownStatus.off;
+                        isSuccess = false;
                         crownLogs[crownLogs.Count - 1].success = false;
                         crownLogs[crownLogs.Count - 1].losingCoords.Add(levelData.curBoard.cells[i].coord);
                     }
                 }
             }
+        }
+        //queue the value reset at the end
+        if (!isSuccess)
+        {
+            crownCell.value = 0;
+            crownCell.status = (int)CrownStatus.off;
         }
         //level 6+, if succeed, taking crowns from neighbors
         if (levelData.levelIndex >= 6)
@@ -145,17 +151,8 @@ public class LM_008_Crown : LevelMasterBase
     }  
     public override void UpdateCells(Vector2Int coord)
     {
-        base.UpdateCells(coord);
-        //play crown VFX based on success or not
-        if (GetCurrentCrownSuccess())
-        {
-
-        }
-        else
-        {
-
-        }
-        for (int i = 0; i < crownHub.crownBgs.Count; i++)
+        //base.UpdateCells(coord);
+        /*for (int i = 0; i < crownHub.crownBgs.Count; i++)
         {
             DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(crownHub.crownBgs[i].Key.coord);
             if (temp_cellData.status == (int)CrownStatus.on)
@@ -165,6 +162,14 @@ public class LM_008_Crown : LevelMasterBase
             else
             {
                 crownHub.crownBgs[i].Value.SetActive(false);
+            }
+        }*/
+        for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+        {
+            if (hub.boardMaster.cells[i].coord == coord)
+            {
+                DataCell temp_cellData = levelData.previousBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+                hub.boardMaster.cells[i].NumberShift(Mathf.Min(temp_cellData.value + 3, 9));
             }
         }
     }
@@ -189,18 +194,21 @@ public class LM_008_Crown : LevelMasterBase
                     GameObject obj = Instantiate(crownHub.warTemplate, crownHub.cellBgHolder);
                     obj.transform.position = (crownHub.crownBgs[i].Value.transform.position + playedCrownCell.transform.position) / 2f;
                     obj.SetActive(true);
-                    Anim_CrownMove(crownHub.crownBgs[i].Key.coord, coord, ANIM_WAR_DURATION/2f);
-                    Anim_CrownFail(crownHub.crownBgs[i].Key.coord, ANIM_WAR_DURATION);
+                    Anim_CrownMove(crownHub.crownBgs[i].Key.coord, coord, ANIM_FALL_DURATION);
+                    //Anim_CrownFail(crownHub.crownBgs[i].Key.coord, ANIM_WAR_DURATION);
+                    UpdateTargetCellValue(crownHub.crownBgs[i].Key.coord, ANIM_FALL_DURATION);
 
                 }
             }
             if (crownLogs[crownLogs.Count - 1].winningCoords.Count > 0)
             {
                 Anim_CrownSuccess(coord, ANIM_WAR_DURATION * 0.8f);
+                UpdateTargetCellValue(coord, ANIM_WAR_DURATION * 0.8f);
             }
             else
             {
                 Anim_CrownSuccess(coord, ANIM_FALL_DURATION * 0.6f);
+                UpdateTargetCellValue(coord, ANIM_FALL_DURATION * 0.6f);
             }
         }
         else
@@ -213,17 +221,19 @@ public class LM_008_Crown : LevelMasterBase
                     GameObject obj = Instantiate(crownHub.warTemplate, crownHub.cellBgHolder);
                     obj.transform.position = (crownHub.crownBgs[i].Value.transform.position + playedCrownCell.transform.position) / 2f;
                     obj.SetActive(true);
-                    Anim_CrownMove(coord, crownHub.crownBgs[i].Key.coord, ANIM_WAR_DURATION / 2f);
-                    Anim_CrownSuccess(crownHub.crownBgs[i].Key.coord, ANIM_WAR_DURATION);
+                    //Anim_CrownMove(coord, crownHub.crownBgs[i].Key.coord, ANIM_FALL_DURATION);
+                    //Anim_CrownSuccess(crownHub.crownBgs[i].Key.coord, ANIM_WAR_DURATION);
                 }
             }
             if(crownLogs[crownLogs.Count - 1].losingCoords.Count > 0)
             {
                 Anim_CrownFail(coord, ANIM_WAR_DURATION * 0.8f);
+                UpdateTargetCellValue(coord, ANIM_WAR_DURATION * 0.8f);
             }
             else
             {
                 Anim_CrownFail(coord, ANIM_FALL_DURATION * 0.6f);
+                UpdateTargetCellValue(coord, ANIM_FALL_DURATION * 0.6f);
             }
         }
     }
@@ -302,9 +312,26 @@ public class LM_008_Crown : LevelMasterBase
         }
         return total;
     }
+    void UpdateTargetCellValue(Vector2Int coord, float delay = 0f)
+    {
+        for (int i = 0; i < crownHub.crownBgs.Count; i++)
+        {
+            if (crownHub.crownBgs[i].Key.coord == coord)
+            {
+                DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(crownHub.crownBgs[i].Key.coord);
+                Sequence seq = DOTween.Sequence();
+                CellMaster targetCell = crownHub.crownBgs[i].Key;
+                GameObject taregtObj = crownHub.crownBgs[i].Value;
+                seq.AppendInterval(delay)
+                    .AppendCallback(() => targetCell.NumberShift(temp_cellData.value))
+                    .AppendCallback(() => taregtObj.SetActive(temp_cellData.status == (int)CrownStatus.on));
+            }
+        }
+        
+    }
     void Anim_CrownFall(Vector2Int coord)
     {
-        float FALL_DISTANCE = 2f;
+        float FALL_DISTANCE = 3f;
         for (int i = 0; i < crownHub.crownBgs.Count; i++)
         {
             if (crownHub.crownBgs[i].Key.coord == coord)
@@ -320,14 +347,14 @@ public class LM_008_Crown : LevelMasterBase
     void Anim_CrownSuccess(Vector2Int coord, float delay = 0f)
     {
         Debug.Log(string.Format("anim_crown_success with param ({0},{1})", coord.x, coord.y));
-        float POPUP_DURATION = .3f;
+        float POPUP_DURATION = .8f;
         for (int i = 0; i < crownHub.crownBgs.Count; i++)
         {
             if (crownHub.crownBgs[i].Key.coord == coord)
             {
                 GameObject originalBg = crownHub.crownBgs[i].Value;
                 float POPUP_SIZE = Mathf.Pow(CROWN_SCALE_FACTOR, levelData.curBoard.GetCellDataByCoord(crownHub.crownBgs[i].Key.coord).value);
-                originalBg.transform.DOScale(POPUP_SIZE, POPUP_DURATION).SetDelay(delay).SetEase(Ease.OutBounce);
+                originalBg.transform.DOScale(POPUP_SIZE, POPUP_DURATION).SetDelay(delay).SetEase(Ease.OutBounce).OnStart(() => originalBg.SetActive(true));
             }
         }
     }
@@ -335,26 +362,34 @@ public class LM_008_Crown : LevelMasterBase
     void Anim_CrownFail(Vector2Int coord, float delay = 0)
     {
         Debug.Log(string.Format("anim_crown_fail with param ({0},{1})", coord.x, coord.y));
-        float EXPLODE_DURATION = .3f;
-        float EXPLODE_SIZE = 3f;
+        float failAnimTime = .3f;
+        Vector2 fallingDist = new Vector2(2, -2);
+        float tiltingDegree = -30f;
         for (int i = 0; i < crownHub.crownBgs.Count; i++)
         {
             if (crownHub.crownBgs[i].Key.coord == coord)
             {
                 GameObject originalBg = crownHub.crownBgs[i].Value;
                 GameObject obj = Instantiate(originalBg, crownHub.cellBgHolder);
-                obj.transform.GetChild(0).GetComponent<SpriteRenderer>().color = dConstants.UI.DefaultColor_2nd;
-                obj.transform.GetChild(0).DOScale(EXPLODE_SIZE, EXPLODE_DURATION).SetDelay(delay).OnStart(() => originalBg.SetActive(false)).OnComplete(() => Destroy(obj));
+                //obj.GetComponentInChildren<SpriteRenderer>().color = dConstants.UI.DefaultColor_2nd;
+                obj.SetActive(false);
+                obj.transform.DOMoveY(fallingDist.y, failAnimTime).SetDelay(delay).SetRelative(true).SetEase(Ease.OutQuad);
+                obj.transform.DOMoveX(fallingDist.x, failAnimTime).SetDelay(delay).SetRelative(true).SetEase(Ease.Linear);
+                obj.transform.DORotate(new Vector3(0f, 0f, tiltingDegree), failAnimTime).SetDelay(delay).SetRelative(true).SetEase(Ease.OutQuad)
+                    .OnStart(() => obj.SetActive(true));
+                obj.GetComponentInChildren<SpriteRenderer>().DOFade(0f, failAnimTime).SetEase(Ease.OutQuad).SetDelay(delay)
+                    .OnStart(() => originalBg.SetActive(false))
+                    .OnComplete(() => Destroy(obj));
             }
         }
     }
     void Anim_CrownMove(Vector2Int coordFrom, Vector2Int coordTo, float delay = 0f)
     {
         Debug.Log(string.Format("anim_crown_move with param ({0},{1}) >> ({2},{3})", coordFrom.x, coordFrom.y, coordTo.x, coordTo.y));
-        float MOVE_DURATION = .3f;
+        float MOVE_DURATION = .5f;
         Transform fromTrans = null, toTrans = null;
         for (int i = 0; i < crownHub.crownBgs.Count; i++)
-        {
+        {  
             if (crownHub.crownBgs[i].Key.coord == coordFrom)
             {
                 fromTrans = crownHub.crownBgs[i].Value.transform;
@@ -365,7 +400,8 @@ public class LM_008_Crown : LevelMasterBase
             }
         }
         GameObject obj = Instantiate(fromTrans.gameObject, crownHub.cellBgHolder);
-        obj.transform.DOMove(toTrans.position, MOVE_DURATION).OnComplete(()=>Destroy(obj));
+        obj.gameObject.SetActive(false);
+        obj.transform.DOMove(toTrans.position, MOVE_DURATION).SetDelay(delay).OnStart(()=> obj.gameObject.SetActive(true)).OnComplete(()=>Destroy(obj));
     }
     void UpdateToolStatusDisplay()
     {
