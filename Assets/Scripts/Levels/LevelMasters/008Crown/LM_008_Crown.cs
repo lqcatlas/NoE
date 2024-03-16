@@ -250,11 +250,11 @@ public class LM_008_Crown : LevelMasterBase
         }
         else if (levelData.levelIndex == 3)
         {
-            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 0, 5);
+            return BoardCalculation.CountX_All(levelData.curBoard, 9);
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 9, 6);
+            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 9, 4);
         }
         else if (levelData.levelIndex == 5)
         {
@@ -262,19 +262,27 @@ public class LM_008_Crown : LevelMasterBase
         }
         else if (levelData.levelIndex == 6)
         {
-            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 5);
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 6);
         }
         else if (levelData.levelIndex == 7)
         {
-            return GetTotalCrownTaken() >= 8;
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 4);
         }
         else if (levelData.levelIndex == 8)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 7, 9);
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 6);
         }
         else if (levelData.levelIndex == 9)
         {
-
+            return GetTotalCrownTaken() >= 10;
+        }
+        else if (levelData.levelIndex == 10)
+        {
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 6, 9);
+        }
+        else if (levelData.levelIndex == 11)
+        {
+            return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 9);
         }
         else
         {

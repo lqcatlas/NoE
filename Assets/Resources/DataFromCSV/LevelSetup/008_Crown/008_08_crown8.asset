@@ -52,7 +52,7 @@ MonoBehaviour:
     boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 0
+      value: 3
       status: 0
     - coord: {x: 1, y: 0}
       value: 2
@@ -78,6 +78,6 @@ MonoBehaviour:
     - coord: {x: 2, y: 2}
       value: 4
       status: 0
-    toolCount: 15
+    toolCount: 10
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

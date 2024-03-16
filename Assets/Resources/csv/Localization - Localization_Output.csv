@@ -291,13 +291,13 @@ UID,Key,EN,CN
 286,prompt_tm5,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 287,prompt_tm6,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 288,prompt_tm7,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-289,rule1_lv101,Cell Played +1,打出的格子 +1
+289,rule1_lv101,Play: +1,打出的格子 +1
 290,rule1_lv201,Head - Cell Played +1,正面：+1
 291,rule1_lv204,Head - Cell Played +X,正面：+X
 292,rule1_lv401,Fish: +3,鱼：+3
 293,rule1_lv501,Crescent: +1,新月：+1
-294,rule1_lv601,Played cell +1,打出的格子 +1
-295,rule1_lv605,Played and adjacent cells +1,打出及相邻的格子 +1
+294,rule1_lv601,Play: +1,打出的格子 +1
+295,rule1_lv605,Play: +1 on cross cells,打出及相邻的格子 +1
 296,rule1_lv701,,打出：移除格子内的数字
 297,rule2_lv103,Cell already with a Clock +1,已有时钟的格子 +1
 298,rule2_lv202,Tail - Cell Played -1,反面：-1
@@ -388,18 +388,18 @@ UID,Key,EN,CN
 383,levelname_lv808,,008
 384,levelname_lv809,,009
 385,goal_lv801,,让2个格子为9
-386,goal_lv802,,让2个格子为9
-387,goal_lv803,,让5个格子为0
-388,goal_lv804,,让6个格子为9
+386,goal_lv802,,让全部格子为9
+387,goal_lv803,,让6个格子为9
+388,goal_lv804,,让4个格子为9
 389,goal_lv805,,让6个格子为9
-390,goal_lv806,,同时有5个王冠在场
-391,goal_lv807,,进行8次王冠夺取
-392,goal_lv808,,让所有格子变为7及以上
-393,goal_lv809,,同时夺取4个王冠<br>并成为在场的唯一王冠
-394,rule1_lv801,,打出的领土 +3
-395,rule1_lv803,,打出的领土 +3，并加冕
-396,rule2_lv803,,加冕后，若数字比任意相邻领土小
-397,rule3_lv803,,  则加冕失败：=0
+390,goal_lv806,,有6个王冠在场
+391,goal_lv807,,有4个王冠在场
+392,goal_lv808,,有6个王冠在场
+393,goal_lv809,,夺取10次王冠
+394,rule1_lv801,,打出：+3
+395,rule1_lv803,,打出：+3，并加冕
+396,rule2_lv803,,加冕后比任意相邻领土小
+397,rule3_lv803,,则加冕失败：=0
 398,rule2_lv701,,通过尝试，发现美的规则
 399,levelname_lv715,,015
 400,levelname_lv716,,016
@@ -414,8 +414,8 @@ UID,Key,EN,CN
 409,goal_lv719,,创造最美盆景
 410,goal_lv720,,创造最美盆景
 411,rule3_lv705,,和谐：移除与众不同的数字
-412,rule4_lv806,,加冕后，若数字比相邻领土大
-413,rule5_lv806,,则相邻领土丢掉王冠：-2
+412,rule4_lv806,,加冕后比相邻领土大
+413,rule5_lv806,,则相邻领土王冠被夺取：-2
 414,rule2_lv719,,创造最美的盆景
 415,rule2_lv720,,创造最美的盆景
 416,rule4_lv703,,（相等、 █ ）
@@ -427,3 +427,7 @@ UID,Key,EN,CN
 422,rule5_lv717,,平衡： █ 总和相等
 423,rule5_lv718,,平衡：各枝干总和相等
 424,rule5_lv720,,平衡：各枝干总和相等
+425,levelname_lv810,,010
+426,levelname_lv811,,011
+427,goal_lv810,,让全部格子为6及以上
+428,goal_lv811,,有9个王冠在场

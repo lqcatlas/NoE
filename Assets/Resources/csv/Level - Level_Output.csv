@@ -92,3 +92,5 @@ UID,themeindex,levelindex,nextlevelindex,themename,levelname,init,play1,play2,pl
 807,8,7,808,@Loc=themename_tm8@@,@Loc=levelname_lv807@@,9,10,,,@Loc=goal_lv807@@,None,@Loc=rule1_lv803@@,None,@Loc=rule2_lv803@@,None,@Loc=rule3_lv803@@,None,@Loc=rule4_lv806@@,None,@Loc=rule5_lv806@@
 808,8,8,809,@Loc=themename_tm8@@,@Loc=levelname_lv808@@,11,12,,,@Loc=goal_lv808@@,None,@Loc=rule1_lv803@@,None,@Loc=rule2_lv803@@,None,@Loc=rule3_lv803@@,None,@Loc=rule4_lv806@@,None,@Loc=rule5_lv806@@
 809,8,9,810,@Loc=themename_tm8@@,@Loc=levelname_lv809@@,13,,,,@Loc=goal_lv809@@,None,@Loc=rule1_lv803@@,None,@Loc=rule2_lv803@@,None,@Loc=rule3_lv803@@,None,@Loc=rule4_lv806@@,None,@Loc=rule5_lv806@@
+810,8,10,811,@Loc=themename_tm8@@,@Loc=levelname_lv810@@,,,,,@Loc=goal_lv810@@,None,@Loc=rule1_lv803@@,None,@Loc=rule2_lv803@@,None,@Loc=rule3_lv803@@,None,@Loc=rule4_lv806@@,None,@Loc=rule5_lv806@@
+811,8,11,,@Loc=themename_tm8@@,@Loc=levelname_lv811@@,,,,,@Loc=goal_lv811@@,None,@Loc=rule1_lv803@@,None,@Loc=rule2_lv803@@,None,@Loc=rule3_lv803@@,None,@Loc=rule4_lv806@@,None,@Loc=rule5_lv806@@

@@ -938,7 +938,7 @@ MonoBehaviour:
       and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia
       film. --ar 16:9 --v 6.0
   - key: rule1_lv101
-    EN: Cell Played +1
+    EN: 'Play: +1'
     CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
   - key: rule1_lv201
     EN: Head - Cell Played +1
@@ -953,10 +953,10 @@ MonoBehaviour:
     EN: 'Crescent: +1'
     CN: "\u65B0\u6708\uFF1A+1"
   - key: rule1_lv601
-    EN: Played cell +1
+    EN: 'Play: +1'
     CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
   - key: rule1_lv605
-    EN: Played and adjacent cells +1
+    EN: 'Play: +1 on cross cells'
     CN: "\u6253\u51FA\u53CA\u76F8\u90BB\u7684\u683C\u5B50 +1"
   - key: rule1_lv701
     EN: 
@@ -1233,40 +1233,40 @@ MonoBehaviour:
     CN: "\u8BA92\u4E2A\u683C\u5B50\u4E3A9"
   - key: goal_lv802
     EN: 
-    CN: "\u8BA92\u4E2A\u683C\u5B50\u4E3A9"
+    CN: "\u8BA9\u5168\u90E8\u683C\u5B50\u4E3A9"
   - key: goal_lv803
     EN: 
-    CN: "\u8BA95\u4E2A\u683C\u5B50\u4E3A0"
+    CN: "\u8BA96\u4E2A\u683C\u5B50\u4E3A9"
   - key: goal_lv804
     EN: 
-    CN: "\u8BA96\u4E2A\u683C\u5B50\u4E3A9"
+    CN: "\u8BA94\u4E2A\u683C\u5B50\u4E3A9"
   - key: goal_lv805
     EN: 
     CN: "\u8BA96\u4E2A\u683C\u5B50\u4E3A9"
   - key: goal_lv806
     EN: 
-    CN: "\u540C\u65F6\u67095\u4E2A\u738B\u51A0\u5728\u573A"
+    CN: "\u67096\u4E2A\u738B\u51A0\u5728\u573A"
   - key: goal_lv807
     EN: 
-    CN: "\u8FDB\u884C8\u6B21\u738B\u51A0\u593A\u53D6"
+    CN: "\u67094\u4E2A\u738B\u51A0\u5728\u573A"
   - key: goal_lv808
     EN: 
-    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u53D8\u4E3A7\u53CA\u4EE5\u4E0A"
+    CN: "\u67096\u4E2A\u738B\u51A0\u5728\u573A"
   - key: goal_lv809
     EN: 
-    CN: "\u540C\u65F6\u593A\u53D64\u4E2A\u738B\u51A0<br>\u5E76\u6210\u4E3A\u5728\u573A\u7684\u552F\u4E00\u738B\u51A0"
+    CN: "\u593A\u53D610\u6B21\u738B\u51A0"
   - key: rule1_lv801
     EN: 
-    CN: "\u6253\u51FA\u7684\u9886\u571F +3"
+    CN: "\u6253\u51FA\uFF1A+3"
   - key: rule1_lv803
     EN: 
-    CN: "\u6253\u51FA\u7684\u9886\u571F +3\uFF0C\u5E76\u52A0\u5195"
+    CN: "\u6253\u51FA\uFF1A+3\uFF0C\u5E76\u52A0\u5195"
   - key: rule2_lv803
     EN: 
-    CN: "\u52A0\u5195\u540E\uFF0C\u82E5\u6570\u5B57\u6BD4\u4EFB\u610F\u76F8\u90BB\u9886\u571F\u5C0F"
+    CN: "\u52A0\u5195\u540E\u6BD4\u4EFB\u610F\u76F8\u90BB\u9886\u571F\u5C0F"
   - key: rule3_lv803
     EN: 
-    CN: "  \u5219\u52A0\u5195\u5931\u8D25\uFF1A=0"
+    CN: "\u5219\u52A0\u5195\u5931\u8D25\uFF1A=0"
   - key: rule2_lv701
     EN: 
     CN: "\u901A\u8FC7\u5C1D\u8BD5\uFF0C\u53D1\u73B0\u7F8E\u7684\u89C4\u5219"
@@ -1311,10 +1311,10 @@ MonoBehaviour:
     CN: "\u548C\u8C10\uFF1A\u79FB\u9664\u4E0E\u4F17\u4E0D\u540C\u7684\u6570\u5B57"
   - key: rule4_lv806
     EN: 
-    CN: "\u52A0\u5195\u540E\uFF0C\u82E5\u6570\u5B57\u6BD4\u76F8\u90BB\u9886\u571F\u5927"
+    CN: "\u52A0\u5195\u540E\u6BD4\u76F8\u90BB\u9886\u571F\u5927"
   - key: rule5_lv806
     EN: 
-    CN: "\u5219\u76F8\u90BB\u9886\u571F\u4E22\u6389\u738B\u51A0\uFF1A-2"
+    CN: "\u5219\u76F8\u90BB\u9886\u571F\u738B\u51A0\u88AB\u593A\u53D6\uFF1A-2"
   - key: rule2_lv719
     EN: 
     CN: "\u521B\u9020\u6700\u7F8E\u7684\u76C6\u666F"
@@ -1349,3 +1349,15 @@ MonoBehaviour:
   - key: rule5_lv720
     EN: 
     CN: "\u5E73\u8861\uFF1A\u5404\u679D\u5E72\u603B\u548C\u76F8\u7B49"
+  - key: levelname_lv810
+    EN: 
+    CN: 10
+  - key: levelname_lv811
+    EN: 
+    CN: 11
+  - key: goal_lv810
+    EN: 
+    CN: "\u8BA9\u5168\u90E8\u683C\u5B50\u4E3A6\u53CA\u4EE5\u4E0A"
+  - key: goal_lv811
+    EN: 
+    CN: "\u67099\u4E2A\u738B\u51A0\u5728\u573A"

@@ -17,7 +17,7 @@ MonoBehaviour:
   levelIndex: 9
   nextLevelIndex: 810
   previousLevel: {fileID: 11400000, guid: de67d7e4376ad1f42b02d88a4a558e6c, type: 2}
-  nextLevel: {fileID: 11400000, guid: a655ba3e70f18304b9dfa00d2bc66b55, type: 2}
+  nextLevel: {fileID: 11400000, guid: ff3d0215cc6f9ee4494775b177be7823, type: 2}
   theme: '@Loc=themename_tm8@@'
   title: '@Loc=levelname_lv809@@'
   newInitNarrative: '@Loc=narrative_tm8_ln013@@'
@@ -47,38 +47,38 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule4_lv806@@'
   - tag: 0
     ruleDesc: '@Loc=rule5_lv806@@'
-  isHard: 1
+  isHard: 0
   allowRewind: 1
   initBoard:
     boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 0
-      status: 0
+      value: 5
+      status: 1
     - coord: {x: 1, y: 0}
-      value: 2
-      status: 0
-    - coord: {x: 2, y: 0}
-      value: 8
-      status: 0
-    - coord: {x: 0, y: 1}
-      value: 3
-      status: 0
-    - coord: {x: 1, y: 1}
-      value: 9
-      status: 0
-    - coord: {x: 2, y: 1}
       value: 5
       status: 0
-    - coord: {x: 0, y: 2}
-      value: 2
-      status: 0
-    - coord: {x: 1, y: 2}
-      value: 1
+    - coord: {x: 2, y: 0}
+      value: 7
       status: 1
-    - coord: {x: 2, y: 2}
+    - coord: {x: 0, y: 1}
       value: 4
       status: 0
-    toolCount: 15
+    - coord: {x: 1, y: 1}
+      value: 5
+      status: 0
+    - coord: {x: 2, y: 1}
+      value: 7
+      status: 0
+    - coord: {x: 0, y: 2}
+      value: 5
+      status: 1
+    - coord: {x: 1, y: 2}
+      value: 7
+      status: 1
+    - coord: {x: 2, y: 2}
+      value: 7
+      status: 1
+    toolCount: 6
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}
