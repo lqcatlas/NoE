@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class LM_008_Crown : LevelMasterBase
 {
@@ -105,9 +106,11 @@ public class LM_008_Crown : LevelMasterBase
         //successThisRound = true;
         Vector2Int numberCap = new Vector2Int(0, 9);
         DataCell crownCell = levelData.curBoard.GetCellDataByCoord(coord);
+        int RULE2_LVINDEX = 3;
+        int RULE3_LVINDEX = 7;
         //level 3+, check if crowning is a success, level
         bool isSuccess = true;
-        if (levelData.levelIndex >= 3)
+        if (levelData.levelIndex >= RULE2_LVINDEX)
         {
             for (int i = 0; i < levelData.curBoard.cells.Count; i++)
             {
@@ -129,7 +132,7 @@ public class LM_008_Crown : LevelMasterBase
             crownCell.status = (int)CrownStatus.off;
         }
         //level 6+, if succeed, taking crowns from neighbors
-        if (levelData.levelIndex >= 6)
+        if (levelData.levelIndex >= RULE3_LVINDEX)
         {
             if (GetCurrentCrownSuccess())
             {
@@ -151,19 +154,7 @@ public class LM_008_Crown : LevelMasterBase
     }  
     public override void UpdateCells(Vector2Int coord)
     {
-        //base.UpdateCells(coord);
-        /*for (int i = 0; i < crownHub.crownBgs.Count; i++)
-        {
-            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(crownHub.crownBgs[i].Key.coord);
-            if (temp_cellData.status == (int)CrownStatus.on)
-            {
-                crownHub.crownBgs[i].Value.SetActive(true);
-            }
-            else
-            {
-                crownHub.crownBgs[i].Value.SetActive(false);
-            }
-        }*/
+        //update to a status that only +3 on the played cell
         for (int i = 0; i < hub.boardMaster.cells.Count; i++)
         {
             if (hub.boardMaster.cells[i].coord == coord)
@@ -236,6 +227,13 @@ public class LM_008_Crown : LevelMasterBase
                 UpdateTargetCellValue(coord, ANIM_FALL_DURATION * 0.6f);
             }
         }
+        //add crown taken count
+        if (levelData.levelIndex == 9)
+        {
+            hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_crown_taken@@"), GetTotalCrownTaken()));
+            hub.goalMaster.lines[1].gameObject.SetActive(true);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+        }
     }
     public override bool CheckWinCondition()
     {
@@ -274,7 +272,7 @@ public class LM_008_Crown : LevelMasterBase
         }
         else if (levelData.levelIndex == 9)
         {
-            return GetTotalCrownTaken() >= 10;
+            return GetTotalCrownTaken() >= 9;
         }
         else if (levelData.levelIndex == 10)
         {

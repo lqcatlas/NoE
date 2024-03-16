@@ -1236,7 +1236,7 @@ MonoBehaviour:
     CN: "\u8BA9\u5168\u90E8\u683C\u5B50\u4E3A9"
   - key: goal_lv803
     EN: 
-    CN: "\u8BA96\u4E2A\u683C\u5B50\u4E3A9"
+    CN: "\u8BA9\u5168\u90E8\u683C\u5B50\u4E3A9"
   - key: goal_lv804
     EN: 
     CN: "\u8BA94\u4E2A\u683C\u5B50\u4E3A9"
@@ -1309,10 +1309,10 @@ MonoBehaviour:
   - key: rule3_lv705
     EN: 
     CN: "\u548C\u8C10\uFF1A\u79FB\u9664\u4E0E\u4F17\u4E0D\u540C\u7684\u6570\u5B57"
-  - key: rule4_lv806
+  - key: rule4_lv807
     EN: 
     CN: "\u52A0\u5195\u540E\u6BD4\u76F8\u90BB\u9886\u571F\u5927"
-  - key: rule5_lv806
+  - key: rule5_lv807
     EN: 
     CN: "\u5219\u76F8\u90BB\u9886\u571F\u738B\u51A0\u88AB\u593A\u53D6\uFF1A-2"
   - key: rule2_lv719
@@ -1361,3 +1361,6 @@ MonoBehaviour:
   - key: goal_lv811
     EN: 
     CN: "\u67099\u4E2A\u738B\u51A0\u5728\u573A"
+  - key: ui_goal_current_crown_taken
+    EN: 
+    CN: "\u5DF2\u593A\u53D6\u738B\u51A0\uFF1A"

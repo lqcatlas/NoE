@@ -21,8 +21,7 @@ MonoBehaviour:
   theme: '@Loc=themename_tm8@@'
   title: '@Loc=levelname_lv806@@'
   newInitNarrative: '@Loc=narrative_tm8_ln007@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm8_ln008@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm8_ln001@@'
   - '@Loc=narrative_tm8_ln002@@'
@@ -38,10 +37,6 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule2_lv803@@'
   - tag: 0
     ruleDesc: '@Loc=rule3_lv803@@'
-  - tag: 1
-    ruleDesc: '@Loc=rule4_lv806@@'
-  - tag: 1
-    ruleDesc: '@Loc=rule5_lv806@@'
   isHard: 0
   allowRewind: 1
   initBoard:
