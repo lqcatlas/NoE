@@ -70,7 +70,7 @@ public class LM_007_Bonsai : LevelMasterBase
                 if (temp_cellData.status != -1)
                 {
                     bonsaiLeaf.gameObject.SetActive(true);
-                    bonsaiLeaf.transform.localScale = Vector3.one * 1.5f * Mathf.Pow(0.9f, 9-temp_cellData.value);
+                    bonsaiLeaf.transform.localScale = Vector3.one * 1.2f * Mathf.Pow(0.95f, 9-temp_cellData.value);
                 }
                 else
                 {

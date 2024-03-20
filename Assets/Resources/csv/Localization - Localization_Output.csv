@@ -291,15 +291,15 @@ UID,Key,EN,CN
 286,prompt_tm5,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 287,prompt_tm6,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 288,prompt_tm7,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-289,rule1_lv101,Play: +1,打出的格子 +1
+289,rule1_lv101,Play: +1,打出：+1
 290,rule1_lv201,Head - Cell Played +1,正面：+1
 291,rule1_lv204,Head - Cell Played +X,正面：+X
 292,rule1_lv401,Fish: +3,鱼：+3
 293,rule1_lv501,Crescent: +1,新月：+1
-294,rule1_lv601,Play: +1,打出的格子 +1
-295,rule1_lv605,Play: +1 on cross cells,打出及相邻的格子 +1
+294,rule1_lv601,Play: +1,打出：+1
+295,rule1_lv605,Play: +1 on cross cells,打出：十字区域+1
 296,rule1_lv701,,打出：移除格子内的数字
-297,rule2_lv103,Cell already with a Clock +1,已有时钟的格子 +1
+297,rule2_lv103,Cell already with a Clock +1,已有时钟的格子+1
 298,rule2_lv202,Tail - Cell Played -1,反面：-1
 299,rule2_lv205,Tail - Cell Played -X,反面：-X
 300,rule2_lv404,Rice: -3,米：-3
@@ -311,7 +311,7 @@ UID,Key,EN,CN
 306,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
 307,rule3_lv406,Rice+Fish: Sushi(=7),米+鱼： 寿司（=7）
 308,rule3_lv502,Full: +5,满月：+5
-309,rule3_lv601,  when adjacent to 2+ same numbers,  则点亮格子
+309,rule3_lv601,  when adjacent to 2+ same numbers,则点亮格子
 310,rule4_lv203,FLIP the coin after playing,打出后硬币翻面
 311,rule4_lv210,TOSS the coin after playing,打出后投掷硬币
 312,rule4_lv410,Fish+Rice: Onigiri(=2),鱼+米： 饭团（=2）
@@ -365,16 +365,16 @@ UID,Key,EN,CN
 360,prompt_tm8,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 361,narrative_tm8_ln001,,王冠的重量
 362,narrative_tm8_ln002,,欲戴其冠，
-363,narrative_tm8_ln003,,必承其重。
+363,narrative_tm8_ln003,,必承其<b>重</b>。
 364,narrative_tm8_ln004,,王冠高耸，
 365,narrative_tm8_ln005,,象征至高的权利，
 366,narrative_tm8_ln006,,佩戴者逐渐迷失初心，
-367,narrative_tm8_ln007,,直到它砰然落下。
+367,narrative_tm8_ln007,,直到它砰然<b>落下</b>。
 368,narrative_tm8_ln008,,毒药、阴谋、战乱，
-369,narrative_tm8_ln009,,权力经历着无数的考验。
+369,narrative_tm8_ln009,,地位经历着无数的考验。
 370,narrative_tm8_ln010,,权力不停地更迭，
 371,narrative_tm8_ln011,,王冠不断地易手。
-372,narrative_tm8_ln012,,在起伏中不断前进，
+372,narrative_tm8_ln012,,在起伏中前进，
 373,narrative_tm8_ln013,,光辉和荣耀成为史诗传颂。
 374,narrative_tm8_ln014,,
 375,narrative_tm8_ln015,,
@@ -388,14 +388,14 @@ UID,Key,EN,CN
 383,levelname_lv808,,008
 384,levelname_lv809,,009
 385,goal_lv801,,让2个格子为9
-386,goal_lv802,,让全部格子为9
-387,goal_lv803,,让全部格子为9
+386,goal_lv802,,让所有格子为9
+387,goal_lv803,,让所有格子为9
 388,goal_lv804,,让4个格子为9
 389,goal_lv805,,让6个格子为9
-390,goal_lv806,,有6个王冠在场
-391,goal_lv807,,有4个王冠在场
-392,goal_lv808,,有6个王冠在场
-393,goal_lv809,,夺取10次王冠
+390,goal_lv806,,同时有6个王冠在场
+391,goal_lv807,,4个王冠同时在场
+392,goal_lv808,,6个王冠同时在场
+393,goal_lv809,,夺取5次王冠
 394,rule1_lv801,,打出：+3
 395,rule1_lv803,,打出：+3，并加冕
 396,rule2_lv803,,加冕后比任意相邻领土小
@@ -429,6 +429,9 @@ UID,Key,EN,CN
 424,rule5_lv720,,平衡：各枝干总和相等
 425,levelname_lv810,,010
 426,levelname_lv811,,011
-427,goal_lv810,,让全部格子为6及以上
-428,goal_lv811,,有9个王冠在场
+427,goal_lv810,,夺取9次王冠
+428,goal_lv811,,让所有格子为6及以上
 429,ui_goal_current_crown_taken,,已夺取王冠：
+430,ui_goal_current_crown_present,,在场王冠：
+431,levelname_lv812,,012
+432,goal_lv812,,9个王冠同时在场

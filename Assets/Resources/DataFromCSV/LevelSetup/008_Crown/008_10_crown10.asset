@@ -16,11 +16,11 @@ MonoBehaviour:
   themeIndex: 8
   levelIndex: 10
   nextLevelIndex: 811
-  previousLevel: {fileID: 11400000, guid: d82eaa1327f0de245a7fd43382b058f8, type: 2}
-  nextLevel: {fileID: 11400000, guid: 0d30d279ad7429946a39af17206d9875, type: 2}
+  previousLevel: {fileID: 11400000, guid: 0fa66f37f47963f4b9818e1b00a03ac2, type: 2}
+  nextLevel: {fileID: 11400000, guid: ff3d0215cc6f9ee4494775b177be7823, type: 2}
   theme: '@Loc=themename_tm8@@'
   title: '@Loc=levelname_lv810@@'
-  newInitNarrative: '@Loc=narrative_tm8_ln013@@'
+  newInitNarrative: '@Loc=narrative_tm8_ln012@@'
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm8_ln001@@'
@@ -31,9 +31,9 @@ MonoBehaviour:
   - '@Loc=narrative_tm8_ln006@@'
   - '@Loc=narrative_tm8_ln007@@'
   - '@Loc=narrative_tm8_ln008@@'
+  - '@Loc=narrative_tm8_ln009@@'
   - '@Loc=narrative_tm8_ln010@@'
   - '@Loc=narrative_tm8_ln011@@'
-  - '@Loc=narrative_tm8_ln012@@'
   goal: '@Loc=goal_lv810@@'
   ruleset:
   - tag: 0
@@ -52,32 +52,32 @@ MonoBehaviour:
     boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 1
-      status: 0
+      value: 5
+      status: 1
     - coord: {x: 1, y: 0}
-      value: 2
+      value: 5
       status: 0
     - coord: {x: 2, y: 0}
-      value: 3
-      status: 0
+      value: 7
+      status: 1
     - coord: {x: 0, y: 1}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 1, y: 1}
-      value: 4
+      value: 5
       status: 0
     - coord: {x: 2, y: 1}
-      value: 6
+      value: 7
       status: 0
     - coord: {x: 0, y: 2}
-      value: 2
-      status: 0
+      value: 5
+      status: 1
     - coord: {x: 1, y: 2}
-      value: 1
-      status: 0
+      value: 7
+      status: 1
     - coord: {x: 2, y: 2}
-      value: 4
-      status: 0
-    toolCount: 20
+      value: 7
+      status: 1
+    toolCount: 6
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

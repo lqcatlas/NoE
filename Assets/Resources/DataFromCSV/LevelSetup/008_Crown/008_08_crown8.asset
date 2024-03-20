@@ -17,12 +17,11 @@ MonoBehaviour:
   levelIndex: 8
   nextLevelIndex: 809
   previousLevel: {fileID: 11400000, guid: c271185a0087eae4b99bac3e950af196, type: 2}
-  nextLevel: {fileID: 11400000, guid: d82eaa1327f0de245a7fd43382b058f8, type: 2}
+  nextLevel: {fileID: 11400000, guid: 0fa66f37f47963f4b9818e1b00a03ac2, type: 2}
   theme: '@Loc=themename_tm8@@'
   title: '@Loc=levelname_lv808@@'
-  newInitNarrative: '@Loc=narrative_tm8_ln010@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm8_ln011@@'
+  newInitNarrative: '@Loc=narrative_tm8_ln009@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm8_ln001@@'
   - '@Loc=narrative_tm8_ln002@@'

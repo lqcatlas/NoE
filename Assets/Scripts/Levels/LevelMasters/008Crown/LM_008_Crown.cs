@@ -228,9 +228,15 @@ public class LM_008_Crown : LevelMasterBase
             }
         }
         //add crown taken count
-        if (levelData.levelIndex == 9)
+        if (levelData.levelIndex == 9 || levelData.levelIndex == 10)
         {
             hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_crown_taken@@"), GetTotalCrownTaken()));
+            hub.goalMaster.lines[1].gameObject.SetActive(true);
+            LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+        }
+        if (levelData.levelIndex == 6 || levelData.levelIndex == 7 || levelData.levelIndex == 8 || levelData.levelIndex == 12)
+        {
+            hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_crown_present@@"), BoardCalculation.CountStatusX(levelData.curBoard, (int)CrownStatus.on)));
             hub.goalMaster.lines[1].gameObject.SetActive(true);
             LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
         }
@@ -272,13 +278,17 @@ public class LM_008_Crown : LevelMasterBase
         }
         else if (levelData.levelIndex == 9)
         {
-            return GetTotalCrownTaken() >= 9;
+            return GetTotalCrownTaken() >= 5;
         }
         else if (levelData.levelIndex == 10)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 6, 9);
+            return GetTotalCrownTaken() >= 9;
         }
         else if (levelData.levelIndex == 11)
+        {
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 6, 9);
+        }
+        else if (levelData.levelIndex == 12)
         {
             return BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 9);
         }

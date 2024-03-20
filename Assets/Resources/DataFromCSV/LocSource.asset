@@ -939,7 +939,7 @@ MonoBehaviour:
       film. --ar 16:9 --v 6.0
   - key: rule1_lv101
     EN: 'Play: +1'
-    CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
+    CN: "\u6253\u51FA\uFF1A+1"
   - key: rule1_lv201
     EN: Head - Cell Played +1
     CN: "\u6B63\u9762\uFF1A+1"
@@ -954,16 +954,16 @@ MonoBehaviour:
     CN: "\u65B0\u6708\uFF1A+1"
   - key: rule1_lv601
     EN: 'Play: +1'
-    CN: "\u6253\u51FA\u7684\u683C\u5B50 +1"
+    CN: "\u6253\u51FA\uFF1A+1"
   - key: rule1_lv605
     EN: 'Play: +1 on cross cells'
-    CN: "\u6253\u51FA\u53CA\u76F8\u90BB\u7684\u683C\u5B50 +1"
+    CN: "\u6253\u51FA\uFF1A\u5341\u5B57\u533A\u57DF+1"
   - key: rule1_lv701
     EN: 
     CN: "\u6253\u51FA\uFF1A\u79FB\u9664\u683C\u5B50\u5185\u7684\u6570\u5B57"
   - key: rule2_lv103
     EN: Cell already with a Clock +1
-    CN: "\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50 +1"
+    CN: "\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50+1"
   - key: rule2_lv202
     EN: Tail - Cell Played -1
     CN: "\u53CD\u9762\uFF1A-1"
@@ -999,7 +999,7 @@ MonoBehaviour:
     CN: "\u6EE1\u6708\uFF1A+5"
   - key: rule3_lv601
     EN: '  when adjacent to 2+ same numbers'
-    CN: "  \u5219\u70B9\u4EAE\u683C\u5B50"
+    CN: "\u5219\u70B9\u4EAE\u683C\u5B50"
   - key: rule4_lv203
     EN: FLIP the coin after playing
     CN: "\u6253\u51FA\u540E\u786C\u5E01\u7FFB\u9762"
@@ -1164,7 +1164,7 @@ MonoBehaviour:
     CN: "\u6B32\u6234\u5176\u51A0\uFF0C"
   - key: narrative_tm8_ln003
     EN: 
-    CN: "\u5FC5\u627F\u5176\u91CD\u3002"
+    CN: "\u5FC5\u627F\u5176<b>\u91CD</b>\u3002"
   - key: narrative_tm8_ln004
     EN: 
     CN: "\u738B\u51A0\u9AD8\u8038\uFF0C"
@@ -1176,13 +1176,13 @@ MonoBehaviour:
     CN: "\u4F69\u6234\u8005\u9010\u6E10\u8FF7\u5931\u521D\u5FC3\uFF0C"
   - key: narrative_tm8_ln007
     EN: 
-    CN: "\u76F4\u5230\u5B83\u7830\u7136\u843D\u4E0B\u3002"
+    CN: "\u76F4\u5230\u5B83\u7830\u7136<b>\u843D\u4E0B</b>\u3002"
   - key: narrative_tm8_ln008
     EN: 
     CN: "\u6BD2\u836F\u3001\u9634\u8C0B\u3001\u6218\u4E71\uFF0C"
   - key: narrative_tm8_ln009
     EN: 
-    CN: "\u6743\u529B\u7ECF\u5386\u7740\u65E0\u6570\u7684\u8003\u9A8C\u3002"
+    CN: "\u5730\u4F4D\u7ECF\u5386\u7740\u65E0\u6570\u7684\u8003\u9A8C\u3002"
   - key: narrative_tm8_ln010
     EN: 
     CN: "\u6743\u529B\u4E0D\u505C\u5730\u66F4\u8FED\uFF0C"
@@ -1191,7 +1191,7 @@ MonoBehaviour:
     CN: "\u738B\u51A0\u4E0D\u65AD\u5730\u6613\u624B\u3002"
   - key: narrative_tm8_ln012
     EN: 
-    CN: "\u5728\u8D77\u4F0F\u4E2D\u4E0D\u65AD\u524D\u8FDB\uFF0C"
+    CN: "\u5728\u8D77\u4F0F\u4E2D\u524D\u8FDB\uFF0C"
   - key: narrative_tm8_ln013
     EN: 
     CN: "\u5149\u8F89\u548C\u8363\u8000\u6210\u4E3A\u53F2\u8BD7\u4F20\u9882\u3002"
@@ -1233,10 +1233,10 @@ MonoBehaviour:
     CN: "\u8BA92\u4E2A\u683C\u5B50\u4E3A9"
   - key: goal_lv802
     EN: 
-    CN: "\u8BA9\u5168\u90E8\u683C\u5B50\u4E3A9"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A9"
   - key: goal_lv803
     EN: 
-    CN: "\u8BA9\u5168\u90E8\u683C\u5B50\u4E3A9"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A9"
   - key: goal_lv804
     EN: 
     CN: "\u8BA94\u4E2A\u683C\u5B50\u4E3A9"
@@ -1245,16 +1245,16 @@ MonoBehaviour:
     CN: "\u8BA96\u4E2A\u683C\u5B50\u4E3A9"
   - key: goal_lv806
     EN: 
-    CN: "\u67096\u4E2A\u738B\u51A0\u5728\u573A"
+    CN: "\u540C\u65F6\u67096\u4E2A\u738B\u51A0\u5728\u573A"
   - key: goal_lv807
     EN: 
-    CN: "\u67094\u4E2A\u738B\u51A0\u5728\u573A"
+    CN: "4\u4E2A\u738B\u51A0\u540C\u65F6\u5728\u573A"
   - key: goal_lv808
     EN: 
-    CN: "\u67096\u4E2A\u738B\u51A0\u5728\u573A"
+    CN: "6\u4E2A\u738B\u51A0\u540C\u65F6\u5728\u573A"
   - key: goal_lv809
     EN: 
-    CN: "\u593A\u53D610\u6B21\u738B\u51A0"
+    CN: "\u593A\u53D65\u6B21\u738B\u51A0"
   - key: rule1_lv801
     EN: 
     CN: "\u6253\u51FA\uFF1A+3"
@@ -1357,10 +1357,19 @@ MonoBehaviour:
     CN: 11
   - key: goal_lv810
     EN: 
-    CN: "\u8BA9\u5168\u90E8\u683C\u5B50\u4E3A6\u53CA\u4EE5\u4E0A"
+    CN: "\u593A\u53D69\u6B21\u738B\u51A0"
   - key: goal_lv811
     EN: 
-    CN: "\u67099\u4E2A\u738B\u51A0\u5728\u573A"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A6\u53CA\u4EE5\u4E0A"
   - key: ui_goal_current_crown_taken
     EN: 
     CN: "\u5DF2\u593A\u53D6\u738B\u51A0\uFF1A"
+  - key: ui_goal_current_crown_present
+    EN: 
+    CN: "\u5728\u573A\u738B\u51A0\uFF1A"
+  - key: levelname_lv812
+    EN: 
+    CN: 12
+  - key: goal_lv812
+    EN: 
+    CN: "9\u4E2A\u738B\u51A0\u540C\u65F6\u5728\u573A"
