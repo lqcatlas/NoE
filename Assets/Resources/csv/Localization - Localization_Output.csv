@@ -200,7 +200,7 @@ UID,Key,EN,CN
 195,manifesto_tm4,,寿司是进入工程正规流程之后的第一个正式主题。它表达的要点是日本料理中运用最简单食材，通过不同的烹调与组合的变化产生出口感与味道上丰富可能。在实际的谜题中展现为通过两种食材不同的次序，就可以产生迥然相异的数字变化来解决谜题。
 196,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期是月相交替变化，容易掌握。引入月食规则的时候则使用了一些具有迷惑性的手段，从动画效果和文字上都暗示着它的无序。然后在通过一系列的挑战来引导大家对其内在规律的探索。<br><br>看到这段文字的你真的已经完全掌握了月食吗？就用后续的钻石挑战来确认一下吧。
 197,manifesto_tm6,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
-198,manifesto_tm7,,我喜欢盆景的原因就在于文字最后所提到的“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。<br><br>用文档或幻灯片做游戏，就和对着一幅画裁剪盆景是一样的。
+198,manifesto_tm7,,我喜欢盆景的原因就在于文字最后所提到的“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。
 199,narrative_tm1_ln001,,溜走的时间
 200,narrative_tm1_ln002,,滴答滴答滴答，
 201,narrative_tm1_ln003,,时钟不知疲倦地前进。
@@ -361,7 +361,7 @@ UID,Key,EN,CN
 356,unlocked_tm8,,<b>王冠</b>越重越好。
 357,hint_tm8,,它用重量象征权力。
 358,date_tm8,,2024/03/09
-359,manifesto_tm8,,王冠的故事有待书写。
+359,manifesto_tm8,,这个主题想要表达的是王冠所拥有的两个主要概念。王冠承载着责任，因此不是可以轻易佩戴的。权力在强大的同时也带来了相应的不稳定性，因此王冠会不可避免的不断更迭。最终又收束到了一个小心思：不论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步着的。不知道这个彩蛋有没有被你感受到呢？
 360,prompt_tm8,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 361,narrative_tm8_ln001,,王冠的重量
 362,narrative_tm8_ln002,,欲戴其冠，
@@ -435,3 +435,28 @@ UID,Key,EN,CN
 430,ui_goal_current_crown_present,,在场王冠：
 431,levelname_lv812,,012
 432,goal_lv812,,9个王冠同时在场
+433,themename_tm9,,烧瓶
+434,locked_tm9,,
+435,unlocked_tm9,,
+436,hint_tm9,,
+437,date_tm9,,
+438,manifesto_tm9,,
+439,prompt_tm9,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+440,narrative_tm9_ln001,,轻拿轻放
+441,narrative_tm9_ln002,,
+442,narrative_tm9_ln003,,
+443,narrative_tm9_ln004,,
+444,narrative_tm9_ln005,,
+445,narrative_tm9_ln006,,
+446,narrative_tm9_ln007,,
+447,narrative_tm9_ln008,,
+448,narrative_tm9_ln009,,
+449,narrative_tm9_ln010,,
+450,narrative_tm9_ln011,,
+451,narrative_tm9_ln012,,
+452,narrative_tm9_ln013,,
+453,narrative_tm9_ln014,,
+454,narrative_tm9_ln015,,
+455,levelname_lv901,,001
+456,goal_lv901,,测试
+457,rule1_lv901,,按住：+1

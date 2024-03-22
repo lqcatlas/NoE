@@ -9,7 +9,8 @@ public class CustomizedInputReceiver : MonoBehaviour
     public UnityEvent mouseDownFuncs;
     public UnityEvent mouseEnterFuncs;
     public UnityEvent mouseExitFuncs;
-    
+    public UnityEvent mouseHoldFuncs;
+
 
     public void MouseUp()
     {
@@ -26,5 +27,9 @@ public class CustomizedInputReceiver : MonoBehaviour
     public void MouseExit()
     {
         mouseExitFuncs.Invoke();
+    }
+    public void MouseHold()
+    {
+        mouseHoldFuncs.Invoke();
     }
 }

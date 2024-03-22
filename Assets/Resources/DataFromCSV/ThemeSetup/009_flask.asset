@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88475076ca3eee4e87cd8290fc59a71, type: 3}
+  m_Name: 009_flask
+  m_EditorClassIdentifier: 
+  themeUID: 9
+  unlockPrereq: 0
+  unlockCost: 8
+  themeTitle: '@Loc=themename_tm9@@'
+  lockedLine: '@Loc=locked_tm9@@'
+  unlockedLine: '@Loc=unlocked_tm9@@'
+  hint: '@Loc=hint_tm9@@'
+  date: '@Loc=date_tm9@@'
+  manifesto: '@Loc=manifesto_tm9@@'
+  prompt: '@Loc=prompt_tm9@@'
+  narratives:
+  - '@Loc=narrative_tm9_ln001@@'
+  - '@Loc=narrative_tm9_ln002@@'
+  - '@Loc=narrative_tm9_ln003@@'
+  - '@Loc=narrative_tm9_ln004@@'
+  - '@Loc=narrative_tm9_ln005@@'
+  - '@Loc=narrative_tm9_ln006@@'
+  - '@Loc=narrative_tm9_ln007@@'
+  - '@Loc=narrative_tm9_ln008@@'
+  - '@Loc=narrative_tm9_ln009@@'
+  - '@Loc=narrative_tm9_ln010@@'
+  - '@Loc=narrative_tm9_ln011@@'
+  - '@Loc=narrative_tm9_ln012@@'
+  - '@Loc=narrative_tm9_ln013@@'
+  - '@Loc=narrative_tm9_ln014@@'
+  - '@Loc=narrative_tm9_ln015@@'
+  levels:
+  - {fileID: 11400000, guid: 1ed59b534802b25438ddd06c00982b83, type: 2}
+  TotalStars: 1
+  TotalGems: 0

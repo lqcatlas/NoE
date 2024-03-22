@@ -159,6 +159,21 @@ public class CellMaster : MonoBehaviour
             Debug.LogError(string.Format("cell({0}) clicked with no level master owner", gameObject.name));
         }
     }
+    public void MouseHold()
+    {
+        if (levelMaster != null)
+        {
+            //only play on special themes: 9-flask
+            if(levelMaster.levelData.themeIndex == 9)
+            {
+                levelMaster.Play(coord);
+            }
+        }
+        else
+        {
+            Debug.LogError(string.Format("cell({0}) holding with no level master owner", gameObject.name));
+        }
+    }
     public void NumberShift(int endValue, float shuffleDuration = 0)
     {
         Sequence seq = DOTween.Sequence();

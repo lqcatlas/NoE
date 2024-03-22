@@ -164,7 +164,8 @@ public class ThemePhotoGroup : MonoBehaviour
     }
     public void SwingByForce(float swingDegree)
     {
-        photoGroup.DORotate(new Vector3(0f, 0f, swingDegree), 6f).SetRelative(true).SetEase(Ease.InOutFlash, 8, 1);
+        float rng_timerange = Random.Range(0.8f, 1.2f);
+        photoGroup.DORotate(new Vector3(0f, 0f, swingDegree), 4f * rng_timerange).SetRelative(true).SetEase(Ease.InOutFlash, 4, 1);
     }
     public void PhotoEnterSelection()
     {

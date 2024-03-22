@@ -43,6 +43,10 @@ public class CustomizedInputSystem : MonoBehaviour
         {
             MousePrimaryBtnUp(CurrentPointerObject);
         }
+        if (Input.GetMouseButton(0))
+        {
+            MousePrimaryBtnHold(CurrentPointerObject);
+        }
     }
     public RaycastHit2D[] RetrieveAllTriggers()
     {
@@ -124,6 +128,17 @@ public class CustomizedInputSystem : MonoBehaviour
             if (receiver)
             {
                 receiver.MouseDown();
+            }
+        }
+    }
+    void MousePrimaryBtnHold(GameObject _obj)
+    {
+        if (_obj)
+        {
+            CustomizedInputReceiver receiver = _obj.GetComponent<CustomizedInputReceiver>();
+            if (receiver)
+            {
+                receiver.MouseHold();
             }
         }
     }

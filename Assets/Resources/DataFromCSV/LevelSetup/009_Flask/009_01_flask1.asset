@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
+  m_Name: 009_01_flask1
+  m_EditorClassIdentifier: 
+  levelUID: 901
+  themeIndex: 9
+  levelIndex: 1
+  nextLevelIndex: 0
+  previousLevel: {fileID: 0}
+  nextLevel: {fileID: 11400000, guid: e392a1f19198f9e4a9bc2bbab2c3ccc2, type: 2}
+  theme: '@Loc=themename_tm9@@'
+  title: '@Loc=levelname_lv901@@'
+  newInitNarrative: '@Loc=narrative_tm9_ln001@@'
+  newPlayNarratives: []
+  oldNarratives: []
+  goal: '@Loc=goal_lv901@@'
+  ruleset:
+  - tag: 1
+    ruleDesc: '@Loc=rule1_lv901@@'
+  isHard: 0
+  allowRewind: 1
+  initBoard:
+    boardSize: {x: 2, y: 2}
+    cells:
+    - coord: {x: 0, y: 0}
+      value: 5
+      status: 0
+    - coord: {x: 1, y: 0}
+      value: 6
+      status: 0
+    - coord: {x: 0, y: 1}
+      value: 6
+      status: 0
+    - coord: {x: 1, y: 1}
+      value: 5
+      status: 0
+    toolCount: 2000
+    toolStatus: 0
+    curPlayCoord: {x: -1, y: -1}
