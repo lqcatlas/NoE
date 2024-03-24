@@ -11,9 +11,9 @@ public class CellMaster : MonoBehaviour
     static float MaskFadeAlpha = 0.5f;
     static float StandardizedCellSize = 2f;
     //number sprite params
-    static List<float> scalarByDigits = new List<float> { 1f, 1f, 0.9f, 0.7f };
-    static int maxValueSupported = 1000;
-    static int maxDigitsSupported = 3;
+    static List<float> scalarByDigits = new List<float> { 1f, 1f, 0.9f, 0.7f, 0.4f };
+    static int maxValueSupported = 10000;
+    static int maxDigitsSupported = 4;
     [Header("Data")]
     public Vector2Int coord;
     public LevelMasterBase levelMaster;
@@ -185,23 +185,33 @@ public class CellMaster : MonoBehaviour
             Debug.LogError(string.Format("cell({0}) mouse up with no level master owner", gameObject.name));
         }
     }
-    public void MouseHold()
+    public void MouseExit()
     {
+        //Debug.Log(string.Format("cell coord {0},{1} clicked.", coord.x, coord.y));
         if (levelMaster != null)
         {
-            //only play on special themes: 9-flask
-            if(levelMaster.levelData.themeIndex == 9)
+            if (levelMaster.levelData.themeIndex == 9)
             {
-                //levelMaster.Play(coord);
-            }
-            else
-            {
-                //do nothing for now
+                levelMaster.AlternativeMouseUp_Theme(coord);
             }
         }
         else
         {
-            Debug.LogError(string.Format("cell({0}) mouse holding with no level master owner", gameObject.name));
+            Debug.LogError(string.Format("cell({0}) mouse up with no level master owner", gameObject.name));
+        }
+    }
+    public void MouseHold()
+    {
+        if (levelMaster != null)
+        {
+            if (levelMaster.levelData.themeIndex == 9)
+            {
+                levelMaster.AlternativeMouseHold_Theme(coord);
+            }
+        }
+        else
+        {
+            Debug.LogError(string.Format("cell({0}) mouse up with no level master owner", gameObject.name));
         }
     }
     public void NumberShift(int endValue, float shuffleDuration = 0)

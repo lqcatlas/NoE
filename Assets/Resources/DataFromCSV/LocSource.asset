@@ -1378,19 +1378,19 @@ MonoBehaviour:
     CN: "\u70E7\u74F6"
   - key: locked_tm9
     EN: 
-    CN: 
+    CN: "\u8272\u5F69\u6591\u6593\u7684 \u2588 \u2588 \u3002"
   - key: unlocked_tm9
     EN: 
-    CN: 
+    CN: "\u8272\u5F69\u6591\u6593\u7684<b>\u70E7\u74F6</b>\u3002"
   - key: hint_tm9
     EN: 
-    CN: 
+    CN: "\u5B83\u88C5\u7740\u8272\u5F69\u6591\u6593\u7684\u7269\u8D28\u3002"
   - key: date_tm9
     EN: 
-    CN: 
+    CN: 2024/03/24
   - key: manifesto_tm9
     EN: 
-    CN: 
+    CN: "\u5FEB\u4E50\u7684\u70E7\u74F6"
   - key: prompt_tm9
     EN: 
     CN: Photo is created by Midjourney using the following prompt:<br>A realistic
@@ -1447,7 +1447,79 @@ MonoBehaviour:
     CN: 1
   - key: goal_lv901
     EN: 
-    CN: "\u6D4B\u8BD5"
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A10"
   - key: rule1_lv901
     EN: 
-    CN: "\u6309\u4F4F\uFF1A+1"
+    CN: "\u6253\u51FA\uFF1A+1"
+  - key: levelname_lv902
+    EN: 
+    CN: 2
+  - key: levelname_lv903
+    EN: 
+    CN: 3
+  - key: levelname_lv904
+    EN: 
+    CN: 4
+  - key: levelname_lv905
+    EN: 
+    CN: 5
+  - key: levelname_lv906
+    EN: 
+    CN: 6
+  - key: levelname_lv907
+    EN: 
+    CN: 7
+  - key: levelname_lv908
+    EN: 
+    CN: 8
+  - key: levelname_lv909
+    EN: 
+    CN: 9
+  - key: levelname_lv910
+    EN: 
+    CN: 10
+  - key: goal_lv902
+    EN: 
+    CN: "\u8BA9\u683C\u5B50\u4E3A1000\u53CA\u4EE5\u4E0A"
+  - key: goal_lv903
+    EN: 
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A800\u53CA\u4EE5\u4E0A"
+  - key: goal_lv904
+    EN: 
+    CN: "\u8BA91\u4E2A\u683C\u5B50\u4E3A500"
+  - key: goal_lv905
+    EN: 
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A700\u53CA\u4EE5\u4E0A"
+  - key: goal_lv906
+    EN: 
+    CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A900\u53CA\u4EE5\u4E0A"
+  - key: goal_lv907
+    EN: 
+    CN: "0~9\u6570\u5B57\u90FD\u51FA\u73B0\u8FC7\u81F3\u5C111\u6B21"
+  - key: goal_lv908
+    EN: 
+    CN: "\u53EA\u67093\u4E2A\u4E0D\u540C\u6570\u5B57"
+  - key: goal_lv909
+    EN: 
+    CN: "\u7528\u5B8C\u5168\u90E8\u8BD5\u5242"
+  - key: goal_lv910
+    EN: 
+    CN: "\u7528\u5B8C\u5168\u90E8\u8BD5\u5242"
+  - key: rule1_lv902
+    EN: 
+    CN: "\u6309\u4F4F\uFF1A\u503E\u5012\uFF08\u6570\u5B57\u52A0\u901F\u589E\u52A0\uFF09"
+  - key: rule1_lv903
+    EN: 
+    CN: "\u6309\u4F4F\uFF1A\u503E\u5012\uFF0C\u907F\u514D\u7206\u70B8"
+  - key: rule2_lv903
+    EN: 
+    CN: "\u7206\u70B8\uFF1A\u6570\u5B57\u8D85\u8FC7999"
+  - key: rule3_lv904
+    EN: 
+    CN: "\u7206\u70B8\uFF1A\u6570\u5B57\u5404\u4F4D\u603B\u548C\u5927\u4E8E18"
+  - key: rule4_lv905
+    EN: 
+    CN: "\u7206\u70B8\uFF1A\u767E\u4F4D\u6570\u4E3A8"
+  - key: rule5_lv906
+    EN: 
+    CN: "\u7206\u70B8\uFF1A\u6570\u5B57\u4E2D\u6709\u4E24\u4F4D\u76F8\u540C"

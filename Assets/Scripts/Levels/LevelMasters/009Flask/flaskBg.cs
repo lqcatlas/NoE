@@ -5,4 +5,5 @@ using UnityEngine;
 public class flaskBg : MonoBehaviour
 {
     public Transform liquidPct;
+    public GameObject dangerHint;
 }

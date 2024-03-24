@@ -60,12 +60,12 @@ MonoBehaviour:
     ScriptName: LM_008_Crown
     ThemeSpecialHub: {fileID: 5242734479810822178, guid: 000387005ee48c84aa65132552da1eb4, type: 3}
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: 2bbbe2f7767f8fa489fa1f493aaea7c5, type: 3}
-    ThemeSprite: {fileID: 229841254, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
+    ThemeSprite: {fileID: 1320047159, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}
   - Theme: flask
     ThemeID: 9
     ScriptName: LM_009_Flask
     ThemeSpecialHub: {fileID: 5242734479810822178, guid: 1746c1ff0f19bde478416e2e4bc5d96e, type: 3}
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: da9011ed3ad4bf04792ae97499a362a9, type: 3}
-    ThemeSprite: {fileID: 229841254, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
+    ThemeSprite: {fileID: -1524441901, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}

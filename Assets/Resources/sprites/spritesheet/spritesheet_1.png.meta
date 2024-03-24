@@ -3254,7 +3254,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3262,6 +3262,48 @@ TextureImporter:
       bones: []
       spriteID: da71334d502d1ff4cb258c01ba6a41b0
       internalID: 503426635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask@v1
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6958edc4334ab649b6ac8c44f4b2dd3
+      internalID: -1524441901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flask@v2
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 640
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdbd214d792fe9479791c61af6f5f0c
+      internalID: -1769165631
       vertices: []
       indices: 
       edges: []
@@ -3340,6 +3382,7 @@ TextureImporter:
       coin_shape_20: -920651032
       coin_shape_11: -1872248968
       clocktime_tool_v11: 1014170568
+      flask@v2: -1769165631
       bulb_off@v2: 1976225001
       coin_shape_15: 1042714110
       onigiri@v1: -41299935
@@ -3376,6 +3419,7 @@ TextureImporter:
       window5_fill: 692586796
       sword@v1: 503426635
       window3_v1: -268414213
+      flask@v1: -1524441901
       currency_star_frame: -435409087
       crown@v2: 1621451177
       full_moon@v1: 15978782

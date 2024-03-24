@@ -16,14 +16,14 @@ MonoBehaviour:
   themeIndex: 0
   levelIndex: 1
   nextLevelIndex: 0
-  previousLevel: {fileID: 11400000, guid: 1ed59b534802b25438ddd06c00982b83, type: 2}
+  previousLevel: {fileID: 11400000, guid: 38265c499736e774ba300a5c64fcd026, type: 2}
   nextLevel: {fileID: 11400000}
   theme: '@Loc=themename_tm6@@'
   title: '@Loc=levelname_lv601@@'
   newInitNarrative: '@Loc=narrative_tm6_ln001@@'
   newPlayNarratives: []
   oldNarratives:
-  - '@Loc=narrative_tm9_ln001@@'
+  - '@Loc=narrative_tm9_ln012@@'
   goal: '@Loc=goal_lv601@@'
   ruleset:
   - tag: 1

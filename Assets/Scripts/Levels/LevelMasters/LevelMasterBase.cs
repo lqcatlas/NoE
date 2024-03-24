@@ -214,6 +214,10 @@ public class LevelMasterBase : MonoBehaviour
     {
 
     }
+    public virtual void AlternativeMouseHold_Theme(Vector2Int coord)
+    {
+
+    }
     public virtual void AlternativeMouseUp_Theme(Vector2Int coord)
     {
 
@@ -393,7 +397,10 @@ public class LevelMasterBase : MonoBehaviour
         //consume tool and save curboard to previous board/boards
         levelData.curBoard.curPlayCoord = coord;
         levelData.previousBoard = new DataBoard(levelData.curBoard);
-        levelData.previousBoards.Add(new DataBoard(levelData.curBoard));
+        if (levelData.allowRewind)
+        {
+            levelData.previousBoards.Add(new DataBoard(levelData.curBoard));
+        }
         levelData.curBoard.toolCount -= 1;
     }
     public virtual Vector2Int BoardRestore()

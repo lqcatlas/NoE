@@ -10,41 +10,51 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 009_01_flask1
+  m_Name: 009_04_flask4
   m_EditorClassIdentifier: 
-  levelUID: 901
+  levelUID: 904
   themeIndex: 9
-  levelIndex: 1
-  nextLevelIndex: 902
-  previousLevel: {fileID: 0}
-  nextLevel: {fileID: 11400000, guid: 925a4f24d6d332b47b604efbec744d16, type: 2}
+  levelIndex: 4
+  nextLevelIndex: 905
+  previousLevel: {fileID: 11400000, guid: dffb7786f6e98254d8b3d391a053f225, type: 2}
+  nextLevel: {fileID: 11400000, guid: 8fb9aa53693e786449fe9e0bf9dfc5c6, type: 2}
   theme: '@Loc=themename_tm9@@'
-  title: '@Loc=levelname_lv901@@'
-  newInitNarrative: '@Loc=narrative_tm9_ln001@@'
-  newPlayNarratives:
+  title: '@Loc=levelname_lv904@@'
+  newInitNarrative: '@Loc=narrative_tm9_ln008@@'
+  newPlayNarratives: []
+  oldNarratives:
+  - '@Loc=narrative_tm9_ln001@@'
   - '@Loc=narrative_tm9_ln002@@'
-  oldNarratives: []
-  goal: '@Loc=goal_lv901@@'
+  - '@Loc=narrative_tm9_ln003@@'
+  - '@Loc=narrative_tm9_ln004@@'
+  - '@Loc=narrative_tm9_ln005@@'
+  - '@Loc=narrative_tm9_ln006@@'
+  - '@Loc=narrative_tm9_ln007@@'
+  goal: '@Loc=goal_lv904@@'
   ruleset:
+  - tag: 0
+    ruleDesc: '@Loc=rule1_lv903@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule2_lv903@@'
   - tag: 1
-    ruleDesc: '@Loc=rule1_lv901@@'
+    ruleDesc: '@Loc=rule3_lv904@@'
   isHard: 0
   allowRewind: 0
   initBoard:
     boardSize: {x: 2, y: 2}
     cells:
     - coord: {x: 0, y: 0}
-      value: 3
+      value: 0
       status: 0
     - coord: {x: 1, y: 0}
       value: 0
       status: 0
     - coord: {x: 0, y: 1}
-      value: 1
+      value: 0
       status: 0
     - coord: {x: 1, y: 1}
-      value: 2
+      value: 0
       status: 0
-    toolCount: 40
+    toolCount: 5000
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

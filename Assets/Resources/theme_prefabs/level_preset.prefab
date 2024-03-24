@@ -1287,6 +1287,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  mouseHoldFuncs:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2214955366000870403
 GameObject:
   m_ObjectHideFlags: 0
@@ -2058,6 +2061,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  mouseHoldFuncs:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &710422647352802765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3567,6 +3573,9 @@ MonoBehaviour:
   mouseExitFuncs:
     m_PersistentCalls:
       m_Calls: []
+  mouseHoldFuncs:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &8036404590494249319
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4019,6 +4028,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  mouseHoldFuncs:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6589255795578406549
 GameObject:
   m_ObjectHideFlags: 0
@@ -4576,6 +4588,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  mouseHoldFuncs:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &2897619120789427421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6615,8 +6630,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 6.82}
-  m_SizeDelta: {x: 7, y: 4}
+  m_AnchoredPosition: {x: 6.44, y: 6.82}
+  m_SizeDelta: {x: 10, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &9188252853521842658
 MeshRenderer:

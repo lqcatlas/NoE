@@ -1,10 +1,5 @@
-using Newtonsoft.Json;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Security.Cryptography;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class BoardCalculation
@@ -380,6 +375,25 @@ public class BoardCalculation
     }
     static public bool FlaskSpecialBoomCheck1(DataBoard board, int X)
     {
+        //it fails, if hundred is 8 
+        bool result = false;
+        int target = X;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            List<int> listOfDigits = GetDigitArray(board.cells[i].value);
+            if(listOfDigits.Count >= 3)
+            {
+                if (listOfDigits[listOfDigits.Count-3] == target)
+                {
+                    result = true;
+                    return result;
+                }
+            }
+        }
+        return result;
+    }
+    static public bool FlaskSpecialBoomCheck2(DataBoard board, int X)
+    {
         //it fails, if any cell has a digit sum more than or equal to X 
         bool result = false;
         int threshold = X;
@@ -394,12 +408,13 @@ public class BoardCalculation
             if(sum >= threshold)
             {
                 result = true;
+                //Debug.Log(string.Format("sumn of digits exceed threshold. {0}{1}", listOfDigits[0], listOfDigits[1]));
                 return result;
             }
         }
         return result;
     }
-    static public bool FlaskSpecialBoomCheck2(DataBoard board)
+    static public bool FlaskSpecialBoomCheck3(DataBoard board)
     {
         //it fails, if any cell has two digit that are equal to each other 
         bool result = false;
@@ -421,7 +436,7 @@ public class BoardCalculation
         }
         return result;
     }
-    static public bool FlaskSpecialBoomCheck3(DataBoard board)
+    static public bool FlaskSpecialBoomCheck4(DataBoard board)
     {
         //it fails, if any cell is PRIME 
         bool result = false;

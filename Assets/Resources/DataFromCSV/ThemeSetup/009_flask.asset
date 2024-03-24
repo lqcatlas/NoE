@@ -40,5 +40,14 @@ MonoBehaviour:
   - '@Loc=narrative_tm9_ln015@@'
   levels:
   - {fileID: 11400000, guid: 1ed59b534802b25438ddd06c00982b83, type: 2}
-  TotalStars: 1
-  TotalGems: 0
+  - {fileID: 11400000, guid: 925a4f24d6d332b47b604efbec744d16, type: 2}
+  - {fileID: 11400000, guid: dffb7786f6e98254d8b3d391a053f225, type: 2}
+  - {fileID: 11400000, guid: 4b53945d63cfe5740a8d4f8a857babba, type: 2}
+  - {fileID: 11400000, guid: 8fb9aa53693e786449fe9e0bf9dfc5c6, type: 2}
+  - {fileID: 11400000, guid: 0b620bf4cd1cd1949b80a3a0ab592c97, type: 2}
+  - {fileID: 11400000, guid: 89d0145f16afc964094ade7e87e3bd33, type: 2}
+  - {fileID: 11400000, guid: 8f9b6a2ffb31543498af40a1f2a37e5f, type: 2}
+  - {fileID: 11400000, guid: 7522acf9094de0f4eaf1297c50c3dbc4, type: 2}
+  - {fileID: 11400000, guid: 38265c499736e774ba300a5c64fcd026, type: 2}
+  TotalStars: 9
+  TotalGems: 1
