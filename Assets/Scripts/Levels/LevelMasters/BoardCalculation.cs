@@ -1,7 +1,9 @@
 using Newtonsoft.Json;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -375,5 +377,87 @@ public class BoardCalculation
             }
         }
         return allEven;
+    }
+    static public bool FlaskSpecialBoomCheck1(DataBoard board, int X)
+    {
+        //it fails, if any cell has a digit sum more than or equal to X 
+        bool result = false;
+        int threshold = X;
+        for(int i = 0; i < board.cells.Count; i++)
+        {
+            List<int> listOfDigits = GetDigitArray(board.cells[i].value);
+            int sum = 0;
+            for(int j = 0; j < listOfDigits.Count; j++)
+            {
+                sum += listOfDigits[j];
+            }
+            if(sum >= threshold)
+            {
+                result = true;
+                return result;
+            }
+        }
+        return result;
+    }
+    static public bool FlaskSpecialBoomCheck2(DataBoard board)
+    {
+        //it fails, if any cell has two digit that are equal to each other 
+        bool result = false;
+        //int threshold = X;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            List<int> listOfDigits = GetDigitArray(board.cells[i].value);
+            for (int j = 0; j < listOfDigits.Count; j++)
+            {
+                for (int k = j + 1; k < listOfDigits.Count; k++)
+                {
+                    if (listOfDigits[j] == listOfDigits[k])
+                    {
+                        result = true;
+                        return result;
+                    }
+                }
+            }
+        }
+        return result;
+    }
+    static public bool FlaskSpecialBoomCheck3(DataBoard board)
+    {
+        //it fails, if any cell is PRIME 
+        bool result = false;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            if (IsPrime(board.cells[i].value))
+            {
+                result = true;
+                return result;
+            }
+        }
+        return result;
+    }
+    static List<int> GetDigitArray(int num)
+    {
+        List<int> listOfDigits = new List<int>();
+        while (num > 0)
+        {
+            listOfDigits.Add(num % 10);
+            num = num / 10;
+        }
+        listOfDigits.Reverse();
+        return listOfDigits;
+    }
+    static public bool IsPrime(int number)
+    {
+        if (number <= 1) return false;
+        if (number == 2) return true;
+        if (number % 2 == 0) return false;
+
+        var boundary = (int)Math.Floor(Math.Sqrt(number));
+
+        for (int i = 3; i <= boundary; i += 2)
+            if (number % i == 0)
+                return false;
+
+        return true;
     }
 }

@@ -809,6 +809,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ui_cell_frame_bg
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 790
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b0b3d9a333d0bd409ad11d624155c9b
+      internalID: 53423286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -821,6 +842,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       ui_split_sign: -742677806
+      ui_cell_frame_bg: 53423286
       number_5@v1: -280818320
       number_2@v2: 1504684770
       number_4@v2: 1195695166

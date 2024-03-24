@@ -50,6 +50,9 @@ MonoBehaviour:
     toolStatus:
     - statusName: 
       playInfograph: {fileID: 1335975241, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+  bgTemplate: {fileID: 6622050851849194190, guid: d9e74eb5ec3964d418c54cceefcd5b36, type: 3}
+  cellBgHolder: {fileID: 4068668159233435932}
+  explodeAnim: {fileID: 5663536303524323934, guid: 8976fac67a52c9b4ea5687ce786af763, type: 3}
 --- !u!1 &8390322059011748740
 GameObject:
   m_ObjectHideFlags: 0

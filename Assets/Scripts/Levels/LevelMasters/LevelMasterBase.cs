@@ -70,12 +70,13 @@ public class LevelMasterBase : MonoBehaviour
     //Key Actions assembling from atomic functions
     public void ObjectInit(GameObject _themeHub = null)
     {
+        ThemeAnimationDelayAfterInit = dConstants.VFX.CallbackAnimationDelayAfterInit;
+        ThemeAnimationDelayAfterPlay = dConstants.VFX.CallbackAnimationDelayAfterPlay;
+
         GetObjectReferences(_themeHub);
         themeLookupTable = Resources.Load<ThemeResourceLookup>("theme_prefabs/ThemeLookup");
         RegisterChildren();
         //GetDataReferences
-        ThemeAnimationDelayAfterInit = dConstants.VFX.CallbackAnimationDelayAfterInit;
-        ThemeAnimationDelayAfterPlay = dConstants.VFX.CallbackAnimationDelayAfterPlay;
         hub.miscMaster.InitThemeBackground();
     }
     public void LevelInit()
@@ -209,6 +210,14 @@ public class LevelMasterBase : MonoBehaviour
     }
     #region atomic methods
     //Atomic Funtions that can be overwritten by Theme-Specific LevlMaster Script
+    public virtual void AlternativeMouseDown_Theme(Vector2Int coord)
+    {
+
+    }
+    public virtual void AlternativeMouseUp_Theme(Vector2Int coord)
+    {
+
+    }
     public virtual void GetObjectReferences(GameObject _themeHub)
     {
         hub = GetComponent<LevelObjHub>();

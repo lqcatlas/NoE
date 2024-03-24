@@ -147,16 +147,42 @@ public class CellMaster : MonoBehaviour
     {
         levelMaster = _master;
     }
+    public void MouseDown()
+    {
+        //Debug.Log(string.Format("cell coord {0},{1} clicked.", coord.x, coord.y));
+        if (levelMaster != null)
+        {
+            if (levelMaster.levelData.themeIndex == 9)
+            {
+                levelMaster.AlternativeMouseDown_Theme(coord);
+            }
+            else
+            {
+                //do nothing for now
+            }
+        }
+        else
+        {
+            Debug.LogError(string.Format("cell({0}) mouse down with no level master owner", gameObject.name));
+        }
+    }
     public void MouseUp()
     {
         //Debug.Log(string.Format("cell coord {0},{1} clicked.", coord.x, coord.y));
         if(levelMaster != null)
         {
-            levelMaster.Play(coord);
+            if (levelMaster.levelData.themeIndex == 9)
+            {
+                levelMaster.AlternativeMouseUp_Theme(coord);
+            }
+            else
+            {
+                levelMaster.Play(coord);
+            }
         }
         else
         {
-            Debug.LogError(string.Format("cell({0}) clicked with no level master owner", gameObject.name));
+            Debug.LogError(string.Format("cell({0}) mouse up with no level master owner", gameObject.name));
         }
     }
     public void MouseHold()
@@ -166,17 +192,21 @@ public class CellMaster : MonoBehaviour
             //only play on special themes: 9-flask
             if(levelMaster.levelData.themeIndex == 9)
             {
-                levelMaster.Play(coord);
+                //levelMaster.Play(coord);
+            }
+            else
+            {
+                //do nothing for now
             }
         }
         else
         {
-            Debug.LogError(string.Format("cell({0}) holding with no level master owner", gameObject.name));
+            Debug.LogError(string.Format("cell({0}) mouse holding with no level master owner", gameObject.name));
         }
     }
     public void NumberShift(int endValue, float shuffleDuration = 0)
     {
-        Sequence seq = DOTween.Sequence();
+        /*Sequence seq = DOTween.Sequence();
         int ShiftTimes = Mathf.FloorToInt(shuffleDuration / dConstants.VFX.NumberShiftAnimInterval);
         for (int i = 0; i < ShiftTimes; i++)
         {
@@ -186,6 +216,8 @@ public class CellMaster : MonoBehaviour
         }
         seq.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
         seq.AppendCallback(() => DisplayNumber(endValue));
+        */
+        DisplayNumber(endValue);
     }
 
     public void ResetCellHover()
