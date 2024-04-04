@@ -443,17 +443,17 @@ UID,Key,EN,CN
 438,manifesto_tm9,,快乐的烧瓶
 439,prompt_tm9,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 440,narrative_tm9_ln001,,迷人的彩色
-441,narrative_tm9_ln002,,取10ml高锰酸钾与水混合。
-442,narrative_tm9_ln003,,...要求的量也太多了，
-443,narrative_tm9_ln004,,直接倒吧！
-444,narrative_tm9_ln005,,BOOM！
-445,narrative_tm9_ln006,,按章操作，
-446,narrative_tm9_ln007,,注意安全。
-447,narrative_tm9_ln008,,轻拿轻放，
-448,narrative_tm9_ln009,,禁止混用，
-449,narrative_tm9_ln010,,保持通风，
-450,narrative_tm9_ln011,,做完这次实验就可以回家了。
-451,narrative_tm9_ln012,,但也总会有意外。
+441,narrative_tm9_ln002,,取10ml高锰酸钾。
+442,narrative_tm9_ln003,,失去耐心，直接倒吧！
+443,narrative_tm9_ln004,,BOOM！
+444,narrative_tm9_ln005,,安全守则：
+445,narrative_tm9_ln006,,1. 避免超量
+446,narrative_tm9_ln007,,2. 轻拿轻放
+447,narrative_tm9_ln008,,3. 拒绝混用
+448,narrative_tm9_ln009,,4. 保持通风
+449,narrative_tm9_ln010,,做完这次实验就可以回家了。
+450,narrative_tm9_ln011,,
+451,narrative_tm9_ln012,,
 452,narrative_tm9_ln013,,
 453,narrative_tm9_ln014,,
 454,narrative_tm9_ln015,,
@@ -470,17 +470,18 @@ UID,Key,EN,CN
 465,levelname_lv909,,009
 466,levelname_lv910,,010
 467,goal_lv902,,让格子为1000及以上
-468,goal_lv903,,让所有格子为800及以上
-469,goal_lv904,,让1个格子为500
-470,goal_lv905,,让所有格子为700及以上
+468,goal_lv903,,让所有格子为900及以上
+469,goal_lv904,,让格子恰好为500
+470,goal_lv905,,让所有格子为800及以上
 471,goal_lv906,,让所有格子为900及以上
-472,goal_lv907,,0~9数字都出现过至少1次
-473,goal_lv908,,只有3个不同数字
+472,goal_lv907,,数字0~9在场上都同时出现
+473,goal_lv908,,场上各位数字只有奇数
 474,goal_lv909,,用完全部试剂
 475,goal_lv910,,用完全部试剂
 476,rule1_lv902,,按住：倾倒（数字加速增加）
-477,rule1_lv903,,按住：倾倒，避免爆炸
-478,rule2_lv903,,爆炸：数字超过999
-479,rule3_lv904,,爆炸：数字各位总和大于18
-480,rule4_lv905,,爆炸：百位数为8
-481,rule5_lv906,,爆炸：数字中有两位相同
+477,rule1_lv903,,按住：倾倒（需保证安全）
+478,rule2_lv903,,爆炸：超过999
+479,rule3_lv904,,爆炸：各位总和大于20
+480,rule4_lv905,,爆炸：百位数为偶数
+481,rule5_lv906,,爆炸：场上有三个以上相同数字
+482,ui_goal_missing_digits,Missing:,缺失数字：

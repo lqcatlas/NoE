@@ -20,7 +20,7 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 38265c499736e774ba300a5c64fcd026, type: 2}
   theme: '@Loc=themename_tm9@@'
   title: '@Loc=levelname_lv909@@'
-  newInitNarrative: '@Loc=narrative_tm9_ln011@@'
+  newInitNarrative: '@Loc=narrative_tm9_ln010@@'
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm9_ln001@@'
@@ -32,7 +32,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm9_ln007@@'
   - '@Loc=narrative_tm9_ln008@@'
   - '@Loc=narrative_tm9_ln009@@'
-  - '@Loc=narrative_tm9_ln010@@'
   goal: '@Loc=goal_lv909@@'
   ruleset:
   - tag: 0
@@ -48,35 +47,20 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 0
   initBoard:
-    boardSize: {x: 3, y: 3}
+    boardSize: {x: 4, y: 1}
     cells:
     - coord: {x: 0, y: 0}
-      value: 0
+      value: 130
       status: 0
     - coord: {x: 1, y: 0}
-      value: 0
+      value: 90
       status: 0
     - coord: {x: 2, y: 0}
-      value: 0
+      value: 50
       status: 0
-    - coord: {x: 0, y: 1}
-      value: 0
+    - coord: {x: 3, y: 0}
+      value: 42
       status: 0
-    - coord: {x: 1, y: 1}
-      value: 0
-      status: 0
-    - coord: {x: 2, y: 1}
-      value: 0
-      status: 0
-    - coord: {x: 0, y: 2}
-      value: 0
-      status: 0
-    - coord: {x: 1, y: 2}
-      value: 0
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 0
-      status: 0
-    toolCount: 5000
+    toolCount: 3400
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

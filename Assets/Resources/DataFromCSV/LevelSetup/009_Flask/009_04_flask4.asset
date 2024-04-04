@@ -20,7 +20,7 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 8fb9aa53693e786449fe9e0bf9dfc5c6, type: 2}
   theme: '@Loc=themename_tm9@@'
   title: '@Loc=levelname_lv904@@'
-  newInitNarrative: '@Loc=narrative_tm9_ln008@@'
+  newInitNarrative: '@Loc=narrative_tm9_ln007@@'
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm9_ln001@@'
@@ -29,7 +29,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm9_ln004@@'
   - '@Loc=narrative_tm9_ln005@@'
   - '@Loc=narrative_tm9_ln006@@'
-  - '@Loc=narrative_tm9_ln007@@'
   goal: '@Loc=goal_lv904@@'
   ruleset:
   - tag: 0
@@ -41,19 +40,10 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 0
   initBoard:
-    boardSize: {x: 2, y: 2}
+    boardSize: {x: 1, y: 1}
     cells:
     - coord: {x: 0, y: 0}
-      value: 0
-      status: 0
-    - coord: {x: 1, y: 0}
-      value: 0
-      status: 0
-    - coord: {x: 0, y: 1}
-      value: 0
-      status: 0
-    - coord: {x: 1, y: 1}
-      value: 0
+      value: 30
       status: 0
     toolCount: 5000
     toolStatus: 0

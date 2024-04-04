@@ -22,8 +22,7 @@ MonoBehaviour:
   title: '@Loc=levelname_lv601@@'
   newInitNarrative: '@Loc=narrative_tm6_ln001@@'
   newPlayNarratives: []
-  oldNarratives:
-  - '@Loc=narrative_tm9_ln012@@'
+  oldNarratives: []
   goal: '@Loc=goal_lv601@@'
   ruleset:
   - tag: 1

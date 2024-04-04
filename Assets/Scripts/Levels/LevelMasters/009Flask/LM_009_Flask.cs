@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.UI;
 
 public class LM_009_Flask : LevelMasterBase
 {
@@ -15,11 +16,11 @@ public class LM_009_Flask : LevelMasterBase
 
     //public float cubicFactor = 1.5f;
     int MAX_CELL_VALUE = 1000;
-    float curAddRate = 100f;
+    float curAddRate = 200f;
     float pourAmountPerTick = 100f;
     float accumulatedAmount = 0f;
-    float maxPourRatePerSecond = 60000f;
-    float minPourRatePerSecond = 100f;
+    float maxPourRatePerSecond = 70000f;
+    float minPourRatePerSecond = 200f;
     float startTimestamp;
     float lastTimestamp;
     bool pouring;
@@ -32,11 +33,23 @@ public class LM_009_Flask : LevelMasterBase
     int CHECK3_LVINDEX = 6;
     int CHECK4_LVINDEX = 10;
 
+    string missingNumbers;
     public override void GetObjectReferences(GameObject _themeHub)
     {
         base.GetObjectReferences(null);
         flaskHub = _themeHub.GetComponent<LMHub_009_Flask>();
         ThemeAnimationDelayAfterPlay = 1f;
+    }
+    public override void GenerateBoard()
+    {
+        base.GenerateBoard();
+        hub.boardMaster.boardHolder.localPosition = new Vector3(2f, 10f, 0f);
+    }
+    public override void AddtionalInit_Theme(bool isRewind = false)
+    {
+        pouring = false;
+        simEnd = false;
+        missingNumbers = "";
     }
     public override void AlternativeMouseDown_Theme(Vector2Int coord)
     {
@@ -144,7 +157,8 @@ public class LM_009_Flask : LevelMasterBase
                 GameObject obj = Instantiate(flaskHub.bgTemplate, flaskHub.cellBgHolder);
                 obj.transform.position = hub.boardMaster.cells[i].transform.position;
                 flaskHub.cellBgs.Add(new KeyValuePair<CellMaster, GameObject>(hub.boardMaster.cells[i], obj));
-                obj.GetComponent<flaskBg>().liquidPct.localScale = new Vector3(1f, (float)temp_cellData.value / MAX_CELL_VALUE, 1f);
+                int curMaxCellValue = levelData.levelIndex == 1 ? 20 : MAX_CELL_VALUE;
+                obj.GetComponent<flaskBg>().liquidPct.localScale = new Vector3(1f, (float)temp_cellData.value / curMaxCellValue, 1f);
             }
         }
     }
@@ -166,6 +180,11 @@ public class LM_009_Flask : LevelMasterBase
         curAddRate = PourRateIncreaseCubic(timeIntervalSincePouringStart);
         accumulatedAmount += curAddRate * timeIntervalSinceLastPouring;
         int numberAdd = Mathf.FloorToInt(accumulatedAmount / pourAmountPerTick);
+        if(numberAdd > levelData.curBoard.toolCount)
+        {
+            numberAdd = levelData.curBoard.toolCount;
+            AlternativeMouseUp_Theme(coord);
+        }
         accumulatedAmount -= numberAdd * pourAmountPerTick;
         for (int i = 0; i < levelData.curBoard.cells.Count; i++)
         {
@@ -187,11 +206,11 @@ public class LM_009_Flask : LevelMasterBase
             //force end if exceed
             AlternativeMouseUp_Theme(coord);
         }
-        else if (levelData.levelIndex >= CHECK1_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck1(levelData.curBoard, 8))
+        else if (levelData.levelIndex >= CHECK1_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck1(levelData.curBoard))
         {
             inDanger = true;
         }
-        else if (levelData.levelIndex >= CHECK2_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck2(levelData.curBoard, 18))
+        else if (levelData.levelIndex >= CHECK2_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck2(levelData.curBoard, 21))
         {
             inDanger = true;
         }
@@ -223,10 +242,32 @@ public class LM_009_Flask : LevelMasterBase
                 if (temp_cellData != null)
                 {
                     flaskHub.cellBgs[i].Key.DisplayNumber(temp_cellData.value);
-                    flaskHub.cellBgs[i].Value.GetComponent<flaskBg>().liquidPct.localScale = new Vector3(1f, (float)temp_cellData.value / MAX_CELL_VALUE, 1f);
+                    int curMaxCellValue = levelData.levelIndex == 1 ? 20 : MAX_CELL_VALUE;
+                    flaskHub.cellBgs[i].Value.GetComponent<flaskBg>().liquidPct.localScale = new Vector3(1f, (float)temp_cellData.value / curMaxCellValue, 1f);
                     flaskHub.cellBgs[i].Value.GetComponent<flaskBg>().dangerHint.SetActive(temp_cellData.status == 1);
                 }
             }  
+        }
+    }
+    public override void UpdateGoal()
+    {
+        if(levelData.levelIndex == 7)
+        {
+            List<int> NumbersCount = BoardCalculation.CountByDigits(levelData.curBoard);
+            missingNumbers = "";
+            for(int i = 0; i < NumbersCount.Count; i++)
+            {
+                if (NumbersCount[i] == 0)
+                {
+                    missingNumbers += string.Format(" {0}", i);
+                }
+            }
+            if(missingNumbers.Length > 0)
+            {
+                hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_missing_digits@@"), missingNumbers));
+                hub.goalMaster.lines[1].gameObject.SetActive(true);
+                LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+            }
         }
     }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
@@ -237,12 +278,12 @@ public class LM_009_Flask : LevelMasterBase
             boomReason = BoomReason.EXCEED_MAX;
             isBoom = true;
         }
-        else if (levelData.levelIndex >= CHECK1_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck1(levelData.curBoard, 8))
+        else if (levelData.levelIndex >= CHECK1_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck1(levelData.curBoard))
         {
             boomReason = BoomReason.EIGHT_HUNDRED;
             isBoom = true;
         }
-        else if (levelData.levelIndex >= CHECK2_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck2(levelData.curBoard, 18))
+        else if (levelData.levelIndex >= CHECK2_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck2(levelData.curBoard, 21))
         {
             boomReason = BoomReason.EXCEED_DIGITS;
             isBoom = true;
@@ -275,7 +316,7 @@ public class LM_009_Flask : LevelMasterBase
         bool result = false;
         if (levelData.levelIndex == 1)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 10, 4);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 10, 2);
         }
         else if (levelData.levelIndex == 2)
         {
@@ -283,27 +324,36 @@ public class LM_009_Flask : LevelMasterBase
         }
         else if (levelData.levelIndex == 3)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 800, 4);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 900, 2);
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 500, 1);
+            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 500, 1);
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 700, 4);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 800, 2);
         }
         else if (levelData.levelIndex == 6)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 900, 4);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 900, 3);
         }
         else if (levelData.levelIndex == 7)
         {
-            return false;
+            return missingNumbers.Length == 0;
         }
         else if (levelData.levelIndex == 8)
         {
-            return false;
+            List<int> NumbersCount = BoardCalculation.CountByDigits(levelData.curBoard);
+            bool hasEven = false;
+            for (int i = 0; i < NumbersCount.Count; i += 2)
+            {
+                if (NumbersCount[i] > 0)
+                {
+                    hasEven = true;
+                }
+            }
+            return !hasEven;
         }
         else if (levelData.levelIndex == 9)
         {

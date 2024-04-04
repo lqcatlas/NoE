@@ -23,7 +23,6 @@ MonoBehaviour:
   newInitNarrative: '@Loc=narrative_tm9_ln003@@'
   newPlayNarratives:
   - '@Loc=narrative_tm9_ln004@@'
-  - '@Loc=narrative_tm9_ln005@@'
   oldNarratives:
   - '@Loc=narrative_tm9_ln001@@'
   - '@Loc=narrative_tm9_ln002@@'

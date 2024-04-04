@@ -31,20 +31,14 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 0
   initBoard:
-    boardSize: {x: 2, y: 2}
+    boardSize: {x: 2, y: 1}
     cells:
     - coord: {x: 0, y: 0}
-      value: 3
-      status: 0
-    - coord: {x: 1, y: 0}
-      value: 0
-      status: 0
-    - coord: {x: 0, y: 1}
-      value: 1
-      status: 0
-    - coord: {x: 1, y: 1}
       value: 2
       status: 0
-    toolCount: 40
+    - coord: {x: 1, y: 0}
+      value: 1
+      status: 0
+    toolCount: 17
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

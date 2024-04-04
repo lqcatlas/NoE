@@ -32,7 +32,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm9_ln007@@'
   - '@Loc=narrative_tm9_ln008@@'
   - '@Loc=narrative_tm9_ln009@@'
-  - '@Loc=narrative_tm9_ln010@@'
   goal: '@Loc=goal_lv908@@'
   ruleset:
   - tag: 0
@@ -48,19 +47,19 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 0
   initBoard:
-    boardSize: {x: 2, y: 2}
+    boardSize: {x: 4, y: 1}
     cells:
     - coord: {x: 0, y: 0}
-      value: 230
+      value: 331
       status: 0
     - coord: {x: 1, y: 0}
-      value: 170
+      value: 290
       status: 0
-    - coord: {x: 0, y: 1}
-      value: 80
+    - coord: {x: 2, y: 0}
+      value: 150
       status: 0
-    - coord: {x: 1, y: 1}
-      value: 0
+    - coord: {x: 3, y: 0}
+      value: 142
       status: 0
     toolCount: 5000
     toolStatus: 0

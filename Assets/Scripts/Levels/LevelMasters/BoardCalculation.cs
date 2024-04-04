@@ -373,17 +373,17 @@ public class BoardCalculation
         }
         return allEven;
     }
-    static public bool FlaskSpecialBoomCheck1(DataBoard board, int X)
+    static public bool FlaskSpecialBoomCheck1(DataBoard board)
     {
-        //it fails, if hundred is 8 
+        //it fails, if hundred is even 
         bool result = false;
-        int target = X;
+        //int target = X;
         for (int i = 0; i < board.cells.Count; i++)
         {
             List<int> listOfDigits = GetDigitArray(board.cells[i].value);
             if(listOfDigits.Count >= 3)
             {
-                if (listOfDigits[listOfDigits.Count-3] == target)
+                if (listOfDigits[listOfDigits.Count-3]%2 == 0)
                 {
                     result = true;
                     return result;
@@ -414,9 +414,9 @@ public class BoardCalculation
         }
         return result;
     }
-    static public bool FlaskSpecialBoomCheck3(DataBoard board)
+    static public bool Old_FlaskSpecialBoomCheck3(DataBoard board)
     {
-        //it fails, if any cell has two digit that are equal to each other 
+        //it fails, if two digits that are equal to each other 
         bool result = false;
         //int threshold = X;
         for (int i = 0; i < board.cells.Count; i++)
@@ -436,6 +436,22 @@ public class BoardCalculation
         }
         return result;
     }
+    static public bool FlaskSpecialBoomCheck3(DataBoard board)
+    {
+        //it fails, if all cells has four digits that are equal to each other 
+        bool result = false;
+        int threshold = 4;
+        List<int> numberCounts = CountByDigits(board);
+        for (int i = 0; i < numberCounts.Count; i++)
+        {
+            if (numberCounts[i] >= threshold)
+            {
+                result = true;
+                return result;
+            }
+        }
+        return result;
+    }
     static public bool FlaskSpecialBoomCheck4(DataBoard board)
     {
         //it fails, if any cell is PRIME 
@@ -449,6 +465,23 @@ public class BoardCalculation
             }
         }
         return result;
+    }
+    public static List<int> CountByDigits(DataBoard board)
+    {
+        List<int> numberCounts = new List<int>();
+        for (int i = 0; i < 10; i++)
+        {
+            numberCounts.Add(0);
+        }
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            List<int> listOfDigits = GetDigitArray(board.cells[i].value);
+            for (int j = 0; j < listOfDigits.Count; j++)
+            {
+                numberCounts[listOfDigits[j]] += 1;
+            }
+        }
+        return numberCounts;
     }
     static List<int> GetDigitArray(int num)
     {
