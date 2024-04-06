@@ -373,18 +373,19 @@ public class BoardCalculation
         }
         return allEven;
     }
-    static public bool FlaskSpecialBoomCheck1(DataBoard board)
+    static public bool FlaskSpecialBoomCheck1(DataBoard board, int X)
     {
         //it fails, if hundred is even 
         bool result = false;
-        //int target = X;
+        int target = X;
         for (int i = 0; i < board.cells.Count; i++)
         {
             List<int> listOfDigits = GetDigitArray(board.cells[i].value);
             if(listOfDigits.Count >= 3)
             {
-                if (listOfDigits[listOfDigits.Count-3]%2 == 0)
-                {
+                //if (listOfDigits[listOfDigits.Count-3]%2 == 0)
+                if (listOfDigits[listOfDigits.Count - 3] == target)
+                    {
                     result = true;
                     return result;
                 }
@@ -392,7 +393,7 @@ public class BoardCalculation
         }
         return result;
     }
-    static public bool FlaskSpecialBoomCheck2(DataBoard board, int X)
+    static public bool Old_FlaskSpecialBoomCheck2(DataBoard board, int X)
     {
         //it fails, if any cell has a digit sum more than or equal to X 
         bool result = false;
@@ -411,6 +412,29 @@ public class BoardCalculation
                 //Debug.Log(string.Format("sumn of digits exceed threshold. {0}{1}", listOfDigits[0], listOfDigits[1]));
                 return result;
             }
+        }
+        return result;
+    }
+    static public bool FlaskSpecialBoomCheck2(DataBoard board, int X)
+    {
+        //it fails, if any cell has a digit sum more than or equal to X 
+        bool result = false;
+        int average = X;
+        int digit_sum = 0;
+        int digit_count = 0;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            List<int> listOfDigits = GetDigitArray(board.cells[i].value);
+            
+            for (int j = 0; j < listOfDigits.Count; j++)
+            {
+                digit_sum += listOfDigits[j];
+                digit_count += 1;
+            }
+        }
+        if((float)digit_sum / digit_count > X)
+        {
+            result = true;
         }
         return result;
     }

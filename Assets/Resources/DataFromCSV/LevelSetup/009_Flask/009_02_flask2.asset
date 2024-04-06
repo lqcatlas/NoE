@@ -23,6 +23,7 @@ MonoBehaviour:
   newInitNarrative: '@Loc=narrative_tm9_ln003@@'
   newPlayNarratives:
   - '@Loc=narrative_tm9_ln004@@'
+  - '@Loc=narrative_tm9_ln005@@'
   oldNarratives:
   - '@Loc=narrative_tm9_ln001@@'
   - '@Loc=narrative_tm9_ln002@@'
@@ -33,9 +34,12 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 0
   initBoard:
-    boardSize: {x: 1, y: 1}
+    boardSize: {x: 2, y: 1}
     cells:
     - coord: {x: 0, y: 0}
+      value: 0
+      status: 0
+    - coord: {x: 1, y: 0}
       value: 0
       status: 0
     toolCount: 1200

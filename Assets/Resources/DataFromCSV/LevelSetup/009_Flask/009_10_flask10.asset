@@ -33,6 +33,7 @@ MonoBehaviour:
   - '@Loc=narrative_tm9_ln008@@'
   - '@Loc=narrative_tm9_ln009@@'
   - '@Loc=narrative_tm9_ln010@@'
+  - '@Loc=narrative_tm9_ln011@@'
   goal: '@Loc=goal_lv910@@'
   ruleset:
   - tag: 0

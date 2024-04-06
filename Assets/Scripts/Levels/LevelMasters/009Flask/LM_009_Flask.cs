@@ -10,7 +10,7 @@ public class LM_009_Flask : LevelMasterBase
     [Header("Theme Additions")]
     public LMHub_009_Flask flaskHub;
 
-    public enum BoomReason { EXCEED_MAX = 0, EIGHT_HUNDRED = 1, EXCEED_DIGITS = 2, EQUAL_DIGIT = 3, PRIME_NUM = 4 };
+    public enum BoomReason { EXCEED_MAX = 0, FORBIDDEN_HUNDRED = 1, EXCEED_DIGITS = 2, EXCEED_REPEATS = 3, PRIME_NUM = 4 };
     public BoomReason boomReason;
     public bool isBoom;
 
@@ -156,6 +156,16 @@ public class LM_009_Flask : LevelMasterBase
                 //create crown sprite
                 GameObject obj = Instantiate(flaskHub.bgTemplate, flaskHub.cellBgHolder);
                 obj.transform.position = hub.boardMaster.cells[i].transform.position;
+                int maxBoardSize = Mathf.Max(levelData.initBoard.boardSize.x, levelData.initBoard.boardSize.y);
+                if(maxBoardSize <= 2)
+                {
+                    obj.transform.localScale = new Vector3(1.25f, 1.1f, 1.25f);
+                }
+                else
+                {
+                    obj.transform.localScale = Vector3.one * 1.25f;
+                }
+                 
                 flaskHub.cellBgs.Add(new KeyValuePair<CellMaster, GameObject>(hub.boardMaster.cells[i], obj));
                 int curMaxCellValue = levelData.levelIndex == 1 ? 20 : MAX_CELL_VALUE;
                 obj.GetComponent<flaskBg>().liquidPct.localScale = new Vector3(1f, (float)temp_cellData.value / curMaxCellValue, 1f);
@@ -206,11 +216,11 @@ public class LM_009_Flask : LevelMasterBase
             //force end if exceed
             AlternativeMouseUp_Theme(coord);
         }
-        else if (levelData.levelIndex >= CHECK1_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck1(levelData.curBoard))
+        else if (levelData.levelIndex >= CHECK1_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck1(levelData.curBoard, 7))
         {
             inDanger = true;
         }
-        else if (levelData.levelIndex >= CHECK2_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck2(levelData.curBoard, 21))
+        else if (levelData.levelIndex >= CHECK2_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck2(levelData.curBoard, 7))
         {
             inDanger = true;
         }
@@ -218,10 +228,10 @@ public class LM_009_Flask : LevelMasterBase
         {
             inDanger = true;
         }
-        else if (levelData.levelIndex >= CHECK4_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck4(levelData.curBoard))
+        /*else if (levelData.levelIndex >= CHECK4_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck4(levelData.curBoard))
         {
             inDanger = true;
-        }
+        }*/
         if (inDanger)
         {
             //set cur cell to status 1
@@ -232,6 +242,7 @@ public class LM_009_Flask : LevelMasterBase
             levelData.curBoard.GetCellDataByCoord(coord).status = 0;
         }
     }
+    
     public override void UpdateCells(Vector2Int coord)
     {
         for (int i = 0; i < flaskHub.cellBgs.Count; i++)
@@ -270,40 +281,89 @@ public class LM_009_Flask : LevelMasterBase
             }
         }
     }
+    public override void UpdateNarrative()
+    {
+        if(levelData.levelIndex == 2)
+        {
+            if (levelData.curBoard.toolCount <= levelData.initBoard.toolCount / 4f * 3f && lineStatus.Count >= 1)
+            {
+                if (lineStatus[0] == NarrativeLineStatus.INQUEUE)
+                {
+                    TryTypeNextPlayLine(0);
+                    lineStatus[0] = NarrativeLineStatus.PLAYED;
+                }
+            }
+            //trigger 2nd play
+            if (levelData.curBoard.toolCount <= levelData.initBoard.toolCount / 4f && lineStatus.Count >= 2)
+            {
+                if (lineStatus[1] == NarrativeLineStatus.INQUEUE)
+                {
+                    TryTypeNextPlayLine(1);
+                    lineStatus[1] = NarrativeLineStatus.PLAYED;
+                }
+            }
+            //trigger 3rd play
+            if (levelData.curBoard.toolCount <= levelData.initBoard.toolCount / 20f && lineStatus.Count >= 3)
+            {
+                if (lineStatus[2] == NarrativeLineStatus.INQUEUE)
+                {
+                    TryTypeNextPlayLine(2);
+                    lineStatus[2] = NarrativeLineStatus.PLAYED;
+                }
+            }
+        }
+        else 
+        {
+            base.UpdateNarrative();
+        }
+        
+    }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
         isBoom = false;
+        string reasonTxt = "";
         if (levelData.levelIndex >= POURING_LVINDEX && BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 1000, 1))
         {
             boomReason = BoomReason.EXCEED_MAX;
+            if (levelData.levelIndex == 2)
+            {
+                reasonTxt = "@Loc=rule2_lv903@@";
+            }
+            else
+            {
+                reasonTxt = levelData.ruleset[1].ruleDesc;
+            }
             isBoom = true;
         }
-        else if (levelData.levelIndex >= CHECK1_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck1(levelData.curBoard))
+        else if (levelData.levelIndex >= CHECK1_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck1(levelData.curBoard, 7))
         {
-            boomReason = BoomReason.EIGHT_HUNDRED;
+            boomReason = BoomReason.FORBIDDEN_HUNDRED;
+            reasonTxt = levelData.ruleset[3].ruleDesc;
             isBoom = true;
         }
-        else if (levelData.levelIndex >= CHECK2_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck2(levelData.curBoard, 21))
+        else if (levelData.levelIndex >= CHECK2_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck2(levelData.curBoard, 7))
         {
             boomReason = BoomReason.EXCEED_DIGITS;
+            reasonTxt = levelData.ruleset[2].ruleDesc;
             isBoom = true;
         }
         else if (levelData.levelIndex >= CHECK3_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck3(levelData.curBoard))
         {
-            boomReason = BoomReason.EQUAL_DIGIT;
+            boomReason = BoomReason.EXCEED_REPEATS;
+            reasonTxt = levelData.ruleset[4].ruleDesc;
             isBoom = true;
         }
-        else if (levelData.levelIndex >= CHECK4_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck4(levelData.curBoard))
+        /*else if (levelData.levelIndex >= CHECK4_LVINDEX && BoardCalculation.FlaskSpecialBoomCheck4(levelData.curBoard))
         {
             boomReason = BoomReason.PRIME_NUM;
             isBoom = true;
-        }
+        }*/
         for (int i = 0; i < levelData.curBoard.cells.Count; i++)
         {
             if (levelData.curBoard.cells[i].coord == coord && isBoom)
             {
                 //levelData.curBoard.cells[i].status = 1;
-                Explode_Anim(coord);
+                Explode_Anim(coord, reasonTxt);
             }
             else
             {
@@ -314,6 +374,10 @@ public class LM_009_Flask : LevelMasterBase
     public override bool CheckWinCondition()
     {
         bool result = false;
+        if (isBoom && levelData.levelIndex != 2)
+        {
+            return false;
+        }
         if (levelData.levelIndex == 1)
         {
             return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 10, 2);
@@ -332,7 +396,7 @@ public class LM_009_Flask : LevelMasterBase
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 800, 2);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 700, 2);
         }
         else if (levelData.levelIndex == 6)
         {
@@ -377,7 +441,7 @@ public class LM_009_Flask : LevelMasterBase
         }
         return false;
     }
-    void Explode_Anim(Vector2Int coord)
+    void Explode_Anim(Vector2Int coord, string reason)
     {
         for (int i = 0; i < flaskHub.cellBgs.Count; i++)
         {
@@ -385,6 +449,7 @@ public class LM_009_Flask : LevelMasterBase
             {
                 GameObject obj = Instantiate(flaskHub.explodeAnim, flaskHub.transform);
                 obj.transform.position = flaskHub.cellBgs[i].Value.transform.position;
+                obj.GetComponent<ExplodeAnim_Flask>().SetReason(reason);
                 obj.SetActive(true);
             }
         }
@@ -398,7 +463,7 @@ public class LM_009_Flask : LevelMasterBase
     }
     float PourRateIncreaseCubic(float timeIntervalSincePouringStart)
     {
-        float speedUpFactor = 6f;
+        float speedUpFactor = 3f;
         float PourRate = Mathf.Min(maxPourRatePerSecond, minPourRatePerSecond * Mathf.Pow(speedUpFactor, timeIntervalSincePouringStart));
         //Debug.Log(string.Format("set current rate as {0}, interval time since pouring start is {1}", curAddRate, timeIntervalSincePouringStart));
         return PourRate;

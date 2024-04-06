@@ -25,6 +25,8 @@ UID,Key,EN,CN
 20,date_tm5,2023/08/13,2023/08/13
 21,date_tm6,2023/09/03,2023/09/03
 22,date_tm7,,2024/02/15
+358,date_tm8,,2024/03/09
+437,date_tm9,,2024/03/24
 23,goal_lv101,Set all cells to 8,让所有格子为8
 24,goal_lv102,Set all cells to 10,让所有格子为10
 25,goal_lv103,Set all cells to 1,让所有格子为12
@@ -103,12 +105,42 @@ UID,Key,EN,CN
 98,goal_lv712,,创造最美盆景
 99,goal_lv713,,创造最美盆景
 100,goal_lv714,,创造最美盆景
+405,goal_lv715,,创造最美盆景
+406,goal_lv716,,创造最美盆景
+407,goal_lv717,,创造最美盆景
+408,goal_lv718,,创造最美盆景
+409,goal_lv719,,创造最美盆景
+410,goal_lv720,,创造最美盆景
+385,goal_lv801,,让2个格子为9
+386,goal_lv802,,让所有格子为9
+387,goal_lv803,,让所有格子为9
+388,goal_lv804,,让4个格子为9
+389,goal_lv805,,让6个格子为9
+390,goal_lv806,,同时有6个王冠在场
+391,goal_lv807,,4个王冠同时在场
+392,goal_lv808,,6个王冠同时在场
+393,goal_lv809,,夺取5次王冠
+427,goal_lv810,,夺取9次王冠
+428,goal_lv811,,让所有格子为6及以上
+432,goal_lv812,,9个王冠同时在场
+456,goal_lv901,,让所有格子为10ml
+467,goal_lv902,,让1个格子为1000ml及以上
+468,goal_lv903,,让所有格子为900ml及以上
+469,goal_lv904,,让至少1个格子恰好为500ml
+470,goal_lv905,,让所有格子为700ml及以上
+471,goal_lv906,,让所有格子为900ml及以上
+472,goal_lv907,,数字0~9在场上都同时出现
+473,goal_lv908,,场上各位数字只有奇数
+474,goal_lv909,,用完全部试剂
+475,goal_lv910,,用完全部试剂
 101,hint_tm1,,它滴答滴答，永不停歇地前进。
 102,hint_tm2,,它一次次地翻动，决定着命运。
 103,hint_tm4,,它虽然简约，却愈显得精致。
 104,hint_tm5,,它不停变化，却总会回到熟悉的样子。
 105,hint_tm6,,它代表了灵感、顿悟。
 106,hint_tm7,,它是通过修剪自然得到的艺术品。
+357,hint_tm8,,它用重量象征权力。
+436,hint_tm9,,它装着色彩斑斓的物质。
 107,intro_line_1,"Friday night. Get back home, <b>things</b> emerges from darkness.",周五晚上，打开房门，回到漆黑的家中，黑暗之中<b>万物</b>浮现。
 108,intro_line_2,"On the way to work, passing through a river, <b>things</b> emerges from the voice of the winds",走在上班的路上，路过一条小河，树叶的婆娑声中夹杂着<b>万物</b>。
 109,levelname_lv101,001,001
@@ -189,18 +221,50 @@ UID,Key,EN,CN
 184,levelname_lv712,,012
 185,levelname_lv713,,013
 186,levelname_lv714,,014
+399,levelname_lv715,,015
+400,levelname_lv716,,016
+401,levelname_lv717,,017
+402,levelname_lv718,,018
+403,levelname_lv719,,019
+404,levelname_lv720,,020
+376,levelname_lv801,,001
+377,levelname_lv802,,002
+378,levelname_lv803,,003
+379,levelname_lv804,,004
+380,levelname_lv805,,005
+381,levelname_lv806,,006
+382,levelname_lv807,,007
+383,levelname_lv808,,008
+384,levelname_lv809,,009
+425,levelname_lv810,,010
+426,levelname_lv811,,011
+431,levelname_lv812,,012
+455,levelname_lv901,,001
+458,levelname_lv902,,002
+459,levelname_lv903,,003
+460,levelname_lv904,,004
+461,levelname_lv905,,005
+462,levelname_lv906,,006
+463,levelname_lv907,,007
+464,levelname_lv908,,008
+465,levelname_lv909,,009
+466,levelname_lv910,,010
 187,locked_tm1,,█ █ 永不停歇。
 188,locked_tm2,,█ █ 决定命运。
 189,locked_tm4,,█ █ 简约又精致。
 190,locked_tm5,,█ █ 有无规律？
 191,locked_tm6,,█ █ 代表着灵感。
 192,locked_tm7,,人与自然共创█ █ 。
+355,locked_tm8,,█ █ 越重越好。
+434,locked_tm9,,色彩斑斓的 █ █ 。
 193,manifesto_tm1,,时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。从某个角度去考虑，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
 194,manifesto_tm2,,硬币是第二个主题，它的灵感来源于用掷硬币来做决策这一生活中常见的玩笑时刻。<br><br>故事往往是这样展开的：嘴里说着不知该怎么选所以就决定要掷硬币。在硬币的正反出现后，这时又意识到了，这并不是自己满意的决定。然后会找理由反悔说“再掷一次吧”。<br><br>因此掷硬币不是用来决定命运，而是来帮助人更好地走进自己的内心，看清自己的想法。
 195,manifesto_tm4,,寿司是进入工程正规流程之后的第一个正式主题。它表达的要点是日本料理中运用最简单食材，通过不同的烹调与组合的变化产生出口感与味道上丰富可能。在实际的谜题中展现为通过两种食材不同的次序，就可以产生迥然相异的数字变化来解决谜题。
 196,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期是月相交替变化，容易掌握。引入月食规则的时候则使用了一些具有迷惑性的手段，从动画效果和文字上都暗示着它的无序。然后在通过一系列的挑战来引导大家对其内在规律的探索。<br><br>看到这段文字的你真的已经完全掌握了月食吗？就用后续的钻石挑战来确认一下吧。
 197,manifesto_tm6,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
 198,manifesto_tm7,,我喜欢盆景的原因就在于文字最后所提到的“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。
+359,manifesto_tm8,,这个主题想要表达的是王冠所拥有的两个主要概念。王冠承载着责任，因此不是可以轻易佩戴的。权力在强大的同时也带来了相应的不稳定性，因此王冠会不可避免的不断更迭。最终又收束到了一个小心思：不论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步着的。不知道这个彩蛋有没有被你感受到呢？
+438,manifesto_tm9,,快乐的烧瓶
 199,narrative_tm1_ln001,,溜走的时间
 200,narrative_tm1_ln002,,滴答滴答滴答，
 201,narrative_tm1_ln003,,时钟不知疲倦地前进。
@@ -285,12 +349,44 @@ UID,Key,EN,CN
 280,narrative_tm7_ln013,,
 281,narrative_tm7_ln014,,
 282,narrative_tm7_ln015,,
+361,narrative_tm8_ln001,,王冠的重量
+362,narrative_tm8_ln002,,欲戴其冠，
+363,narrative_tm8_ln003,,必承其<b>重</b>。
+364,narrative_tm8_ln004,,王冠高耸，
+365,narrative_tm8_ln005,,象征至高的权利，
+366,narrative_tm8_ln006,,佩戴者逐渐迷失初心，
+367,narrative_tm8_ln007,,直到它砰然<b>落下</b>。
+368,narrative_tm8_ln008,,毒药、阴谋、战乱，
+369,narrative_tm8_ln009,,地位经历着无数的考验。
+370,narrative_tm8_ln010,,权力不停地更迭，
+371,narrative_tm8_ln011,,王冠不断地易手。
+372,narrative_tm8_ln012,,在起伏中前进，
+373,narrative_tm8_ln013,,光辉和荣耀成为史诗传颂。
+374,narrative_tm8_ln014,,
+375,narrative_tm8_ln015,,
+440,narrative_tm9_ln001,,迷人的色彩
+441,narrative_tm9_ln002,,色彩斑斓的烧瓶。
+442,narrative_tm9_ln003,,充满着未知的实验，
+443,narrative_tm9_ln004,,一旦失去耐心，
+444,narrative_tm9_ln005,,BOOM！
+445,narrative_tm9_ln006,,实验室安全守则：
+446,narrative_tm9_ln007,,1. 避免超量
+447,narrative_tm9_ln008,,2. 轻拿轻放
+448,narrative_tm9_ln009,,3. 拒绝混用
+449,narrative_tm9_ln010,,4. 保持通风
+450,narrative_tm9_ln011,,做完这次实验就可以回家了。
+451,narrative_tm9_ln012,,
+452,narrative_tm9_ln013,,
+453,narrative_tm9_ln014,,
+454,narrative_tm9_ln015,,
 283,prompt_tm1,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 284,prompt_tm2,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 285,prompt_tm4,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 286,prompt_tm5,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 287,prompt_tm6,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 288,prompt_tm7,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+360,prompt_tm8,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+439,prompt_tm9,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 289,rule1_lv101,Play: +1,打出：+1
 290,rule1_lv201,Head - Cell Played +1,正面：+1
 291,rule1_lv204,Head - Cell Played +X,正面：+X
@@ -299,25 +395,51 @@ UID,Key,EN,CN
 294,rule1_lv601,Play: +1,打出：+1
 295,rule1_lv605,Play: +1 on cross cells,打出：十字区域+1
 296,rule1_lv701,,打出：移除格子内的数字
+394,rule1_lv801,,打出：+3
+395,rule1_lv803,,打出：+3，并加冕
+457,rule1_lv901,,打出：+1
+476,rule1_lv902,,按住：倾倒（数字加速增加）
+477,rule1_lv903,,按住：倾倒（需保证安全）
 297,rule2_lv103,Cell already with a Clock +1,已有时钟的格子+1
 298,rule2_lv202,Tail - Cell Played -1,反面：-1
 299,rule2_lv205,Tail - Cell Played -X,反面：-X
 300,rule2_lv404,Rice: -3,米：-3
 301,rule2_lv501,Quarter: +3,弦月：+3
 302,rule2_lv601,Cell is turned ON,与两个或以上的相同数字相邻
-303,rule3_lv702,,和谐： █ █ █ 数字
-304,rule3_lv703,,和谐：移除 █ █ 数字
-305,rule3_lv704,,和谐：移除 █ 不同的数字
+398,rule2_lv701,,通过尝试，发现美的规则
+414,rule2_lv719,,创造最美的盆景
+415,rule2_lv720,,创造最美的盆景
+396,rule2_lv803,,加冕后比任意相邻领土小
+478,rule2_lv903,,爆炸：格子超过999
 306,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
 307,rule3_lv406,Rice+Fish: Sushi(=7),米+鱼： 寿司（=7）
 308,rule3_lv502,Full: +5,满月：+5
 309,rule3_lv601,  when adjacent to 2+ same numbers,则点亮格子
+303,rule3_lv702,,和谐： █ █ █ 数字
+304,rule3_lv703,,和谐：移除 █ █ 数字
+305,rule3_lv704,,和谐：移除 █ 不同的数字
+411,rule3_lv705,,和谐：移除与众不同的数字
+397,rule3_lv803,,则加冕失败：=0
+479,rule3_lv904,,爆炸：数字均值大于7
 310,rule4_lv203,FLIP the coin after playing,打出后硬币翻面
 311,rule4_lv210,TOSS the coin after playing,打出后投掷硬币
 312,rule4_lv410,Fish+Rice: Onigiri(=2),鱼+米： 饭团（=2）
 313,rule4_lv505,9+Full: Eclipse!,9+满月：月食！
+416,rule4_lv703,,（相等、 █ ）
+417,rule4_lv705,,（相等、奇偶、 █ ）
+418,rule4_lv707,,（相等、奇偶、质数、 █ ）
+419,rule4_lv709,,（相等、奇偶、质数、成对、 █ ）
+420,rule4_lv711,,（相等、奇偶、质数、成对、不同）
+412,rule4_lv807,,加冕后比相邻领土大
+480,rule4_lv905,,爆炸：百位数字为7
 314,rule5_lv404,Fish and Rice appears alternatively,鱼和米交替出现
 315,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
+421,rule5_lv716,,平衡： █ █ 相等
+422,rule5_lv717,,平衡： █ 总和相等
+423,rule5_lv718,,平衡：各枝干总和相等
+424,rule5_lv720,,平衡：各枝干总和相等
+413,rule5_lv807,,则相邻领土王冠被夺取：-2
+481,rule5_lv906,,爆炸：有3个以上相同数字
 316,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
 317,themename_tm1,Clock,时钟
 318,themename_tm2,Coin,硬币
@@ -325,6 +447,8 @@ UID,Key,EN,CN
 320,themename_tm5,Moon,月亮
 321,themename_tm6,Lightbulb,灯泡
 322,themename_tm7,Bonsai,盆景
+354,themename_tm8,,王冠
+433,themename_tm9,,烧瓶
 323,tool_name_theme2_status0,Front,正面
 324,tool_name_theme2_status1,Tail,反面
 325,tool_name_theme4_status1,Fish,鱼生
@@ -338,7 +462,10 @@ UID,Key,EN,CN
 333,ui_designer_note_title,Designer's Notes,制作笔记
 334,ui_failure_title,,挑战失败
 335,ui_finished_status,(Passed),（完成）
+430,ui_goal_current_crown_present,,在场王冠：
+429,ui_goal_current_crown_taken,,已夺取王冠：
 336,ui_goal_current_sum,Current Sum: ,当前数字之和：
+482,ui_goal_missing_digits,Missing:,缺失数字：
 337,ui_goal_section_title,Goal,目标
 338,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the following riddle:,根据谜语找到<b>物件</b>：
 339,ui_new_tag,NEW,新
@@ -356,132 +483,5 @@ UID,Key,EN,CN
 351,unlocked_tm5,,<b>月亮</b>有无规律？
 352,unlocked_tm6,,<b>灯泡</b>代表着灵感。
 353,unlocked_tm7,,人与自然共创<b>盆景</b>。
-354,themename_tm8,,王冠
-355,locked_tm8,,█ █ 越重越好。
 356,unlocked_tm8,,<b>王冠</b>越重越好。
-357,hint_tm8,,它用重量象征权力。
-358,date_tm8,,2024/03/09
-359,manifesto_tm8,,这个主题想要表达的是王冠所拥有的两个主要概念。王冠承载着责任，因此不是可以轻易佩戴的。权力在强大的同时也带来了相应的不稳定性，因此王冠会不可避免的不断更迭。最终又收束到了一个小心思：不论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步着的。不知道这个彩蛋有没有被你感受到呢？
-360,prompt_tm8,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-361,narrative_tm8_ln001,,王冠的重量
-362,narrative_tm8_ln002,,欲戴其冠，
-363,narrative_tm8_ln003,,必承其<b>重</b>。
-364,narrative_tm8_ln004,,王冠高耸，
-365,narrative_tm8_ln005,,象征至高的权利，
-366,narrative_tm8_ln006,,佩戴者逐渐迷失初心，
-367,narrative_tm8_ln007,,直到它砰然<b>落下</b>。
-368,narrative_tm8_ln008,,毒药、阴谋、战乱，
-369,narrative_tm8_ln009,,地位经历着无数的考验。
-370,narrative_tm8_ln010,,权力不停地更迭，
-371,narrative_tm8_ln011,,王冠不断地易手。
-372,narrative_tm8_ln012,,在起伏中前进，
-373,narrative_tm8_ln013,,光辉和荣耀成为史诗传颂。
-374,narrative_tm8_ln014,,
-375,narrative_tm8_ln015,,
-376,levelname_lv801,,001
-377,levelname_lv802,,002
-378,levelname_lv803,,003
-379,levelname_lv804,,004
-380,levelname_lv805,,005
-381,levelname_lv806,,006
-382,levelname_lv807,,007
-383,levelname_lv808,,008
-384,levelname_lv809,,009
-385,goal_lv801,,让2个格子为9
-386,goal_lv802,,让所有格子为9
-387,goal_lv803,,让所有格子为9
-388,goal_lv804,,让4个格子为9
-389,goal_lv805,,让6个格子为9
-390,goal_lv806,,同时有6个王冠在场
-391,goal_lv807,,4个王冠同时在场
-392,goal_lv808,,6个王冠同时在场
-393,goal_lv809,,夺取5次王冠
-394,rule1_lv801,,打出：+3
-395,rule1_lv803,,打出：+3，并加冕
-396,rule2_lv803,,加冕后比任意相邻领土小
-397,rule3_lv803,,则加冕失败：=0
-398,rule2_lv701,,通过尝试，发现美的规则
-399,levelname_lv715,,015
-400,levelname_lv716,,016
-401,levelname_lv717,,017
-402,levelname_lv718,,018
-403,levelname_lv719,,019
-404,levelname_lv720,,020
-405,goal_lv715,,创造最美盆景
-406,goal_lv716,,创造最美盆景
-407,goal_lv717,,创造最美盆景
-408,goal_lv718,,创造最美盆景
-409,goal_lv719,,创造最美盆景
-410,goal_lv720,,创造最美盆景
-411,rule3_lv705,,和谐：移除与众不同的数字
-412,rule4_lv807,,加冕后比相邻领土大
-413,rule5_lv807,,则相邻领土王冠被夺取：-2
-414,rule2_lv719,,创造最美的盆景
-415,rule2_lv720,,创造最美的盆景
-416,rule4_lv703,,（相等、 █ ）
-417,rule4_lv705,,（相等、奇偶、 █ ）
-418,rule4_lv707,,（相等、奇偶、质数、 █ ）
-419,rule4_lv709,,（相等、奇偶、质数、成对、 █ ）
-420,rule4_lv711,,（相等、奇偶、质数、成对、不同）
-421,rule5_lv716,,平衡： █ █ 相等
-422,rule5_lv717,,平衡： █ 总和相等
-423,rule5_lv718,,平衡：各枝干总和相等
-424,rule5_lv720,,平衡：各枝干总和相等
-425,levelname_lv810,,010
-426,levelname_lv811,,011
-427,goal_lv810,,夺取9次王冠
-428,goal_lv811,,让所有格子为6及以上
-429,ui_goal_current_crown_taken,,已夺取王冠：
-430,ui_goal_current_crown_present,,在场王冠：
-431,levelname_lv812,,012
-432,goal_lv812,,9个王冠同时在场
-433,themename_tm9,,烧瓶
-434,locked_tm9,,色彩斑斓的 █ █ 。
 435,unlocked_tm9,,色彩斑斓的<b>烧瓶</b>。
-436,hint_tm9,,它装着色彩斑斓的物质。
-437,date_tm9,,2024/03/24
-438,manifesto_tm9,,快乐的烧瓶
-439,prompt_tm9,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-440,narrative_tm9_ln001,,迷人的彩色
-441,narrative_tm9_ln002,,取10ml高锰酸钾。
-442,narrative_tm9_ln003,,失去耐心，直接倒吧！
-443,narrative_tm9_ln004,,BOOM！
-444,narrative_tm9_ln005,,安全守则：
-445,narrative_tm9_ln006,,1. 避免超量
-446,narrative_tm9_ln007,,2. 轻拿轻放
-447,narrative_tm9_ln008,,3. 拒绝混用
-448,narrative_tm9_ln009,,4. 保持通风
-449,narrative_tm9_ln010,,做完这次实验就可以回家了。
-450,narrative_tm9_ln011,,
-451,narrative_tm9_ln012,,
-452,narrative_tm9_ln013,,
-453,narrative_tm9_ln014,,
-454,narrative_tm9_ln015,,
-455,levelname_lv901,,001
-456,goal_lv901,,让所有格子为10
-457,rule1_lv901,,打出：+1
-458,levelname_lv902,,002
-459,levelname_lv903,,003
-460,levelname_lv904,,004
-461,levelname_lv905,,005
-462,levelname_lv906,,006
-463,levelname_lv907,,007
-464,levelname_lv908,,008
-465,levelname_lv909,,009
-466,levelname_lv910,,010
-467,goal_lv902,,让格子为1000及以上
-468,goal_lv903,,让所有格子为900及以上
-469,goal_lv904,,让格子恰好为500
-470,goal_lv905,,让所有格子为800及以上
-471,goal_lv906,,让所有格子为900及以上
-472,goal_lv907,,数字0~9在场上都同时出现
-473,goal_lv908,,场上各位数字只有奇数
-474,goal_lv909,,用完全部试剂
-475,goal_lv910,,用完全部试剂
-476,rule1_lv902,,按住：倾倒（数字加速增加）
-477,rule1_lv903,,按住：倾倒（需保证安全）
-478,rule2_lv903,,爆炸：超过999
-479,rule3_lv904,,爆炸：各位总和大于20
-480,rule4_lv905,,爆炸：百位数为偶数
-481,rule5_lv906,,爆炸：场上有三个以上相同数字
-482,ui_goal_missing_digits,Missing:,缺失数字：
