@@ -1526,3 +1526,9 @@ MonoBehaviour:
   - key: unlocked_tm9
     EN: 
     CN: "\u8272\u5F69\u6591\u6593\u7684<b>\u70E7\u74F6</b>\u3002"
+  - key: ui_goal_current_avg
+    EN: 'Current Average: '
+    CN: "\u5F53\u524D\u6570\u5B57\u5747\u503C\uFF1A"
+  - key: ui_goal_current_repeat3
+    EN: Repeating 3 times
+    CN: "\u51FA\u73B03\u6B21\u7684\u6570\u5B57\uFF1A"

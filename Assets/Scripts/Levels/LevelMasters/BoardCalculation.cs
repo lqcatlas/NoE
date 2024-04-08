@@ -373,6 +373,7 @@ public class BoardCalculation
         }
         return allEven;
     }
+    #region flask special
     static public bool FlaskSpecialBoomCheck1(DataBoard board, int X)
     {
         //it fails, if hundred is even 
@@ -417,22 +418,10 @@ public class BoardCalculation
     }
     static public bool FlaskSpecialBoomCheck2(DataBoard board, int X)
     {
-        //it fails, if any cell has a digit sum more than or equal to X 
+        //it fails, if average by digits are larger than X 
         bool result = false;
         int average = X;
-        int digit_sum = 0;
-        int digit_count = 0;
-        for (int i = 0; i < board.cells.Count; i++)
-        {
-            List<int> listOfDigits = GetDigitArray(board.cells[i].value);
-            
-            for (int j = 0; j < listOfDigits.Count; j++)
-            {
-                digit_sum += listOfDigits[j];
-                digit_count += 1;
-            }
-        }
-        if((float)digit_sum / digit_count > X)
+        if(AverageByDigits(board) > average)
         {
             result = true;
         }
@@ -489,6 +478,22 @@ public class BoardCalculation
             }
         }
         return result;
+    }
+    #endregion
+    public static float AverageByDigits(DataBoard board)
+    {
+        int sumByDigits = 0;
+        int totalDigitCount = 0;
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            List<int> listOfDigits = GetDigitArray(board.cells[i].value);
+            for (int j = 0; j < listOfDigits.Count; j++)
+            {
+                sumByDigits += listOfDigits[j];
+                totalDigitCount += 1;
+            }
+        }
+        return (float)sumByDigits / totalDigitCount;
     }
     public static List<int> CountByDigits(DataBoard board)
     {

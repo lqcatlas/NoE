@@ -31,7 +31,7 @@ public class LM_009_Flask : LevelMasterBase
     int CHECK1_LVINDEX = 5;
     int CHECK2_LVINDEX = 4;
     int CHECK3_LVINDEX = 6;
-    int CHECK4_LVINDEX = 10;
+    //int CHECK4_LVINDEX = 10;
 
     string missingNumbers;
     public override void GetObjectReferences(GameObject _themeHub)
@@ -50,6 +50,22 @@ public class LM_009_Flask : LevelMasterBase
         pouring = false;
         simEnd = false;
         missingNumbers = "";
+        //panel init
+        flaskHub.panelObj.SetActive(levelData.levelIndex > CHECK2_LVINDEX);
+        PanelInfoUpdate();
+        //rule sketches init
+        RuleSketchInit();
+    }
+    public override void DelayedInit_Theme()
+    {
+        //panel appear
+        if (levelData.levelIndex == CHECK2_LVINDEX)
+        {
+            flaskHub.panelObj.SetActive(true);
+            flaskHub.panelObj.transform.DOMoveY(3f, dConstants.UI.StandardizedVFXAnimDuration).From(true);
+        }
+        //rule sketches animation appear
+        RuleSketchAnimate();
     }
     public override void AlternativeMouseDown_Theme(Vector2Int coord)
     {
@@ -122,7 +138,7 @@ public class LM_009_Flask : LevelMasterBase
             */
             IEnumerator coroutine = PouringEnd(coord);
             StartCoroutine(coroutine);
-            
+
         }
     }
     IEnumerator PouringEnd(Vector2Int coord)
@@ -133,7 +149,7 @@ public class LM_009_Flask : LevelMasterBase
         }
         AddtionalUpdate_Theme(coord);
         Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(isBoom ? ThemeAnimationDelayAfterPlay : .2f);
+        seq.AppendInterval(isBoom ? ThemeAnimationDelayAfterPlay : .1f);
         seq.AppendCallback(() => PlayCallback());
     }
     public override void InitCells()
@@ -157,7 +173,7 @@ public class LM_009_Flask : LevelMasterBase
                 GameObject obj = Instantiate(flaskHub.bgTemplate, flaskHub.cellBgHolder);
                 obj.transform.position = hub.boardMaster.cells[i].transform.position;
                 int maxBoardSize = Mathf.Max(levelData.initBoard.boardSize.x, levelData.initBoard.boardSize.y);
-                if(maxBoardSize <= 2)
+                if (maxBoardSize <= 2)
                 {
                     obj.transform.localScale = new Vector3(1.25f, 1.1f, 1.25f);
                 }
@@ -165,7 +181,7 @@ public class LM_009_Flask : LevelMasterBase
                 {
                     obj.transform.localScale = Vector3.one * 1.25f;
                 }
-                 
+
                 flaskHub.cellBgs.Add(new KeyValuePair<CellMaster, GameObject>(hub.boardMaster.cells[i], obj));
                 int curMaxCellValue = levelData.levelIndex == 1 ? 20 : MAX_CELL_VALUE;
                 obj.GetComponent<flaskBg>().liquidPct.localScale = new Vector3(1f, (float)temp_cellData.value / curMaxCellValue, 1f);
@@ -190,7 +206,7 @@ public class LM_009_Flask : LevelMasterBase
         curAddRate = PourRateIncreaseCubic(timeIntervalSincePouringStart);
         accumulatedAmount += curAddRate * timeIntervalSinceLastPouring;
         int numberAdd = Mathf.FloorToInt(accumulatedAmount / pourAmountPerTick);
-        if(numberAdd > levelData.curBoard.toolCount)
+        if (numberAdd > levelData.curBoard.toolCount)
         {
             numberAdd = levelData.curBoard.toolCount;
             AlternativeMouseUp_Theme(coord);
@@ -242,12 +258,12 @@ public class LM_009_Flask : LevelMasterBase
             levelData.curBoard.GetCellDataByCoord(coord).status = 0;
         }
     }
-    
+
     public override void UpdateCells(Vector2Int coord)
     {
         for (int i = 0; i < flaskHub.cellBgs.Count; i++)
         {
-            if(flaskHub.cellBgs[i].Key.coord == coord)
+            if (flaskHub.cellBgs[i].Key.coord == coord)
             {
                 DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(coord);
                 if (temp_cellData != null)
@@ -257,23 +273,23 @@ public class LM_009_Flask : LevelMasterBase
                     flaskHub.cellBgs[i].Value.GetComponent<flaskBg>().liquidPct.localScale = new Vector3(1f, (float)temp_cellData.value / curMaxCellValue, 1f);
                     flaskHub.cellBgs[i].Value.GetComponent<flaskBg>().dangerHint.SetActive(temp_cellData.status == 1);
                 }
-            }  
+            }
         }
     }
     public override void UpdateGoal()
     {
-        if(levelData.levelIndex == 7)
+        if (levelData.levelIndex == 7)
         {
             List<int> NumbersCount = BoardCalculation.CountByDigits(levelData.curBoard);
             missingNumbers = "";
-            for(int i = 0; i < NumbersCount.Count; i++)
+            for (int i = 0; i < NumbersCount.Count; i++)
             {
                 if (NumbersCount[i] == 0)
                 {
                     missingNumbers += string.Format(" {0}", i);
                 }
             }
-            if(missingNumbers.Length > 0)
+            if (missingNumbers.Length > 0)
             {
                 hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_missing_digits@@"), missingNumbers));
                 hub.goalMaster.lines[1].gameObject.SetActive(true);
@@ -283,7 +299,7 @@ public class LM_009_Flask : LevelMasterBase
     }
     public override void UpdateNarrative()
     {
-        if(levelData.levelIndex == 2)
+        if (levelData.levelIndex == 2)
         {
             if (levelData.curBoard.toolCount <= levelData.initBoard.toolCount / 4f * 3f && lineStatus.Count >= 1)
             {
@@ -312,11 +328,11 @@ public class LM_009_Flask : LevelMasterBase
                 }
             }
         }
-        else 
+        else
         {
             base.UpdateNarrative();
         }
-        
+
     }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
@@ -370,6 +386,8 @@ public class LM_009_Flask : LevelMasterBase
                 //levelData.curBoard.cells[i].status = 0;
             }
         }
+        //update panel info
+        PanelInfoUpdate();
     }
     public override bool CheckWinCondition()
     {
@@ -467,5 +485,65 @@ public class LM_009_Flask : LevelMasterBase
         float PourRate = Mathf.Min(maxPourRatePerSecond, minPourRatePerSecond * Mathf.Pow(speedUpFactor, timeIntervalSincePouringStart));
         //Debug.Log(string.Format("set current rate as {0}, interval time since pouring start is {1}", curAddRate, timeIntervalSincePouringStart));
         return PourRate;
+    }
+    void PanelInfoUpdate()
+    {
+        if (levelData.levelIndex >= CHECK2_LVINDEX)
+        {
+            string stat1txt = string.Format("@Loc=ui_goal_current_avg@@{0}", BoardCalculation.AverageByDigits(levelData.curBoard).ToString("0.00"));
+            flaskHub.stat1.SetText(LocalizedAssetLookup.singleton.Translate(stat1txt));
+            flaskHub.stat1.gameObject.SetActive(true);
+        }
+        flaskHub.stat2.gameObject.SetActive(false);
+        if (levelData.levelIndex >= CHECK3_LVINDEX)
+        {
+            string stat2txt = string.Format("@Loc=ui_goal_current_repeat3@@");
+            List<int> digitCount = BoardCalculation.CountByDigits(levelData.curBoard);
+            bool hasRepeat3 = false;
+            for (int i = 0; i < digitCount.Count; i++)
+            {
+                if (digitCount[i] >= 3)
+                {
+                    stat2txt += string.Format(" {0}", i);
+                    hasRepeat3 = true;
+                }
+            }
+            if (hasRepeat3)
+            {
+                flaskHub.stat2.SetText(LocalizedAssetLookup.singleton.Translate(stat2txt));
+                flaskHub.stat2.gameObject.SetActive(true);
+            }
+        }
+    }
+    void RuleSketchInit()
+    {
+        flaskHub.rulesetInfographs[0].SetActive(levelData.levelIndex > POURING_LVINDEX + 1);
+        flaskHub.rulesetInfographs[1].SetActive(levelData.levelIndex > CHECK1_LVINDEX);
+        flaskHub.rulesetInfographs[2].SetActive(levelData.levelIndex > CHECK2_LVINDEX);
+        flaskHub.rulesetInfographs[3].SetActive(levelData.levelIndex > CHECK3_LVINDEX);
+
+    }
+    void RuleSketchAnimate()
+    {
+        if (levelData.levelIndex == POURING_LVINDEX + 1)
+        {
+            flaskHub.rulesetInfographs[0].SetActive(true);
+            flaskHub.rulesetInfographs[0].GetComponent<SpriteRenderer>().DOFade(0f, dConstants.UI.StandardizedVFXAnimDuration).From();
+        }
+        if (levelData.levelIndex == CHECK1_LVINDEX)
+        {
+            flaskHub.rulesetInfographs[1].SetActive(true);
+            flaskHub.rulesetInfographs[1].GetComponent<SpriteRenderer>().DOFade(0f, dConstants.UI.StandardizedVFXAnimDuration).From();
+        }
+        if (levelData.levelIndex == CHECK2_LVINDEX)
+        {
+            flaskHub.rulesetInfographs[2].SetActive(true);
+            flaskHub.rulesetInfographs[2].GetComponent<SpriteRenderer>().DOFade(0f, dConstants.UI.StandardizedVFXAnimDuration).From();
+        }
+        if (levelData.levelIndex == CHECK3_LVINDEX)
+        {
+            flaskHub.rulesetInfographs[3].SetActive(true);
+            flaskHub.rulesetInfographs[3].GetComponent<SpriteRenderer>().DOFade(0f, dConstants.UI.StandardizedVFXAnimDuration).From();
+        }
     }
 }
