@@ -188,6 +188,12 @@ public class LM_009_Flask : LevelMasterBase
             }
         }
     }
+    public override void InitTool()
+    {
+        base.InitTool();
+        hub.toolMaster.toolIcon.sprite = flaskHub.toolSprite;
+        //UpdateToolStatusDisplay();
+    }
     public override void ToolConsume(Vector2Int coord)
     {
         //consume tool and save curboard to previous board/boards
@@ -488,16 +494,14 @@ public class LM_009_Flask : LevelMasterBase
     }
     void PanelInfoUpdate()
     {
+        string statTxt = "";
         if (levelData.levelIndex >= CHECK2_LVINDEX)
         {
-            string stat1txt = string.Format("@Loc=ui_goal_current_avg@@{0}", BoardCalculation.AverageByDigits(levelData.curBoard).ToString("0.00"));
-            flaskHub.stat1.SetText(LocalizedAssetLookup.singleton.Translate(stat1txt));
-            flaskHub.stat1.gameObject.SetActive(true);
+            statTxt += string.Format("@Loc=ui_goal_current_avg@@{0}", BoardCalculation.AverageByDigits(levelData.curBoard).ToString("0.00"));
         }
-        flaskHub.stat2.gameObject.SetActive(false);
         if (levelData.levelIndex >= CHECK3_LVINDEX)
         {
-            string stat2txt = string.Format("@Loc=ui_goal_current_repeat3@@");
+            string stat2txt = string.Format("<br>@Loc=ui_goal_current_repeat3@@");
             List<int> digitCount = BoardCalculation.CountByDigits(levelData.curBoard);
             bool hasRepeat3 = false;
             for (int i = 0; i < digitCount.Count; i++)
@@ -510,10 +514,13 @@ public class LM_009_Flask : LevelMasterBase
             }
             if (hasRepeat3)
             {
-                flaskHub.stat2.SetText(LocalizedAssetLookup.singleton.Translate(stat2txt));
-                flaskHub.stat2.gameObject.SetActive(true);
+                statTxt += LocalizedAssetLookup.singleton.Translate(stat2txt);
             }
         }
+        flaskHub.stat1.SetText(LocalizedAssetLookup.singleton.Translate(statTxt));
+        flaskHub.stat1.gameObject.SetActive(true);
+        flaskHub.stat2.gameObject.SetActive(false);
+        
     }
     void RuleSketchInit()
     {

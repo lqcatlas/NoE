@@ -365,20 +365,20 @@ UID,Key,EN,CN
 364,narrative_tm8_ln014,,
 365,narrative_tm8_ln015,,
 366,narrative_tm9_ln001,,迷人的色彩
-367,narrative_tm9_ln002,,色彩斑斓的烧瓶。
-368,narrative_tm9_ln003,,充满着未知的实验，
+367,narrative_tm9_ln002,,烧瓶色彩斑斓。
+368,narrative_tm9_ln003,,实验充满未知。
 369,narrative_tm9_ln004,,一旦失去耐心，
 370,narrative_tm9_ln005,,BOOM！
-371,narrative_tm9_ln006,,实验室安全守则：
-372,narrative_tm9_ln007,,1. 避免超量
-373,narrative_tm9_ln008,,2. 轻拿轻放
-374,narrative_tm9_ln009,,3. 拒绝混用
-375,narrative_tm9_ln010,,4. 保持通风
-376,narrative_tm9_ln011,,做完这次实验就可以回家了。
-377,narrative_tm9_ln012,,
-378,narrative_tm9_ln013,,
-379,narrative_tm9_ln014,,
-380,narrative_tm9_ln015,,
+371,narrative_tm9_ln006,,----------
+372,narrative_tm9_ln007,,实验安全守则：
+373,narrative_tm9_ln008,,1. 避免超量
+374,narrative_tm9_ln009,,2. 轻拿轻放
+375,narrative_tm9_ln010,,3. 拒绝混用
+376,narrative_tm9_ln011,,4. 保持通风
+377,narrative_tm9_ln012,,----------
+378,narrative_tm9_ln013,,夜色渐浓，
+379,narrative_tm9_ln014,,做完实验就可以回家了。
+380,narrative_tm9_ln015,,加班加点。
 381,prompt_tm1,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 382,prompt_tm2,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 383,prompt_tm4,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
