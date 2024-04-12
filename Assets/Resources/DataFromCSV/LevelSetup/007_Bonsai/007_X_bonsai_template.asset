@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
   m_Name: 007_X_bonsai_template
   m_EditorClassIdentifier: 
-  levelUID: 0
-  themeIndex: 0
+  levelUID: 799
+  themeIndex: 7
   levelIndex: 1
   nextLevelIndex: 0
-  previousLevel: {fileID: 11400000, guid: 38265c499736e774ba300a5c64fcd026, type: 2}
-  nextLevel: {fileID: 11400000}
+  previousLevel: {fileID: 0}
+  nextLevel: {fileID: 0}
   theme: '@Loc=themename_tm6@@'
   title: '@Loc=levelname_lv601@@'
   newInitNarrative: '@Loc=narrative_tm6_ln001@@'
@@ -34,7 +34,7 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 0
   initBoard:
-    boardSize: {x: 4, y: 4}
+    boardSize: {x: 10, y: 10}
     cells:
     - coord: {x: 0, y: 0}
       value: 0
@@ -48,6 +48,24 @@ MonoBehaviour:
     - coord: {x: 3, y: 0}
       value: 0
       status: -1
+    - coord: {x: 4, y: 0}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 0}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 0}
+      value: 1
+      status: 0
+    - coord: {x: 7, y: 0}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 0}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 0}
+      value: 0
+      status: -1
     - coord: {x: 0, y: 1}
       value: 0
       status: -1
@@ -55,9 +73,27 @@ MonoBehaviour:
       value: 0
       status: -1
     - coord: {x: 2, y: 1}
+      value: 12
+      status: 0
+    - coord: {x: 3, y: 1}
       value: 0
       status: -1
-    - coord: {x: 3, y: 1}
+    - coord: {x: 4, y: 1}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 1}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 1}
+      value: 0
+      status: -1
+    - coord: {x: 7, y: 1}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 1}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 1}
       value: 0
       status: -1
     - coord: {x: 0, y: 2}
@@ -72,6 +108,24 @@ MonoBehaviour:
     - coord: {x: 3, y: 2}
       value: 0
       status: -1
+    - coord: {x: 4, y: 2}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 2}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 2}
+      value: 0
+      status: -1
+    - coord: {x: 7, y: 2}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 2}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 2}
+      value: 0
+      status: -1
     - coord: {x: 0, y: 3}
       value: 0
       status: -1
@@ -84,6 +138,204 @@ MonoBehaviour:
     - coord: {x: 3, y: 3}
       value: 0
       status: -1
-    toolCount: 1
+    - coord: {x: 4, y: 3}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 3}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 3}
+      value: 0
+      status: -1
+    - coord: {x: 7, y: 3}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 3}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 3}
+      value: 0
+      status: -1
+    - coord: {x: 0, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 1, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 2, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 3, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 4, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 7, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 4}
+      value: 0
+      status: -1
+    - coord: {x: 0, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 1, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 2, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 3, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 4, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 7, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 5}
+      value: 0
+      status: -1
+    - coord: {x: 0, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 1, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 2, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 3, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 4, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 7, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 6}
+      value: 0
+      status: -1
+    - coord: {x: 0, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 1, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 2, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 3, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 4, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 7, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 7}
+      value: 0
+      status: -1
+    - coord: {x: 0, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 1, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 2, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 3, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 4, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 7, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 8}
+      value: 0
+      status: -1
+    - coord: {x: 0, y: 9}
+      value: 0
+      status: -1
+    - coord: {x: 1, y: 9}
+      value: 0
+      status: -1
+    - coord: {x: 2, y: 9}
+      value: 0
+      status: -1
+    - coord: {x: 3, y: 9}
+      value: 0
+      status: -1
+    - coord: {x: 4, y: 9}
+      value: 0
+      status: -1
+    - coord: {x: 5, y: 9}
+      value: 0
+      status: -1
+    - coord: {x: 6, y: 9}
+      value: 0
+      status: -1
+    - coord: {x: 7, y: 9}
+      value: 0
+      status: -1
+    - coord: {x: 8, y: 9}
+      value: 0
+      status: -1
+    - coord: {x: 9, y: 9}
+      value: 0
+      status: -1
+    toolCount: 100
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

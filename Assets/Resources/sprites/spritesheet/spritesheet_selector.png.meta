@@ -587,7 +587,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -595,6 +595,27 @@ TextureImporter:
       bones: []
       spriteID: 5154ce08df9fd1f40abc22bfb2812ca9
       internalID: -678919929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badge_themeicon
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598221b957b8fd7448f2388646747606
+      internalID: 558831668
       vertices: []
       indices: 
       edges: []
@@ -642,6 +663,7 @@ TextureImporter:
       spritesheet_selector_18: -534294863
       spritesheet_selector_33: -2135353512
       spritesheet_selector_70: 1480940904
+      badge_themeicon: 558831668
       spritesheet_selector_7: 2128163876
       spritesheet_selector_80: -161805075
       spritesheet_selector_50: 459051110

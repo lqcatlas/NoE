@@ -3275,7 +3275,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3296,7 +3296,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3304,6 +3304,48 @@ TextureImporter:
       bones: []
       spriteID: 1cdbd214d792fe9479791c61af6f5f0c
       internalID: -1769165631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badge_tool@v1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db00b8fad23d094290255b411b9a93d
+      internalID: -7132068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: badge_tool@v2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc719af4ef5bd324499f591a667f9895
+      internalID: 991213013
       vertices: []
       indices: 
       edges: []
@@ -3396,6 +3438,7 @@ TextureImporter:
       star6_v2: -59877654
       window3_v2: -1328685625
       window5_v2: -1835653343
+      badge_tool@v1: -7132068
       star2_v2: 1701133427
       moon_v4: -1618747589
       star4_v1: -1221237601
@@ -3418,6 +3461,7 @@ TextureImporter:
       sushi@v1: 1983163683
       window5_fill: 692586796
       sword@v1: 503426635
+      badge_tool@v2: 991213013
       window3_v1: -268414213
       flask@v1: -1524441901
       currency_star_frame: -435409087

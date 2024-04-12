@@ -11,6 +11,7 @@ public class BoardMaster : MonoBehaviour
     [SerializeField] int MinXYSize = 2;
     //use buffer to make smaller board looker bigger but not as same big as the standardized board 
     [SerializeField] float ResizeBuffer = 0.4f;
+    [SerializeField] float ResizeBuffer_Large = 0.55f;
     public GameObject cellTempalte;
     [Header("Master Objs")]
     public LevelMasterBase levelMaster;
@@ -46,7 +47,14 @@ public class BoardMaster : MonoBehaviour
             }
         }
         //resize holder
-        cellHolder.localScale = Vector3.one * Mathf.Pow(StandardizedXYSize / Mathf.Max(MinXYSize, x, y), ResizeBuffer);
+        if(Mathf.Max(MinXYSize, x, y) <= 5)
+        {
+            cellHolder.localScale = Vector3.one * Mathf.Pow(StandardizedXYSize / Mathf.Max(MinXYSize, x, y), ResizeBuffer);
+        }
+        else
+        {
+            cellHolder.localScale = Vector3.one * Mathf.Pow(StandardizedXYSize / Mathf.Max(MinXYSize, x, y), ResizeBuffer_Large);
+        }
     }
 
     void InstantiateCell_atXY(Vector2Int cellCoord, Vector2Int boardSize)
