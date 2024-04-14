@@ -60,7 +60,7 @@ public class LM_007_Bonsai : LevelMasterBase
                 }
                 else
                 {
-                    hub.boardMaster.cells[i].SetCellActive(false);
+                    hub.boardMaster.cells[i].SetCellEmpty(false);
                 }
                 //display bonsai leaves sprite
                 GameObject bonsaiLeaf = Instantiate(bonsaiHub.leafTemplate, bonsaiHub.cellBgHolder);
@@ -106,7 +106,7 @@ public class LM_007_Bonsai : LevelMasterBase
                 DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(bonsaiHub.leaves[i].Key.coord);
                 if (temp_cellData.status == -1)
                 {
-                    bonsaiHub.leaves[i].Key.SetCellActive(false);
+                    bonsaiHub.leaves[i].Key.SetCellEmpty(false);
                     VFX_LeafFall(bonsaiHub.leaves[i].Value);
                 }
             }

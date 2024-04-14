@@ -69,3 +69,10 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: da9011ed3ad4bf04792ae97499a362a9, type: 3}
     ThemeSprite: {fileID: -678919929, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}
+  - Theme: badge
+    ThemeID: 10
+    ScriptName: LM_010_Badge
+    ThemeSpecialHub: {fileID: 5242734479810822178, guid: 3cf6ff40b84e2b143b4cb0c908d15ca5, type: 3}
+    ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: 8e0bce30f40788c4f8b76d7579e9d655, type: 3}
+    ThemeSprite: {fileID: 558831668, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
+    ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}

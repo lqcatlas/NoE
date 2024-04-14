@@ -46,7 +46,11 @@ public class CellMaster : MonoBehaviour
             usingSprite = false;
             numberTxt.gameObject.SetActive(true);
         }
-        ResetToEmpty();
+        numberTxt.SetText("");
+        for (int i = 0; i < numberInSprites.Count; i++)
+        {
+            numberInSprites[i].gameObject.SetActive(false);
+        }
     }
     public void DisplayNumber(int _number)
     {
@@ -63,7 +67,7 @@ public class CellMaster : MonoBehaviour
         }
         //SetCellActive(true);
     }
-    public void SetColor(Color _clr, float duration)
+    public void SetColor(Color _clr, float duration = 0f)
     {
         if (duration == 0f)
         {
@@ -80,6 +84,17 @@ public class CellMaster : MonoBehaviour
             {
                 numberInSprites[i].DOColor(_clr, duration);
             }
+        }
+    }
+    public void SetFrameColor(Color _clr, float duration = 0f)
+    {
+        if (duration == 0f)
+        {
+            frameSprt.color = _clr;
+        }
+        else
+        {
+            frameSprt.DOColor(_clr, duration);
         }
     }
     void SetNumberTxt(int _number)
@@ -120,21 +135,21 @@ public class CellMaster : MonoBehaviour
         }
         numberInSpriteGroup.localScale = Vector3.one * scalarByDigits[Mathf.Min(activatedCount, scalarByDigits.Count-1)];
     }
-    public void SetCellActive(bool isActive)
+    public void SetCellEmpty(bool isActive)
     {
         cellCollider.enabled = isActive;
         if (!isActive)
         {
-            ResetToEmpty();
+            numberTxt.SetText("");
+            for (int i = 0; i < numberInSprites.Count; i++)
+            {
+                numberInSprites[i].gameObject.SetActive(false);
+            }
         }
     }
-    void ResetToEmpty()
+    public void SetCellInteractable(bool isInteractable)
     {
-        numberTxt.SetText("");
-        for (int i = 0; i < numberInSprites.Count; i++)
-        {
-            numberInSprites[i].gameObject.SetActive(false);
-        }
+        cellCollider.enabled = isInteractable;
     }
     public void InitCellPosition(Vector2Int _coord, Vector2Int _size)
     {

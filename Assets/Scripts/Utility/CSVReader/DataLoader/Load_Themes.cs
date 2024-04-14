@@ -230,7 +230,6 @@ public class Load_Themes : MonoBehaviour
             //Debug.Log(string.Format("loading data from csv for level({0})", level.levelUID));
         }
         object result = null;
-        result = null;
         if (levelDic.TryGetValue("themeindex", out result))
         {
             //Debug.Log(result);
