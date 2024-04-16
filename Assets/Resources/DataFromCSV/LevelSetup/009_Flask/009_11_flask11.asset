@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 009_06_flask6
+  m_Name: 009_11_flask11
   m_EditorClassIdentifier: 
-  levelUID: 906
+  levelUID: 911
   themeIndex: 9
-  levelIndex: 6
-  nextLevelIndex: 907
-  previousLevel: {fileID: 11400000, guid: 8fb9aa53693e786449fe9e0bf9dfc5c6, type: 2}
-  nextLevel: {fileID: 11400000, guid: 89d0145f16afc964094ade7e87e3bd33, type: 2}
+  levelIndex: 11
+  nextLevelIndex: 912
+  previousLevel: {fileID: 11400000, guid: d935622c944d3b14dacf288024d72bc9, type: 2}
+  nextLevel: {fileID: 11400000, guid: be159d6fa2d10d84bb57aee5ca0710de, type: 2}
   theme: '@Loc=themename_tm9@@'
-  title: '@Loc=levelname_lv906@@'
-  newInitNarrative: '@Loc=narrative_tm9_ln011@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm9_ln012@@'
+  title: '@Loc=levelname_lv911@@'
+  newInitNarrative: '@Loc=narrative_tm9_ln015@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm9_ln001@@'
   - '@Loc=narrative_tm9_ln002@@'
@@ -34,7 +33,11 @@ MonoBehaviour:
   - '@Loc=narrative_tm9_ln008@@'
   - '@Loc=narrative_tm9_ln009@@'
   - '@Loc=narrative_tm9_ln010@@'
-  goal: '@Loc=goal_lv906@@'
+  - '@Loc=narrative_tm9_ln011@@'
+  - '@Loc=narrative_tm9_ln012@@'
+  - '@Loc=narrative_tm9_ln013@@'
+  - '@Loc=narrative_tm9_ln014@@'
+  goal: '@Loc=goal_lv911@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv903@@'
@@ -44,22 +47,25 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule3_lv904@@'
   - tag: 0
     ruleDesc: '@Loc=rule4_lv905@@'
-  - tag: 1
+  - tag: 0
     ruleDesc: '@Loc=rule5_lv906@@'
-  isHard: 0
+  isHard: 1
   allowRewind: 0
   initBoard:
-    boardSize: {x: 3, y: 1}
+    boardSize: {x: 4, y: 1}
     cells:
     - coord: {x: 0, y: 0}
-      value: 79
+      value: 331
       status: 0
     - coord: {x: 1, y: 0}
-      value: 11
+      value: 290
       status: 0
     - coord: {x: 2, y: 0}
-      value: 99
+      value: 150
       status: 0
-    toolCount: 3000
+    - coord: {x: 3, y: 0}
+      value: 142
+      status: 0
+    toolCount: 4000
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

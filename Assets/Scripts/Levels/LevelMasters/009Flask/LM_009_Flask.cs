@@ -79,7 +79,7 @@ public class LM_009_Flask : LevelMasterBase
         curAddRate = minPourRatePerSecond;
         lastTimestamp = Time.time;
         startTimestamp = Time.time;
-        accumulatedAmount = 0f;
+        accumulatedAmount = pourAmountPerTick;
         IEnumerator coroutine = PouringSim(coord, 0.05f);
         StartCoroutine(coroutine);
     }
@@ -194,6 +194,57 @@ public class LM_009_Flask : LevelMasterBase
         hub.toolMaster.toolIcon.sprite = flaskHub.toolSprite;
         //UpdateToolStatusDisplay();
     }
+    public override bool InitNarrative()
+    {
+        bool hasInitNarrative = false;
+        hub.narrativeMaster.title.SetText(LocalizedAssetLookup.singleton.Translate(levelData.title));
+        //narrative lines
+        hub.narrativeMaster.ClearAllLines();
+        int indexOffset = levelData.oldNarratives.Count;
+        for (int i = 0; i < hub.narrativeMaster.lines.Count; i++)
+        {
+
+            if (i < levelData.oldNarratives.Count)
+            {
+                hub.narrativeMaster.lines[i].SetText(LocalizedAssetLookup.singleton.Translate(levelData.oldNarratives[i]));
+            }
+            else
+            {
+                hub.narrativeMaster.lines[i].SetText("");
+            }
+        }
+        if (levelData.newInitNarrative != null)
+        {
+            if (levelData.newInitNarrative.Length > 0)
+            {
+                hasInitNarrative = true;
+                hub.narrativeMaster.TypeALine(levelData.newInitNarrative);
+            }
+        }
+        lineStatus.Clear();
+        if (levelData.newPlayNarratives.Count > 0)
+        {
+            for (int i = 0; i < levelData.newPlayNarratives.Count; i++)
+            {
+                lineStatus.Add(NarrativeLineStatus.INQUEUE);
+            }
+        }
+        //play all lines on level 3
+        if(levelData.levelIndex == 3)
+        {
+            if (lineStatus[0] == NarrativeLineStatus.INQUEUE)
+            {
+                TryTypeNextPlayLine(0);
+                lineStatus[0] = NarrativeLineStatus.PLAYED;
+            }
+            if (lineStatus[1] == NarrativeLineStatus.INQUEUE)
+            {
+                TryTypeNextPlayLine(1);
+                lineStatus[1] = NarrativeLineStatus.PLAYED;
+            }
+        }
+        return hasInitNarrative;
+    }
     public override void ToolConsume(Vector2Int coord)
     {
         //consume tool and save curboard to previous board/boards
@@ -284,7 +335,7 @@ public class LM_009_Flask : LevelMasterBase
     }
     public override void UpdateGoal()
     {
-        if (levelData.levelIndex == 7)
+        if (levelData.levelIndex == 9)
         {
             List<int> NumbersCount = BoardCalculation.CountByDigits(levelData.curBoard);
             missingNumbers = "";
@@ -301,7 +352,7 @@ public class LM_009_Flask : LevelMasterBase
                 hub.goalMaster.lines[1].gameObject.SetActive(true);
                 LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
             }
-        }
+        }                                          
     }
     public override void UpdateNarrative()
     {
@@ -416,21 +467,42 @@ public class LM_009_Flask : LevelMasterBase
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.CountX_Ytimes(levelData.curBoard, 500, 1);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 910, 2);
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 700, 2);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 920, 2);
         }
         else if (levelData.levelIndex == 6)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 900, 3);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 930, 3);
         }
         else if (levelData.levelIndex == 7)
         {
-            return missingNumbers.Length == 0;
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 940, 3);
         }
         else if (levelData.levelIndex == 8)
+        {
+            List<int> NumbersCount = BoardCalculation.CountByDigits(levelData.curBoard);
+            bool hasDup = false;
+            for (int i = 0; i < NumbersCount.Count; i += 2)
+            {
+                if (NumbersCount[i] > 1)
+                {
+                    hasDup = true;
+                }
+            }
+            return !hasDup;
+        }
+        else if (levelData.levelIndex == 9)
+        {
+            return missingNumbers.Length == 0;
+        }
+        else if (levelData.levelIndex == 10)
+        {
+            return levelData.curBoard.toolCount == 0;
+        }
+        else if (levelData.levelIndex == 11)
         {
             List<int> NumbersCount = BoardCalculation.CountByDigits(levelData.curBoard);
             bool hasEven = false;
@@ -443,11 +515,7 @@ public class LM_009_Flask : LevelMasterBase
             }
             return !hasEven;
         }
-        else if (levelData.levelIndex == 9)
-        {
-            return levelData.curBoard.toolCount == 0;
-        }
-        else if (levelData.levelIndex == 10)
+        else if (levelData.levelIndex == 12)
         {
             return levelData.curBoard.toolCount == 0;
         }

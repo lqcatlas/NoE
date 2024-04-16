@@ -19,24 +19,34 @@ public class NarrativeMaster : MonoBehaviour
     public TextMeshPro title;
     public List<TextMeshPro> lines;
 
+    TextMeshPro targetLine;
     string QueuedText = "";
     string FinalText = "";
     int curCharacters = 0;
+    bool typing;
 
     //List<string> QueuedWords;
     Sequence seq;
     public void ClearAllLines()
     {
-        for(int i = 0; i < lines.Count; i++)
+        seq.Kill();
+        typing = false;
+        targetLine = null;
+        for (int i = 0; i < lines.Count; i++)
         {
             lines[i].SetText("");
         }
     }
     public void TypeALine(string _text)
     {
+        if (typing)
+        {
+            seq.Kill();
+            targetLine.SetText(FinalText);
+        }
         UpdateTypingSppeed();
         _text = LocalizedAssetLookup.singleton.Translate(_text);
-        TextMeshPro targetLine = null;
+        targetLine = null;
         for(int i=0;i< lines.Count; i++)
         {
             if (lines[i].text.Length == 0)
@@ -50,6 +60,8 @@ public class NarrativeMaster : MonoBehaviour
             FinalText = _text;
             QueuedText = GetQueuedTexts(_text);
             curCharacters = 0;
+            typing = true;
+            //TextMeshPro _targetLine = targetLine;
             TryTypeCharacter(targetLine);
         }
         else
@@ -70,6 +82,7 @@ public class NarrativeMaster : MonoBehaviour
         else
         {
             _targetLine.SetText(FinalText);
+            typing = false;
         }
     }
     string GetQueuedTexts(string richtextSentence)

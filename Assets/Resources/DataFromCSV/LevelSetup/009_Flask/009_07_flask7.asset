@@ -50,20 +50,17 @@ MonoBehaviour:
   isHard: 0
   allowRewind: 0
   initBoard:
-    boardSize: {x: 4, y: 1}
+    boardSize: {x: 3, y: 1}
     cells:
     - coord: {x: 0, y: 0}
-      value: 230
+      value: 396
       status: 0
     - coord: {x: 1, y: 0}
-      value: 210
+      value: 698
       status: 0
     - coord: {x: 2, y: 0}
-      value: 175
+      value: 489
       status: 0
-    - coord: {x: 3, y: 0}
-      value: 80
-      status: 0
-    toolCount: 5000
+    toolCount: 3000
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

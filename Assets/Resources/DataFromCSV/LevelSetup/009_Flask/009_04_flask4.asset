@@ -45,11 +45,11 @@ MonoBehaviour:
     boardSize: {x: 2, y: 1}
     cells:
     - coord: {x: 0, y: 0}
-      value: 75
+      value: 690
       status: 0
     - coord: {x: 1, y: 0}
       value: 85
       status: 0
-    toolCount: 5000
+    toolCount: 1500
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

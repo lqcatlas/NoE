@@ -17,10 +17,10 @@ MonoBehaviour:
   levelIndex: 9
   nextLevelIndex: 910
   previousLevel: {fileID: 11400000, guid: 8f9b6a2ffb31543498af40a1f2a37e5f, type: 2}
-  nextLevel: {fileID: 11400000, guid: 38265c499736e774ba300a5c64fcd026, type: 2}
+  nextLevel: {fileID: 11400000, guid: d935622c944d3b14dacf288024d72bc9, type: 2}
   theme: '@Loc=themename_tm9@@'
   title: '@Loc=levelname_lv909@@'
-  newInitNarrative: '@Loc=narrative_tm9_ln014@@'
+  newInitNarrative: 
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm9_ln001@@'
@@ -54,17 +54,17 @@ MonoBehaviour:
     boardSize: {x: 4, y: 1}
     cells:
     - coord: {x: 0, y: 0}
-      value: 130
+      value: 239
       status: 0
     - coord: {x: 1, y: 0}
-      value: 90
+      value: 210
       status: 0
     - coord: {x: 2, y: 0}
-      value: 50
+      value: 175
       status: 0
     - coord: {x: 3, y: 0}
-      value: 42
+      value: 80
       status: 0
-    toolCount: 3400
+    toolCount: 4000
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

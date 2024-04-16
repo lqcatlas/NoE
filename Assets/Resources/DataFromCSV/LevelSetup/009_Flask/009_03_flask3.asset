@@ -47,6 +47,6 @@ MonoBehaviour:
     - coord: {x: 1, y: 0}
       value: 100
       status: 0
-    toolCount: 1300
+    toolCount: 1500
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

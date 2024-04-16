@@ -8,6 +8,7 @@ public class SheetItem_LevelSetup : ScriptableObject
     [Header("IDs(Manually Input Required)")]
     //an unique ID to locate the level among all levels
     public int levelUID;
+    [Header("Index")]
     public int themeIndex;
     public int levelIndex;
     public int nextLevelIndex;

@@ -17,7 +17,7 @@ public static class dConstants
     public static class VFX
     {
         public const float CallbackAnimationDelayAfterInit = 1f;
-        public const float AdditionalDelayWithNarrative = 2f;
+        public const float AdditionalDelayWithNarrative = 1f;
         public const float CallbackAnimationDelayAfterPlay = 0.2f;
         public const float NumberShiftAnimInterval = 0.05f;
         

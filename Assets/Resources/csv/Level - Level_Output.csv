@@ -103,8 +103,10 @@ UID,themeindex,levelindex,nextlevelindex,themename,levelname,init,play1,play2,pl
 906,9,6,907,@Loc=themename_tm9@@,@Loc=levelname_lv906@@,11,12,,,@Loc=goal_lv906@@,None,@Loc=rule1_lv903@@,None,@Loc=rule2_lv903@@,None,@Loc=rule3_lv904@@,None,@Loc=rule4_lv905@@,Addition,@Loc=rule5_lv906@@
 907,9,7,908,@Loc=themename_tm9@@,@Loc=levelname_lv907@@,,,,,@Loc=goal_lv907@@,None,@Loc=rule1_lv903@@,None,@Loc=rule2_lv903@@,None,@Loc=rule3_lv904@@,None,@Loc=rule4_lv905@@,None,@Loc=rule5_lv906@@
 908,9,8,909,@Loc=themename_tm9@@,@Loc=levelname_lv908@@,13,,,,@Loc=goal_lv908@@,None,@Loc=rule1_lv903@@,None,@Loc=rule2_lv903@@,None,@Loc=rule3_lv904@@,None,@Loc=rule4_lv905@@,None,@Loc=rule5_lv906@@
-909,9,9,910,@Loc=themename_tm9@@,@Loc=levelname_lv909@@,14,,,,@Loc=goal_lv909@@,None,@Loc=rule1_lv903@@,None,@Loc=rule2_lv903@@,None,@Loc=rule3_lv904@@,None,@Loc=rule4_lv905@@,None,@Loc=rule5_lv906@@
-910,9,10,,@Loc=themename_tm9@@,@Loc=levelname_lv910@@,15,,,,@Loc=goal_lv910@@,None,@Loc=rule1_lv903@@,None,@Loc=rule2_lv903@@,None,@Loc=rule3_lv904@@,None,@Loc=rule4_lv905@@,None,@Loc=rule5_lv906@@
+909,9,9,910,@Loc=themename_tm9@@,@Loc=levelname_lv909@@,,,,,@Loc=goal_lv909@@,None,@Loc=rule1_lv903@@,None,@Loc=rule2_lv903@@,None,@Loc=rule3_lv904@@,None,@Loc=rule4_lv905@@,None,@Loc=rule5_lv906@@
+910,9,10,911,@Loc=themename_tm9@@,@Loc=levelname_lv910@@,14,,,,@Loc=goal_lv910@@,None,@Loc=rule1_lv903@@,None,@Loc=rule2_lv903@@,None,@Loc=rule3_lv904@@,None,@Loc=rule4_lv905@@,None,@Loc=rule5_lv906@@
+911,9,11,912,@Loc=themename_tm9@@,@Loc=levelname_lv911@@,15,,,,@Loc=goal_lv911@@,None,@Loc=rule1_lv903@@,None,@Loc=rule2_lv903@@,None,@Loc=rule3_lv904@@,None,@Loc=rule4_lv905@@,None,@Loc=rule5_lv906@@
+912,9,12,,@Loc=themename_tm9@@,@Loc=levelname_lv912@@,,,,,@Loc=goal_lv912@@,None,@Loc=rule1_lv903@@,None,@Loc=rule2_lv903@@,None,@Loc=rule3_lv904@@,None,@Loc=rule4_lv905@@,None,@Loc=rule5_lv906@@
 1001,10,1,1002,@Loc=themename_tm10@@,@Loc=levelname_lv1001@@,1,,,,@Loc=goal_lv1001@@,None,@Loc=rule1_lv1001@@,Addition,@Loc=rule2_lv1001@@,,,,,,
 1002,10,2,1003,@Loc=themename_tm10@@,@Loc=levelname_lv1002@@,2,,,,@Loc=goal_lv1002@@,None,@Loc=rule1_lv1001@@,None,@Loc=rule2_lv1001@@,,,,,,
 1003,10,3,1004,@Loc=themename_tm10@@,@Loc=levelname_lv1003@@,3,,,,@Loc=goal_lv1003@@,None,@Loc=rule1_lv1001@@,None,@Loc=rule2_lv1001@@,Addition,@Loc=rule3_lv1003@@,,,,
