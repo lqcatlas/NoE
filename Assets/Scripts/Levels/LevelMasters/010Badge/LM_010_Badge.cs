@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class LM_010_Badge : LevelMasterBase
 {
@@ -21,6 +22,27 @@ public class LM_010_Badge : LevelMasterBase
     }
     public override void InitCells()
     {
+        //clear old bgs
+        List<Transform> oldBgs = themeHub.bgHolder.GetComponentsInChildren<Transform>().ToList();
+        oldBgs.Remove(themeHub.bgHolder.transform);
+        for (int i = 0; i < oldBgs.Count; i++)
+        {
+            Destroy(oldBgs[i].gameObject);
+        }
+        themeHub.bgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
+        //set existing circles
+        for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+        {
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+            if(temp_cellData.status == (int)CellStatus.found)
+            {
+                GameObject obj = Instantiate(themeHub.drawingTemplate, themeHub.bgHolder);
+                obj.GetComponent<CellChoice_Badge>().SetToCorrect(temp_cellData.status == (int)CellStatus.found);
+                obj.transform.position = hub.boardMaster.cells[i].transform.position;
+                //hub.boardMaster.cells[i].SetCellInteractable(false);
+            }
+        }
+        //set each cell based on status
         for (int i = 0; i < hub.boardMaster.cells.Count; i++)
         {
             DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
@@ -39,18 +61,25 @@ public class LM_010_Badge : LevelMasterBase
                         hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
                         break;
                     case (int)CellStatus.found:
-                        Debug.LogError(string.Format("found is an unsupported status in Badge's CellInit() at {0},{1}", temp_cellData.coord.x, temp_cellData.coord.y));
+                        //Debug.LogError(string.Format("found is an unsupported status in Badge's CellInit() at {0},{1}", temp_cellData.coord.x, temp_cellData.coord.y));
+                        hub.boardMaster.cells[i].SetCellInteractable(false);
                         break;
                     case (int)CellStatus.wrong:
-                        Debug.LogError(string.Format("wrong is an unsupported status in Badge's CellInit() at {0},{1}", temp_cellData.coord.x, temp_cellData.coord.y));
+                        //Debug.LogError(string.Format("wrong is an unsupported status in Badge's CellInit() at {0},{1}", temp_cellData.coord.x, temp_cellData.coord.y));
+                        hub.boardMaster.cells[i].SetCellInteractable(false);
                         break;
                     default:
                         hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
+                        hub.boardMaster.cells[i].SetCellInteractable(true);
                         break;
                 }
             }
         }
-        //bg to do
+    }
+    public override void InitTool()
+    {
+        base.InitTool();
+        hub.toolMaster.toolIcon.sprite = themeHub.toolSprite;
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -93,6 +122,20 @@ public class LM_010_Badge : LevelMasterBase
             levelData.curBoard.GetCellDataByCoord(coord).status = (int)CellStatus.found;
         }
     }
+    public override void UpdateCells(Vector2Int coord)
+    {
+        DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(coord);
+        for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+        {
+            if (hub.boardMaster.cells[i].coord == coord)
+            {
+                GameObject obj = Instantiate(themeHub.drawingTemplate, themeHub.bgHolder);
+                obj.GetComponent<CellChoice_Badge>().SetToCorrect(temp_cellData.status == (int)CellStatus.found);
+                obj.transform.position = hub.boardMaster.cells[i].transform.position;
+                hub.boardMaster.cells[i].SetCellInteractable(false);
+            }
+        }
+    }
     public override bool CheckWinCondition()
     {
         if (wrongSelection)
@@ -108,6 +151,19 @@ public class LM_010_Badge : LevelMasterBase
             Debug.LogError(string.Format("reach undefined level in CheckWinCondition of ({0})", levelData.theme));
             return false;
         }
+    }
+    public override bool CheckLoseCondition()
+    {
+        if (levelData.curBoard.toolCount == 0)
+        {
+            return true;
+        }
+        else if (wrongSelection)
+        {
+            //lose if any choice is wrong
+            return true;
+        }
+        return false;
     }
     bool Rule1Check(DataBoard board, Vector2Int coord)
     {

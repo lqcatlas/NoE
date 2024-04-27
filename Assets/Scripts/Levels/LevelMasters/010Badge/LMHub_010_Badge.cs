@@ -8,10 +8,7 @@ public class LMHub_010_Badge : MonoBehaviour
     public Sprite toolSprite;
     public ToolStatusGroup toolStatusGroup;
 
-    [Header("Background")]
-    public GameObject bgTemplate;
-
     [Header("Drawings")]
-    public GameObject correctDrawing;
-    public GameObject wrongDrawing;
+    public Transform bgHolder;
+    public GameObject drawingTemplate;
 }

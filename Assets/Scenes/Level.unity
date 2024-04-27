@@ -368,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 11400000, guid: d41dc660a95b15847a53d0151318986c, type: 2}
   curLanguage: 1
-  defaultLanguage: 0
+  defaultLanguage: 1
 --- !u!4 &165104778
 Transform:
   m_ObjectHideFlags: 0
@@ -1811,7 +1811,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425281391}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

@@ -45,12 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a077f91fc37d854586b6125e1f3da18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSprite: {fileID: 0}
+  toolSprite: {fileID: -7132068, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   toolStatusGroup:
     toolStatus: []
-  bgTemplate: {fileID: 0}
-  correctDrawing: {fileID: 0}
-  wrongDrawing: {fileID: 0}
+  bgHolder: {fileID: 4068668159233435932}
+  drawingTemplate: {fileID: 7605107522437205399, guid: 81849999a8c9f914f9b2d5200ac0d843, type: 3}
 --- !u!1 &8390322059011748740
 GameObject:
   m_ObjectHideFlags: 0
@@ -75,7 +74,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8390322059011748740}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 6, z: 0}
+  m_LocalPosition: {x: 2, y: 3, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
