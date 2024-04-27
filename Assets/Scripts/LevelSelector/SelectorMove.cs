@@ -9,6 +9,7 @@ public class SelectorMove : MonoBehaviour
     [SerializeField] float movingSpeedTier2;
     [SerializeField] Vector3 moveDirection;
     [SerializeField] Vector2 movingLimits;
+    public bool reachEnding;
 
     [SerializeField] Transform movingGroup;
     [SerializeField] SpriteRenderer bar;
@@ -23,7 +24,11 @@ public class SelectorMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (tier2 && tier1)
+        if (reachEnding)
+        {
+            //do nothing
+        }
+        else if (tier2 && tier1)
         {
             movingGroup.GetComponent<RectTransform>().localPosition += moveDirection * Time.fixedDeltaTime * movingSpeedTier2;
         }
@@ -31,20 +36,21 @@ public class SelectorMove : MonoBehaviour
         {
             movingGroup.GetComponent<RectTransform>().localPosition += moveDirection * Time.fixedDeltaTime * movingSpeedTier1;
         }
-        if (movingGroup.GetComponent<RectTransform>().localPosition.x <= movingLimits.x)
+        /*if (movingGroup.GetComponent<RectTransform>().localPosition.x <= movingLimits.x)
         {
             movingGroup.GetComponent<RectTransform>().localPosition -= new Vector3(1f, 0f, 0f) * (movingGroup.GetComponent<RectTransform>().localPosition.x - movingLimits.x);
         }
         else if (movingGroup.GetComponent<RectTransform>().localPosition.x >= movingLimits.y)
         {
             movingGroup.GetComponent<RectTransform>().localPosition -= new Vector3(1f, 0f, 0f) * (movingGroup.GetComponent<RectTransform>().localPosition.x - movingLimits.y);
-        }
+        }*/
     }
     void BarInit()
     {
         tier1 = false;
         tier2 = false;
         bar.color = new Color(1f, 1f, 1f, 0f);
+        reachEnding = false;
     }
     public void HoverOn()
     {

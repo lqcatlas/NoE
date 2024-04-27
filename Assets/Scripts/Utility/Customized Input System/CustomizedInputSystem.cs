@@ -97,10 +97,14 @@ public class CustomizedInputSystem : MonoBehaviour
                         picked = hitObj;
                     }
                 }
-                else if(picked == null)
+                /*else if(picked == null)
                 {
                     picked = hitObj;
-                }
+                }*/
+            }
+            if (picked == null)
+            {
+                picked = hitObj;
             }
             return picked;
         }
