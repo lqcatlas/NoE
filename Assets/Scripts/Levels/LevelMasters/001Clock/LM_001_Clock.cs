@@ -15,10 +15,6 @@ public class LM_001_Clock : LevelMasterBase
         base.GetObjectReferences(null);
         clockHub = _themeHub.GetComponent<LMHub_001_Clock>();
     }
-    public override void AdditionalGenerateBoard_Theme()
-    {
-
-    }
     public override void InitCells()
     {
         clockHub.runningClocks = new List<KeyValuePair<CellMaster, GameObject>>();

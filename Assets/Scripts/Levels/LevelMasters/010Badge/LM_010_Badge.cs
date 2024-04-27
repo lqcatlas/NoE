@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Unity.VisualScripting;
 
 public class LM_010_Badge : LevelMasterBase
 {
@@ -15,10 +16,33 @@ public class LM_010_Badge : LevelMasterBase
     private int RULE2_LVINDEX = 3;
     private int RULE3_LVINDEX = 5;
     private int RULE4_LVINDEX = 6;
+    private int RNG_LVINDEX = 8;
+    private int MAX_GEN_TIMES = 10000;
     public override void GetObjectReferences(GameObject _themeHub)
     {
         base.GetObjectReferences(null);
         themeHub = _themeHub.GetComponent<LMHub_010_Badge>();
+    }
+    public override void AdditionalGenerateBoard_Theme()
+    {
+        if(levelData.levelIndex == RNG_LVINDEX)
+        {
+            Debug.Log("Enter random board gen process");
+            for (int i=0;i< MAX_GEN_TIMES; i++)
+            {
+                SetRandomCellValues(ref levelData.curBoard);
+                int correctCount = CountCorrectCells(levelData.curBoard);
+                if(correctCount > levelData.curBoard.toolCount && correctCount <= levelData.curBoard.toolCount * 2)
+                {
+                    Debug.Log(string.Format("get valid random board on try time at {0}", i));
+                    break;
+                }
+                if(i == MAX_GEN_TIMES - 1)
+                {
+                    Debug.LogError("Unbale to get a valid random board within limit times");
+                }
+            }
+        }
     }
     public override void InitCells()
     {
@@ -175,7 +199,7 @@ public class LM_010_Badge : LevelMasterBase
             {
                 if(board.cells[i].value == taregt_cellData.value)
                 {
-                    Debug.Log(string.Format("rule 1 check failed on {0},{1} with {2},{3}", coord.x, coord.y, board.cells[i].coord.x, board.cells[i].coord.y));
+                    //Debug.Log(string.Format("rule 1 check failed on {0},{1} with {2},{3}", coord.x, coord.y, board.cells[i].coord.x, board.cells[i].coord.y));
                     return false;
                 }
             }
@@ -197,7 +221,7 @@ public class LM_010_Badge : LevelMasterBase
         bool result = (AllOdd || AllEven);
         if (!result)
         {
-            Debug.Log(string.Format("rule 2 check failed on {0},{1}", coord.x, coord.y));
+            //Debug.Log(string.Format("rule 2 check failed on {0},{1}", coord.x, coord.y));
         }
         return result;
     }
@@ -213,7 +237,7 @@ public class LM_010_Badge : LevelMasterBase
              || taregt_cellData.value == diagonal_cellData3.value || taregt_cellData.value == diagonal_cellData4.value);
         if (!result)
         {
-            Debug.Log(string.Format("rule 3 check failed on {0},{1}", coord.x, coord.y));
+            //Debug.Log(string.Format("rule 3 check failed on {0},{1}", coord.x, coord.y));
         }
         return result;
     }
@@ -233,8 +257,30 @@ public class LM_010_Badge : LevelMasterBase
         bool result = (taregt_cellData.value != Mathf.Max(applicableNumbers.ToArray()) && taregt_cellData.value != Mathf.Min(applicableNumbers.ToArray()));
         if (!result)
         {
-            Debug.Log(string.Format("rule 4 check failed on {0},{1}", coord.x, coord.y));
+            //Debug.Log(string.Format("rule 4 check failed on {0},{1}", coord.x, coord.y));
         }
         return result;
+    }
+    void SetRandomCellValues(ref DataBoard board)
+    {
+        for(int i = 0; i < board.cells.Count; i++)
+        {
+            board.cells[i].value = Random.Range(1, 10);
+        }
+    }
+    int CountCorrectCells(DataBoard board)
+    {
+        int corectCount = 0;
+        for(int i = 0; i < board.cells.Count; i++)
+        {
+            if (board.cells[i].status == (int)CellStatus.normal)
+            {
+                if(Rule1Check(board, board.cells[i].coord) && Rule2Check(board, board.cells[i].coord) && Rule3Check(board, board.cells[i].coord) && Rule4Check(board, board.cells[i].coord))
+                {
+                    corectCount += 1;
+                }
+            }
+        }
+        return corectCount;
     }
 }

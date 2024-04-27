@@ -19,17 +19,6 @@ public class LM_002_Coin : LevelMasterBase
         base.InitTool();
         UpdateToolStatusDisplay();
     }
-    public override void AdditionalGenerateBoard_Theme()
-    {
-        //clear old coin bgs
-        coinHub.coinBgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
-        List<Transform> oldBgs = coinHub.coinBgHolder.GetComponentsInChildren<Transform>().ToList();
-        oldBgs.Remove(coinHub.coinBgHolder.transform);
-        for (int i = 0; i < oldBgs.Count; i++)
-        {
-            Destroy(oldBgs[i].gameObject);
-        }
-    }
     public override void InitCells()
     {
         coinHub.coinTags = new List<KeyValuePair<CellMaster, GameObject>>();

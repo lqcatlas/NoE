@@ -25,10 +25,6 @@ public class LM_004_Sushi : LevelMasterBase
         base.GetObjectReferences(null);
         sushiHub = _themeHub.GetComponent<LMHub_004_Sushi>();
     }
-    public override void AdditionalGenerateBoard_Theme()
-    {
-
-    }
     public override void InitCells()
     {
         sushiHub.sushiPlates = new List<KeyValuePair<CellMaster, GameObject>>();
