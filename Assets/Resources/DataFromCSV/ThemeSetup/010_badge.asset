@@ -47,5 +47,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7b7f6dca908cc1c4e9c5feeb397c242b, type: 2}
   - {fileID: 11400000, guid: bcd2cbc8918096b4b83be4cb1c9ec7c9, type: 2}
   - {fileID: 11400000, guid: 5736b12553c707a448f3b961b0b394ee, type: 2}
-  TotalStars: 8
-  TotalGems: 0
+  - {fileID: 11400000, guid: 8ddfd469f6035434db7d3ab20c96abd1, type: 2}
+  - {fileID: 11400000, guid: 1eb4ad2db8e36824080bd6a7011d2c4a, type: 2}
+  - {fileID: 11400000, guid: e602289aeb10c954f88fce9915e065b1, type: 2}
+  - {fileID: 11400000, guid: 4fff12c05ae353849b3ea89354a01bf4, type: 2}
+  TotalStars: 7
+  TotalGems: 5

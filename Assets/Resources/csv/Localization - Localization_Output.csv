@@ -28,8 +28,8 @@ UID,Key,EN,CN
 27,date_tm7,,2024/02/15
 28,date_tm8,,2024/03/09
 29,date_tm9,,2024/03/24
-30,goal_lv1001,,标记同时满足全部要求的数字
-31,goal_lv1002,,标记同时满足全部要求的数字
+30,goal_lv1001,,标记满足要求的数字
+31,goal_lv1002,,标记满足要求的数字
 32,goal_lv1003,,标记同时满足全部要求的数字
 33,goal_lv1004,,标记同时满足全部要求的数字
 34,goal_lv1005,,标记同时满足全部要求的数字
@@ -427,7 +427,7 @@ UID,Key,EN,CN
 426,prompt_tm7,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 427,prompt_tm8,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 428,prompt_tm9,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-429,rule1_lv1001,,要求：
+429,rule1_lv1001,,目标数字要求：
 430,rule1_lv101,Play: +1,打出：+1
 431,rule1_lv201,Head - Cell Played +1,正面：+1
 432,rule1_lv204,Head - Cell Played +X,正面：+X
@@ -453,7 +453,7 @@ UID,Key,EN,CN
 452,rule2_lv720,,创造最美的盆景
 453,rule2_lv803,,加冕后比任意相邻领土小
 454,rule2_lv903,,爆炸：格子超过999
-455,rule3_lv1003,,2. 与上下或与左右数字奇偶性一致
+455,rule3_lv1003,,2. 同时与上下或左右相邻数字奇偶一致
 456,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
 457,rule3_lv406,Rice+Fish: Sushi(=7),米+鱼： 寿司（=7）
 458,rule3_lv502,Full: +5,满月：+5
@@ -464,7 +464,7 @@ UID,Key,EN,CN
 463,rule3_lv705,,和谐：移除与众不同的数字
 464,rule3_lv803,,则加冕失败：=0
 465,rule3_lv904,,爆炸：数字均值大于7
-466,rule4_lv1005,,3. 与至少一个对角线上的数字相同
+466,rule4_lv1005,,3. 与至少一个对角线相邻数字相同
 467,rule4_lv203,FLIP the coin after playing,打出后硬币翻面
 468,rule4_lv210,TOSS the coin after playing,打出后投掷硬币
 469,rule4_lv410,Fish+Rice: Onigiri(=2),鱼+米： 饭团（=2）
@@ -534,3 +534,11 @@ UID,Key,EN,CN
 533,unlocked_tm7,,人与自然共创<b>盆景</b>。
 534,unlocked_tm8,,<b>王冠</b>越重越好。
 535,unlocked_tm9,,色彩斑斓的<b>烧瓶</b>。
+536,levelname_lv1009,,009
+537,levelname_lv1010,,010
+538,levelname_lv1011,,011
+539,levelname_lv1012,,012
+540,goal_lv1009,,标记同时满足全部要求的数字
+541,goal_lv1010,,标记同时满足全部要求的数字
+542,goal_lv1011,,标记同时满足全部要求的数字
+543,goal_lv1012,,标记同时满足全部要求的数字

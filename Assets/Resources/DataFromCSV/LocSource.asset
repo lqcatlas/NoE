@@ -102,10 +102,10 @@ MonoBehaviour:
     CN: 2024/03/24
   - key: goal_lv1001
     EN: 
-    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
+    CN: "\u6807\u8BB0\u6EE1\u8DB3\u8981\u6C42\u7684\u6570\u5B57"
   - key: goal_lv1002
     EN: 
-    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
+    CN: "\u6807\u8BB0\u6EE1\u8DB3\u8981\u6C42\u7684\u6570\u5B57"
   - key: goal_lv1003
     EN: 
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
@@ -1356,7 +1356,7 @@ MonoBehaviour:
       film. --ar 16:9 --v 6.0
   - key: rule1_lv1001
     EN: 
-    CN: "\u8981\u6C42\uFF1A"
+    CN: "\u76EE\u6807\u6570\u5B57\u8981\u6C42\uFF1A"
   - key: rule1_lv101
     EN: 'Play: +1'
     CN: "\u6253\u51FA\uFF1A+1"
@@ -1434,7 +1434,7 @@ MonoBehaviour:
     CN: "\u7206\u70B8\uFF1A\u683C\u5B50\u8D85\u8FC7999"
   - key: rule3_lv1003
     EN: 
-    CN: "2. \u4E0E\u4E0A\u4E0B\u6216\u4E0E\u5DE6\u53F3\u6570\u5B57\u5947\u5076\u6027\u4E00\u81F4"
+    CN: "2. \u540C\u65F6\u4E0E\u4E0A\u4E0B\u6216\u5DE6\u53F3\u76F8\u90BB\u6570\u5B57\u5947\u5076\u4E00\u81F4"
   - key: rule3_lv204
     EN: X is the number of coins in a Cell
     CN: "X\u4E3A\u683C\u5B50\u5185\u786C\u5E01\u6570"
@@ -1467,7 +1467,7 @@ MonoBehaviour:
     CN: "\u7206\u70B8\uFF1A\u6570\u5B57\u5747\u503C\u5927\u4E8E7"
   - key: rule4_lv1005
     EN: 
-    CN: "3. \u4E0E\u81F3\u5C11\u4E00\u4E2A\u5BF9\u89D2\u7EBF\u4E0A\u7684\u6570\u5B57\u76F8\u540C"
+    CN: "3. \u4E0E\u81F3\u5C11\u4E00\u4E2A\u5BF9\u89D2\u7EBF\u76F8\u90BB\u6570\u5B57\u76F8\u540C"
   - key: rule4_lv203
     EN: FLIP the coin after playing
     CN: "\u6253\u51FA\u540E\u786C\u5E01\u7FFB\u9762"
@@ -1676,3 +1676,27 @@ MonoBehaviour:
   - key: unlocked_tm9
     EN: 
     CN: "\u8272\u5F69\u6591\u6593\u7684<b>\u70E7\u74F6</b>\u3002"
+  - key: levelname_lv1009
+    EN: 
+    CN: 9
+  - key: levelname_lv1010
+    EN: 
+    CN: 10
+  - key: levelname_lv1011
+    EN: 
+    CN: 11
+  - key: levelname_lv1012
+    EN: 
+    CN: 12
+  - key: goal_lv1009
+    EN: 
+    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
+  - key: goal_lv1010
+    EN: 
+    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
+  - key: goal_lv1011
+    EN: 
+    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
+  - key: goal_lv1012
+    EN: 
+    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"

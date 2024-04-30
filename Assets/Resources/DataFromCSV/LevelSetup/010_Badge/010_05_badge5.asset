@@ -21,8 +21,7 @@ MonoBehaviour:
   theme: '@Loc=themename_tm10@@'
   title: '@Loc=levelname_lv1005@@'
   newInitNarrative: '@Loc=narrative_tm10_ln006@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm10_ln007@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm10_ln001@@'
   - '@Loc=narrative_tm10_ln002@@'
@@ -45,10 +44,10 @@ MonoBehaviour:
     boardSize: {x: 6, y: 6}
     cells:
     - coord: {x: 0, y: 0}
-      value: 7
-      status: 1
+      value: 0
+      status: 0
     - coord: {x: 1, y: 0}
-      value: 3
+      value: 5
       status: 1
     - coord: {x: 2, y: 0}
       value: 3
@@ -57,22 +56,22 @@ MonoBehaviour:
       value: 1
       status: 1
     - coord: {x: 4, y: 0}
-      value: 7
+      value: 9
       status: 1
     - coord: {x: 5, y: 0}
-      value: 4
-      status: 1
+      value: 0
+      status: 0
     - coord: {x: 0, y: 1}
-      value: 2
+      value: 8
       status: 1
     - coord: {x: 1, y: 1}
-      value: 8
+      value: 4
       status: 2
     - coord: {x: 2, y: 1}
-      value: 6
+      value: 2
       status: 2
     - coord: {x: 3, y: 1}
-      value: 4
+      value: 1
       status: 2
     - coord: {x: 4, y: 1}
       value: 3
@@ -84,43 +83,43 @@ MonoBehaviour:
       value: 6
       status: 1
     - coord: {x: 1, y: 2}
-      value: 4
+      value: 7
       status: 2
     - coord: {x: 2, y: 2}
-      value: 1
+      value: 7
       status: 2
     - coord: {x: 3, y: 2}
-      value: 6
+      value: 5
       status: 2
     - coord: {x: 4, y: 2}
-      value: 7
+      value: 4
       status: 2
     - coord: {x: 5, y: 2}
-      value: 5
+      value: 7
       status: 1
     - coord: {x: 0, y: 3}
-      value: 9
+      value: 6
       status: 1
     - coord: {x: 1, y: 3}
-      value: 1
-      status: 2
-    - coord: {x: 2, y: 3}
-      value: 5
-      status: 2
-    - coord: {x: 3, y: 3}
-      value: 7
-      status: 2
-    - coord: {x: 4, y: 3}
       value: 9
       status: 2
+    - coord: {x: 2, y: 3}
+      value: 4
+      status: 2
+    - coord: {x: 3, y: 3}
+      value: 2
+      status: 2
+    - coord: {x: 4, y: 3}
+      value: 5
+      status: 2
     - coord: {x: 5, y: 3}
-      value: 8
+      value: 7
       status: 1
     - coord: {x: 0, y: 4}
-      value: 1
+      value: 9
       status: 1
     - coord: {x: 1, y: 4}
-      value: 4
+      value: 9
       status: 2
     - coord: {x: 2, y: 4}
       value: 1
@@ -129,29 +128,29 @@ MonoBehaviour:
       value: 8
       status: 2
     - coord: {x: 4, y: 4}
-      value: 4
+      value: 9
       status: 2
     - coord: {x: 5, y: 4}
-      value: 3
-      status: 1
-    - coord: {x: 0, y: 5}
       value: 9
       status: 1
+    - coord: {x: 0, y: 5}
+      value: 0
+      status: 0
     - coord: {x: 1, y: 5}
-      value: 2
+      value: 4
       status: 1
     - coord: {x: 2, y: 5}
-      value: 1
+      value: 9
       status: 1
     - coord: {x: 3, y: 5}
-      value: 3
+      value: 4
       status: 1
     - coord: {x: 4, y: 5}
       value: 7
       status: 1
     - coord: {x: 5, y: 5}
-      value: 6
-      status: 1
+      value: 0
+      status: 0
     toolCount: 4
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

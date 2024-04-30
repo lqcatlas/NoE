@@ -16,8 +16,9 @@ public class LM_010_Badge : LevelMasterBase
     private int RULE2_LVINDEX = 3;
     private int RULE3_LVINDEX = 5;
     private int RULE4_LVINDEX = 6;
-    private int RNG_LVINDEX = 8;
-    private int MAX_GEN_TIMES = 10000;
+    private int RNG_LVINDEX1 = 11;
+    private int RNG_LVINDEX2 = 12;
+    private int MAX_GEN_TIMES = 90000;
     public override void GetObjectReferences(GameObject _themeHub)
     {
         base.GetObjectReferences(null);
@@ -25,14 +26,14 @@ public class LM_010_Badge : LevelMasterBase
     }
     public override void AdditionalGenerateBoard_Theme()
     {
-        if(levelData.levelIndex == RNG_LVINDEX)
+        if(levelData.levelIndex == RNG_LVINDEX1 || levelData.levelIndex == RNG_LVINDEX2)
         {
             Debug.Log("Enter random board gen process");
             for (int i=0;i< MAX_GEN_TIMES; i++)
             {
                 SetRandomCellValues(ref levelData.curBoard);
                 int correctCount = CountCorrectCells(levelData.curBoard);
-                if(correctCount > levelData.curBoard.toolCount && correctCount <= levelData.curBoard.toolCount * 2)
+                if(correctCount >= levelData.curBoard.toolCount && correctCount <= levelData.curBoard.toolCount * 2f)
                 {
                     Debug.Log(string.Format("get valid random board on try time at {0}", i));
                     break;

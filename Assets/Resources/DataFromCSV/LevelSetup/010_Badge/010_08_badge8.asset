@@ -15,15 +15,13 @@ MonoBehaviour:
   levelUID: 1008
   themeIndex: 10
   levelIndex: 8
-  nextLevelIndex: 0
+  nextLevelIndex: 1009
   previousLevel: {fileID: 11400000, guid: bcd2cbc8918096b4b83be4cb1c9ec7c9, type: 2}
-  nextLevel: {fileID: 11400000, guid: 0fa66f37f47963f4b9818e1b00a03ac2, type: 2}
+  nextLevel: {fileID: 11400000, guid: 8ddfd469f6035434db7d3ab20c96abd1, type: 2}
   theme: '@Loc=themename_tm10@@'
   title: '@Loc=levelname_lv1008@@'
-  newInitNarrative: '@Loc=narrative_tm10_ln012@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm10_ln013@@'
-  - '@Loc=narrative_tm10_ln014@@'
+  newInitNarrative: '@Loc=narrative_tm10_ln009@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm10_ln001@@'
   - '@Loc=narrative_tm10_ln002@@'
@@ -33,9 +31,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm10_ln006@@'
   - '@Loc=narrative_tm10_ln007@@'
   - '@Loc=narrative_tm10_ln008@@'
-  - '@Loc=narrative_tm10_ln009@@'
-  - '@Loc=narrative_tm10_ln010@@'
-  - '@Loc=narrative_tm10_ln011@@'
   goal: '@Loc=goal_lv1008@@'
   ruleset:
   - tag: 0
@@ -51,199 +46,154 @@ MonoBehaviour:
   isHard: 1
   allowRewind: 1
   initBoard:
-    boardSize: {x: 8, y: 8}
+    boardSize: {x: 7, y: 7}
     cells:
     - coord: {x: 0, y: 0}
-      value: 0
+      value: 1
       status: 1
     - coord: {x: 1, y: 0}
-      value: 0
+      value: 6
       status: 1
     - coord: {x: 2, y: 0}
-      value: 0
+      value: 1
       status: 1
     - coord: {x: 3, y: 0}
-      value: 0
+      value: 9
       status: 1
     - coord: {x: 4, y: 0}
-      value: 0
+      value: 6
       status: 1
     - coord: {x: 5, y: 0}
-      value: 0
+      value: 7
       status: 1
     - coord: {x: 6, y: 0}
-      value: 0
-      status: 1
-    - coord: {x: 7, y: 0}
-      value: 0
+      value: 7
       status: 1
     - coord: {x: 0, y: 1}
-      value: 0
+      value: 1
       status: 1
     - coord: {x: 1, y: 1}
-      value: 0
+      value: 3
       status: 2
     - coord: {x: 2, y: 1}
-      value: 0
+      value: 6
       status: 2
     - coord: {x: 3, y: 1}
-      value: 0
+      value: 8
       status: 2
     - coord: {x: 4, y: 1}
-      value: 0
+      value: 7
       status: 2
     - coord: {x: 5, y: 1}
-      value: 0
+      value: 5
       status: 2
     - coord: {x: 6, y: 1}
-      value: 0
-      status: 2
-    - coord: {x: 7, y: 1}
-      value: 0
+      value: 2
       status: 1
     - coord: {x: 0, y: 2}
-      value: 0
+      value: 8
       status: 1
     - coord: {x: 1, y: 2}
-      value: 0
+      value: 5
       status: 2
     - coord: {x: 2, y: 2}
-      value: 0
+      value: 3
       status: 2
     - coord: {x: 3, y: 2}
-      value: 0
+      value: 7
       status: 2
     - coord: {x: 4, y: 2}
-      value: 0
+      value: 3
       status: 2
     - coord: {x: 5, y: 2}
-      value: 0
+      value: 6
       status: 2
     - coord: {x: 6, y: 2}
-      value: 0
-      status: 2
-    - coord: {x: 7, y: 2}
-      value: 0
+      value: 1
       status: 1
     - coord: {x: 0, y: 3}
-      value: 0
+      value: 5
       status: 1
     - coord: {x: 1, y: 3}
-      value: 0
+      value: 6
       status: 2
     - coord: {x: 2, y: 3}
-      value: 0
+      value: 6
       status: 2
     - coord: {x: 3, y: 3}
-      value: 0
+      value: 1
       status: 2
     - coord: {x: 4, y: 3}
-      value: 0
+      value: 4
       status: 2
     - coord: {x: 5, y: 3}
-      value: 0
+      value: 7
       status: 2
     - coord: {x: 6, y: 3}
-      value: 0
-      status: 2
-    - coord: {x: 7, y: 3}
-      value: 0
+      value: 4
       status: 1
     - coord: {x: 0, y: 4}
-      value: 0
+      value: 2
       status: 1
     - coord: {x: 1, y: 4}
-      value: 0
+      value: 4
       status: 2
     - coord: {x: 2, y: 4}
-      value: 0
+      value: 2
       status: 2
     - coord: {x: 3, y: 4}
-      value: 0
+      value: 5
       status: 2
     - coord: {x: 4, y: 4}
-      value: 0
+      value: 2
       status: 2
     - coord: {x: 5, y: 4}
-      value: 0
+      value: 3
       status: 2
     - coord: {x: 6, y: 4}
-      value: 0
-      status: 2
-    - coord: {x: 7, y: 4}
-      value: 0
+      value: 1
       status: 1
     - coord: {x: 0, y: 5}
-      value: 0
+      value: 9
       status: 1
     - coord: {x: 1, y: 5}
-      value: 0
+      value: 2
       status: 2
     - coord: {x: 2, y: 5}
-      value: 0
+      value: 6
       status: 2
     - coord: {x: 3, y: 5}
-      value: 0
+      value: 7
       status: 2
     - coord: {x: 4, y: 5}
-      value: 0
+      value: 6
       status: 2
     - coord: {x: 5, y: 5}
-      value: 0
+      value: 8
       status: 2
     - coord: {x: 6, y: 5}
-      value: 0
-      status: 2
-    - coord: {x: 7, y: 5}
-      value: 0
+      value: 7
       status: 1
     - coord: {x: 0, y: 6}
-      value: 0
+      value: 6
       status: 1
     - coord: {x: 1, y: 6}
-      value: 0
-      status: 2
+      value: 5
+      status: 1
     - coord: {x: 2, y: 6}
-      value: 0
-      status: 2
+      value: 6
+      status: 1
     - coord: {x: 3, y: 6}
-      value: 0
-      status: 2
+      value: 1
+      status: 1
     - coord: {x: 4, y: 6}
-      value: 0
-      status: 2
+      value: 3
+      status: 1
     - coord: {x: 5, y: 6}
-      value: 0
-      status: 2
+      value: 5
+      status: 1
     - coord: {x: 6, y: 6}
-      value: 0
-      status: 2
-    - coord: {x: 7, y: 6}
-      value: 0
-      status: 1
-    - coord: {x: 0, y: 7}
-      value: 0
-      status: 1
-    - coord: {x: 1, y: 7}
-      value: 0
-      status: 1
-    - coord: {x: 2, y: 7}
-      value: 0
-      status: 1
-    - coord: {x: 3, y: 7}
-      value: 0
-      status: 1
-    - coord: {x: 4, y: 7}
-      value: 0
-      status: 1
-    - coord: {x: 5, y: 7}
-      value: 0
-      status: 1
-    - coord: {x: 6, y: 7}
-      value: 0
-      status: 1
-    - coord: {x: 7, y: 7}
-      value: 0
+      value: 1
       status: 1
     toolCount: 3
     toolStatus: 0
