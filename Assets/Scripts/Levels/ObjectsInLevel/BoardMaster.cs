@@ -7,11 +7,11 @@ using UnityEngine;
 public class BoardMaster : MonoBehaviour
 {
     [Header("Static Params")]
-    [SerializeField] float StandardizedXYSize = 3;
-    [SerializeField] int MinXYSize = 2;
+    float StandardizedXYSize = 3;
+    int MinXYSize = 2;
     //use buffer to make smaller board looker bigger but not as same big as the standardized board 
-    [SerializeField] float ResizeBuffer = 0.4f;
-    [SerializeField] float ResizeBuffer_Large = 0.55f;
+    float ResizeBuffer = 0.5f;
+    float ResizeBuffer_Large = 0.75f;
     public GameObject cellTempalte;
     [Header("Master Objs")]
     public LevelMasterBase levelMaster;
@@ -47,7 +47,7 @@ public class BoardMaster : MonoBehaviour
             }
         }
         //resize holder
-        if(Mathf.Max(MinXYSize, x, y) <= 5)
+        if(Mathf.Max(MinXYSize, x, y) <= 3)
         {
             cellHolder.localScale = Vector3.one * Mathf.Pow(StandardizedXYSize / Mathf.Max(MinXYSize, x, y), ResizeBuffer);
         }

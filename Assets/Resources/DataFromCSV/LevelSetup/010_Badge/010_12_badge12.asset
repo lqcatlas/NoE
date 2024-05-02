@@ -46,11 +46,11 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule3_lv1003@@'
   - tag: 0
-    ruleDesc: '@Loc=rule4_lv1005@@'
+    ruleDesc: '@Loc=rule4_lv1006@@'
   - tag: 0
-    ruleDesc: '@Loc=rule5_lv1010@@'
+    ruleDesc: '@Loc=rule5_lv1008@@'
   isHard: 1
-  allowRewind: 1
+  allowRewind: 0
   initBoard:
     boardSize: {x: 9, y: 9}
     cells:

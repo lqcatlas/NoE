@@ -20,10 +20,8 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 4fff12c05ae353849b3ea89354a01bf4, type: 2}
   theme: '@Loc=themename_tm10@@'
   title: '@Loc=levelname_lv1011@@'
-  newInitNarrative: '@Loc=narrative_tm10_ln012@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm10_ln013@@'
-  - '@Loc=narrative_tm10_ln014@@'
+  newInitNarrative: 
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm10_ln001@@'
   - '@Loc=narrative_tm10_ln002@@'
@@ -36,6 +34,9 @@ MonoBehaviour:
   - '@Loc=narrative_tm10_ln009@@'
   - '@Loc=narrative_tm10_ln010@@'
   - '@Loc=narrative_tm10_ln011@@'
+  - '@Loc=narrative_tm10_ln012@@'
+  - '@Loc=narrative_tm10_ln013@@'
+  - '@Loc=narrative_tm10_ln014@@'
   goal: '@Loc=goal_lv1011@@'
   ruleset:
   - tag: 0
@@ -45,11 +46,11 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule3_lv1003@@'
   - tag: 0
-    ruleDesc: '@Loc=rule4_lv1005@@'
+    ruleDesc: '@Loc=rule4_lv1006@@'
   - tag: 0
-    ruleDesc: '@Loc=rule5_lv1010@@'
+    ruleDesc: '@Loc=rule5_lv1008@@'
   isHard: 1
-  allowRewind: 1
+  allowRewind: 0
   initBoard:
     boardSize: {x: 8, y: 8}
     cells:

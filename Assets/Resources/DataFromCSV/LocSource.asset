@@ -124,9 +124,21 @@ MonoBehaviour:
   - key: goal_lv1008
     EN: 
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
+  - key: goal_lv1009
+    EN: 
+    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: goal_lv101
     EN: Set all cells to 8
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A8"
+  - key: goal_lv1010
+    EN: 
+    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
+  - key: goal_lv1011
+    EN: 
+    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
+  - key: goal_lv1012
+    EN: 
+    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: goal_lv102
     EN: Set all cells to 10
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A10"
@@ -455,7 +467,7 @@ MonoBehaviour:
     CN: "\u5B83\u6EF4\u7B54\u6EF4\u7B54\uFF0C\u6C38\u4E0D\u505C\u6B47\u5730\u524D\u8FDB\u3002"
   - key: hint_tm10
     EN: 
-    CN: "\u5B83\u7528\u6765\u5F00\u95E8\uFF0C\u4E00\u6247\u901A\u5411\u6210\u529F\u7684\u5927\u95E8\u3002"
+    CN: "\u5B83\u7528\u6765\u5F00\u95E8\uFF0C\u901A\u5411\u6210\u529F\u7684\u5927\u95E8\u3002"
   - key: hint_tm2
     EN: 
     CN: "\u5B83\u4E00\u6B21\u6B21\u5730\u7FFB\u52A8\uFF0C\u51B3\u5B9A\u7740\u547D\u8FD0\u3002"
@@ -508,9 +520,21 @@ MonoBehaviour:
   - key: levelname_lv1008
     EN: 
     CN: 8
+  - key: levelname_lv1009
+    EN: 
+    CN: 9
   - key: levelname_lv101
     EN: 1
     CN: 1
+  - key: levelname_lv1010
+    EN: 
+    CN: 10
+  - key: levelname_lv1011
+    EN: 
+    CN: 11
+  - key: levelname_lv1012
+    EN: 
+    CN: 12
   - key: levelname_lv102
     EN: 2
     CN: 2
@@ -837,7 +861,7 @@ MonoBehaviour:
     CN: "\u2588 \u2588 \u6C38\u4E0D\u505C\u6B47\u3002"
   - key: locked_tm10
     EN: 
-    CN: "\u2588 \u2588 \u7684\u610F\u4E49\u3002"
+    CN: "\u2588 \u2588 \u901A\u5411\u6210\u529F\u3002"
   - key: locked_tm2
     EN: 
     CN: "\u2588 \u2588 \u51B3\u5B9A\u547D\u8FD0\u3002"
@@ -864,7 +888,7 @@ MonoBehaviour:
     CN: "\u65F6\u949F\u662F\u7B2C\u4E00\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u5236\u4F5C\u4E0E\u8BBE\u8BA1\u6BD4\u6E38\u620F\u540D\u201C\u4E07\u7269\u4E4B\u6570\u201C\u8FD8\u8981\u518D\u65E9\u4E00\u4E9B\u3002\u4ECE\u67D0\u4E2A\u89D2\u5EA6\u53BB\u8003\u8651\uFF0C\u5B83\u662F\u6574\u4E2A\u6E38\u620F\u9879\u76EE\u771F\u6B63\u7684\u8D77\u70B9\u3002<br><br>\u71AC\u591C\u5374\u65E0\u6240\u4E8B\u4E8B\u662F\u4E00\u79CD\u8868\u9762\u4E0A\u73CD\u60DC\u65F6\u95F4\uFF0C\u5374\u53C8\u614C\u4E71\u5730\u6D6A\u8D39\u4E86\u65F6\u95F4\u7684\u884C\u4E3A\u3002\u65F6\u949F\u4E3B\u9898\u60F3\u901A\u8FC7\u8FD9\u4E2A\u60C5\u666F\u6765\u8868\u8FBE\u4E2A\u4F53\u5728\u65F6\u5149\u6D41\u901D\u9762\u524D\u7684\u65E0\u529B\u3002"
   - key: manifesto_tm10
     EN: 
-    CN: "\u5DE5\u4F5C\u6709\u65E0\u610F\u4E49"
+    CN: "\u5DE5\u4F5C\u6709\u65E0\u610F\u4E49\uFF1F"
   - key: manifesto_tm2
     EN: 
     CN: "\u786C\u5E01\u662F\u7B2C\u4E8C\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u7075\u611F\u6765\u6E90\u4E8E\u7528\u63B7\u786C\u5E01\u6765\u505A\u51B3\u7B56\u8FD9\u4E00\u751F\u6D3B\u4E2D\u5E38\u89C1\u7684\u73A9\u7B11\u65F6\u523B\u3002<br><br>\u6545\u4E8B\u5F80\u5F80\u662F\u8FD9\u6837\u5C55\u5F00\u7684\uFF1A\u5634\u91CC\u8BF4\u7740\u4E0D\u77E5\u8BE5\u600E\u4E48\u9009\u6240\u4EE5\u5C31\u51B3\u5B9A\u8981\u63B7\u786C\u5E01\u3002\u5728\u786C\u5E01\u7684\u6B63\u53CD\u51FA\u73B0\u540E\uFF0C\u8FD9\u65F6\u53C8\u610F\u8BC6\u5230\u4E86\uFF0C\u8FD9\u5E76\u4E0D\u662F\u81EA\u5DF1\u6EE1\u610F\u7684\u51B3\u5B9A\u3002\u7136\u540E\u4F1A\u627E\u7406\u7531\u53CD\u6094\u8BF4\u201C\u518D\u63B7\u4E00\u6B21\u5427\u201D\u3002<br><br>\u56E0\u6B64\u63B7\u786C\u5E01\u4E0D\u662F\u7528\u6765\u51B3\u5B9A\u547D\u8FD0\uFF0C\u800C\u662F\u6765\u5E2E\u52A9\u4EBA\u66F4\u597D\u5730\u8D70\u8FDB\u81EA\u5DF1\u7684\u5185\u5FC3\uFF0C\u770B\u6E05\u81EA\u5DF1\u7684\u60F3\u6CD5\u3002"
@@ -927,13 +951,13 @@ MonoBehaviour:
     CN: "\u5FC3\u4EEA\u7684\u5DE5\u724C"
   - key: narrative_tm10_ln002
     EN: 
-    CN: "\u9762\u8BD5\u9898\uFF1A\u627E\u5230\u76EE\u6807\u6570\u5B57"
+    CN: "\u9762\u8BD5\u9898\uFF1A\u627E\u5230\u76EE\u6807\u6570\u5B57\u3002"
   - key: narrative_tm10_ln003
     EN: 
-    CN: "\u606D\u559C\u4F60\uFF01\u6210\u529F\u8FDB\u5165\u5FC3\u4EEA\u7684\u516C\u53F8\u3002"
+    CN: "\u5165\u804C\u6210\u4E3A<b>\u6570\u5B57\u5DE5\u7A0B\u5E08</b>\u3002"
   - key: narrative_tm10_ln004
     EN: 
-    CN: "\u8BF7\u7EE7\u7EED\u8BA4\u771F\u5DE5\u4F5C\uFF0C"
+    CN: "\u7EE7\u7EED\u8BA4\u771F\u5DE5\u4F5C\uFF0C"
   - key: narrative_tm10_ln005
     EN: 
     CN: "\u7A33\u6B65\u664B\u5347\u3002"
@@ -942,13 +966,13 @@ MonoBehaviour:
     CN: "\u52AA\u529B\uFF0C"
   - key: narrative_tm10_ln007
     EN: 
-    CN: "\u6210\u4E3A\u8D44\u6DF1\u6570\u5B57\u5DE5\u7A0B\u5E08\u3002"
+    CN: "\u6210\u4E3A<b>\u8D44\u6DF1</b>\u6570\u5B57\u5DE5\u7A0B\u5E08\u3002"
   - key: narrative_tm10_ln008
     EN: 
     CN: "\u594B\u6597\uFF0C"
   - key: narrative_tm10_ln009
     EN: 
-    CN: "\u664B\u5347\u4E3A\u6570\u5B57\u5DE5\u7A0B\u4E13\u5BB6\u3002"
+    CN: "\u664B\u5347\u4E3A\u6570\u5B57\u5DE5\u7A0B<b>\u4E13\u5BB6</b>\u3002"
   - key: narrative_tm10_ln010
     EN: 
     CN: "\u7136\u800C\uFF0C"
@@ -960,7 +984,7 @@ MonoBehaviour:
     CN: "\u5DE5\u4F5C\u6CA1\u53D8\uFF0C"
   - key: narrative_tm10_ln013
     EN: 
-    CN: "\u4F46\u4EBA\u4F1A\u53D8\u3002"
+    CN: "\u4F46\u4EBA\u4F1A<b>\u53D8</b>\u3002"
   - key: narrative_tm10_ln014
     EN: 
     CN: "\u662F\u65F6\u5019\u8BF4\u518D\u89C1\u4E86\u3002"
@@ -1398,7 +1422,7 @@ MonoBehaviour:
     CN: "\u6309\u4F4F\uFF1A\u503E\u5012\uFF08\u9700\u4FDD\u8BC1\u5B89\u5168\uFF09"
   - key: rule2_lv1001
     EN: 
-    CN: "1. \u4E0E\u5341\u5B57\u76F8\u90BB\u6570\u5B57\u90FD\u4E0D\u540C"
+    CN: "#1\u4E0E\u5341\u5B57\u76F8\u90BB\u6570\u5B57\u90FD\u4E0D\u540C"
   - key: rule2_lv103
     EN: Cell already with a Clock +1
     CN: "\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50+1"
@@ -1434,7 +1458,7 @@ MonoBehaviour:
     CN: "\u7206\u70B8\uFF1A\u683C\u5B50\u8D85\u8FC7999"
   - key: rule3_lv1003
     EN: 
-    CN: "2. \u540C\u65F6\u4E0E\u4E0A\u4E0B\u6216\u5DE6\u53F3\u76F8\u90BB\u6570\u5B57\u5947\u5076\u4E00\u81F4"
+    CN: "#2\u4E0E\u81F3\u5C11\u4E00\u4E2A\u5BF9\u89D2\u7EBF\u76F8\u90BB\u6570\u5B57\u76F8\u540C"
   - key: rule3_lv204
     EN: X is the number of coins in a Cell
     CN: "X\u4E3A\u683C\u5B50\u5185\u786C\u5E01\u6570"
@@ -1465,9 +1489,9 @@ MonoBehaviour:
   - key: rule3_lv904
     EN: 
     CN: "\u7206\u70B8\uFF1A\u6570\u5B57\u5747\u503C\u5927\u4E8E7"
-  - key: rule4_lv1005
+  - key: rule4_lv1006
     EN: 
-    CN: "3. \u4E0E\u81F3\u5C11\u4E00\u4E2A\u5BF9\u89D2\u7EBF\u76F8\u90BB\u6570\u5B57\u76F8\u540C"
+    CN: "#3\u540C\u65F6\u4E0E\u4E0A\u4E0B\u6216\u5DE6\u53F3\u76F8\u90BB\u6570\u5B57\u5947\u5076\u4E00\u81F4"
   - key: rule4_lv203
     EN: FLIP the coin after playing
     CN: "\u6253\u51FA\u540E\u786C\u5E01\u7FFB\u9762"
@@ -1502,9 +1526,9 @@ MonoBehaviour:
   - key: rule4_lv905
     EN: 
     CN: "\u7206\u70B8\uFF1A\u767E\u4F4D\u6570\u5B57\u4E3A7"
-  - key: rule5_lv1006
+  - key: rule5_lv1008
     EN: 
-    CN: "4. \u5728\u73AF\u5F62\u76F8\u90BB\u6570\u5B57\u4E2D\u4E0D\u662F\u6700\u5927\u6216\u6700\u5C0F"
+    CN: "#4\u5728\u73AF\u5F62\u76F8\u90BB\u6570\u5B57\u4E2D\u4E0D\u662F\u6700\u5927\u6216\u6700\u5C0F"
   - key: rule5_lv404
     EN: Fish and Rice appears alternatively
     CN: "\u9C7C\u548C\u7C73\u4EA4\u66FF\u51FA\u73B0"
@@ -1654,7 +1678,7 @@ MonoBehaviour:
     CN: "<b>\u65F6\u95F4</b>\u6C38\u4E0D\u505C\u6B47\u3002"
   - key: unlocked_tm10
     EN: 
-    CN: "<b>\u5DE5\u724C</b>\u7684\u610F\u4E49\u3002"
+    CN: "<b>\u5DE5\u724C</b>\u901A\u5411\u6210\u529F\u3002"
   - key: unlocked_tm2
     EN: 
     CN: "<b>\u786C\u5E01</b>\u51B3\u5B9A\u547D\u8FD0\u3002"
@@ -1676,27 +1700,3 @@ MonoBehaviour:
   - key: unlocked_tm9
     EN: 
     CN: "\u8272\u5F69\u6591\u6593\u7684<b>\u70E7\u74F6</b>\u3002"
-  - key: levelname_lv1009
-    EN: 
-    CN: 9
-  - key: levelname_lv1010
-    EN: 
-    CN: 10
-  - key: levelname_lv1011
-    EN: 
-    CN: 11
-  - key: levelname_lv1012
-    EN: 
-    CN: 12
-  - key: goal_lv1009
-    EN: 
-    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
-  - key: goal_lv1010
-    EN: 
-    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
-  - key: goal_lv1011
-    EN: 
-    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
-  - key: goal_lv1012
-    EN: 
-    CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"

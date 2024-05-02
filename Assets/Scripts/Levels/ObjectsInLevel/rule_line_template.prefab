@@ -501,6 +501,7 @@ GameObject:
   - component: {fileID: 5339295838998515665}
   - component: {fileID: 5335106860204785314}
   - component: {fileID: 3764523311798866832}
+  - component: {fileID: 8438924389033167388}
   m_Layer: 0
   m_Name: new
   m_TagString: Untagged
@@ -662,6 +663,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 5335106860204785314}
   m_maskType: 0
+--- !u!114 &8438924389033167388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8510896839247699019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ea75568a9d36e4387ce9698e54b84e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tmp: {fileID: 3764523311798866832}
 --- !u!1 &8682796241333162051
 GameObject:
   m_ObjectHideFlags: 0
@@ -698,7 +712,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 4, y: 0}
-  m_SizeDelta: {x: 20, y: 2.7}
+  m_SizeDelta: {x: 26, y: 2.7}
   m_Pivot: {x: 0, y: 1}
 --- !u!23 &8682796241333162174
 MeshRenderer:

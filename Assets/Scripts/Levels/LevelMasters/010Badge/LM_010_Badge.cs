@@ -14,8 +14,8 @@ public class LM_010_Badge : LevelMasterBase
     private bool wrongSelection;
     private int RULE1_LVINDEX = 1;
     private int RULE2_LVINDEX = 3;
-    private int RULE3_LVINDEX = 5;
-    private int RULE4_LVINDEX = 6;
+    private int RULE3_LVINDEX = 6;
+    private int RULE4_LVINDEX = 8;
     private int RNG_LVINDEX1 = 11;
     private int RNG_LVINDEX2 = 12;
     private int MAX_GEN_TIMES = 90000;
@@ -28,14 +28,14 @@ public class LM_010_Badge : LevelMasterBase
     {
         if(levelData.levelIndex == RNG_LVINDEX1 || levelData.levelIndex == RNG_LVINDEX2)
         {
-            Debug.Log("Enter random board gen process");
+            //Debug.Log("Enter random board gen process");
             for (int i=0;i< MAX_GEN_TIMES; i++)
             {
                 SetRandomCellValues(ref levelData.curBoard);
                 int correctCount = CountCorrectCells(levelData.curBoard);
-                if(correctCount >= levelData.curBoard.toolCount && correctCount <= levelData.curBoard.toolCount * 2f)
+                if(correctCount == levelData.curBoard.toolCount)
                 {
-                    Debug.Log(string.Format("get valid random board on try time at {0}", i));
+                    //Debug.Log(string.Format("get valid random board on try time at {0}", i));
                     break;
                 }
                 if(i == MAX_GEN_TIMES - 1)
@@ -79,9 +79,9 @@ public class LM_010_Badge : LevelMasterBase
                         hub.boardMaster.cells[i].gameObject.SetActive(false);
                         break;
                     case (int)CellStatus.locked:
-                        hub.boardMaster.cells[i].numberGroup.localScale = Vector3.one * 0.65f;
-                        hub.boardMaster.cells[i].SetColor(dConstants.UI.DefaultColor_4th);
-                        hub.boardMaster.cells[i].SetFrameColor(dConstants.UI.DefaultColor_4th);
+                        hub.boardMaster.cells[i].numberGroup.localScale = Vector3.one * 0.8f;
+                        hub.boardMaster.cells[i].SetColor(dConstants.UI.DefaultColor_3rd);
+                        hub.boardMaster.cells[i].SetFrameColor(dConstants.UI.DefaultColor_3rd);
                         hub.boardMaster.cells[i].SetCellInteractable(false);
                         hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
                         break;
@@ -209,6 +209,22 @@ public class LM_010_Badge : LevelMasterBase
     }
     bool Rule2Check(DataBoard board, Vector2Int coord)
     {
+        //与至少一个对角线上的数字相同
+        DataCell taregt_cellData = board.GetCellDataByCoord(coord);
+        DataCell diagonal_cellData1 = board.GetCellDataByCoord(new Vector2Int(coord.x - 1, coord.y - 1));
+        DataCell diagonal_cellData2 = board.GetCellDataByCoord(new Vector2Int(coord.x - 1, coord.y + 1));
+        DataCell diagonal_cellData3 = board.GetCellDataByCoord(new Vector2Int(coord.x + 1, coord.y - 1));
+        DataCell diagonal_cellData4 = board.GetCellDataByCoord(new Vector2Int(coord.x + 1, coord.y + 1));
+        bool result = (taregt_cellData.value == diagonal_cellData1.value || taregt_cellData.value == diagonal_cellData2.value
+             || taregt_cellData.value == diagonal_cellData3.value || taregt_cellData.value == diagonal_cellData4.value);
+        if (!result)
+        {
+            //Debug.Log(string.Format("rule 2 check failed on {0},{1}", coord.x, coord.y));
+        }
+        return result;
+    }
+    bool Rule3Check(DataBoard board, Vector2Int coord)
+    {
         //与上下或左右数字奇偶性一致
         DataCell taregt_cellData = board.GetCellDataByCoord(coord);
         DataCell up_cellData = board.GetCellDataByCoord(new Vector2Int(coord.x, coord.y + 1));
@@ -222,25 +238,10 @@ public class LM_010_Badge : LevelMasterBase
         bool result = (AllOdd || AllEven);
         if (!result)
         {
-            //Debug.Log(string.Format("rule 2 check failed on {0},{1}", coord.x, coord.y));
-        }
-        return result;
-    }
-    bool Rule3Check(DataBoard board, Vector2Int coord)
-    {
-        //与至少一个对角线上的数字相同
-        DataCell taregt_cellData = board.GetCellDataByCoord(coord);
-        DataCell diagonal_cellData1 = board.GetCellDataByCoord(new Vector2Int(coord.x - 1, coord.y - 1));
-        DataCell diagonal_cellData2 = board.GetCellDataByCoord(new Vector2Int(coord.x - 1, coord.y + 1));
-        DataCell diagonal_cellData3 = board.GetCellDataByCoord(new Vector2Int(coord.x + 1, coord.y - 1));
-        DataCell diagonal_cellData4 = board.GetCellDataByCoord(new Vector2Int(coord.x + 1, coord.y + 1));
-        bool result = (taregt_cellData.value == diagonal_cellData1.value || taregt_cellData.value == diagonal_cellData2.value
-             || taregt_cellData.value == diagonal_cellData3.value || taregt_cellData.value == diagonal_cellData4.value);
-        if (!result)
-        {
             //Debug.Log(string.Format("rule 3 check failed on {0},{1}", coord.x, coord.y));
         }
         return result;
+        
     }
     bool Rule4Check(DataBoard board, Vector2Int coord)
     {
@@ -266,7 +267,7 @@ public class LM_010_Badge : LevelMasterBase
     {
         for(int i = 0; i < board.cells.Count; i++)
         {
-            board.cells[i].value = Random.Range(1, 10);
+            board.cells[i].value = Random.Range(0, 10);
         }
     }
     int CountCorrectCells(DataBoard board)
