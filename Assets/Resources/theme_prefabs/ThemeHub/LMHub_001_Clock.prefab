@@ -87,9 +87,10 @@ MonoBehaviour:
     toolStatus:
     - statusName: 
       playInfograph: {fileID: 2120586445, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
-  playClips:
-  - {fileID: 8300000, guid: 06cab83737a25404b995d08d3e801f26, type: 3}
-  - {fileID: 8300000, guid: c5919d8a5f4e83b46b3bd9d05218cede, type: 3}
+  tickClips:
+    clips:
+    - {fileID: 8300000, guid: 06cab83737a25404b995d08d3e801f26, type: 3}
+    - {fileID: 8300000, guid: c5919d8a5f4e83b46b3bd9d05218cede, type: 3}
 --- !u!1 &6537586188966139476
 GameObject:
   m_ObjectHideFlags: 0

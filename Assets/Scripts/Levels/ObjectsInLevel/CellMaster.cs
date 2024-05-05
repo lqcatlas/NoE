@@ -231,7 +231,7 @@ public class CellMaster : MonoBehaviour
     }
     public void NumberShift(int endValue, float shuffleDuration = 0)
     {
-        /*Sequence seq = DOTween.Sequence();
+        Sequence seq = DOTween.Sequence();
         int ShiftTimes = Mathf.FloorToInt(shuffleDuration / dConstants.VFX.NumberShiftAnimInterval);
         for (int i = 0; i < ShiftTimes; i++)
         {
@@ -241,7 +241,6 @@ public class CellMaster : MonoBehaviour
         }
         seq.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
         seq.AppendCallback(() => DisplayNumber(endValue));
-        */
         DisplayNumber(endValue);
     }
 

@@ -211,7 +211,7 @@ public class LM_006_LightBulb : LevelMasterBase
         }
         if (hasSwitch)
         {
-            AudioDraft.singleton.PlaySFX(lightbulbHub.GetSwitchClip(Random.Range(0, 2)));
+            AudioDraft.singleton.PlaySFX(lightbulbHub.elecClips.GetClip());
         }
     }
     void InitCells_AllCellsStatusUpdate()

@@ -15,4 +15,5 @@ public class LMHub_008_Crown : MonoBehaviour
 
     [Header("War")]
     public GameObject warTemplate;
+    public SFXClipGroup warClips;
 }

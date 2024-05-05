@@ -11,4 +11,7 @@ public class LMHub_010_Badge : MonoBehaviour
     [Header("Drawings")]
     public Transform bgHolder;
     public GameObject drawingTemplate;
+
+    [Header("Audio")]
+    public SFXClipGroup circleClips;
 }

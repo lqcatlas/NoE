@@ -25,6 +25,7 @@ public class LM_009_Flask : LevelMasterBase
     float lastTimestamp;
     bool pouring;
     bool simEnd;
+    bool audioPlayed;
 
     //level step ups
     int POURING_LVINDEX = 2;
@@ -76,6 +77,7 @@ public class LM_009_Flask : LevelMasterBase
         DisablePlayerInput();
         //puring special below
         pouring = true;
+        audioPlayed = false;
         curAddRate = minPourRatePerSecond;
         lastTimestamp = Time.time;
         startTimestamp = Time.time;
@@ -279,6 +281,13 @@ public class LM_009_Flask : LevelMasterBase
         lastTimestamp = curTimestamp;
         //move tool deduction after player input handling
         levelData.curBoard.toolCount -= numberAdd;
+
+        //pouring audio start at 0.5 sec
+        if(timeIntervalSincePouringStart > 0.5f && !audioPlayed)
+        {
+            audioPlayed = true;
+            AudioDraft.singleton.PlaySFX(flaskHub.pouringClips.GetClip());
+        }
     }
     public override void HandleEnvironment(Vector2Int coord)
     {

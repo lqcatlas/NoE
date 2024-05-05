@@ -665,6 +665,9 @@ MonoBehaviour:
   stat1: {fileID: 207516097806520008}
   stat2: {fileID: 7635755908158844691}
   explodeAnim: {fileID: 1807947570158528575, guid: 8976fac67a52c9b4ea5687ce786af763, type: 3}
+  pouringClips:
+    clips:
+    - {fileID: 8300000, guid: ac27097aee675594cabc7e86bf2b1f63, type: 3}
 --- !u!1 &6311151141619419791
 GameObject:
   m_ObjectHideFlags: 0

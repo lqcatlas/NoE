@@ -65,6 +65,7 @@ public class LM_010_Badge : LevelMasterBase
                 obj.GetComponent<CellChoice_Badge>().SetToCorrect(temp_cellData.status == (int)CellStatus.found);
                 obj.transform.position = hub.boardMaster.cells[i].transform.position;
                 //hub.boardMaster.cells[i].SetCellInteractable(false);
+                //AudioDraft.singleton.PlaySFX(themeHub.circleClips.GetClip());
             }
         }
         //set each cell based on status
@@ -158,6 +159,7 @@ public class LM_010_Badge : LevelMasterBase
                 obj.GetComponent<CellChoice_Badge>().SetToCorrect(temp_cellData.status == (int)CellStatus.found);
                 obj.transform.position = hub.boardMaster.cells[i].transform.position;
                 hub.boardMaster.cells[i].SetCellInteractable(false);
+                AudioDraft.singleton.PlaySFX(themeHub.circleClips.GetClip());
             }
         }
     }

@@ -19,4 +19,6 @@ public class LMHub_007_Bonsai : MonoBehaviour
     public GameObject leafTemplate;
     public List<KeyValuePair<CellMaster, GameObject>> leaves;
 
+    [Header("Audio")]
+    public SFXClipGroup cutClips;
 }

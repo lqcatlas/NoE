@@ -57,9 +57,10 @@ MonoBehaviour:
       playInfograph: {fileID: -416036338, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   cellBgHolder: {fileID: 4068668159233435932}
   bulbBgTemplate: {fileID: 926363918380194025, guid: b477c3a2af6924b4e8f99bfd629a6552, type: 3}
-  switchClips:
-  - {fileID: 8300000, guid: f46356c68106e4e41be5368d16735b2a, type: 3}
-  - {fileID: 8300000, guid: bb6e8c957aeffec4f8f246741f846af3, type: 3}
+  elecClips:
+    clips:
+    - {fileID: 8300000, guid: f46356c68106e4e41be5368d16735b2a, type: 3}
+    - {fileID: 8300000, guid: bb6e8c957aeffec4f8f246741f846af3, type: 3}
 --- !u!1 &8390322059011748740
 GameObject:
   m_ObjectHideFlags: 0

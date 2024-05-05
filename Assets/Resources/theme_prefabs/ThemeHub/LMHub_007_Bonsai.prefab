@@ -191,6 +191,15 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 745687ad5b7fc0343b1ec04329e632d9, type: 3}
   cellBgHolder: {fileID: 4068668159233435932}
   leafTemplate: {fileID: 3920627677804469945, guid: 26b15417cbb1ff4468bdbc151d016e1c, type: 3}
+  cutClips:
+    clips:
+    - {fileID: 8300000, guid: 7f24d00268243f945a6efe8902f8144f, type: 3}
+    - {fileID: 8300000, guid: 0059e1f424ae57042892e4c79412a73e, type: 3}
+    - {fileID: 8300000, guid: d4c79f3464d0dc045949eadac17c2cbb, type: 3}
+    - {fileID: 8300000, guid: eca9508d46ed41944b350cf0174b4147, type: 3}
+    - {fileID: 8300000, guid: 7b6c5523fe22fba43b0ffed0a77696df, type: 3}
+    - {fileID: 8300000, guid: 7688c5f4755741f47b23d0f939bd5a2f, type: 3}
+    - {fileID: 8300000, guid: 90016e25e162b2a41a0e2cc404e7302b, type: 3}
 --- !u!1 &8390322059011748740
 GameObject:
   m_ObjectHideFlags: 0

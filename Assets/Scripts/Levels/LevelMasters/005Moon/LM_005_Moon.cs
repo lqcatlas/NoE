@@ -151,6 +151,7 @@ public class LM_005_Moon : LevelMasterBase
                         eclipseMoments.Add(levelData.curBoard.toolCount);
                         eclipseCoord = coord;
                         moonHub.eclipseVFX.SetActive(true);
+                        AudioDraft.singleton.PlaySFX(moonHub.eclipseClips.GetClip());
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full)
                     {

@@ -21,6 +21,7 @@ public class LMHub_005_Moon : MonoBehaviour
 
     [Header("Eclipse")]
     public GameObject eclipseVFX;
+    public SFXClipGroup eclipseClips;
     [Header("Phase Plate")]
     //public GameObject phaseMask;
     public GameObject phaseRotate;

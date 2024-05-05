@@ -51,7 +51,7 @@ public class LM_001_Clock : LevelMasterBase
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
-        AudioDraft.singleton.PlaySFX(clockHub.GetNextPlayClip());
+        AudioDraft.singleton.PlaySFX(clockHub.tickClips.GetClip());
         //cell is played get +1
         if (levelData.levelIndex >= 1 && levelData.levelIndex <= 2)
         {

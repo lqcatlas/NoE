@@ -20,18 +20,5 @@ public class LMHub_002_Coin : MonoBehaviour
     public ToolStatusGroup toolStatusGroupV3;
 
     [Header("Play Audio")]
-    public List<AudioClip> playClips;
-    private int clipIndex = 0;
-    public AudioClip GetNextPlayClip()
-    {
-        if (playClips.Count > 0)
-        {
-            clipIndex = (clipIndex + 1) % playClips.Count;
-            return playClips[clipIndex];
-        }
-        else
-        {
-            return null;
-        }
-    }
+    public SFXClipGroup coinLandingClips;
 }

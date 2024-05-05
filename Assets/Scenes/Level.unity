@@ -1015,7 +1015,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e2c4f807b87415440b8023eeb28170ae, type: 3}
   - {fileID: 8300000, guid: 9e8454e61638ecd4081ffcd5f6b7e2af, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: bfb8f056bea6b0f47ad0f0094ec39504, type: 3}
   - {fileID: 0}
   introSource: {fileID: 1407233124}
   puzzleSource: {fileID: 231650543}

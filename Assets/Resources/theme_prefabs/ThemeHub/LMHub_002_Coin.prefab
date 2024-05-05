@@ -165,11 +165,12 @@ MonoBehaviour:
       playInfograph: {fileID: 1335975241, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
     - statusName: '@Loc=tool_name_theme2_status1@@'
       playInfograph: {fileID: 425153711, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
-  playClips:
-  - {fileID: 8300000, guid: 2ad97e84cc0ef174ca31b82a1f800d3b, type: 3}
-  - {fileID: 8300000, guid: 902abaf1ac70bde4da18582f251f835f, type: 3}
-  - {fileID: 8300000, guid: 59ad57de69702974e8e22f66f2f1ef5d, type: 3}
-  - {fileID: 8300000, guid: c86d6d48fab9b134e84512d7aee0182a, type: 3}
+  coinLandingClips:
+    clips:
+    - {fileID: 8300000, guid: c86d6d48fab9b134e84512d7aee0182a, type: 3}
+    - {fileID: 8300000, guid: 59ad57de69702974e8e22f66f2f1ef5d, type: 3}
+    - {fileID: 8300000, guid: 902abaf1ac70bde4da18582f251f835f, type: 3}
+    - {fileID: 8300000, guid: 2ad97e84cc0ef174ca31b82a1f800d3b, type: 3}
 --- !u!1 &7899313367218027196
 GameObject:
   m_ObjectHideFlags: 0

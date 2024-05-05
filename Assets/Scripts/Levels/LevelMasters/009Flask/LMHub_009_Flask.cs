@@ -22,4 +22,7 @@ public class LMHub_009_Flask : MonoBehaviour
 
     [Header("Boom Anim")]
     public GameObject explodeAnim;
+
+    [Header("Audio")]
+    public SFXClipGroup pouringClips;
 }

@@ -96,6 +96,7 @@ public class LM_007_Bonsai : LevelMasterBase
                 levelData.curBoard.cells[i].status = -1;
             }
         }
+        AudioDraft.singleton.PlaySFX(bonsaiHub.cutClips.GetClip());
     }
     public override void UpdateCells(Vector2Int coord)
     {

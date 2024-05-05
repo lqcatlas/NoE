@@ -279,6 +279,22 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 42fdf95b25750bb46b2caf8c2a8b711a, type: 3}
   - {fileID: 8300000, guid: 1ce7560319f932945a338f50d0ea0b69, type: 3}
   - {fileID: 8300000, guid: 4f398c3b0eb5d474b812bbc84212c62a, type: 3}
+  toolClips:
+    clips:
+    - {fileID: 8300000, guid: fb45d559bcc779848963d1204ea40414, type: 3}
+    - {fileID: 8300000, guid: 29064dfbf68209c42becc6b2aed78f2e, type: 3}
+    - {fileID: 8300000, guid: 969613285b4ad2a42b72258b68b0b1d5, type: 3}
+    - {fileID: 8300000, guid: 28700978e8d6ac8499a3991a49d1ca51, type: 3}
+  endingVOClips:
+    clips:
+    - {fileID: 8300000, guid: b7d612cbef973304abf681da1246f056, type: 3}
+    - {fileID: 8300000, guid: 479bb3eb9c1750d418d1b7d89a179e0f, type: 3}
+    - {fileID: 8300000, guid: 137e8e8d1200b204eb8c91faea93cf23, type: 3}
+    - {fileID: 8300000, guid: 145c826c45b86d04882d924ab8252bc5, type: 3}
+    - {fileID: 8300000, guid: 4f398c3b0eb5d474b812bbc84212c62a, type: 3}
+    - {fileID: 8300000, guid: edc1584330862304693418642439049c, type: 3}
+    - {fileID: 8300000, guid: 42fdf95b25750bb46b2caf8c2a8b711a, type: 3}
+    - {fileID: 8300000, guid: 1ce7560319f932945a338f50d0ea0b69, type: 3}
 --- !u!1 &6202353322546198707
 GameObject:
   m_ObjectHideFlags: 0

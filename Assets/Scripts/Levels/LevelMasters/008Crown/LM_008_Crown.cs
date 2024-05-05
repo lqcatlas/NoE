@@ -177,19 +177,26 @@ public class LM_008_Crown : LevelMasterBase
         }
         if (GetCurrentCrownSuccess())
         {
+            bool hasWar = false;
             for (int i = 0; i < crownHub.crownBgs.Count; i++)
             {
+                
                 if (BoardCalculation.Manhattan_Dist(crownHub.crownBgs[i].Key.coord, coord) == 1 
                     && crownLogs[crownLogs.Count - 1].winningCoords.Contains(crownHub.crownBgs[i].Key.coord))
                 {
                     GameObject obj = Instantiate(crownHub.warTemplate, crownHub.cellBgHolder);
                     obj.transform.position = (crownHub.crownBgs[i].Value.transform.position + playedCrownCell.transform.position) / 2f;
                     obj.SetActive(true);
+                    
                     Anim_CrownMove(crownHub.crownBgs[i].Key.coord, coord, ANIM_FALL_DURATION);
                     //Anim_CrownFail(crownHub.crownBgs[i].Key.coord, ANIM_WAR_DURATION);
                     UpdateTargetCellValue(crownHub.crownBgs[i].Key.coord, ANIM_FALL_DURATION);
 
                 }
+            }
+            if (hasWar)
+            {
+                AudioDraft.singleton.PlaySFX(crownHub.warClips.GetClip());
             }
             if (crownLogs[crownLogs.Count - 1].winningCoords.Count > 0)
             {
@@ -204,6 +211,7 @@ public class LM_008_Crown : LevelMasterBase
         }
         else
         {
+            bool hasWar = false;
             for (int i = 0; i < crownHub.crownBgs.Count; i++)
             {
                 if (BoardCalculation.Manhattan_Dist(crownHub.crownBgs[i].Key.coord, coord) == 1
@@ -212,11 +220,16 @@ public class LM_008_Crown : LevelMasterBase
                     GameObject obj = Instantiate(crownHub.warTemplate, crownHub.cellBgHolder);
                     obj.transform.position = (crownHub.crownBgs[i].Value.transform.position + playedCrownCell.transform.position) / 2f;
                     obj.SetActive(true);
+                    AudioDraft.singleton.PlaySFX(crownHub.warClips.GetClip());
                     //Anim_CrownMove(coord, crownHub.crownBgs[i].Key.coord, ANIM_FALL_DURATION);
                     //Anim_CrownSuccess(crownHub.crownBgs[i].Key.coord, ANIM_WAR_DURATION);
                 }
             }
-            if(crownLogs[crownLogs.Count - 1].losingCoords.Count > 0)
+            if (hasWar)
+            {
+                AudioDraft.singleton.PlaySFX(crownHub.warClips.GetClip());
+            }
+            if (crownLogs[crownLogs.Count - 1].losingCoords.Count > 0)
             {
                 Anim_CrownFail(coord, ANIM_WAR_DURATION * 0.8f);
                 UpdateTargetCellValue(coord, ANIM_WAR_DURATION * 0.8f);

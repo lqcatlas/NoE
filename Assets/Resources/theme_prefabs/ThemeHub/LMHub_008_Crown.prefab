@@ -53,6 +53,10 @@ MonoBehaviour:
   cellBgHolder: {fileID: 4068668159233435932}
   crownTemplate: {fileID: 6419639613944135757, guid: 822b9a7e9e78c9d4597edfc0b04d568d, type: 3}
   warTemplate: {fileID: 539710638515335903, guid: 904a483d521c9df4284d8368c253734c, type: 3}
+  warClips:
+    clips:
+    - {fileID: 8300000, guid: b8681a3e00d95b24eb254da1db32de6c, type: 3}
+    - {fileID: 8300000, guid: 82e579cee55c6d7409ed7bc78ed9d7fc, type: 3}
 --- !u!1 &8390322059011748740
 GameObject:
   m_ObjectHideFlags: 0

@@ -684,13 +684,6 @@ MonoBehaviour:
   - {fileID: 15978782, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   - {fileID: 153082221, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   - {fileID: -348473210, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  toolDisplayName:
-  - 
-  - '@Loc=tool_name_theme5_status1@@'
-  - '@Loc=tool_name_theme5_status2@@'
-  - '@Loc=tool_name_theme5_status3@@'
-  - '@Loc=tool_name_theme5_status4@@'
-  - '@Loc=tool_name_theme5_status5@@'
   toolCoords:
   - {fileID: 24449583255749752}
   - {fileID: 5341487563690946182}
@@ -718,6 +711,9 @@ MonoBehaviour:
       playInfograph: {fileID: 2120586445, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   MAX_TOOL_COUNT_IN_CYCLE: 7
   eclipseVFX: {fileID: 3716812399485767969}
+  eclipseClips:
+    clips:
+    - {fileID: 8300000, guid: fbfeb1838267c614fbf8d9bfffd432d1, type: 3}
   phaseRotate: {fileID: 8557199609628433335}
   phaseStar: {fileID: 6510537913823798655}
   phaseDegrees:

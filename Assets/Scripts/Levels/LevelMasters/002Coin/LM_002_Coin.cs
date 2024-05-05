@@ -202,7 +202,7 @@ public class LM_002_Coin : LevelMasterBase
         randomCoin.transform.DOLocalMove(moveFromCoord, duration).From();
         randomCoin.transform.DOScale(Vector3.one * start_size, duration).From();
         randomCoin.GetComponent<RandomCoinShapeWidget>().coinShape.GetComponent<SpriteRenderer>().DOFade(0f, duration).From();
-        randomCoin.transform.DOShakePosition(duration / 2, new Vector3(1f, 1f, 0f) * shake_strength, 50).SetDelay(duration * 1.2f).OnStart(()=> AudioDraft.singleton.PlaySFX(coinHub.GetNextPlayClip()));
+        randomCoin.transform.DOShakePosition(duration / 2, new Vector3(1f, 1f, 0f) * shake_strength, 50).SetDelay(duration * 1.2f).OnStart(()=> AudioDraft.singleton.PlaySFX(coinHub.coinLandingClips.GetClip()));
 
     }
     public override bool CheckWinCondition()

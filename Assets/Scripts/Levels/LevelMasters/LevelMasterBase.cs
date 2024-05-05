@@ -144,12 +144,12 @@ public class LevelMasterBase : MonoBehaviour
         DelayedPlay_Theme();
         if (CheckWinCondition())
         {
-            Debug.Log("congrats! you win!");
+            //Debug.Log("congrats! you win!");
             WinALevel();
         }
         else if (CheckLoseCondition())
         {
-            Debug.Log("ooops! you lose!");
+            //Debug.Log("ooops! you lose!");
             LoseALevel();
         }
         EnablePlayerInput();
