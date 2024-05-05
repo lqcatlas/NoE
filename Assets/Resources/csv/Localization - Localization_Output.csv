@@ -20,29 +20,29 @@ UID,Key,EN,CN
 19,answer_tm7_lv719,,
 20,answer_tm7_lv720,,
 21,date_tm1,2022/12/04,2022/12/04
-22,date_tm10,,2024/04/14
+22,date_tm10,2024/04/14,2024/04/14
 23,date_tm2,2023/01/15,2023/01/15
 24,date_tm4,2023/06/25,2023/06/25
 25,date_tm5,2023/08/13,2023/08/13
 26,date_tm6,2023/09/03,2023/09/03
-27,date_tm7,,2024/02/15
-28,date_tm8,,2024/03/09
-29,date_tm9,,2024/03/24
-30,goal_lv1001,,标记满足要求的数字
-31,goal_lv1002,,标记满足要求的数字
-32,goal_lv1003,,标记同时满足全部要求的数字
-33,goal_lv1004,,标记同时满足全部要求的数字
-34,goal_lv1005,,标记同时满足全部要求的数字
-35,goal_lv1006,,标记同时满足全部要求的数字
-36,goal_lv1007,,标记同时满足全部要求的数字
-37,goal_lv1008,,标记同时满足全部要求的数字
-38,goal_lv1009,,标记同时满足全部要求的数字
+27,date_tm7,2024/02/15,2024/02/15
+28,date_tm8,2024/03/09,2024/03/09
+29,date_tm9,2024/03/24,2024/03/24
+30,goal_lv1001,Mark cells meeting the requirement,标记满足要求的数字
+31,goal_lv1002,Mark cells meeting the requirement,标记满足要求的数字
+32,goal_lv1003,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
+33,goal_lv1004,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
+34,goal_lv1005,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
+35,goal_lv1006,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
+36,goal_lv1007,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
+37,goal_lv1008,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
+38,goal_lv1009,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
 39,goal_lv101,Set all cells to 8,让所有格子为8
-40,goal_lv1010,,标记同时满足全部要求的数字
-41,goal_lv1011,,标记同时满足全部要求的数字
-42,goal_lv1012,,标记同时满足全部要求的数字
+40,goal_lv1010,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
+41,goal_lv1011,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
+42,goal_lv1012,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
 43,goal_lv102,Set all cells to 10,让所有格子为10
-44,goal_lv103,Set all cells to 1,让所有格子为12
+44,goal_lv103,Set all cells to 12,让所有格子为12
 45,goal_lv104,Set all cells to UNIQUE,让所有格子为不同数字
 46,goal_lv105,Set all cells to 2,让所有格子为2
 47,goal_lv106,Set all cells to 3,让所有格子为3
@@ -148,15 +148,15 @@ UID,Key,EN,CN
 147,goal_lv910,,用完全部试剂
 148,goal_lv911,,各位数字中只有奇数
 149,goal_lv912,,用完全部试剂
-150,hint_tm1,,它滴答滴答，永不停歇地前进。
-151,hint_tm10,,它用来开门，通向成功的大门。
-152,hint_tm2,,它一次次地翻动，决定着命运。
-153,hint_tm4,,它虽然简约，却愈显得精致。
-154,hint_tm5,,它不停变化，却总会回到熟悉的样子。
-155,hint_tm6,,它代表了灵感、顿悟。
-156,hint_tm7,,它是通过修剪自然得到的艺术品。
-157,hint_tm8,,它用重量象征权力。
-158,hint_tm9,,它装着色彩斑斓的物质。
+150,hint_tm1,It ticks on and never ceases.,它滴答滴答，永不停歇地前进。
+151,hint_tm10,It unlocks the gates to success.,它用来开门，通向成功的大门。
+152,hint_tm2,"It flips, deciding fates.",它一次次地翻动，决定着命运。
+153,hint_tm4,"Though simple, it exudes elegance.",它虽然简约，却愈显得精致。
+154,hint_tm5,"It's ever-changing, yet always returns.",它不停变化，却总会回到熟悉的样子。
+155,hint_tm6,"It represents inspiration, enlightenment.",它代表了灵感、顿悟。
+156,hint_tm7,It's an art form crafted through trimming nature.,它是通过修剪自然得到的艺术品。
+157,hint_tm8,It symbolizes power through its weight.,它用重量象征权力。
+158,hint_tm9,It contains dangerous substances.,它装着危险的物质。
 159,intro_line_1,"Friday night. Get back home, <b>things</b> emerges from darkness.",周五晚上，打开房门，回到漆黑的家中，黑暗之中<b>万物</b>浮现。
 160,intro_line_2,"On the way to work, passing through a river, <b>things</b> emerges from the voice of the winds",走在上班的路上，路过一条小河，树叶的婆娑声中夹杂着<b>万物</b>。
 161,levelname_lv1001,,001
@@ -279,17 +279,17 @@ UID,Key,EN,CN
 278,levelname_lv910,,010
 279,levelname_lv911,,011
 280,levelname_lv912,,012
-281,locked_tm1,,█ █ 永不停歇。
-282,locked_tm10,,█ █ 通向成功。
-283,locked_tm2,,█ █ 决定命运。
-284,locked_tm4,,█ █ 简约又精致。
-285,locked_tm5,,█ █ 有无规律？
-286,locked_tm6,,█ █ 代表着灵感。
-287,locked_tm7,,人与自然共创█ █ 。
-288,locked_tm8,,█ █ 越重越好。
-289,locked_tm9,,色彩斑斓的 █ █ 。
-290,manifesto_tm1,,时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。从某个角度去考虑，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
-291,manifesto_tm10,,工作有无意义？
+281,locked_tm1,█ █ never stops.,█ █ 永不停歇。
+282,locked_tm10,█ █ leads to success.,█ █ 通向成功。
+283,locked_tm2,█ █ determine fates.,█ █ 决定命运。
+284,locked_tm4,simple and elegant █ █ .,█ █ 简约又精致。
+285,locked_tm5,Does █ █ have a cycle?,█ █ 有无规律？
+286,locked_tm6,█ █ represents insights.,█ █ 代表着灵感。
+287,locked_tm7,█ █ crafted by human and natural.,人与自然共创 █ █ 。
+288,locked_tm8,"█ █ , the heavier, the better.",█ █ 越重越好。
+289,locked_tm9,Colorful █ █ .,色彩斑斓的 █ █ 。
+290,manifesto_tm1,"The clock is the first theme, its production and design predate even before the project set its title, ""Numbers of Everything"". From a certain perspective, it is the very starting point of the entire idea.<br><br>Staying up late doing nothing is a superficial appreciation of time, yet it is a frantic waste of time. The clock theme aims to express the individual's powerlessness in the face of the passage of time through this scenario.",时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。从某个角度去考虑，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
+291,manifesto_tm10,,这个主题诞生于我对日常主职工作产生严重倦怠的时期。大厂、高薪、良好的福利、社会的认可，光明的前途，可一旦产生了情绪，这些都会变得毫无意义。在不断变难、变大、变得荒诞的谜题的推进下，原本令人心驰神往的升职加薪会逐渐变得苍白无力。<br><br>希望大家对工作的感受都比“数字工程师”这样职位更加有趣，如果你不幸对它感同身受，是时候考虑“说再见”的事情了。
 292,manifesto_tm2,,硬币是第二个主题，它的灵感来源于用掷硬币来做决策这一生活中常见的玩笑时刻。<br><br>故事往往是这样展开的：嘴里说着不知该怎么选所以就决定要掷硬币。在硬币的正反出现后，这时又意识到了，这并不是自己满意的决定。然后会找理由反悔说“再掷一次吧”。<br><br>因此掷硬币不是用来决定命运，而是来帮助人更好地走进自己的内心，看清自己的想法。
 293,manifesto_tm4,,寿司是进入工程正规流程之后的第一个正式主题。它表达的要点是日本料理中运用最简单食材，通过不同的烹调与组合的变化产生出口感与味道上丰富可能。在实际的谜题中展现为通过两种食材不同的次序，就可以产生迥然相异的数字变化来解决谜题。
 294,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期是月相交替变化，容易掌握。引入月食规则的时候则使用了一些具有迷惑性的手段，从动画效果和文字上都暗示着它的无序。然后在通过一系列的挑战来引导大家对其内在规律的探索。<br><br>看到这段文字的你真的已经完全掌握了月食吗？就用后续的钻石挑战来确认一下吧。
@@ -297,18 +297,18 @@ UID,Key,EN,CN
 296,manifesto_tm7,,我喜欢盆景的原因就在于文字最后所提到的“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。
 297,manifesto_tm8,,这个主题想要表达的是王冠所拥有的两个主要概念。王冠承载着责任，因此不是可以轻易佩戴的。权力在强大的同时也带来了相应的不稳定性，因此王冠会不可避免的不断更迭。最终又收束到了一个小心思：不论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步着的。不知道这个彩蛋有没有被你感受到呢？
 298,manifesto_tm9,,一个放飞自我的主题。我大胆地引入了基于玩家反应而非纯粹计算的谜题。<br><br>它的灵感来源于我中学期间对于化学实验的复杂感受，我很喜欢理论化学所描绘的那个充满神秘感的分子世界，但同时实验化学需要的严谨操作又极大地折磨着我这个缺乏耐心的人。最终映射到游戏中，这种感受就变成了随时爆炸的实验，意图创造一种“悬崖边起舞”的感觉。
-299,narrative_tm1_ln001,,溜走的时间
-300,narrative_tm1_ln002,,滴答滴答滴答，
-301,narrative_tm1_ln003,,时钟不知疲倦地前进。
-302,narrative_tm1_ln004,,微博、连载、直播，
-303,narrative_tm1_ln005,,开启新的节律，
-304,narrative_tm1_ln006,,时间在你的指尖默默滑动。
-305,narrative_tm1_ln007,,夜的旅者，
-306,narrative_tm1_ln008,,在黑暗中跋涉。
-307,narrative_tm1_ln009,,拖着疲惫的身躯，
-308,narrative_tm1_ln010,,最终抵达晨曦。
-309,narrative_tm1_ln011,,意识逐渐模糊，
-310,narrative_tm1_ln012,,是时候休息了。
+299,narrative_tm1_ln001,The passage of time,溜走的时间
+300,narrative_tm1_ln002,"Tick, tock, tick, tock,",滴答滴答滴答，
+301,narrative_tm1_ln003,The clock tirelessly marches on.,时钟不知疲倦地前进。
+302,narrative_tm1_ln004,"Tiwtch, tiktok, live streams,",微博、连载、直播，
+303,narrative_tm1_ln005,"never stop moving,",开启新的节律，
+304,narrative_tm1_ln006,time silently slipping through your fingertips.,时间在你的指尖默默滑动。
+305,narrative_tm1_ln007,"Night's travelers,",夜的旅者，
+306,narrative_tm1_ln008,trekking through darkness.,在黑暗中跋涉。
+307,narrative_tm1_ln009,"Dragging weary bodies,",拖着疲惫的身躯，
+308,narrative_tm1_ln010,finally arriving at dawn.,最终抵达晨曦。
+309,narrative_tm1_ln011,"Consciousness fading,",意识逐渐模糊，
+310,narrative_tm1_ln012,it's time to rest.,是时候休息了。
 311,narrative_tm10_ln001,,心仪的工牌
 312,narrative_tm10_ln002,,面试题：找到目标数字。
 313,narrative_tm10_ln003,,入职成为<b>数字工程师</b>。
@@ -427,14 +427,14 @@ UID,Key,EN,CN
 426,narrative_tm9_ln014,,夜色渐浓，准备回家。
 427,narrative_tm9_ln015,,为了钻石，加班！
 428,prompt_tm1,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-429,prompt_tm10,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+429,prompt_tm10,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9"
 430,prompt_tm2,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 431,prompt_tm4,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 432,prompt_tm5,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 433,prompt_tm6,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-434,prompt_tm7,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-435,prompt_tm8,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-436,prompt_tm9,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+434,prompt_tm7,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a Chinese garden. There are a gazebo and a bridge in distance. There are blooming lotuses in the close view. And a small bonsai in a pot appears at the side. A bird is flying. The atmosphere are sunny and misty. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a Chinese garden. There are a gazebo and a bridge in distance. There are blooming lotuses in the close view. And a small bonsai in a pot appears at the side. A bird is flying. The atmosphere are sunny and misty. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+435,prompt_tm8,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a royal palace. There are a throne and a statue in center. And a small crown on a table appears at the side. A painting is hanged on the wall. The atmosphere are majestic and bright. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a royal palace. There are a throne and a statue in center. And a small crown on a table appears at the side. A painting is hanged on the wall. The atmosphere are majestic and bright. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+436,prompt_tm9,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of laboratory equipment in a shelf. There are a bottle of medicine and a monitor in center. And a small flask with colorful liquid appears at the side. The atmosphere are clean and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of laboratory equipment in a shelf. There are a bottle of medicine and a monitor in center. And a small flask with colorful liquid appears at the side. The atmosphere are clean and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9"
 437,rule1_lv1001,,目标数字要求：
 438,rule1_lv101,Play: +1,打出：+1
 439,rule1_lv201,Head - Cell Played +1,正面：+1
@@ -450,7 +450,7 @@ UID,Key,EN,CN
 449,rule1_lv902,,按住：倾倒（数字加速增加）
 450,rule1_lv903,,按住：倾倒（需保证安全）
 451,rule2_lv1001,,#1与十字相邻数字都不同
-452,rule2_lv103,Cell already with a Clock +1,已有时钟的格子+1
+452,rule2_lv103,Cell already with a Clock +1 again,已有时钟的格子+1
 453,rule2_lv202,Tail - Cell Played -1,反面：-1
 454,rule2_lv205,Tail - Cell Played -X,反面：-X
 455,rule2_lv404,Rice: -3,米：-3
@@ -495,14 +495,14 @@ UID,Key,EN,CN
 494,rule5_lv906,,爆炸：有3个以上相同数字
 495,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
 496,themename_tm1,Clock,时钟
-497,themename_tm10,,工牌
+497,themename_tm10,Badge,工牌
 498,themename_tm2,Coin,硬币
 499,themename_tm4,Sushi,寿司
 500,themename_tm5,Moon,月亮
 501,themename_tm6,Lightbulb,灯泡
 502,themename_tm7,Bonsai,盆景
-503,themename_tm8,,王冠
-504,themename_tm9,,烧瓶
+503,themename_tm8,Crown,王冠
+504,themename_tm9,Flask,烧瓶
 505,tool_name_theme2_status0,Front,正面
 506,tool_name_theme2_status1,Tail,反面
 507,tool_name_theme4_status1,Fish,鱼生
@@ -514,7 +514,7 @@ UID,Key,EN,CN
 513,tool_name_theme5_status5,Crescent,新月
 514,ui_close_btn,Close,关闭
 515,ui_designer_note_title,Designer's Notes,制作笔记
-516,ui_failure_title,,挑战失败
+516,ui_failure_title,Level Failed,挑战失败
 517,ui_finished_status,(Passed),（完成）
 518,ui_goal_current_avg,Current Average: ,当前数字均值：
 519,ui_goal_current_crown_present,,在场王冠：
@@ -523,7 +523,7 @@ UID,Key,EN,CN
 522,ui_goal_current_sum,Current Sum: ,当前数字之和：
 523,ui_goal_missing_digits,Missing:,缺失数字：
 524,ui_goal_section_title,Goal,目标
-525,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the following riddle:,根据谜语找到<b>物件</b>：
+525,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the riddle:,根据谜语找到<b>物件</b>：
 526,ui_new_tag,NEW,新
 527,ui_perfect_status,(Perfect),（完美通关）
 528,ui_retry_btn,Restart,重试
@@ -532,13 +532,13 @@ UID,Key,EN,CN
 531,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}
 532,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
 533,ui_themephoto_unlockreq,<sprite name=currency_star_frame> {0}<br>to unlock,<sprite name=currency_star_frame> {0}<br>解锁
-534,ui_victory_title,,恭喜通关
-535,unlocked_tm1,,<b>时间</b>永不停歇。
-536,unlocked_tm10,,<b>工牌</b>通向成功。
-537,unlocked_tm2,,<b>硬币</b>决定命运。
-538,unlocked_tm4,,<b>寿司</b>简约又精致。
-539,unlocked_tm5,,<b>月亮</b>有无规律？
-540,unlocked_tm6,,<b>灯泡</b>代表着灵感。
-541,unlocked_tm7,,人与自然共创<b>盆景</b>。
-542,unlocked_tm8,,<b>王冠</b>越重越好。
-543,unlocked_tm9,,色彩斑斓的<b>烧瓶</b>。
+534,ui_victory_title,Congrats!,恭喜通关
+535,unlocked_tm1,<b>Time</b> never stops.,<b>时间</b>永不停歇。
+536,unlocked_tm10,<b>Badge</b> leads to success.,<b>工牌</b>通向成功。
+537,unlocked_tm2,<b>Coin</b> determine fates.,<b>硬币</b>决定命运。
+538,unlocked_tm4,Simple and elegant <b>Sushi</b>.,<b>寿司</b>简约又精致。
+539,unlocked_tm5,Does <b>Moon</b> have a cycle?,<b>月亮</b>有无规律？
+540,unlocked_tm6,<b>Lightbulb</b> represents insights.,<b>灯泡</b>代表着灵感。
+541,unlocked_tm7,<b>Bonsai</b> crafted by human and natural.,人与自然共创<b>盆景</b>。
+542,unlocked_tm8,"<b>Crown</b>, the heavier, the better.",<b>王冠</b>越重越好。
+543,unlocked_tm9,Colorful <b>Flask</b>.,色彩斑斓的<b>烧瓶</b>。
