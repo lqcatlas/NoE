@@ -41,6 +41,7 @@ public class BgCtrl : MonoBehaviour
                 HugeTextures.SetActive(true); ;
                 RandomThemeIcon.SetActive(true);
                 ThemeIconNoise.SetActive(true);
+                ScratchedBlackboard.SetActive(true);
                 break;
             case dConstants.Gameplay.GamePhase.Level:
                 HugeTextures.SetActive(true); ;

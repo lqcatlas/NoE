@@ -8,6 +8,7 @@ public class EndlessNoise : MonoBehaviour
 {
     [Header("Anim Params")]
     [SerializeField] ThemeResourceLookup resourceHub;
+    [SerializeField] LevelRecords levelRecords;
     [SerializeField] Vector2 screenRangeX;
     [SerializeField] Vector2 screenRangeY;
     [SerializeField] Vector2 sizeRange;
@@ -42,9 +43,10 @@ public class EndlessNoise : MonoBehaviour
     }
     void GenerateOneFlake()
     {
-        int rng = Random.Range(0, resourceHub.ThemeXResource.Count);
+        List<int> unlockedThemes = levelRecords.unlockedThemes;
+        int rng = Random.Range(0, unlockedThemes.Count);
         GameObject obj = Instantiate(flakeTemplate, transform);
-        obj.GetComponent<SpriteRenderer>().sprite = resourceHub.ThemeXResource[rng].ThemeSprite;
+        obj.GetComponent<SpriteRenderer>().sprite = resourceHub.GetThemeIcon(unlockedThemes[rng]);
         obj.transform.localScale = Vector3.one * Random.Range(sizeRange.x, sizeRange.y);
         obj.transform.localPosition = new Vector3(Random.Range(screenRangeX.x, screenRangeX.y), Random.Range(screenRangeY.x, screenRangeY.y), 0);
         float duration  = Random.Range(durationRange.x, durationRange.y);
