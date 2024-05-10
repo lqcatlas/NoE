@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 11400000, guid: d41dc660a95b15847a53d0151318986c, type: 2}
-  curLanguage: 0
+  curLanguage: 1
   defaultLanguage: 1
 --- !u!4 &165104778
 Transform:

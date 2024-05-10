@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class LM_002_Coin : LevelMasterBase
@@ -13,6 +14,18 @@ public class LM_002_Coin : LevelMasterBase
     {
         base.GetObjectReferences(null);
         coinHub = _themeHub.GetComponent<LMHub_002_Coin>();
+    }
+    public override void OnlyInFirstEntry()
+    {
+        base.OnlyInFirstEntry();
+        // clear old coin sprites
+        coinHub.coinBgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
+        List<Transform> oldCoins = coinHub.coinBgHolder.GetComponentsInChildren<Transform>().ToList();
+        oldCoins.Remove(coinHub.coinBgHolder.transform);
+        for (int i = 0; i < oldCoins.Count; i++)
+        {
+            Destroy(oldCoins[i].gameObject);
+        }
     }
     public override void InitTool()
     {
