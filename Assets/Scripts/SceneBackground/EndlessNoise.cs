@@ -44,9 +44,18 @@ public class EndlessNoise : MonoBehaviour
     void GenerateOneFlake()
     {
         List<int> unlockedThemes = levelRecords.unlockedThemes;
-        int rng = Random.Range(0, unlockedThemes.Count);
+        Sprite targetSprite = null;
+        if (unlockedThemes.Count > 0)
+        {
+            int rng = Random.Range(0, unlockedThemes.Count);
+            targetSprite = resourceHub.GetThemeIcon(unlockedThemes[rng]);
+        }
+        else
+        {
+            targetSprite = resourceHub.GetThemeIcon(1);
+        }
         GameObject obj = Instantiate(flakeTemplate, transform);
-        obj.GetComponent<SpriteRenderer>().sprite = resourceHub.GetThemeIcon(unlockedThemes[rng]);
+        obj.GetComponent<SpriteRenderer>().sprite = targetSprite;
         obj.transform.localScale = Vector3.one * Random.Range(sizeRange.x, sizeRange.y);
         obj.transform.localPosition = new Vector3(Random.Range(screenRangeX.x, screenRangeX.y), Random.Range(screenRangeY.x, screenRangeY.y), 0);
         float duration  = Random.Range(durationRange.x, durationRange.y);

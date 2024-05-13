@@ -11,6 +11,7 @@ public class CurrencySet : MonoBehaviour
     public TextMeshPro gemCount;
     public GameObject starIcon;
     public GameObject gemIcon;
+    public Transform gemGroup;
 
     //public float ADJUST_ANIM_DURATION = .3f;
 

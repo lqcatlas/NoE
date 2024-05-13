@@ -254,6 +254,7 @@ public class LevelMasterBase : MonoBehaviour
     {
         levelData.curBoard = new DataBoard(levelData.initBoard);
         levelData.previousBoard = null;
+        levelData.previousBoards = new List<DataBoard>();
     }
     public virtual void GenerateBoard()
     //init the right number of cells and placed them in the right location

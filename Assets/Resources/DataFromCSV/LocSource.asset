@@ -885,7 +885,7 @@ MonoBehaviour:
     CN: "\u8272\u5F69\u6591\u6593\u7684 \u2588 \u2588 \u3002"
   - key: manifesto_tm1
     EN: The clock is the first theme, its production and design predate even before
-      the project set its title, ""Numbers of Everything"". From a certain perspective,
+      the project set its title, Numbers of Everything. From a certain perspective,
       it is the very starting point of the entire idea.<br><br>Staying up late doing
       nothing is a superficial appreciation of time, yet it is a frantic waste of
       time. The clock theme aims to express the individual's powerlessness in the
@@ -925,7 +925,7 @@ MonoBehaviour:
     EN: The clock tirelessly marches on.
     CN: "\u65F6\u949F\u4E0D\u77E5\u75B2\u5026\u5730\u524D\u8FDB\u3002"
   - key: narrative_tm1_ln004
-    EN: Tiwtch, tiktok, live streams,
+    EN: Twitch, tiktok, live streams,
     CN: "\u5FAE\u535A\u3001\u8FDE\u8F7D\u3001\u76F4\u64AD\uFF0C"
   - key: narrative_tm1_ln005
     EN: never stop moving,
@@ -1649,6 +1649,12 @@ MonoBehaviour:
   - key: ui_finished_status
     EN: (Passed)
     CN: "\uFF08\u5B8C\u6210\uFF09"
+  - key: ui_gem_desc
+    EN: Gem is a rarely found point that remarks your mastering of Numbers of Everything.
+    CN: "\u5B9D\u77F3\u662F\u4E00\u79CD\u66F4\u7F55\u89C1\u7684\u79EF\u5206\uFF0C\u5B83\u4EE3\u8868\u7740\u60A8\u5BF9\u300A\u4E07\u7269\u4E4B\u6570\u300B\u7684\u5927\u5E08\u7EA7\u638C\u63E1\u3002"
+  - key: ui_gem_name
+    EN: <sprite name=currency_gem> Gems
+    CN: "<sprite name=currency_gem> \u5B9D\u77F3"
   - key: ui_goal_current_avg
     EN: 'Current Average: '
     CN: "\u5F53\u524D\u6570\u5B57\u5747\u503C\uFF1A"
@@ -1670,6 +1676,17 @@ MonoBehaviour:
   - key: ui_goal_section_title
     EN: Goal
     CN: "\u76EE\u6807"
+  - key: ui_hiddengem_notice_desc
+    EN: "This is your first Hidden Gem Level. Hidden Gems levels are more challenging
+      and complicated. <br><br>By accomplishing these levels you will earn Gems instead
+      of regular Stars. Gem is a rarely found point that remarks your mastering of
+      Numbers of Everything. <br><br>Gems mainly from Hidden Gem levels but can also
+      be found in other \u201Chidden\u201D ways. Continue playing and discover more
+      mystery of this game."
+    CN: "\u8FD9\u662F\u60A8\u7684\u7B2C\u4E00\u4E2A\u9690\u85CF\u5B9D\u77F3\u5173\u3002\u9690\u85CF\u5B9D\u77F3\u5173\u6BD4\u5E38\u89C4\u5173\u5361\u66F4\u52A0\u56F0\u96BE\u6216\u590D\u6742\u3002<br><br>\u5B8C\u6210\u8FD9\u4E9B\u5173\u5361\uFF0C\u5C06\u83B7\u5F97\u5B9D\u77F3\u800C\u975E\u661F\u661F\u3002\u5B9D\u77F3\u662F\u4E00\u79CD\u66F4\u7F55\u89C1\u7684\u79EF\u5206\uFF0C\u5B83\u4EE3\u8868\u7740\u60A8\u5BF9\u300A\u4E07\u7269\u4E4B\u6570\u300B\u7684\u5927\u5E08\u7EA7\u638C\u63E1\u3002<br><br>\u5B9D\u77F3\u4E3B\u8981\u6765\u81EA\u9690\u85CF\u5B9D\u77F3\u5173\u5361\uFF0C\u4F46\u4E5F\u53EF\u4EE5\u901A\u8FC7\u5176\u4ED6\u66F4\u52A0\u201C\u9690\u85CF\u201D\u7684\u65B9\u5F0F\u83B7\u5F97\u3002\u8BF7\u7EE7\u7EED\u6E38\u620F\uFF0C\u53D1\u73B0\u7684\u66F4\u591A\u79D8\u5BC6\u6240\u5728\u5427\uFF01"
+  - key: ui_hiddengem_notice_title
+    EN: Hidden Gem Levels
+    CN: "\u9690\u85CF\u5B9D\u77F3\u5173"
   - key: ui_hiddenobject_riddletitle
     EN: 'Find the <b>object</b> according to the riddle:'
     CN: "\u6839\u636E\u8C1C\u8BED\u627E\u5230<b>\u7269\u4EF6</b>\uFF1A"
@@ -1688,6 +1705,13 @@ MonoBehaviour:
   - key: ui_ruleset_title
     EN: Rules
     CN: "\u89C4\u5219"
+  - key: ui_star_desc
+    EN: Star is earned by completing regular levels. It is used to unlock more photos,
+      meaning more new levels.
+    CN: "\u661F\u661F\u901A\u8FC7\u5B8C\u6210\u5E38\u89C4\u5173\u5361\u6311\u6218\u83B7\u53D6\uFF0C\u83B7\u5F97\u7684\u661F\u661F\u53EF\u4EE5\u7528\u6765\u89E3\u9501\u66F4\u591A\u7684\u7167\u7247\uFF0C\u4E5F\u5C31\u662F\u66F4\u591A\u5173\u5361\u6311\u6218\u3002"
+  - key: ui_star_name
+    EN: <sprite name=currency_star> Stars
+    CN: "<sprite name=currency_star> \u661F\u661F"
   - key: ui_themephoto_gemcollection
     EN: <sprite name=currency_gem> {0}/{1}
     CN: <sprite name=currency_gem> {0}/{1}

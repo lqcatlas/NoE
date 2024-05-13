@@ -172,8 +172,13 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             Debug.LogError(string.Format("Selector Token Count Reach invalid number:{0}.", playerLevelRecords.tokens));
         }
+        if (playerLevelRecords.gems > 0)
+        {
+            currencySet.gemGroup.gameObject.SetActive(true);
+        }
         currencySet.gemCount.SetText(playerLevelRecords.gems.ToString());
         currencySet.GemCountAdjustAnimation(count);
+        
     }
     void NodeParentInit()
     {
