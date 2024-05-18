@@ -34,6 +34,7 @@ public class LevelLauncher : MonoBehaviour
     
     private void Update()
     {
+        //debug tool
         if (LAUNCH_IT)
         {
             LAUNCH_IT = false;
@@ -86,6 +87,10 @@ public class LevelLauncher : MonoBehaviour
                 //found = true;
                 LaunchLevelBySheetItem(levelSetupTable[i]);
                 BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Level);
+                if (!playerRecords.seenHiddenGemNotice && levelSetupTable[i].isHard)
+                {
+                    ShowHiddenGemLevelNotification();
+                }
                 return true;
             }
         }
@@ -121,5 +126,12 @@ public class LevelLauncher : MonoBehaviour
         levelObj.GetComponent<LevelMasterBase>().levelSetupData = setupData;
         levelObj.GetComponent<LevelMasterBase>().ObjectInit(addition);
         levelObj.GetComponent<LevelMasterBase>().LevelInit();
+    }
+    void ShowHiddenGemLevelNotification()
+    {
+        playerRecords.seenHiddenGemNotice = true;
+        string title = "@Loc=ui_hiddengem_notice_title@@";
+        string desc = "@Loc=ui_hiddengem_notice_desc@@";
+        MsgBox.singleton.ShowBox(title, desc, "", null);
     }
 }

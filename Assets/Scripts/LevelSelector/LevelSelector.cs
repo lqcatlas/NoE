@@ -30,11 +30,14 @@ public class LevelSelector : MonoBehaviour, ISaveData
     //[SerializeField] List<SelectorNode> nodes;
     //[SerializeField] List<SelectorTheme> themes;
     public ThemeResourceLookup themeResourceLookup;
-    [SerializeField] List<ThemePhotoGroup> photos;
+    
+    
     [Header("Children Objs")]
     [SerializeField] GameObject page;
     [SerializeField] Transform nodeParent;
-    [SerializeField] CurrencySet currencySet;
+    public CurrencySet currencySet;
+    [SerializeField] List<ThemePhotoGroup> photos;
+    [SerializeField] List<StarProgressBlocker> blockers;
     public MsgBox DesignerNoteBox;
 
     public void GoToSelector()
@@ -51,6 +54,10 @@ public class LevelSelector : MonoBehaviour, ISaveData
         for (int i = 0; i < photos.Count; i++)
         {
             photos[i].UpdatePhotoGroup();
+        }
+        for (int i = 0; i < blockers.Count; i++)
+        {
+            blockers[i].InitBlocker();
         }
         page.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Selector);
@@ -71,6 +78,11 @@ public class LevelSelector : MonoBehaviour, ISaveData
     public void CloseSelector()
     {
         page.SetActive(false);
+    }
+    public void BackToTitle()
+    {
+        CloseSelector();
+        TitlePage.singleton.GoToTitlePage();
     }
     public int LocateFirstUnlockableTheme()
     {
@@ -107,9 +119,9 @@ public class LevelSelector : MonoBehaviour, ISaveData
         NodeParentInit();
         //themes.Clear();
         //nodes.Clear();
-        photos.Clear();
         //CollectAllThemes();
         CollectAllPhotos();
+        CollectAllBlockers();
         TokenEarned(0);
         GemEarned(0);
         page.SetActive(false);
@@ -186,10 +198,20 @@ public class LevelSelector : MonoBehaviour, ISaveData
     }
     void CollectAllPhotos()
     {
+        photos.Clear();
         photos = nodeParent.GetComponentsInChildren<ThemePhotoGroup>(true).ToList();
         for(int i = 0; i < photos.Count; i++)
         {
             photos[i].UpdatePhotoGroup();
+        }
+    }
+    void CollectAllBlockers()
+    {
+        blockers.Clear();
+        blockers = nodeParent.GetComponentsInChildren<StarProgressBlocker>(true).ToList();
+        for (int i = 0; i < blockers.Count; i++)
+        {
+            blockers[i].InitBlocker();
         }
     }
     /*void CollectAllThemes()
@@ -253,6 +275,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     private const string GEM_SAVE_KEY = "record.gems";
     private const string LEVEL_SAVE_KEY = "record.finishedLevels";
     private const string THEME_SAVE_KEY = "record.unlockedThemes";
+    private const string HIDDENGEMLV_SAVE_KEY = "record.seenHGL";
     public void LoadFromSaveManager()
     {
         string str = SaveManager.controller.Inquire(string.Format(TOKEN_SAVE_KEY));
@@ -308,6 +331,15 @@ public class LevelSelector : MonoBehaviour, ISaveData
                 playerLevelRecords.unlockedThemes.Add(uid);
             }
         }
+        str = SaveManager.controller.Inquire(string.Format(HIDDENGEMLV_SAVE_KEY));
+        if (str != null)
+        {
+            bool.TryParse(SaveManager.controller.Inquire(string.Format(HIDDENGEMLV_SAVE_KEY)), out playerLevelRecords.seenHiddenGemNotice);
+        }
+        else
+        {
+            playerLevelRecords.tokens = dConstants.Gameplay.DefaultInitialTokenCount;
+        }
         //playerLevelRecords.SetDirty();
         //Debug.Log(string.Format("selector load data from file, tokens:{0}, ", playerLevelRecords.tokens));
         //InitSelector();
@@ -330,6 +362,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         SaveManager.controller.Insert(string.Format(TOKEN_SAVE_KEY), playerLevelRecords.tokens.ToString());
         SaveManager.controller.Insert(string.Format(TOKEN_SPENT_SAVE_KEY), playerLevelRecords.spentTokens.ToString());
         SaveManager.controller.Insert(string.Format(GEM_SAVE_KEY), playerLevelRecords.gems.ToString());
+        SaveManager.controller.Insert(string.Format(HIDDENGEMLV_SAVE_KEY), playerLevelRecords.seenHiddenGemNotice.ToString());
     }
     #endregion save
 }

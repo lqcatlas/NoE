@@ -38,18 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Background
+  - name: Background_-3
     uniqueID: 3771753225
     locked: 0
-  - name: LevelSelector
+  - name: LevelSelector_-2
     uniqueID: 423832989
     locked: 0
-  - name: HiddenObject
+  - name: HiddenObject_-1
     uniqueID: 3791972237
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: ScreenMask
+  - name: ScreenMask_2
     uniqueID: 4256120175
     locked: 0

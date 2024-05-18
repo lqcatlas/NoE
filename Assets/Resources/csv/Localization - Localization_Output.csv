@@ -548,3 +548,4 @@ UID,Key,EN,CN
 547,unlocked_tm7,<b>Bonsai</b> crafted by human and natural.,人与自然共创<b>盆景</b>。
 548,unlocked_tm8,"<b>Crown</b>, the heavier, the better.",<b>王冠</b>越重越好。
 549,unlocked_tm9,Colorful <b>Flask</b>.,色彩斑斓的<b>烧瓶</b>。
+550,ui_progress_block_desc,spend <sprite name=currency_star> {0} on photos ({1}/{0}),累计花费 <sprite name=currency_star> {0} 在照片上（{1}/{0}）

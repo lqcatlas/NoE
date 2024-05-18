@@ -195,6 +195,8 @@ public class ThemePhotoGroup : MonoBehaviour
             if (themeData.unlockCost <= LevelSelector.singleton.playerLevelRecords.tokens)
             {
                 GoToHiddenObject();
+                //preview the reducing currency
+                LevelSelector.singleton.currencySet.StarCountAdjustAnimation(-themeData.unlockCost, true);
             }
         }
         else if(curStatus == ThemePhotoStatus.unlocked || curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect)
@@ -218,7 +220,7 @@ public class ThemePhotoGroup : MonoBehaviour
         string _desc = themeData.manifesto;
         string _prompt = themeData.prompt;
         Sprite _sprt = LevelSelector.singleton.themeResourceLookup.GetThemePhotoBlack(themeData.themeUID);
-        LevelSelector.singleton.DesignerNoteBox.ShowBox(_title, _desc, _prompt, _sprt);
+        MsgBox.singleton.ShowBox(_title, _desc, _prompt, _sprt);
     }
     #endregion
     void GoToHiddenObject()
@@ -231,6 +233,8 @@ public class ThemePhotoGroup : MonoBehaviour
         seq.AppendInterval(dConstants.VFX.SelectorToLevelAnimTransitionPhase1);
         seq.AppendCallback(() => HiddenObjectLauncher.singleton.LaunchHiddenObjectPage(themeData));
         seq.AppendCallback(() => LevelSelector.singleton.CloseSelector());
+        //reset currency to orginal (actual cost triggered at finishing hidden obj)
+        seq.AppendCallback(() => LevelSelector.singleton.currencySet.StarCountAdjustAnimation(0));
 
     }
     void GoToLatestLevel()

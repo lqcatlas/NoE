@@ -629,5 +629,4 @@ public class LevelMasterBase : MonoBehaviour
     {
         TryLoadNextLevel(true);
     }
-
 }

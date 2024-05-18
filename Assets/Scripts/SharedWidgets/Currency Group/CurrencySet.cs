@@ -13,33 +13,38 @@ public class CurrencySet : MonoBehaviour
     public GameObject gemIcon;
     public Transform gemGroup;
 
+    Sequence seqStar;
+    Sequence seqGem;
+
     //public float ADJUST_ANIM_DURATION = .3f;
 
-    public void StarCountAdjustAnimation(int adjustAmount)
+    public void StarCountAdjustAnimation(int adjustAmount, bool preview = false)
     {
-        Sequence seq = DOTween.Sequence();
+        seqStar.Kill();
+        seqStar = DOTween.Sequence();
         int step = Mathf.Min(5, Mathf.Abs(adjustAmount));
         for (int i = 0; i < step; i++)
         {
-            int displayCount = playingRecords.tokens - adjustAmount + (adjustAmount > 0 ? Mathf.FloorToInt((float)adjustAmount / step * i) : -Mathf.CeilToInt((float)adjustAmount / step * i));
+            int displayCount = playingRecords.tokens - (preview ? 0 : adjustAmount) + (adjustAmount > 0 ? Mathf.FloorToInt((float)adjustAmount / step * i) : Mathf.CeilToInt((float)adjustAmount / step * i));
             //Debug.Log("tokens " + playingRecords.tokens);
             //Debug.Log("display number " + displayCount);
-            seq.AppendCallback(() => curStarCount.SetText(displayCount.ToString()));
-            seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration / step);
+            seqStar.AppendCallback(() => curStarCount.SetText(displayCount.ToString()));
+            seqStar.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration / step);
         }
-        seq.AppendCallback(() => curStarCount.SetText(playingRecords.tokens.ToString()));
+        seqStar.AppendCallback(() => curStarCount.SetText((playingRecords.tokens + (preview ? adjustAmount : 0)).ToString()));
     }
 
     public void GemCountAdjustAnimation(int adjustAmount)
     {
-        Sequence seq = DOTween.Sequence();
+        seqGem.Kill();
+        seqGem = DOTween.Sequence();
         int step = Mathf.Min(5, Mathf.Abs(adjustAmount));
         for (int i = 0; i < step; i++)
         {
-            int displayCount = playingRecords.gems - adjustAmount + (adjustAmount > 0 ? Mathf.FloorToInt((float)adjustAmount / step * i) : -Mathf.CeilToInt((float)adjustAmount / step * i));
-            seq.AppendCallback(() => gemCount.SetText(displayCount.ToString()));
-            seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration / step);
+            int displayCount = playingRecords.gems - adjustAmount + (adjustAmount > 0 ? Mathf.FloorToInt((float)adjustAmount / step * i) : Mathf.CeilToInt((float)adjustAmount / step * i));
+            seqGem.AppendCallback(() => gemCount.SetText(displayCount.ToString()));
+            seqGem.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration / step);
         }
-        seq.AppendCallback(() => gemCount.SetText(playingRecords.gems.ToString()));
+        seqGem.AppendCallback(() => gemCount.SetText(playingRecords.gems.ToString()));
     }
 }

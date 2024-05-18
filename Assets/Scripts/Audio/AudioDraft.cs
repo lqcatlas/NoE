@@ -28,6 +28,7 @@ public class AudioDraft : MonoBehaviour
     [SerializeField] List<AudioClip> keynotes;
     [SerializeField] AudioSource introSource;
     [SerializeField] AudioSource puzzleSource;
+    [SerializeField] AudioSource keynoteSource;
     [SerializeField] List<AudioSource> SFXSources;
     // Start is called before the first frame update
     void Start()
@@ -71,9 +72,11 @@ public class AudioDraft : MonoBehaviour
             //check if a keynote clip is given
             if (keynotes[index])
             {
-                AudioSource source = GetValidSFXSource();
+                AudioSource source = keynoteSource;
                 if (source)
                 {
+                    source.Stop();
+                    source.volume = 1f;
                     source.clip = keynotes[index];
                     source.Play();
                     source.DOFade(0f, 0.3f).From();

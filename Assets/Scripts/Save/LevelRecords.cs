@@ -11,7 +11,7 @@ public class LevelRecords : ScriptableObject
     public int gems;
     public List<int> finishedLevels;
     public List<int> unlockedThemes;
-    public bool seeHiddenGemNotice;
+    public bool seenHiddenGemNotice;
 
     public bool addLevelFinished(int uid)
     {

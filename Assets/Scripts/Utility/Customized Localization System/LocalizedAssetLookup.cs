@@ -22,6 +22,13 @@ public class LocalizedAssetLookup : MonoBehaviour
     [SerializeField] LocalizationSource source;
     public LanguageOption curLanguage;
     [SerializeField] LanguageOption defaultLanguage;
+    public void SwitchLanguage(LanguageOption option)
+    {
+        if(option != curLanguage)
+        {
+            curLanguage = option;
+        }
+    }
     public string Translate(string txt)
     {
         if(txt == "")
@@ -57,15 +64,15 @@ public class LocalizedAssetLookup : MonoBehaviour
             {
                 if (curLanguage == LanguageOption.EN)
                 {
-                    result = "LocalizationTest_EN";
+                    result = txt;
                 }
                 else if (curLanguage == LanguageOption.CN)
                 {
-                    result = "≤‚ ‘”Ô—‘_÷–Œƒ";
+                    result = txt;
                 }
                 else
                 {
-                    result = "1234567890";
+                    result = "undefined languaage";
                 }
             }
             return leadingTxt + result + trailingTxt;

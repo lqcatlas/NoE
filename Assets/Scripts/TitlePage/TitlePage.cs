@@ -17,7 +17,10 @@ public class TitlePage : MonoBehaviour, ISaveData
         {
             Destroy(this);
         }
+        firstOpening = true;
     }
+    public bool firstOpening = true;
+
     [SerializeField] PlayerSettings playerSettings;
     [SerializeField] LevelRecords levelRecords;
     [SerializeField] IntroLines intro;
@@ -26,20 +29,28 @@ public class TitlePage : MonoBehaviour, ISaveData
     [SerializeField] GameObject confirmBtn;
     [SerializeField] TextMeshPro line_tmp;
 
+    
     static float LINE_EMERGE_DURATION = 2f;
     
     private void Start()
     {
         //line_tmp.color = new Color(dConstants.UI.DefaultColor_1st.r, dConstants.UI.DefaultColor_1st.g, dConstants.UI.DefaultColor_1st.b, 0f);
+        GoToTitlePage();
     }
     
     public void GoToTitlePage()
     {
         gameObject.SetActive(true);
+        BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Title);
+        //playtest
+        if (firstOpening)
+        {
+            ShowPlaytestPopup();
+        }
     }
-    public void IntroLineCheck()
+    public void EnterBtnClick()
     {
-        if(playerSettings.introCount * 3 <= levelRecords.finishedLevels.Count)
+        if(playerSettings.introCount * 3 <= levelRecords.finishedLevels.Count && firstOpening)
         {
             int rng = Random.Range(0, intro.lines.Count);
             LineEmerge(LINE_EMERGE_DURATION, intro.lines[rng]);
@@ -49,6 +60,7 @@ public class TitlePage : MonoBehaviour, ISaveData
         {
             OpenSelector();
         }
+        firstOpening = false;
     }
     public void OpenSelector()
     {
@@ -64,6 +76,26 @@ public class TitlePage : MonoBehaviour, ISaveData
         line_tmp.SetText(LocalizedAssetLookup.singleton.Translate(txt));
         line_tmp.DOFade(1f, duration).SetLoops(2, LoopType.Yoyo).OnComplete(() => OpenSelector());
         BgCtrl.singleton.SetToLightBg(duration);
+    }
+    public void ExitEntireGame()
+    {
+        Application.Quit();
+    }
+    public void SwitchToCN()
+    {
+        LocalizedAssetLookup.singleton.SwitchLanguage(LanguageOption.CN);
+        GoToTitlePage();
+    }
+    public void SwitchToEN()
+    {
+        LocalizedAssetLookup.singleton.SwitchLanguage(LanguageOption.EN);
+        GoToTitlePage();
+    }
+    void ShowPlaytestPopup()
+    {
+        string title = "@Loc=ui_playtest_title@@";
+        string desc = "@Loc=ui_playtest_desc@@";
+        MsgBox.singleton.ShowBox(title, desc, "", null);
     }
     #region save
     private const string AUDIOVOLUME_SAVE_KEY = "setting.volume";

@@ -1751,3 +1751,6 @@ MonoBehaviour:
   - key: unlocked_tm9
     EN: Colorful <b>Flask</b>.
     CN: "\u8272\u5F69\u6591\u6593\u7684<b>\u70E7\u74F6</b>\u3002"
+  - key: ui_progress_block_desc
+    EN: spend <sprite name=currency_star> {0} on photos ({1}/{0})
+    CN: "\u7D2F\u8BA1\u82B1\u8D39 <sprite name=currency_star> {0} \u5728\u7167\u7247\u4E0A\uFF08{1}/{0}\uFF09"
