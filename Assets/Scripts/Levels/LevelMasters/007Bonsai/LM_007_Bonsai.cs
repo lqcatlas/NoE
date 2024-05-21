@@ -291,6 +291,7 @@ public class LM_007_Bonsai : LevelMasterBase
         string answerTxt = string.Format("@Loc=answer_tm7_lv{0}@@", levelData.levelUID);
         //Debug.Log("answerTxt ="+answerTxt);
         hub.popupMaster.ShowVictoryPopup(isNew, levelData.isHard, finalPlayTime, (levelData.initBoard.toolCount - levelData.curBoard.toolCount).ToString(), answerTxt);
+        AudioDraft.singleton.PlayGenericLevelWinSFX();
     }
     
     void UpdateToolStatusDisplay()

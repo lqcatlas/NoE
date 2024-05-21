@@ -198,6 +198,10 @@ public class LM_008_Crown : LevelMasterBase
             {
                 AudioDraft.singleton.PlaySFX(crownHub.warClips.GetClip());
             }
+            else
+            {
+                AudioDraft.singleton.PlayGenericPlaySFX();
+            }
             if (crownLogs[crownLogs.Count - 1].winningCoords.Count > 0)
             {
                 Anim_CrownSuccess(coord, ANIM_WAR_DURATION * 0.8f);
@@ -228,6 +232,10 @@ public class LM_008_Crown : LevelMasterBase
             if (hasWar)
             {
                 AudioDraft.singleton.PlaySFX(crownHub.warClips.GetClip());
+            }
+            else
+            {
+                AudioDraft.singleton.PlayGenericPlaySFX();
             }
             if (crownLogs[crownLogs.Count - 1].losingCoords.Count > 0)
             {

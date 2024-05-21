@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a68b55be41631754491f243c24a85364, type: 3}
+  m_Name: GenericSoundLibrary
+  m_EditorClassIdentifier: 
+  play:
+  - {fileID: 8300000, guid: f7579d3b035e860409890837b6222dc4, type: 3}
+  - {fileID: 8300000, guid: 37db33681b6f7394d9e79f910cf092fc, type: 3}
+  levelWin:
+  - {fileID: 8300000, guid: db1f9d57fe2c0704a95295c018c0164a, type: 3}
+  - {fileID: 8300000, guid: 485cdc45db858014a84eab58a1e8123f, type: 3}
+  levelFail:
+  - {fileID: 8300000, guid: 9327f876b99bef84c8a743cb06143052, type: 3}

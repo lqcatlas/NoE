@@ -19,6 +19,9 @@ public class AudioDraft : MonoBehaviour
             Destroy(this);
         }
     }
+    [Header("Generic Lib")]
+    [SerializeField] GenericSoundLibrary lib;
+
     [Header("Player Settings")]
     [SerializeField] PlayerSettings playerSettings;
     [SerializeField] float MAX_MUSIC_VOLUME = 0.4f;
@@ -52,7 +55,20 @@ public class AudioDraft : MonoBehaviour
                 return SFXSources[i];
             }
         }
+        Debug.LogError("no spare SFX player");
         return null;
+    }
+    public void PlayGenericPlaySFX()
+    {
+        PlaySFX(lib.GetPlaySFX());
+    }
+    public void PlayGenericLevelWinSFX()
+    {
+        PlaySFX(lib.GetLevelWinSFX());
+    }
+    public void PlayGenericLevelFailSFX()
+    {
+        PlaySFX(lib.GetLevelFailSFX());
     }
     public void PlaySFX(AudioClip _clip)
     {
@@ -62,6 +78,10 @@ public class AudioDraft : MonoBehaviour
             source.clip = _clip;
             source.Play();
             source.DOFade(0f, _clip.length * 0.2f).From();
+        }
+        else
+        {
+            Debug.LogError("playSFX play with null audio clip");
         }
     }
     public void PlayKeynote(int index)

@@ -151,7 +151,7 @@ public class LM_005_Moon : LevelMasterBase
                         eclipseMoments.Add(levelData.curBoard.toolCount);
                         eclipseCoord = coord;
                         moonHub.eclipseVFX.SetActive(true);
-                        AudioDraft.singleton.PlaySFX(moonHub.eclipseClips.GetClip());
+                        
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.full)
                     {
@@ -159,6 +159,14 @@ public class LM_005_Moon : LevelMasterBase
                         levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
                     }
                 }
+            }
+            if (eclipseTrigger)
+            {
+                AudioDraft.singleton.PlaySFX(moonHub.eclipseClips.GetClip());
+            }
+            else
+            {
+                AudioDraft.singleton.PlayGenericPlaySFX();
             }
         }
         else

@@ -29,7 +29,9 @@ public class TitlePage : MonoBehaviour, ISaveData
     [SerializeField] GameObject confirmBtn;
     [SerializeField] TextMeshPro line_tmp;
 
-    
+    [SerializeField] List<Sprite> titleByLanguage;
+
+
     static float LINE_EMERGE_DURATION = 2f;
     
     private void Start()
@@ -84,11 +86,15 @@ public class TitlePage : MonoBehaviour, ISaveData
     public void SwitchToCN()
     {
         LocalizedAssetLookup.singleton.SwitchLanguage(LanguageOption.CN);
+        titleSprite.sprite = titleByLanguage[0];
+        titleSprite.gameObject.GetComponent<AdvSpriteSlider>().ResetBaseSprite();
         GoToTitlePage();
     }
     public void SwitchToEN()
     {
         LocalizedAssetLookup.singleton.SwitchLanguage(LanguageOption.EN);
+        titleSprite.sprite = titleByLanguage[1];
+        titleSprite.gameObject.GetComponent<AdvSpriteSlider>().ResetBaseSprite();
         GoToTitlePage();
     }
     void ShowPlaytestPopup()

@@ -1197,6 +1197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 644be3fcb7c961248b983c57d619dd01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lib: {fileID: 11400000, guid: 90f06b1eb71e03b42a8490093e6272c9, type: 2}
   playerSettings: {fileID: 11400000, guid: 8dad17fb5624d7c4ba6d2944aacdaf41, type: 2}
   MAX_MUSIC_VOLUME: 0.4
   MAX_SFX_VOLUME: 0.6

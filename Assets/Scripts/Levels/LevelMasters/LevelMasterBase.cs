@@ -525,6 +525,7 @@ public class LevelMasterBase : MonoBehaviour
         {
             Debug.Log(string.Format("Theme ends. Plz go back to theme selector"));
         }*/
+        AudioDraft.singleton.PlayGenericLevelWinSFX();
     }
     public virtual bool CheckLoseCondition()
     {
@@ -541,6 +542,7 @@ public class LevelMasterBase : MonoBehaviour
         //hub.miscMaster.retryHint.gameObject.SetActive(true);
         //hub.miscMaster.loseBanner.SetActive(true);
         //hub.miscMaster.loseBanner.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f).From();
+        AudioDraft.singleton.PlayGenericLevelFailSFX();
     }
     #endregion
 
