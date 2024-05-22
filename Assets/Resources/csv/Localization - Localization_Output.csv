@@ -549,3 +549,5 @@ UID,Key,EN,CN
 548,unlocked_tm8,"<b>Crown</b>, the heavier, the better.",<b>王冠</b>越重越好。
 549,unlocked_tm9,Colorful <b>Flask</b>.,色彩斑斓的<b>烧瓶</b>。
 550,ui_progress_block_desc,spend <sprite name=currency_star> {0} on photos ({1}/{0}),累计花费 <sprite name=currency_star> {0} 在照片上（{1}/{0}）
+551,ui_playtest_title,Welcome!,欢迎测试
+552,ui_playtest_desc,"Thank you for participating the playtest of Numbers of everything. You are encouraged to try it multiple times within the designated time frame. If you encounter any difficulties, please feel free to contact me without hesitation.",感谢参与《万物之数》的游戏测试。欢迎你在指定时间内反复多次尝试它，如果遇到困难请随时联系我，不要客气。请在指定时间结束时，按S调出统计信息界面并截图发送给开发者。
