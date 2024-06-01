@@ -62,6 +62,6 @@ MonoBehaviour:
     - coord: {x: 1, y: 1}
       value: 0
       status: 2
-    toolCount: 8
+    toolCount: 6
     toolStatus: 1
     curPlayCoord: {x: -1, y: -1}

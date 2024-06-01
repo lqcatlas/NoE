@@ -216,7 +216,8 @@ public class ThemePhotoGroup : MonoBehaviour
     }
     public void NoteConfirmSelection()
     {
-        string _title = string.Format("{0}-{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_designer_note_title@@"), LocalizedAssetLookup.singleton.Translate(string.Format("@Loc=themename_tm{0}@@", themeData.themeUID)));
+        //string _title = string.Format("{0}-{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_designer_note_title@@"), LocalizedAssetLookup.singleton.Translate(string.Format("@Loc=themename_tm{0}@@", themeData.themeUID)));
+        string _title = LocalizedAssetLookup.singleton.Translate(string.Format("@Loc=themename_tm{0}@@", themeData.themeUID));
         string _desc = themeData.manifesto;
         string _prompt = themeData.prompt;
         Sprite _sprt = LevelSelector.singleton.themeResourceLookup.GetThemePhotoBlack(themeData.themeUID);

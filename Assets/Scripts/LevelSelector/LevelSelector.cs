@@ -338,7 +338,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         else
         {
-            playerLevelRecords.tokens = dConstants.Gameplay.DefaultInitialTokenCount;
+            playerLevelRecords.seenHiddenGemNotice = false;
         }
         //playerLevelRecords.SetDirty();
         //Debug.Log(string.Format("selector load data from file, tokens:{0}, ", playerLevelRecords.tokens));

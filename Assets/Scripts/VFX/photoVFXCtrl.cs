@@ -57,7 +57,7 @@ public class photoVFXCtrl : MonoBehaviour
     }
     public void ReduceOffsetMovement()
     {
-        LOC_MOVEMENT_SCALE = 0.3f;
+        LOC_MOVEMENT_SCALE = 0.8f;
     }
     public void ZoomIn(float duration)
     {

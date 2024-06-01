@@ -18,7 +18,7 @@ public class LM_004_Sushi : LevelMasterBase
     float CellFoodTrasitionDistance = 1f;
     float CellFoodTrasitionDuration = 1f;
     float originalFoodAlpha = 0.4f;
-
+    Sequence seq;
 
     public override void GetObjectReferences(GameObject _themeHub)
     {
@@ -279,7 +279,11 @@ public class LM_004_Sushi : LevelMasterBase
         }
         else if (levelData.levelIndex == 11)
         {
-            return BoardCalculation.Sum_As_X(levelData.curBoard, 18) && BoardCalculation.CountStatusNotX_All(levelData.curBoard, 0);
+            return BoardCalculation.Sum_As_X(levelData.curBoard, 18)
+                && BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 1, 1)
+                && BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 2, 1)
+                && BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 3, 1)
+                && BoardCalculation.CountStatusX_Ytimes(levelData.curBoard, 4, 1);
         }
         else if (levelData.levelIndex == 12)
         {
@@ -311,7 +315,9 @@ public class LM_004_Sushi : LevelMasterBase
     {
         //float originalAlpha = sushiPlate.GetComponent<SpriteRenderer>().color.a;
         //Debug.Log("originalAlpha is " + originalAlpha);
-        sushiPlate.GetComponent<SpriteRenderer>().sprite = sushiHub.statusSprites[curStatus];
+        //Debug.Log(string.Format("animation food placing, curstatus{0}, toolStatus{1}, finalStatus{2}", curStatus, toolStatus, finalStatus));
+        SetSushiPlate2Final(sushiPlate, curStatus);
+        //sushiPlate.GetComponent<SpriteRenderer>().sprite = sushiHub.statusSprites[curStatus];
         Sprite finalSprite = sushiHub.statusSprites[finalStatus];
         //creation
         GameObject placed_sprite = Instantiate(sushiPlate, sushiPlate.transform.parent);
@@ -331,11 +337,10 @@ public class LM_004_Sushi : LevelMasterBase
         new_sprite.GetComponent<SpriteRenderer>().sprite = finalSprite;
         new_sprite.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
         new_sprite.GetComponent<SpriteRenderer>().DOFade(originalFoodAlpha, CellFoodTrasitionDuration * 0.5f).SetDelay(CellFoodTrasitionDuration * 0.5f);
-
-        sushiPlate.GetComponent<SpriteRenderer>().DOFade(0f, CellFoodTrasitionDuration * 0.6f);
         
-        Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(CellFoodTrasitionDuration)
+        seq = DOTween.Sequence();
+        seq.AppendInterval(CellFoodTrasitionDuration * 0.5f)
+            .Append(sushiPlate.GetComponent<SpriteRenderer>().DOFade(0f, CellFoodTrasitionDuration * 0.5f))
             .AppendCallback(() => sushiPlate.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, originalFoodAlpha))
             .AppendCallback(() => sushiPlate.GetComponent<SpriteRenderer>().sprite = finalSprite)
             .AppendCallback(() => Destroy(new_sprite))
@@ -348,6 +353,25 @@ public class LM_004_Sushi : LevelMasterBase
             sushiPlate.transform.DOScale(1.6f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetDelay(CellFoodTrasitionDuration/2f);
             sushiPlate.transform.DOScale(1.4f, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetDelay(CellFoodTrasitionDuration / 2f + dConstants.UI.StandardizedBtnAnimDuration / 2f);
         }
+    }
+    void SetSushiPlate2Final(GameObject sushiPlate, int finalStatus)
+    {
+        //kill sequence
+        seq.Kill();
+        //clear ongoing animation objects
+        List<Transform> ongoingObjs = sushiPlate.GetComponentsInChildren<Transform>().ToList();
+        ongoingObjs.Remove(sushiPlate.transform);
+        //Debug.Log(string.Format("about to kill {0} ongoing objs", ongoingObjs.Count));
+        for (int i = 0; i < ongoingObjs.Count; i++)
+        {
+            ongoingObjs[i].gameObject.SetActive(false);
+            //some how destroy do not working here so using disable as the above
+            Destroy(ongoingObjs[i].gameObject);
+        }
+        //set sushi plate to final
+        sushiPlate.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, originalFoodAlpha);
+        sushiPlate.GetComponent<SpriteRenderer>().sprite = sushiHub.statusSprites[finalStatus];
+
     }
     void UpdateToolStatusDisplay()
     {

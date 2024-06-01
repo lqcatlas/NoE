@@ -7,6 +7,7 @@ public class LMHub_002_Coin : MonoBehaviour
     [Header("Coin Sprite in Bg")]
     public Transform coinBgHolder;
     public GameObject RandomCoinTemplate;
+    public List<GameObject> rngCoins;
     [Header("Coin Count in Cells")]
     public Transform cellTagHolder;
     public GameObject cellTagTempalte;

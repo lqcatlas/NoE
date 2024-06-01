@@ -18,7 +18,7 @@ public class LM_002_Coin : LevelMasterBase
     public override void OnlyInFirstEntry()
     {
         base.OnlyInFirstEntry();
-        // clear old coin sprites
+        //clear old coin sprites
         coinHub.coinBgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
         List<Transform> oldCoins = coinHub.coinBgHolder.GetComponentsInChildren<Transform>().ToList();
         oldCoins.Remove(coinHub.coinBgHolder.transform);
@@ -26,6 +26,7 @@ public class LM_002_Coin : LevelMasterBase
         {
             Destroy(oldCoins[i].gameObject);
         }
+        coinHub.rngCoins = new List<GameObject>();
     }
     public override void InitTool()
     {
@@ -66,6 +67,17 @@ public class LM_002_Coin : LevelMasterBase
                 }
             }
         }
+        //update rng coin based on curboard vs init board
+        int expectedCoinOnBoard = levelData.initBoard.toolCount - levelData.curBoard.toolCount;
+        //List<GameObject> mark2destroy = new List<GameObject>();
+        for (int i=0;i<coinHub.rngCoins.Count;i++)
+        {
+            if(i >= expectedCoinOnBoard)
+            {
+                Destroy(coinHub.rngCoins[i]);
+            }
+        }
+        coinHub.rngCoins.RemoveRange(expectedCoinOnBoard, coinHub.rngCoins.Count - expectedCoinOnBoard);
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -202,6 +214,7 @@ public class LM_002_Coin : LevelMasterBase
         }
         //place random coin
         GameObject randomCoin = Instantiate(coinHub.RandomCoinTemplate, coinHub.coinBgHolder);
+        coinHub.rngCoins.Add(randomCoin);
         randomCoin.GetComponent<RandomCoinShapeWidget>().GenerateARandomCoin(levelData.previousBoard.toolStatus);
         float XYRange = 2.5f;
         randomCoin.transform.position = targetCellLocation.position + new Vector3(Random.Range(-1f, 1f) * XYRange, Random.Range(-1f, 1f) * XYRange, 0f);

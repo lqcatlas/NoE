@@ -91,7 +91,6 @@ public class LM_005_Moon : LevelMasterBase
                     {
                         levelData.curBoard.cells[i].value += 1;
                         levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange_lv1);
-                        //Play sfx ?
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.quarter_1 || levelData.curBoard.toolStatus == (int)MoonPhase.quarter_2)
                     {
@@ -99,8 +98,8 @@ public class LM_005_Moon : LevelMasterBase
                         levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange_lv1);
                     }
                 }
-
             }
+            AudioDraft.singleton.PlayGenericPlaySFX();
         }     
         //lv 2+
         //crescent +1, quarter +3, full +5
@@ -114,7 +113,6 @@ public class LM_005_Moon : LevelMasterBase
                     {
                         levelData.curBoard.cells[i].value += 1;
                         levelData.curBoard.cells[i].value = BoardCalculation.ConstrainX_Range(levelData.curBoard.cells[i].value, numberRange);
-                        //Play sfx ?
                     }
                     else if (levelData.curBoard.toolStatus == (int)MoonPhase.quarter_1 || levelData.curBoard.toolStatus == (int)MoonPhase.quarter_2)
                     {
@@ -128,6 +126,7 @@ public class LM_005_Moon : LevelMasterBase
                     }
                 }
             }
+            AudioDraft.singleton.PlayGenericPlaySFX();
         }
         else if (levelData.levelIndex >= 5)
         {

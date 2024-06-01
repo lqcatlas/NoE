@@ -44,6 +44,8 @@ public class TitlePage : MonoBehaviour, ISaveData
     {
         gameObject.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Title);
+        titleSprite.gameObject.SetActive(true);
+        confirmBtn.SetActive(true);
         //playtest
         if (firstOpening)
         {

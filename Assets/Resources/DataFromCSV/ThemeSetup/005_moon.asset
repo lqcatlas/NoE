@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   themeUID: 5
   unlockPrereq: 0
-  unlockCost: 6
+  unlockCost: 7
   themeTitle: '@Loc=themename_tm5@@'
   lockedLine: '@Loc=locked_tm5@@'
   unlockedLine: '@Loc=unlocked_tm5@@'

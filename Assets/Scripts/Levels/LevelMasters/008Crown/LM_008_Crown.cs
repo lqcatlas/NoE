@@ -187,7 +187,7 @@ public class LM_008_Crown : LevelMasterBase
                     GameObject obj = Instantiate(crownHub.warTemplate, crownHub.cellBgHolder);
                     obj.transform.position = (crownHub.crownBgs[i].Value.transform.position + playedCrownCell.transform.position) / 2f;
                     obj.SetActive(true);
-                    
+                    hasWar = true;
                     Anim_CrownMove(crownHub.crownBgs[i].Key.coord, coord, ANIM_FALL_DURATION);
                     //Anim_CrownFail(crownHub.crownBgs[i].Key.coord, ANIM_WAR_DURATION);
                     UpdateTargetCellValue(crownHub.crownBgs[i].Key.coord, ANIM_FALL_DURATION);
@@ -224,7 +224,7 @@ public class LM_008_Crown : LevelMasterBase
                     GameObject obj = Instantiate(crownHub.warTemplate, crownHub.cellBgHolder);
                     obj.transform.position = (crownHub.crownBgs[i].Value.transform.position + playedCrownCell.transform.position) / 2f;
                     obj.SetActive(true);
-                    AudioDraft.singleton.PlaySFX(crownHub.warClips.GetClip());
+                    hasWar = true;
                     //Anim_CrownMove(coord, crownHub.crownBgs[i].Key.coord, ANIM_FALL_DURATION);
                     //Anim_CrownSuccess(crownHub.crownBgs[i].Key.coord, ANIM_WAR_DURATION);
                 }

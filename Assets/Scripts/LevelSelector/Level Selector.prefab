@@ -2635,7 +2635,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 560473060543263769, guid: 7d8e8c18b5293334ea7156301b9e736c, type: 3}
       propertyPath: requiredStars
-      value: 22
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5220447971730658109, guid: 7d8e8c18b5293334ea7156301b9e736c, type: 3}
       propertyPath: m_RootOrder
