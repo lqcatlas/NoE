@@ -23,6 +23,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             Destroy(this);
         }
+        page.SetActive(false);
     }
     [Header("Player Data")]
     public LevelRecords playerLevelRecords;
@@ -276,6 +277,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     private const string LEVEL_SAVE_KEY = "record.finishedLevels";
     private const string THEME_SAVE_KEY = "record.unlockedThemes";
     private const string HIDDENGEMLV_SAVE_KEY = "record.seenHGL";
+    private const string SEEN_INTRO_KEY = "record.seenIntro";
     public void LoadFromSaveManager()
     {
         string str = SaveManager.controller.Inquire(string.Format(TOKEN_SAVE_KEY));
@@ -340,6 +342,15 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             playerLevelRecords.seenHiddenGemNotice = false;
         }
+        str = SaveManager.controller.Inquire(string.Format(SEEN_INTRO_KEY));
+        if (str != null)
+        {
+            bool.TryParse(SaveManager.controller.Inquire(string.Format(SEEN_INTRO_KEY)), out playerLevelRecords.seenIntro);
+        }
+        else
+        {
+            playerLevelRecords.seenIntro = false;
+        }
         //playerLevelRecords.SetDirty();
         //Debug.Log(string.Format("selector load data from file, tokens:{0}, ", playerLevelRecords.tokens));
         //InitSelector();
@@ -363,6 +374,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         SaveManager.controller.Insert(string.Format(TOKEN_SPENT_SAVE_KEY), playerLevelRecords.spentTokens.ToString());
         SaveManager.controller.Insert(string.Format(GEM_SAVE_KEY), playerLevelRecords.gems.ToString());
         SaveManager.controller.Insert(string.Format(HIDDENGEMLV_SAVE_KEY), playerLevelRecords.seenHiddenGemNotice.ToString());
+        SaveManager.controller.Insert(string.Format(SEEN_INTRO_KEY), playerLevelRecords.seenIntro.ToString());
     }
     #endregion save
 }

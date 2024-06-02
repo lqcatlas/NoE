@@ -12,6 +12,7 @@ public class LevelRecords : ScriptableObject
     public List<int> finishedLevels;
     public List<int> unlockedThemes;
     public bool seenHiddenGemNotice;
+    public bool seenIntro;
 
     public bool addLevelFinished(int uid)
     {

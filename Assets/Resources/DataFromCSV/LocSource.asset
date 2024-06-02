@@ -1512,7 +1512,7 @@ MonoBehaviour:
     CN: "\u548C\u8C10\uFF1A\u79FB\u9664\u4E0E\u4F17\u4E0D\u540C\u7684\u6570\u5B57"
   - key: rule3_lv803
     EN: 
-    CN: "\u5219\u52A0\u5195\u5931\u8D25\uFF1A=0"
+    CN: "  \u5219\u52A0\u5195\u5931\u8D25\uFF1A=0"
   - key: rule3_lv904
     EN: 
     CN: "\u7206\u70B8\uFF1A\u6570\u5B57\u5747\u503C\u5927\u4E8E7"
@@ -1576,7 +1576,7 @@ MonoBehaviour:
     CN: "\u5E73\u8861\uFF1A\u5404\u679D\u5E72\u603B\u548C\u76F8\u7B49"
   - key: rule5_lv807
     EN: 
-    CN: "\u5219\u76F8\u90BB\u9886\u571F\u738B\u51A0\u88AB\u593A\u53D6\uFF1A-2"
+    CN: "  \u5219\u76F8\u90BB\u9886\u571F\u738B\u51A0\u88AB\u593A\u53D6\uFF1A-2"
   - key: rule5_lv906
     EN: 
     CN: "\u7206\u70B8\uFF1A\u67093\u4E2A\u4EE5\u4E0A\u76F8\u540C\u6570\u5B57"
@@ -1762,3 +1762,15 @@ MonoBehaviour:
       encouraged to try it multiple times within the designated time frame. If you
       encounter any difficulties, please feel free to contact me without hesitation.
     CN: "\u611F\u8C22\u53C2\u4E0E\u300A\u4E07\u7269\u4E4B\u6570\u300B\u7684\u6E38\u620F\u6D4B\u8BD5\u3002\u6B22\u8FCE\u4F60\u5728\u6307\u5B9A\u65F6\u95F4\u5185\u53CD\u590D\u591A\u6B21\u5C1D\u8BD5\u5B83\uFF0C\u5982\u679C\u9047\u5230\u56F0\u96BE\u8BF7\u968F\u65F6\u8054\u7CFB\u6211\uFF0C\u4E0D\u8981\u5BA2\u6C14\u3002\u8BF7\u5728\u6307\u5B9A\u65F6\u95F4\u7ED3\u675F\u65F6\uFF0C\u6309S\u8C03\u51FA\u7EDF\u8BA1\u4FE1\u606F\u754C\u9762\u5E76\u622A\u56FE\u53D1\u9001\u7ED9\u5F00\u53D1\u8005\u3002"
+  - key: ui_intro_line0
+    EN: "<size=70%>Dao begets One<br>\u9053\u751F\u4E00</size>"
+    CN: "\u9053\u751F\u4E00<br><size=70%>Dao begets One</size>"
+  - key: ui_intro_line1
+    EN: "<size=70%>One begets Two<br>\u4E00\u751F\u4E8C</size>"
+    CN: "\u4E00\u751F\u4E8C<br><size=70%>One begets Two</size>"
+  - key: ui_intro_line2
+    EN: "<size=70%>Two begets Three<br>\u4E8C\u751F\u4E09</size>"
+    CN: "\u4E8C\u751F\u4E09<br><size=70%>Two begets Three</size>"
+  - key: ui_intro_line3
+    EN: "<size=70%>Three begets Everything<br>\u4E09\u751F\u4E07\u7269</size>"
+    CN: "\u4E09\u751F\u4E07\u7269<br><size=70%>Three begets Everything</size>"

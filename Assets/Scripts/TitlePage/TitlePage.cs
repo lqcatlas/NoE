@@ -21,6 +21,7 @@ public class TitlePage : MonoBehaviour, ISaveData
     }
     public bool firstOpening = true;
 
+    [SerializeField] GameObject page;
     [SerializeField] PlayerSettings playerSettings;
     [SerializeField] LevelRecords levelRecords;
     [SerializeField] IntroLines intro;
@@ -37,20 +38,40 @@ public class TitlePage : MonoBehaviour, ISaveData
     private void Start()
     {
         //line_tmp.color = new Color(dConstants.UI.DefaultColor_1st.r, dConstants.UI.DefaultColor_1st.g, dConstants.UI.DefaultColor_1st.b, 0f);
-        GoToTitlePage();
+        if (!levelRecords.seenIntro)
+        {
+            IntroPage.singleton.StartIntro();
+        }
+        else
+        {
+            GoToTitlePage();
+        }
     }
     
     public void GoToTitlePage()
     {
-        gameObject.SetActive(true);
+        page.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Title);
         titleSprite.gameObject.SetActive(true);
         confirmBtn.SetActive(true);
+        if(LocalizedAssetLookup.singleton.curLanguage == LanguageOption.CN)
+        {
+            SwitchToCN();
+        }
+        else
+        {
+            SwitchToEN();
+        }
         //playtest
         if (firstOpening)
         {
             ShowPlaytestPopup();
         }
+    }
+    public void IntroAnimToTitlePage()
+    {
+        levelRecords.seenIntro = true;
+        GoToTitlePage();
     }
     public void EnterBtnClick()
     {
@@ -70,7 +91,7 @@ public class TitlePage : MonoBehaviour, ISaveData
     {
         LevelSelector.singleton.GoToSelector();
         BgCtrl.singleton.ResetToDefaultBg();
-        gameObject.SetActive(false);
+        page.SetActive(false);
     }
     void LineEmerge(float duration, string txt)
     {
@@ -90,14 +111,14 @@ public class TitlePage : MonoBehaviour, ISaveData
         LocalizedAssetLookup.singleton.SwitchLanguage(LanguageOption.CN);
         titleSprite.sprite = titleByLanguage[0];
         titleSprite.gameObject.GetComponent<AdvSpriteSlider>().ResetBaseSprite();
-        GoToTitlePage();
+        //GoToTitlePage();
     }
     public void SwitchToEN()
     {
         LocalizedAssetLookup.singleton.SwitchLanguage(LanguageOption.EN);
         titleSprite.sprite = titleByLanguage[1];
         titleSprite.gameObject.GetComponent<AdvSpriteSlider>().ResetBaseSprite();
-        GoToTitlePage();
+        //GoToTitlePage();
     }
     void ShowPlaytestPopup()
     {
@@ -128,6 +149,7 @@ public class TitlePage : MonoBehaviour, ISaveData
         {
             playerSettings.introCount = 0;
         }
+        
     }
     public void SaveToSaveManager()
     {
