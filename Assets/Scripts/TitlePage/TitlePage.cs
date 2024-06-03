@@ -65,13 +65,21 @@ public class TitlePage : MonoBehaviour, ISaveData
         //playtest
         if (firstOpening)
         {
-            ShowPlaytestPopup();
+            Sequence seq = DOTween.Sequence();
+            seq.AppendInterval(1f);
+            seq.AppendCallback(() => ShowPlaytestPopup());
         }
     }
     public void IntroAnimToTitlePage()
     {
         levelRecords.seenIntro = true;
-        GoToTitlePage();
+        //GoToTitlePage();
+        page.SetActive(true);
+        titleSprite.gameObject.SetActive(true);
+        titleSprite.transform.DOScale(20f, 1f).From();
+        Sequence seq = DOTween.Sequence();
+        seq.AppendInterval(2f);
+        seq.AppendCallback(() => GoToTitlePage());
     }
     public void EnterBtnClick()
     {

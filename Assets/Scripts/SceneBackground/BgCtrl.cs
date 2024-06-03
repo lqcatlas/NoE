@@ -9,6 +9,7 @@ public class BgCtrl : MonoBehaviour
     [SerializeField] GameObject RandomThemeIcon;
     [SerializeField] GameObject ThemeIconNoise;
     [SerializeField] GameObject ScratchedBlackboard;
+    [SerializeField] SpriteRenderer ScratchedTopMask;
     [SerializeField] SpriteRenderer LightBackground;
 
     static public BgCtrl singleton;
@@ -60,5 +61,15 @@ public class BgCtrl : MonoBehaviour
     public void ResetToDefaultBg(float fadeTime = 0.05f)
     {
         LightBackground.DOFade(0f, fadeTime);
+    }
+    public void TopMaskFadeIn(float fadeTime = 0.05f)
+    {
+        ScratchedTopMask.color = new Color(.4f, .4f, .4f, 0f);
+        ScratchedTopMask.DOFade(1f, fadeTime);
+    }
+    public void TopMaskFadeOut(float fadeTime = 0.05f)
+    {
+        ScratchedTopMask.color = new Color(.4f, .4f, .4f, 1f);
+        ScratchedTopMask.DOFade(0f, fadeTime);
     }
 }
