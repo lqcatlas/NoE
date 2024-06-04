@@ -8,6 +8,7 @@ public class EverythingCell : MonoBehaviour
 {
     static float switchChance = .4f;
     static float CellFadeInTime = 1.0f;
+    static float FadeDelayRange = 0.6f;
     [SerializeField] EverythingCellSpriteLib lib;
     [SerializeField] SpriteRenderer numberSprt;
     [SerializeField] SpriteRenderer frameSprt;
@@ -27,7 +28,8 @@ public class EverythingCell : MonoBehaviour
     {
         numberSprt.color = new Color(dConstants.UI.DefaultColor_1st.r, dConstants.UI.DefaultColor_1st.g, dConstants.UI.DefaultColor_1st.b, 0);
         frameSprt.color = new Color(dConstants.UI.DefaultColor_3rd.r, dConstants.UI.DefaultColor_3rd.g, dConstants.UI.DefaultColor_3rd.b, 0);
-        numberSprt.DOFade(1f, CellFadeInTime);
-        frameSprt.DOFade(1f, CellFadeInTime);
+        float rng = Random.Range(0f, FadeDelayRange);
+        numberSprt.DOFade(1f, CellFadeInTime).SetDelay(rng);
+        frameSprt.DOFade(1f, CellFadeInTime).SetDelay(rng);
     }
 }

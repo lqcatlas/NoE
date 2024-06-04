@@ -20,16 +20,19 @@ public class TitlePage : MonoBehaviour, ISaveData
         firstOpening = true;
     }
     public bool firstOpening = true;
-
-    [SerializeField] GameObject page;
+    static float TITLE_ANIM_DURATION = 2f;
+    
+    [Header("Gameplay Data")]
     [SerializeField] PlayerSettings playerSettings;
     [SerializeField] LevelRecords levelRecords;
     [SerializeField] IntroLines intro;
-
+    [Header("Children Objs")]
+    [SerializeField] GameObject page;
+    [SerializeField] GameObject widgets;
     [SerializeField] SpriteRenderer titleSprite;
     [SerializeField] GameObject confirmBtn;
     [SerializeField] TextMeshPro line_tmp;
-
+    [Header("Others")]
     [SerializeField] List<Sprite> titleByLanguage;
 
 
@@ -44,15 +47,17 @@ public class TitlePage : MonoBehaviour, ISaveData
         }
         else
         {
-            GoToTitlePage();
+            IntroAnimToTitlePage();
         }
     }
     
     public void GoToTitlePage()
     {
         page.SetActive(true);
+        widgets.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Title);
         titleSprite.gameObject.SetActive(true);
+        
         confirmBtn.SetActive(true);
         if(LocalizedAssetLookup.singleton.curLanguage == LanguageOption.CN)
         {
@@ -66,19 +71,20 @@ public class TitlePage : MonoBehaviour, ISaveData
         if (firstOpening)
         {
             Sequence seq = DOTween.Sequence();
-            seq.AppendInterval(1f);
+            seq.AppendInterval(.5f);
             seq.AppendCallback(() => ShowPlaytestPopup());
         }
     }
     public void IntroAnimToTitlePage()
     {
         levelRecords.seenIntro = true;
-        //GoToTitlePage();
         page.SetActive(true);
+        widgets.SetActive(false);
         titleSprite.gameObject.SetActive(true);
-        titleSprite.transform.DOScale(20f, 1f).From();
+        titleSprite.DOFade(0f, TITLE_ANIM_DURATION / 2f).From();
+        AudioDraft.singleton.PuzzleMusicStart();
         Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(2f);
+        seq.AppendInterval(TITLE_ANIM_DURATION);
         seq.AppendCallback(() => GoToTitlePage());
     }
     public void EnterBtnClick()

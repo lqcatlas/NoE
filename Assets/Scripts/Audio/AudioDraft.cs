@@ -38,14 +38,9 @@ public class AudioDraft : MonoBehaviour
     {
         //IntroStart();
         VolumeReset();
-        PuzzleMusicStart();
+        //PuzzleMusicStart();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     AudioSource GetValidSFXSource()
     {
         for (int i = 0; i < SFXSources.Count; i++)
@@ -120,9 +115,13 @@ public class AudioDraft : MonoBehaviour
     }
     public void PuzzleMusicStart()
     {
-        IntroEnd();
-        puzzleSource.gameObject.SetActive(true);
-        puzzleSource.DOFade(0f, 5f).From();
+        //IntroEnd();
+        if (!puzzleSource.gameObject.activeSelf)
+        {
+            puzzleSource.gameObject.SetActive(true);
+            puzzleSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume;
+            puzzleSource.DOFade(0f, 5f).From();
+        }
     }
     public void VolumeReset()
     {
