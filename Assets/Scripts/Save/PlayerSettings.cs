@@ -7,6 +7,8 @@ using UnityEngine;
 public class PlayerSettings : ScriptableObject
 {
     public float audioVolume = 0.5f;
+    public float musicVolume = 0.7f;
+    public float soundVolume = 0.7f;
     public int introCount;
 
 }

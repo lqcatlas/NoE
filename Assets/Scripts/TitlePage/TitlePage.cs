@@ -120,6 +120,10 @@ public class TitlePage : MonoBehaviour, ISaveData
     {
         Application.Quit();
     }
+    public void OpenSetting()
+    {
+        SettingPage.singleton.GotoSettingPage();
+    }
     public void SwitchToCN()
     {
         LocalizedAssetLookup.singleton.SwitchLanguage(LanguageOption.CN);
@@ -142,6 +146,8 @@ public class TitlePage : MonoBehaviour, ISaveData
     }
     #region save
     private const string AUDIOVOLUME_SAVE_KEY = "setting.volume";
+    private const string MUSICVOLUME_SAVE_KEY = "setting.musicVolume";
+    private const string SOUNDVOLUME_SAVE_KEY = "setting.soundVolume";
     private const string INTROCOUNT_SAVE_KEY = "setting.intro";
     public void LoadFromSaveManager()
     {
@@ -153,6 +159,24 @@ public class TitlePage : MonoBehaviour, ISaveData
         else
         {
             playerSettings.audioVolume = 0.5f;
+        }
+        str = SaveManager.controller.Inquire(string.Format(MUSICVOLUME_SAVE_KEY));
+        if (str != null)
+        {
+            float.TryParse(SaveManager.controller.Inquire(string.Format(MUSICVOLUME_SAVE_KEY)), out playerSettings.musicVolume);
+        }
+        else
+        {
+            playerSettings.musicVolume = 0.7f;
+        }
+        str = SaveManager.controller.Inquire(string.Format(SOUNDVOLUME_SAVE_KEY));
+        if (str != null)
+        {
+            float.TryParse(SaveManager.controller.Inquire(string.Format(SOUNDVOLUME_SAVE_KEY)), out playerSettings.soundVolume);
+        }
+        else
+        {
+            playerSettings.soundVolume = 0.7f;
         }
         str = SaveManager.controller.Inquire(string.Format(INTROCOUNT_SAVE_KEY));
         if (str != null)

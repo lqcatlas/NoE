@@ -119,16 +119,16 @@ public class AudioDraft : MonoBehaviour
         if (!puzzleSource.gameObject.activeSelf)
         {
             puzzleSource.gameObject.SetActive(true);
-            puzzleSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume;
+            puzzleSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume * playerSettings.musicVolume;
             puzzleSource.DOFade(0f, 5f).From();
         }
     }
     public void VolumeReset()
     {
-        puzzleSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume;
+        puzzleSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume * playerSettings.musicVolume;
         for (int i = 0; i < SFXSources.Count; i++)
         {
-            SFXSources[i].volume = MAX_SFX_VOLUME * playerSettings.audioVolume;
+            SFXSources[i].volume = MAX_SFX_VOLUME * playerSettings.audioVolume * playerSettings.soundVolume;
         }
     }
 }
