@@ -155,18 +155,22 @@ public class ThemePhotoGroup : MonoBehaviour
     #region BtnFunc
     public void EnterPageAnimation()
     {
-        gameObject.SetActive(true);
+        float rng_delay = Random.Range(0f, 0.6f);
+        gameObject.SetActive(false);
         connectingString.SetActive(false);
-        photoGroup.DOScale(1.2f, dConstants.UI.StandardizedBtnAnimDuration).From().SetRelative(true).OnComplete(() => SwingByForce(2f));
-        infoGroup.DOScaleY(0f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(dConstants.UI.StandardizedBtnAnimDuration/2f);
-        connectingString.transform.DOScaleX(0f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(dConstants.UI.StandardizedBtnAnimDuration/2f)
+        photoGroup.DOScale(1.2f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(rng_delay).SetRelative(true)
+            .OnStart(() => gameObject.SetActive(true))
+            .OnComplete(() => SwingByForce(2f));
+        infoGroup.DOScaleY(0f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(dConstants.UI.StandardizedBtnAnimDuration/2f + rng_delay);
+        connectingString.transform.DOScaleX(0f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(dConstants.UI.StandardizedBtnAnimDuration/ 2f + rng_delay)
             .OnStart(() => connectingString.SetActive(true));
     }
     public void SwingByForce(float swingDegree)
     {
         float rng_timerange = Random.Range(0.8f, 1.2f);
-        photoGroup.DORotate(new Vector3(0f, 0f, swingDegree), 4f * rng_timerange).SetRelative(true).SetEase(Ease.InOutFlash, 4, 1);
+        photoGroup.DORotate(new Vector3(0f, 0f, swingDegree), 4f * rng_timerange).SetRelative(true).SetEase(Ease.InOutFlash, 6, 1);
     }
+    
     public void PhotoEnterSelection()
     {
         if(curStatus == ThemePhotoStatus.locked)

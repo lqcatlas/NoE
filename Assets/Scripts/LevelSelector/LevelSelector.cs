@@ -70,9 +70,12 @@ public class LevelSelector : MonoBehaviour, ISaveData
         Sequence seq = DOTween.Sequence();
         for (int i = 0; i < photos.Count; i++)
         {
-            ThemePhotoGroup temp = photos[i];
+            /*ThemePhotoGroup temp = photos[i];
             seq.AppendCallback(() => temp.EnterPageAnimation());
             seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration/2f);
+            */
+            //all photos anim in the same time range
+            photos[i].EnterPageAnimation();
         }
         //vfx end
     }
@@ -214,6 +217,18 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             blockers[i].InitBlocker();
         }
+    }
+    public void OpenSetting()
+    {
+        if (!SettingPage.singleton.isOpening())
+        {
+            SettingPage.singleton.GotoSettingPage();
+        }
+        else
+        {
+            SettingPage.singleton.ClosePage();
+        }
+
     }
     /*void CollectAllThemes()
     {

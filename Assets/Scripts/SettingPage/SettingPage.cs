@@ -47,6 +47,10 @@ public class SettingPage : MonoBehaviour
         AudioDraft.singleton.PlayGenericPlaySFX();
         soundVol.SetText(string.Format("{0}", Mathf.RoundToInt(playerSettings.soundVolume * 10)));
     }
+    public bool isOpening()
+    {
+        return page.activeSelf;
+    }
     public void ClosePage()
     {
         page.transform.DOScale(0f, dConstants.UI.StandardizedBtnAnimDuration).OnComplete(() => page.SetActive(false));

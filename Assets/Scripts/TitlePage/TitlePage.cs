@@ -122,7 +122,15 @@ public class TitlePage : MonoBehaviour, ISaveData
     }
     public void OpenSetting()
     {
-        SettingPage.singleton.GotoSettingPage();
+        if (!SettingPage.singleton.isOpening())
+        {
+            SettingPage.singleton.GotoSettingPage();
+        }
+        else
+        {
+            SettingPage.singleton.ClosePage();
+        }
+        
     }
     public void SwitchToCN()
     {
