@@ -555,3 +555,6 @@ UID,Key,EN,CN
 554,ui_intro_line1,<size=70%>One begets Two<br>一生二</size>,一生二<br><size=70%>One begets Two</size>
 555,ui_intro_line2,<size=70%>Two begets Three<br>二生三</size>,二生三<br><size=70%>Two begets Three</size>
 556,ui_intro_line3,<size=70%>Three begets Everything<br>三生万物</size>,三生万物<br><size=70%>Three begets Everything</size>
+557,ui_setting_title,Settings,设置
+558,ui_setting_music,Music,音乐
+559,ui_setting_sound,Sound,音效

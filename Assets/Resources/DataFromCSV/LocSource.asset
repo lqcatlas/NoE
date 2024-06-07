@@ -1774,3 +1774,12 @@ MonoBehaviour:
   - key: ui_intro_line3
     EN: "<size=70%>Three begets Everything<br>\u4E09\u751F\u4E07\u7269</size>"
     CN: "\u4E09\u751F\u4E07\u7269<br><size=70%>Three begets Everything</size>"
+  - key: ui_setting_title
+    EN: Settings
+    CN: "\u8BBE\u7F6E"
+  - key: ui_setting_music
+    EN: Music
+    CN: "\u97F3\u4E50"
+  - key: ui_setting_sound
+    EN: Sound
+    CN: "\u97F3\u6548"

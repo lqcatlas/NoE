@@ -158,7 +158,7 @@ public class TitlePage : MonoBehaviour, ISaveData
         }
         else
         {
-            playerSettings.audioVolume = 0.5f;
+            playerSettings.audioVolume = 1f;
         }
         str = SaveManager.controller.Inquire(string.Format(MUSICVOLUME_SAVE_KEY));
         if (str != null)

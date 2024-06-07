@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   play:
   - {fileID: 8300000, guid: f7579d3b035e860409890837b6222dc4, type: 3}
-  - {fileID: 8300000, guid: 37db33681b6f7394d9e79f910cf092fc, type: 3}
   levelWin:
   - {fileID: 8300000, guid: db1f9d57fe2c0704a95295c018c0164a, type: 3}
   - {fileID: 8300000, guid: 485cdc45db858014a84eab58a1e8123f, type: 3}
