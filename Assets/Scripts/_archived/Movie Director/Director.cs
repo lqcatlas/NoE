@@ -15,7 +15,7 @@ public class SceneParams
 public class Director : MonoBehaviour
 {
     [Header("Debug")]
-    [SerializeField] AudioDraft audioCtrl;
+    [SerializeField] AudioCentralCtrl audioCtrl;
 
     [Header("Crew")]
     [SerializeField] CameraMove cameraCrew;
@@ -59,7 +59,7 @@ public class Director : MonoBehaviour
     public void ContinuePlay()
     {
         Debug.Log(string.Format("ContinuePlay()on ID {0}", currentID));
-        audioCtrl.IntroContinue();
+        //audioCtrl.IntroContinue();
 
         if (currentID+1 < scenes.Count)
         {
@@ -96,7 +96,7 @@ public class Director : MonoBehaviour
     {
         //GM.InitFirstPuzzle();
         ThemeSelector.ShowPage();
-        audioCtrl.PuzzleMusicStart();
+        audioCtrl.BgMusicStart();
         DOTween.ToAlpha(() => FinalBg1.color, x => FinalBg1.color = x, 1f, 0.5f);
         DOTween.ToAlpha(() => FinalBg2.color, x => FinalBg2.color = x, 1f, 0.5f);
     }

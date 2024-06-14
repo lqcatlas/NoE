@@ -14,6 +14,7 @@ public class ThemeResource
     public GameObject ThemeHiddenObjPage;
     public Sprite ThemeSprite;
     public Sprite ThemePhoto;
+    public AudioClip ThemeMusic;
 }
 [CreateAssetMenu(menuName = "Lookup/ThemeResource")]
 public class ThemeResourceLookup : ScriptableObject
@@ -114,6 +115,18 @@ public class ThemeResourceLookup : ScriptableObject
             }
         }
         Debug.LogError(string.Format("unbale to find theme ({0})", _themeID));
+        return null;
+    }
+    public AudioClip GetThemeMusic(int _themeID)
+    {
+        for (int i = 0; i < ThemeXResource.Count; i++)
+        {
+            if (ThemeXResource[i].ThemeID == _themeID)
+            {
+                return ThemeXResource[i].ThemeMusic;
+            }
+        }
+        //Debug.LogError(string.Format("unbale to find theme ({0})", _themeID));
         return null;
     }
 }

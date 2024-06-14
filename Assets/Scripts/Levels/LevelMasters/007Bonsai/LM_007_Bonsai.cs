@@ -96,7 +96,7 @@ public class LM_007_Bonsai : LevelMasterBase
                 levelData.curBoard.cells[i].status = -1;
             }
         }
-        AudioDraft.singleton.PlaySFX(bonsaiHub.cutClips.GetClip());
+        AudioCentralCtrl.singleton.PlaySFX(bonsaiHub.cutClips.GetClip());
     }
     public override void UpdateCells(Vector2Int coord)
     {
@@ -291,7 +291,7 @@ public class LM_007_Bonsai : LevelMasterBase
         string answerTxt = string.Format("@Loc=answer_tm7_lv{0}@@", levelData.levelUID);
         //Debug.Log("answerTxt ="+answerTxt);
         hub.popupMaster.ShowVictoryPopup(isNew, levelData.isHard, finalPlayTime, (levelData.initBoard.toolCount - levelData.curBoard.toolCount).ToString(), answerTxt);
-        AudioDraft.singleton.PlayGenericLevelWinSFX();
+        AudioCentralCtrl.singleton.PlayGenericLevelWinSFX();
     }
     
     void UpdateToolStatusDisplay()

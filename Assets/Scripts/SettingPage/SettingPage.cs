@@ -35,16 +35,16 @@ public class SettingPage : MonoBehaviour
     public void MusicVolumeAdjust(int vol)
     {
         playerSettings.musicVolume = Mathf.Max(0f, Mathf.Min(1f, playerSettings.musicVolume + vol * 0.1f));
-        AudioDraft.singleton.VolumeReset();
-        AudioDraft.singleton.PlayGenericPlaySFX();
+        AudioCentralCtrl.singleton.VolumeReset();
+        AudioCentralCtrl.singleton.PlayGenericPlaySFX();
         musicVol.SetText(string.Format("{0}", Mathf.RoundToInt(playerSettings.musicVolume * 10)));
 
     }
     public void SoundVolumeAdjust(int vol)
     {
         playerSettings.soundVolume = Mathf.Max(0f, Mathf.Min(1f, playerSettings.soundVolume + vol * 0.1f));
-        AudioDraft.singleton.VolumeReset();
-        AudioDraft.singleton.PlayGenericPlaySFX();
+        AudioCentralCtrl.singleton.VolumeReset();
+        AudioCentralCtrl.singleton.PlayGenericPlaySFX();
         soundVol.SetText(string.Format("{0}", Mathf.RoundToInt(playerSettings.soundVolume * 10)));
     }
     public bool isOpening()

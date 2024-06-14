@@ -82,7 +82,7 @@ public class TitlePage : MonoBehaviour, ISaveData
         widgets.SetActive(false);
         titleSprite.gameObject.SetActive(true);
         titleSprite.DOFade(0f, TITLE_ANIM_DURATION / 2f).From();
-        AudioDraft.singleton.PuzzleMusicStart();
+        AudioCentralCtrl.singleton.BgMusicStart();
         Sequence seq = DOTween.Sequence();
         seq.AppendInterval(TITLE_ANIM_DURATION);
         seq.AppendCallback(() => GoToTitlePage());

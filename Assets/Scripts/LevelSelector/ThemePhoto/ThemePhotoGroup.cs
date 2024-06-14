@@ -231,6 +231,8 @@ public class ThemePhotoGroup : MonoBehaviour
     void GoToHiddenObject()
     {
         //LevelSelector.singleton.UnlockTheme(themeData.themeUID, themeData.unlockCost);
+        //switch bg music
+        AudioCentralCtrl.singleton.BgMusicSwitch(themeData.themeUID);
         //enter hidden obj
         GameObject obj = Instantiate(SelectorTransitionFX, transform);
         obj.transform.parent = VFXHolder.singleton.transform;
@@ -244,6 +246,9 @@ public class ThemePhotoGroup : MonoBehaviour
     }
     void GoToLatestLevel()
     {
+        //switch bg music
+        AudioCentralCtrl.singleton.BgMusicSwitch(themeData.themeUID);
+
         int targetLevelUID = GetLatestLevelUID();
         GameObject obj = Instantiate(SelectorTransitionFX, transform);
         obj.transform.parent = VFXHolder.singleton.transform;

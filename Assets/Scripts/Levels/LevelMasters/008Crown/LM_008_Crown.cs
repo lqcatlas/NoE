@@ -196,11 +196,11 @@ public class LM_008_Crown : LevelMasterBase
             }
             if (hasWar)
             {
-                AudioDraft.singleton.PlaySFX(crownHub.warClips.GetClip());
+                AudioCentralCtrl.singleton.PlaySFX(crownHub.warClips.GetClip());
             }
             else
             {
-                AudioDraft.singleton.PlayGenericPlaySFX();
+                AudioCentralCtrl.singleton.PlayGenericPlaySFX();
             }
             if (crownLogs[crownLogs.Count - 1].winningCoords.Count > 0)
             {
@@ -231,11 +231,11 @@ public class LM_008_Crown : LevelMasterBase
             }
             if (hasWar)
             {
-                AudioDraft.singleton.PlaySFX(crownHub.warClips.GetClip());
+                AudioCentralCtrl.singleton.PlaySFX(crownHub.warClips.GetClip());
             }
             else
             {
-                AudioDraft.singleton.PlayGenericPlaySFX();
+                AudioCentralCtrl.singleton.PlayGenericPlaySFX();
             }
             if (crownLogs[crownLogs.Count - 1].losingCoords.Count > 0)
             {

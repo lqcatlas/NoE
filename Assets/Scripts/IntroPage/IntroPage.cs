@@ -101,7 +101,7 @@ public class IntroPage : MonoBehaviour
         seq.AppendInterval(1f);
         seq.AppendCallback(() => cellGen.GenerateNextSetCells());
         seq.AppendCallback(() => audioCTRL.FadeOutALL());
-        seq.AppendCallback(() => AudioDraft.singleton.PuzzleMusicStart());
+        seq.AppendCallback(() => AudioCentralCtrl.singleton.BgMusicStart());
         seq.AppendInterval(1f);
         seq.AppendCallback(() => cellGen.GenerateNextSetCells());
         seq.AppendInterval(1f);

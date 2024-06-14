@@ -247,7 +247,7 @@ public class LevelMasterBase : MonoBehaviour
     {
         hub.miscMaster.ScreenMaskInit();
         hub.miscMaster.ScreenMaskFadeOut(dConstants.VFX.CallbackAnimationDelayAfterInit);
-        AudioDraft.singleton.PlayKeynote(levelData.themeIndex);
+        AudioCentralCtrl.singleton.PlayKeynote(levelData.themeIndex);
     }
     //init 2 board data(current, previous)
     public virtual void InitBoardData()
@@ -525,7 +525,7 @@ public class LevelMasterBase : MonoBehaviour
         {
             Debug.Log(string.Format("Theme ends. Plz go back to theme selector"));
         }*/
-        AudioDraft.singleton.PlayGenericLevelWinSFX();
+        AudioCentralCtrl.singleton.PlayGenericLevelWinSFX();
     }
     public virtual bool CheckLoseCondition()
     {
@@ -542,7 +542,7 @@ public class LevelMasterBase : MonoBehaviour
         //hub.miscMaster.retryHint.gameObject.SetActive(true);
         //hub.miscMaster.loseBanner.SetActive(true);
         //hub.miscMaster.loseBanner.GetComponent<SpriteRenderer>().DOFade(0f, 0.5f).From();
-        AudioDraft.singleton.PlayGenericLevelFailSFX();
+        AudioCentralCtrl.singleton.PlayGenericLevelFailSFX();
     }
     #endregion
 

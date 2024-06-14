@@ -20,6 +20,7 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 1842198589991735818, guid: 93ddc0b89494e3a44be6fe0b35000746, type: 3}
     ThemeSprite: {fileID: 1536629255, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 8183a9bd83b6d304eb11f80fc3530160, type: 3}
+    ThemeMusic: {fileID: 8300000, guid: 384df03e46ee37c4fb2894bc1baaf576, type: 3}
   - Theme: coin
     ThemeID: 2
     ScriptName: LM_002_Coin
@@ -27,6 +28,7 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 5662751518621937210, guid: 3e416c735035ab74ca78aa5e9d60212a, type: 3}
     ThemeSprite: {fileID: 584681723, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 243236c899d26ed4d80acb14abb8823a, type: 3}
+    ThemeMusic: {fileID: 8300000, guid: b588735998681594fa8394fbebf7bb3b, type: 3}
   - Theme: sushi
     ThemeID: 4
     ScriptName: LM_004_Sushi
@@ -34,6 +36,7 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 6105738653722550372, guid: d71b4112dba7022468fad2b8a9fc9c0a, type: 3}
     ThemeSprite: {fileID: -1284633540, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: b51fcb5b9964ea949ae1e3928060812e, type: 3}
+    ThemeMusic: {fileID: 8300000, guid: f87b8c149c07f004f8a6cc487ae9fd4a, type: 3}
   - Theme: moon
     ThemeID: 5
     ScriptName: LM_005_Moon
@@ -41,6 +44,7 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 7870028002826694084, guid: 3c8c6ec120b12d0458e06e8e03de0205, type: 3}
     ThemeSprite: {fileID: 2024725601, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 2a96f5de01c99ef49bce6cadd7317b07, type: 3}
+    ThemeMusic: {fileID: 8300000, guid: 50c0a5bea882eeb45a70669f23d45c45, type: 3}
   - Theme: lightbulb
     ThemeID: 6
     ScriptName: LM_006_LightBulb
@@ -48,6 +52,7 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: d63766f59868661468a79ab83bfa2980, type: 3}
     ThemeSprite: {fileID: -1481849294, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}
+    ThemeMusic: {fileID: 8300000, guid: e6bdf0c78df27204598f013530c627f3, type: 3}
   - Theme: bonsai
     ThemeID: 7
     ScriptName: LM_007_Bonsai
@@ -55,6 +60,7 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: 22a34d57a8d004149bbbf325f06e478b, type: 3}
     ThemeSprite: {fileID: -1290517677, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 7553eed521881f8418641047084d14de, type: 3}
+    ThemeMusic: {fileID: 8300000, guid: 61cb2d65efde16c49a46280a35350e48, type: 3}
   - Theme: crown
     ThemeID: 8
     ScriptName: LM_008_Crown
@@ -62,6 +68,7 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: 2bbbe2f7767f8fa489fa1f493aaea7c5, type: 3}
     ThemeSprite: {fileID: 229841254, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: ce8128a773e52b244828f7128e4018e0, type: 3}
+    ThemeMusic: {fileID: 8300000, guid: 7bcd247d5dd7c0c4fa8d6acbfa8a2644, type: 3}
   - Theme: flask
     ThemeID: 9
     ScriptName: LM_009_Flask
@@ -69,6 +76,7 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: da9011ed3ad4bf04792ae97499a362a9, type: 3}
     ThemeSprite: {fileID: -678919929, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: 3c8304b846312a249b720c8c71b3fbf6, type: 3}
+    ThemeMusic: {fileID: 8300000, guid: 731c72864f2e82e43ad58f7bbf008b6c, type: 3}
   - Theme: badge
     ThemeID: 10
     ScriptName: LM_010_Badge
@@ -76,3 +84,4 @@ MonoBehaviour:
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: 8e0bce30f40788c4f8b76d7579e9d655, type: 3}
     ThemeSprite: {fileID: 558831668, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
     ThemePhoto: {fileID: 21300000, guid: c4a327ccb5a9f624a8813705946c2aa5, type: 3}
+    ThemeMusic: {fileID: 8300000, guid: 1f8e5edad97457542937a1f2ec0f538a, type: 3}

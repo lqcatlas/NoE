@@ -43,15 +43,6 @@ public class LevelSelector : MonoBehaviour, ISaveData
 
     public void GoToSelector()
     {
-
-        /*for (int i = 0; i < nodes.Count; i++)
-        {
-            nodes[i].UpdateStatus();
-        }
-        for (int i = 0; i < themes.Count; i++)
-        {
-            themes[i].UpdateStatus();
-        }*/
         for (int i = 0; i < photos.Count; i++)
         {
             photos[i].UpdatePhotoGroup();
@@ -62,6 +53,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         page.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Selector);
+        AudioCentralCtrl.singleton.BgMusicSwitch();
         //vfx
         for (int i = 0; i < photos.Count; i++)
         {

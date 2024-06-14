@@ -84,7 +84,7 @@ public class LM_004_Sushi : LevelMasterBase
                     levelData.curBoard.cells[i].value = BoardCalculation.ModX_Range(levelData.curBoard.cells[i].value, numberRange);
                     levelData.curBoard.cells[i].status = levelData.curBoard.toolStatus;
                     //Play sfx
-                    AudioDraft.singleton.PlaySFX(sushiHub.toolClips.GetClip(levelData.curBoard.cells[i].status - 1));
+                    AudioCentralCtrl.singleton.PlaySFX(sushiHub.toolClips.GetClip(levelData.curBoard.cells[i].status - 1));
                 }
                 
             }
@@ -111,7 +111,7 @@ public class LM_004_Sushi : LevelMasterBase
                         levelData.curBoard.cells[i].status = levelData.curBoard.toolStatus;
                     }
                     //Play sfx
-                    AudioDraft.singleton.PlaySFX(sushiHub.toolClips.GetClip(levelData.curBoard.cells[i].status - 1));
+                    AudioCentralCtrl.singleton.PlaySFX(sushiHub.toolClips.GetClip(levelData.curBoard.cells[i].status - 1));
                 }
             }
         }
@@ -141,7 +141,7 @@ public class LM_004_Sushi : LevelMasterBase
                         levelData.curBoard.cells[i].status = levelData.curBoard.toolStatus;
                     }
                     //Play sfx
-                    AudioDraft.singleton.PlaySFX(sushiHub.toolClips.GetClip(levelData.curBoard.cells[i].status - 1));
+                    AudioCentralCtrl.singleton.PlaySFX(sushiHub.toolClips.GetClip(levelData.curBoard.cells[i].status - 1));
                 }
             }
         }
@@ -305,7 +305,7 @@ public class LM_004_Sushi : LevelMasterBase
     }
     public override void WinALevel()
     {
-        AudioDraft.singleton.PlaySFX(sushiHub.endingVOClips.GetClip(levelData.levelIndex % 8));
+        AudioCentralCtrl.singleton.PlaySFX(sushiHub.endingVOClips.GetClip(levelData.levelIndex % 8));
         base.WinALevel();
         //pick up chopstick after voice over
         sushiHub.chopsticks.DOFade(0f, 1f);

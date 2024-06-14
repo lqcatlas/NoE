@@ -286,7 +286,7 @@ public class LM_009_Flask : LevelMasterBase
         if(timeIntervalSincePouringStart > 0.5f && !audioPlayed)
         {
             audioPlayed = true;
-            AudioDraft.singleton.PlaySFX(flaskHub.pouringClips.GetClip());
+            AudioCentralCtrl.singleton.PlaySFX(flaskHub.pouringClips.GetClip());
         }
     }
     public override void HandleEnvironment(Vector2Int coord)

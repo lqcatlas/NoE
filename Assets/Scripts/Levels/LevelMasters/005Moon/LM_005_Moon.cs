@@ -99,7 +99,7 @@ public class LM_005_Moon : LevelMasterBase
                     }
                 }
             }
-            AudioDraft.singleton.PlayGenericPlaySFX();
+            AudioCentralCtrl.singleton.PlayGenericPlaySFX();
         }     
         //lv 2+
         //crescent +1, quarter +3, full +5
@@ -126,7 +126,7 @@ public class LM_005_Moon : LevelMasterBase
                     }
                 }
             }
-            AudioDraft.singleton.PlayGenericPlaySFX();
+            AudioCentralCtrl.singleton.PlayGenericPlaySFX();
         }
         else if (levelData.levelIndex >= 5)
         {
@@ -161,11 +161,11 @@ public class LM_005_Moon : LevelMasterBase
             }
             if (eclipseTrigger)
             {
-                AudioDraft.singleton.PlaySFX(moonHub.eclipseClips.GetClip());
+                AudioCentralCtrl.singleton.PlaySFX(moonHub.eclipseClips.GetClip());
             }
             else
             {
-                AudioDraft.singleton.PlayGenericPlaySFX();
+                AudioCentralCtrl.singleton.PlayGenericPlaySFX();
             }
         }
         else
