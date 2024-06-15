@@ -3317,7 +3317,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3338,7 +3338,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3346,6 +3346,27 @@ TextureImporter:
       bones: []
       spriteID: dc719af4ef5bd324499f591a667f9895
       internalID: 991213013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sign_unknown
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aba855cbfc58c747be839f7c09c57b4
+      internalID: 31474530
       vertices: []
       indices: 
       edges: []
@@ -3422,6 +3443,7 @@ TextureImporter:
       window2_fill: 480405304
       star6_v3: -781750752
       coin_shape_20: -920651032
+      sign_unknown: 31474530
       coin_shape_11: -1872248968
       clocktime_tool_v11: 1014170568
       flask@v2: -1769165631

@@ -122,11 +122,12 @@ public class AudioCentralCtrl : MonoBehaviour
         if(!genericBgInUse && newClip == null)
         {
             genericBgInUse = true;
-            genericBgSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume * playerSettings.musicVolume;
+            float targetVol = MAX_MUSIC_VOLUME * playerSettings.audioVolume * playerSettings.musicVolume;
+            genericBgSource.volume = 0f;
             genericBgSource.gameObject.SetActive(true);
             seq.Kill();
             seq = DOTween.Sequence();
-            seq.Append(genericBgSource.DOFade(0f, 2f).SetDelay(4f).From());
+            seq.Append(genericBgSource.DOFade(targetVol, 2f).SetDelay(4f));
             seq.Join(themeBgSource.DOFade(0f, 5f));
             seq.AppendCallback(() => themeBgSource.gameObject.SetActive(false));
             
@@ -136,15 +137,16 @@ public class AudioCentralCtrl : MonoBehaviour
         {
             genericBgInUse = false;
             themeBgSource.clip = newClip; 
-            themeBgSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume * playerSettings.musicVolume;
+            float targetVol = MAX_MUSIC_VOLUME * playerSettings.audioVolume * playerSettings.musicVolume;
+            themeBgSource.volume = 0f;
             themeBgSource.gameObject.SetActive(true);
+            themeBgSource.Play();
             seq.Kill();
             seq = DOTween.Sequence();
-            seq.Append(themeBgSource.DOFade(0f, 2f).SetDelay(4f).From());
+            seq.Append(themeBgSource.DOFade(targetVol, 2f).SetDelay(4f));
             seq.Join(genericBgSource.DOFade(0f, 5f));
             seq.AppendCallback(() => genericBgSource.gameObject.SetActive(false));
-            
-            
+
         }
         else
         {
