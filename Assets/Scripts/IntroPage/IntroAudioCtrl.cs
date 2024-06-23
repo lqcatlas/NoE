@@ -19,7 +19,8 @@ public class IntroAudioCtrl : MonoBehaviour
     {
         for(int i=0; i<introSource.Count; i++)
         {
-            introSource[i].DOFade(0f, FADE_OUR_DURATION).OnComplete(() => introSource[i].gameObject.SetActive(false));
+            AudioSource source = introSource[i];
+            introSource[i].DOFade(0f, FADE_OUR_DURATION).OnComplete(() => source.gameObject.SetActive(false));
         }
     }
 }

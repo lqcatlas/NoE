@@ -95,9 +95,10 @@ public class HiddenObjectPage : MonoBehaviour
             //theme icon appear and then fly to target location
             themeName.DOFade(1f, FOUND_ANIM_DURATION / 2f);
             themeIcon.GetComponent<SpriteRenderer>().DOFade(1f, FOUND_ANIM_DURATION / 2f);
-            themeIcon.transform.DOMove(iconDestination.position, TRANSIT_ANIM_DURATION).SetDelay(FOUND_ANIM_DURATION / 2f).SetEase(Ease.InSine);
-            themeIcon.transform.DOScale(1.2f, dConstants.UI.StandardizedBtnAnimDuration).SetDelay(TRANSIT_ANIM_DURATION + FOUND_ANIM_DURATION / 2f);
+            objectGroup.transform.DOMove(iconDestination.position, TRANSIT_ANIM_DURATION).SetDelay(FOUND_ANIM_DURATION / 2f).SetEase(Ease.InSine);
+            objectGroup.transform.DOScale(1.2f, dConstants.UI.StandardizedBtnAnimDuration).SetDelay(TRANSIT_ANIM_DURATION + FOUND_ANIM_DURATION / 2f);
             themeIcon.GetComponent<SpriteRenderer>().DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).SetDelay(TRANSIT_ANIM_DURATION + FOUND_ANIM_DURATION / 2f).OnComplete(() => StartLevelDelayed());
+            themeName.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).SetDelay(TRANSIT_ANIM_DURATION + FOUND_ANIM_DURATION / 2f).OnComplete(() => StartLevelDelayed());
         }
     }
     void StartLevelDelayed()

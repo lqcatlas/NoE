@@ -190,7 +190,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     }
     void NodeParentInit()
     {
-        nodeParent.localPosition = new Vector3(-45f, 0f, 0f);
+        //nodeParent.localPosition = new Vector3(-45f, 0f, 0f);
     }
     void CollectAllPhotos()
     {
