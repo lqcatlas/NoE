@@ -13,7 +13,7 @@ public class RuleTagAnim : MonoBehaviour
     {
         seq = DOTween.Sequence();
         tmp.color = dConstants.UI.DefaultColor_1st;
-        seq.Append(tmp.DOColor(dConstants.UI.DefaultColor_3rd, CYCLE_DURATRION).SetLoops(-1, LoopType.Yoyo));
+        seq.Append(tmp.DOColor(dConstants.UI.DefaultColor_3rd, CYCLE_DURATRION).SetLoops(5000, LoopType.Yoyo));
     }
     private void OnDisable()
     {

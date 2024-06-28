@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class CurrencySet : MonoBehaviour
@@ -16,7 +17,9 @@ public class CurrencySet : MonoBehaviour
     Sequence seqStar;
     Sequence seqGem;
 
-    //public float ADJUST_ANIM_DURATION = .3f;
+    public readonly float PARTICLE_MOVE_DURATION = .8f;
+    public readonly float PARTICLE_MOVE_INTERVAL = .1f;
+    public readonly int MAX_PARTICLE_COUNT = 8;
 
     public void StarCountAdjustAnimation(int adjustAmount, bool preview = false)
     {
@@ -46,5 +49,32 @@ public class CurrencySet : MonoBehaviour
             seqGem.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration / step);
         }
         seqGem.AppendCallback(() => gemCount.SetText(playingRecords.gems.ToString()));
+    }
+    public void StarParticleAnimation(int adjustAmount, Vector3 originalPos)
+    {
+        int particleCnt = Mathf.Min(adjustAmount, MAX_PARTICLE_COUNT);
+        Sequence seq = DOTween.Sequence();
+        //Debug.LogWarning($"particleGen with {particleCnt} particles.");
+        for (int i = 0; i < particleCnt; i++)
+        {
+            GameObject tmp = Instantiate(starIcon, VFXHolder.singleton.transform);
+            tmp.transform.position = originalPos;
+            //tmp.transform.localScale = Vector3.one;
+            float timePos = i * PARTICLE_MOVE_INTERVAL;
+            seq.Insert(timePos, tmp.transform.DOMove(starIcon.transform.position, PARTICLE_MOVE_DURATION).SetEase(Ease.OutSine).OnComplete(()=>Destroy(tmp)));
+        }
+    }
+    public void GemParticleAnimation(int adjustAmount, Vector3 originalPos)
+    {
+        int particleCnt = Mathf.Min(adjustAmount, MAX_PARTICLE_COUNT);
+        Sequence seq = DOTween.Sequence();
+        for (int i = 0; i < particleCnt; i++)
+        {
+            GameObject tmp = Instantiate(gemIcon, VFXHolder.singleton.transform);
+            tmp.transform.position = originalPos;
+            //tmp.transform.localScale = Vector3.one;
+            float timePos = i * PARTICLE_MOVE_INTERVAL;
+            seq.Insert(timePos, tmp.transform.DOMove(gemIcon.transform.position, PARTICLE_MOVE_DURATION).SetEase(Ease.OutSine));
+        }
     }
 }

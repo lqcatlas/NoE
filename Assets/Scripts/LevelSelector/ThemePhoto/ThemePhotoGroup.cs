@@ -242,6 +242,8 @@ public class ThemePhotoGroup : MonoBehaviour
         seq.AppendCallback(() => LevelSelector.singleton.CloseSelector());
         //reset currency to orginal (actual cost triggered at finishing hidden obj)
         seq.AppendCallback(() => LevelSelector.singleton.currencySet.StarCountAdjustAnimation(0));
+        //register entering photo
+        LevelSelector.singleton.RegisterEnteringPos(photo.transform.position);
 
     }
     void GoToLatestLevel()
@@ -256,6 +258,8 @@ public class ThemePhotoGroup : MonoBehaviour
         seq.AppendInterval(dConstants.VFX.SelectorToLevelAnimTransitionPhase1);
         seq.AppendCallback(() => LevelLauncher.singleton.LaunchLevelByUID(targetLevelUID));
         seq.AppendCallback(() => LevelSelector.singleton.CloseSelector());
+        //register entering photo
+        LevelSelector.singleton.RegisterEnteringPos(photo.transform.position);
     }
     int GetLatestLevelUID()
     {

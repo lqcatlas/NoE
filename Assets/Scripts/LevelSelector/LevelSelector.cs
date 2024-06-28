@@ -31,12 +31,16 @@ public class LevelSelector : MonoBehaviour, ISaveData
     //[SerializeField] List<SelectorNode> nodes;
     //[SerializeField] List<SelectorTheme> themes;
     public ThemeResourceLookup themeResourceLookup;
+    public Vector3 enteringPos;
+    private int latestStarCollected;
+    private int latestGemCollected;
     
     
     [Header("Children Objs")]
     [SerializeField] GameObject page;
     [SerializeField] Transform nodeParent;
     public CurrencySet currencySet;
+    [SerializeField] Transform DefaultTokenSpawnPos;
     [SerializeField] List<ThemePhotoGroup> photos;
     [SerializeField] List<StarProgressBlocker> blockers;
     public MsgBox DesignerNoteBox;
@@ -69,7 +73,9 @@ public class LevelSelector : MonoBehaviour, ISaveData
             //all photos anim in the same time range
             photos[i].EnterPageAnimation();
         }
+        ReleaseLatestTokensCollected();
         //vfx end
+
     }
     public void CloseSelector()
     {
@@ -120,6 +126,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         CollectAllBlockers();
         TokenEarned(0);
         GemEarned(0);
+        enteringPos = DefaultTokenSpawnPos.position;
         page.SetActive(false);
     }
     public void UnlockTheme(int themeIndex, int tokenCost)
@@ -161,6 +168,11 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         currencySet.curStarCount.SetText(playerLevelRecords.tokens.ToString());
         currencySet.StarCountAdjustAnimation(count);
+        //record if not in selector view
+        if (!page.activeSelf && count > 0)
+        {
+            latestStarCollected += count;
+        }
     }
     void TokenSpent(int count)
     {
@@ -186,7 +198,46 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         currencySet.gemCount.SetText(playerLevelRecords.gems.ToString());
         currencySet.GemCountAdjustAnimation(count);
-        
+        //record if not in selector view
+        if (!page.activeSelf && count > 0)
+        {
+            latestGemCollected += count;
+        }
+
+    }
+    public void RegisterEnteringPos(Vector3 vec)
+    {
+        enteringPos = vec;
+    }
+    void ReleaseLatestTokensCollected()
+    {
+        if(latestStarCollected > 0)
+        {
+            //Debug.LogWarning($"collect {latestStarCollected} stars.");
+            currencySet.curStarCount.SetText((playerLevelRecords.tokens - latestStarCollected).ToString());
+            Sequence seq = DOTween.Sequence();
+            int count = latestStarCollected;
+            Vector3 enterPosSnapshot = enteringPos;
+            seq.AppendCallback(() => currencySet.StarParticleAnimation(count, enterPosSnapshot));
+            seq.AppendInterval(currencySet.PARTICLE_MOVE_DURATION + currencySet.PARTICLE_MOVE_INTERVAL);
+            seq.AppendCallback(() => currencySet.StarCountAdjustAnimation(count));
+            latestStarCollected = 0;
+            
+        }
+        if(latestGemCollected > 0)
+        {
+            //Debug.LogWarning($"collect {latestGemCollected} gems.");
+            currencySet.gemCount.SetText((playerLevelRecords.gems - latestGemCollected).ToString());
+            Sequence seq = DOTween.Sequence();
+            int count = latestGemCollected;
+            Vector3 enterPosSnapshot = enteringPos;
+            seq.AppendCallback(() => currencySet.GemParticleAnimation(count, enterPosSnapshot));
+            seq.AppendInterval(currencySet.PARTICLE_MOVE_DURATION + currencySet.PARTICLE_MOVE_INTERVAL);
+            seq.AppendCallback(() => currencySet.GemCountAdjustAnimation(count));
+            latestGemCollected = 0;
+        }
+        //reset enter position
+        enteringPos = DefaultTokenSpawnPos.position;
     }
     void NodeParentInit()
     {
