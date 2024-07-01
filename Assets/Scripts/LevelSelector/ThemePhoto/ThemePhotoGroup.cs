@@ -48,6 +48,8 @@ public class ThemePhotoGroup : MonoBehaviour
     }
     ThemePhotoStatus DetermineCurStatus()
     {
+        if (LevelSelector.singleton == null) Debug.LogError("missing selector singleton");
+        if (LevelSelector.singleton.playerLevelRecords == null) Debug.LogError("missing selector singleton's record ref");
         LevelRecords records = LevelSelector.singleton.playerLevelRecords;
         bool preReqMet = records.spentTokens >= themeData.unlockPrereq;
         bool unlocked = records.isThemeUnlocked(themeData.themeUID);
