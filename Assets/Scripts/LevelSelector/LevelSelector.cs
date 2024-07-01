@@ -34,6 +34,8 @@ public class LevelSelector : MonoBehaviour, ISaveData
     public Vector3 enteringPos;
     private int latestStarCollected;
     private int latestGemCollected;
+
+    private bool firstLoading = true;
     
     
     [Header("Children Objs")]
@@ -47,6 +49,10 @@ public class LevelSelector : MonoBehaviour, ISaveData
 
     public void GoToSelector()
     {
+        if (firstLoading)
+        {
+            InitSelector();
+        }
         for (int i = 0; i < photos.Count; i++)
         {
             photos[i].UpdatePhotoGroup();
@@ -114,7 +120,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     }
     private void Start()
     {
-        InitSelector();
+        //InitSelector();
     }
     void InitSelector()
     {
@@ -128,6 +134,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         GemEarned(0);
         enteringPos = DefaultTokenSpawnPos.position;
         page.SetActive(false);
+        firstLoading = false;
     }
     public void UnlockTheme(int themeIndex, int tokenCost)
     {
