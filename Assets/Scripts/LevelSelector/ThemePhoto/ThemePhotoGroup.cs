@@ -48,8 +48,6 @@ public class ThemePhotoGroup : MonoBehaviour
     }
     ThemePhotoStatus DetermineCurStatus()
     {
-        if (LevelSelector.singleton == null) Debug.LogError("missing selector singleton");
-        if (LevelSelector.singleton.playerLevelRecords == null) Debug.LogError("missing selector singleton's record ref");
         LevelRecords records = LevelSelector.singleton.playerLevelRecords;
         bool preReqMet = records.spentTokens >= themeData.unlockPrereq;
         bool unlocked = records.isThemeUnlocked(themeData.themeUID);
@@ -57,6 +55,12 @@ public class ThemePhotoGroup : MonoBehaviour
         bool perfect = true;
         curStars = 0;
         curGems = 0;
+
+        if (LevelSelector.singleton == null) Debug.LogError($"missing selector singleton on {gameObject.name}");
+        if (LevelSelector.singleton.playerLevelRecords == null) Debug.LogError($"missing selector singleton's record ref on {gameObject.name}");
+        if (themeData == null) Debug.LogError($"missing theme data on {gameObject.name}");
+        if (records == null) Debug.LogError($"missing records on {gameObject.name}");
+
         for (int i = 0; i < themeData.levels.Count; i++)
         {
             if (!records.isLevelFinished(themeData.levels[i].levelUID))
