@@ -118,8 +118,18 @@ public class LevelSelector : MonoBehaviour, ISaveData
     {
         InitSelector();
     }
+    void CheckSORef()
+    {
+        if(playerLevelRecords == null)
+        {
+            Debug.LogError("selector missing player level record scriptabl object. Try getting from resource");
+            playerLevelRecords = Resources.Load<LevelRecords>("save/LevelRecords");
+        }
+    }
     void InitSelector()
     {
+        CheckSORef();
+
         NodeParentInit();
         //themes.Clear();
         //nodes.Clear();
