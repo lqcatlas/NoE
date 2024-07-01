@@ -63,6 +63,7 @@ public class ThemePhotoGroup : MonoBehaviour
 
         for (int i = 0; i < themeData.levels.Count; i++)
         {
+            Debug.LogError($"checking level_{i} on {gameObject.name}");
             if (!records.isLevelFinished(themeData.levels[i].levelUID))
             {
                 perfect = false;
