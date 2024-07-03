@@ -156,11 +156,14 @@ public class AudioCentralCtrl : MonoBehaviour
     }
     public void VolumeReset()
     {
-        genericBgSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume * playerSettings.musicVolume;
-        themeBgSource.volume = MAX_MUSIC_VOLUME * playerSettings.audioVolume * playerSettings.musicVolume;
+        float musicVol = MAX_MUSIC_VOLUME * playerSettings.audioVolume * playerSettings.musicVolume;
+        float sfxVol = MAX_SFX_VOLUME * playerSettings.audioVolume * playerSettings.soundVolume;
+        genericBgSource.volume = musicVol;
+        themeBgSource.volume = musicVol;
+        keynoteSource.volume = sfxVol;
         for (int i = 0; i < SFXSources.Count; i++)
         {
-            SFXSources[i].volume = MAX_SFX_VOLUME * playerSettings.audioVolume * playerSettings.soundVolume;
+            SFXSources[i].volume = sfxVol;
         }
     }
 }

@@ -288,15 +288,15 @@ UID,Key,EN,CN
 287,locked_tm7,█ █ crafted by human and natural.,人与自然共创 █ █ 。
 288,locked_tm8,"█ █ , the heavier, the better.",█ █ 越重越好。
 289,locked_tm9,Colorful █ █ .,色彩斑斓的 █ █ 。
-290,manifesto_tm1,"The clock is the first theme, its production and design predate even before the project set its title, Numbers of Everything. From a certain perspective, it is the very starting point of the entire idea.<br><br>Staying up late doing nothing is a superficial appreciation of time, yet it is a frantic waste of time. The clock theme aims to express the individual's powerlessness in the face of the passage of time through this scenario.",时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。从某个角度去考虑，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
-291,manifesto_tm10,,这个主题诞生于我对日常主职工作产生严重倦怠的时期。大厂、高薪、良好的福利、社会的认可，光明的前途，可一旦产生了情绪，这些都会变得毫无意义。在不断变难、变大、变得荒诞的谜题的推进下，原本令人心驰神往的升职加薪会逐渐变得苍白无力。<br><br>希望大家对工作的感受都比“数字工程师”这样职位更加有趣，如果你不幸对它感同身受，是时候考虑“说再见”的事情了。
-292,manifesto_tm2,,硬币是第二个主题，它的灵感来源于用掷硬币来做决策这一生活中常见的玩笑时刻。<br><br>故事往往是这样展开的：嘴里说着不知该怎么选所以就决定要掷硬币。在硬币的正反出现后，这时又意识到了，这并不是自己满意的决定。然后会找理由反悔说“再掷一次吧”。<br><br>因此掷硬币不是用来决定命运，而是来帮助人更好地走进自己的内心，看清自己的想法。
-293,manifesto_tm4,,寿司是进入工程正规流程之后的第一个正式主题。它表达的要点是日本料理中运用最简单食材，通过不同的烹调与组合的变化产生出口感与味道上丰富可能。在实际的谜题中展现为通过两种食材不同的次序，就可以产生迥然相异的数字变化来解决谜题。
-294,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期是月相交替变化，容易掌握。引入月食规则的时候则使用了一些具有迷惑性的手段，从动画效果和文字上都暗示着它的无序。然后在通过一系列的挑战来引导大家对其内在规律的探索。<br><br>看到这段文字的你真的已经完全掌握了月食吗？就用后续的钻石挑战来确认一下吧。
+290,manifesto_tm1,"The clock is the first theme, its production and design predate even before the project set its title, Numbers of Everything. From a certain perspective, it is the very starting point of the entire idea.<br><br>Staying up late doing nothing is a superficial appreciation of time, yet it is a frantic waste of time. The clock theme aims to express the individual's powerlessness in the face of the passage of time through this scenario.",时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。换句话说，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
+291,manifesto_tm10,,这个主题诞生于我对全职工作产生严重倦怠的时期。尽管身处大公司，享有高薪、良好的福利和社会的认可，并拥有光明的前途，但在情绪的笼罩下，这一切都变得毫无意义。不断变难、变大、变得荒诞的谜题，旨在让最初简单的谜题逐渐显得枯燥无趣。<br><br>希望大家对工作的感受比“数字工程师”这样的职位更加有趣。如果你不幸对此感同身受，或许是时候考虑“说再见”了。
+292,manifesto_tm2,,硬币是第二个主题，它的灵感来源于生活中用掷硬币来做决策的常见玩笑时刻。<br><br>故事往往是这样展开的：嘴里说着不知该怎么选，于是决定掷硬币。当硬币落地时，却发现这个结果并不令人满意。于是，找个理由说“再掷一次吧”。<br><br>因此，掷硬币并不是用来决定命运的，而是帮助人们更好地走进自己的内心，看清自己的真实想法。
+293,manifesto_tm4,,寿司是进入工程正规流程后的第一个正式主题。它表达了日本料理的精髓：用最简单的食材，通过不同的烹饪方式和组合变化，创造出丰富多样的口感和味道。在实际的谜题中，这一理念表现为，通过两种食材的不同排列顺序，可以产生截然不同的数字变化，从而解决谜题。
+294,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期阶段，通过月相交替变化的简单规则，玩家可以轻松掌握。然而，当引入月食规则时，运用了各种迷惑性的手段，从动画效果到文字描述，都暗示着它的无序。随后，通过一系列关卡，引导玩家探索其内在的规律。<br><br>看到这段文字的你，真的已经完全掌握了月食的奥秘吗？就用后续的钻石挑战来确认一下吧。
 295,manifesto_tm6,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
-296,manifesto_tm7,,我喜欢盆景的原因就在于文字最后所提到的“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。
-297,manifesto_tm8,,这个主题想要表达的是王冠所拥有的两个主要概念。王冠承载着责任，因此不是可以轻易佩戴的。权力在强大的同时也带来了相应的不稳定性，因此王冠会不可避免的不断更迭。最终又收束到了一个小心思：不论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步着的。不知道这个彩蛋有没有被你感受到呢？
-298,manifesto_tm9,,一个放飞自我的主题。我大胆地引入了基于玩家反应而非纯粹计算的谜题。<br><br>它的灵感来源于我中学期间对于化学实验的复杂感受，我很喜欢理论化学所描绘的那个充满神秘感的分子世界，但同时实验化学需要的严谨操作又极大地折磨着我这个缺乏耐心的人。最终映射到游戏中，这种感受就变成了随时爆炸的实验，意图创造一种“悬崖边起舞”的感觉。
+296,manifesto_tm7,,我喜欢盆景的原因是关卡中文字最后所提到的：“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。
+297,manifesto_tm8,,王冠是一个体验流畅但表达平淡的主题。其灵感来源非常直接：既承其冠，必承其重，以及王权所带来的争夺与混乱。此外，还隐藏了一个小彩蛋：无论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步。不知道你是否已经察觉到这一点呢？
+298,manifesto_tm9,,烧瓶是一个放飞自我的主题，大胆地引入了基于玩家反应而非纯粹计算的谜题。<br><br>理论化学描绘的神秘分子世界深深吸引着我，但实验化学要求的严谨操作却极大地折磨着我。这种矛盾的感受在游戏中映射为随时可能爆炸的实验，意图创造一种“悬崖边起舞”的紧张感。
 299,narrative_tm1_ln001,The passage of time,溜走的时间
 300,narrative_tm1_ln002,"Tick, tock, tick, tock,",滴答滴答滴答，
 301,narrative_tm1_ln003,The clock tirelessly marches on.,时钟不知疲倦地前进。
@@ -472,7 +472,7 @@ UID,Key,EN,CN
 471,rule3_lv705,,和谐：移除与众不同的数字
 472,rule3_lv803,,  则加冕失败：=0
 473,rule3_lv904,,爆炸：数字均值大于7
-474,rule4_lv1006,,#3同时与上下或左右相邻数字奇偶一致
+474,rule4_lv1006,,#3与上下或左右数字奇偶同时一致
 475,rule4_lv203,FLIP the coin after playing,打出后硬币翻面
 476,rule4_lv210,TOSS the coin after playing,打出后投掷硬币
 477,rule4_lv410,Fish+Rice: Onigiri(=2),鱼+米： 饭团（=2）
@@ -484,7 +484,7 @@ UID,Key,EN,CN
 483,rule4_lv711,,（相等、奇偶、质数、成对、不同）
 484,rule4_lv807,,加冕后比相邻领土大
 485,rule4_lv905,,爆炸：百位数字为7
-486,rule5_lv1008,,#4在环形相邻数字中不是最大或最小
+486,rule5_lv1008,,#4与环形相邻数字相比不是最大或最小
 487,rule5_lv404,Fish and Rice appears alternatively,鱼和米交替出现
 488,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
 489,rule5_lv716,,平衡： █ █ 相等
@@ -525,8 +525,8 @@ UID,Key,EN,CN
 524,ui_goal_current_sum,Current Sum: ,当前数字之和：
 525,ui_goal_missing_digits,Missing:,缺失数字：
 526,ui_goal_section_title,Goal,目标
-527,ui_hiddengem_notice_desc,This is your first Hidden Gem Level. Hidden Gems levels are more challenging and complicated. <br><br>By accomplishing these levels you will earn Gems instead of regular Stars. Gem is a rarely found point that remarks your mastering of Numbers of Everything. <br><br>Gems mainly from Hidden Gem levels but can also be found in other “hidden” ways. Continue playing and discover more mystery of this game.,这是您的第一个隐藏宝石关。隐藏宝石关比常规关卡更加困难或复杂。<br><br>完成这些关卡，将获得宝石而非星星。宝石是一种更罕见的积分，它代表着您对《万物之数》的大师级掌握。<br><br>宝石主要来自隐藏宝石关卡，但也可以通过其他更加“隐藏”的方式获得。请继续游戏，发现的更多秘密所在吧！
-528,ui_hiddengem_notice_title,Hidden Gem Levels,隐藏宝石关
+527,ui_hiddengem_notice_desc,Hidden Gem levels are more challenging and complicated. <br><br>By accomplishing these levels you will earn <sprite name=currency_gem> Gems instead of regular <sprite name=currency_star> Stars. Gem is a rarely found point that remarks your mastering of Numbers of Everything. <br><br>Gems mainly come from Hidden Gem levels but can also be found in other “hidden” ways. Continue playing and discover more mystery of this game.,隐藏宝石关比常规关卡更加困难或复杂。<br><br>完成这些关卡，将获得 <sprite name=currency_gem> 宝石而非 <sprite name=currency_star> 星星。宝石是一种更罕见的积分，它代表着您对《万物之数》的大师级掌握。<br><br>宝石主要来自隐藏宝石关卡，但也可以通过其他更加“隐藏”的方式获得。请继续游戏，发现的更多秘密所在吧！
+528,ui_hiddengem_notice_title,<sprite name=currency_gem> Hidden Gem Discovered!,<sprite name=currency_gem> 隐藏宝石关
 529,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the riddle:,根据谜语找到<b>物件</b>：
 530,ui_new_tag,NEW,新
 531,ui_perfect_status,(Perfect),（完美通关）
