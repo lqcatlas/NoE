@@ -157,7 +157,7 @@ public class LM_001_Clock : LevelMasterBase
         {
             return BoardCalculation.CountX_All(levelData.curBoard, 5);
         }
-        else if (levelData.levelIndex == 9)
+        else if (levelData.levelIndex == 10)
         {
             return BoardCalculation.CountX_All(levelData.curBoard, 6);
         }
