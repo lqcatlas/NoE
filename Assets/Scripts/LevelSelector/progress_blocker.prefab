@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   records: {fileID: 11400000, guid: 450fdbb801f43e743baa8ed62a117cb3, type: 2}
-  requiredStars: 0
+  requiredStars: 18
   text: {fileID: 4740290039050873600}
   bg: {fileID: 2968755902569969823}
   blocker: {fileID: 8167737612960103958}
