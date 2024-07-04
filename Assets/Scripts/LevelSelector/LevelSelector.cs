@@ -182,7 +182,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         playerLevelRecords.spentTokens += count;
         if (playerLevelRecords.tokens < 0)
         {
-            Debug.LogError(string.Format("Selector Token Count Reacn invalid number:{0}.", playerLevelRecords.tokens));
+            Debug.LogError(string.Format("Selector Token Count Reach invalid number:{0}.", playerLevelRecords.tokens));
         }
         currencySet.curStarCount.SetText(playerLevelRecords.tokens.ToString());
         currencySet.StarCountAdjustAnimation(-count);

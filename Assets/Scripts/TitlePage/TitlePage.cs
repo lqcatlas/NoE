@@ -201,6 +201,8 @@ public class TitlePage : MonoBehaviour, ISaveData
     {
         //Debug.Log(string.Format("player settings save data to file, intro count:{0}", playerSettings.introCount));
         SaveManager.controller.Insert(string.Format(AUDIOVOLUME_SAVE_KEY), playerSettings.audioVolume.ToString());
+        SaveManager.controller.Insert(string.Format(MUSICVOLUME_SAVE_KEY), playerSettings.musicVolume.ToString());
+        SaveManager.controller.Insert(string.Format(SOUNDVOLUME_SAVE_KEY), playerSettings.soundVolume.ToString());
         SaveManager.controller.Insert(string.Format(INTROCOUNT_SAVE_KEY), playerSettings.introCount.ToString());
     }
     #endregion
