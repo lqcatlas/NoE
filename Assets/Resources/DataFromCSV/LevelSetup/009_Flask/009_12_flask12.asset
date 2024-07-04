@@ -59,16 +59,16 @@ MonoBehaviour:
       value: 238
       status: 0
     - coord: {x: 1, y: 0}
-      value: 192
-      status: 0
-    - coord: {x: 2, y: 0}
       value: 154
       status: 0
-    - coord: {x: 3, y: 0}
+    - coord: {x: 2, y: 0}
       value: 126
       status: 0
-    - coord: {x: 4, y: 0}
+    - coord: {x: 3, y: 0}
       value: 80
+      status: 0
+    - coord: {x: 4, y: 0}
+      value: 5
       status: 0
     toolCount: 4000
     toolStatus: 0
