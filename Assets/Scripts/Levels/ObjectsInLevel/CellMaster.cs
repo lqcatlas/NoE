@@ -24,7 +24,7 @@ public class CellMaster : MonoBehaviour
     public Transform numberGroup;
     [SerializeField] TextMeshPro numberTxt;
     [SerializeField] Transform numberInSpriteGroup;
-    [SerializeField] List<SpriteRenderer> numberInSprites;
+    public List<SpriteRenderer> numberInSprites;
     [SerializeField] BoxCollider2D cellCollider;
     public SpriteRenderer frameSprt;
     public SpriteRenderer maskSprt;

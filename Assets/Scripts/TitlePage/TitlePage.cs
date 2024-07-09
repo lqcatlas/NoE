@@ -67,13 +67,14 @@ public class TitlePage : MonoBehaviour, ISaveData
         {
             SwitchToEN();
         }
-        //playtest
-        if (firstOpening)
+        //playtest only
+        /*if (firstOpening)
         {
             Sequence seq = DOTween.Sequence();
             seq.AppendInterval(.5f);
             seq.AppendCallback(() => ShowPlaytestPopup());
         }
+        */
     }
     public void IntroAnimToTitlePage()
     {

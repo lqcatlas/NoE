@@ -1,6 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using UnityEngine;
 
@@ -9,10 +7,13 @@ public class AdvSpriteSlider : MonoBehaviour
     public List<Sprite> availableSprites;
     public Sprite curSprite;
     public float triggerChance = 1f;
-    //public bool SwitchByOrder;
+    public bool SwitchByOrder = false;
     private void Start()
     {
-        ResetBaseSprite();
+        if(availableSprites.Count == 0)
+        {
+            ResetBaseSprite();
+        }
     }
     public void ResetBaseSprite()
     {
@@ -31,13 +32,14 @@ public class AdvSpriteSlider : MonoBehaviour
         {
             int locator = curSprite.name.IndexOf("@");
             string spriteNameLocator = curSprite.name.Substring(0, locator);
-            //Debug.Log(string.Format("looking for sprite with name of {0}", spriteNameLocator, locator));
+            Debug.Log(string.Format("looking for sprite with name of {0}", spriteNameLocator, locator));
 
             availableSprites.Clear();
+            //Debug.LogWarning("potential cpu consuming code LoadALL()");
             List<Sprite> allSprites = Resources.LoadAll<Sprite>("sprites").ToList();
             for (int i = 0; i < allSprites.Count; i++)
             {
-                if (allSprites[i].name.Contains(spriteNameLocator) && allSprites[i].name != curSprite.name)
+                if (allSprites[i].name.Contains(spriteNameLocator+"@") && allSprites[i].name != curSprite.name)
                 {
                     availableSprites.Add(allSprites[i]);
                 }
@@ -58,12 +60,15 @@ public class AdvSpriteSlider : MonoBehaviour
         float roll = Random.Range(0f, 1f);
         if(roll <= triggerChance)
         {
-            int rng = Random.Range(0, availableSprites.Count);
+            int index = 0;
+            if (!SwitchByOrder)
+            {
+                index = Random.Range(0, availableSprites.Count);
+            }
             availableSprites.Add(curSprite);
-            curSprite = availableSprites[rng];
-            availableSprites.RemoveAt(rng);
+            curSprite = availableSprites[index];
+            availableSprites.RemoveAt(index);
             GetComponent<SpriteRenderer>().sprite = curSprite;
         }
-        
     }
 }

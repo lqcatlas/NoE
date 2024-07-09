@@ -1785,3 +1785,134 @@ MonoBehaviour:
   - key: ui_setting_sound
     EN: Sound
     CN: "\u97F3\u6548"
+  - key: themename_tm11
+    EN: 
+    CN: "\u4E09\u53F6\u8349"
+  - key: locked_tm11
+    EN: 
+    CN: "\u5E78\u8FD0\u7684 \u2588 \u2588 \u3002"
+  - key: unlocked_tm11
+    EN: 
+    CN: "\u5E78\u8FD0\u7684<b>\u56DB\u53F6\u8349</b>\u3002"
+  - key: hint_tm11
+    EN: 
+    CN: "\u5B83\u662F\u7279\u522B\u7684\u5E78\u8FD0\u3002"
+  - key: date_tm11
+    EN: 
+    CN: 2024/07/09
+  - key: manifesto_tm11
+    EN: 
+    CN: "\u6211\u559C\u6B22\u76C6\u666F\u7684\u539F\u56E0\u662F\u5173\u5361\u4E2D\u6587\u5B57\u6700\u540E\u6240\u63D0\u5230\u7684\uFF1A\u201C\u76C6\u666F\u7684\u7F8E\u6765\u81EA\u4E8E\u53D1\u73B0\u800C\u975E\u521B\u9020\u201D\u3002\u8FD9\u548C\u6211\u5BF9\u6E38\u620F\u5F00\u53D1\u7684\u5BA1\u7F8E\u662F\u4E00\u81F4\u7684\uFF0C\u597D\u7684\u6E38\u620F\u51B3\u975E\u6765\u6E90\u4E8E\u5BF9\u67D0\u4E2A\u7EDD\u4F73\u521B\u610F\u575A\u51B3\u5730\u6267\u884C\u3002\u597D\u7684\u521B\u610F\u662F\u5728\u5F00\u53D1\u8FC7\u7A0B\u4E2D\u7ECF\u7531\u5F00\u53D1\u8005\u5BF9\u6E38\u620F\u66F4\u6DF1\u5165\u5730\u4F53\u9A8C\u800C\u9010\u6B65\u53D1\u73B0\u7684\u3002"
+  - key: prompt_tm11
+    EN: 
+    CN: Photo is created by Midjourney using the following prompt:<br>A realistic
+      photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens,
+      using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9
+  - key: narrative_tm11_ln001
+    EN: 
+    CN: "\u5FC3\u4EEA\u7684\u5DE5\u724C"
+  - key: narrative_tm11_ln002
+    EN: 
+    CN: "\u9762\u8BD5\u9898\uFF1A\u627E\u5230\u76EE\u6807\u6570\u5B57\u3002"
+  - key: narrative_tm11_ln003
+    EN: 
+    CN: "\u5165\u804C\u6210\u4E3A<b>\u6570\u5B57\u5DE5\u7A0B\u5E08</b>\u3002"
+  - key: narrative_tm11_ln004
+    EN: 
+    CN: "\u7EE7\u7EED\u8BA4\u771F\u5DE5\u4F5C\uFF0C"
+  - key: narrative_tm11_ln005
+    EN: 
+    CN: "\u7A33\u6B65\u664B\u5347\u3002"
+  - key: narrative_tm11_ln006
+    EN: 
+    CN: "\u52AA\u529B\uFF0C"
+  - key: narrative_tm11_ln007
+    EN: 
+    CN: "\u6210\u4E3A<b>\u8D44\u6DF1</b>\u6570\u5B57\u5DE5\u7A0B\u5E08\u3002"
+  - key: narrative_tm11_ln008
+    EN: 
+    CN: "\u594B\u6597\uFF0C"
+  - key: narrative_tm11_ln009
+    EN: 
+    CN: "\u664B\u5347\u4E3A\u6570\u5B57\u5DE5\u7A0B<b>\u4E13\u5BB6</b>\u3002"
+  - key: narrative_tm11_ln010
+    EN: 
+    CN: "\u7136\u800C\uFF0C"
+  - key: narrative_tm11_ln011
+    EN: 
+    CN: "\u8FD9\u4E00\u5207\u771F\u7684\u503C\u5F97\u4E48\uFF1F"
+  - key: narrative_tm11_ln012
+    EN: 
+    CN: "\u5DE5\u4F5C\u6CA1\u53D8\uFF0C\u4F46\u4EBA\u4F1A<b>\u53D8</b>\u3002"
+  - key: narrative_tm11_ln013
+    EN: 
+    CN: "\u662F\u65F6\u5019\u8BF4\u518D\u89C1\u4E86\u3002"
+  - key: narrative_tm11_ln014
+    EN: 
+    CN: 
+  - key: narrative_tm11_ln015
+    EN: 
+    CN: 
+  - key: levelname_lv1101
+    EN: 
+    CN: 1
+  - key: levelname_lv1102
+    EN: 
+    CN: 2
+  - key: levelname_lv1103
+    EN: 
+    CN: 3
+  - key: levelname_lv1104
+    EN: 
+    CN: 4
+  - key: levelname_lv1105
+    EN: 
+    CN: 5
+  - key: levelname_lv1106
+    EN: 
+    CN: 6
+  - key: levelname_lv1107
+    EN: 
+    CN: 7
+  - key: levelname_lv1108
+    EN: 
+    CN: 8
+  - key: levelname_lv1109
+    EN: 
+    CN: 9
+  - key: levelname_lv1110
+    EN: 
+    CN: 10
+  - key: goal_lv1101
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1102
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1103
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1104
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1105
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1106
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1107
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1108
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1109
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1110
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: rule1_lv1101
+    EN: 
+    CN: "\u7EC6\u5FC3\u89C2\u5BDF\uFF0C\u9009\u51FA\u56DB\u53F6\u8349"

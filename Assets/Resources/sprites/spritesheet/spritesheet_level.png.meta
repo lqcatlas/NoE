@@ -839,7 +839,7 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -860,7 +860,7 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -881,7 +881,7 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -902,7 +902,7 @@ TextureImporter:
         width: 100
         height: 100
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -910,6 +910,216 @@ TextureImporter:
       bones: []
       spriteID: 5fa5d1953fba43e4fb6a5c3f9ecc2424
       internalID: -393828856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_1_clover_1
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1440
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d61136a2f1d01749a53d313a77ca637
+      internalID: 1496111474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_2_clover_2
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1440
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a8bc8e3f2afb64c90af5398c54fc45
+      internalID: -280242465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_3_clover_3
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1440
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da048e24edd67de429203088a96e57cb
+      internalID: -22787713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_4_clover_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1440
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdf376140d1c9e45b9ee0f142541f58
+      internalID: 745213797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_5_clover_5
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1440
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e368db4c98697b449412393513fa9c9
+      internalID: -243008836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_6_clover_6
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1290
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df02456510bd9943b82dcced0677f96
+      internalID: -1336217764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_7_clover_7
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1290
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a450f515937b86a47912b86168a1f385
+      internalID: -1920784882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_8_clover_8
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1290
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0fc695f8351ae4d91bbd27fb5b49b7
+      internalID: -1463333370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_9_clover_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1290
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad9b6376796a304d9ed1ca0c4d8c16e
+      internalID: -843163745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: number_0_clover_10
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1290
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f491242be15f4844cbf2105aa6809ef1
+      internalID: 1731365867
       vertices: []
       indices: 
       edges: []
@@ -926,45 +1136,55 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       ui_split_sign: -742677806
-      ui_cell_frame_bg: 53423286
+      number_3_clover_3: -22787713
       number_5@v1: -280818320
       number_2@v2: 1504684770
       ui_CN_lan: -209950883
-      number_4@v2: 1195695166
       number_3@v1: 1254369216
       ui_close_sign: -925844654
       number_7@v1: 233180441
+      ui_level_finished_fill: -1489817116
+      number_1@v1: 225791110
+      number_6@v1: 1517122844
+      ui_cell_frame_v2: 262004128
+      number_1_clover_1: 1496111474
+      number_0@v1: 1797534162
+      number_1@v2: -1944275254
+      ui_retry_sign: 1265108339
+      ui_line_vertical_v2: 1496561048
+      number_6@v2: -1841270364
+      ui_setting: 212667890
+      number_4@v1: 1581033602
+      ui_line_vertical_v1: -1736352777
+      number_7_clover_7: -1920784882
+      number_6_clover_6: -1336217764
+      ui_EN_lan: -393828856
+      number_3@v2: 816253418
+      number_8_clover_8: -1463333370
+      number_9_clover_9: -843163745
+      number_0_clover_10: 1731365867
+      ui_cell_frame_bg: 53423286
+      number_4@v2: 1195695166
       number_9@v2: -1286916706
       ui_level_finished_frame: -1334033238
-      number_1@v1: 225791110
       ui_cell_frame_v1: 843124394
-      ui_level_finished_fill: -1489817116
-      number_6@v1: 1517122844
       ui_rewind_sign: -1668834661
       ui_line_horizontal_v1: 1619020603
-      ui_cell_frame_v2: 262004128
+      number_5_clover_5: -243008836
       ui_time_sign: 1359382188
-      number_0@v1: 1797534162
       number_9@v1: -998961558
-      number_1@v2: -1944275254
       number_8@v2: -828545570
-      ui_retry_sign: 1265108339
+      number_4_clover_4: 745213797
       ui_line_horizontal_v2: 218509474
       ui_step_sign: 1657405103
       number_8@v1: 1657182079
       number_0@v2: 544276465
-      ui_line_vertical_v2: 1496561048
-      number_6@v2: -1841270364
-      number_5@v2: -1797783872
-      number_4@v1: 1581033602
-      ui_line_vertical_v1: -1736352777
-      number_2@v1: -2026269862
       ui_power_off: 1471748425
-      ui_setting: 212667890
+      number_5@v2: -1797783872
+      number_2@v1: -2026269862
       number_7@v2: 1586702711
-      ui_EN_lan: -393828856
       ui_arrow_sign: -1647782255
-      number_3@v2: 816253418
+      number_2_clover_2: -280242465
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1485,6 +1485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1068716852905579275}
   - component: {fileID: 7729424902592127857}
+  - component: {fileID: 2176918844206588410}
   - component: {fileID: 950727745752961598}
   m_Layer: 0
   m_Name: note_text
@@ -1555,6 +1556,20 @@ MeshRenderer:
   m_SortingLayer: -2
   m_SortingOrder: 10
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &2176918844206588410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4588405764978806259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71c5bb8daca84304f8f1ce78ec59d689, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizeTarget: {fileID: 950727745752961598}
+  LocalizedKey: '@Loc=ui_designer_note_title@@'
 --- !u!114 &950727745752961598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1697,7 +1712,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7317685246071337448}
   - component: {fileID: 179225388577457656}
-  - component: {fileID: 9067920623138909553}
   m_Layer: 0
   m_Name: designer_note
   m_TagString: Untagged
@@ -1740,20 +1754,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   label: {fileID: 7191963361288349526}
   text: {fileID: 950727745752961598}
---- !u!114 &9067920623138909553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5568128567435621011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71c5bb8daca84304f8f1ce78ec59d689, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  localizeTarget: {fileID: 950727745752961598}
-  LocalizedKey: '@Loc=ui_designer_note_title@@'
 --- !u!1 &5957332967082530883
 GameObject:
   m_ObjectHideFlags: 0
