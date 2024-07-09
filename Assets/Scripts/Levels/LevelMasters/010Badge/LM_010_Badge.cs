@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using Unity.VisualScripting;
 
 public class LM_010_Badge : LevelMasterBase
 {
@@ -89,10 +87,12 @@ public class LM_010_Badge : LevelMasterBase
                     case (int)CellStatus.found:
                         //Debug.LogError(string.Format("found is an unsupported status in Badge's CellInit() at {0},{1}", temp_cellData.coord.x, temp_cellData.coord.y));
                         hub.boardMaster.cells[i].SetCellInteractable(false);
+                        hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
                         break;
                     case (int)CellStatus.wrong:
                         //Debug.LogError(string.Format("wrong is an unsupported status in Badge's CellInit() at {0},{1}", temp_cellData.coord.x, temp_cellData.coord.y));
                         hub.boardMaster.cells[i].SetCellInteractable(false);
+                        hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
                         break;
                     default:
                         hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
@@ -140,7 +140,6 @@ public class LM_010_Badge : LevelMasterBase
         }
         if (wrongSelection)
         {
-            //to do
             levelData.curBoard.GetCellDataByCoord(coord).status = (int)CellStatus.wrong;
         }
         else

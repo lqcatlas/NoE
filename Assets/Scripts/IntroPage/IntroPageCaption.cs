@@ -7,12 +7,12 @@ using DG.Tweening;
 public class IntroPageCaption : MonoBehaviour
 {
     [Header("Static Params")]
-    static float MaskEndPos = 60f;
-    static float MaskAnimDuration = 3f;
+    //static float MaskEndPos = 60f;
+    //static float MaskAnimDuration = 3f;
     static float FadeInDuration = 1.5f;
     static float FadeOutDuration = 1f;
     [Header("Children Objs")]
-    [SerializeField] RectTransform caption_mask;
+    //[SerializeField] RectTransform caption_mask;
     [SerializeField] TextMeshPro caption;
 
     public void CaptionUpdate(string txt)
