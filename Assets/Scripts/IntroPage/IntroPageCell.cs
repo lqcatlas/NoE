@@ -39,4 +39,9 @@ public class IntroPageCell : MonoBehaviour
         numberSprt.DOFade(1f, CellFadeInTime);
         frameSprt.DOFade(1f, CellFadeInTime).OnComplete(()=> cellCollider.enabled = true);
     }
+    public void CellDisable()
+    {
+        cellCollider.enabled = false;
+        
+    }
 }
