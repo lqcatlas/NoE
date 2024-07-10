@@ -38,10 +38,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm11_ln008@@'
   - '@Loc=narrative_tm11_ln009@@'
   - '@Loc=narrative_tm11_ln010@@'
-  - '@Loc=narrative_tm11_ln011@@'
-  - '@Loc=narrative_tm11_ln012@@'
-  - '@Loc=narrative_tm11_ln013@@'
-  - '@Loc=narrative_tm11_ln014@@'
   goal: '@Loc=goal_lv1112@@'
   ruleset:
   - tag: 0

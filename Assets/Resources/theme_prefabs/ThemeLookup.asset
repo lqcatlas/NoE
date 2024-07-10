@@ -19,7 +19,7 @@ MonoBehaviour:
     ThemeSpecialHub: {fileID: 4929449583468539589, guid: 53e783262bb415a47ab02125b3dd51ba, type: 3}
     ThemeHiddenObjPage: {fileID: 1842198589991735818, guid: 93ddc0b89494e3a44be6fe0b35000746, type: 3}
     ThemeSprite: {fileID: 1536629255, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
-    ThemePhoto: {fileID: 21300000, guid: 8183a9bd83b6d304eb11f80fc3530160, type: 3}
+    ThemePhoto: {fileID: 21300000, guid: 08e71ab38ac73584e98f4d6185320813, type: 3}
     ThemeMusic: {fileID: 8300000, guid: 384df03e46ee37c4fb2894bc1baaf576, type: 3}
   - Theme: coin
     ThemeID: 2
@@ -27,7 +27,7 @@ MonoBehaviour:
     ThemeSpecialHub: {fileID: 4404011959201444184, guid: 748139364fa414f41bb0831e34d2a26a, type: 3}
     ThemeHiddenObjPage: {fileID: 5662751518621937210, guid: 3e416c735035ab74ca78aa5e9d60212a, type: 3}
     ThemeSprite: {fileID: 584681723, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
-    ThemePhoto: {fileID: 21300000, guid: 243236c899d26ed4d80acb14abb8823a, type: 3}
+    ThemePhoto: {fileID: 21300000, guid: e81c70160f5c7c2459f8032a70cd223f, type: 3}
     ThemeMusic: {fileID: 8300000, guid: b588735998681594fa8394fbebf7bb3b, type: 3}
   - Theme: sushi
     ThemeID: 4
@@ -35,7 +35,7 @@ MonoBehaviour:
     ThemeSpecialHub: {fileID: 5242734479810822178, guid: 284f4d5063bddca4d920c939660afb91, type: 3}
     ThemeHiddenObjPage: {fileID: 6105738653722550372, guid: d71b4112dba7022468fad2b8a9fc9c0a, type: 3}
     ThemeSprite: {fileID: -1284633540, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
-    ThemePhoto: {fileID: 21300000, guid: b51fcb5b9964ea949ae1e3928060812e, type: 3}
+    ThemePhoto: {fileID: 21300000, guid: 4e2fd378d568d9e42ad7a0da18478901, type: 3}
     ThemeMusic: {fileID: 8300000, guid: f87b8c149c07f004f8a6cc487ae9fd4a, type: 3}
   - Theme: moon
     ThemeID: 5
@@ -43,7 +43,7 @@ MonoBehaviour:
     ThemeSpecialHub: {fileID: 4644139329102416059, guid: 7f32a5fd5de3ddc43bca66f9f6e10a69, type: 3}
     ThemeHiddenObjPage: {fileID: 7870028002826694084, guid: 3c8c6ec120b12d0458e06e8e03de0205, type: 3}
     ThemeSprite: {fileID: 2024725601, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
-    ThemePhoto: {fileID: 21300000, guid: 2a96f5de01c99ef49bce6cadd7317b07, type: 3}
+    ThemePhoto: {fileID: 21300000, guid: e4b9f569addcf584589d4389532af77f, type: 3}
     ThemeMusic: {fileID: 8300000, guid: 50c0a5bea882eeb45a70669f23d45c45, type: 3}
   - Theme: lightbulb
     ThemeID: 6
@@ -51,7 +51,7 @@ MonoBehaviour:
     ThemeSpecialHub: {fileID: 5242734479810822178, guid: df91e5e460decb9459e82338f7113b1e, type: 3}
     ThemeHiddenObjPage: {fileID: 5858492315834017260, guid: d63766f59868661468a79ab83bfa2980, type: 3}
     ThemeSprite: {fileID: -1481849294, guid: 8f15d46fdc684864e9354af1594e92ca, type: 3}
-    ThemePhoto: {fileID: 21300000, guid: 1a47a6de69d7efb4ab8c5c7b327be45b, type: 3}
+    ThemePhoto: {fileID: 21300000, guid: 63f80811b9e37f548a771032b4ade471, type: 3}
     ThemeMusic: {fileID: 8300000, guid: e6bdf0c78df27204598f013530c627f3, type: 3}
   - Theme: bonsai
     ThemeID: 7

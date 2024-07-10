@@ -21,8 +21,7 @@ MonoBehaviour:
   theme: '@Loc=themename_tm11@@'
   title: '@Loc=levelname_lv1104@@'
   newInitNarrative: '@Loc=narrative_tm11_ln004@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm11_ln005@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm10_ln001@@'
   - '@Loc=narrative_tm10_ln002@@'

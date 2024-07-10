@@ -20,7 +20,7 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 73532536db07f814ab0a209752a9ea17, type: 2}
   theme: '@Loc=themename_tm11@@'
   title: '@Loc=levelname_lv1107@@'
-  newInitNarrative: '@Loc=narrative_tm11_ln008@@'
+  newInitNarrative: '@Loc=narrative_tm11_ln007@@'
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm10_ln001@@'
@@ -34,7 +34,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm11_ln004@@'
   - '@Loc=narrative_tm11_ln005@@'
   - '@Loc=narrative_tm11_ln006@@'
-  - '@Loc=narrative_tm11_ln007@@'
   goal: '@Loc=goal_lv1107@@'
   ruleset:
   - tag: 0
