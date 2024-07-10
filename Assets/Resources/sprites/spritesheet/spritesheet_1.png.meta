@@ -3359,7 +3359,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3367,6 +3367,48 @@ TextureImporter:
       bones: []
       spriteID: 6aba855cbfc58c747be839f7c09c57b4
       internalID: 31474530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover_tool@v1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563b65fa0217e784ca531c885c006c97
+      internalID: -1679121304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover_tool@v2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d92089a21c9f1a40be904960ab469ac
+      internalID: -570091471
       vertices: []
       indices: 
       edges: []
@@ -3401,6 +3443,7 @@ TextureImporter:
       window3_fill: 46753427
       clock_tool_v4: 460082281
       clocktime_tool_v1: 2019611272
+      clover_tool@v1: -1679121304
       ILSH_I_v2: 1186618194
       cell_frame@v5: -1192213075
       ILSH_S_v1: 129808772
@@ -3446,6 +3489,7 @@ TextureImporter:
       sign_unknown: 31474530
       coin_shape_11: -1872248968
       clocktime_tool_v11: 1014170568
+      clover_tool@v2: -570091471
       flask@v2: -1769165631
       bulb_off@v2: 1976225001
       coin_shape_15: 1042714110

@@ -48,7 +48,7 @@ public class LM_011_Clover : LevelMasterBase
         if(levelData.levelIndex >= RANDOM_LEVEL_INDEX)
         {
             int rng = Random.Range(0, levelData.initBoard.cells.Count);
-            Debug.Log($"set cell {rng} to special");
+            //Debug.Log($"set cell {rng} to special");
             levelData.curBoard.cells[rng].status = 1;
         }
         //set each cell based on status

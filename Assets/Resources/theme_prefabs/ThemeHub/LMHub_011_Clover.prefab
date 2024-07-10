@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e37bd6e1eeb7d5f47b4be542a5861084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSprite: {fileID: 1320047159, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+  toolSprite: {fileID: -1679121304, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   toolStatusGroup:
     toolStatus: []
   bgHolder: {fileID: 4068668159233435932}

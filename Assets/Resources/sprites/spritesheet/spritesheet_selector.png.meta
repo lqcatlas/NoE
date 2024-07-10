@@ -608,7 +608,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -616,6 +616,27 @@ TextureImporter:
       bones: []
       spriteID: 598221b957b8fd7448f2388646747606
       internalID: 558831668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover_themeicon
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 960
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f80e49398d45b49b4f999d6c909b7e
+      internalID: -812761619
       vertices: []
       indices: 
       edges: []
@@ -649,6 +670,7 @@ TextureImporter:
       spritesheet_selector_43: -300873437
       spritesheet_selector_29: 655685300
       spritesheet_selector_68: 2069845742
+      clover_themeicon: -812761619
       spritesheet_selector_36: 1078812815
       spritesheet_selector_15: -735079984
       spritesheet_selector_42: -543741660
