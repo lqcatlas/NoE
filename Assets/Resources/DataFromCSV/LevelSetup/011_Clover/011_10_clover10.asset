@@ -15,9 +15,9 @@ MonoBehaviour:
   levelUID: 1110
   themeIndex: 11
   levelIndex: 10
-  nextLevelIndex: 0
+  nextLevelIndex: 1111
   previousLevel: {fileID: 11400000, guid: e9f2970c57061ba4aa296598888d5033, type: 2}
-  nextLevel: {fileID: 11400000, guid: 7b7f6dca908cc1c4e9c5feeb397c242b, type: 2}
+  nextLevel: {fileID: 11400000, guid: a3fbea31cf3fda6428b50b2e3f9d853e, type: 2}
   theme: '@Loc=themename_tm11@@'
   title: '@Loc=levelname_lv1110@@'
   newInitNarrative: '@Loc=narrative_tm11_ln012@@'
@@ -46,9 +46,9 @@ MonoBehaviour:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv1101@@'
   isHard: 0
-  allowRewind: 1
+  allowRewind: 0
   initBoard:
-    boardSize: {x: 6, y: 6}
+    boardSize: {x: 7, y: 7}
     cells:
     - coord: {x: 0, y: 0}
       value: 0
@@ -66,6 +66,9 @@ MonoBehaviour:
       value: 0
       status: 0
     - coord: {x: 5, y: 0}
+      value: 0
+      status: 0
+    - coord: {x: 6, y: 0}
       value: 0
       status: 0
     - coord: {x: 0, y: 1}
@@ -86,6 +89,9 @@ MonoBehaviour:
     - coord: {x: 5, y: 1}
       value: 0
       status: 0
+    - coord: {x: 6, y: 1}
+      value: 0
+      status: 0
     - coord: {x: 0, y: 2}
       value: 0
       status: 0
@@ -102,6 +108,9 @@ MonoBehaviour:
       value: 0
       status: 0
     - coord: {x: 5, y: 2}
+      value: 0
+      status: 0
+    - coord: {x: 6, y: 2}
       value: 0
       status: 0
     - coord: {x: 0, y: 3}
@@ -122,6 +131,9 @@ MonoBehaviour:
     - coord: {x: 5, y: 3}
       value: 0
       status: 0
+    - coord: {x: 6, y: 3}
+      value: 0
+      status: 0
     - coord: {x: 0, y: 4}
       value: 0
       status: 0
@@ -136,8 +148,11 @@ MonoBehaviour:
       status: 0
     - coord: {x: 4, y: 4}
       value: 0
-      status: 1
+      status: 0
     - coord: {x: 5, y: 4}
+      value: 0
+      status: 1
+    - coord: {x: 6, y: 4}
       value: 0
       status: 0
     - coord: {x: 0, y: 5}
@@ -156,6 +171,30 @@ MonoBehaviour:
       value: 0
       status: 0
     - coord: {x: 5, y: 5}
+      value: 0
+      status: 0
+    - coord: {x: 6, y: 5}
+      value: 0
+      status: 0
+    - coord: {x: 0, y: 6}
+      value: 0
+      status: 0
+    - coord: {x: 1, y: 6}
+      value: 0
+      status: 0
+    - coord: {x: 2, y: 6}
+      value: 0
+      status: 0
+    - coord: {x: 3, y: 6}
+      value: 0
+      status: 0
+    - coord: {x: 4, y: 6}
+      value: 0
+      status: 0
+    - coord: {x: 5, y: 6}
+      value: 0
+      status: 0
+    - coord: {x: 6, y: 6}
       value: 0
       status: 0
     toolCount: 1

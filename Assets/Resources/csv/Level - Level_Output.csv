@@ -128,4 +128,6 @@ UID,themeindex,levelindex,nextlevelindex,themename,levelname,init,play1,play2,pl
 1107,11,7,1108,@Loc=themename_tm11@@,@Loc=levelname_lv1107@@,8,,,,@Loc=goal_lv1107@@,None,@Loc=rule1_lv1101@@,,,,,,,,
 1108,11,8,1109,@Loc=themename_tm11@@,@Loc=levelname_lv1108@@,9,,,,@Loc=goal_lv1108@@,None,@Loc=rule1_lv1101@@,,,,,,,,
 1109,11,9,1110,@Loc=themename_tm11@@,@Loc=levelname_lv1109@@,10,11,,,@Loc=goal_lv1109@@,None,@Loc=rule1_lv1101@@,,,,,,,,
-1110,11,10,,@Loc=themename_tm11@@,@Loc=levelname_lv1110@@,12,13,14,,@Loc=goal_lv1110@@,None,@Loc=rule1_lv1101@@,,,,,,,,
+1110,11,10,1111,@Loc=themename_tm11@@,@Loc=levelname_lv1110@@,12,13,14,,@Loc=goal_lv1110@@,None,@Loc=rule1_lv1101@@,,,,,,,,
+1111,11,11,1112,@Loc=themename_tm11@@,@Loc=levelname_lv1111@@,,,,,@Loc=goal_lv1111@@,None,@Loc=rule1_lv1101@@,,,,,,,,
+1112,11,12,,@Loc=themename_tm11@@,@Loc=levelname_lv1112@@,,,,,@Loc=goal_lv1112@@,None,@Loc=rule1_lv1101@@,Addition,@Loc=rule2_lv1112@@,,,,,,

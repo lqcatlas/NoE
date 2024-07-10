@@ -8,7 +8,7 @@ public class AdvSpriteSlider : MonoBehaviour
     public Sprite curSprite;
     public float triggerChance = 1f;
     public bool SwitchByOrder = false;
-    private void Start()
+    private void OnEnable()
     {
         if(availableSprites.Count == 0)
         {
@@ -32,8 +32,7 @@ public class AdvSpriteSlider : MonoBehaviour
         {
             int locator = curSprite.name.IndexOf("@");
             string spriteNameLocator = curSprite.name.Substring(0, locator);
-            Debug.Log(string.Format("looking for sprite with name of {0}", spriteNameLocator, locator));
-
+            //Debug.Log(string.Format("looking for sprite with name of {0}", spriteNameLocator, locator));
             availableSprites.Clear();
             //Debug.LogWarning("potential cpu consuming code LoadALL()");
             List<Sprite> allSprites = Resources.LoadAll<Sprite>("sprites").ToList();

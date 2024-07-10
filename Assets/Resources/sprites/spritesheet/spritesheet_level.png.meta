@@ -1124,6 +1124,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: number_1_clover_11
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 1140
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ba1e873647a434ba455cc5249cad3a
+      internalID: 2043123544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1137,6 +1158,7 @@ TextureImporter:
     nameFileIdTable:
       ui_split_sign: -742677806
       number_3_clover_3: -22787713
+      number_1_clover_11: 2043123544
       number_5@v1: -280818320
       number_2@v2: 1504684770
       ui_CN_lan: -209950883

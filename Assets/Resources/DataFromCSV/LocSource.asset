@@ -1916,3 +1916,18 @@ MonoBehaviour:
   - key: rule1_lv1101
     EN: 
     CN: "\u7EC6\u5FC3\u89C2\u5BDF\uFF0C\u9009\u51FA\u56DB\u53F6\u8349"
+  - key: levelname_lv1111
+    EN: 
+    CN: 11
+  - key: levelname_lv1112
+    EN: 
+    CN: 12
+  - key: goal_lv1111
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: goal_lv1112
+    EN: 
+    CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
+  - key: rule2_lv1112
+    EN: 
+    CN: "\u8010\u5FC3\u4E5F\u5F88\u91CD\u8981"

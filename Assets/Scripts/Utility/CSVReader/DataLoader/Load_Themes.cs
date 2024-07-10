@@ -53,7 +53,11 @@ public class Load_Themes : MonoBehaviour
         {
             for (int j = 0; j < levels.Count; j++)
             {
-                if (levels[i].nextLevelIndex == levels[j].levelUID)
+                if(levels[i].nextLevelIndex == 0)
+                {
+                    levels[i].nextLevel = null;
+                }
+                else if (levels[i].nextLevelIndex == levels[j].levelUID)
                 {
                     levels[i].nextLevel = levels[j];
                     levels[j].previousLevel = levels[i];

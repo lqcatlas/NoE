@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using System.Security.Cryptography;
 
 public class LM_011_Clover : LevelMasterBase
 {
@@ -10,6 +11,8 @@ public class LM_011_Clover : LevelMasterBase
     public LMHub_011_Clover themeHub;
 
     private bool wrongSelection;
+    private int SPECIAL_LEVEL_INDEX_1 = 12;
+    private int RANDOM_LEVEL_INDEX = 11;
 
     public override void GetObjectReferences(GameObject _themeHub)
     {
@@ -40,6 +43,13 @@ public class LM_011_Clover : LevelMasterBase
                 obj.GetComponent<CellChoice_Badge>().SetToCorrect(temp_cellData.status == (int)CellStatus.found);
                 obj.transform.position = hub.boardMaster.cells[i].transform.position;
             }
+        }
+        //make colver random after level X
+        if(levelData.levelIndex >= RANDOM_LEVEL_INDEX)
+        {
+            int rng = Random.Range(0, levelData.initBoard.cells.Count);
+            Debug.Log($"set cell {rng} to special");
+            levelData.curBoard.cells[rng].status = 1;
         }
         //set each cell based on status
         for (int i = 0; i < hub.boardMaster.cells.Count; i++)
@@ -148,18 +158,30 @@ public class LM_011_Clover : LevelMasterBase
         int sprtCount = cell.numberInSprites.Count;
         for (int i = 0; i < sprtCount; i++)
         {
-            Sprite curSprite = cell.numberInSprites[i].sprite;
-            int locator = curSprite.name.IndexOf("@");
-            string cloverSpriteName = curSprite.name.Substring(0, locator) + "_clover_" + levelData.levelIndex;
-            Debug.Log($"insert sprite name is {cloverSpriteName}");
-            Sprite cloverSprite = Resources.LoadAll<Sprite>("sprites/spritesheet/spritesheet_level").FirstOrDefault(f => f.name == cloverSpriteName);
-            if(cloverSprite != null)
+            if (cell.numberInSprites[i].gameObject.activeSelf)
             {
-                cell.numberInSprites[i].GetComponent<AdvSpriteSlider>().availableSprites.Add(cloverSprite);
-            }
-            else
-            {
-                Debug.LogError($"unable to find sprite name ({cloverSpriteName})");
+                if(levelData.levelIndex != SPECIAL_LEVEL_INDEX_1)
+                {
+                    Sprite curSprite = cell.numberInSprites[i].sprite;
+                    int locator = curSprite.name.IndexOf("@");
+                    string cloverSpriteName = curSprite.name.Substring(0, locator) + "_clover_" + levelData.levelIndex;
+                    //Debug.Log($"insert sprite name is {cloverSpriteName}");
+                    Sprite cloverSprite = Resources.LoadAll<Sprite>("sprites/spritesheet/spritesheet_level").FirstOrDefault(f => f.name == cloverSpriteName);
+                    if (cloverSprite != null)
+                    {
+                        cell.numberInSprites[i].GetComponent<AdvSpriteSlider>().availableSprites.Add(cloverSprite);
+                    }
+                    else
+                    {
+                        //Debug.LogError($"unable to find sprite name ({cloverSpriteName})");
+                    }
+                }
+                else
+                {
+                    //remove the sprite switch animation
+                    //Debug.Log("clover level 12 executing sprite removal");
+                    cell.numberInSprites[i].GetComponent<AdvSpriteSlider>().availableSprites.RemoveAt(0);
+                }
             }
         }
     }

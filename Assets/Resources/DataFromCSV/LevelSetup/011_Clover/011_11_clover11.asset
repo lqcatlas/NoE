@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 011_06_clover6
+  m_Name: 011_11_clover11
   m_EditorClassIdentifier: 
-  levelUID: 1106
+  levelUID: 1111
   themeIndex: 11
-  levelIndex: 6
-  nextLevelIndex: 1107
-  previousLevel: {fileID: 11400000, guid: ea35b0531c7e7454f9e8c8908894edba, type: 2}
-  nextLevel: {fileID: 11400000, guid: 97e3b1da92cbede4381883930ae64770, type: 2}
+  levelIndex: 11
+  nextLevelIndex: 1112
+  previousLevel: {fileID: 11400000, guid: ce9b513c9ed72944c878efcd2d427047, type: 2}
+  nextLevel: {fileID: 11400000, guid: 59b22ff2d733f8d47a7d5776795faf96, type: 2}
   theme: '@Loc=themename_tm11@@'
-  title: '@Loc=levelname_lv1106@@'
-  newInitNarrative: '@Loc=narrative_tm11_ln007@@'
+  title: '@Loc=levelname_lv1111@@'
+  newInitNarrative: 
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm10_ln001@@'
@@ -34,161 +34,169 @@ MonoBehaviour:
   - '@Loc=narrative_tm11_ln004@@'
   - '@Loc=narrative_tm11_ln005@@'
   - '@Loc=narrative_tm11_ln006@@'
-  goal: '@Loc=goal_lv1106@@'
+  - '@Loc=narrative_tm11_ln007@@'
+  - '@Loc=narrative_tm11_ln008@@'
+  - '@Loc=narrative_tm11_ln009@@'
+  - '@Loc=narrative_tm11_ln010@@'
+  - '@Loc=narrative_tm11_ln011@@'
+  - '@Loc=narrative_tm11_ln012@@'
+  - '@Loc=narrative_tm11_ln013@@'
+  - '@Loc=narrative_tm11_ln014@@'
+  goal: '@Loc=goal_lv1111@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv1101@@'
-  isHard: 0
+  isHard: 1
   allowRewind: 0
   initBoard:
     boardSize: {x: 7, y: 7}
     cells:
     - coord: {x: 0, y: 0}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 1, y: 0}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 2, y: 0}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 3, y: 0}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 4, y: 0}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 5, y: 0}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 6, y: 0}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 0, y: 1}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 1, y: 1}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 2, y: 1}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 3, y: 1}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 4, y: 1}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 5, y: 1}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 6, y: 1}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 0, y: 2}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 1, y: 2}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 2, y: 2}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 3, y: 2}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 4, y: 2}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 5, y: 2}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 6, y: 2}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 0, y: 3}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 1, y: 3}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 2, y: 3}
-      value: 6
-      status: 1
+      value: 1
+      status: 0
     - coord: {x: 3, y: 3}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 4, y: 3}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 5, y: 3}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 6, y: 3}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 0, y: 4}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 1, y: 4}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 2, y: 4}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 3, y: 4}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 4, y: 4}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 5, y: 4}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 6, y: 4}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 0, y: 5}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 1, y: 5}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 2, y: 5}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 3, y: 5}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 4, y: 5}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 5, y: 5}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 6, y: 5}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 0, y: 6}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 1, y: 6}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 2, y: 6}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 3, y: 6}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 4, y: 6}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 5, y: 6}
-      value: 6
+      value: 1
       status: 0
     - coord: {x: 6, y: 6}
-      value: 6
+      value: 1
       status: 0
     toolCount: 1
     toolStatus: 0
