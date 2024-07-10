@@ -70,7 +70,7 @@ public class IntroPage : MonoBehaviour
     }
     public void Cell3Clicked()
     {
-        //cell3.CellFadeOut();
+        cell3.CellDisable();
         captionGroup.CaptionFadeOut();
 
         audioCTRL.PlaySource(2);
