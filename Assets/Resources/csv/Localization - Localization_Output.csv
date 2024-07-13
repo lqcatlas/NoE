@@ -606,3 +606,46 @@ UID,Key,EN,CN
 605,goal_lv1111,,找到幸运的四叶草
 606,goal_lv1112,,找到幸运的四叶草
 607,rule2_lv1112,,耐心也很重要
+608,themename_tm12,,摩天大楼
+609,locked_tm12,,█ █ 吸引人。
+610,unlocked_tm12,,<b>大楼</b>吸引人。
+611,hint_tm12,,它矗立的在城市的中心。
+612,date_tm12,,2024/07/13
+613,manifesto_tm12,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
+614,prompt_tm12,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+615,narrative_tm12_ln001,,摩天大楼
+616,narrative_tm12_ln002,,人潮涌动，
+617,narrative_tm12_ln003,,高楼矗立，
+618,narrative_tm12_ln004,,直指苍穹。
+619,narrative_tm12_ln005,,人们从四面八方涌来，
+620,narrative_tm12_ln006,,钢铁与玻璃交织成森林。
+621,narrative_tm12_ln007,,有人辛勤，
+622,narrative_tm12_ln008,,有人踌躇，
+623,narrative_tm12_ln009,,玻璃前无数双眼睛，
+624,narrative_tm12_ln010,,见证着城市的历史。
+625,narrative_tm12_ln011,,夜幕降临，
+626,narrative_tm12_ln012,,霓虹闪烁。
+627,narrative_tm12_ln013,,楼宇组成的天际线，
+628,narrative_tm12_ln014,,书写着未完的故事。
+629,narrative_tm12_ln015,,
+630,levelname_lv1201,,001
+631,levelname_lv1202,,002
+632,levelname_lv1203,,003
+633,levelname_lv1204,,004
+634,levelname_lv1205,,005
+635,levelname_lv1206,,006
+636,levelname_lv1207,,007
+637,levelname_lv1208,,008
+638,rule1_lv1201,,摩天大楼：+3人口
+639,rule2_lv1202,,迁移：建成后人口多于相邻地区
+640,rule3_lv1202,, 则从相邻地区再迁移2人口
+641,rule4_lv1206,,爆发：若同时触发2+次人口迁移
+642,rule5_lv1206,, 则额外+5人口
+643,goal_lv1201,,建立2个10+人口的城市
+644,goal_lv1202,,建立1个14+人口的城市
+645,goal_lv1203,,建立2个12+人口的城市
+646,goal_lv1204,,建立3个12+人口的城市
+647,goal_lv1205,,建立4个12+人口的城市
+648,goal_lv1206,,建立1个30+人口的城市
+649,goal_lv1207,,建立3个30+人口的城市
+650,goal_lv1208,,建立5个30+人口的城市

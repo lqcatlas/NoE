@@ -131,3 +131,11 @@ UID,themeindex,levelindex,nextlevelindex,themename,levelname,init,play1,play2,pl
 1110,11,10,1111,@Loc=themename_tm11@@,@Loc=levelname_lv1110@@,10,,,,@Loc=goal_lv1110@@,None,@Loc=rule1_lv1101@@,,,,,,,,
 1111,11,11,1112,@Loc=themename_tm11@@,@Loc=levelname_lv1111@@,,,,,@Loc=goal_lv1111@@,None,@Loc=rule1_lv1101@@,,,,,,,,
 1112,11,12,,@Loc=themename_tm11@@,@Loc=levelname_lv1112@@,,,,,@Loc=goal_lv1112@@,None,@Loc=rule1_lv1101@@,Addition,@Loc=rule2_lv1112@@,,,,,,
+1201,12,1,1202,@Loc=themename_tm12@@,@Loc=levelname_lv1201@@,1,,,,@Loc=goal_lv1201@@,Addition,@Loc=rule1_lv1201@@,,,,,,,,
+1202,12,2,1203,@Loc=themename_tm12@@,@Loc=levelname_lv1202@@,2,,,,@Loc=goal_lv1202@@,None,@Loc=rule1_lv1201@@,Addition,@Loc=rule2_lv1202@@,Addition,@Loc=rule3_lv1202@@,,,,
+1203,12,3,1204,@Loc=themename_tm12@@,@Loc=levelname_lv1203@@,3,4,,,@Loc=goal_lv1203@@,None,@Loc=rule1_lv1201@@,None,@Loc=rule2_lv1202@@,None,@Loc=rule3_lv1202@@,,,,
+1204,12,4,1205,@Loc=themename_tm12@@,@Loc=levelname_lv1204@@,5,6,,,@Loc=goal_lv1204@@,None,@Loc=rule1_lv1201@@,None,@Loc=rule2_lv1202@@,None,@Loc=rule3_lv1202@@,,,,
+1205,12,5,1206,@Loc=themename_tm12@@,@Loc=levelname_lv1205@@,7,8,,,@Loc=goal_lv1205@@,None,@Loc=rule1_lv1201@@,None,@Loc=rule2_lv1202@@,None,@Loc=rule3_lv1202@@,,,,
+1206,12,6,1207,@Loc=themename_tm12@@,@Loc=levelname_lv1206@@,9,10,,,@Loc=goal_lv1206@@,None,@Loc=rule1_lv1201@@,None,@Loc=rule2_lv1202@@,None,@Loc=rule3_lv1202@@,Addition,@Loc=rule4_lv1206@@,Addition,@Loc=rule5_lv1206@@
+1207,12,7,1208,@Loc=themename_tm12@@,@Loc=levelname_lv1207@@,11,12,,,@Loc=goal_lv1207@@,None,@Loc=rule1_lv1201@@,None,@Loc=rule2_lv1202@@,None,@Loc=rule3_lv1202@@,None,@Loc=rule4_lv1206@@,None,@Loc=rule5_lv1206@@
+1208,12,8,,@Loc=themename_tm12@@,@Loc=levelname_lv1208@@,13,14,,,@Loc=goal_lv1208@@,None,@Loc=rule1_lv1201@@,None,@Loc=rule2_lv1202@@,None,@Loc=rule3_lv1202@@,None,@Loc=rule4_lv1206@@,None,@Loc=rule5_lv1206@@

@@ -351,7 +351,6 @@ public class LevelMasterBase : MonoBehaviour
 
         hub.toolMaster.toolSubtitle.SetText("");
         hub.toolMaster.infographGroup.SetActive(false);
-
     }
     public virtual void InitMiscs()
     {

@@ -12,8 +12,8 @@ public class LM_008_Crown : LevelMasterBase
     public LMHub_008_Crown crownHub;
 
     [Header("Crown Play Log")]
-    public List<CrownLog> crownLogs;
-    public class CrownLog
+    private List<CrownLog> crownLogs;
+    private class CrownLog
     {
         public bool success;
         public List<Vector2Int> losingCoords;
@@ -84,7 +84,6 @@ public class LM_008_Crown : LevelMasterBase
     public override void HandlePlayerInput(Vector2Int coord)
     {
         Vector2Int numberCap = new Vector2Int(0, 9);
-        //remove cell
         for (int i = 0; i < levelData.curBoard.cells.Count; i++)
         {
             if (levelData.curBoard.cells[i].coord == coord)
