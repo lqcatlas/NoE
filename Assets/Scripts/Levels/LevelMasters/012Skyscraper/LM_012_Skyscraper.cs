@@ -23,6 +23,10 @@ public class LM_012_Skyscraper : LevelMasterBase
     private int RULE2_LVINDEX = 2;
     private int RULE3_LVINDEX = 6;
 
+    private int BASIC_ADD = 2;
+    private int MIGRATION_ADD = 3;
+    private int BOOM_ADD = 5;
+
     public override void GetObjectReferences(GameObject _themeHub)
     {
         base.GetObjectReferences(null);
@@ -68,7 +72,7 @@ public class LM_012_Skyscraper : LevelMasterBase
         {
             if (levelData.curBoard.cells[i].coord == coord)
             {
-                levelData.curBoard.cells[i].value += 3;
+                levelData.curBoard.cells[i].value += BASIC_ADD;
             }
         }
         SkyscraperLog currentLog = new SkyscraperLog();
@@ -91,7 +95,7 @@ public class LM_012_Skyscraper : LevelMasterBase
                 {
                     if (bldgCell.value > levelData.curBoard.cells[i].value && levelData.curBoard.cells[i].value > 0)
                     {
-                        int movingPop = Mathf.Min(levelData.curBoard.cells[i].value, 2);
+                        int movingPop = Mathf.Min(levelData.curBoard.cells[i].value, MIGRATION_ADD);
                         levelData.curBoard.cells[i].value -= movingPop;
                         moveinTotal += movingPop;
                         moveCount += 1;
@@ -107,7 +111,7 @@ public class LM_012_Skyscraper : LevelMasterBase
         {
             if (moveCount >= 2)
             {
-                bldgCell.value += 5;
+                bldgCell.value += BOOM_ADD;
             }
         }
     }
@@ -129,19 +133,19 @@ public class LM_012_Skyscraper : LevelMasterBase
         }
         else if (levelData.levelIndex == 2)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 14, 1);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 15, 1);
         }
         else if (levelData.levelIndex == 3)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 12, 2);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 15, 2);
         }
         else if (levelData.levelIndex == 4)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 12, 3);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 15, 3);
         }
         else if (levelData.levelIndex == 5)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 12, 4);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 15, 4);
         }
         else if (levelData.levelIndex == 6)
         {
