@@ -153,11 +153,19 @@ public class LM_012_Skyscraper : LevelMasterBase
         }
         else if (levelData.levelIndex == 7)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 30, 3);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 40, 1);
         }
         else if (levelData.levelIndex == 8)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 30, 5);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 30, 2);
+        }
+        else if (levelData.levelIndex == 9)
+        {
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 30, 4);
+        }
+        else if (levelData.levelIndex == 10)
+        {
+            return BoardCalculation.Sum_Larger_X(levelData.curBoard, 100);
         }
         else
         {
