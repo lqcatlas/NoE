@@ -3380,7 +3380,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3401,7 +3401,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3409,6 +3409,216 @@ TextureImporter:
       bones: []
       spriteID: 7d92089a21c9f1a40be904960ab469ac
       internalID: -570091471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skyscraper_tool@v1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fb82bea953c034296c09eac41f66de
+      internalID: -156981939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skyscraper_tool@v2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac83c9078826f14aba6a09689691acd
+      internalID: 1102420743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cityzone_1
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b95ab9a68ac024c91c5a54fa02e930
+      internalID: 237269212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cityzone_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ce518ba1fb49a48905901e086c029c
+      internalID: -380033298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cityzone_3
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b288d0ab337e2d49bd7bce4153056cc
+      internalID: -698969613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cityzone_4
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3389d1a09e3cecd4cbbab61137fad33b
+      internalID: 669435617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cityzone_5
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f952f9316921d674d94f59e2f593ae93
+      internalID: -303602701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cityzone_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb3fefa58d89564ebfec5edc0d651fa
+      internalID: -2001929122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cityzone_7
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d69d859a9d8634eb8d2a3ee81a0a95
+      internalID: -1240283744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meeple
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e211b78a6df43674da64ca66028a6305
+      internalID: -1958791959
       vertices: []
       indices: 
       edges: []
@@ -3442,6 +3652,8 @@ TextureImporter:
       clock_tool_v3: 875719825
       window3_fill: 46753427
       clock_tool_v4: 460082281
+      cityzone_4: 669435617
+      cityzone_1: 237269212
       clocktime_tool_v1: 2019611272
       clover_tool@v1: -1679121304
       ILSH_I_v2: 1186618194
@@ -3461,6 +3673,7 @@ TextureImporter:
       scissor@v2: -905120408
       star4_v4: -171714075
       window1_v1_fill: -1768017671
+      cityzone_6: -2001929122
       window4_v1: 603203415
       window1_v1: 493005343
       clocktime_tool_v0: 170430977
@@ -3470,6 +3683,7 @@ TextureImporter:
       star5_v4: -492410094
       moon_v1: -1021666675
       coin_shape_9: 456645366
+      meeple: -1958791959
       star3_v3: 2111767151
       clocktime_tool_v6: 692642002
       moon_quarter2@v2: -2009238499
@@ -3509,10 +3723,12 @@ TextureImporter:
       moon_v4: -1618747589
       star4_v1: -1221237601
       rule_sign_deletion: 1622414627
+      cityzone_5: -303602701
       rule_sign_addition: 1169092994
       window4_full: 1684832504
       star5_v3: 1932512887
       currency_gem: -173911021
+      cityzone_7: -1240283744
       star1_v4: -692310129
       coin_shape_16: 1689295449
       ILSH_I_v1: 175602717
@@ -3528,6 +3744,7 @@ TextureImporter:
       window5_fill: 692586796
       sword@v1: 503426635
       badge_tool@v2: 991213013
+      cityzone_2: -380033298
       window3_v1: -268414213
       flask@v1: -1524441901
       currency_star_frame: -435409087
@@ -3562,10 +3779,12 @@ TextureImporter:
       moon_crescent2@v1: -348473210
       bulb_tool@v1: -81264564
       ui_time_sign: -1800299951
+      skyscraper_tool@v1: -156981939
       coin_shape_8: -1168925651
       cell_frame@v1: -1833856617
       window3_full: -633744324
       retry_v1: -425375840
+      skyscraper_tool@v2: 1102420743
       sign_complete: 894229184
       clocktime_tool_v2: -1691713925
       window4_v2: 940230836
@@ -3575,6 +3794,7 @@ TextureImporter:
       ui_step_sign: 1812712270
       clocktime_tool_v8: -476586744
       moon_crescent2@v2: 1391890634
+      cityzone_3: -698969613
       star1_v3: -470244999
       ILSH_H_v2: -643840337
       bulb_tool@v2: -1559598106

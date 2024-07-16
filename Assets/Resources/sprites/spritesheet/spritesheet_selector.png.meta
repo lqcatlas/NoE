@@ -629,7 +629,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -637,6 +637,27 @@ TextureImporter:
       bones: []
       spriteID: 90f80e49398d45b49b4f999d6c909b7e
       internalID: -812761619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skyscraper_themeicon
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 960
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1b8c4e94670b334ebc7df10da756156
+      internalID: 665651059
       vertices: []
       indices: 
       edges: []
@@ -680,6 +701,7 @@ TextureImporter:
       spritesheet_selector_63: -1223092248
       spritesheet_selector_76: -738050999
       level_node_bg@v2: 992283838
+      skyscraper_themeicon: 665651059
       spritesheet_selector_78: 1942230580
       spritesheet_selector_67: 7176779
       spritesheet_selector_18: -534294863

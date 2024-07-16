@@ -115,6 +115,18 @@ public class LM_012_Skyscraper : LevelMasterBase
             }
         }
     }
+    public override void UpdateCells(Vector2Int coord)
+    {
+        //update to a status that only +3 on the played cell
+        for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+        {
+            if (hub.boardMaster.cells[i].coord == coord)
+            {
+                DataCell temp_cellData = levelData.previousBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+                hub.boardMaster.cells[i].NumberShift(temp_cellData.value + BASIC_ADD);
+            }
+        }
+    }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
         //play population move fx + numbershift
