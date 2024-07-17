@@ -45,13 +45,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f81f7248c58c0e646b0ce3fcb7b5bb96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSprite: {fileID: -1679121304, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
+  toolSprite: {fileID: -156981939, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   toolStatusGroup:
     toolStatus:
     - statusName: 
       playInfograph: {fileID: 1978449073, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   bgHolder: {fileID: 4068668159233435932}
   bldgTemplate: {fileID: 7605107522437205399, guid: 76dc4fde25b96ac4a93f1862c25a3cdd, type: 3}
+  populationTemplate: {fileID: 7605107522437205399, guid: b92d95042f6dbd244a6cff49f274da42, type: 3}
   upgradeClips:
     clips: []
 --- !u!1 &8390322059011748740

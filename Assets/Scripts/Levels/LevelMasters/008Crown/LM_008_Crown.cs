@@ -421,7 +421,7 @@ public class LM_008_Crown : LevelMasterBase
     }
     void Anim_CrownMove(Vector2Int coordFrom, Vector2Int coordTo, float delay = 0f)
     {
-        Debug.Log(string.Format("anim_crown_move with param ({0},{1}) >> ({2},{3})", coordFrom.x, coordFrom.y, coordTo.x, coordTo.y));
+        //Debug.Log(string.Format("anim_crown_move with param ({0},{1}) >> ({2},{3})", coordFrom.x, coordFrom.y, coordTo.x, coordTo.y));
         float MOVE_DURATION = .5f;
         Transform fromTrans = null, toTrans = null;
         for (int i = 0; i < crownHub.crownBgs.Count; i++)
