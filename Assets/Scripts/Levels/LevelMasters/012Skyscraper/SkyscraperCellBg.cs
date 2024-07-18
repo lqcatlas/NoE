@@ -9,7 +9,7 @@ public class SkyscraperCellBg : MonoBehaviour
     [SerializeField] List<Sprite> skyscraperSpritesByPhase;
     [SerializeField] Sprite toolSprite;
 
-    private float ANIM_SPRT_SWITCH_DURATION = 1f;
+    private float ANIM_SPRT_SWITCH_DURATION = .5f;
 
     public void SetSpriteByPop(int pop)
     {

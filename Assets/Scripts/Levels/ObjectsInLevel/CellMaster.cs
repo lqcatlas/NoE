@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using UnityEditor.IMGUI.Controls;
 
 public class CellMaster : MonoBehaviour
 {
@@ -28,6 +29,8 @@ public class CellMaster : MonoBehaviour
     [SerializeField] BoxCollider2D cellCollider;
     public SpriteRenderer frameSprt;
     public SpriteRenderer maskSprt;
+
+    Sequence seqNumber = DOTween.Sequence();
 
     void Awake()
     {
@@ -231,19 +234,35 @@ public class CellMaster : MonoBehaviour
     }
     public void NumberShift(int endValue, float shuffleDuration = 0)
     {
-        Sequence seq = DOTween.Sequence();
+        seqNumber.Kill();
+        seqNumber = DOTween.Sequence();
         int ShiftTimes = Mathf.FloorToInt(shuffleDuration / dConstants.VFX.NumberShiftAnimInterval);
         for (int i = 0; i < ShiftTimes; i++)
         {
             int digits = Mathf.FloorToInt(endValue / 10f);
-            seq.AppendCallback(() => DisplayNumber(Random.Range(digits * 10, (digits + 1) * 10 - 1)));
-            seq.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
+            seqNumber.AppendCallback(() => DisplayNumber(Random.Range(digits * 10, (digits + 1) * 10 - 1)));
+            seqNumber.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
         }
-        seq.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
-        seq.AppendCallback(() => DisplayNumber(endValue));
+        seqNumber.AppendInterval(dConstants.VFX.NumberShiftAnimInterval);
+        seqNumber.AppendCallback(() => DisplayNumber(endValue));
         DisplayNumber(endValue);
     }
-
+    public void NumberTick(int startValue, int endValue, int ticks = 3, float duration = dConstants.UI.StandardizedBtnAnimDuration)
+    {
+        seqNumber.Kill();
+        seqNumber = DOTween.Sequence();
+        int steps = Mathf.Min(endValue - startValue, ticks);
+        if(steps > 1) // tick, if at least 2 ticks
+        {
+            for (int i = 0; i < steps; i++)
+            {
+                int displayCount = startValue + Mathf.FloorToInt((endValue - startValue) / ticks * i);
+                seqNumber.AppendCallback(() => DisplayNumber(displayCount));
+                seqNumber.AppendInterval(duration / steps);
+            }
+        }
+        seqNumber.AppendCallback(() => DisplayNumber(endValue));
+    }
     public void ResetCellHover()
     {
         maskSprt.DOFade(0f, 0.001f);

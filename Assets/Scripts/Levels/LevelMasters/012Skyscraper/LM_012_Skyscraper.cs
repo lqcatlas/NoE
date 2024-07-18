@@ -29,9 +29,10 @@ public class LM_012_Skyscraper : LevelMasterBase
     private int MIGRATION_ADD = 3;
     private int BOOM_ADD = 5;
 
-    private float ANIM_BOOM_SCALE_FACTOR = 1.5f;
-    private float ANIM_BOOM_DURATION = .8f;
-    private float ANIM_MIGRATION_DURATION = .8f;
+    private float ANIM_BOOM_SCALE_FACTOR = 2.5f;
+    private float ANIM_BOOM_DURATION = .4f;
+    private float ANIM_BOOM_DELAY = .2f;
+    private float ANIM_MIGRATION_DURATION = .5f;
     private float ANIM_FALL_DURATION = .5f;
 
     public override void GetObjectReferences(GameObject _themeHub)
@@ -147,17 +148,19 @@ public class LM_012_Skyscraper : LevelMasterBase
         BldgFall_Anim(coord);
 
         CellMaster playedCellMaster = null;
+        GameObject playedCellBg = null;
         for (int i = 0; i < themeHub.cellBgs.Count; i++)
         {
             if (themeHub.cellBgs[i].Key.coord == coord)
             {
                 playedCellMaster = themeHub.cellBgs[i].Key;
+                playedCellBg = themeHub.cellBgs[i].Value;
             }
         }
         //play population move fx + numbershift
+        bool migrated = true;
         if (skyscraperLogs[skyscraperLogs.Count - 1].moveoutCoords.Count > 0)
         {
-            
             for (int i = 0; i < themeHub.cellBgs.Count; i++)
             {
                 if (skyscraperLogs[skyscraperLogs.Count - 1].moveoutCoords.Contains(themeHub.cellBgs[i].Key.coord))
@@ -165,6 +168,10 @@ public class LM_012_Skyscraper : LevelMasterBase
                     PopMigration_Anim(themeHub.cellBgs[i].Key.coord, coord, ANIM_FALL_DURATION);
                     int tempValue = levelData.curBoard.GetCellDataByCoord(themeHub.cellBgs[i].Key.coord).value;
                     UpdateTargetCellValue(themeHub.cellBgs[i].Key, tempValue, ANIM_FALL_DURATION);
+                    int prevValue = levelData.previousBoard.GetCellDataByCoord(themeHub.cellBgs[i].Key.coord).value;
+                    int curValue = levelData.curBoard.GetCellDataByCoord(themeHub.cellBgs[i].Key.coord).value;
+                    SkyscraperCellBg adjacentCellBg = themeHub.cellBgs[i].Value.GetComponent<SkyscraperCellBg>();
+                    UpdateTargetCellSprite(adjacentCellBg, prevValue, curValue, ANIM_FALL_DURATION);
                 }
                 else if(themeHub.cellBgs[i].Key.coord == coord)
                 {
@@ -177,26 +184,28 @@ public class LM_012_Skyscraper : LevelMasterBase
                 }
             }
         }
+        else
+        {
+            migrated = false;
+        }
         //then play popluation boom + numbershift
-        if (levelData.levelIndex >= RULE3_LVINDEX)
+        bool boomed = true;
+        if (levelData.levelIndex >= RULE3_LVINDEX && skyscraperLogs[skyscraperLogs.Count - 1].moveoutCoords.Count >= 2)
         {
-            if(skyscraperLogs[skyscraperLogs.Count - 1].moveoutCoords.Count >= 2)
-            {
-                PopBoom_Anim(coord, ANIM_FALL_DURATION + ANIM_MIGRATION_DURATION);
-                int tempValue = levelData.curBoard.GetCellDataByCoord(coord).value;
-                UpdateTargetCellValue(playedCellMaster, tempValue, ANIM_FALL_DURATION + ANIM_MIGRATION_DURATION + ANIM_BOOM_DURATION);
-            }
+            PopBoom_Anim(coord, ANIM_FALL_DURATION + (migrated ? ANIM_MIGRATION_DURATION : 0) + ANIM_BOOM_DELAY);
+            int endValue = levelData.curBoard.GetCellDataByCoord(coord).value;
+            int startValue = endValue - BOOM_ADD;
+            UpdateTargetCellValueByTicks(playedCellMaster, startValue, endValue, ANIM_FALL_DURATION + (migrated ? ANIM_MIGRATION_DURATION : 0) + ANIM_BOOM_DELAY);
         }
-        //update bg bldg sprite
-        Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(ANIM_FALL_DURATION + ANIM_MIGRATION_DURATION + ANIM_BOOM_DURATION);
-        for (int i = 0; i < themeHub.cellBgs.Count; i++)
+        else
         {
-            int prevPop = levelData.previousBoard.GetCellDataByCoord(themeHub.cellBgs[i].Key.coord).value;
-            int curPop = levelData.curBoard.GetCellDataByCoord(themeHub.cellBgs[i].Key.coord).value;
-            SkyscraperCellBg cellBg = themeHub.cellBgs[i].Value.GetComponent<SkyscraperCellBg>();
-            seq.AppendCallback(() => cellBg.UpdateSpriteByPop(prevPop, curPop));
+            boomed = false;
         }
+        //update played cell sprite
+        int prevPop = levelData.previousBoard.GetCellDataByCoord(coord).value;
+        int curPop = levelData.curBoard.GetCellDataByCoord(coord).value;
+        SkyscraperCellBg cellBg = playedCellBg.GetComponent<SkyscraperCellBg>();
+        UpdateTargetCellSprite(cellBg, prevPop, curPop, ANIM_FALL_DURATION + (migrated ? ANIM_MIGRATION_DURATION : 0) + (boomed ? ANIM_BOOM_DURATION : 0));
     }
 
     public override bool CheckWinCondition()
@@ -296,7 +305,9 @@ public class LM_012_Skyscraper : LevelMasterBase
                 GameObject obj = Instantiate(themeHub.populationTemplate, themeHub.bgHolder);
                 obj.transform.position = themeHub.cellBgs[i].Value.transform.position;
                 obj.SetActive(false);
-                obj.transform.GetChild(0).GetComponent<SpriteRenderer>().DOFade(0f, ANIM_BOOM_DURATION).SetDelay(delay);
+                SpriteRenderer sr = obj.transform.GetChild(0).GetComponent<SpriteRenderer>();
+                sr.sortingOrder = 100;
+                sr.DOFade(0f, ANIM_BOOM_DURATION).SetDelay(delay);
                 obj.transform.DOScale(ANIM_BOOM_SCALE_FACTOR, ANIM_BOOM_DURATION).SetDelay(delay).OnStart(() => obj.SetActive(true)).OnComplete(() => Destroy(obj));
             }
         }
@@ -306,6 +317,18 @@ public class LM_012_Skyscraper : LevelMasterBase
         Sequence seq = DOTween.Sequence();
         seq.AppendInterval(delay)
             .AppendCallback(() => targetCell.NumberShift(targetValue));
+    }
+    void UpdateTargetCellValueByTicks(CellMaster targetCell, int startValue, int endValue, float delay = 0f)
+    {
+        Sequence seq = DOTween.Sequence();
+        seq.AppendInterval(delay)
+            .AppendCallback(() => targetCell.NumberTick(startValue, endValue, 3, ANIM_BOOM_DURATION));
+    }
+    void UpdateTargetCellSprite(SkyscraperCellBg targetCell, int prevValue, int curValue, float delay = 0f)
+    {
+        Sequence seq = DOTween.Sequence();
+        seq.AppendInterval(delay)
+            .AppendCallback(() => targetCell.UpdateSpriteByPop(prevValue, curValue));
     }
     void UpdateToolStatusDisplay()
     {

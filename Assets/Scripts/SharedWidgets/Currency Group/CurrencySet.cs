@@ -25,13 +25,16 @@ public class CurrencySet : MonoBehaviour
         seqStar.Kill();
         seqStar = DOTween.Sequence();
         int step = Mathf.Min(5, Mathf.Abs(adjustAmount));
-        for (int i = 0; i < step; i++)
+        if(step > 1 )
         {
-            int displayCount = playingRecords.tokens - (preview ? 0 : adjustAmount) + (adjustAmount > 0 ? Mathf.FloorToInt((float)adjustAmount / step * i) : Mathf.CeilToInt((float)adjustAmount / step * i));
-            //Debug.Log("tokens " + playingRecords.tokens);
-            //Debug.Log("display number " + displayCount);
-            seqStar.AppendCallback(() => curStarCount.SetText(displayCount.ToString()));
-            seqStar.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration / step);
+            for (int i = 0; i < step; i++)
+            {
+                int displayCount = playingRecords.tokens - (preview ? 0 : adjustAmount) + (adjustAmount > 0 ? Mathf.FloorToInt((float)adjustAmount / step * i) : Mathf.CeilToInt((float)adjustAmount / step * i));
+                //Debug.Log("tokens " + playingRecords.tokens);
+                //Debug.Log("display number " + displayCount);
+                seqStar.AppendCallback(() => curStarCount.SetText(displayCount.ToString()));
+                seqStar.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration / step);
+            }
         }
         seqStar.AppendCallback(() => curStarCount.SetText((playingRecords.tokens + (preview ? adjustAmount : 0)).ToString()));
     }
