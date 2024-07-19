@@ -599,7 +599,12 @@ public class LevelMasterBase : MonoBehaviour
             return false;
         }
     }
-    
+    public virtual void ShowCellSumAtGoal()
+    {
+        hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
+        hub.goalMaster.lines[1].gameObject.SetActive(true);
+        LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+    }
     void InitLevelNavigation()
     {
         hub.miscMaster.prevBtn.SetActive(false);

@@ -1796,7 +1796,7 @@ MonoBehaviour:
     CN: "\u5E78\u8FD0\u7684<b>\u56DB\u53F6\u8349</b>\u3002"
   - key: hint_tm11
     EN: 
-    CN: "\u5B83\u662F\u7279\u522B\u7684\u5E78\u8FD0\u3002"
+    CN: "\u627E\u5230\u7279\u522B\u7684\u5E78\u8FD0\u3002"
   - key: date_tm11
     EN: 
     CN: 2024/07/09
@@ -1968,22 +1968,22 @@ MonoBehaviour:
     CN: "\u76F4\u6307\u82CD\u7A79\u3002"
   - key: narrative_tm12_ln005
     EN: 
-    CN: "\u4EBA\u4EEC\u4ECE\u56DB\u9762\u516B\u65B9\u6D8C\u6765\uFF0C"
+    CN: "\u6709\u4EBA\u8F9B\u52E4\uFF0C"
   - key: narrative_tm12_ln006
     EN: 
-    CN: "\u94A2\u94C1\u4E0E\u73BB\u7483\u4EA4\u7EC7\u6210\u68EE\u6797\u3002"
+    CN: "\u6709\u4EBA\u8E0C\u8E87\uFF0C"
   - key: narrative_tm12_ln007
     EN: 
-    CN: "\u6709\u4EBA\u8F9B\u52E4\uFF0C"
+    CN: "\u73BB\u7483\u524D\u65E0\u6570\u53CC\u773C\u775B\uFF0C"
   - key: narrative_tm12_ln008
     EN: 
-    CN: "\u6709\u4EBA\u8E0C\u8E87\uFF0C"
+    CN: "\u89C1\u8BC1\u7740\u57CE\u5E02\u7684\u5386\u53F2\u3002"
   - key: narrative_tm12_ln009
     EN: 
-    CN: "\u73BB\u7483\u524D\u65E0\u6570\u53CC\u773C\u775B\uFF0C"
+    CN: "\u4EBA\u4EEC\u4ECE\u56DB\u9762\u516B\u65B9\u6D8C\u6765\uFF0C"
   - key: narrative_tm12_ln010
     EN: 
-    CN: "\u89C1\u8BC1\u7740\u57CE\u5E02\u7684\u5386\u53F2\u3002"
+    CN: "\u94A2\u94C1\u4E0E\u73BB\u7483\u4EA4\u7EC7\u6210\u68EE\u6797\u3002"
   - key: narrative_tm12_ln011
     EN: 
     CN: "\u591C\u5E55\u964D\u4E34\uFF0C"
@@ -2025,13 +2025,13 @@ MonoBehaviour:
     CN: 8
   - key: rule1_lv1201
     EN: 
-    CN: "\u6469\u5929\u5927\u697C\uFF1A+3\u4EBA\u53E3"
+    CN: "\u6469\u5929\u5927\u697C\uFF1A+2\u4EBA\u53E3"
   - key: rule2_lv1202
     EN: 
     CN: "\u8FC1\u79FB\uFF1A\u5EFA\u6210\u540E\u4EBA\u53E3\u591A\u4E8E\u76F8\u90BB\u5730\u533A"
   - key: rule3_lv1202
     EN: 
-    CN: " \u5219\u4ECE\u76F8\u90BB\u5730\u533A\u518D\u8FC1\u79FB2\u4EBA\u53E3"
+    CN: " \u5219\u4ECE\u76F8\u90BB\u5730\u533A\u518D\u8FC1\u79FB3\u4EBA\u53E3"
   - key: rule4_lv1206
     EN: 
     CN: "\u7206\u53D1\uFF1A\u82E5\u540C\u65F6\u89E6\u53D12+\u6B21\u4EBA\u53E3\u8FC1\u79FB"
@@ -2040,25 +2040,61 @@ MonoBehaviour:
     CN: " \u5219\u989D\u5916+5\u4EBA\u53E3"
   - key: goal_lv1201
     EN: 
-    CN: "\u5EFA\u7ACB2\u4E2A10+\u4EBA\u53E3\u7684\u57CE\u5E02"
+    CN: "\u5EFA\u7ACB2\u4E2A10+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: goal_lv1202
     EN: 
-    CN: "\u5EFA\u7ACB1\u4E2A14+\u4EBA\u53E3\u7684\u57CE\u5E02"
+    CN: "\u5EFA\u7ACB1\u4E2A15+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: goal_lv1203
     EN: 
-    CN: "\u5EFA\u7ACB2\u4E2A12+\u4EBA\u53E3\u7684\u57CE\u5E02"
+    CN: "\u5EFA\u7ACB2\u4E2A15+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: goal_lv1204
     EN: 
-    CN: "\u5EFA\u7ACB3\u4E2A12+\u4EBA\u53E3\u7684\u57CE\u5E02"
+    CN: "\u5EFA\u7ACB3\u4E2A15+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: goal_lv1205
     EN: 
-    CN: "\u5EFA\u7ACB4\u4E2A12+\u4EBA\u53E3\u7684\u57CE\u5E02"
+    CN: "\u5EFA\u7ACB4\u4E2A15+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: goal_lv1206
     EN: 
-    CN: "\u5EFA\u7ACB1\u4E2A30+\u4EBA\u53E3\u7684\u57CE\u5E02"
+    CN: "\u5EFA\u7ACB1\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: goal_lv1207
     EN: 
-    CN: "\u5EFA\u7ACB3\u4E2A30+\u4EBA\u53E3\u7684\u57CE\u5E02"
+    CN: "\u5EFA\u7ACB4\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: goal_lv1208
     EN: 
-    CN: "\u5EFA\u7ACB5\u4E2A30+\u4EBA\u53E3\u7684\u57CE\u5E02"
+    CN: "\u5EFA\u7ACB2\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
+  - key: levelname_lv1209
+    EN: 
+    CN: 9
+  - key: levelname_lv1210
+    EN: 
+    CN: 10
+  - key: levelname_lv1211
+    EN: 
+    CN: 11
+  - key: levelname_lv1212
+    EN: 
+    CN: 12
+  - key: levelname_lv1213
+    EN: 
+    CN: 13
+  - key: levelname_lv1214
+    EN: 
+    CN: 14
+  - key: goal_lv1209
+    EN: 
+    CN: "\u8BA9\u603B\u4EBA\u53E3\u8FBE\u523090+"
+  - key: goal_lv1210
+    EN: 
+    CN: "\u5EFA\u7ACB4\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
+  - key: goal_lv1211
+    EN: 
+    CN: "\u8BA9\u603B\u4EBA\u53E3\u8FBE\u5230100+"
+  - key: goal_lv1212
+    EN: 
+    CN: "\u8BA9\u603B\u4EBA\u53E3\u8FBE\u5230150+"
+  - key: goal_lv1213
+    EN: 
+    CN: "\u5EFA\u7ACB5\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
+  - key: goal_lv1214
+    EN: 
+    CN: "\u5EFA\u7ACB1\u4E2A100+\u4EBA\u53E3\u7684\u5927\u697C"

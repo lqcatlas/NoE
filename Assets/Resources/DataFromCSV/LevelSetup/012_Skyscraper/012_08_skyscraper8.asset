@@ -15,14 +15,13 @@ MonoBehaviour:
   levelUID: 1208
   themeIndex: 12
   levelIndex: 8
-  nextLevelIndex: 0
+  nextLevelIndex: 1209
   previousLevel: {fileID: 11400000, guid: 2155bc1fe7364314599f53d47fd6b379, type: 2}
-  nextLevel: {fileID: 0}
+  nextLevel: {fileID: 11400000, guid: ac82075b5ab378e44a5b401f553551c5, type: 2}
   theme: '@Loc=themename_tm12@@'
   title: '@Loc=levelname_lv1208@@'
-  newInitNarrative: '@Loc=narrative_tm12_ln013@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm12_ln014@@'
+  newInitNarrative: '@Loc=narrative_tm12_ln011@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm12_ln001@@'
   - '@Loc=narrative_tm12_ln002@@'
@@ -34,8 +33,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm12_ln008@@'
   - '@Loc=narrative_tm12_ln009@@'
   - '@Loc=narrative_tm12_ln010@@'
-  - '@Loc=narrative_tm12_ln011@@'
-  - '@Loc=narrative_tm12_ln012@@'
   goal: '@Loc=goal_lv1208@@'
   ruleset:
   - tag: 0

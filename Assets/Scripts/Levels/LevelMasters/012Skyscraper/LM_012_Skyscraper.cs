@@ -80,6 +80,11 @@ public class LM_012_Skyscraper : LevelMasterBase
         {
             skyscraperLogs.RemoveAt(skyscraperLogs.Count - 1);
         }
+        //show goal hint text
+        if (levelData.levelIndex == 9 || levelData.levelIndex == 11 || levelData.levelIndex == 12)
+        {
+            ShowCellSumAtGoal();
+        }
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -206,6 +211,12 @@ public class LM_012_Skyscraper : LevelMasterBase
         int curPop = levelData.curBoard.GetCellDataByCoord(coord).value;
         SkyscraperCellBg cellBg = playedCellBg.GetComponent<SkyscraperCellBg>();
         UpdateTargetCellSprite(cellBg, prevPop, curPop, ANIM_FALL_DURATION + (migrated ? ANIM_MIGRATION_DURATION : 0) + (boomed ? ANIM_BOOM_DURATION : 0));
+
+        //show goal hint text
+        if (levelData.levelIndex == 9 || levelData.levelIndex == 11 || levelData.levelIndex == 12)
+        {
+            ShowCellSumAtGoal();
+        }
     }
 
     public override bool CheckWinCondition()
@@ -245,11 +256,27 @@ public class LM_012_Skyscraper : LevelMasterBase
         }
         else if (levelData.levelIndex == 9)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 30, 4);
+            return BoardCalculation.Sum_Larger_X(levelData.curBoard, 90); 
         }
         else if (levelData.levelIndex == 10)
         {
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 30, 4);
+        }
+        else if (levelData.levelIndex == 11)
+        {
             return BoardCalculation.Sum_Larger_X(levelData.curBoard, 100);
+        }
+        else if (levelData.levelIndex == 12)
+        {
+            return BoardCalculation.Sum_Larger_X(levelData.curBoard, 150);
+        }
+        else if (levelData.levelIndex == 13)
+        {
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 30, 5);
+        }
+        else if (levelData.levelIndex == 14)
+        {
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 100, 1);
         }
         else
         {
@@ -276,7 +303,7 @@ public class LM_012_Skyscraper : LevelMasterBase
     
     void PopMigration_Anim(Vector2Int fromCoord, Vector2Int toCoord, float delay)
     {
-        Debug.LogWarning(string.Format("anim pop migartion with param ({0},{1}) >> ({2},{3})", fromCoord.x, fromCoord.y, toCoord.x, toCoord.y));
+        //Debug.LogWarning(string.Format("anim pop migartion with param ({0},{1}) >> ({2},{3})", fromCoord.x, fromCoord.y, toCoord.x, toCoord.y));
         Transform fromTrans = null, toTrans = null;
         for (int i = 0; i < themeHub.cellBgs.Count; i++)
         {
@@ -297,7 +324,7 @@ public class LM_012_Skyscraper : LevelMasterBase
     }
     void PopBoom_Anim(Vector2Int coord, float delay)
     {
-        Debug.LogWarning($"play pop boom vfx TBD with a delay of {delay} sec");
+        //Debug.LogWarning($"play pop boom vfx TBD with a delay of {delay} sec");
         for (int i = 0; i < themeHub.cellBgs.Count; i++)
         {
             if (themeHub.cellBgs[i].Key.coord == coord)

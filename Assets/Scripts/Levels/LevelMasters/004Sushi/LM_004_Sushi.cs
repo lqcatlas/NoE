@@ -62,11 +62,9 @@ public class LM_004_Sushi : LevelMasterBase
     {
         if(levelData.levelIndex == 11 || levelData.levelIndex == 12 || levelData.levelIndex == 13)
         {
-            hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
-            hub.goalMaster.lines[1].gameObject.SetActive(true);
-            LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+            ShowCellSumAtGoal();
         }
-        sushiHub.chopsticks.DOFade(1f,0.01f);
+        sushiHub.chopsticks.DOFade(1f, dConstants.UI.StandardizedVFXAnimDuration);
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -198,12 +196,8 @@ public class LM_004_Sushi : LevelMasterBase
         //update current goal status
         if (levelData.levelIndex == 11 || levelData.levelIndex == 12 || levelData.levelIndex == 13)
         {
-            hub.goalMaster.lines[1].SetText(string.Format("{0}{1}", LocalizedAssetLookup.singleton.Translate("@Loc=ui_goal_current_sum@@"), levelData.curBoard.CurrentSum()));
-            hub.goalMaster.lines[1].gameObject.SetActive(true);
-            LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
+            ShowCellSumAtGoal();
         }
-
-        
         //in-play narrative
         /*if (!narrative_lv3_1 && levelData.levelIndex == 3 && BoardCalculation.CountX_Ytimes(levelData.curBoard, 4, 7))
         {
@@ -308,7 +302,7 @@ public class LM_004_Sushi : LevelMasterBase
         AudioCentralCtrl.singleton.PlaySFX(sushiHub.endingVOClips.GetClip(levelData.levelIndex % 8));
         base.WinALevel();
         //pick up chopstick after voice over
-        sushiHub.chopsticks.DOFade(0f, 1f);
+        sushiHub.chopsticks.DOFade(0f, dConstants.UI.StandardizedVFXAnimDuration);
     }
 
     void FoodPlaceAnimation(GameObject sushiPlate, int curStatus, int toolStatus, int finalStatus)

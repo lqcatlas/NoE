@@ -47,5 +47,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8b14873f9e9abf844b969ff28c07da8b, type: 2}
   - {fileID: 11400000, guid: 2155bc1fe7364314599f53d47fd6b379, type: 2}
   - {fileID: 11400000, guid: 7deefd5d029273c4f81c581325d88adc, type: 2}
-  TotalStars: 8
-  TotalGems: 0
+  - {fileID: 11400000, guid: ac82075b5ab378e44a5b401f553551c5, type: 2}
+  - {fileID: 11400000, guid: 16fa84e582864f74fb2f9137538ec0a8, type: 2}
+  - {fileID: 11400000, guid: dfda2b5272a00e34181c09a329c54216, type: 2}
+  - {fileID: 11400000, guid: c847b2a48be38bb459d3dcf20dd10e62, type: 2}
+  - {fileID: 11400000, guid: bc495383322ad7c4ca0b7af7ac043b2d, type: 2}
+  - {fileID: 11400000, guid: 351d97484d04c2444873f54fb5b212e4, type: 2}
+  TotalStars: 10
+  TotalGems: 4

@@ -30,7 +30,7 @@ public class CellMaster : MonoBehaviour
     public SpriteRenderer frameSprt;
     public SpriteRenderer maskSprt;
 
-    Sequence seqNumber = DOTween.Sequence();
+    Sequence seqNumber;
 
     void Awake()
     {

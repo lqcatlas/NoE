@@ -561,7 +561,7 @@ UID,Key,EN,CN
 560,themename_tm11,,三叶草
 561,locked_tm11,,幸运的 █ █ 。
 562,unlocked_tm11,,幸运的<b>四叶草</b>。
-563,hint_tm11,,它是特别的幸运。
+563,hint_tm11,,找到特别的幸运。
 564,date_tm11,,2024/07/09
 565,manifesto_tm11,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
 566,prompt_tm11,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
@@ -617,12 +617,12 @@ UID,Key,EN,CN
 616,narrative_tm12_ln002,,人潮涌动，
 617,narrative_tm12_ln003,,高楼矗立，
 618,narrative_tm12_ln004,,直指苍穹。
-619,narrative_tm12_ln005,,人们从四面八方涌来，
-620,narrative_tm12_ln006,,钢铁与玻璃交织成森林。
-621,narrative_tm12_ln007,,有人辛勤，
-622,narrative_tm12_ln008,,有人踌躇，
-623,narrative_tm12_ln009,,玻璃前无数双眼睛，
-624,narrative_tm12_ln010,,见证着城市的历史。
+619,narrative_tm12_ln005,,有人辛勤，
+620,narrative_tm12_ln006,,有人踌躇，
+621,narrative_tm12_ln007,,玻璃前无数双眼睛，
+622,narrative_tm12_ln008,,见证着城市的历史。
+623,narrative_tm12_ln009,,人们从四面八方涌来，
+624,narrative_tm12_ln010,,钢铁与玻璃交织成森林。
 625,narrative_tm12_ln011,,夜幕降临，
 626,narrative_tm12_ln012,,霓虹闪烁。
 627,narrative_tm12_ln013,,楼宇组成的天际线，
@@ -636,16 +636,28 @@ UID,Key,EN,CN
 635,levelname_lv1206,,006
 636,levelname_lv1207,,007
 637,levelname_lv1208,,008
-638,rule1_lv1201,,摩天大楼：+3人口
+638,rule1_lv1201,,摩天大楼：+2人口
 639,rule2_lv1202,,迁移：建成后人口多于相邻地区
-640,rule3_lv1202,, 则从相邻地区再迁移2人口
+640,rule3_lv1202,, 则从相邻地区再迁移3人口
 641,rule4_lv1206,,爆发：若同时触发2+次人口迁移
 642,rule5_lv1206,, 则额外+5人口
-643,goal_lv1201,,建立2个10+人口的城市
-644,goal_lv1202,,建立1个14+人口的城市
-645,goal_lv1203,,建立2个12+人口的城市
-646,goal_lv1204,,建立3个12+人口的城市
-647,goal_lv1205,,建立4个12+人口的城市
-648,goal_lv1206,,建立1个30+人口的城市
-649,goal_lv1207,,建立3个30+人口的城市
-650,goal_lv1208,,建立5个30+人口的城市
+643,goal_lv1201,,建立2个10+人口的大楼
+644,goal_lv1202,,建立1个15+人口的大楼
+645,goal_lv1203,,建立2个15+人口的大楼
+646,goal_lv1204,,建立3个15+人口的大楼
+647,goal_lv1205,,建立4个15+人口的大楼
+648,goal_lv1206,,建立1个30+人口的大楼
+649,goal_lv1207,,建立4个30+人口的大楼
+650,goal_lv1208,,建立2个30+人口的大楼
+651,levelname_lv1209,,009
+652,levelname_lv1210,,010
+653,levelname_lv1211,,011
+654,levelname_lv1212,,012
+655,levelname_lv1213,,013
+656,levelname_lv1214,,014
+657,goal_lv1209,,让总人口达到90+
+658,goal_lv1210,,建立4个30+人口的大楼
+659,goal_lv1211,,让总人口达到100+
+660,goal_lv1212,,让总人口达到150+
+661,goal_lv1213,,建立5个30+人口的大楼
+662,goal_lv1214,,建立1个100+人口的大楼

@@ -20,9 +20,8 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 7deefd5d029273c4f81c581325d88adc, type: 2}
   theme: '@Loc=themename_tm12@@'
   title: '@Loc=levelname_lv1207@@'
-  newInitNarrative: '@Loc=narrative_tm12_ln011@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm12_ln012@@'
+  newInitNarrative: '@Loc=narrative_tm12_ln010@@'
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm12_ln001@@'
   - '@Loc=narrative_tm12_ln002@@'
@@ -33,7 +32,6 @@ MonoBehaviour:
   - '@Loc=narrative_tm12_ln007@@'
   - '@Loc=narrative_tm12_ln008@@'
   - '@Loc=narrative_tm12_ln009@@'
-  - '@Loc=narrative_tm12_ln010@@'
   goal: '@Loc=goal_lv1207@@'
   ruleset:
   - tag: 0
