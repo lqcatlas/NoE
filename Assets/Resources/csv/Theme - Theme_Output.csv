@@ -10,3 +10,4 @@ UID,themename,requirement,cost,locked,unlocked,hint,date,manifesto,prompt
 7,@Loc=themename_tm7@@,0,14,@Loc=locked_tm7@@,@Loc=unlocked_tm7@@,@Loc=hint_tm7@@,@Loc=date_tm7@@,@Loc=manifesto_tm7@@,@Loc=prompt_tm7@@
 11,@Loc=themename_tm11@@,0,6,@Loc=locked_tm11@@,@Loc=unlocked_tm11@@,@Loc=hint_tm11@@,@Loc=date_tm11@@,@Loc=manifesto_tm11@@,@Loc=prompt_tm11@@
 12,@Loc=themename_tm12@@,0,4,@Loc=locked_tm12@@,@Loc=unlocked_tm12@@,@Loc=hint_tm12@@,@Loc=date_tm12@@,@Loc=manifesto_tm12@@,@Loc=prompt_tm12@@
+13,@Loc=themename_tm13@@,0,4,@Loc=locked_tm13@@,@Loc=unlocked_tm13@@,@Loc=hint_tm13@@,@Loc=date_tm13@@,@Loc=manifesto_tm13@@,@Loc=prompt_tm13@@

@@ -650,7 +650,7 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -658,6 +658,27 @@ TextureImporter:
       bones: []
       spriteID: c1b8c4e94670b334ebc7df10da756156
       internalID: 665651059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: detective_themeicon
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 960
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412a0f81abcd2124399d828789f0d756
+      internalID: -2047871063
       vertices: []
       indices: 
       edges: []
@@ -720,6 +741,7 @@ TextureImporter:
       level_node_empty@v2: 759586718
       spritesheet_selector_73: -890300423
       spritesheet_selector_24: 1265476454
+      detective_themeicon: -2047871063
       spritesheet_selector_39: 132659306
       spritesheet_selector_40: 1096844033
       spritesheet_selector_30: 1334086560

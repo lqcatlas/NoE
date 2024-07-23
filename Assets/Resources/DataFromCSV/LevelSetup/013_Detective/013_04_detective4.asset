@@ -10,61 +10,64 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 012_03_skyscraper3
+  m_Name: 013_04_detective4
   m_EditorClassIdentifier: 
-  levelUID: 1203
-  themeIndex: 12
-  levelIndex: 3
-  nextLevelIndex: 1204
-  previousLevel: {fileID: 11400000, guid: a2669a54b8a45564489fd28b94aa1fe3, type: 2}
-  nextLevel: {fileID: 11400000, guid: 2b36e9477d324c64d8540e3cf64b18c4, type: 2}
-  theme: '@Loc=themename_tm12@@'
-  title: '@Loc=levelname_lv1203@@'
-  newInitNarrative: '@Loc=narrative_tm12_ln003@@'
+  levelUID: 1304
+  themeIndex: 13
+  levelIndex: 4
+  nextLevelIndex: 1305
+  previousLevel: {fileID: 11400000, guid: 2adbaecd81fd2874ca84c1e144b91bc9, type: 2}
+  nextLevel: {fileID: 11400000, guid: 60e990f61e059824dbb93e2a92f49585, type: 2}
+  theme: '@Loc=themename_tm13@@'
+  title: '@Loc=levelname_lv1304@@'
+  newInitNarrative: '@Loc=narrative_tm13_ln004@@'
   newPlayNarratives: []
   oldNarratives:
-  - '@Loc=narrative_tm12_ln001@@'
-  - '@Loc=narrative_tm12_ln002@@'
-  goal: '@Loc=goal_lv1203@@'
+  - '@Loc=narrative_tm13_ln001@@'
+  - '@Loc=narrative_tm13_ln002@@'
+  - '@Loc=narrative_tm13_ln003@@'
+  goal: '@Loc=goal_lv1304@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv1201@@'
+    ruleDesc: '@Loc=rule1_lv1301@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv1202@@'
+    ruleDesc: '@Loc=rule2_lv1301@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv1202@@'
+    ruleDesc: '@Loc=rule3_lv1301@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule4_lv1301@@'
   isHard: 0
   allowRewind: 1
   initBoard:
     boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 6
+      value: 10
       status: 0
     - coord: {x: 1, y: 0}
-      value: 1
+      value: 3
       status: 0
     - coord: {x: 2, y: 0}
-      value: 2
+      value: 3
       status: 0
     - coord: {x: 0, y: 1}
-      value: 7
+      value: 5
       status: 0
     - coord: {x: 1, y: 1}
-      value: 3
+      value: 2
       status: 0
     - coord: {x: 2, y: 1}
       value: 4
       status: 0
     - coord: {x: 0, y: 2}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 1, y: 2}
-      value: 1
+      value: 3
       status: 0
     - coord: {x: 2, y: 2}
-      value: 2
+      value: 4
       status: 0
-    toolCount: 3
+    toolCount: 5
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

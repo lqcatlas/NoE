@@ -10,29 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 012_03_skyscraper3
+  m_Name: 013_03_detective3
   m_EditorClassIdentifier: 
-  levelUID: 1203
-  themeIndex: 12
+  levelUID: 1303
+  themeIndex: 13
   levelIndex: 3
-  nextLevelIndex: 1204
-  previousLevel: {fileID: 11400000, guid: a2669a54b8a45564489fd28b94aa1fe3, type: 2}
-  nextLevel: {fileID: 11400000, guid: 2b36e9477d324c64d8540e3cf64b18c4, type: 2}
-  theme: '@Loc=themename_tm12@@'
-  title: '@Loc=levelname_lv1203@@'
-  newInitNarrative: '@Loc=narrative_tm12_ln003@@'
+  nextLevelIndex: 1304
+  previousLevel: {fileID: 11400000, guid: 400ea0f0c27e2354c8b76073402d99bd, type: 2}
+  nextLevel: {fileID: 11400000, guid: 65de54f9909641240bdf096ad9aafcf9, type: 2}
+  theme: '@Loc=themename_tm13@@'
+  title: '@Loc=levelname_lv1303@@'
+  newInitNarrative: '@Loc=narrative_tm13_ln003@@'
   newPlayNarratives: []
   oldNarratives:
-  - '@Loc=narrative_tm12_ln001@@'
-  - '@Loc=narrative_tm12_ln002@@'
-  goal: '@Loc=goal_lv1203@@'
+  - '@Loc=narrative_tm13_ln001@@'
+  - '@Loc=narrative_tm13_ln002@@'
+  goal: '@Loc=goal_lv1303@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv1201@@'
+    ruleDesc: '@Loc=rule1_lv1301@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv1202@@'
+    ruleDesc: '@Loc=rule2_lv1301@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv1202@@'
+    ruleDesc: '@Loc=rule3_lv1301@@'
+  - tag: 0
+    ruleDesc: '@Loc=rule4_lv1301@@'
   isHard: 0
   allowRewind: 1
   initBoard:

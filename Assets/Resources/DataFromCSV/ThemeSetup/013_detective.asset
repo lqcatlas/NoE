@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88475076ca3eee4e87cd8290fc59a71, type: 3}
+  m_Name: 013_detective
+  m_EditorClassIdentifier: 
+  themeUID: 13
+  unlockPrereq: 0
+  unlockCost: 4
+  themeTitle: '@Loc=themename_tm13@@'
+  lockedLine: '@Loc=locked_tm13@@'
+  unlockedLine: '@Loc=unlocked_tm13@@'
+  hint: '@Loc=hint_tm13@@'
+  date: '@Loc=date_tm13@@'
+  manifesto: '@Loc=manifesto_tm13@@'
+  prompt: '@Loc=prompt_tm13@@'
+  narratives:
+  - '@Loc=narrative_tm13_ln001@@'
+  - '@Loc=narrative_tm13_ln002@@'
+  - '@Loc=narrative_tm13_ln003@@'
+  - '@Loc=narrative_tm13_ln004@@'
+  - '@Loc=narrative_tm13_ln005@@'
+  - '@Loc=narrative_tm13_ln006@@'
+  - '@Loc=narrative_tm13_ln007@@'
+  - '@Loc=narrative_tm13_ln008@@'
+  - '@Loc=narrative_tm13_ln009@@'
+  - '@Loc=narrative_tm13_ln010@@'
+  - '@Loc=narrative_tm13_ln011@@'
+  - '@Loc=narrative_tm13_ln012@@'
+  - '@Loc=narrative_tm13_ln013@@'
+  - '@Loc=narrative_tm13_ln014@@'
+  - '@Loc=narrative_tm13_ln015@@'
+  levels:
+  - {fileID: 11400000, guid: 61e3e96b87c80f542a30cf78046087ed, type: 2}
+  - {fileID: 11400000, guid: 400ea0f0c27e2354c8b76073402d99bd, type: 2}
+  - {fileID: 11400000, guid: 2adbaecd81fd2874ca84c1e144b91bc9, type: 2}
+  - {fileID: 11400000, guid: 65de54f9909641240bdf096ad9aafcf9, type: 2}
+  - {fileID: 11400000, guid: 60e990f61e059824dbb93e2a92f49585, type: 2}
+  - {fileID: 11400000, guid: 24e1421e0fa5e5c4a87fa65c7056062b, type: 2}
+  - {fileID: 11400000, guid: bb16e0ded686a7a48b58e0c781fccb0c, type: 2}
+  - {fileID: 11400000, guid: 3b8dd6999cad1624f9f8ff16eba3e048, type: 2}
+  TotalStars: 8
+  TotalGems: 0
