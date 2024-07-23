@@ -276,7 +276,7 @@ public class LM_012_Skyscraper : LevelMasterBase
         }
         else if (levelData.levelIndex == 14)
         {
-            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 100, 1);
+            return BoardCalculation.CountXplus_Ytimes(levelData.curBoard, 150, 1);
         }
         else
         {

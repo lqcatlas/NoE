@@ -57,10 +57,10 @@ MonoBehaviour:
       value: 2
       status: 0
     - coord: {x: 1, y: 0}
-      value: 3
+      value: 2
       status: 0
     - coord: {x: 2, y: 0}
-      value: 4
+      value: 6
       status: 0
     - coord: {x: 3, y: 0}
       value: 5
@@ -75,7 +75,7 @@ MonoBehaviour:
       value: 2
       status: 0
     - coord: {x: 3, y: 1}
-      value: 4
+      value: 5
       status: 0
     - coord: {x: 0, y: 2}
       value: 3
@@ -101,6 +101,6 @@ MonoBehaviour:
     - coord: {x: 3, y: 3}
       value: 6
       status: 0
-    toolCount: 10
+    toolCount: 13
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}
