@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7425490903384500639}
-  - component: {fileID: 1098082469001083914}
+  - component: {fileID: 4907787209614029244}
   m_Layer: 0
-  m_Name: LMHub_012_Skyscraper
+  m_Name: LMHub_013_Detective
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1098082469001083914
+--- !u!114 &4907787209614029244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,17 +42,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5242734479810822178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f81f7248c58c0e646b0ce3fcb7b5bb96, type: 3}
+  m_Script: {fileID: 11500000, guid: e99c2da83b9f0004f921cec303e89baf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toolSprite: {fileID: -156981939, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  toolStatusGroup:
-    toolStatus:
-    - statusName: 
-      playInfograph: {fileID: 1978449073, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+  toolSprite: {fileID: -636083267, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   bgHolder: {fileID: 4068668159233435932}
-  bldgTemplate: {fileID: 7605107522437205399, guid: 76dc4fde25b96ac4a93f1862c25a3cdd, type: 3}
-  populationTemplate: {fileID: 7605107522437205399, guid: b92d95042f6dbd244a6cff49f274da42, type: 3}
+  ispTemplate: {fileID: 7605107522437205399, guid: 89b23cde4b9f1934e99e57d4d76e3120, type: 3}
+  ispSigns: []
   upgradeClips:
     clips: []
 --- !u!1 &8390322059011748740
