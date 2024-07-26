@@ -278,7 +278,7 @@ PrefabInstance:
     - target: {fileID: 9041480673706616852, guid: 5f0f6cb217fe83d418c44b09027ba0dd, type: 3}
       propertyPath: LevelSetup
       value: 
-      objectReference: {fileID: 11400000, guid: c847b2a48be38bb459d3dcf20dd10e62, type: 2}
+      objectReference: {fileID: 11400000, guid: 61e3e96b87c80f542a30cf78046087ed, type: 2}
     - target: {fileID: 9041480673706616853, guid: 5f0f6cb217fe83d418c44b09027ba0dd, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -3197,6 +3197,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5735799455758330784, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5735799455758330784, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5735799455758330784, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5735799455758330784, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5809393417199081002, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3393,6 +3409,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7674415505322481503, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674415505322481503, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674415505322481503, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674415505322481503, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8064522723007687213, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8064522723007687213, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8064522723007687213, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8136961158508582823, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3510,6 +3554,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8775390743403639197, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956162705569156149, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956162705569156149, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956162705569156149, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8956162705569156149, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}

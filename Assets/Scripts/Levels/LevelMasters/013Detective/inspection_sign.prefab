@@ -48,7 +48,7 @@ MonoBehaviour:
   ispStatus: 0
   sr: {fileID: 5982498519109724719}
   ispSprites:
-  - {fileID: 0}
+  - {fileID: -1014725216, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   - {fileID: 2120586445, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   - {fileID: -1197989655, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
   - {fileID: 1978449073, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}

@@ -12,6 +12,11 @@ public class inspection_sign : MonoBehaviour
     {
         ispStatus = status;
         sr.sprite = ispSprites[status];
+    }
+    public void UpdateSign(int status)
+    {
+        ispStatus = status;
+        sr.sprite = ispSprites[status];
         //TODO: animation needed
     }
 }

@@ -34,37 +34,37 @@ MonoBehaviour:
   - tag: 1
     ruleDesc: '@Loc=rule4_lv1301@@'
   isHard: 0
-  allowRewind: 1
+  allowRewind: 0
   initBoard:
     boardSize: {x: 3, y: 3}
     cells:
     - coord: {x: 0, y: 0}
-      value: 2
-      status: 0
-    - coord: {x: 1, y: 0}
-      value: 0
-      status: 0
-    - coord: {x: 2, y: 0}
-      value: 2
-      status: 0
-    - coord: {x: 0, y: 1}
-      value: 9
-      status: 0
-    - coord: {x: 1, y: 1}
-      value: 3
-      status: 0
-    - coord: {x: 2, y: 1}
-      value: 2
-      status: 0
-    - coord: {x: 0, y: 2}
-      value: 3
-      status: 1
-    - coord: {x: 1, y: 2}
       value: 1
       status: 0
-    - coord: {x: 2, y: 2}
+    - coord: {x: 1, y: 0}
       value: 4
       status: 0
-    toolCount: 4
+    - coord: {x: 2, y: 0}
+      value: 3
+      status: 0
+    - coord: {x: 0, y: 1}
+      value: 5
+      status: 0
+    - coord: {x: 1, y: 1}
+      value: 2
+      status: 0
+    - coord: {x: 2, y: 1}
+      value: 3
+      status: 0
+    - coord: {x: 0, y: 2}
+      value: 1
+      status: 1
+    - coord: {x: 1, y: 2}
+      value: 2
+      status: 0
+    - coord: {x: 2, y: 2}
+      value: 3
+      status: 0
+    toolCount: 3
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}
