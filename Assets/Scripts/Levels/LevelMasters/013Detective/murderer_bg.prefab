@@ -9,9 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9039697311294967119}
-  - component: {fileID: 8629472957975698513}
   m_Layer: 0
-  m_Name: inspection_sign
+  m_Name: murderer_bg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,25 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8629472957975698513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7605107522437205399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d134bb8d15cec3d48a24ee87d47bf152, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ispStatus: 0
-  sr: {fileID: 5982498519109724719}
-  ispSprites:
-  - {fileID: -1958791959, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: 894229184, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: 31474530, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
-  - {fileID: 1622414627, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
 --- !u!1 &8455270708655316685
 GameObject:
   m_ObjectHideFlags: 0
@@ -78,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 8455270708655316685}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9039697311294967119}
@@ -125,7 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2120586445, guid: 6ea52276b6060e94eb7d809f0d4d3185, type: 3}
+  m_Sprite: {fileID: 1445559818, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
   m_Color: {r: 0.4, g: 0.4, b: 0.4, a: 1}
   m_FlipX: 0
   m_FlipY: 0

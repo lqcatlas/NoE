@@ -2192,37 +2192,37 @@ MonoBehaviour:
     CN: 8
   - key: goal_lv1301
     EN: 
-    CN: "\u5728\u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
+    CN: "\u5728<sprite name=meeple_full> \u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
   - key: goal_lv1302
     EN: 
-    CN: "\u5728\u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
+    CN: "\u5728<sprite name=meeple_full> \u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
   - key: goal_lv1303
     EN: 
-    CN: "\u5728\u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
+    CN: "\u5728<sprite name=meeple_full> \u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
   - key: goal_lv1304
     EN: 
-    CN: "\u5728\u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
+    CN: "\u5728<sprite name=meeple_full> \u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
   - key: goal_lv1305
     EN: 
-    CN: "\u5728\u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
+    CN: "\u5728<sprite name=meeple_full> \u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
   - key: goal_lv1306
     EN: 
-    CN: "\u5728\u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
+    CN: "\u5728<sprite name=meeple_full> \u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
   - key: goal_lv1307
     EN: 
-    CN: "\u5728\u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
+    CN: "\u5728<sprite name=meeple_full> \u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
   - key: goal_lv1308
     EN: 
-    CN: "\u5728\u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
+    CN: "\u5728<sprite name=meeple_full> \u5ACC\u7591\u4EBA\u4E2D\uFF0C\u6307\u8BA4\u51F6\u624B"
   - key: rule1_lv1301
     EN: 
-    CN: "\u8D28\u8BE2\uFF1A\u68C0\u89C6\u4E00\u884C\uFF0C\u53EF\u80FD\u662F\u4EE5\u4E0B\u7ED3\u679C"
+    CN: "\u8D28\u8BE2\uFF1A\u8BE2\u95EE<sprite name=meeple_blank> \u4E00\u884C\u76EE\u51FB\u8005"
   - key: rule2_lv1301
     EN: 
-    CN: "\u5339\u914D\uFF1A\u51F6\u624B\u51FA\u73B0\u5728\u6B63\u786E\u65F6\u95F4\uFF08\u5217\uFF09"
+    CN: " <sprite name=sign_complete> \u5339\u914D\uFF1A\u51F6\u624B\u51FA\u73B0\u5728\u6B63\u786E\u65F6\u95F4"
   - key: rule3_lv1301
     EN: 
-    CN: "\u53EF\u7591\uFF1A\u51F6\u624B\u51FA\u73B0\uFF0C\u4F46\u65F6\u95F4\u9519\u8BEF"
+    CN: " <sprite name=sign_unknown> \u53EF\u7591\uFF1A\u51F6\u624B\u51FA\u73B0\uFF0C\u4F46\u65F6\u95F4\u9519\u8BEF"
   - key: rule4_lv1301
     EN: 
-    CN: "\u6392\u9664\uFF1A\u6CA1\u6709\u51F6\u624B\u51FA\u73B0"
+    CN: " <sprite name=rule_sign_deletion> \u6392\u9664\uFF1A\u6CA1\u6709\u51F6\u624B\u51FA\u73B0"

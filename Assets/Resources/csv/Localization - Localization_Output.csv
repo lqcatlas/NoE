@@ -691,15 +691,15 @@ UID,Key,EN,CN
 690,levelname_lv1306,,006
 691,levelname_lv1307,,007
 692,levelname_lv1308,,008
-693,goal_lv1301,,在嫌疑人中，指认凶手
-694,goal_lv1302,,在嫌疑人中，指认凶手
-695,goal_lv1303,,在嫌疑人中，指认凶手
-696,goal_lv1304,,在嫌疑人中，指认凶手
-697,goal_lv1305,,在嫌疑人中，指认凶手
-698,goal_lv1306,,在嫌疑人中，指认凶手
-699,goal_lv1307,,在嫌疑人中，指认凶手
-700,goal_lv1308,,在嫌疑人中，指认凶手
-701,rule1_lv1301,,质询：检视一行，可能是以下结果
-702,rule2_lv1301,,匹配：凶手出现在正确时间（列）
-703,rule3_lv1301,,可疑：凶手出现，但时间错误
-704,rule4_lv1301,,排除：没有凶手出现
+693,goal_lv1301,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
+694,goal_lv1302,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
+695,goal_lv1303,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
+696,goal_lv1304,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
+697,goal_lv1305,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
+698,goal_lv1306,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
+699,goal_lv1307,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
+700,goal_lv1308,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
+701,rule1_lv1301,,质询：询问<sprite name=meeple_blank> 一行目击者
+702,rule2_lv1301,, <sprite name=sign_complete> 匹配：凶手出现在正确时间
+703,rule3_lv1301,, <sprite name=sign_unknown> 可疑：凶手出现，但时间错误
+704,rule4_lv1301,, <sprite name=rule_sign_deletion> 排除：没有凶手出现

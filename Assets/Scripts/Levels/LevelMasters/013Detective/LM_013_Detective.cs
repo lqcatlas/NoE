@@ -1,22 +1,28 @@
+using DG.Tweening;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI.Table;
 
 public class LM_013_Detective : LevelMasterBase
 {
     enum InspectionResult { none = 0, accurate = 1, suspect = 2, exclude = 3 };
     [Header("Theme Additions")]
     public LMHub_013_Detective themeHub;
-
+    //anim param
+    private float INSPECT_DURATRION = 3f;
+    private float INSPECT_POP_SCALE = 1.5f;
+    private float MURDERER_ROW_OFFSET = 0.7f;
+    //inspect logic
     private List<InspectionResult> ispResult;
-    public List<Vector2Int> appointedCoord;
-    public List<Vector2Int> murdererCoord;
-    public List<int> murdererValue;
-
-    public int consecutiveCaseSolved = 0;
-    public bool caseFailed = false;
-
+    private List<Vector2Int> appointedCoord;
+    private List<Vector2Int> murdererCoord;
+    private List<int> murdererValue;
+    //for multi cases
+    private int consecutiveCaseSolved = 0;
+    private bool caseFailed = false;
+    //level index
     private int RANDOMIZE_LVINDEX = 2;
 
     public override void GetObjectReferences(GameObject _themeHub)
@@ -41,9 +47,12 @@ public class LM_013_Detective : LevelMasterBase
     }
     public override void AddtionalInit_Theme(bool isRewind = false)
     {
+        
+        //reset play logs
         consecutiveCaseSolved = 0;
         caseFailed = false;
         appointedCoord = new List<Vector2Int>(); //clear appointed
+        
         //locate the murderers
         murdererCoord = new List<Vector2Int>();
         murdererValue = new List<int>();
@@ -62,7 +71,8 @@ public class LM_013_Detective : LevelMasterBase
         {
             Destroy(oldBgs[i].gameObject);
         }
-        //init isp signs
+        //init isp signs and murderer bg
+        themeHub.cellBgs = new List<KeyValuePair<CellMaster, GameObject>>();
         themeHub.bgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
         themeHub.ispSigns = new List<GameObject>();
         ispResult = new List<InspectionResult>();
@@ -79,16 +89,35 @@ public class LM_013_Detective : LevelMasterBase
                 signXOffset = hub.boardMaster.cells[i].transform.localPosition.x;
                 signYOffsetPerY[hub.boardMaster.cells[i].coord.y] = hub.boardMaster.cells[i].transform.localPosition.y;
             }
+            if(hub.boardMaster.cells[i].coord.y == levelData.initBoard.boardSize.y - 1)
+            {
+                Vector3 curPos = hub.boardMaster.cells[i].transform.localPosition;
+                hub.boardMaster.cells[i].transform.localPosition = curPos + new Vector3(0f, MURDERER_ROW_OFFSET, 0f);
+                //create new bg sprite
+                GameObject obj = Instantiate(themeHub.bgTemplate, themeHub.bgHolder);
+                obj.transform.position = hub.boardMaster.cells[i].transform.position;
+                themeHub.cellBgs.Add(new KeyValuePair<CellMaster, GameObject>(hub.boardMaster.cells[i], obj));
+            }
         }
-        float cellSize = 2f;
+        float additionalOffset = 2f;
         for (int i = 0; i < levelData.initBoard.boardSize.y - 1; i++)
         {
             ispResult.Add(InspectionResult.none);
-            GameObject obj = Instantiate(themeHub.ispTemplate, themeHub.bgHolder);
-            obj.transform.localPosition = new Vector3(signXOffset + cellSize, signYOffsetPerY[i], 0);
+            GameObject obj = Instantiate(themeHub.ispSignTemplate, themeHub.bgHolder);
+            obj.transform.localPosition = new Vector3(signXOffset + additionalOffset, signYOffsetPerY[i], 0);
             obj.GetComponent<inspection_sign>().SetSign((int)ispResult[i]);
             themeHub.ispSigns.Add(obj);
         }
+        //pose the split line
+        float splitLine_Y = (signYOffsetPerY[levelData.initBoard.boardSize.y - 1] + signYOffsetPerY[levelData.initBoard.boardSize.y - 2]) / 2f;
+        themeHub.splitLine.localPosition = new Vector3(0f, (splitLine_Y + MURDERER_ROW_OFFSET) * hub.boardMaster.cellHolder.localScale.y, 0f);
+        //themeHub.splitLine.localScale = hub.boardMaster.cellHolder.localScale * levelData.initBoard.boardSize.x / 3;
+
+        //update cell interactable
+        UpdateCellInteractable();
+
+        //update tool status
+        UpdateToolStatusDisplay();
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -100,9 +129,9 @@ public class LM_013_Detective : LevelMasterBase
         else //row inspection
         {
             int inspectedRow = coord.y;
-            InspectionResult result = InspectRowY(inspectedRow);
+            InspectionResult result = InspectRow(inspectedRow);
             ispResult[inspectedRow] = result;
-            themeHub.ispSigns[inspectedRow].GetComponent<inspection_sign>().UpdateSign((int)result);
+            //themeHub.ispSigns[inspectedRow].GetComponent<inspection_sign>().UpdateSign((int)result);
         }
     }
     public override void HandleEnvironment(Vector2Int coord)
@@ -120,9 +149,23 @@ public class LM_013_Detective : LevelMasterBase
             }
         }
     }
+    public override void UpdateTool(Vector2Int coord)
+    {
+        base.UpdateTool(coord);
+        UpdateToolStatusDisplay();
+
+    }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
-        
+        if (coord.y == levelData.initBoard.boardSize.y - 1) //murder appointing 
+        {
+            //TODO: update murder appointment
+        }
+        else //row inspection
+        {
+            InspectRow_Anim(coord.y);
+        }
+        UpdateCellInteractable();
     }
     public override bool CheckLoseCondition()
     {
@@ -180,12 +223,12 @@ public class LM_013_Detective : LevelMasterBase
         return success;
     }
     
-    InspectionResult InspectRowY(int y)
+    InspectionResult InspectRow(int row)
     {
         InspectionResult result = InspectionResult.exclude;
         for (int i = 0;i < levelData.curBoard.cells.Count;i++)
         {
-            if (levelData.curBoard.cells[i].coord.y == y)
+            if (levelData.curBoard.cells[i].coord.y == row)
             {
                 if (murdererValue.Contains(levelData.curBoard.cells[i].value)) //ambiguous match
                 {
@@ -203,13 +246,49 @@ public class LM_013_Detective : LevelMasterBase
         }
         return result;
     }
+    void InspectRow_Anim(int row)
+    {
+        //collect all cells of the row in order
+        List<GameObject> cellsInRow = new List<GameObject>();
+        for(int i=0;i<levelData.curBoard.boardSize.x;i++)
+        {
+            cellsInRow.Add(null); //add placeholders as the same amount as board's X size
+        }
+        for(int i = 0; i < hub.boardMaster.cells.Count; i++)
+        {
+            if(hub.boardMaster.cells[i].coord.y == row)
+            {
+                cellsInRow[hub.boardMaster.cells[i].coord.x] = hub.boardMaster.cells[i].gameObject;
+            }
+        }
+        //create inspect obj, move it
+        float cellSize = 2f;
+        GameObject animObj = Instantiate(themeHub.ispAnimTemplate, themeHub.bgHolder);
+        Vector3 startPos = cellsInRow[0].transform.localPosition - Vector3.right * cellSize/2f;
+        Vector3 endPos = cellsInRow[cellsInRow.Count - 1].transform.localPosition + Vector3.right * cellSize / 2f;
+        animObj.transform.localPosition = startPos;
+        animObj.SetActive(true);
+        animObj.transform.DOLocalMove(endPos, INSPECT_DURATRION).SetEase(Ease.Linear).OnComplete(()=>Destroy(animObj));
+        //create number popup sequence
+        Sequence seq = DOTween.Sequence();
+        float inspectCellInterval = INSPECT_DURATRION / cellsInRow.Count;
+        for(int i = 0;i<cellsInRow.Count;i++)
+        {
+            Transform trans = cellsInRow[i].GetComponent<CellMaster>().numberGroup;
+            float delay = inspectCellInterval * i;
+            trans.localScale = Vector3.one;
+            seq.Insert(delay, trans.DOScale(INSPECT_POP_SCALE, dConstants.UI.StandardizedBtnAnimDuration/2f).SetLoops(2, LoopType.Yoyo));
+        }
+        //update sign
+        seq.InsertCallback(INSPECT_DURATRION, ()=>themeHub.ispSigns[row].GetComponent<inspection_sign>().UpdateSign((int)ispResult[row]));
+    }
     void RandomizeDetectiveBoard(DataBoard board)
     {
         //shuffle on numbers
         List<int> numberShift = Enumerable.Range(1, 9).ToList();
         numberShift = numberShift.OrderBy(x => Guid.NewGuid()).ToList();
         numberShift.Insert(0, 0);
-        Debug.LogWarning("numbershift list: " + string.Join(", ", numberShift));
+        //Debug.LogWarning("numbershift list: " + string.Join(", ", numberShift));
 
         int[,] valueInArray = new int[board.boardSize.x, board.boardSize.y];
         int[,] statusInArray = new int[board.boardSize.x, board.boardSize.y];
@@ -253,6 +332,53 @@ public class LM_013_Detective : LevelMasterBase
         {
             board.cells[i].value = valueInArray[board.cells[i].coord.x, board.cells[i].coord.y];
             board.cells[i].status = statusInArray[board.cells[i].coord.x, board.cells[i].coord.y];
+        }
+    }
+    void UpdateCellInteractable()
+    {
+        bool hasEnoughTools = levelData.curBoard.toolCount > murdererCoord.Count;
+        for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+        {
+            int row = hub.boardMaster.cells[i].coord.y;
+            if (row == levelData.initBoard.boardSize.y - 1)
+            {
+                if (!appointedCoord.Contains(hub.boardMaster.cells[i].coord))
+                {
+                    hub.boardMaster.cells[i].SetCellInteractable(true);
+                }
+                else
+                {
+                    hub.boardMaster.cells[i].SetCellInteractable(false);
+                }
+            }
+            else if (ispResult[row] == InspectionResult.none && hasEnoughTools)
+            {
+                hub.boardMaster.cells[i].SetCellInteractable(true);
+            }
+            else
+            {
+                hub.boardMaster.cells[i].SetCellInteractable(false);
+            }
+        }
+    }
+    void UpdateToolStatusDisplay()
+    {
+        levelData.curBoard.toolStatus = levelData.curBoard.toolCount > murdererCoord.Count ? 0 : 1;
+        ToolStatusGroup targetDisplayTemplate = themeHub.toolStatusGroup;
+        string toolName = targetDisplayTemplate.GetStatusName(levelData.curBoard.toolStatus);
+        if (toolName != null)
+        {
+            hub.toolMaster.toolSubtitle.SetText(LocalizedAssetLookup.singleton.Translate(toolName));
+        }
+        Sprite toolInfograph = targetDisplayTemplate.GetStatusInfograph(levelData.curBoard.toolStatus);
+        if (toolInfograph != null)
+        {
+            hub.toolMaster.infographGroup.SetActive(true);
+            hub.toolMaster.infograph.sprite = toolInfograph;
+        }
+        else
+        {
+            hub.toolMaster.infographGroup.SetActive(false);
         }
     }
 }

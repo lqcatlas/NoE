@@ -3603,7 +3603,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: meeple
+      name: meeple_blank
       rect:
         serializedVersion: 2
         x: 1792
@@ -3632,7 +3632,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3653,7 +3653,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3661,6 +3661,27 @@ TextureImporter:
       bones: []
       spriteID: 7d2684c16954e274b9897073a79f50c7
       internalID: 1107224480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meeple_full
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b1e19fe59f1e94e86d20185bb9efca
+      internalID: 1445559818
       vertices: []
       indices: 
       edges: []
@@ -3714,8 +3735,8 @@ TextureImporter:
       coin_shape_14: 1814891975
       scissor@v2: -905120408
       star4_v4: -171714075
-      cityzone_6: -2001929122
       window1_v1_fill: -1768017671
+      cityzone_6: -2001929122
       window4_v1: 603203415
       window1_v1: 493005343
       clocktime_tool_v0: 170430977
@@ -3725,7 +3746,6 @@ TextureImporter:
       star5_v4: -492410094
       moon_v1: -1021666675
       coin_shape_9: 456645366
-      meeple: -1958791959
       star3_v3: 2111767151
       clocktime_tool_v6: 692642002
       moon_quarter2@v2: -2009238499
@@ -3747,6 +3767,7 @@ TextureImporter:
       clocktime_tool_v11: 1014170568
       clover_tool@v2: -570091471
       flask@v2: -1769165631
+      meeple_full: 1445559818
       bulb_off@v2: 1976225001
       coin_shape_15: 1042714110
       onigiri@v1: -41299935
@@ -3809,6 +3830,7 @@ TextureImporter:
       coin_shape_18: 583874050
       star3_v2: -1640390538
       coin_shape_2: -1121153292
+      meeple_blank: -1958791959
       ILSH_L_v2: -309162851
       star4_v3: -2112610497
       star2_v3: 830675439
