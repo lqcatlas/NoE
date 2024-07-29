@@ -703,3 +703,8 @@ UID,Key,EN,CN
 702,rule2_lv1301,, <sprite name=sign_complete> 匹配：凶手出现在正确时间
 703,rule3_lv1301,, <sprite name=sign_unknown> 可疑：凶手出现，但时间错误
 704,rule4_lv1301,, <sprite name=rule_sign_deletion> 排除：没有凶手出现
+705,tool_name_theme13_status0,Inquire <size=70%>or</size> Identify,质询 <size=70%>或</size> 指认
+706,tool_name_theme13_status1,Identify the murderer now!,时间不足，立刻指认！
+707,tm13_suspect,Suspect,嫌疑人
+708,tm13_witness,Witness,目击者
+709,tm13_goal_case_solved,Case solved: ,连续解决案件数：

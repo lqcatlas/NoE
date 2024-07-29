@@ -7,7 +7,7 @@ public class inspectAnim : MonoBehaviour
 {
     [SerializeField] Transform axis;
     [SerializeField] Transform icon;
-    static float INSPECT_CYCLE_DURATION = .8f;
+    static float INSPECT_CYCLE_DURATION = .6f;
     static int CYCLE_TIME = 12;
     private Sequence seq;
     private void OnEnable()

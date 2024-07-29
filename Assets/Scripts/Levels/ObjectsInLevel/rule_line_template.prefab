@@ -723,7 +723,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u653E\u7F6E\u65F6\u949F\u7684\u683C\u5B50 +1"
+  m_text: "\u653E\u7F6E\u65F6\u949F\u7684\u683C\u5B50<sprite name=currency_gem> +1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0438792a9abcde94ba498411eb1f1ffe, type: 2}
   m_sharedMaterial: {fileID: 579824242631739247, guid: 0438792a9abcde94ba498411eb1f1ffe, type: 2}
