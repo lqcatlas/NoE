@@ -20,20 +20,21 @@ public class LM_013_Detective : LevelMasterBase
     private List<Vector2Int> appointedCoord;
     private List<Vector2Int> murdererCoord;
     private List<int> murdererValue;
+    private List<int> suspectValue;
     //for multi cases
     private int consecutiveCaseSolved = 0;
     private bool needNewCase = false;
     private bool caseFailed = false;
     //level index
     private int RANDOMIZE_LVINDEX = 2;
-    private int CONSECTIVE_CASE_2_LVINDEX = 2;
-    private int CONSECTIVE_CASE_3_LVINDEX = 3;
+    private int CONSECTIVE_CASE_2_LVINDEX = 9;
+    private int CONSECTIVE_CASE_3_LVINDEX = 10;
 
     public override void GetObjectReferences(GameObject _themeHub)
     {
         base.GetObjectReferences(null);
         themeHub = _themeHub.GetComponent<LMHub_013_Detective>();
-        ThemeAnimationDelayAfterPlay = 1.2f;
+        ThemeAnimationDelayAfterPlay = 0.8f;
     }
     public override void InitBoardData()
     {
@@ -50,6 +51,25 @@ public class LM_013_Detective : LevelMasterBase
         base.InitTool();
         hub.toolMaster.toolIcon.sprite = themeHub.toolSprite;
     }
+    public override void InitCells()
+    {
+        for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+        {
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+            if (temp_cellData != null)
+            {
+                if(temp_cellData.status >= 0)
+                {
+                    hub.boardMaster.cells[i].DisplayNumber(temp_cellData.value);
+                    hub.boardMaster.cells[i].SetColor(dConstants.UI.DefaultColor_1st);
+                }
+                else
+                {
+                    hub.boardMaster.cells[i].SetCellEmpty(true);
+                }
+            }
+        }
+    }
     public override void AddtionalInit_Theme(bool isRewind = false)
     {
         //reset play logs
@@ -65,8 +85,21 @@ public class LM_013_Detective : LevelMasterBase
                 hub.boardMaster.cells[i].transform.localPosition = curPos + new Vector3(0f, MURDERER_ROW_OFFSET, 0f);
             }
         }
-
         NewCaseDisplay();
+    }
+    public override void ToolConsume(Vector2Int coord)
+    {
+        //consume tool and save curboard to previous board/boards
+        levelData.curBoard.curPlayCoord = coord;
+        levelData.previousBoard = new DataBoard(levelData.curBoard);
+        if (levelData.allowRewind)
+        {
+            levelData.previousBoards.Add(new DataBoard(levelData.curBoard));
+        }
+        if (coord.y != levelData.initBoard.boardSize.y - 1)
+        {
+            levelData.curBoard.toolCount -= 1;
+        }
     }
     public override void HandlePlayerInput(Vector2Int coord)
     {
@@ -88,6 +121,7 @@ public class LM_013_Detective : LevelMasterBase
             ispResult[inspectedRow] = result;
         }
     }
+    
     public override void HandleEnvironment(Vector2Int coord)
     {
         if (appointedCoord.Count == murdererCoord.Count) // made enough appointment so start checking
@@ -109,6 +143,25 @@ public class LM_013_Detective : LevelMasterBase
         base.UpdateTool(coord);
         UpdateToolStatusDisplay();
     }
+    public override void UpdateCells(Vector2Int coord)
+    {
+        //value do not update in Detective
+        for (int i = 0; i < themeHub.witnessBgs.Count; i++)
+        {
+            if (ispResult[themeHub.witnessBgs[i].Key.coord.y] != InspectionResult.none) //inspected line
+            {
+                DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(themeHub.witnessBgs[i].Key.coord);
+                CellMaster cm = themeHub.witnessBgs[i].Key;
+                float totalFinishedTime = INSPECT_DURATRION + dConstants.UI.StandardizedBtnAnimDuration;
+                if (!suspectValue.Contains(temp_cellData.value)) //irrelevant numbers
+                {
+                    Sequence seq = DOTween.Sequence();
+                    seq.AppendInterval(totalFinishedTime);
+                    seq.AppendCallback(() => cm.SetColor(dConstants.UI.DefaultColor_3rd));
+                }
+            }
+        }
+    }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
         if (coord.y == levelData.initBoard.boardSize.y - 1) //murder appointing 
@@ -122,17 +175,9 @@ public class LM_013_Detective : LevelMasterBase
         UpdateCellInteractable();
 
     }
-    public override void DelayedPlay_Theme()
-    {
-        
-    }
     public override bool CheckLoseCondition()
     {
-        if (levelData.curBoard.toolCount == 0)
-        {
-            return true;
-        }
-        else if(caseFailed) // made enough appointment so start checking
+        if(caseFailed) // made enough appointment so start checking
         {
             caseFailed = false;
             return true;
@@ -194,12 +239,17 @@ public class LM_013_Detective : LevelMasterBase
         //locate the murderers
         murdererCoord = new List<Vector2Int>();
         murdererValue = new List<int>();
+        suspectValue = new List<int>();
         for (int i = 0; i < levelData.curBoard.cells.Count; i++)
         {
-            if (levelData.curBoard.cells[i].coord.y == levelData.curBoard.boardSize.y - 1 && levelData.curBoard.cells[i].status > 0)
+            if (levelData.curBoard.cells[i].coord.y == levelData.curBoard.boardSize.y - 1)
             {
-                murdererCoord.Add(levelData.curBoard.cells[i].coord);
-                murdererValue.Add(levelData.curBoard.cells[i].value);
+                if (levelData.curBoard.cells[i].status > 0)
+                {
+                    murdererCoord.Add(levelData.curBoard.cells[i].coord);
+                    murdererValue.Add(levelData.curBoard.cells[i].value);
+                }    
+                suspectValue.Add(levelData.curBoard.cells[i].value);
             }
         }
         //clear old bgs
@@ -210,7 +260,8 @@ public class LM_013_Detective : LevelMasterBase
             Destroy(oldBgs[i].gameObject);
         }
         //init isp signs and murderer bg
-        themeHub.cellBgs = new List<KeyValuePair<CellMaster, GameObject>>();
+        themeHub.suspectBgs = new List<KeyValuePair<CellMaster, GameObject>>();
+        themeHub.witnessBgs = new List<KeyValuePair<CellMaster, GameObject>>();
         themeHub.bgHolder.transform.localScale = hub.boardMaster.cellHolder.localScale;
         themeHub.ispSigns = new List<GameObject>();
         ispResult = new List<InspectionResult>();
@@ -229,10 +280,22 @@ public class LM_013_Detective : LevelMasterBase
             }
             if (hub.boardMaster.cells[i].coord.y == levelData.initBoard.boardSize.y - 1)
             {
-                //create new bg sprite
-                GameObject obj = Instantiate(themeHub.bgTemplate, themeHub.bgHolder);
+                //create new murder bg sprite
+                GameObject obj = Instantiate(themeHub.suspectBgTemplate, themeHub.bgHolder);
                 obj.transform.position = hub.boardMaster.cells[i].transform.position;
-                themeHub.cellBgs.Add(new KeyValuePair<CellMaster, GameObject>(hub.boardMaster.cells[i], obj));
+                themeHub.suspectBgs.Add(new KeyValuePair<CellMaster, GameObject>(hub.boardMaster.cells[i], obj));
+            }
+            else
+            {
+                //create new witness bg sprite
+                GameObject obj = Instantiate(themeHub.witnessBgTemplate, themeHub.bgHolder);
+                obj.transform.position = hub.boardMaster.cells[i].transform.position;
+                themeHub.witnessBgs.Add(new KeyValuePair<CellMaster, GameObject>(hub.boardMaster.cells[i], obj));
+                DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+                if (temp_cellData.status < 0)
+                {
+                    obj.transform.Find("unknown_sign").GetComponent<SpriteRenderer>().color = dConstants.UI.DefaultColor_1st;
+                }
             }
         }
         float additionalOffset = 2f;
@@ -316,11 +379,11 @@ public class LM_013_Detective : LevelMasterBase
     }
     void Lockdown_Anim(int col)
     {
-        for(int i = 0;i<themeHub.cellBgs.Count;i++)
+        for(int i = 0;i<themeHub.suspectBgs.Count;i++)
         {
-            if (themeHub.cellBgs[i].Key.coord.x == col)
+            if (themeHub.suspectBgs[i].Key.coord.x == col)
             {
-                themeHub.cellBgs[i].Value.transform.Find("jail_door_anim").gameObject.SetActive(true);
+                themeHub.suspectBgs[i].Value.transform.Find("jail_door_anim").gameObject.SetActive(true);
             }
         }
     }
@@ -328,15 +391,18 @@ public class LM_013_Detective : LevelMasterBase
     {
         //collect all cells of the row in order
         List<GameObject> cellsInRow = new List<GameObject>();
-        for(int i=0;i<levelData.curBoard.boardSize.x;i++)
+        List<GameObject> bgsInRow = new List<GameObject>();
+        for (int i=0;i<levelData.curBoard.boardSize.x;i++)
         {
             cellsInRow.Add(null); //add placeholders as the same amount as board's X size
+            bgsInRow.Add(null);
         }
-        for(int i = 0; i < hub.boardMaster.cells.Count; i++)
+        for(int i = 0; i < themeHub.witnessBgs.Count; i++)
         {
-            if(hub.boardMaster.cells[i].coord.y == row)
+            if(themeHub.witnessBgs[i].Key.coord.y == row)
             {
-                cellsInRow[hub.boardMaster.cells[i].coord.x] = hub.boardMaster.cells[i].gameObject;
+                cellsInRow[themeHub.witnessBgs[i].Key.coord.x] = themeHub.witnessBgs[i].Key.gameObject;
+                bgsInRow[themeHub.witnessBgs[i].Key.coord.x] = themeHub.witnessBgs[i].Value;
             }
         }
         //create inspect obj, move it
@@ -350,12 +416,21 @@ public class LM_013_Detective : LevelMasterBase
         //create number popup sequence
         Sequence seq = DOTween.Sequence();
         float inspectCellInterval = INSPECT_DURATRION / cellsInRow.Count;
-        for(int i = 0;i<cellsInRow.Count;i++)
+        for (int i = 0; i < cellsInRow.Count; i++)
         {
             Transform trans = cellsInRow[i].GetComponent<CellMaster>().numberGroup;
             float delay = inspectCellInterval * i;
             trans.localScale = Vector3.one;
-            seq.Insert(delay, trans.DOScale(INSPECT_POP_SCALE, dConstants.UI.StandardizedBtnAnimDuration/2f).SetLoops(2, LoopType.Yoyo));
+            seq.Insert(delay, trans.DOScale(INSPECT_POP_SCALE, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetLoops(2, LoopType.Yoyo));
+            //check and reveal the unknown
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(cellsInRow[i].GetComponent<CellMaster>().coord);
+            if (temp_cellData.status == -1)
+            {
+                CellMaster cm = cellsInRow[i].GetComponent<CellMaster>();
+                SpriteRenderer unknownSign = bgsInRow[i].transform.Find("unknown_sign").GetComponent<SpriteRenderer>();
+                seq.Insert(delay, unknownSign.DOFade(0f, dConstants.UI.StandardizedVFXAnimDuration));
+                seq.InsertCallback(delay, () => cm.DisplayNumber(temp_cellData.value));
+            }
         }
         //update sign
         seq.InsertCallback(INSPECT_DURATRION, ()=>themeHub.ispSigns[row].GetComponent<inspection_sign>().UpdateSign((int)ispResult[row]));
@@ -414,7 +489,7 @@ public class LM_013_Detective : LevelMasterBase
     }
     void UpdateCellInteractable()
     {
-        bool hasEnoughTools = levelData.curBoard.toolCount > murdererCoord.Count;
+        bool hasEnoughTools = levelData.curBoard.toolCount > 0;
         for (int i = 0; i < hub.boardMaster.cells.Count; i++)
         {
             int row = hub.boardMaster.cells[i].coord.y;
@@ -441,7 +516,7 @@ public class LM_013_Detective : LevelMasterBase
     }
     void UpdateToolStatusDisplay()
     {
-        levelData.curBoard.toolStatus = levelData.curBoard.toolCount > murdererCoord.Count ? 0 : 1;
+        levelData.curBoard.toolStatus = levelData.curBoard.toolCount > 0 ? 0 : 1;
         ToolStatusGroup targetDisplayTemplate = themeHub.toolStatusGroup;
         string toolName = targetDisplayTemplate.GetStatusName(levelData.curBoard.toolStatus);
         if (toolName != null)

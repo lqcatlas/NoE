@@ -561,7 +561,7 @@ UID,Key,EN,CN
 560,themename_tm11,,三叶草
 561,locked_tm11,,幸运的 █ █ 。
 562,unlocked_tm11,,幸运的<b>四叶草</b>。
-563,hint_tm11,,找到特别的幸运。
+563,hint_tm11,,它是特别的幸运。
 564,date_tm11,,2024/07/09
 565,manifesto_tm11,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
 566,prompt_tm11,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
@@ -607,8 +607,8 @@ UID,Key,EN,CN
 606,goal_lv1112,,找到幸运的四叶草
 607,rule2_lv1112,,耐心也很重要
 608,themename_tm12,,摩天大楼
-609,locked_tm12,,█ █ 吸引人。
-610,unlocked_tm12,,<b>大楼</b>吸引人。
+609,locked_tm12,,█ █ 吸引人群。
+610,unlocked_tm12,,<b>大楼</b>吸引人群。
 611,hint_tm12,,它矗立的在城市的中心。
 612,date_tm12,,2024/07/13
 613,manifesto_tm12,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
@@ -691,20 +691,20 @@ UID,Key,EN,CN
 690,levelname_lv1306,,006
 691,levelname_lv1307,,007
 692,levelname_lv1308,,008
-693,goal_lv1301,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
-694,goal_lv1302,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
-695,goal_lv1303,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
-696,goal_lv1304,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
-697,goal_lv1305,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
-698,goal_lv1306,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
-699,goal_lv1307,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
-700,goal_lv1308,,在<sprite name=meeple_full> 嫌疑人中，指认凶手
-701,rule1_lv1301,,质询：询问<sprite name=meeple_blank> 一行目击者
-702,rule2_lv1301,, <sprite name=sign_complete> 匹配：凶手出现在正确时间
-703,rule3_lv1301,, <sprite name=sign_unknown> 可疑：凶手出现，但时间错误
+693,goal_lv1301,,在嫌疑人<sprite name=meeple_full> 中，指认凶手
+694,goal_lv1302,,在嫌疑人<sprite name=meeple_full> 中，指认凶手
+695,goal_lv1303,,在嫌疑人<sprite name=meeple_full> 中，指认凶手
+696,goal_lv1304,,在嫌疑人<sprite name=meeple_full> 中，指认凶手
+697,goal_lv1305,,在嫌疑人<sprite name=meeple_full> 中，指认凶手
+698,goal_lv1306,,在嫌疑人<sprite name=meeple_full> 中，指认凶手
+699,goal_lv1307,,在嫌疑人<sprite name=meeple_full> 中，指认凶手
+700,goal_lv1308,,在嫌疑人<sprite name=meeple_full> 中，指认凶手
+701,rule1_lv1301,,质询某一行的目击者<sprite name=meeple_blank>
+702,rule2_lv1301,, <sprite name=sign_complete> 匹配：凶手出现在正确的列
+703,rule3_lv1301,, <sprite name=sign_unknown> 可疑：凶手出现但位于错误的列
 704,rule4_lv1301,, <sprite name=rule_sign_deletion> 排除：没有凶手出现
-705,tool_name_theme13_status0,Inquire <size=70%>or</size> Identify,质询 <size=70%>或</size> 指认
-706,tool_name_theme13_status1,Identify the murderer now!,时间不足，立刻指认！
+705,tool_name_theme13_status0,Inquire <size=70%>or</size> Identify,质询<size=70%>或</size>指认
+706,tool_name_theme13_status1,Identify the murderer now!,质询耗尽，必须指认！
 707,tm13_suspect,Suspect,嫌疑人
 708,tm13_witness,Witness,目击者
-709,tm13_goal_case_solved,Case solved: ,连续解决案件数：
+709,tm13_goal_case_solved,Case solved: ,已解决案件数：

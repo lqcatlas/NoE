@@ -3674,7 +3674,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3682,6 +3682,27 @@ TextureImporter:
       bones: []
       spriteID: 37b1e19fe59f1e94e86d20185bb9efca
       internalID: 1445559818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sign_unkown_noframe
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175bf65d00ae8a14a8ffd2a6bdee12a6
+      internalID: 2057330348
       vertices: []
       indices: 
       edges: []
@@ -3704,168 +3725,169 @@ TextureImporter:
       cell_frame@v3: 1068077397
       onigiri@v2: -829597296
       window1_full: -2042462037
-      clocktime_tool_v10: -1521693884
       coin_shape_17: 197367766
-      moon_v3: -2095106216
       clocktime_tool_v3: -452774770
       moon_quarter1@v1: 1359144373
-      clocktime_tool_v7: 1661466280
       coin_shape_5: -108656681
-      star6_v1: 1531382219
       clock_tool_v3: 875719825
       window3_fill: 46753427
-      clock_tool_v4: 460082281
-      cityzone_4: 669435617
       cityzone_1: 237269212
       clocktime_tool_v1: 2019611272
+      coin_tool_tail_v2: 721773185
+      coin_shape_10: -885857587
+      clocktime_tool_v11: 1014170568
+      window1_v1_fill: -1768017671
+      window1_v1: 493005343
+      clocktime_tool_v0: 170430977
+      star3_v3: 2111767151
+      cityzone_7: -1240283744
+      moon_quarter2@v2: -2009238499
+      moon_quarter1@v2: 606910484
+      meeple_full: 1445559818
+      window2_full: 1052855341
+      star1_v1: 521555965
+      currency_star: -2054183618
+      star6_v3: -781750752
+      clover_tool@v2: -570091471
+      coin_shape_15: 1042714110
+      onigiri@v1: -41299935
+      bulb_on@v2: 935129763
+      sign_unkown_noframe: 2057330348
+      star3_v4: 2066761262
+      window3_v2: -1328685625
+      badge_tool@v1: -7132068
+      moon_v4: -1618747589
+      rule_sign_addition: 1169092994
+      window4_full: 1684832504
+      detective_tool@v2: 1107224480
+      currency_gem: -173911021
+      star1_v4: -692310129
+      coin_shape_16: 1689295449
+      coin_shape_1: -1619278045
+      moon_crescent1@v2: -1945855551
+      coin_tool_tail_v1: -1806039361
+      clocktime_tool_v9: 480742791
+      star3_v1: -950381411
+      sushi@v1: 1983163683
+      window5_fill: 692586796
+      cityzone_2: -380033298
+      star6_v4: 1937736281
+      cell_frame@v6: -1699900004
+      cell_frame@v7: 1671980107
+      crown@v1: 1320047159
+      sushi@v2: 570420139
+      ILSH_H_v1: 1115350096
+      star2_v1: 1350227895
+      coin_shape_18: 583874050
+      star4_v3: -2112610497
+      coin_shape_12: 961981626
+      currency_gem_frame: 1380928617
+      coin_tool_head_v1: -347663578
+      bulb_tool@v1: -81264564
+      moon_crescent2@v1: -348473210
+      skyscraper_tool@v1: -156981939
+      window3_full: -633744324
+      skyscraper_tool@v2: 1102420743
+      clocktime_tool_v2: -1691713925
+      window4_v2: 940230836
+      exit_v1: 1334681943
+      ui_step_sign: 1812712270
+      clocktime_tool_v8: -476586744
+      moon_crescent2@v2: 1391890634
+      cityzone_3: -698969613
+      ILSH_H_v2: -643840337
+      bulb_tool@v2: -1559598106
+      clock_tool_v2: -770779851
+      clocktime_tool_v10: -1521693884
+      moon_v3: -2095106216
+      clocktime_tool_v7: 1661466280
+      star6_v1: 1531382219
+      clock_tool_v4: 460082281
+      cityzone_4: 669435617
       clover_tool@v1: -1679121304
       ILSH_I_v2: 1186618194
       cell_frame@v5: -1192213075
       ILSH_S_v1: 129808772
-      coin_tool_tail_v2: 721773185
       star5_v1: 1509846098
       window4_fill: 540012853
       star4_v2: 386469113
       window2_v2: -1711099353
       window2_v1: -1669547323
-      coin_shape_10: -885857587
       sashimi@v1: -1949828261
       rule_sign_update: 959238756
       rice@v1: 92953782
       coin_shape_14: 1814891975
       scissor@v2: -905120408
       star4_v4: -171714075
-      window1_v1_fill: -1768017671
       cityzone_6: -2001929122
       window4_v1: 603203415
-      window1_v1: 493005343
-      clocktime_tool_v0: 170430977
       cell_frame@v8: -103624895
+      detective_tool@v1: -636083267
       cell_frame@v4: 177954906
       window1_v2: -779497320
       star5_v4: -492410094
       moon_v1: -1021666675
       coin_shape_9: 456645366
-      star3_v3: 2111767151
       clocktime_tool_v6: 692642002
-      moon_quarter2@v2: -2009238499
       star5_v2: -304279284
-      moon_quarter1@v2: 606910484
-      window2_full: 1052855341
       ILSH_L_v1: -944304367
       star1_v2: -1889701447
       clock_tool_v6: 962059274
       window5_full: -872146286
-      star1_v1: 521555965
       bulb_off@v1: 1880714286
-      currency_star: -2054183618
       window2_fill: 480405304
-      star6_v3: -781750752
       coin_shape_20: -920651032
       sign_unknown: 31474530
       coin_shape_11: -1872248968
-      clocktime_tool_v11: 1014170568
-      clover_tool@v2: -570091471
       flask@v2: -1769165631
-      meeple_full: 1445559818
       bulb_off@v2: 1976225001
-      coin_shape_15: 1042714110
-      onigiri@v1: -41299935
-      bulb_on@v2: 935129763
-      ILSH_S_v2: 1475740820
       sashimi@v2: 1960666750
-      star3_v4: 2066761262
+      ILSH_S_v2: 1475740820
       coin_shape_3: -642693803
       moon_crescent1@v1: 79321404
-      detective_tool@v1: -636083267
       coin_shape_6: -1362156108
       star6_v2: -59877654
-      window3_v2: -1328685625
       window5_v2: -1835653343
-      badge_tool@v1: -7132068
       star2_v2: 1701133427
-      moon_v4: -1618747589
       star4_v1: -1221237601
       rule_sign_deletion: 1622414627
       cityzone_5: -303602701
-      rule_sign_addition: 1169092994
-      window4_full: 1684832504
-      detective_tool@v2: 1107224480
       star5_v3: 1932512887
-      currency_gem: -173911021
-      cityzone_7: -1240283744
-      star1_v4: -692310129
-      coin_shape_16: 1689295449
       ILSH_I_v1: 175602717
-      coin_shape_1: -1619278045
       clock_tool_v1: 58489355
-      moon_crescent1@v2: -1945855551
-      coin_tool_tail_v1: -1806039361
       coin_tool_head_v2: -1036423111
       bulb_on@v1: 935129763
-      clocktime_tool_v9: 480742791
-      star3_v1: -950381411
-      sushi@v1: 1983163683
-      window5_fill: 692586796
       sword@v1: 503426635
       badge_tool@v2: 991213013
-      cityzone_2: -380033298
       window3_v1: -268414213
       flask@v1: -1524441901
       currency_star_frame: -435409087
       crown@v2: 1621451177
       full_moon@v1: 15978782
       coin_shape_19: 1010904879
-      star6_v4: 1937736281
-      cell_frame@v6: -1699900004
+      scissor@v1: -1887631101
       moon_quarter2@v1: 153082221
       rice@v2: 1031155536
-      cell_frame@v7: 1671980107
-      crown@v1: 1320047159
-      sushi@v2: 570420139
-      ILSH_H_v1: 1115350096
-      scissor@v1: -1887631101
-      star2_v1: 1350227895
       coin_shape_7: 472513175
-      coin_shape_18: 583874050
+      meeple_blank: -1958791959
       star3_v2: -1640390538
       coin_shape_2: -1121153292
-      meeple_blank: -1958791959
       ILSH_L_v2: -309162851
-      star4_v3: -2112610497
       star2_v3: 830675439
-      coin_shape_12: 961981626
       coin_shape_13: -937068970
-      currency_gem_frame: 1380928617
       moon_v2: 988482311
       clocktime_tool_v5: -961180665
-      coin_tool_head_v1: -347663578
       coin_tool_frame: 388771778
       full_moon@v2: 490159565
-      moon_crescent2@v1: -348473210
-      bulb_tool@v1: -81264564
       ui_time_sign: -1800299951
-      skyscraper_tool@v1: -156981939
       coin_shape_8: -1168925651
       cell_frame@v1: -1833856617
-      window3_full: -633744324
       retry_v1: -425375840
-      skyscraper_tool@v2: 1102420743
       sign_complete: 894229184
-      clocktime_tool_v2: -1691713925
-      window4_v2: 940230836
-      exit_v1: 1334681943
       bulb_light@v2: 935129763
       clocktime_tool_v4: 90361197
-      ui_step_sign: 1812712270
-      clocktime_tool_v8: -476586744
-      moon_crescent2@v2: 1391890634
-      cityzone_3: -698969613
       star1_v3: -470244999
-      ILSH_H_v2: -643840337
-      bulb_tool@v2: -1559598106
       clock_tool_v5: 1881101608
-      clock_tool_v2: -770779851
       star2_v4: 1227158356
   spritePackingTag: 
   pSDRemoveMatte: 0

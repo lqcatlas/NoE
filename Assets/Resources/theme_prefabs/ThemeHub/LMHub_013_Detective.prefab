@@ -430,7 +430,8 @@ MonoBehaviour:
   bgHolder: {fileID: 4068668159233435932}
   ispSigns: []
   splitLine: {fileID: 4426030737146347156}
-  bgTemplate: {fileID: 7605107522437205399, guid: f29122b7b6cb9344c907c0548f08b285, type: 3}
+  suspectBgTemplate: {fileID: 7605107522437205399, guid: f29122b7b6cb9344c907c0548f08b285, type: 3}
+  witnessBgTemplate: {fileID: 7605107522437205399, guid: f250520cd1fe87c47919b5ea117d628f, type: 3}
   ispSignTemplate: {fileID: 7605107522437205399, guid: 89b23cde4b9f1934e99e57d4d76e3120, type: 3}
   ispAnimTemplate: {fileID: 2613173332489785468, guid: 8c6eb8c48c30eb24b8df0bbf57c46405, type: 3}
   upgradeClips:

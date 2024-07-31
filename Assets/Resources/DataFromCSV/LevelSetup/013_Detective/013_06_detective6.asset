@@ -45,65 +45,65 @@ MonoBehaviour:
     boardSize: {x: 4, y: 5}
     cells:
     - coord: {x: 0, y: 0}
-      value: 1
+      value: 2
       status: 0
     - coord: {x: 1, y: 0}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 2, y: 0}
-      value: 8
+      value: 6
+      status: 0
+    - coord: {x: 3, y: 0}
+      value: 1
       status: 0
     - coord: {x: 0, y: 1}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 1, y: 1}
-      value: 4
+      value: 6
       status: 0
     - coord: {x: 2, y: 1}
       value: 1
       status: 0
+    - coord: {x: 3, y: 1}
+      value: 2
+      status: 0
     - coord: {x: 0, y: 2}
-      value: 1
+      value: 2
       status: 0
     - coord: {x: 1, y: 2}
       value: 6
       status: 0
     - coord: {x: 2, y: 2}
+      value: 7
+      status: 0
+    - coord: {x: 3, y: 2}
+      value: 4
+      status: 0
+    - coord: {x: 0, y: 3}
+      value: 3
+      status: 0
+    - coord: {x: 1, y: 3}
       value: 1
       status: 0
-    - coord: {x: 2, y: 2}
+    - coord: {x: 2, y: 3}
+      value: 5
+      status: 0
+    - coord: {x: 3, y: 3}
+      value: 8
+      status: 0
+    - coord: {x: 0, y: 4}
+      value: 2
+      status: 0
+    - coord: {x: 1, y: 4}
+      value: 6
+      status: 0
+    - coord: {x: 2, y: 4}
       value: 1
       status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    - coord: {x: 2, y: 2}
-      value: 1
-      status: 0
-    toolCount: 4
+    - coord: {x: 3, y: 4}
+      value: 4
+      status: 1
+    toolCount: 3
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

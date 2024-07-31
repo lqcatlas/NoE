@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68ce01132fb4f5949854ab209192e517, type: 3}
-  m_Name: 013_08_detective8
+  m_Name: 013_11_detective11
   m_EditorClassIdentifier: 
-  levelUID: 1308
+  levelUID: 1311
   themeIndex: 13
-  levelIndex: 8
-  nextLevelIndex: 1309
-  previousLevel: {fileID: 11400000, guid: bb16e0ded686a7a48b58e0c781fccb0c, type: 2}
-  nextLevel: {fileID: 11400000, guid: d07ff5eca61f5a5408a379340a7136ec, type: 2}
+  levelIndex: 11
+  nextLevelIndex: 0
+  previousLevel: {fileID: 11400000, guid: 199e7a9e4e20485429ff2036dfd42071, type: 2}
+  nextLevel: {fileID: 0}
   theme: '@Loc=themename_tm13@@'
-  title: '@Loc=levelname_lv1308@@'
-  newInitNarrative: '@Loc=narrative_tm13_ln009@@'
-  newPlayNarratives:
-  - '@Loc=narrative_tm13_ln010@@'
+  title: '@Loc=levelname_lv1311@@'
+  newInitNarrative: 
+  newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm13_ln001@@'
   - '@Loc=narrative_tm13_ln002@@'
@@ -32,7 +31,9 @@ MonoBehaviour:
   - '@Loc=narrative_tm13_ln006@@'
   - '@Loc=narrative_tm13_ln007@@'
   - '@Loc=narrative_tm13_ln008@@'
-  goal: '@Loc=goal_lv1308@@'
+  - '@Loc=narrative_tm13_ln009@@'
+  - '@Loc=narrative_tm13_ln010@@'
+  goal: '@Loc=goal_lv1311@@'
   ruleset:
   - tag: 0
     ruleDesc: '@Loc=rule1_lv1301@@'
@@ -42,20 +43,20 @@ MonoBehaviour:
     ruleDesc: '@Loc=rule3_lv1301@@'
   - tag: 0
     ruleDesc: '@Loc=rule4_lv1301@@'
-  isHard: 0
+  isHard: 1
   allowRewind: 0
   initBoard:
     boardSize: {x: 6, y: 7}
     cells:
     - coord: {x: 0, y: 0}
       value: 2
-      status: -1
+      status: 0
     - coord: {x: 1, y: 0}
       value: 8
-      status: -1
+      status: 0
     - coord: {x: 2, y: 0}
       value: 1
-      status: -1
+      status: 0
     - coord: {x: 3, y: 0}
       value: 7
       status: 0
@@ -157,10 +158,10 @@ MonoBehaviour:
       status: 0
     - coord: {x: 0, y: 6}
       value: 1
-      status: 0
+      status: 1
     - coord: {x: 1, y: 6}
       value: 4
-      status: 1
+      status: 0
     - coord: {x: 2, y: 6}
       value: 2
       status: 0
@@ -172,7 +173,7 @@ MonoBehaviour:
       status: 0
     - coord: {x: 5, y: 6}
       value: 8
-      status: 0
-    toolCount: 4
+      status: 2
+    toolCount: 10
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

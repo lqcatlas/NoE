@@ -224,6 +224,7 @@ MonoBehaviour:
   availableSprites: []
   curSprite: {fileID: 0}
   triggerChance: 0.5
+  SwitchByOrder: 0
 --- !u!114 &7877058198250572086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -420,6 +421,7 @@ MonoBehaviour:
   availableSprites: []
   curSprite: {fileID: 0}
   triggerChance: 0.5
+  SwitchByOrder: 0
 --- !u!114 &7033677108980657894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,6 +965,7 @@ MonoBehaviour:
   availableSprites: []
   curSprite: {fileID: 0}
   triggerChance: 1
+  SwitchByOrder: 0
 --- !u!114 &6152551841935901806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1097,6 +1100,7 @@ MonoBehaviour:
   availableSprites: []
   curSprite: {fileID: 0}
   triggerChance: 0.5
+  SwitchByOrder: 0
 --- !u!114 &714705197593006645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,6 +1235,7 @@ MonoBehaviour:
   availableSprites: []
   curSprite: {fileID: 0}
   triggerChance: 0.5
+  SwitchByOrder: 0
 --- !u!114 &3146078642731065678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1365,6 +1370,7 @@ MonoBehaviour:
   availableSprites: []
   curSprite: {fileID: 0}
   triggerChance: 0.5
+  SwitchByOrder: 0
 --- !u!114 &6512609795343281369
 MonoBehaviour:
   m_ObjectHideFlags: 0

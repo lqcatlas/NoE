@@ -10,11 +10,13 @@ public class LMHub_013_Detective : MonoBehaviour
 
     [Header("Drawings")]
     public Transform bgHolder;
-    public List<KeyValuePair<CellMaster, GameObject>> cellBgs;
+    public List<KeyValuePair<CellMaster, GameObject>> suspectBgs;
+    public List<KeyValuePair<CellMaster, GameObject>> witnessBgs;
     public List<GameObject> ispSigns;
     public Transform splitLine;
     [Header("Template")]
-    public GameObject bgTemplate;
+    public GameObject suspectBgTemplate;
+    public GameObject witnessBgTemplate;
     public GameObject ispSignTemplate;
     public GameObject ispAnimTemplate;
 
