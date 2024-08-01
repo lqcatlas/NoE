@@ -20,15 +20,17 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: bb16e0ded686a7a48b58e0c781fccb0c, type: 2}
   theme: '@Loc=themename_tm13@@'
   title: '@Loc=levelname_lv1306@@'
-  newInitNarrative: '@Loc=narrative_tm13_ln006@@'
+  newInitNarrative: '@Loc=narrative_tm13_ln008@@'
   newPlayNarratives:
-  - '@Loc=narrative_tm13_ln007@@'
+  - '@Loc=narrative_tm13_ln009@@'
   oldNarratives:
   - '@Loc=narrative_tm13_ln001@@'
   - '@Loc=narrative_tm13_ln002@@'
   - '@Loc=narrative_tm13_ln003@@'
   - '@Loc=narrative_tm13_ln004@@'
   - '@Loc=narrative_tm13_ln005@@'
+  - '@Loc=narrative_tm13_ln006@@'
+  - '@Loc=narrative_tm13_ln007@@'
   goal: '@Loc=goal_lv1306@@'
   ruleset:
   - tag: 0

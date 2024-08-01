@@ -668,20 +668,20 @@ UID,Key,EN,CN
 667,date_tm13,,2024/07/23
 668,manifesto_tm13,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
 669,prompt_tm13,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
-670,narrative_tm13_ln001,,摩天大楼
-671,narrative_tm13_ln002,,人潮涌动，
-672,narrative_tm13_ln003,,高楼矗立，
-673,narrative_tm13_ln004,,直指苍穹。
-674,narrative_tm13_ln005,,有人辛勤，
-675,narrative_tm13_ln006,,有人踌躇，
-676,narrative_tm13_ln007,,玻璃前无数双眼睛，
-677,narrative_tm13_ln008,,见证着城市的历史。
-678,narrative_tm13_ln009,,人们从四面八方涌来，
-679,narrative_tm13_ln010,,钢铁与玻璃交织成森林。
-680,narrative_tm13_ln011,,夜幕降临，
-681,narrative_tm13_ln012,,霓虹闪烁。
-682,narrative_tm13_ln013,,楼宇组成的天际线，
-683,narrative_tm13_ln014,,书写着未完的故事。
+670,narrative_tm13_ln001,,0的死亡
+671,narrative_tm13_ln002,,0惨死于公寓内，
+672,narrative_tm13_ln003,,嫌疑人是1到9。
+673,narrative_tm13_ln004,,拿起放大镜，
+674,narrative_tm13_ln005,,仔细检查每一处角落，
+675,narrative_tm13_ln006,,详细质询每一位目击者。
+676,narrative_tm13_ln007,,运用聪明的才智，
+677,narrative_tm13_ln008,,抽丝剥茧，
+678,narrative_tm13_ln009,,循序渐进。
+679,narrative_tm13_ln010,,在迷雾中寻找线索，
+680,narrative_tm13_ln011,,于黑暗中中逼近真相。
+681,narrative_tm13_ln012,,揪出人群中的恶魔，
+682,narrative_tm13_ln013,,还众人清白，
+683,narrative_tm13_ln014,,让死者瞑目。
 684,narrative_tm13_ln015,,
 685,levelname_lv1301,,001
 686,levelname_lv1302,,002
@@ -703,8 +703,14 @@ UID,Key,EN,CN
 702,rule2_lv1301,, <sprite name=sign_complete> 匹配：凶手出现在正确的列
 703,rule3_lv1301,, <sprite name=sign_unknown> 可疑：凶手出现但位于错误的列
 704,rule4_lv1301,, <sprite name=rule_sign_deletion> 排除：没有凶手出现
-705,tool_name_theme13_status0,Inquire <size=70%>or</size> Identify,质询<size=70%>或</size>指认
-706,tool_name_theme13_status1,Identify the murderer now!,质询耗尽，必须指认！
+705,tool_name_theme13_status0,Inquire <size=70%>or</size> Identify,质询 <size=70%>或</size> 指认
+706,tool_name_theme13_status1,Identify now!,质询机会耗尽<br>立刻指认！
 707,tm13_suspect,Suspect,嫌疑人
 708,tm13_witness,Witness,目击者
 709,tm13_goal_case_solved,Case solved: ,已解决案件数：
+710,levelname_lv1309,,009
+711,levelname_lv1310,,010
+712,levelname_lv1311,,011
+713,goal_lv1309,,连续完成2个案件
+714,goal_lv1310,,连续完成3个案件
+715,goal_lv1311,,连续完成3个案件，凶手可能不止1人

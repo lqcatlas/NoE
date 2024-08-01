@@ -33,6 +33,10 @@ MonoBehaviour:
   - '@Loc=narrative_tm13_ln008@@'
   - '@Loc=narrative_tm13_ln009@@'
   - '@Loc=narrative_tm13_ln010@@'
+  - '@Loc=narrative_tm13_ln011@@'
+  - '@Loc=narrative_tm13_ln012@@'
+  - '@Loc=narrative_tm13_ln013@@'
+  - '@Loc=narrative_tm13_ln014@@'
   goal: '@Loc=goal_lv1311@@'
   ruleset:
   - tag: 0
@@ -52,16 +56,16 @@ MonoBehaviour:
       value: 2
       status: 0
     - coord: {x: 1, y: 0}
-      value: 8
+      value: 6
       status: 0
     - coord: {x: 2, y: 0}
-      value: 1
+      value: 9
       status: 0
     - coord: {x: 3, y: 0}
       value: 7
       status: 0
     - coord: {x: 4, y: 0}
-      value: 9
+      value: 5
       status: 0
     - coord: {x: 5, y: 0}
       value: 4
@@ -85,10 +89,10 @@ MonoBehaviour:
       value: 7
       status: 0
     - coord: {x: 0, y: 2}
-      value: 4
+      value: 1
       status: 0
     - coord: {x: 1, y: 2}
-      value: 1
+      value: 5
       status: 0
     - coord: {x: 2, y: 2}
       value: 2
@@ -145,10 +149,10 @@ MonoBehaviour:
       value: 2
       status: 0
     - coord: {x: 2, y: 5}
-      value: 3
+      value: 4
       status: 0
     - coord: {x: 3, y: 5}
-      value: 4
+      value: 3
       status: 0
     - coord: {x: 4, y: 5}
       value: 9
@@ -174,6 +178,6 @@ MonoBehaviour:
     - coord: {x: 5, y: 6}
       value: 8
       status: 2
-    toolCount: 10
+    toolCount: 12
     toolStatus: 0
     curPlayCoord: {x: -1, y: -1}

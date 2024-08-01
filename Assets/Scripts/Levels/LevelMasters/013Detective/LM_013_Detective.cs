@@ -146,21 +146,6 @@ public class LM_013_Detective : LevelMasterBase
     public override void UpdateCells(Vector2Int coord)
     {
         //value do not update in Detective
-        for (int i = 0; i < themeHub.witnessBgs.Count; i++)
-        {
-            if (ispResult[themeHub.witnessBgs[i].Key.coord.y] != InspectionResult.none) //inspected line
-            {
-                DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(themeHub.witnessBgs[i].Key.coord);
-                CellMaster cm = themeHub.witnessBgs[i].Key;
-                float totalFinishedTime = INSPECT_DURATRION + dConstants.UI.StandardizedBtnAnimDuration;
-                if (!suspectValue.Contains(temp_cellData.value)) //irrelevant numbers
-                {
-                    Sequence seq = DOTween.Sequence();
-                    seq.AppendInterval(totalFinishedTime);
-                    seq.AppendCallback(() => cm.SetColor(dConstants.UI.DefaultColor_3rd));
-                }
-            }
-        }
     }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
@@ -198,7 +183,7 @@ public class LM_013_Detective : LevelMasterBase
             }
             else if(needNewCase)
             {
-                StartNewCase();
+                StartNewCaseInLevel();
             }
         }
         else if (levelData.levelIndex >= CONSECTIVE_CASE_3_LVINDEX)
@@ -209,7 +194,7 @@ public class LM_013_Detective : LevelMasterBase
             }
             else if (needNewCase)
             {
-                StartNewCase();
+                StartNewCaseInLevel();
             }
         }
         else
@@ -219,7 +204,7 @@ public class LM_013_Detective : LevelMasterBase
         }
         return false;
     }
-    void StartNewCase()
+    void StartNewCaseInLevel()
     {
         //start a new case
         int curToolLeft = levelData.curBoard.toolCount;
@@ -231,6 +216,7 @@ public class LM_013_Detective : LevelMasterBase
         levelData.curBoard.toolCount = curToolLeft;
         InitCells();
         NewCaseDisplay();
+        CaseSolved_Anim();
     }
     void NewCaseDisplay()
     {
@@ -363,7 +349,10 @@ public class LM_013_Detective : LevelMasterBase
             {
                 if (murdererValue.Contains(levelData.curBoard.cells[i].value)) //ambiguous match
                 {
-                    result = InspectionResult.suspect;
+                    if (result == InspectionResult.exclude) //upgrade status only if havee not been mathced
+                    {
+                        result = InspectionResult.suspect; 
+                    }
                     for(int j = 0; j < murdererCoord.Count; j++)
                     {
                         if (murdererCoord[j].x == levelData.curBoard.cells[i].coord.x 
@@ -422,18 +411,31 @@ public class LM_013_Detective : LevelMasterBase
             float delay = inspectCellInterval * i;
             trans.localScale = Vector3.one;
             seq.Insert(delay, trans.DOScale(INSPECT_POP_SCALE, dConstants.UI.StandardizedBtnAnimDuration / 2f).SetLoops(2, LoopType.Yoyo));
-            //check and reveal the unknown
+            
             DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(cellsInRow[i].GetComponent<CellMaster>().coord);
+            CellMaster cm = cellsInRow[i].GetComponent<CellMaster>();
+            //check and reveal the unknown
             if (temp_cellData.status == -1)
             {
-                CellMaster cm = cellsInRow[i].GetComponent<CellMaster>();
+                
                 SpriteRenderer unknownSign = bgsInRow[i].transform.Find("unknown_sign").GetComponent<SpriteRenderer>();
                 seq.Insert(delay, unknownSign.DOFade(0f, dConstants.UI.StandardizedVFXAnimDuration));
                 seq.InsertCallback(delay, () => cm.DisplayNumber(temp_cellData.value));
             }
+            //check and update irrelevant numbers
+            float totalFinishedTime = INSPECT_DURATRION + dConstants.UI.StandardizedBtnAnimDuration;
+            if (!suspectValue.Contains(temp_cellData.value)) //irrelevant numbers
+            {
+                seq.InsertCallback(delay, () => cm.SetColor(dConstants.UI.DefaultColor_3rd));
+            }
         }
         //update sign
         seq.InsertCallback(INSPECT_DURATRION, ()=>themeHub.ispSigns[row].GetComponent<inspection_sign>().UpdateSign((int)ispResult[row]));
+    }
+    void CaseSolved_Anim()
+    {
+        Sequence seq = DOTween.Sequence();
+        hub.goalMaster.lines[1].transform.DOScale(.2f, dConstants.UI.StandardizedBtnAnimDuration).SetLoops(2, LoopType.Yoyo).SetRelative(true);
     }
     void RandomizeDetectiveBoard(DataBoard board)
     {

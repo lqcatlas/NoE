@@ -141,13 +141,10 @@ public class CellMaster : MonoBehaviour
     public void SetCellEmpty(bool isActive)
     {
         cellCollider.enabled = isActive;
-        if (!isActive)
+        numberTxt.SetText("");
+        for (int i = 0; i < numberInSprites.Count; i++)
         {
-            numberTxt.SetText("");
-            for (int i = 0; i < numberInSprites.Count; i++)
-            {
-                numberInSprites[i].gameObject.SetActive(false);
-            }
+            numberInSprites[i].gameObject.SetActive(false);
         }
     }
     public void SetCellInteractable(bool isInteractable)

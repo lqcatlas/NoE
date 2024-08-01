@@ -20,12 +20,14 @@ MonoBehaviour:
   nextLevel: {fileID: 11400000, guid: 60e990f61e059824dbb93e2a92f49585, type: 2}
   theme: '@Loc=themename_tm13@@'
   title: '@Loc=levelname_lv1304@@'
-  newInitNarrative: '@Loc=narrative_tm13_ln004@@'
+  newInitNarrative: '@Loc=narrative_tm13_ln006@@'
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm13_ln001@@'
   - '@Loc=narrative_tm13_ln002@@'
   - '@Loc=narrative_tm13_ln003@@'
+  - '@Loc=narrative_tm13_ln004@@'
+  - '@Loc=narrative_tm13_ln005@@'
   goal: '@Loc=goal_lv1304@@'
   ruleset:
   - tag: 0
@@ -42,13 +44,13 @@ MonoBehaviour:
     boardSize: {x: 4, y: 4}
     cells:
     - coord: {x: 0, y: 0}
-      value: 6
+      value: 5
       status: 0
     - coord: {x: 1, y: 0}
       value: 8
       status: 0
     - coord: {x: 2, y: 0}
-      value: 2
+      value: 6
       status: 0
     - coord: {x: 3, y: 0}
       value: 1

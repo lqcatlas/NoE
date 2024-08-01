@@ -2123,46 +2123,46 @@ MonoBehaviour:
       using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9
   - key: narrative_tm13_ln001
     EN: 
-    CN: "\u6469\u5929\u5927\u697C"
+    CN: "0\u7684\u6B7B\u4EA1"
   - key: narrative_tm13_ln002
     EN: 
-    CN: "\u4EBA\u6F6E\u6D8C\u52A8\uFF0C"
+    CN: "0\u60E8\u6B7B\u4E8E\u516C\u5BD3\u5185\uFF0C"
   - key: narrative_tm13_ln003
     EN: 
-    CN: "\u9AD8\u697C\u77D7\u7ACB\uFF0C"
+    CN: "\u5ACC\u7591\u4EBA\u662F1\u52309\u3002"
   - key: narrative_tm13_ln004
     EN: 
-    CN: "\u76F4\u6307\u82CD\u7A79\u3002"
+    CN: "\u62FF\u8D77\u653E\u5927\u955C\uFF0C"
   - key: narrative_tm13_ln005
     EN: 
-    CN: "\u6709\u4EBA\u8F9B\u52E4\uFF0C"
+    CN: "\u4ED4\u7EC6\u68C0\u67E5\u6BCF\u4E00\u5904\u89D2\u843D\uFF0C"
   - key: narrative_tm13_ln006
     EN: 
-    CN: "\u6709\u4EBA\u8E0C\u8E87\uFF0C"
+    CN: "\u8BE6\u7EC6\u8D28\u8BE2\u6BCF\u4E00\u4F4D\u76EE\u51FB\u8005\u3002"
   - key: narrative_tm13_ln007
     EN: 
-    CN: "\u73BB\u7483\u524D\u65E0\u6570\u53CC\u773C\u775B\uFF0C"
+    CN: "\u8FD0\u7528\u806A\u660E\u7684\u624D\u667A\uFF0C"
   - key: narrative_tm13_ln008
     EN: 
-    CN: "\u89C1\u8BC1\u7740\u57CE\u5E02\u7684\u5386\u53F2\u3002"
+    CN: "\u62BD\u4E1D\u5265\u8327\uFF0C"
   - key: narrative_tm13_ln009
     EN: 
-    CN: "\u4EBA\u4EEC\u4ECE\u56DB\u9762\u516B\u65B9\u6D8C\u6765\uFF0C"
+    CN: "\u5FAA\u5E8F\u6E10\u8FDB\u3002"
   - key: narrative_tm13_ln010
     EN: 
-    CN: "\u94A2\u94C1\u4E0E\u73BB\u7483\u4EA4\u7EC7\u6210\u68EE\u6797\u3002"
+    CN: "\u5728\u8FF7\u96FE\u4E2D\u5BFB\u627E\u7EBF\u7D22\uFF0C"
   - key: narrative_tm13_ln011
     EN: 
-    CN: "\u591C\u5E55\u964D\u4E34\uFF0C"
+    CN: "\u4E8E\u9ED1\u6697\u4E2D\u4E2D\u903C\u8FD1\u771F\u76F8\u3002"
   - key: narrative_tm13_ln012
     EN: 
-    CN: "\u9713\u8679\u95EA\u70C1\u3002"
+    CN: "\u63EA\u51FA\u4EBA\u7FA4\u4E2D\u7684\u6076\u9B54\uFF0C"
   - key: narrative_tm13_ln013
     EN: 
-    CN: "\u697C\u5B87\u7EC4\u6210\u7684\u5929\u9645\u7EBF\uFF0C"
+    CN: "\u8FD8\u4F17\u4EBA\u6E05\u767D\uFF0C"
   - key: narrative_tm13_ln014
     EN: 
-    CN: "\u4E66\u5199\u7740\u672A\u5B8C\u7684\u6545\u4E8B\u3002"
+    CN: "\u8BA9\u6B7B\u8005\u7791\u76EE\u3002"
   - key: narrative_tm13_ln015
     EN: 
     CN: 
@@ -2228,10 +2228,10 @@ MonoBehaviour:
     CN: " <sprite name=rule_sign_deletion> \u6392\u9664\uFF1A\u6CA1\u6709\u51F6\u624B\u51FA\u73B0"
   - key: tool_name_theme13_status0
     EN: Inquire <size=70%>or</size> Identify
-    CN: "\u8D28\u8BE2<size=70%>\u6216</size>\u6307\u8BA4"
+    CN: "\u8D28\u8BE2 <size=70%>\u6216</size> \u6307\u8BA4"
   - key: tool_name_theme13_status1
-    EN: Identify the murderer now!
-    CN: "\u8D28\u8BE2\u8017\u5C3D\uFF0C\u5FC5\u987B\u6307\u8BA4\uFF01"
+    EN: Identify now!
+    CN: "\u8D28\u8BE2\u673A\u4F1A\u8017\u5C3D<br>\u7ACB\u523B\u6307\u8BA4\uFF01"
   - key: tm13_suspect
     EN: Suspect
     CN: "\u5ACC\u7591\u4EBA"
@@ -2241,3 +2241,21 @@ MonoBehaviour:
   - key: tm13_goal_case_solved
     EN: 'Case solved: '
     CN: "\u5DF2\u89E3\u51B3\u6848\u4EF6\u6570\uFF1A"
+  - key: levelname_lv1309
+    EN: 
+    CN: 9
+  - key: levelname_lv1310
+    EN: 
+    CN: 10
+  - key: levelname_lv1311
+    EN: 
+    CN: 11
+  - key: goal_lv1309
+    EN: 
+    CN: "\u8FDE\u7EED\u5B8C\u62102\u4E2A\u6848\u4EF6"
+  - key: goal_lv1310
+    EN: 
+    CN: "\u8FDE\u7EED\u5B8C\u62103\u4E2A\u6848\u4EF6"
+  - key: goal_lv1311
+    EN: 
+    CN: "\u8FDE\u7EED\u5B8C\u62103\u4E2A\u6848\u4EF6\uFF0C\u51F6\u624B\u53EF\u80FD\u4E0D\u6B621\u4EBA"
