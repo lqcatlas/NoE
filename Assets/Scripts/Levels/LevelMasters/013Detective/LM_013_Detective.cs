@@ -2,6 +2,7 @@ using DG.Tweening;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.Rendering.DebugUI.Table;
@@ -18,7 +19,7 @@ public class LM_013_Detective : LevelMasterBase
     //inspect logic
     private List<InspectionResult> ispResult;
     private List<Vector2Int> appointedCoord;
-    private List<Vector2Int> murdererCoord;
+    public List<Vector2Int> murdererCoord;
     private List<int> murdererValue;
     private List<int> suspectValue;
     //for multi cases
@@ -27,8 +28,9 @@ public class LM_013_Detective : LevelMasterBase
     private bool caseFailed = false;
     //level index
     private int RANDOMIZE_LVINDEX = 2;
-    private int CONSECTIVE_CASE_2_LVINDEX = 9;
-    private int CONSECTIVE_CASE_3_LVINDEX = 10;
+    private int CONSECTIVE_CASE_2_LVINDEX = 10;
+    private int CONSECTIVE_CASE_INF_LVINDEX = 13;
+    private int RANDOM_MURDERER_LVINDEX = 13;
 
     public override void GetObjectReferences(GameObject _themeHub)
     {
@@ -43,6 +45,10 @@ public class LM_013_Detective : LevelMasterBase
             RandomizeDetectiveBoard(levelData.initBoard);
         }
         levelData.curBoard = new DataBoard(levelData.initBoard);
+        if(levelData.levelIndex >= CONSECTIVE_CASE_INF_LVINDEX)
+        {
+            RandomMurderer(levelData.curBoard);
+        }
         levelData.previousBoard = null;
         levelData.previousBoards = new List<DataBoard>();
     }
@@ -175,7 +181,7 @@ public class LM_013_Detective : LevelMasterBase
         {
             return consecutiveCaseSolved >= 1;
         }
-        else if (levelData.levelIndex >= CONSECTIVE_CASE_2_LVINDEX && levelData.levelIndex < CONSECTIVE_CASE_3_LVINDEX)
+        else if (levelData.levelIndex >= CONSECTIVE_CASE_2_LVINDEX && levelData.levelIndex < CONSECTIVE_CASE_INF_LVINDEX)
         {
             if (consecutiveCaseSolved >= 2)
             {
@@ -186,9 +192,9 @@ public class LM_013_Detective : LevelMasterBase
                 StartNewCaseInLevel();
             }
         }
-        else if (levelData.levelIndex >= CONSECTIVE_CASE_3_LVINDEX)
+        else if (levelData.levelIndex >= CONSECTIVE_CASE_INF_LVINDEX)
         {
-            if (consecutiveCaseSolved >= 3)
+            if (consecutiveCaseSolved >= 50)
             {
                 return true;
             }
@@ -211,12 +217,23 @@ public class LM_013_Detective : LevelMasterBase
         needNewCase = false;
         RandomizeDetectiveBoard(levelData.initBoard);
         levelData.curBoard = new DataBoard(levelData.initBoard);
+        if (levelData.levelIndex >= RANDOM_MURDERER_LVINDEX)
+        {
+            RandomMurderer(levelData.curBoard);
+
+        }
         levelData.previousBoard = null;
         levelData.previousBoards = new List<DataBoard>();
         levelData.curBoard.toolCount = curToolLeft;
+        if (levelData.levelIndex >= RANDOM_MURDERER_LVINDEX)
+        {
+            levelData.curBoard.toolCount += 3;
+        }
         InitCells();
         NewCaseDisplay();
         CaseSolved_Anim();
+        InitTool();
+        UpdateToolStatusDisplay();
     }
     void NewCaseDisplay()
     {
@@ -304,13 +321,13 @@ public class LM_013_Detective : LevelMasterBase
         UpdateToolStatusDisplay();
 
         //update consective case desc
-        if (levelData.levelIndex >= CONSECTIVE_CASE_2_LVINDEX && levelData.levelIndex < CONSECTIVE_CASE_3_LVINDEX)
+        if (levelData.levelIndex >= CONSECTIVE_CASE_2_LVINDEX && levelData.levelIndex < CONSECTIVE_CASE_INF_LVINDEX)
         {
             hub.goalMaster.lines[1].SetText($"{LocalizedAssetLookup.singleton.Translate("@Loc=tm13_goal_case_solved@@")}{consecutiveCaseSolved}/2");
             hub.goalMaster.lines[1].gameObject.SetActive(true);
             LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
         }
-        else if(levelData.levelIndex >= CONSECTIVE_CASE_3_LVINDEX)
+        else if(levelData.levelIndex >= CONSECTIVE_CASE_INF_LVINDEX)
         {
             hub.goalMaster.lines[1].SetText($"{LocalizedAssetLookup.singleton.Translate("@Loc=tm13_goal_case_solved@@")}{consecutiveCaseSolved}/3");
             hub.goalMaster.lines[1].gameObject.SetActive(true);
@@ -487,6 +504,47 @@ public class LM_013_Detective : LevelMasterBase
         {
             board.cells[i].value = valueInArray[board.cells[i].coord.x, board.cells[i].coord.y];
             board.cells[i].status = statusInArray[board.cells[i].coord.x, board.cells[i].coord.y];
+        }
+        
+    }
+    void RandomMurderer(DataBoard board)
+    {
+        //shuffule the murderer row
+        List<int> newMurdererStatus = new List<int>();
+        float TwoMurdererChance = .7f;
+        float rng = UnityEngine.Random.Range(0, 1f);
+        for (int i = 0; i < board.boardSize.x; i++)
+        {
+            newMurdererStatus.Add(0);
+        }
+        if(board.boardSize.x <= 1)
+        {
+            Debug.LogError("baord size X is less than required murderer count:2");
+            return;
+        }
+        int rngIndex = UnityEngine.Random.Range(0, board.boardSize.x);
+        if (newMurdererStatus[rngIndex] == 0)
+        {
+            newMurdererStatus[rngIndex] = 1; //place murderer 1
+        }
+        if(rng < TwoMurdererChance)
+        {
+            while (true)
+            {
+                rngIndex = UnityEngine.Random.Range(0, board.boardSize.x);
+                if (newMurdererStatus[rngIndex] == 0)
+                {
+                    newMurdererStatus[rngIndex] = 2;  //place murderer 2
+                    break;
+                }
+            }
+        }
+        for (int i = 0; i < board.cells.Count; i++)
+        {
+            if(board.cells[i].coord.y == board.boardSize.y - 1) //copy to the murderer row
+            {
+                board.cells[i].status = newMurdererStatus[board.cells[i].coord.x];
+            }
         }
     }
     void UpdateCellInteractable()
