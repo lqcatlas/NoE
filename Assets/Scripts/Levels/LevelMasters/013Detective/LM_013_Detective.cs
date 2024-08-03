@@ -329,7 +329,7 @@ public class LM_013_Detective : LevelMasterBase
         }
         else if(levelData.levelIndex >= CONSECTIVE_CASE_INF_LVINDEX)
         {
-            hub.goalMaster.lines[1].SetText($"{LocalizedAssetLookup.singleton.Translate("@Loc=tm13_goal_case_solved@@")}{consecutiveCaseSolved}/3");
+            hub.goalMaster.lines[1].SetText($"{LocalizedAssetLookup.singleton.Translate("@Loc=tm13_goal_case_solved@@")}{consecutiveCaseSolved}");
             hub.goalMaster.lines[1].gameObject.SetActive(true);
             LayoutRebuilder.ForceRebuildLayoutImmediate(hub.goalMaster.goalLayout);
         }
