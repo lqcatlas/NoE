@@ -371,6 +371,28 @@ public class Load_Themes : MonoBehaviour
                 level.ruleset.Add(item);
             }
         }
+        result = null;
+        if (levelDic.TryGetValue("ruletag6", out result))
+        {
+            if (((string)result).Length > 0)
+            {
+                object additionalResult;
+                levelDic.TryGetValue("rule6", out additionalResult);
+                RuleItem item = new RuleItem((string)result, (string)additionalResult);
+                level.ruleset.Add(item);
+            }
+        }
+        result = null;
+        if (levelDic.TryGetValue("ruletag7", out result))
+        {
+            if (((string)result).Length > 0)
+            {
+                object additionalResult;
+                levelDic.TryGetValue("rule7", out additionalResult);
+                RuleItem item = new RuleItem((string)result, (string)additionalResult);
+                level.ruleset.Add(item);
+            }
+        }
     }
     string GetNarrativeString(int themeUID, int line)
     {

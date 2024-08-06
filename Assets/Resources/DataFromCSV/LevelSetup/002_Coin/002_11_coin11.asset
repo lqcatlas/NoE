@@ -36,16 +36,16 @@ MonoBehaviour:
   - '@Loc=narrative_tm2_ln011@@'
   - '@Loc=narrative_tm2_ln012@@'
   - '@Loc=narrative_tm2_ln013@@'
-  goal: '@Loc=goal_lv211@@'
+  goal: '@Loc=tm2_goal_lv211@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv204@@'
+    ruleDesc: '@Loc=tm2_rule1_lv204@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv205@@'
+    ruleDesc: '@Loc=tm2_rule2_lv205@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv204@@'
+    ruleDesc: '@Loc=tm2_rule3_lv204@@'
   - tag: 0
-    ruleDesc: '@Loc=rule4_lv210@@'
+    ruleDesc: '@Loc=tm2_rule4_lv210@@'
   isHard: 1
   allowRewind: 0
   initBoard:

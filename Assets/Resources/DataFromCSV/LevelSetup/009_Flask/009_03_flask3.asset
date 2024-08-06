@@ -30,12 +30,12 @@ MonoBehaviour:
   - '@Loc=narrative_tm9_ln003@@'
   - '@Loc=narrative_tm9_ln004@@'
   - '@Loc=narrative_tm9_ln005@@'
-  goal: '@Loc=goal_lv903@@'
+  goal: '@Loc=tm9_goal_lv903@@'
   ruleset:
   - tag: 2
-    ruleDesc: '@Loc=rule1_lv903@@'
+    ruleDesc: '@Loc=tm9_rule1_lv903@@'
   - tag: 1
-    ruleDesc: '@Loc=rule2_lv903@@'
+    ruleDesc: '@Loc=tm9_rule2_lv903@@'
   isHard: 0
   allowRewind: 0
   initBoard:

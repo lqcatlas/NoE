@@ -21,702 +21,700 @@ UID,Key,EN,CN
 20,answer_tm7_lv720,,
 21,date_tm1,2022/12/04,2022/12/04
 22,date_tm10,2024/04/14,2024/04/14
-23,date_tm2,2023/01/15,2023/01/15
-24,date_tm4,2023/06/25,2023/06/25
-25,date_tm5,2023/08/13,2023/08/13
-26,date_tm6,2023/09/03,2023/09/03
-27,date_tm7,2024/02/15,2024/02/15
-28,date_tm8,2024/03/09,2024/03/09
-29,date_tm9,2024/03/24,2024/03/24
-30,goal_lv1001,Mark cells meeting the requirement,标记满足要求的数字
-31,goal_lv1002,Mark cells meeting the requirement,标记满足要求的数字
-32,goal_lv1003,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-33,goal_lv1004,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-34,goal_lv1005,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-35,goal_lv1006,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-36,goal_lv1007,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-37,goal_lv1008,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-38,goal_lv1009,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-39,goal_lv101,Set all cells to 8,让所有格子为8
-40,goal_lv1010,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-41,goal_lv1011,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-42,goal_lv1012,Mark cells meeting ALL requirements,标记同时满足全部要求的数字
-43,goal_lv102,Set all cells to 10,让所有格子为10
-44,goal_lv103,Set all cells to 12,让所有格子为12
-45,goal_lv104,Set all cells to UNIQUE,让所有格子为不同数字
-46,goal_lv105,Set all cells to 2,让所有格子为2
-47,goal_lv106,Set all cells to 3,让所有格子为3
-48,goal_lv107,Set all cells to 4,让所有格子为4
-49,goal_lv108,Set all cells to UNIQUE,让所有格子为不同数字
-50,goal_lv109,Set all cells to 5,让所有格子为5
-51,goal_lv110,Set all cells to 6,让所有格子为6
-52,goal_lv201,Set all cells to 4,让所有格子为4
-53,goal_lv202,Set all cells to 4,让所有格子为4
-54,goal_lv203,Set all cells to SAME,让所有格子数字相同
-55,goal_lv204,Set all cells to 8,让所有格子为8
-56,goal_lv205,Set all cells to 5,让所有格子为5
-57,goal_lv206,Set all cells to 5,让所有格子为5
-58,goal_lv207,Set all cells to SAME,让所有格子数字相同
-59,goal_lv208,Set all cells to SAME,让所有格子数字相同
-60,goal_lv209,Set all cells to UNIQUE,让所有格子数字不同
-61,goal_lv210,Set all cells to UNIQUE,让所有格子数字不同
-62,goal_lv211,Set all cells to SAME,让所有格子数字相同
-63,goal_lv401,Set at least 1 cell to 1,让1个格子为1
-64,goal_lv402,Set at least 2 cells to 2,让2个格子为2
-65,goal_lv403,Set at least 5 cells to 5,让5个格子为5
-66,goal_lv404,Set all cells to 6,让所有格子为6
-67,goal_lv405,Set all cells to SAME,让所有格子数字相同
-68,goal_lv406,Set all cells to 7,让所有格子为7
-69,goal_lv407,Set all cells to 7,让所有格子为7
-70,goal_lv408,Set all cells to 7,让所有格子为7
-71,goal_lv409,Set all cells to 7,让所有格子为7
-72,goal_lv410,Set each cell to Sushi or Onigiri,让每个格子都变成寿司或饭团
-73,goal_lv411,"Set the sum of cells to 18, <br>when there are Fish, Rice, Sushi, Onigiri.",刺身、米饭、寿司、饭团各一个时，数字总和为18
-74,goal_lv412,"Set the sum of cells to 36, <br>when there are only Fish and Sushi.",每个格子是刺身或寿司的情况下，数字总和为36
-75,goal_lv413,"Set the sum of cells to 36, <br>when there are only  Rice and Onigiri.",在每个格子都是米饭或饭团的情况下，让数字总和为36
-76,goal_lv414,Set all cells to UNIQUE,让所有格子都为不同值
-77,goal_lv501,Set all cells to 7,让所有格子为7
-78,goal_lv502,Set all cells to SAME,让所有格子成为相同数字
-79,goal_lv503,Set all cells to SAME,让所有格子成为相同数字
-80,goal_lv504,Set all cells to SAME,让所有格子成为相同数字
-81,goal_lv505,Trigger eclipse twice,触发2次月食
-82,goal_lv506,Trigger eclipse third times,触发3次月食
-83,goal_lv507,Set the sum of cells to 10 or below,让数字总和下降至10以下
-84,goal_lv508,Set all cells to EVEN,让所有格子为偶数
-85,goal_lv509,Set the sum of cells to 10 or below,让数字总和下降至10以下
-86,goal_lv510,,让左侧一列格子为0
-87,goal_lv511,,让左侧一列格子为0，<br>右侧一列格子为2
-88,goal_lv512,,月食时，让所有格子回归初值
-89,goal_lv513,,让所有格子回归初值
-90,goal_lv514,,月食时，让所有格子回归初值
-91,goal_lv601,1+ cell(s) is ON.,点亮1盏灯泡
-92,goal_lv602,5+ cells are ON.,点亮5盏灯泡
-93,goal_lv603,All cells are ON.,点亮全部灯泡
-94,goal_lv604,All cells are ON.,点亮全部灯泡
-95,goal_lv605,All cells are ON.,点亮全部灯泡
-96,goal_lv606,All cells are ON.,点亮全部灯泡
-97,goal_lv607,"Use actions. <br>Meanwhile, keep the number of ON cells stays between 4 to 6.",点亮全部灯泡
-98,goal_lv608,All cells are ON.,点亮6盏灯泡
-99,goal_lv609,6+ cells are ON.,点亮6盏灯泡
-100,goal_lv610,Turn on 3 cells from OFF simultaneously.,一次将3盏熄灭的灯泡点亮
-101,goal_lv611,Turn on 4 cells from OFF simultaneously.,一次将4盏熄灭的灯泡点亮
-102,goal_lv612,"Use up all actions. <br>Meanwhile, keep the number of ON cells stay between 4 to 6.",用掉所有灯泡，<br>保持点亮的灯数量在4-6之间
-103,goal_lv613,All cells are ON.,点亮全部灯泡
-104,goal_lv614,Turn on 8 cells from OFF simultaneously.,一次将8盏熄灭的灯泡点亮
-105,goal_lv615,All cells are ON.,点亮全部灯泡
-106,goal_lv701,,创造最美盆景
-107,goal_lv702,,创造最美盆景
-108,goal_lv703,,创造最美盆景
-109,goal_lv704,,创造最美盆景
-110,goal_lv705,,创造最美盆景
-111,goal_lv706,,创造最美盆景
-112,goal_lv707,,创造最美盆景
-113,goal_lv708,,创造最美盆景
-114,goal_lv709,,创造最美盆景
-115,goal_lv710,,创造最美盆景
-116,goal_lv711,,创造最美盆景
-117,goal_lv712,,创造最美盆景
-118,goal_lv713,,创造最美盆景
-119,goal_lv714,,创造最美盆景
-120,goal_lv715,,创造最美盆景
-121,goal_lv716,,创造最美盆景
-122,goal_lv717,,创造最美盆景
-123,goal_lv718,,创造最美盆景
-124,goal_lv719,,创造最美盆景
-125,goal_lv720,,创造最美盆景
-126,goal_lv801,,让2个格子为9
-127,goal_lv802,,让所有格子为9
-128,goal_lv803,,让所有格子为9
-129,goal_lv804,,让4个格子为9
-130,goal_lv805,,让6个格子为9
-131,goal_lv806,,同时有6个王冠在场
-132,goal_lv807,,4个王冠同时在场
-133,goal_lv808,,6个王冠同时在场
-134,goal_lv809,,夺取5次王冠
-135,goal_lv810,,夺取9次王冠
-136,goal_lv811,,让所有格子为6及以上
-137,goal_lv812,,9个王冠同时在场
-138,goal_lv901,,让所有格子为10
-139,goal_lv902,,让1个格子为1000ml及以上
-140,goal_lv903,,让所有格子为900ml及以上
-141,goal_lv904,,让所有格子为910ml及以上
-142,goal_lv905,,让所有格子为920ml及以上
-143,goal_lv906,,让所有格子为930ml及以上
-144,goal_lv907,,让所有格子为940ml及以上
-145,goal_lv908,,各位的数字都不同
-146,goal_lv909,,各位数字中0~9同时出现
-147,goal_lv910,,用完全部试剂
-148,goal_lv911,,各位数字中只有奇数
-149,goal_lv912,,用完全部试剂
-150,hint_tm1,It ticks on and never ceases.,它滴答滴答，永不停歇地前进。
-151,hint_tm10,It unlocks the gates to success.,它用来开门，通向成功的大门。
-152,hint_tm2,"It flips, deciding fates.",它一次次地翻动，决定着命运。
-153,hint_tm4,"Though simple, it exudes elegance.",它虽然简约，却愈显得精致。
-154,hint_tm5,"It's ever-changing, yet always returns.",它不停变化，却总会回到熟悉的样子。
-155,hint_tm6,"It represents inspiration, enlightenment.",它代表了灵感、顿悟。
-156,hint_tm7,It's an art form crafted through trimming nature.,它是通过修剪自然得到的艺术品。
-157,hint_tm8,It symbolizes power through its weight.,它用重量象征权力。
-158,hint_tm9,It contains dangerous substances.,它装着危险的物质。
-159,intro_line_1,"Friday night. Get back home, <b>things</b> emerges from darkness.",周五晚上，打开房门，回到漆黑的家中，黑暗之中<b>万物</b>浮现。
-160,intro_line_2,"On the way to work, passing through a river, <b>things</b> emerges from the voice of the winds",走在上班的路上，路过一条小河，树叶的婆娑声中夹杂着<b>万物</b>。
-161,levelname_lv1001,,001
-162,levelname_lv1002,,002
-163,levelname_lv1003,,003
-164,levelname_lv1004,,004
-165,levelname_lv1005,,005
-166,levelname_lv1006,,006
-167,levelname_lv1007,,007
-168,levelname_lv1008,,008
-169,levelname_lv1009,,009
-170,levelname_lv101,001,001
-171,levelname_lv1010,,010
-172,levelname_lv1011,,011
-173,levelname_lv1012,,012
-174,levelname_lv102,002,002
-175,levelname_lv103,003,003
-176,levelname_lv104,004,004
-177,levelname_lv105,005,005
-178,levelname_lv106,006,006
-179,levelname_lv107,007,007
-180,levelname_lv108,008,008
-181,levelname_lv109,009,009
-182,levelname_lv110,010,010
-183,levelname_lv201,001,001
-184,levelname_lv202,002,002
-185,levelname_lv203,003,003
-186,levelname_lv204,004,004
-187,levelname_lv205,005,005
-188,levelname_lv206,006,006
-189,levelname_lv207,007,007
-190,levelname_lv208,008,008
-191,levelname_lv209,009,009
-192,levelname_lv210,010,010
-193,levelname_lv211,011,011
-194,levelname_lv401,001,001
-195,levelname_lv402,002,002
-196,levelname_lv403,003,003
-197,levelname_lv404,004,004
-198,levelname_lv405,005,005
-199,levelname_lv406,006,006
-200,levelname_lv407,007,007
-201,levelname_lv408,008,008
-202,levelname_lv409,009,009
-203,levelname_lv410,010,010
-204,levelname_lv411,011,011
-205,levelname_lv412,012,012
-206,levelname_lv413,013,013
-207,levelname_lv414,014,014
-208,levelname_lv501,001,001
-209,levelname_lv502,002,002
-210,levelname_lv503,003,003
-211,levelname_lv504,004,004
-212,levelname_lv505,005,005
-213,levelname_lv506,006,006
-214,levelname_lv507,007,007
-215,levelname_lv508,008,008
-216,levelname_lv509,009,009
-217,levelname_lv510,010,010
-218,levelname_lv511,011,011
-219,levelname_lv512,012,012
-220,levelname_lv513,013,013
-221,levelname_lv514,014,014
-222,levelname_lv601,001,001
-223,levelname_lv602,002,002
-224,levelname_lv603,003,003
-225,levelname_lv604,004,004
-226,levelname_lv605,005,005
-227,levelname_lv606,006,006
-228,levelname_lv607,007,007
-229,levelname_lv608,008,008
-230,levelname_lv609,009,009
-231,levelname_lv610,010,010
-232,levelname_lv611,011,011
-233,levelname_lv612,012,012
-234,levelname_lv613,013,013
-235,levelname_lv614,014,014
-236,levelname_lv615,015,015
-237,levelname_lv701,,001
-238,levelname_lv702,,002
-239,levelname_lv703,,003
-240,levelname_lv704,,004
-241,levelname_lv705,,005
-242,levelname_lv706,,006
-243,levelname_lv707,,007
-244,levelname_lv708,,008
-245,levelname_lv709,,009
-246,levelname_lv710,,010
-247,levelname_lv711,,011
-248,levelname_lv712,,012
-249,levelname_lv713,,013
-250,levelname_lv714,,014
-251,levelname_lv715,,015
-252,levelname_lv716,,016
-253,levelname_lv717,,017
-254,levelname_lv718,,018
-255,levelname_lv719,,019
-256,levelname_lv720,,020
-257,levelname_lv801,,001
-258,levelname_lv802,,002
-259,levelname_lv803,,003
-260,levelname_lv804,,004
-261,levelname_lv805,,005
-262,levelname_lv806,,006
-263,levelname_lv807,,007
-264,levelname_lv808,,008
-265,levelname_lv809,,009
-266,levelname_lv810,,010
-267,levelname_lv811,,011
-268,levelname_lv812,,012
-269,levelname_lv901,,001
-270,levelname_lv902,,002
-271,levelname_lv903,,003
-272,levelname_lv904,,004
-273,levelname_lv905,,005
-274,levelname_lv906,,006
-275,levelname_lv907,,007
-276,levelname_lv908,,008
-277,levelname_lv909,,009
-278,levelname_lv910,,010
-279,levelname_lv911,,011
-280,levelname_lv912,,012
-281,locked_tm1,█ █ never stops.,█ █ 永不停歇。
-282,locked_tm10,█ █ leads to success.,█ █ 通向成功。
-283,locked_tm2,█ █ determine fates.,█ █ 决定命运。
-284,locked_tm4,simple and elegant █ █ .,█ █ 简约又精致。
-285,locked_tm5,Does █ █ have a cycle?,█ █ 有无规律？
-286,locked_tm6,█ █ represents insights.,█ █ 代表着灵感。
-287,locked_tm7,█ █ crafted by human and natural.,人与自然共创 █ █ 。
-288,locked_tm8,"█ █ , the heavier, the better.",█ █ 越重越好。
-289,locked_tm9,Colorful █ █ .,色彩斑斓的 █ █ 。
-290,manifesto_tm1,"The clock is the first theme, its production and design predate even before the project set its title, Numbers of Everything. From a certain perspective, it is the very starting point of the entire idea.<br><br>Staying up late doing nothing is a superficial appreciation of time, yet it is a frantic waste of time. The clock theme aims to express the individual's powerlessness in the face of the passage of time through this scenario.",时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。换句话说，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
-291,manifesto_tm10,,这个主题诞生于我对全职工作产生严重倦怠的时期。尽管身处大公司，享有高薪、良好的福利和社会的认可，并拥有光明的前途，但在情绪的笼罩下，这一切都变得毫无意义。不断变难、变大、变得荒诞的谜题，旨在让最初简单的谜题逐渐显得枯燥无趣。<br><br>希望大家对工作的感受比“数字工程师”这样的职位更加有趣。如果你不幸对此感同身受，或许是时候考虑“说再见”了。
-292,manifesto_tm2,,硬币是第二个主题，它的灵感来源于生活中用掷硬币来做决策的常见玩笑时刻。<br><br>故事往往是这样展开的：嘴里说着不知该怎么选，于是决定掷硬币。当硬币落地时，却发现这个结果并不令人满意。于是，找个理由说“再掷一次吧”。<br><br>因此，掷硬币并不是用来决定命运的，而是帮助人们更好地走进自己的内心，看清自己的真实想法。
-293,manifesto_tm4,,寿司是进入工程正规流程后的第一个正式主题。它表达了日本料理的精髓：用最简单的食材，通过不同的烹饪方式和组合变化，创造出丰富多样的口感和味道。在实际的谜题中，这一理念表现为，通过两种食材的不同排列顺序，可以产生截然不同的数字变化，从而解决谜题。
-294,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期阶段，通过月相交替变化的简单规则，玩家可以轻松掌握。然而，当引入月食规则时，运用了各种迷惑性的手段，从动画效果到文字描述，都暗示着它的无序。随后，通过一系列关卡，引导玩家探索其内在的规律。<br><br>看到这段文字的你，真的已经完全掌握了月食的奥秘吗？就用后续的钻石挑战来确认一下吧。
-295,manifesto_tm6,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
-296,manifesto_tm7,,我喜欢盆景的原因是关卡中文字最后所提到的：“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。
-297,manifesto_tm8,,王冠是一个体验流畅但表达平淡的主题。其灵感来源非常直接：既承其冠，必承其重，以及王权所带来的争夺与混乱。此外，还隐藏了一个小彩蛋：无论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步。不知道你是否已经察觉到这一点呢？
-298,manifesto_tm9,,烧瓶是一个放飞自我的主题，大胆地引入了基于玩家反应而非纯粹计算的谜题。<br><br>理论化学描绘的神秘分子世界深深吸引着我，但实验化学要求的严谨操作却极大地折磨着我。这种矛盾的感受在游戏中映射为随时可能爆炸的实验，意图创造一种“悬崖边起舞”的紧张感。
-299,narrative_tm1_ln001,The passage of time,溜走的时间
-300,narrative_tm1_ln002,"Tick, tock, tick, tock,",滴答滴答滴答，
-301,narrative_tm1_ln003,The clock tirelessly marches on.,时钟不知疲倦地前进。
-302,narrative_tm1_ln004,"Twitch, tiktok, live streams,",微博、连载、直播，
-303,narrative_tm1_ln005,"never stop moving,",开启新的节律，
-304,narrative_tm1_ln006,time silently slipping through your fingertips.,时间在你的指尖默默滑动。
-305,narrative_tm1_ln007,"Night's travelers,",夜的旅者，
-306,narrative_tm1_ln008,trekking through darkness.,在黑暗中跋涉。
-307,narrative_tm1_ln009,"Dragging weary bodies,",拖着疲惫的身躯，
-308,narrative_tm1_ln010,finally arriving at dawn.,最终抵达晨曦。
-309,narrative_tm1_ln011,"Consciousness fading,",意识逐渐模糊，
-310,narrative_tm1_ln012,it's time to rest.,是时候休息了。
-311,narrative_tm10_ln001,,心仪的工牌
-312,narrative_tm10_ln002,,面试题：找到目标数字。
-313,narrative_tm10_ln003,,入职成为<b>数字工程师</b>。
-314,narrative_tm10_ln004,,继续认真工作，
-315,narrative_tm10_ln005,,稳步晋升。
-316,narrative_tm10_ln006,,努力，
-317,narrative_tm10_ln007,,成为<b>资深</b>数字工程师。
-318,narrative_tm10_ln008,,奋斗，
-319,narrative_tm10_ln009,,晋升为数字工程<b>专家</b>。
-320,narrative_tm10_ln010,,然而，
-321,narrative_tm10_ln011,,这一切真的值得么？
-322,narrative_tm10_ln012,,工作没变，但人会<b>变</b>。
-323,narrative_tm10_ln013,,是时候说再见了。
-324,narrative_tm10_ln014,,
-325,narrative_tm10_ln015,,
-326,narrative_tm2_ln001,,来自硬币的命运
-327,narrative_tm2_ln002,,硬币有无数种形式。
-328,narrative_tm2_ln003,,它穿越历史，
-329,narrative_tm2_ln004,,始终保持着两面。
-330,narrative_tm2_ln005,,正面象征前进，
-331,narrative_tm2_ln006,,也可能是盲从；
-332,narrative_tm2_ln007,,反面代表保留，
-333,narrative_tm2_ln008,,或者叫放弃。
-334,narrative_tm2_ln009,,两面交错，
-335,narrative_tm2_ln010,,创造命运的波澜。
-336,narrative_tm2_ln011,,你再次投掷，
-337,narrative_tm2_ln012,,等待宿命落下的回响。
-338,narrative_tm2_ln013,,不甘于此，
-339,narrative_tm2_ln014,,就用智慧进行解读。
-340,narrative_tm4_ln001,,寿司的简约
-341,narrative_tm4_ln002,,夹起一片鱼生，
-342,narrative_tm4_ln003,,晶莹剔透。
-343,narrative_tm4_ln004,,拿起一团白饭，
-344,narrative_tm4_ln005,,在碗中勾勒出弧线。
-345,narrative_tm4_ln006,,一缕白米叠上鱼生，
-346,narrative_tm4_ln007,,轻轻捏合，
-347,narrative_tm4_ln008,,创造出寿司细腻的口感。
-348,narrative_tm4_ln009,,一勺鱼肉放进白米，
-349,narrative_tm4_ln010,,缓缓卷起，
-350,narrative_tm4_ln011,,就开启了饭团丰盈的味觉。
-351,narrative_tm4_ln012,,仅用两种原料，
-352,narrative_tm4_ln013,,交织出丰富的组合，
-353,narrative_tm4_ln014,,诉说简约的美。
-354,narrative_tm4_ln015,,
-355,narrative_tm5_ln001,,月的规律
-356,narrative_tm5_ln002,,亏盈交替，
-357,narrative_tm5_ln003,,圆缺变迁。
-358,narrative_tm5_ln004,,亘古不变的，
-359,narrative_tm5_ln005,,是夜空的指引。
-360,narrative_tm5_ln006,,突如其来的月食，
-361,narrative_tm5_ln007,,散播混沌。
-362,narrative_tm5_ln008,,借着微弱光辉，
-363,narrative_tm5_ln009,,你在迷惘中前行。
-364,narrative_tm5_ln010,,用反思和总结，
-365,narrative_tm5_ln011,,让秩序浮现。
-366,narrative_tm5_ln012,,表面的无序，
-367,narrative_tm5_ln013,,藏着更深的规则。
-368,narrative_tm5_ln014,,在曲折中领悟，
-369,narrative_tm5_ln015,,获得再次的掌控。
-370,narrative_tm6_ln001,,灵感之光
-371,narrative_tm6_ln002,,电灯总用来代表<b>灵感</b>。
-372,narrative_tm6_ln003,,<b>火花</b>在脑中跃动，
-373,narrative_tm6_ln004,,思路逐渐便变得清晰。
-374,narrative_tm6_ln005,,光明<b>涌现</b>，
-375,narrative_tm6_ln006,,产生璀璨的印记。
-376,narrative_tm6_ln007,,过度的<b>汹涌</b>，
-377,narrative_tm6_ln008,,让你失去了方向。
-378,narrative_tm6_ln009,,真正的智慧，
-379,narrative_tm6_ln010,,在于保留<b>恰如其分</b>的灵感。
-380,narrative_tm6_ln011,,在发明灯泡以前，
-381,narrative_tm6_ln012,,在那无边黑暗的岁月里，
-382,narrative_tm6_ln013,,光明永驻于心间。
-383,narrative_tm7_ln001,,盆中的风景
-384,narrative_tm7_ln002,,美来自于<b>和谐</b>。
-385,narrative_tm7_ln003,,去掉可见的突兀，
-386,narrative_tm7_ln004,,保留自然的美好。
-387,narrative_tm7_ln005,,美来自于<b>平衡</b>，
-388,narrative_tm7_ln006,,跟随于树木的生长，
-389,narrative_tm7_ln007,,感受自然的主导。
-390,narrative_tm7_ln008,,不受规则的<b>束缚</b>，
-391,narrative_tm7_ln009,,盆景是对美的发现，
-392,narrative_tm7_ln010,,而非创造。
-393,narrative_tm7_ln011,,
-394,narrative_tm7_ln012,,
-395,narrative_tm7_ln013,,
-396,narrative_tm7_ln014,,
-397,narrative_tm7_ln015,,
-398,narrative_tm8_ln001,,王冠的重量
-399,narrative_tm8_ln002,,欲戴其冠，
-400,narrative_tm8_ln003,,必承其<b>重</b>。
-401,narrative_tm8_ln004,,王冠高耸，
-402,narrative_tm8_ln005,,象征至高的权利，
-403,narrative_tm8_ln006,,佩戴者逐渐迷失初心，
-404,narrative_tm8_ln007,,直到它砰然<b>落下</b>。
-405,narrative_tm8_ln008,,毒药、阴谋、战乱，
-406,narrative_tm8_ln009,,地位经历着无数的考验。
-407,narrative_tm8_ln010,,权力不停地更迭，
-408,narrative_tm8_ln011,,王冠不断地易手。
-409,narrative_tm8_ln012,,在起伏中前进，
-410,narrative_tm8_ln013,,光辉和荣耀成为史诗传颂。
-411,narrative_tm8_ln014,,
-412,narrative_tm8_ln015,,
-413,narrative_tm9_ln001,,迷人的色彩
-414,narrative_tm9_ln002,,烧瓶色彩斑斓。
-415,narrative_tm9_ln003,,实验充满未知。
-416,narrative_tm9_ln004,,一旦失去耐心，
-417,narrative_tm9_ln005,,BOOM！
-418,narrative_tm9_ln006,,----------
-419,narrative_tm9_ln007,,实验安全守则：
-420,narrative_tm9_ln008,,1. 避免超量
-421,narrative_tm9_ln009,,2. 轻拿轻放
-422,narrative_tm9_ln010,,3. 拒绝混用
-423,narrative_tm9_ln011,,4. 保持通风
-424,narrative_tm9_ln012,,----------
-425,narrative_tm9_ln013,,目标逐渐复杂。
-426,narrative_tm9_ln014,,夜色渐浓，准备回家。
-427,narrative_tm9_ln015,,为了钻石，加班！
-428,prompt_tm1,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-429,prompt_tm10,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9"
-430,prompt_tm2,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-431,prompt_tm4,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-432,prompt_tm5,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-433,prompt_tm6,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
-434,prompt_tm7,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a Chinese garden. There are a gazebo and a bridge in distance. There are blooming lotuses in the close view. And a small bonsai in a pot appears at the side. A bird is flying. The atmosphere are sunny and misty. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a Chinese garden. There are a gazebo and a bridge in distance. There are blooming lotuses in the close view. And a small bonsai in a pot appears at the side. A bird is flying. The atmosphere are sunny and misty. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
-435,prompt_tm8,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a royal palace. There are a throne and a statue in center. And a small crown on a table appears at the side. A painting is hanged on the wall. The atmosphere are majestic and bright. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a royal palace. There are a throne and a statue in center. And a small crown on a table appears at the side. A painting is hanged on the wall. The atmosphere are majestic and bright. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
-436,prompt_tm9,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of laboratory equipment in a shelf. There are a bottle of medicine and a monitor in center. And a small flask with colorful liquid appears at the side. The atmosphere are clean and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of laboratory equipment in a shelf. There are a bottle of medicine and a monitor in center. And a small flask with colorful liquid appears at the side. The atmosphere are clean and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9"
-437,rule1_lv1001,,目标数字要求：
-438,rule1_lv101,Play: +1,打出：+1
-439,rule1_lv201,Head - Cell Played +1,正面：+1
-440,rule1_lv204,Head - Cell Played +X,正面：+X
-441,rule1_lv401,Fish: +3,鱼：+3
-442,rule1_lv501,Crescent: +1,新月：+1
-443,rule1_lv601,Play: +1,打出：+1
-444,rule1_lv605,Play: +1 on cross cells,打出：十字区域+1
-445,rule1_lv701,,打出：移除格子内的数字
-446,rule1_lv801,,打出：+3
-447,rule1_lv803,,打出：+3，并加冕
-448,rule1_lv901,,打出：+1
-449,rule1_lv902,,按住：倾倒（数字加速增加）
-450,rule1_lv903,,按住：倾倒（需保证安全）
-451,rule2_lv1001,,#1与十字相邻数字都不同
-452,rule2_lv103,Cell already with a Clock +1 again,已有时钟的格子+1
-453,rule2_lv202,Tail - Cell Played -1,反面：-1
-454,rule2_lv205,Tail - Cell Played -X,反面：-X
-455,rule2_lv404,Rice: -3,米：-3
-456,rule2_lv501,Quarter: +3,弦月：+3
-457,rule2_lv601,Cell is turned ON,与两个或以上的相同数字相邻
-458,rule2_lv701,,通过尝试，发现美的规则
-459,rule2_lv719,,创造最美的盆景
-460,rule2_lv720,,创造最美的盆景
-461,rule2_lv803,,加冕后比任意相邻领土小
-462,rule2_lv903,,爆炸：格子超过999
-463,rule3_lv1003,,#2与至少一个对角线相邻数字相同
-464,rule3_lv204,X is the number of coins in a Cell,X为格子内硬币数
-465,rule3_lv406,Rice+Fish: Sushi(=7),米+鱼： 寿司（=7）
-466,rule3_lv502,Full: +5,满月：+5
-467,rule3_lv601,  when adjacent to 2+ same numbers,则点亮格子
-468,rule3_lv702,,和谐： █ █ █ 数字
-469,rule3_lv703,,和谐：移除 █ █ 数字
-470,rule3_lv704,,和谐：移除 █ 不同的数字
-471,rule3_lv705,,和谐：移除与众不同的数字
-472,rule3_lv803,,  则加冕失败：=0
-473,rule3_lv904,,爆炸：数字均值大于7
-474,rule4_lv1006,,#3与上下或左右数字奇偶同时一致
-475,rule4_lv203,FLIP the coin after playing,打出后硬币翻面
-476,rule4_lv210,TOSS the coin after playing,打出后投掷硬币
-477,rule4_lv410,Fish+Rice: Onigiri(=2),鱼+米： 饭团（=2）
-478,rule4_lv505,9+Full: Eclipse!,9+满月：月食！
-479,rule4_lv703,,（相等、 █ ）
-480,rule4_lv705,,（相等、奇偶、 █ ）
-481,rule4_lv707,,（相等、奇偶、质数、 █ ）
-482,rule4_lv709,,（相等、奇偶、质数、成对、 █ ）
-483,rule4_lv711,,（相等、奇偶、质数、成对、不同）
-484,rule4_lv807,,加冕后比相邻领土大
-485,rule4_lv905,,爆炸：百位数字为7
-486,rule5_lv1008,,#4与环形相邻数字相比不是最大或最小
-487,rule5_lv404,Fish and Rice appears alternatively,鱼和米交替出现
-488,rule5_lv503,10+: Sunrise! LOSE,超过9：太阳升起，游戏失败
-489,rule5_lv716,,平衡： █ █ 相等
-490,rule5_lv717,,平衡： █ 总和相等
-491,rule5_lv718,,平衡：各枝干总和相等
-492,rule5_lv720,,平衡：各枝干总和相等
-493,rule5_lv807,,  则相邻领土王冠被夺取：-2
-494,rule5_lv906,,爆炸：有3个以上相同数字
-495,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
-496,themename_tm1,Clock,时钟
-497,themename_tm10,Badge,工牌
-498,themename_tm2,Coin,硬币
-499,themename_tm4,Sushi,寿司
-500,themename_tm5,Moon,月亮
-501,themename_tm6,Lightbulb,灯泡
-502,themename_tm7,Bonsai,盆景
-503,themename_tm8,Crown,王冠
-504,themename_tm9,Flask,烧瓶
-505,tool_name_theme2_status0,Front,正面
-506,tool_name_theme2_status1,Tail,反面
-507,tool_name_theme4_status1,Fish,鱼生
-508,tool_name_theme4_status2,Rice,白米
-509,tool_name_theme5_status1,Crescent,新月
-510,tool_name_theme5_status2,Quarter,弦月
-511,tool_name_theme5_status3,Full,满月
-512,tool_name_theme5_status4,Quarter,弦月
-513,tool_name_theme5_status5,Crescent,新月
-514,ui_close_btn,Close,关闭
-515,ui_designer_note_title,Designer's Notes,制作笔记
-516,ui_failure_title,Level Failed,挑战失败
-517,ui_finished_status,(Passed),（完成）
-518,ui_gem_desc,Gem is a rarely found point that remarks your mastering of Numbers of Everything.,宝石是一种更罕见的积分，它代表着您对《万物之数》的大师级掌握。
-519,ui_gem_name,<sprite name=currency_gem> Gems,<sprite name=currency_gem> 宝石
-520,ui_goal_current_avg,Current Average: ,当前数字均值：
-521,ui_goal_current_crown_present,,在场王冠：
-522,ui_goal_current_crown_taken,,已夺取王冠：
-523,ui_goal_current_repeat3,Repeating 3 times,出现3次的数字：
-524,ui_goal_current_sum,Current Sum: ,当前数字之和：
-525,ui_goal_missing_digits,Missing:,缺失数字：
-526,ui_goal_section_title,Goal,目标
-527,ui_hiddengem_notice_desc,Hidden Gem levels are more challenging and complicated. <br><br>By accomplishing these levels you will earn <sprite name=currency_gem> Gems instead of regular <sprite name=currency_star> Stars. Gem is a rarely found point that remarks your mastering of Numbers of Everything. <br><br>Gems mainly come from Hidden Gem levels but can also be found in other “hidden” ways. Continue playing and discover more mystery of this game.,隐藏宝石关比常规关卡更加困难或复杂。<br><br>完成这些关卡，将获得 <sprite name=currency_gem> 宝石而非 <sprite name=currency_star> 星星。宝石是一种更罕见的积分，它代表着您对《万物之数》的大师级掌握。<br><br>宝石主要来自隐藏宝石关卡，但也可以通过其他更加“隐藏”的方式获得。请继续游戏，发现的更多秘密所在吧！
-528,ui_hiddengem_notice_title,<sprite name=currency_gem> Hidden Gem Discovered!,<sprite name=currency_gem> 隐藏宝石关
-529,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the riddle:,根据谜语找到<b>物件</b>：
-530,ui_new_tag,NEW,新
-531,ui_perfect_status,(Perfect),（完美通关）
-532,ui_retry_btn,Restart,重试
-533,ui_rewind_btn,Rewind,回溯
-534,ui_ruleset_title,Rules,规则
-535,ui_star_desc,"Star is earned by completing regular levels. It is used to unlock more photos, meaning more new levels.",星星通过完成常规关卡挑战获取，获得的星星可以用来解锁更多的照片，也就是更多关卡挑战。
-536,ui_star_name,<sprite name=currency_star> Stars,<sprite name=currency_star> 星星
-537,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}
-538,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
-539,ui_themephoto_unlockreq,<sprite name=currency_star_frame> {0}<br>to unlock,<sprite name=currency_star_frame> {0}<br>解锁
-540,ui_victory_title,Congrats!,恭喜通关
-541,unlocked_tm1,<b>Time</b> never stops.,<b>时间</b>永不停歇。
-542,unlocked_tm10,<b>Badge</b> leads to success.,<b>工牌</b>通向成功。
-543,unlocked_tm2,<b>Coin</b> determine fates.,<b>硬币</b>决定命运。
-544,unlocked_tm4,Simple and elegant <b>Sushi</b>.,<b>寿司</b>简约又精致。
-545,unlocked_tm5,Does <b>Moon</b> have a cycle?,<b>月亮</b>有无规律？
-546,unlocked_tm6,<b>Lightbulb</b> represents insights.,<b>灯泡</b>代表着灵感。
-547,unlocked_tm7,<b>Bonsai</b> crafted by human and natural.,人与自然共创<b>盆景</b>。
-548,unlocked_tm8,"<b>Crown</b>, the heavier, the better.",<b>王冠</b>越重越好。
-549,unlocked_tm9,Colorful <b>Flask</b>.,色彩斑斓的<b>烧瓶</b>。
-550,ui_progress_block_desc,spend <sprite name=currency_star> {0} on photos ({1}/{0}),累计花费 <sprite name=currency_star> {0} 在照片上（{1}/{0}）
-551,ui_playtest_title,Welcome!,欢迎测试
-552,ui_playtest_desc,"Thank you for participating the playtest of Numbers of everything. You are encouraged to try it multiple times within the designated time frame. If you encounter any difficulties, please feel free to contact me without hesitation.",感谢参与《万物之数》的游戏测试。欢迎你在指定时间内反复多次尝试它，如果遇到困难请随时联系我，不要客气。请在指定时间结束时，按S调出统计信息界面并截图发送给开发者。
-553,ui_intro_line0,<size=70%>Dao begets One<br>道生一</size>,道生一<br><size=70%>Dao begets One</size>
-554,ui_intro_line1,<size=70%>One begets Two<br>一生二</size>,一生二<br><size=70%>One begets Two</size>
-555,ui_intro_line2,<size=70%>Two begets Three<br>二生三</size>,二生三<br><size=70%>Two begets Three</size>
-556,ui_intro_line3,<size=70%>Three begets Everything<br>三生万物</size>,三生万物<br><size=70%>Three begets Everything</size>
-557,ui_setting_title,Settings,设置
-558,ui_setting_music,Music,音乐
-559,ui_setting_sound,Sound,音效
-560,themename_tm11,,三叶草
-561,locked_tm11,,幸运的 █ █ 。
-562,unlocked_tm11,,幸运的<b>四叶草</b>。
-563,hint_tm11,,它是特别的幸运。
-564,date_tm11,,2024/07/09
-565,manifesto_tm11,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
-566,prompt_tm11,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
-567,narrative_tm11_ln001,,幸运的四叶草
-568,narrative_tm11_ln002,,三叶草遍布大地，
-569,narrative_tm11_ln003,,四叶草悄然绽放。
-570,narrative_tm11_ln004,,与众不同是一种幸运，
-571,narrative_tm11_ln005,,不必隐藏光芒，
-572,narrative_tm11_ln006,,享受这特别的赐予。
-573,narrative_tm11_ln007,,珍惜独特的自己，
-574,narrative_tm11_ln008,,自信绽放，
-575,narrative_tm11_ln009,,在平凡的世界里，
-576,narrative_tm11_ln010,,成就不平凡的篇章。
-577,narrative_tm11_ln011,,这一切真的值得么？
-578,narrative_tm11_ln012,,工作没变，但人会<b>变</b>。
-579,narrative_tm11_ln013,,是时候说再见了。
-580,narrative_tm11_ln014,,
-581,narrative_tm11_ln015,,
-582,levelname_lv1101,,001
-583,levelname_lv1102,,002
-584,levelname_lv1103,,003
-585,levelname_lv1104,,004
-586,levelname_lv1105,,005
-587,levelname_lv1106,,006
-588,levelname_lv1107,,007
-589,levelname_lv1108,,008
-590,levelname_lv1109,,009
-591,levelname_lv1110,,010
-592,goal_lv1101,,找到幸运的四叶草
-593,goal_lv1102,,找到幸运的四叶草
-594,goal_lv1103,,找到幸运的四叶草
-595,goal_lv1104,,找到幸运的四叶草
-596,goal_lv1105,,找到幸运的四叶草
-597,goal_lv1106,,找到幸运的四叶草
-598,goal_lv1107,,找到幸运的四叶草
-599,goal_lv1108,,找到幸运的四叶草
-600,goal_lv1109,,找到幸运的四叶草
-601,goal_lv1110,,找到幸运的四叶草
-602,rule1_lv1101,,细心观察，选出四叶草
-603,levelname_lv1111,,011
-604,levelname_lv1112,,012
-605,goal_lv1111,,找到幸运的四叶草
-606,goal_lv1112,,找到幸运的四叶草
-607,rule2_lv1112,,耐心也很重要
-608,themename_tm12,,摩天大楼
-609,locked_tm12,,█ █ 吸引人群。
-610,unlocked_tm12,,<b>大楼</b>吸引人群。
-611,hint_tm12,,它矗立的在城市的中心。
-612,date_tm12,,2024/07/13
-613,manifesto_tm12,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
-614,prompt_tm12,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
-615,narrative_tm12_ln001,,摩天大楼
-616,narrative_tm12_ln002,,人潮涌动，
-617,narrative_tm12_ln003,,高楼矗立，
-618,narrative_tm12_ln004,,直指苍穹。
-619,narrative_tm12_ln005,,有人辛勤，
-620,narrative_tm12_ln006,,有人踌躇，
-621,narrative_tm12_ln007,,玻璃前无数双眼睛，
-622,narrative_tm12_ln008,,见证着城市的历史。
-623,narrative_tm12_ln009,,人们从四面八方涌来，
-624,narrative_tm12_ln010,,钢铁与玻璃交织成森林。
-625,narrative_tm12_ln011,,夜幕降临，
-626,narrative_tm12_ln012,,霓虹闪烁。
-627,narrative_tm12_ln013,,楼宇组成的天际线，
-628,narrative_tm12_ln014,,书写着未完的故事。
-629,narrative_tm12_ln015,,
-630,levelname_lv1201,,001
-631,levelname_lv1202,,002
-632,levelname_lv1203,,003
-633,levelname_lv1204,,004
-634,levelname_lv1205,,005
-635,levelname_lv1206,,006
-636,levelname_lv1207,,007
-637,levelname_lv1208,,008
-638,rule1_lv1201,,摩天大楼：+2人口
-639,rule2_lv1202,,迁移：建成后人口多于相邻地区
-640,rule3_lv1202,, 则从相邻地区再迁移3人口
-641,rule4_lv1206,,爆发：若同时触发2+次人口迁移
-642,rule5_lv1206,, 则额外+5人口
-643,goal_lv1201,,建立2个10+人口的大楼
-644,goal_lv1202,,建立1个15+人口的大楼
-645,goal_lv1203,,建立2个15+人口的大楼
-646,goal_lv1204,,建立3个15+人口的大楼
-647,goal_lv1205,,建立4个15+人口的大楼
-648,goal_lv1206,,建立1个30+人口的大楼
-649,goal_lv1207,,建立4个30+人口的大楼
-650,goal_lv1208,,建立2个30+人口的大楼
-651,levelname_lv1209,,009
-652,levelname_lv1210,,010
-653,levelname_lv1211,,011
-654,levelname_lv1212,,012
-655,levelname_lv1213,,013
-656,levelname_lv1214,,014
-657,goal_lv1209,,让总人口达到90+
-658,goal_lv1210,,建立4个30+人口的大楼
-659,goal_lv1211,,让总人口达到100+
-660,goal_lv1212,,让总人口达到150+
-661,goal_lv1213,,建立5个30+人口的大楼
-662,goal_lv1214,,建立1个100+人口的大楼
-663,themename_tm13,,侦探
-664,locked_tm13,,█ █ 明察秋毫。
-665,unlocked_tm13,,<b>侦探</b>明察秋毫。
-666,hint_tm13,,它不放过任何细枝末节。
-667,date_tm13,,2024/07/23
-668,manifesto_tm13,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
-669,prompt_tm13,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
-670,narrative_tm13_ln001,,0的死亡
-671,narrative_tm13_ln002,,0惨死于公寓内，
-672,narrative_tm13_ln003,,嫌疑人是1到9。
-673,narrative_tm13_ln004,,拿起放大镜，
-674,narrative_tm13_ln005,,仔细检查每一处角落，
-675,narrative_tm13_ln006,,详细质询每一位目击者。
-676,narrative_tm13_ln007,,运用聪明的才智，
-677,narrative_tm13_ln008,,抽丝剥茧，
-678,narrative_tm13_ln009,,循序渐进。
-679,narrative_tm13_ln010,,在迷雾中寻找线索，
-680,narrative_tm13_ln011,,于黑暗中中逼近真相。
-681,narrative_tm13_ln012,,揪出人群中的恶魔，
-682,narrative_tm13_ln013,,还众人清白，
-683,narrative_tm13_ln014,,让死者瞑目。
-684,narrative_tm13_ln015,,
-685,levelname_lv1301,,001
-686,levelname_lv1302,,002
-687,levelname_lv1303,,003
-688,levelname_lv1304,,004
-689,levelname_lv1305,,005
-690,levelname_lv1306,,006
-691,levelname_lv1307,,007
-692,levelname_lv1308,,008
-693,goal_lv1301,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-694,goal_lv1302,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-695,goal_lv1303,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-696,goal_lv1304,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-697,goal_lv1305,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-698,goal_lv1306,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-699,goal_lv1307,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-700,goal_lv1308,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-701,rule1_lv1301,,质询某一行的目击者<sprite name=meeple_blank>
-702,rule2_lv1301,, <sprite name=sign_complete> 匹配：凶手出现在正确的列
-703,rule3_lv1301,, <sprite name=sign_unknown> 可疑：凶手出现在错误的列
-704,rule4_lv1301,, <sprite name=rule_sign_deletion> 排除：没有凶手出现
-705,tool_name_theme13_status0,Inquire <size=70%>or</size> Identify,质询 <size=70%>或</size> 指认
-706,tool_name_theme13_status1,Identify now!,质询机会耗尽<br>立刻指认！
-707,tm13_suspect,Suspect,嫌疑人
-708,tm13_witness,Witness,目击者
-709,tm13_goal_case_solved,Case solved: ,已解决案件数：
-710,levelname_lv1309,,009
-711,levelname_lv1310,,010
-712,levelname_lv1311,,011
-713,goal_lv1309,,指认全部凶手<br>凶手不止1人
-714,goal_lv1310,,指认全部凶手<br>凶手不止1人
-715,goal_lv1311,,连续成功2个案件
-716,levelname_lv1312,,012
-717,levelname_lv1313,,013
-718,goal_lv1312,,连续成功2个案件<br>凶手不止1人
-719,goal_lv1313,,无限次解决案件<br>凶手<b>可能</b>不止1人
-720,rule2_lv1309,,<sprite name=sign_complete> 匹配：有凶手出现在正确的列
-721,rule3_lv1309,,<sprite name=sign_unknown> 可疑：有凶手出现但位于错误的列
+23,date_tm11,,2024/07/09
+24,date_tm12,,2024/07/13
+25,date_tm13,,2024/07/23
+26,date_tm2,2023/01/15,2023/01/15
+27,date_tm4,2023/06/25,2023/06/25
+28,date_tm5,2023/08/13,2023/08/13
+29,date_tm6,2023/09/03,2023/09/03
+30,date_tm7,2024/02/15,2024/02/15
+31,date_tm8,2024/03/09,2024/03/09
+32,date_tm9,2024/03/24,2024/03/24
+33,hint_tm1,It ticks on and never ceases.,它滴答滴答，永不停歇地前进。
+34,hint_tm10,It unlocks the gates to success.,它用来开门，通向成功的大门。
+35,hint_tm11,,它是特别的幸运。
+36,hint_tm12,,它矗立的在城市的中心。
+37,hint_tm13,,它不放过任何细枝末节。
+38,hint_tm2,"It flips, deciding fates.",它一次次地翻动，决定着命运。
+39,hint_tm4,"Though simple, it exudes elegance.",它虽然简约，却愈显得精致。
+40,hint_tm5,"It's ever-changing, yet always returns.",它不停变化，却总会回到熟悉的样子。
+41,hint_tm6,"It represents inspiration, enlightenment.",它代表了灵感、顿悟。
+42,hint_tm7,It's an art form crafted through trimming nature.,它是通过修剪自然得到的艺术品。
+43,hint_tm8,It symbolizes power through its weight.,它用重量象征权力。
+44,hint_tm9,It contains dangerous substances.,它装着危险的物质。
+45,intro_line_1,"Friday night. Get back home, <b>things</b> emerges from darkness.",周五晚上，打开房门，回到漆黑的家中，黑暗之中<b>万物</b>浮现。
+46,intro_line_2,"On the way to work, passing through a river, <b>things</b> emerges from the voice of the winds",走在上班的路上，路过一条小河，树叶的婆娑声中夹杂着<b>万物</b>。
+47,levelname_lv1001,,001
+48,levelname_lv1002,,002
+49,levelname_lv1003,,003
+50,levelname_lv1004,,004
+51,levelname_lv1005,,005
+52,levelname_lv1006,,006
+53,levelname_lv1007,,007
+54,levelname_lv1008,,008
+55,levelname_lv1009,,009
+56,levelname_lv101,001,001
+57,levelname_lv1010,,010
+58,levelname_lv1011,,011
+59,levelname_lv1012,,012
+60,levelname_lv102,002,002
+61,levelname_lv103,003,003
+62,levelname_lv104,004,004
+63,levelname_lv105,005,005
+64,levelname_lv106,006,006
+65,levelname_lv107,007,007
+66,levelname_lv108,008,008
+67,levelname_lv109,009,009
+68,levelname_lv110,010,010
+69,levelname_lv1101,,001
+70,levelname_lv1102,,002
+71,levelname_lv1103,,003
+72,levelname_lv1104,,004
+73,levelname_lv1105,,005
+74,levelname_lv1106,,006
+75,levelname_lv1107,,007
+76,levelname_lv1108,,008
+77,levelname_lv1109,,009
+78,levelname_lv1110,,010
+79,levelname_lv1111,,011
+80,levelname_lv1112,,012
+81,levelname_lv1201,,001
+82,levelname_lv1202,,002
+83,levelname_lv1203,,003
+84,levelname_lv1204,,004
+85,levelname_lv1205,,005
+86,levelname_lv1206,,006
+87,levelname_lv1207,,007
+88,levelname_lv1208,,008
+89,levelname_lv1209,,009
+90,levelname_lv1210,,010
+91,levelname_lv1211,,011
+92,levelname_lv1212,,012
+93,levelname_lv1213,,013
+94,levelname_lv1214,,014
+95,levelname_lv1301,,001
+96,levelname_lv1302,,002
+97,levelname_lv1303,,003
+98,levelname_lv1304,,004
+99,levelname_lv1305,,005
+100,levelname_lv1306,,006
+101,levelname_lv1307,,007
+102,levelname_lv1308,,008
+103,levelname_lv1309,,009
+104,levelname_lv1310,,010
+105,levelname_lv1311,,011
+106,levelname_lv1312,,012
+107,levelname_lv1313,,013
+108,levelname_lv201,001,001
+109,levelname_lv202,002,002
+110,levelname_lv203,003,003
+111,levelname_lv204,004,004
+112,levelname_lv205,005,005
+113,levelname_lv206,006,006
+114,levelname_lv207,007,007
+115,levelname_lv208,008,008
+116,levelname_lv209,009,009
+117,levelname_lv210,010,010
+118,levelname_lv211,011,011
+119,levelname_lv401,001,001
+120,levelname_lv402,002,002
+121,levelname_lv403,003,003
+122,levelname_lv404,004,004
+123,levelname_lv405,005,005
+124,levelname_lv406,006,006
+125,levelname_lv407,007,007
+126,levelname_lv408,008,008
+127,levelname_lv409,009,009
+128,levelname_lv410,010,010
+129,levelname_lv411,011,011
+130,levelname_lv412,012,012
+131,levelname_lv413,013,013
+132,levelname_lv414,014,014
+133,levelname_lv501,001,001
+134,levelname_lv502,002,002
+135,levelname_lv503,003,003
+136,levelname_lv504,004,004
+137,levelname_lv505,005,005
+138,levelname_lv506,006,006
+139,levelname_lv507,007,007
+140,levelname_lv508,008,008
+141,levelname_lv509,009,009
+142,levelname_lv510,010,010
+143,levelname_lv511,011,011
+144,levelname_lv512,012,012
+145,levelname_lv513,013,013
+146,levelname_lv514,014,014
+147,levelname_lv601,001,001
+148,levelname_lv602,002,002
+149,levelname_lv603,003,003
+150,levelname_lv604,004,004
+151,levelname_lv605,005,005
+152,levelname_lv606,006,006
+153,levelname_lv607,007,007
+154,levelname_lv608,008,008
+155,levelname_lv609,009,009
+156,levelname_lv610,010,010
+157,levelname_lv611,011,011
+158,levelname_lv612,012,012
+159,levelname_lv613,013,013
+160,levelname_lv614,014,014
+161,levelname_lv615,015,015
+162,levelname_lv701,,001
+163,levelname_lv702,,002
+164,levelname_lv703,,003
+165,levelname_lv704,,004
+166,levelname_lv705,,005
+167,levelname_lv706,,006
+168,levelname_lv707,,007
+169,levelname_lv708,,008
+170,levelname_lv709,,009
+171,levelname_lv710,,010
+172,levelname_lv711,,011
+173,levelname_lv712,,012
+174,levelname_lv713,,013
+175,levelname_lv714,,014
+176,levelname_lv715,,015
+177,levelname_lv716,,016
+178,levelname_lv717,,017
+179,levelname_lv718,,018
+180,levelname_lv719,,019
+181,levelname_lv720,,020
+182,levelname_lv801,,001
+183,levelname_lv802,,002
+184,levelname_lv803,,003
+185,levelname_lv804,,004
+186,levelname_lv805,,005
+187,levelname_lv806,,006
+188,levelname_lv807,,007
+189,levelname_lv808,,008
+190,levelname_lv809,,009
+191,levelname_lv810,,010
+192,levelname_lv811,,011
+193,levelname_lv812,,012
+194,levelname_lv901,,001
+195,levelname_lv902,,002
+196,levelname_lv903,,003
+197,levelname_lv904,,004
+198,levelname_lv905,,005
+199,levelname_lv906,,006
+200,levelname_lv907,,007
+201,levelname_lv908,,008
+202,levelname_lv909,,009
+203,levelname_lv910,,010
+204,levelname_lv911,,011
+205,levelname_lv912,,012
+206,locked_tm1,█ █ never stops.,█ █ 永不停歇。
+207,locked_tm10,█ █ leads to success.,█ █ 通向成功。
+208,locked_tm11,,幸运的 █ █ 。
+209,locked_tm12,,█ █ 吸引人群。
+210,locked_tm13,,█ █ 明察秋毫。
+211,locked_tm2,█ █ determine fates.,█ █ 决定命运。
+212,locked_tm4,simple and elegant █ █ .,█ █ 简约又精致。
+213,locked_tm5,Does █ █ have a cycle?,█ █ 有无规律？
+214,locked_tm6,█ █ represents insights.,█ █ 代表着灵感。
+215,locked_tm7,█ █ crafted by human and natural.,人与自然共创 █ █ 。
+216,locked_tm8,"█ █ , the heavier, the better.",█ █ 越重越好。
+217,locked_tm9,Colorful █ █ .,色彩斑斓的 █ █ 。
+218,manifesto_tm1,"The clock is the first theme, its production and design predate even before the project set its title, Numbers of Everything. From a certain perspective, it is the very starting point of the entire idea.<br><br>Staying up late doing nothing is a superficial appreciation of time, yet it is a frantic waste of time. The clock theme aims to express the individual's powerlessness in the face of the passage of time through this scenario.",时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。换句话说，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
+219,manifesto_tm10,,这个主题诞生于我对全职工作产生严重倦怠的时期。尽管身处大公司，享有高薪、良好的福利和社会的认可，并拥有光明的前途，但在情绪的笼罩下，这一切都变得毫无意义。不断变难、变大、变得荒诞的谜题，旨在让最初简单的谜题逐渐显得枯燥无趣。<br><br>希望大家对工作的感受比“数字工程师”这样的职位更加有趣。如果你不幸对此感同身受，或许是时候考虑“说再见”了。
+220,manifesto_tm11,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
+221,manifesto_tm12,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
+222,manifesto_tm13,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
+223,manifesto_tm2,,硬币是第二个主题，它的灵感来源于生活中用掷硬币来做决策的常见玩笑时刻。<br><br>故事往往是这样展开的：嘴里说着不知该怎么选，于是决定掷硬币。当硬币落地时，却发现这个结果并不令人满意。于是，找个理由说“再掷一次吧”。<br><br>因此，掷硬币并不是用来决定命运的，而是帮助人们更好地走进自己的内心，看清自己的真实想法。
+224,manifesto_tm4,,寿司是进入工程正规流程后的第一个正式主题。它表达了日本料理的精髓：用最简单的食材，通过不同的烹饪方式和组合变化，创造出丰富多样的口感和味道。在实际的谜题中，这一理念表现为，通过两种食材的不同排列顺序，可以产生截然不同的数字变化，从而解决谜题。
+225,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期阶段，通过月相交替变化的简单规则，玩家可以轻松掌握。然而，当引入月食规则时，运用了各种迷惑性的手段，从动画效果到文字描述，都暗示着它的无序。随后，通过一系列关卡，引导玩家探索其内在的规律。<br><br>看到这段文字的你，真的已经完全掌握了月食的奥秘吗？就用后续的钻石挑战来确认一下吧。
+226,manifesto_tm6,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
+227,manifesto_tm7,,我喜欢盆景的原因是关卡中文字最后所提到的：“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。
+228,manifesto_tm8,,王冠是一个体验流畅但表达平淡的主题。其灵感来源非常直接：既承其冠，必承其重，以及王权所带来的争夺与混乱。此外，还隐藏了一个小彩蛋：无论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步。不知道你是否已经察觉到这一点呢？
+229,manifesto_tm9,,烧瓶是一个放飞自我的主题，大胆地引入了基于玩家反应而非纯粹计算的谜题。<br><br>理论化学描绘的神秘分子世界深深吸引着我，但实验化学要求的严谨操作却极大地折磨着我。这种矛盾的感受在游戏中映射为随时可能爆炸的实验，意图创造一种“悬崖边起舞”的紧张感。
+230,narrative_tm1_ln001,The passage of time,溜走的时间
+231,narrative_tm1_ln002,"Tick, tock, tick, tock,",滴答滴答滴答，
+232,narrative_tm1_ln003,The clock tirelessly marches on.,时钟不知疲倦地前进。
+233,narrative_tm1_ln004,"Twitch, tiktok, live streams,",微博、连载、直播，
+234,narrative_tm1_ln005,"never stop moving,",开启新的节律，
+235,narrative_tm1_ln006,time silently slipping through your fingertips.,时间在你的指尖默默滑动。
+236,narrative_tm1_ln007,"Night's travelers,",夜的旅者，
+237,narrative_tm1_ln008,trekking through darkness.,在黑暗中跋涉。
+238,narrative_tm1_ln009,"Dragging weary bodies,",拖着疲惫的身躯，
+239,narrative_tm1_ln010,finally arriving at dawn.,最终抵达晨曦。
+240,narrative_tm1_ln011,"Consciousness fading,",意识逐渐模糊，
+241,narrative_tm1_ln012,it's time to rest.,是时候休息了。
+242,narrative_tm10_ln001,,心仪的工牌
+243,narrative_tm10_ln002,,面试题：找到目标数字。
+244,narrative_tm10_ln003,,入职成为<b>数字工程师</b>。
+245,narrative_tm10_ln004,,继续认真工作，
+246,narrative_tm10_ln005,,稳步晋升。
+247,narrative_tm10_ln006,,努力，
+248,narrative_tm10_ln007,,成为<b>资深</b>数字工程师。
+249,narrative_tm10_ln008,,奋斗，
+250,narrative_tm10_ln009,,晋升为数字工程<b>专家</b>。
+251,narrative_tm10_ln010,,然而，
+252,narrative_tm10_ln011,,这一切真的值得么？
+253,narrative_tm10_ln012,,工作没变，但人会<b>变</b>。
+254,narrative_tm10_ln013,,是时候说再见了。
+255,narrative_tm10_ln014,,
+256,narrative_tm10_ln015,,
+257,narrative_tm11_ln001,,幸运的四叶草
+258,narrative_tm11_ln002,,三叶草遍布大地，
+259,narrative_tm11_ln003,,四叶草悄然绽放。
+260,narrative_tm11_ln004,,与众不同是一种幸运，
+261,narrative_tm11_ln005,,不必隐藏光芒，
+262,narrative_tm11_ln006,,享受这特别的赐予。
+263,narrative_tm11_ln007,,珍惜独特的自己，
+264,narrative_tm11_ln008,,自信绽放，
+265,narrative_tm11_ln009,,在平凡的世界里，
+266,narrative_tm11_ln010,,成就不平凡的篇章。
+267,narrative_tm11_ln011,,这一切真的值得么？
+268,narrative_tm11_ln012,,工作没变，但人会<b>变</b>。
+269,narrative_tm11_ln013,,是时候说再见了。
+270,narrative_tm11_ln014,,
+271,narrative_tm11_ln015,,
+272,narrative_tm12_ln001,,摩天大楼
+273,narrative_tm12_ln002,,人潮涌动，
+274,narrative_tm12_ln003,,高楼矗立，
+275,narrative_tm12_ln004,,直指苍穹。
+276,narrative_tm12_ln005,,有人辛勤，
+277,narrative_tm12_ln006,,有人踌躇，
+278,narrative_tm12_ln007,,玻璃前无数双眼睛，
+279,narrative_tm12_ln008,,见证着城市的历史。
+280,narrative_tm12_ln009,,人们从四面八方涌来，
+281,narrative_tm12_ln010,,钢铁与玻璃交织成森林。
+282,narrative_tm12_ln011,,夜幕降临，
+283,narrative_tm12_ln012,,霓虹闪烁。
+284,narrative_tm12_ln013,,楼宇组成的天际线，
+285,narrative_tm12_ln014,,书写着未完的故事。
+286,narrative_tm12_ln015,,
+287,narrative_tm13_ln001,,0的死亡
+288,narrative_tm13_ln002,,0惨死于公寓内，
+289,narrative_tm13_ln003,,嫌疑人是1到9。
+290,narrative_tm13_ln004,,拿起放大镜，
+291,narrative_tm13_ln005,,仔细检查每一处角落，
+292,narrative_tm13_ln006,,详细质询每一位目击者。
+293,narrative_tm13_ln007,,运用聪明的才智，
+294,narrative_tm13_ln008,,抽丝剥茧，
+295,narrative_tm13_ln009,,循序渐进。
+296,narrative_tm13_ln010,,在迷雾中寻找线索，
+297,narrative_tm13_ln011,,于黑暗中中逼近真相。
+298,narrative_tm13_ln012,,揪出人群中的恶魔，
+299,narrative_tm13_ln013,,还众人清白，
+300,narrative_tm13_ln014,,让死者瞑目。
+301,narrative_tm13_ln015,,
+302,narrative_tm2_ln001,,来自硬币的命运
+303,narrative_tm2_ln002,,硬币有无数种形式。
+304,narrative_tm2_ln003,,它穿越历史，
+305,narrative_tm2_ln004,,始终保持着两面。
+306,narrative_tm2_ln005,,正面象征前进，
+307,narrative_tm2_ln006,,也可能是盲从；
+308,narrative_tm2_ln007,,反面代表保留，
+309,narrative_tm2_ln008,,或者叫放弃。
+310,narrative_tm2_ln009,,两面交错，
+311,narrative_tm2_ln010,,创造命运的波澜。
+312,narrative_tm2_ln011,,你再次投掷，
+313,narrative_tm2_ln012,,等待宿命落下的回响。
+314,narrative_tm2_ln013,,不甘于此，
+315,narrative_tm2_ln014,,就用智慧进行解读。
+316,narrative_tm4_ln001,,寿司的简约
+317,narrative_tm4_ln002,,夹起一片鱼生，
+318,narrative_tm4_ln003,,晶莹剔透。
+319,narrative_tm4_ln004,,拿起一团白饭，
+320,narrative_tm4_ln005,,在碗中勾勒出弧线。
+321,narrative_tm4_ln006,,一缕白米叠上鱼生，
+322,narrative_tm4_ln007,,轻轻捏合，
+323,narrative_tm4_ln008,,创造出寿司细腻的口感。
+324,narrative_tm4_ln009,,一勺鱼肉放进白米，
+325,narrative_tm4_ln010,,缓缓卷起，
+326,narrative_tm4_ln011,,就开启了饭团丰盈的味觉。
+327,narrative_tm4_ln012,,仅用两种原料，
+328,narrative_tm4_ln013,,交织出丰富的组合，
+329,narrative_tm4_ln014,,诉说简约的美。
+330,narrative_tm4_ln015,,
+331,narrative_tm5_ln001,,月的规律
+332,narrative_tm5_ln002,,亏盈交替，
+333,narrative_tm5_ln003,,圆缺变迁。
+334,narrative_tm5_ln004,,亘古不变的，
+335,narrative_tm5_ln005,,是夜空的指引。
+336,narrative_tm5_ln006,,突如其来的月食，
+337,narrative_tm5_ln007,,散播混沌。
+338,narrative_tm5_ln008,,借着微弱光辉，
+339,narrative_tm5_ln009,,你在迷惘中前行。
+340,narrative_tm5_ln010,,用反思和总结，
+341,narrative_tm5_ln011,,让秩序浮现。
+342,narrative_tm5_ln012,,表面的无序，
+343,narrative_tm5_ln013,,藏着更深的规则。
+344,narrative_tm5_ln014,,在曲折中领悟，
+345,narrative_tm5_ln015,,获得再次的掌控。
+346,narrative_tm6_ln001,,灵感之光
+347,narrative_tm6_ln002,,电灯总用来代表<b>灵感</b>。
+348,narrative_tm6_ln003,,<b>火花</b>在脑中跃动，
+349,narrative_tm6_ln004,,思路逐渐便变得清晰。
+350,narrative_tm6_ln005,,光明<b>涌现</b>，
+351,narrative_tm6_ln006,,产生璀璨的印记。
+352,narrative_tm6_ln007,,过度的<b>汹涌</b>，
+353,narrative_tm6_ln008,,让你失去了方向。
+354,narrative_tm6_ln009,,真正的智慧，
+355,narrative_tm6_ln010,,在于保留<b>恰如其分</b>的灵感。
+356,narrative_tm6_ln011,,在发明灯泡以前，
+357,narrative_tm6_ln012,,在那无边黑暗的岁月里，
+358,narrative_tm6_ln013,,光明永驻于心间。
+359,narrative_tm7_ln001,,盆中的风景
+360,narrative_tm7_ln002,,美来自于<b>和谐</b>。
+361,narrative_tm7_ln003,,去掉可见的突兀，
+362,narrative_tm7_ln004,,保留自然的美好。
+363,narrative_tm7_ln005,,美来自于<b>平衡</b>，
+364,narrative_tm7_ln006,,跟随于树木的生长，
+365,narrative_tm7_ln007,,感受自然的主导。
+366,narrative_tm7_ln008,,不受规则的<b>束缚</b>，
+367,narrative_tm7_ln009,,盆景是对美的发现，
+368,narrative_tm7_ln010,,而非创造。
+369,narrative_tm7_ln011,,
+370,narrative_tm7_ln012,,
+371,narrative_tm7_ln013,,
+372,narrative_tm7_ln014,,
+373,narrative_tm7_ln015,,
+374,narrative_tm8_ln001,,王冠的重量
+375,narrative_tm8_ln002,,欲戴其冠，
+376,narrative_tm8_ln003,,必承其<b>重</b>。
+377,narrative_tm8_ln004,,王冠高耸，
+378,narrative_tm8_ln005,,象征至高的权利，
+379,narrative_tm8_ln006,,佩戴者逐渐迷失初心，
+380,narrative_tm8_ln007,,直到它砰然<b>落下</b>。
+381,narrative_tm8_ln008,,毒药、阴谋、战乱，
+382,narrative_tm8_ln009,,地位经历着无数的考验。
+383,narrative_tm8_ln010,,权力不停地更迭，
+384,narrative_tm8_ln011,,王冠不断地易手。
+385,narrative_tm8_ln012,,在起伏中前进，
+386,narrative_tm8_ln013,,光辉和荣耀成为史诗传颂。
+387,narrative_tm8_ln014,,
+388,narrative_tm8_ln015,,
+389,narrative_tm9_ln001,,迷人的色彩
+390,narrative_tm9_ln002,,烧瓶色彩斑斓。
+391,narrative_tm9_ln003,,实验充满未知。
+392,narrative_tm9_ln004,,一旦失去耐心，
+393,narrative_tm9_ln005,,BOOM！
+394,narrative_tm9_ln006,,----------
+395,narrative_tm9_ln007,,实验安全守则：
+396,narrative_tm9_ln008,,1. 避免超量
+397,narrative_tm9_ln009,,2. 轻拿轻放
+398,narrative_tm9_ln010,,3. 拒绝混用
+399,narrative_tm9_ln011,,4. 保持通风
+400,narrative_tm9_ln012,,----------
+401,narrative_tm9_ln013,,目标逐渐复杂。
+402,narrative_tm9_ln014,,夜色渐浓，准备回家。
+403,narrative_tm9_ln015,,为了钻石，加班！
+404,prompt_tm1,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+405,prompt_tm10,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9"
+406,prompt_tm11,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+407,prompt_tm12,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+408,prompt_tm13,,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+409,prompt_tm2,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+410,prompt_tm4,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+411,prompt_tm5,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+412,prompt_tm6,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","Photo is created by Midjourney using the following prompt:<br>A realistic photo of modern electric laboratory view. There are a notebook, one lightbulb, and a mcrioscop. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
+413,prompt_tm7,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a Chinese garden. There are a gazebo and a bridge in distance. There are blooming lotuses in the close view. And a small bonsai in a pot appears at the side. A bird is flying. The atmosphere are sunny and misty. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a Chinese garden. There are a gazebo and a bridge in distance. There are blooming lotuses in the close view. And a small bonsai in a pot appears at the side. A bird is flying. The atmosphere are sunny and misty. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+414,prompt_tm8,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a royal palace. There are a throne and a statue in center. And a small crown on a table appears at the side. A painting is hanged on the wall. The atmosphere are majestic and bright. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of a royal palace. There are a throne and a statue in center. And a small crown on a table appears at the side. A painting is hanged on the wall. The atmosphere are majestic and bright. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+415,prompt_tm9,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of laboratory equipment in a shelf. There are a bottle of medicine and a monitor in center. And a small flask with colorful liquid appears at the side. The atmosphere are clean and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","Photo is created by Midjourney using the following prompt:<br>A realistic photo of laboratory equipment in a shelf. There are a bottle of medicine and a monitor in center. And a small flask with colorful liquid appears at the side. The atmosphere are clean and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9"
+416,themedesc_more,More themes <br>to come...,更多主题，<br>敬请期待。
+417,themename_tm1,Clock,时钟
+418,themename_tm10,Badge,工牌
+419,themename_tm11,,三叶草
+420,themename_tm12,,摩天大楼
+421,themename_tm13,,侦探
+422,themename_tm2,Coin,硬币
+423,themename_tm4,Sushi,寿司
+424,themename_tm5,Moon,月亮
+425,themename_tm6,Lightbulb,灯泡
+426,themename_tm7,Bonsai,盆景
+427,themename_tm8,Crown,王冠
+428,themename_tm9,Flask,烧瓶
+429,tm1_goal_lv101,,让所有格子为8
+430,tm1_goal_lv102,,让所有格子为10
+431,tm1_goal_lv103,,让所有格子为12
+432,tm1_goal_lv104,,让所有格子为不同数字
+433,tm1_goal_lv105,,让所有格子为2
+434,tm1_goal_lv106,,让所有格子为3
+435,tm1_goal_lv107,,让所有格子为4
+436,tm1_goal_lv108,,让所有格子为不同数字
+437,tm1_goal_lv109,,让所有格子为5
+438,tm1_goal_lv110,,让所有格子为6
+439,tm1_rule1_lv101,,打出：+1
+440,tm1_rule2_lv103,,已有时钟的格子+1
+441,tm10_goal_lv1001,,标记满足要求的数字
+442,tm10_goal_lv1002,,标记满足要求的数字
+443,tm10_goal_lv1003,,标记同时满足全部要求的数字
+444,tm10_goal_lv1004,,标记同时满足全部要求的数字
+445,tm10_goal_lv1005,,标记同时满足全部要求的数字
+446,tm10_goal_lv1006,,标记同时满足全部要求的数字
+447,tm10_goal_lv1007,,标记同时满足全部要求的数字
+448,tm10_goal_lv1008,,标记同时满足全部要求的数字
+449,tm10_goal_lv1009,,标记同时满足全部要求的数字
+450,tm10_goal_lv1010,,标记同时满足全部要求的数字
+451,tm10_goal_lv1011,,标记同时满足全部要求的数字
+452,tm10_goal_lv1012,,标记同时满足全部要求的数字
+453,tm10_rule1_lv1001,,目标数字要求：
+454,tm10_rule2_lv1001,,#1与十字相邻数字都不同
+455,tm10_rule3_lv1003,,#2与至少一个对角线相邻数字相同
+456,tm10_rule4_lv1006,,#3与上下或左右数字奇偶同时一致
+457,tm10_rule5_lv1008,,#4与环形相邻数字相比不是最大或最小
+458,tm11_goal_lv1101,,找到幸运的四叶草
+459,tm11_goal_lv1102,,找到幸运的四叶草
+460,tm11_goal_lv1103,,找到幸运的四叶草
+461,tm11_goal_lv1104,,找到幸运的四叶草
+462,tm11_goal_lv1105,,找到幸运的四叶草
+463,tm11_goal_lv1106,,找到幸运的四叶草
+464,tm11_goal_lv1107,,找到幸运的四叶草
+465,tm11_goal_lv1108,,找到幸运的四叶草
+466,tm11_goal_lv1109,,找到幸运的四叶草
+467,tm11_goal_lv1110,,找到幸运的四叶草
+468,tm11_goal_lv1111,,找到幸运的四叶草
+469,tm11_goal_lv1112,,找到幸运的四叶草
+470,tm11_rule1_lv1101,,细心观察，选出四叶草
+471,tm11_rule2_lv1112,,耐心也很重要
+472,tm12_goal_lv1201,,建立2个10+人口的大楼
+473,tm12_goal_lv1202,,建立1个15+人口的大楼
+474,tm12_goal_lv1203,,建立2个15+人口的大楼
+475,tm12_goal_lv1204,,建立3个15+人口的大楼
+476,tm12_goal_lv1205,,建立4个15+人口的大楼
+477,tm12_goal_lv1206,,建立1个30+人口的大楼
+478,tm12_goal_lv1207,,建立4个30+人口的大楼
+479,tm12_goal_lv1208,,建立2个30+人口的大楼
+480,tm12_goal_lv1209,,让总人口达到90+
+481,tm12_goal_lv1210,,建立4个30+人口的大楼
+482,tm12_goal_lv1211,,让总人口达到100+
+483,tm12_goal_lv1212,,让总人口达到150+
+484,tm12_goal_lv1213,,建立5个30+人口的大楼
+485,tm12_goal_lv1214,,建立1个100+人口的大楼
+486,tm12_rule1_lv1201,,摩天大楼：+2人口
+487,tm12_rule2_lv1202,,迁移：建成后人口多于相邻地区
+488,tm12_rule3_lv1202,, 则从相邻地区再迁移3人口
+489,tm12_rule4_lv1206,,爆发：若同时触发2+次人口迁移
+490,tm12_rule5_lv1206,, 则额外+5人口
+491,tm13_goal_case_solved,Case solved: ,已解决案件数：
+492,tm13_goal_lv1301,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+493,tm13_goal_lv1302,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+494,tm13_goal_lv1303,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+495,tm13_goal_lv1304,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+496,tm13_goal_lv1305,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+497,tm13_goal_lv1306,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+498,tm13_goal_lv1307,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+499,tm13_goal_lv1308,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+500,tm13_goal_lv1309,,指认全部凶手<br>凶手不止1人
+501,tm13_goal_lv1310,,指认全部凶手<br>凶手不止1人
+502,tm13_goal_lv1311,,连续成功2个案件
+503,tm13_goal_lv1312,,连续成功2个案件<br>凶手不止1人
+504,tm13_goal_lv1313,,无限次解决案件<br>凶手<b>可能</b>不止1人
+505,tm13_rule1_lv1301,,质询某一行的目击者<sprite name=meeple_blank>
+506,tm13_rule2_lv1301,, <sprite name=sign_complete> 匹配：凶手出现在正确的列
+507,tm13_rule2_lv1309,, <sprite name=sign_complete> 匹配：有凶手出现在正确的列
+508,tm13_rule3_lv1301,, <sprite name=sign_unknown> 可疑：凶手出现在错误的列
+509,tm13_rule3_lv1309,, <sprite name=sign_unknown> 可疑：有凶手出现但都在错误的列
+510,tm13_rule4_lv1301,, <sprite name=rule_sign_deletion> 排除：没有凶手出现
+512,tm13_suspect,Suspect,嫌疑人
+513,tm13_witness,Witness,目击者
+514,tm2_goal_lv201,,让所有格子为4
+515,tm2_goal_lv202,,让所有格子为4
+516,tm2_goal_lv203,,让所有格子数字相同
+517,tm2_goal_lv204,,让所有格子为8
+518,tm2_goal_lv205,,让所有格子为5
+519,tm2_goal_lv206,,让所有格子为5
+520,tm2_goal_lv207,,让所有格子数字相同
+521,tm2_goal_lv208,,让所有格子数字相同
+522,tm2_goal_lv209,,让所有格子数字不同
+523,tm2_goal_lv210,,让所有格子数字不同
+524,tm2_goal_lv211,,让所有格子数字相同
+525,tm2_rule1_lv201,,正面：+1
+526,tm2_rule1_lv204,,正面：+X
+527,tm2_rule2_lv202,,反面：-1
+528,tm2_rule2_lv205,,反面：-X
+529,tm2_rule3_lv204,,X为格子内硬币数
+530,tm2_rule4_lv203,,打出后硬币翻面
+531,tm2_rule4_lv210,,打出后投掷硬币
+532,tm4_goal_lv401,,让1个格子为1
+533,tm4_goal_lv402,,让2个格子为2
+534,tm4_goal_lv403,,让5个格子为5
+535,tm4_goal_lv404,,让所有格子为6
+536,tm4_goal_lv405,,让所有格子数字相同
+537,tm4_goal_lv406,,让所有格子为7
+538,tm4_goal_lv407,,让所有格子为7
+539,tm4_goal_lv408,,让所有格子为7
+540,tm4_goal_lv409,,让所有格子为7
+541,tm4_goal_lv410,,让每个格子都变成寿司或饭团
+542,tm4_goal_lv411,,刺身、米饭、寿司、饭团各一个时，数字总和为18
+543,tm4_goal_lv412,,每个格子是刺身或寿司的情况下，数字总和为36
+544,tm4_goal_lv413,,在每个格子都是米饭或饭团的情况下，让数字总和为36
+545,tm4_goal_lv414,,让所有格子都为不同值
+546,tm4_rule1_lv401,,鱼：+3
+547,tm4_rule2_lv404,,米：-3
+548,tm4_rule3_lv406,,米+鱼： 寿司（=7）
+549,tm4_rule4_lv410,,鱼+米： 饭团（=2）
+550,tm4_rule5_lv404,,鱼和米交替出现
+551,tm5_goal_lv501,,让所有格子为7
+552,tm5_goal_lv502,,让所有格子成为相同数字
+553,tm5_goal_lv503,,让所有格子成为相同数字
+554,tm5_goal_lv504,,让所有格子成为相同数字
+555,tm5_goal_lv505,,触发2次月食
+556,tm5_goal_lv506,,触发3次月食
+557,tm5_goal_lv507,,让数字总和下降至10以下
+558,tm5_goal_lv508,,让所有格子为偶数
+559,tm5_goal_lv509,,让数字总和下降至10以下
+560,tm5_goal_lv510,,让左侧一列格子为0
+561,tm5_goal_lv511,,让左侧一列格子为0，<br>右侧一列格子为2
+562,tm5_goal_lv512,,月食时，让所有格子回归初值
+563,tm5_goal_lv513,,让所有格子回归初值
+564,tm5_goal_lv514,,月食时，让所有格子回归初值
+565,tm5_rule1_lv501,,新月：+1
+566,tm5_rule2_lv501,,弦月：+3
+567,tm5_rule3_lv502,,满月：+5
+568,tm5_rule4_lv505,,9+满月：月食！
+569,tm5_rule5_lv503,,超过9：太阳升起，游戏失败
+570,tm6_goal_lv601,,点亮1盏灯泡
+571,tm6_goal_lv602,,点亮5盏灯泡
+572,tm6_goal_lv603,,点亮全部灯泡
+573,tm6_goal_lv604,,点亮全部灯泡
+574,tm6_goal_lv605,,点亮全部灯泡
+575,tm6_goal_lv606,,点亮全部灯泡
+576,tm6_goal_lv607,,点亮全部灯泡
+577,tm6_goal_lv608,,点亮6盏灯泡
+578,tm6_goal_lv609,,点亮6盏灯泡
+579,tm6_goal_lv610,,一次将3盏熄灭的灯泡点亮
+580,tm6_goal_lv611,,一次将4盏熄灭的灯泡点亮
+581,tm6_goal_lv612,,用掉所有灯泡，<br>保持点亮的灯数量在4-6之间
+582,tm6_goal_lv613,,点亮全部灯泡
+583,tm6_goal_lv614,,一次将8盏熄灭的灯泡点亮
+584,tm6_goal_lv615,,点亮全部灯泡
+585,tm6_rule1_lv601,,打出：+1
+586,tm6_rule1_lv605,,打出：十字区域+1
+587,tm6_rule2_lv601,,与两个或以上的相同数字相邻
+588,tm6_rule3_lv601,, 则点亮格子
+589,tm7_goal_lv701,,创造最美盆景
+590,tm7_goal_lv702,,创造最美盆景
+591,tm7_goal_lv703,,创造最美盆景
+592,tm7_goal_lv704,,创造最美盆景
+593,tm7_goal_lv705,,创造最美盆景
+594,tm7_goal_lv706,,创造最美盆景
+595,tm7_goal_lv707,,创造最美盆景
+596,tm7_goal_lv708,,创造最美盆景
+597,tm7_goal_lv709,,创造最美盆景
+598,tm7_goal_lv710,,创造最美盆景
+599,tm7_goal_lv711,,创造最美盆景
+600,tm7_goal_lv712,,创造最美盆景
+601,tm7_goal_lv713,,创造最美盆景
+602,tm7_goal_lv714,,创造最美盆景
+603,tm7_goal_lv715,,创造最美盆景
+604,tm7_goal_lv716,,创造最美盆景
+605,tm7_goal_lv717,,创造最美盆景
+606,tm7_goal_lv718,,创造最美盆景
+607,tm7_goal_lv719,,创造最美盆景
+608,tm7_goal_lv720,,创造最美盆景
+609,tm7_rule1_lv701,,打出：移除格子内的数字
+610,tm7_rule2_lv701,,通过尝试，发现美的规则
+611,tm7_rule2_lv719,,创造最美的盆景
+612,tm7_rule3_lv702,,和谐： █ █ █ 数字
+613,tm7_rule3_lv703,,和谐：移除 █ █ 数字
+614,tm7_rule3_lv704,,和谐：移除 █ 不同的数字
+615,tm7_rule3_lv705,,和谐：移除与众不同的数字
+616,tm7_rule4_lv703,,（相等、 █ ）
+617,tm7_rule4_lv705,,（相等、奇偶、 █ ）
+618,tm7_rule4_lv707,,（相等、奇偶、质数、 █ ）
+619,tm7_rule4_lv709,,（相等、奇偶、质数、成对、 █ ）
+620,tm7_rule4_lv711,,（相等、奇偶、质数、成对、不同）
+621,tm7_rule5_lv716,,平衡： █ █ 相等
+622,tm7_rule5_lv717,,平衡： █ 总和相等
+623,tm7_rule5_lv718,,平衡：各枝干总和相等
+624,tm8_goal_lv801,,让2个格子为9
+625,tm8_goal_lv802,,让所有格子为9
+626,tm8_goal_lv803,,让所有格子为9
+627,tm8_goal_lv804,,让4个格子为9
+628,tm8_goal_lv805,,让6个格子为9
+629,tm8_goal_lv806,,同时有6个王冠在场
+630,tm8_goal_lv807,,4个王冠同时在场
+631,tm8_goal_lv808,,6个王冠同时在场
+632,tm8_goal_lv809,,夺取5次王冠
+633,tm8_goal_lv810,,夺取9次王冠
+634,tm8_goal_lv811,,让所有格子为6及以上
+635,tm8_goal_lv812,,9个王冠同时在场
+636,tm8_rule1_lv801,,打出：+3
+637,tm8_rule1_lv803,,打出：+3，并加冕
+638,tm8_rule2_lv803,,加冕后比任意相邻领土小
+639,tm8_rule3_lv803,, 则加冕失败：=0
+640,tm8_rule4_lv807,,加冕后比相邻领土大
+641,tm8_rule5_lv807,, 则相邻领土王冠被夺取：-2
+642,tm9_goal_lv901,,让所有格子为10
+643,tm9_goal_lv902,,让1个格子为1000ml及以上
+644,tm9_goal_lv903,,让所有格子为900ml及以上
+645,tm9_goal_lv904,,让所有格子为910ml及以上
+646,tm9_goal_lv905,,让所有格子为920ml及以上
+647,tm9_goal_lv906,,让所有格子为930ml及以上
+648,tm9_goal_lv907,,让所有格子为940ml及以上
+649,tm9_goal_lv908,,各位的数字都不同
+650,tm9_goal_lv909,,各位数字中0~9同时出现
+651,tm9_goal_lv910,,用完全部试剂
+652,tm9_goal_lv911,,各位数字中只有奇数
+653,tm9_goal_lv912,,用完全部试剂
+654,tm9_rule1_lv901,,打出：+1
+655,tm9_rule1_lv902,,按住：倾倒（数字加速增加）
+656,tm9_rule1_lv903,,按住：倾倒（需保证安全）
+657,tm9_rule2_lv903,,爆炸：格子超过999
+658,tm9_rule3_lv904,,爆炸：数字均值大于7
+659,tm9_rule4_lv905,,爆炸：百位数字为7
+660,tm9_rule5_lv906,,爆炸：有3个以上相同数字
+661,tool_name_theme13_status0,Inquire <size=70%>or</size> Identify,质询 <size=70%>或</size> 指认
+662,tool_name_theme13_status1,Identify now!,质询机会耗尽<br>立刻指认！
+663,tool_name_theme2_status0,Front,正面
+664,tool_name_theme2_status1,Tail,反面
+665,tool_name_theme4_status1,Fish,鱼生
+666,tool_name_theme4_status2,Rice,白米
+667,tool_name_theme5_status1,Crescent,新月
+668,tool_name_theme5_status2,Quarter,弦月
+669,tool_name_theme5_status3,Full,满月
+670,tool_name_theme5_status4,Quarter,弦月
+671,tool_name_theme5_status5,Crescent,新月
+672,ui_close_btn,Close,关闭
+673,ui_designer_note_title,Designer's Notes,制作笔记
+674,ui_failure_title,Level Failed,挑战失败
+675,ui_finished_status,(Passed),（完成）
+676,ui_gem_desc,Gem is a rarely found point that remarks your mastering of Numbers of Everything.,宝石是一种更罕见的积分，它代表着您对《万物之数》的大师级掌握。
+677,ui_gem_name,<sprite name=currency_gem> Gems,<sprite name=currency_gem> 宝石
+678,ui_goal_current_avg,Current Average: ,当前数字均值：
+679,ui_goal_current_crown_present,,在场王冠：
+680,ui_goal_current_crown_taken,,已夺取王冠：
+681,ui_goal_current_repeat3,Repeating 3 times,出现3次的数字：
+682,ui_goal_current_sum,Current Sum: ,当前数字之和：
+683,ui_goal_missing_digits,Missing:,缺失数字：
+684,ui_goal_section_title,Goal,目标
+685,ui_hiddengem_notice_desc,Hidden Gem levels are more challenging and complicated. <br><br>By accomplishing these levels you will earn <sprite name=currency_gem> Gems instead of regular <sprite name=currency_star> Stars. Gem is a rarely found point that remarks your mastering of Numbers of Everything. <br><br>Gems mainly come from Hidden Gem levels but can also be found in other “hidden” ways. Continue playing and discover more mystery of this game.,隐藏宝石关比常规关卡更加困难或复杂。<br><br>完成这些关卡，将获得 <sprite name=currency_gem> 宝石而非 <sprite name=currency_star> 星星。宝石是一种更罕见的积分，它代表着您对《万物之数》的大师级掌握。<br><br>宝石主要来自隐藏宝石关卡，但也可以通过其他更加“隐藏”的方式获得。请继续游戏，发现的更多秘密所在吧！
+686,ui_hiddengem_notice_title,<sprite name=currency_gem> Hidden Gem Discovered!,<sprite name=currency_gem> 隐藏宝石关
+687,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the riddle:,根据谜语找到<b>物件</b>：
+688,ui_intro_line0,<size=70%>Dao begets One<br>道生一</size>,道生一<br><size=70%>Dao begets One</size>
+689,ui_intro_line1,<size=70%>One begets Two<br>一生二</size>,一生二<br><size=70%>One begets Two</size>
+690,ui_intro_line2,<size=70%>Two begets Three<br>二生三</size>,二生三<br><size=70%>Two begets Three</size>
+691,ui_intro_line3,<size=70%>Three begets Everything<br>三生万物</size>,三生万物<br><size=70%>Three begets Everything</size>
+692,ui_new_tag,NEW,新
+693,ui_perfect_status,(Perfect),（完美通关）
+694,ui_playtest_desc,"Thank you for participating the playtest of Numbers of everything. You are encouraged to try it multiple times within the designated time frame. If you encounter any difficulties, please feel free to contact me without hesitation.",感谢参与《万物之数》的游戏测试。欢迎你在指定时间内反复多次尝试它，如果遇到困难请随时联系我，不要客气。请在指定时间结束时，按S调出统计信息界面并截图发送给开发者。
+695,ui_playtest_title,Welcome!,欢迎测试
+696,ui_progress_block_desc,spend <sprite name=currency_star> {0} on photos ({1}/{0}),累计花费 <sprite name=currency_star> {0} 在照片上（{1}/{0}）
+697,ui_retry_btn,Restart,重试
+698,ui_rewind_btn,Rewind,回溯
+699,ui_ruleset_title,Rules,规则
+700,ui_setting_music,Music,音乐
+701,ui_setting_sound,Sound,音效
+702,ui_setting_title,Settings,设置
+703,ui_star_desc,"Star is earned by completing regular levels. It is used to unlock more photos, meaning more new levels.",星星通过完成常规关卡挑战获取，获得的星星可以用来解锁更多的照片，也就是更多关卡挑战。
+704,ui_star_name,<sprite name=currency_star> Stars,<sprite name=currency_star> 星星
+705,ui_themephoto_gemcollection,<sprite name=currency_gem> {0}/{1},<sprite name=currency_gem> {0}/{1}
+706,ui_themephoto_starcollection,<sprite name=currency_star> {0}/{1},<sprite name=currency_star> {0}/{1}
+707,ui_themephoto_unlockreq,<sprite name=currency_star_frame> {0}<br>to unlock,<sprite name=currency_star_frame> {0}<br>解锁
+708,ui_victory_title,Congrats!,恭喜通关
+709,unlocked_tm1,<b>Time</b> never stops.,<b>时间</b>永不停歇。
+710,unlocked_tm10,<b>Badge</b> leads to success.,<b>工牌</b>通向成功。
+711,unlocked_tm11,,幸运的<b>四叶草</b>。
+712,unlocked_tm12,,<b>大楼</b>吸引人群。
+713,unlocked_tm13,,<b>侦探</b>明察秋毫。
+714,unlocked_tm2,<b>Coin</b> determine fates.,<b>硬币</b>决定命运。
+715,unlocked_tm4,Simple and elegant <b>Sushi</b>.,<b>寿司</b>简约又精致。
+716,unlocked_tm5,Does <b>Moon</b> have a cycle?,<b>月亮</b>有无规律？
+717,unlocked_tm6,<b>Lightbulb</b> represents insights.,<b>灯泡</b>代表着灵感。
+718,unlocked_tm7,<b>Bonsai</b> crafted by human and natural.,人与自然共创<b>盆景</b>。
+719,unlocked_tm8,"<b>Crown</b>, the heavier, the better.",<b>王冠</b>越重越好。
+720,unlocked_tm9,Colorful <b>Flask</b>.,色彩斑斓的<b>烧瓶</b>。

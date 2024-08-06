@@ -29,18 +29,18 @@ MonoBehaviour:
   - '@Loc=narrative_tm7_ln004@@'
   - '@Loc=narrative_tm7_ln005@@'
   - '@Loc=narrative_tm7_ln006@@'
-  goal: '@Loc=goal_lv718@@'
+  goal: '@Loc=tm7_goal_lv718@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv701@@'
+    ruleDesc: '@Loc=tm7_rule1_lv701@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv701@@'
+    ruleDesc: '@Loc=tm7_rule2_lv701@@'
   - tag: 0
-    ruleDesc: '@Loc=rule3_lv705@@'
+    ruleDesc: '@Loc=tm7_rule3_lv705@@'
   - tag: 0
-    ruleDesc: '@Loc=rule4_lv711@@'
+    ruleDesc: '@Loc=tm7_rule4_lv711@@'
   - tag: 2
-    ruleDesc: '@Loc=rule5_lv718@@'
+    ruleDesc: '@Loc=tm7_rule5_lv718@@'
   isHard: 0
   allowRewind: 0
   initBoard:

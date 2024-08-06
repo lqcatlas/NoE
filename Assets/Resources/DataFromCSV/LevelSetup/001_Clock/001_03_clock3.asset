@@ -25,12 +25,12 @@ MonoBehaviour:
   oldNarratives:
   - '@Loc=narrative_tm1_ln001@@'
   - '@Loc=narrative_tm1_ln002@@'
-  goal: '@Loc=goal_lv103@@'
+  goal: '@Loc=tm1_goal_lv103@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv101@@'
+    ruleDesc: '@Loc=tm1_rule1_lv101@@'
   - tag: 1
-    ruleDesc: '@Loc=rule2_lv103@@'
+    ruleDesc: '@Loc=tm1_rule2_lv103@@'
   isHard: 0
   allowRewind: 1
   initBoard:

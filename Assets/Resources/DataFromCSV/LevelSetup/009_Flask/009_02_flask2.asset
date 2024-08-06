@@ -27,10 +27,10 @@ MonoBehaviour:
   oldNarratives:
   - '@Loc=narrative_tm9_ln001@@'
   - '@Loc=narrative_tm9_ln002@@'
-  goal: '@Loc=goal_lv902@@'
+  goal: '@Loc=tm9_goal_lv902@@'
   ruleset:
   - tag: 2
-    ruleDesc: '@Loc=rule1_lv902@@'
+    ruleDesc: '@Loc=tm9_rule1_lv902@@'
   isHard: 0
   allowRewind: 0
   initBoard:

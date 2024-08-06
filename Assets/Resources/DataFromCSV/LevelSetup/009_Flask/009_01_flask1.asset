@@ -24,10 +24,10 @@ MonoBehaviour:
   newPlayNarratives:
   - '@Loc=narrative_tm9_ln002@@'
   oldNarratives: []
-  goal: '@Loc=goal_lv901@@'
+  goal: '@Loc=tm9_goal_lv901@@'
   ruleset:
   - tag: 1
-    ruleDesc: '@Loc=rule1_lv901@@'
+    ruleDesc: '@Loc=tm9_rule1_lv901@@'
   isHard: 0
   allowRewind: 0
   initBoard:

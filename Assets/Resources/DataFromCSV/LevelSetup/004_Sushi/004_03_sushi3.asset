@@ -26,10 +26,10 @@ MonoBehaviour:
   - '@Loc=narrative_tm4_ln001@@'
   - '@Loc=narrative_tm4_ln002@@'
   - '@Loc=narrative_tm4_ln003@@'
-  goal: '@Loc=goal_lv403@@'
+  goal: '@Loc=tm4_goal_lv403@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv401@@'
+    ruleDesc: '@Loc=tm4_rule1_lv401@@'
   isHard: 0
   allowRewind: 1
   initBoard:

@@ -35,12 +35,12 @@ MonoBehaviour:
   - '@Loc=narrative_tm1_ln010@@'
   - '@Loc=narrative_tm1_ln011@@'
   - '@Loc=narrative_tm1_ln012@@'
-  goal: '@Loc=goal_lv110@@'
+  goal: '@Loc=tm1_goal_lv110@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv101@@'
+    ruleDesc: '@Loc=tm1_rule1_lv101@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv103@@'
+    ruleDesc: '@Loc=tm1_rule2_lv103@@'
   isHard: 1
   allowRewind: 1
   initBoard:

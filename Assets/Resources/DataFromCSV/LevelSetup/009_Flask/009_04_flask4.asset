@@ -31,14 +31,14 @@ MonoBehaviour:
   - '@Loc=narrative_tm9_ln006@@'
   - '@Loc=narrative_tm9_ln007@@'
   - '@Loc=narrative_tm9_ln008@@'
-  goal: '@Loc=goal_lv904@@'
+  goal: '@Loc=tm9_goal_lv904@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv903@@'
+    ruleDesc: '@Loc=tm9_rule1_lv903@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv903@@'
+    ruleDesc: '@Loc=tm9_rule2_lv903@@'
   - tag: 1
-    ruleDesc: '@Loc=rule3_lv904@@'
+    ruleDesc: '@Loc=tm9_rule3_lv904@@'
   isHard: 0
   allowRewind: 0
   initBoard:

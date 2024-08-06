@@ -23,16 +23,16 @@ MonoBehaviour:
   newInitNarrative: '@Loc=narrative_tm13_ln001@@'
   newPlayNarratives: []
   oldNarratives: []
-  goal: '@Loc=goal_lv1301@@'
+  goal: '@Loc=tm13_goal_lv1301@@'
   ruleset:
   - tag: 1
-    ruleDesc: '@Loc=rule1_lv1301@@'
+    ruleDesc: '@Loc=tm13_rule1_lv1301@@'
   - tag: 1
-    ruleDesc: '@Loc=rule2_lv1301@@'
+    ruleDesc: '@Loc=tm13_rule2_lv1301@@'
   - tag: 1
-    ruleDesc: '@Loc=rule3_lv1301@@'
+    ruleDesc: '@Loc=tm13_rule3_lv1301@@'
   - tag: 1
-    ruleDesc: '@Loc=rule4_lv1301@@'
+    ruleDesc: '@Loc=tm13_rule4_lv1301@@'
   isHard: 0
   allowRewind: 0
   initBoard:

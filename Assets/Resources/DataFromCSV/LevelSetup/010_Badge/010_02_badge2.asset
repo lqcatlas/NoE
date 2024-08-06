@@ -24,12 +24,12 @@ MonoBehaviour:
   newPlayNarratives: []
   oldNarratives:
   - '@Loc=narrative_tm10_ln001@@'
-  goal: '@Loc=goal_lv1002@@'
+  goal: '@Loc=tm10_goal_lv1002@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv1001@@'
+    ruleDesc: '@Loc=tm10_rule1_lv1001@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv1001@@'
+    ruleDesc: '@Loc=tm10_rule2_lv1001@@'
   isHard: 0
   allowRewind: 1
   initBoard:

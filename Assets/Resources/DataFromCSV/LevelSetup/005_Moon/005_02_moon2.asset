@@ -25,14 +25,14 @@ MonoBehaviour:
   - '@Loc=narrative_tm5_ln003@@'
   oldNarratives:
   - '@Loc=narrative_tm5_ln001@@'
-  goal: '@Loc=goal_lv502@@'
+  goal: '@Loc=tm5_goal_lv502@@'
   ruleset:
   - tag: 0
-    ruleDesc: '@Loc=rule1_lv501@@'
+    ruleDesc: '@Loc=tm5_rule1_lv501@@'
   - tag: 0
-    ruleDesc: '@Loc=rule2_lv501@@'
+    ruleDesc: '@Loc=tm5_rule2_lv501@@'
   - tag: 1
-    ruleDesc: '@Loc=rule3_lv502@@'
+    ruleDesc: '@Loc=tm5_rule3_lv502@@'
   isHard: 0
   allowRewind: 1
   initBoard:
