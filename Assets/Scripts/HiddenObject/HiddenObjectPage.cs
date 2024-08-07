@@ -27,6 +27,7 @@ public class HiddenObjectPage : MonoBehaviour
 
     public TextMeshPro riddleTitle;
     public TextMeshPro riddleDesc;
+    public GameObject riddleBg;
     public GameObject themeIcon;
     public TextMeshPro themeName;
     public GameObject hintRing;
@@ -99,6 +100,10 @@ public class HiddenObjectPage : MonoBehaviour
             objectGroup.transform.DOScale(1.2f, dConstants.UI.StandardizedBtnAnimDuration).SetDelay(TRANSIT_ANIM_DURATION + FOUND_ANIM_DURATION / 2f);
             themeIcon.GetComponent<SpriteRenderer>().DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).SetDelay(TRANSIT_ANIM_DURATION + FOUND_ANIM_DURATION / 2f).OnComplete(() => StartLevelDelayed());
             themeName.DOFade(0f, dConstants.UI.StandardizedBtnAnimDuration).SetDelay(TRANSIT_ANIM_DURATION + FOUND_ANIM_DURATION / 2f).OnComplete(() => StartLevelDelayed());
+            //riddle group fade out fast
+            riddleTitle.DOFade(0f, FOUND_ANIM_DURATION / 2f);
+            riddleDesc.DOFade(0f, FOUND_ANIM_DURATION / 2f);
+            riddleBg.GetComponent<SpriteRenderer>().DOFade(0f, FOUND_ANIM_DURATION / 2f);
         }
     }
     void StartLevelDelayed()

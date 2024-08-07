@@ -1455,7 +1455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3176208161993467148, guid: 2a5dfea0fb87e73498b6582c1303ed50, type: 3}
       propertyPath: m_text
-      value: "\u97F3\u6548"
+      value: Effects
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176208161993467148, guid: 2a5dfea0fb87e73498b6582c1303ed50, type: 3}
+      propertyPath: m_fontSize
+      value: 16.95
       objectReference: {fileID: 0}
     - target: {fileID: 5275932219730339161, guid: 2a5dfea0fb87e73498b6582c1303ed50, type: 3}
       propertyPath: m_Name
@@ -1577,6 +1581,14 @@ PrefabInstance:
     - target: {fileID: 2325111191946563510, guid: 2a5dfea0fb87e73498b6582c1303ed50, type: 3}
       propertyPath: mouseUpFuncs.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176208161993467148, guid: 2a5dfea0fb87e73498b6582c1303ed50, type: 3}
+      propertyPath: m_text
+      value: Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 3176208161993467148, guid: 2a5dfea0fb87e73498b6582c1303ed50, type: 3}
+      propertyPath: m_fontSize
+      value: 19.35
       objectReference: {fileID: 0}
     - target: {fileID: 5275932219730339161, guid: 2a5dfea0fb87e73498b6582c1303ed50, type: 3}
       propertyPath: m_Name

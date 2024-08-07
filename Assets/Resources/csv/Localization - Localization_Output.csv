@@ -21,9 +21,9 @@ UID,Key,EN,CN
 20,answer_tm7_lv720,,
 21,date_tm1,2022/12/04,2022/12/04
 22,date_tm10,2024/04/14,2024/04/14
-23,date_tm11,,2024/07/09
-24,date_tm12,,2024/07/13
-25,date_tm13,,2024/07/23
+23,date_tm11,2024/07/09,2024/07/09
+24,date_tm12,2024/07/13,2024/07/13
+25,date_tm13,2024/07/23,2024/07/23
 26,date_tm2,2023/01/15,2023/01/15
 27,date_tm4,2023/06/25,2023/06/25
 28,date_tm5,2023/08/13,2023/08/13
@@ -31,7 +31,7 @@ UID,Key,EN,CN
 30,date_tm7,2024/02/15,2024/02/15
 31,date_tm8,2024/03/09,2024/03/09
 32,date_tm9,2024/03/24,2024/03/24
-33,hint_tm1,It ticks on and never ceases.,它滴答滴答，永不停歇地前进。
+33,hint_tm1,"Friday night, finally back to the bedroom. Warm lights, cozy bed. Slipping under the covers, turning on the music. Light up the screen, vibrant worlds spill out. The world pauses in this moment. Only <b>[object]</b> moves tirelessly, tick-tock, tick-tock.",周五晚上，终于回到了卧室。温馨的灯光，温暖的床铺。钻进被窝，打开音响，一切都停滞在此刻。只有<b>[物件]</b>不知疲倦的前进着，滴答、滴答。打开手机，缤纷的世界溢出屏幕。
 34,hint_tm10,It unlocks the gates to success.,它用来开门，通向成功的大门。
 35,hint_tm11,,它是特别的幸运。
 36,hint_tm12,,它矗立的在城市的中心。
@@ -45,19 +45,19 @@ UID,Key,EN,CN
 44,hint_tm9,It contains dangerous substances.,它装着危险的物质。
 45,intro_line_1,"Friday night. Get back home, <b>things</b> emerges from darkness.",周五晚上，打开房门，回到漆黑的家中，黑暗之中<b>万物</b>浮现。
 46,intro_line_2,"On the way to work, passing through a river, <b>things</b> emerges from the voice of the winds",走在上班的路上，路过一条小河，树叶的婆娑声中夹杂着<b>万物</b>。
-47,levelname_lv1001,,001
-48,levelname_lv1002,,002
-49,levelname_lv1003,,003
-50,levelname_lv1004,,004
-51,levelname_lv1005,,005
-52,levelname_lv1006,,006
-53,levelname_lv1007,,007
-54,levelname_lv1008,,008
-55,levelname_lv1009,,009
+47,levelname_lv1001,001,001
+48,levelname_lv1002,002,002
+49,levelname_lv1003,003,003
+50,levelname_lv1004,004,004
+51,levelname_lv1005,005,005
+52,levelname_lv1006,006,006
+53,levelname_lv1007,007,007
+54,levelname_lv1008,008,008
+55,levelname_lv1009,009,009
 56,levelname_lv101,001,001
-57,levelname_lv1010,,010
-58,levelname_lv1011,,011
-59,levelname_lv1012,,012
+57,levelname_lv1010,010,010
+58,levelname_lv1011,011,011
+59,levelname_lv1012,012,012
 60,levelname_lv102,002,002
 61,levelname_lv103,003,003
 62,levelname_lv104,004,004
@@ -67,45 +67,45 @@ UID,Key,EN,CN
 66,levelname_lv108,008,008
 67,levelname_lv109,009,009
 68,levelname_lv110,010,010
-69,levelname_lv1101,,001
-70,levelname_lv1102,,002
-71,levelname_lv1103,,003
-72,levelname_lv1104,,004
-73,levelname_lv1105,,005
-74,levelname_lv1106,,006
-75,levelname_lv1107,,007
-76,levelname_lv1108,,008
-77,levelname_lv1109,,009
-78,levelname_lv1110,,010
-79,levelname_lv1111,,011
-80,levelname_lv1112,,012
-81,levelname_lv1201,,001
-82,levelname_lv1202,,002
-83,levelname_lv1203,,003
-84,levelname_lv1204,,004
-85,levelname_lv1205,,005
-86,levelname_lv1206,,006
-87,levelname_lv1207,,007
-88,levelname_lv1208,,008
-89,levelname_lv1209,,009
-90,levelname_lv1210,,010
-91,levelname_lv1211,,011
-92,levelname_lv1212,,012
-93,levelname_lv1213,,013
-94,levelname_lv1214,,014
-95,levelname_lv1301,,001
-96,levelname_lv1302,,002
-97,levelname_lv1303,,003
-98,levelname_lv1304,,004
-99,levelname_lv1305,,005
-100,levelname_lv1306,,006
-101,levelname_lv1307,,007
-102,levelname_lv1308,,008
-103,levelname_lv1309,,009
-104,levelname_lv1310,,010
-105,levelname_lv1311,,011
-106,levelname_lv1312,,012
-107,levelname_lv1313,,013
+69,levelname_lv1101,001,001
+70,levelname_lv1102,002,002
+71,levelname_lv1103,003,003
+72,levelname_lv1104,004,004
+73,levelname_lv1105,005,005
+74,levelname_lv1106,006,006
+75,levelname_lv1107,007,007
+76,levelname_lv1108,008,008
+77,levelname_lv1109,009,009
+78,levelname_lv1110,010,010
+79,levelname_lv1111,011,011
+80,levelname_lv1112,012,012
+81,levelname_lv1201,001,001
+82,levelname_lv1202,002,002
+83,levelname_lv1203,003,003
+84,levelname_lv1204,004,004
+85,levelname_lv1205,005,005
+86,levelname_lv1206,006,006
+87,levelname_lv1207,007,007
+88,levelname_lv1208,008,008
+89,levelname_lv1209,009,009
+90,levelname_lv1210,010,010
+91,levelname_lv1211,011,011
+92,levelname_lv1212,012,012
+93,levelname_lv1213,013,013
+94,levelname_lv1214,014,014
+95,levelname_lv1301,001,001
+96,levelname_lv1302,002,002
+97,levelname_lv1303,003,003
+98,levelname_lv1304,004,004
+99,levelname_lv1305,005,005
+100,levelname_lv1306,006,006
+101,levelname_lv1307,007,007
+102,levelname_lv1308,008,008
+103,levelname_lv1309,009,009
+104,levelname_lv1310,010,010
+105,levelname_lv1311,011,011
+106,levelname_lv1312,012,012
+107,levelname_lv1313,013,013
 108,levelname_lv201,001,001
 109,levelname_lv202,002,002
 110,levelname_lv203,003,003
@@ -160,50 +160,50 @@ UID,Key,EN,CN
 159,levelname_lv613,013,013
 160,levelname_lv614,014,014
 161,levelname_lv615,015,015
-162,levelname_lv701,,001
-163,levelname_lv702,,002
-164,levelname_lv703,,003
-165,levelname_lv704,,004
-166,levelname_lv705,,005
-167,levelname_lv706,,006
-168,levelname_lv707,,007
-169,levelname_lv708,,008
-170,levelname_lv709,,009
-171,levelname_lv710,,010
-172,levelname_lv711,,011
-173,levelname_lv712,,012
-174,levelname_lv713,,013
-175,levelname_lv714,,014
-176,levelname_lv715,,015
-177,levelname_lv716,,016
-178,levelname_lv717,,017
-179,levelname_lv718,,018
-180,levelname_lv719,,019
-181,levelname_lv720,,020
-182,levelname_lv801,,001
-183,levelname_lv802,,002
-184,levelname_lv803,,003
-185,levelname_lv804,,004
-186,levelname_lv805,,005
-187,levelname_lv806,,006
-188,levelname_lv807,,007
-189,levelname_lv808,,008
-190,levelname_lv809,,009
-191,levelname_lv810,,010
-192,levelname_lv811,,011
-193,levelname_lv812,,012
-194,levelname_lv901,,001
-195,levelname_lv902,,002
-196,levelname_lv903,,003
-197,levelname_lv904,,004
-198,levelname_lv905,,005
-199,levelname_lv906,,006
-200,levelname_lv907,,007
-201,levelname_lv908,,008
-202,levelname_lv909,,009
-203,levelname_lv910,,010
-204,levelname_lv911,,011
-205,levelname_lv912,,012
+162,levelname_lv701,001,001
+163,levelname_lv702,002,002
+164,levelname_lv703,003,003
+165,levelname_lv704,004,004
+166,levelname_lv705,005,005
+167,levelname_lv706,006,006
+168,levelname_lv707,007,007
+169,levelname_lv708,008,008
+170,levelname_lv709,009,009
+171,levelname_lv710,010,010
+172,levelname_lv711,011,011
+173,levelname_lv712,012,012
+174,levelname_lv713,013,013
+175,levelname_lv714,014,014
+176,levelname_lv715,015,015
+177,levelname_lv716,016,016
+178,levelname_lv717,017,017
+179,levelname_lv718,018,018
+180,levelname_lv719,019,019
+181,levelname_lv720,020,020
+182,levelname_lv801,001,001
+183,levelname_lv802,002,002
+184,levelname_lv803,003,003
+185,levelname_lv804,004,004
+186,levelname_lv805,005,005
+187,levelname_lv806,006,006
+188,levelname_lv807,007,007
+189,levelname_lv808,008,008
+190,levelname_lv809,009,009
+191,levelname_lv810,010,010
+192,levelname_lv811,011,011
+193,levelname_lv812,012,012
+194,levelname_lv901,001,001
+195,levelname_lv902,002,002
+196,levelname_lv903,003,003
+197,levelname_lv904,004,004
+198,levelname_lv905,005,005
+199,levelname_lv906,006,006
+200,levelname_lv907,007,007
+201,levelname_lv908,008,008
+202,levelname_lv909,009,009
+203,levelname_lv910,010,010
+204,levelname_lv911,011,011
+205,levelname_lv912,012,012
 206,locked_tm1,█ █ never stops.,█ █ 永不停歇。
 207,locked_tm10,█ █ leads to success.,█ █ 通向成功。
 208,locked_tm11,,幸运的 █ █ 。
@@ -216,7 +216,7 @@ UID,Key,EN,CN
 215,locked_tm7,█ █ crafted by human and natural.,人与自然共创 █ █ 。
 216,locked_tm8,"█ █ , the heavier, the better.",█ █ 越重越好。
 217,locked_tm9,Colorful █ █ .,色彩斑斓的 █ █ 。
-218,manifesto_tm1,"The clock is the first theme, its production and design predate even before the project set its title, Numbers of Everything. From a certain perspective, it is the very starting point of the entire idea.<br><br>Staying up late doing nothing is a superficial appreciation of time, yet it is a frantic waste of time. The clock theme aims to express the individual's powerlessness in the face of the passage of time through this scenario.",时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。换句话说，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
+218,manifesto_tm1,"The clock is the first theme, its design predate even before the project set its title, Numbers of Everything. From a certain perspective, it is the very starting point of the entire project.<br><br>Staying up late for social media is a superficial appreciation of time, yet it is a frantic waste of time. The Clock aims to express the individual's powerlessness in the face of the passage of time through this scenario.",时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。换句话说，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
 219,manifesto_tm10,,这个主题诞生于我对全职工作产生严重倦怠的时期。尽管身处大公司，享有高薪、良好的福利和社会的认可，并拥有光明的前途，但在情绪的笼罩下，这一切都变得毫无意义。不断变难、变大、变得荒诞的谜题，旨在让最初简单的谜题逐渐显得枯燥无趣。<br><br>希望大家对工作的感受比“数字工程师”这样的职位更加有趣。如果你不幸对此感同身受，或许是时候考虑“说再见”了。
 220,manifesto_tm11,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
 221,manifesto_tm12,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
@@ -232,9 +232,9 @@ UID,Key,EN,CN
 231,narrative_tm1_ln002,"Tick, tock, tick, tock,",滴答滴答滴答，
 232,narrative_tm1_ln003,The clock tirelessly marches on.,时钟不知疲倦地前进。
 233,narrative_tm1_ln004,"Twitch, tiktok, live streams,",微博、连载、直播，
-234,narrative_tm1_ln005,"never stop moving,",开启新的节律，
-235,narrative_tm1_ln006,time silently slipping through your fingertips.,时间在你的指尖默默滑动。
-236,narrative_tm1_ln007,"Night's travelers,",夜的旅者，
+234,narrative_tm1_ln005,"never stop sliding,",开启新的节律，
+235,narrative_tm1_ln006,time slipping through your fingertips.,时间在你的指尖默默滑动。
+236,narrative_tm1_ln007,"Night travelers,",夜的旅者，
 237,narrative_tm1_ln008,trekking through darkness.,在黑暗中跋涉。
 238,narrative_tm1_ln009,"Dragging weary bodies,",拖着疲惫的身躯，
 239,narrative_tm1_ln010,finally arriving at dawn.,最终抵达晨曦。
@@ -427,18 +427,18 @@ UID,Key,EN,CN
 426,themename_tm7,Bonsai,盆景
 427,themename_tm8,Crown,王冠
 428,themename_tm9,Flask,烧瓶
-429,tm1_goal_lv101,,让所有格子为8
-430,tm1_goal_lv102,,让所有格子为10
-431,tm1_goal_lv103,,让所有格子为12
-432,tm1_goal_lv104,,让所有格子为不同数字
-433,tm1_goal_lv105,,让所有格子为2
-434,tm1_goal_lv106,,让所有格子为3
-435,tm1_goal_lv107,,让所有格子为4
-436,tm1_goal_lv108,,让所有格子为不同数字
-437,tm1_goal_lv109,,让所有格子为5
-438,tm1_goal_lv110,,让所有格子为6
-439,tm1_rule1_lv101,,打出：+1
-440,tm1_rule2_lv103,,已有时钟的格子+1
+429,tm1_goal_lv101,Set all cells to 8,让所有格子为8
+430,tm1_goal_lv102,Set all cells to 10,让所有格子为10
+431,tm1_goal_lv103,Set all cells to 12,让所有格子为12
+432,tm1_goal_lv104,Set all cells to UNIQUE numbers,让所有格子为不同数字
+433,tm1_goal_lv105,Set all cells to 2,让所有格子为2
+434,tm1_goal_lv106,Set all cells to 3,让所有格子为3
+435,tm1_goal_lv107,Set all cells to 4,让所有格子为4
+436,tm1_goal_lv108,Set all cells to UNIQUE numbers,让所有格子为不同数字
+437,tm1_goal_lv109,Set all cells to 5,让所有格子为5
+438,tm1_goal_lv110,Set all cells to 6,让所有格子为6
+439,tm1_rule1_lv101,Play Clock to a cell: +1,打出时钟的格子：+1
+440,tm1_rule2_lv103,"After playing, all cells with a clock +1",之后已有时钟的格子+1
 441,tm10_goal_lv1001,,标记满足要求的数字
 442,tm10_goal_lv1002,,标记满足要求的数字
 443,tm10_goal_lv1003,,标记同时满足全部要求的数字
@@ -684,7 +684,7 @@ UID,Key,EN,CN
 684,ui_goal_section_title,Goal,目标
 685,ui_hiddengem_notice_desc,Hidden Gem levels are more challenging and complicated. <br><br>By accomplishing these levels you will earn <sprite name=currency_gem> Gems instead of regular <sprite name=currency_star> Stars. Gem is a rarely found point that remarks your mastering of Numbers of Everything. <br><br>Gems mainly come from Hidden Gem levels but can also be found in other “hidden” ways. Continue playing and discover more mystery of this game.,隐藏宝石关比常规关卡更加困难或复杂。<br><br>完成这些关卡，将获得 <sprite name=currency_gem> 宝石而非 <sprite name=currency_star> 星星。宝石是一种更罕见的积分，它代表着您对《万物之数》的大师级掌握。<br><br>宝石主要来自隐藏宝石关卡，但也可以通过其他更加“隐藏”的方式获得。请继续游戏，发现的更多秘密所在吧！
 686,ui_hiddengem_notice_title,<sprite name=currency_gem> Hidden Gem Discovered!,<sprite name=currency_gem> 隐藏宝石关
-687,ui_hiddenobject_riddletitle,Find the <b>object</b> according to the riddle:,根据谜语找到<b>物件</b>：
+687,ui_hiddenobject_riddletitle,Find the <b>[object]</b> in the scene according to the riddle:,根据谜语在场景内找到<b>[物件]</b>：
 688,ui_intro_line0,<size=70%>Dao begets One<br>道生一</size>,道生一<br><size=70%>Dao begets One</size>
 689,ui_intro_line1,<size=70%>One begets Two<br>一生二</size>,一生二<br><size=70%>One begets Two</size>
 690,ui_intro_line2,<size=70%>Two begets Three<br>二生三</size>,二生三<br><size=70%>Two begets Three</size>

@@ -80,13 +80,13 @@ MonoBehaviour:
     EN: 2024/04/14
     CN: 2024/04/14
   - key: date_tm11
-    EN: 
+    EN: 2024/07/09
     CN: 2024/07/09
   - key: date_tm12
-    EN: 
+    EN: 2024/07/13
     CN: 2024/07/13
   - key: date_tm13
-    EN: 
+    EN: 2024/07/23
     CN: 2024/07/23
   - key: date_tm2
     EN: 2023/01/15
@@ -110,8 +110,11 @@ MonoBehaviour:
     EN: 2024/03/24
     CN: 2024/03/24
   - key: hint_tm1
-    EN: It ticks on and never ceases.
-    CN: "\u5B83\u6EF4\u7B54\u6EF4\u7B54\uFF0C\u6C38\u4E0D\u505C\u6B47\u5730\u524D\u8FDB\u3002"
+    EN: Friday night, finally back to the bedroom. Warm lights, cozy bed. Slipping
+      under the covers, turning on the music. Light up the screen, vibrant worlds
+      spill out. The world pauses in this moment. Only <b>[object]</b> moves tirelessly,
+      tick-tock, tick-tock.
+    CN: "\u5468\u4E94\u665A\u4E0A\uFF0C\u7EC8\u4E8E\u56DE\u5230\u4E86\u5367\u5BA4\u3002\u6E29\u99A8\u7684\u706F\u5149\uFF0C\u6E29\u6696\u7684\u5E8A\u94FA\u3002\u94BB\u8FDB\u88AB\u7A9D\uFF0C\u6253\u5F00\u97F3\u54CD\uFF0C\u4E00\u5207\u90FD\u505C\u6EDE\u5728\u6B64\u523B\u3002\u53EA\u6709<b>[\u7269\u4EF6]</b>\u4E0D\u77E5\u75B2\u5026\u7684\u524D\u8FDB\u7740\uFF0C\u6EF4\u7B54\u3001\u6EF4\u7B54\u3002\u6253\u5F00\u624B\u673A\uFF0C\u7F24\u7EB7\u7684\u4E16\u754C\u6EA2\u51FA\u5C4F\u5E55\u3002"
   - key: hint_tm10
     EN: It unlocks the gates to success.
     CN: "\u5B83\u7528\u6765\u5F00\u95E8\uFF0C\u901A\u5411\u6210\u529F\u7684\u5927\u95E8\u3002"
@@ -153,43 +156,43 @@ MonoBehaviour:
       voice of the winds
     CN: "\u8D70\u5728\u4E0A\u73ED\u7684\u8DEF\u4E0A\uFF0C\u8DEF\u8FC7\u4E00\u6761\u5C0F\u6CB3\uFF0C\u6811\u53F6\u7684\u5A46\u5A11\u58F0\u4E2D\u5939\u6742\u7740<b>\u4E07\u7269</b>\u3002"
   - key: levelname_lv1001
-    EN: 
+    EN: 1
     CN: 1
   - key: levelname_lv1002
-    EN: 
+    EN: 2
     CN: 2
   - key: levelname_lv1003
-    EN: 
+    EN: 3
     CN: 3
   - key: levelname_lv1004
-    EN: 
+    EN: 4
     CN: 4
   - key: levelname_lv1005
-    EN: 
+    EN: 5
     CN: 5
   - key: levelname_lv1006
-    EN: 
+    EN: 6
     CN: 6
   - key: levelname_lv1007
-    EN: 
+    EN: 7
     CN: 7
   - key: levelname_lv1008
-    EN: 
+    EN: 8
     CN: 8
   - key: levelname_lv1009
-    EN: 
+    EN: 9
     CN: 9
   - key: levelname_lv101
     EN: 1
     CN: 1
   - key: levelname_lv1010
-    EN: 
+    EN: 10
     CN: 10
   - key: levelname_lv1011
-    EN: 
+    EN: 11
     CN: 11
   - key: levelname_lv1012
-    EN: 
+    EN: 12
     CN: 12
   - key: levelname_lv102
     EN: 2
@@ -219,121 +222,121 @@ MonoBehaviour:
     EN: 10
     CN: 10
   - key: levelname_lv1101
-    EN: 
+    EN: 1
     CN: 1
   - key: levelname_lv1102
-    EN: 
+    EN: 2
     CN: 2
   - key: levelname_lv1103
-    EN: 
+    EN: 3
     CN: 3
   - key: levelname_lv1104
-    EN: 
+    EN: 4
     CN: 4
   - key: levelname_lv1105
-    EN: 
+    EN: 5
     CN: 5
   - key: levelname_lv1106
-    EN: 
+    EN: 6
     CN: 6
   - key: levelname_lv1107
-    EN: 
+    EN: 7
     CN: 7
   - key: levelname_lv1108
-    EN: 
+    EN: 8
     CN: 8
   - key: levelname_lv1109
-    EN: 
+    EN: 9
     CN: 9
   - key: levelname_lv1110
-    EN: 
+    EN: 10
     CN: 10
   - key: levelname_lv1111
-    EN: 
+    EN: 11
     CN: 11
   - key: levelname_lv1112
-    EN: 
+    EN: 12
     CN: 12
   - key: levelname_lv1201
-    EN: 
+    EN: 1
     CN: 1
   - key: levelname_lv1202
-    EN: 
+    EN: 2
     CN: 2
   - key: levelname_lv1203
-    EN: 
+    EN: 3
     CN: 3
   - key: levelname_lv1204
-    EN: 
+    EN: 4
     CN: 4
   - key: levelname_lv1205
-    EN: 
+    EN: 5
     CN: 5
   - key: levelname_lv1206
-    EN: 
+    EN: 6
     CN: 6
   - key: levelname_lv1207
-    EN: 
+    EN: 7
     CN: 7
   - key: levelname_lv1208
-    EN: 
+    EN: 8
     CN: 8
   - key: levelname_lv1209
-    EN: 
+    EN: 9
     CN: 9
   - key: levelname_lv1210
-    EN: 
+    EN: 10
     CN: 10
   - key: levelname_lv1211
-    EN: 
+    EN: 11
     CN: 11
   - key: levelname_lv1212
-    EN: 
+    EN: 12
     CN: 12
   - key: levelname_lv1213
-    EN: 
+    EN: 13
     CN: 13
   - key: levelname_lv1214
-    EN: 
+    EN: 14
     CN: 14
   - key: levelname_lv1301
-    EN: 
+    EN: 1
     CN: 1
   - key: levelname_lv1302
-    EN: 
+    EN: 2
     CN: 2
   - key: levelname_lv1303
-    EN: 
+    EN: 3
     CN: 3
   - key: levelname_lv1304
-    EN: 
+    EN: 4
     CN: 4
   - key: levelname_lv1305
-    EN: 
+    EN: 5
     CN: 5
   - key: levelname_lv1306
-    EN: 
+    EN: 6
     CN: 6
   - key: levelname_lv1307
-    EN: 
+    EN: 7
     CN: 7
   - key: levelname_lv1308
-    EN: 
+    EN: 8
     CN: 8
   - key: levelname_lv1309
-    EN: 
+    EN: 9
     CN: 9
   - key: levelname_lv1310
-    EN: 
+    EN: 10
     CN: 10
   - key: levelname_lv1311
-    EN: 
+    EN: 11
     CN: 11
   - key: levelname_lv1312
-    EN: 
+    EN: 12
     CN: 12
   - key: levelname_lv1313
-    EN: 
+    EN: 13
     CN: 13
   - key: levelname_lv201
     EN: 1
@@ -498,136 +501,136 @@ MonoBehaviour:
     EN: 15
     CN: 15
   - key: levelname_lv701
-    EN: 
+    EN: 1
     CN: 1
   - key: levelname_lv702
-    EN: 
+    EN: 2
     CN: 2
   - key: levelname_lv703
-    EN: 
+    EN: 3
     CN: 3
   - key: levelname_lv704
-    EN: 
+    EN: 4
     CN: 4
   - key: levelname_lv705
-    EN: 
+    EN: 5
     CN: 5
   - key: levelname_lv706
-    EN: 
+    EN: 6
     CN: 6
   - key: levelname_lv707
-    EN: 
+    EN: 7
     CN: 7
   - key: levelname_lv708
-    EN: 
+    EN: 8
     CN: 8
   - key: levelname_lv709
-    EN: 
+    EN: 9
     CN: 9
   - key: levelname_lv710
-    EN: 
+    EN: 10
     CN: 10
   - key: levelname_lv711
-    EN: 
+    EN: 11
     CN: 11
   - key: levelname_lv712
-    EN: 
+    EN: 12
     CN: 12
   - key: levelname_lv713
-    EN: 
+    EN: 13
     CN: 13
   - key: levelname_lv714
-    EN: 
+    EN: 14
     CN: 14
   - key: levelname_lv715
-    EN: 
+    EN: 15
     CN: 15
   - key: levelname_lv716
-    EN: 
+    EN: 16
     CN: 16
   - key: levelname_lv717
-    EN: 
+    EN: 17
     CN: 17
   - key: levelname_lv718
-    EN: 
+    EN: 18
     CN: 18
   - key: levelname_lv719
-    EN: 
+    EN: 19
     CN: 19
   - key: levelname_lv720
-    EN: 
+    EN: 20
     CN: 20
   - key: levelname_lv801
-    EN: 
+    EN: 1
     CN: 1
   - key: levelname_lv802
-    EN: 
+    EN: 2
     CN: 2
   - key: levelname_lv803
-    EN: 
+    EN: 3
     CN: 3
   - key: levelname_lv804
-    EN: 
+    EN: 4
     CN: 4
   - key: levelname_lv805
-    EN: 
+    EN: 5
     CN: 5
   - key: levelname_lv806
-    EN: 
+    EN: 6
     CN: 6
   - key: levelname_lv807
-    EN: 
+    EN: 7
     CN: 7
   - key: levelname_lv808
-    EN: 
+    EN: 8
     CN: 8
   - key: levelname_lv809
-    EN: 
+    EN: 9
     CN: 9
   - key: levelname_lv810
-    EN: 
+    EN: 10
     CN: 10
   - key: levelname_lv811
-    EN: 
+    EN: 11
     CN: 11
   - key: levelname_lv812
-    EN: 
+    EN: 12
     CN: 12
   - key: levelname_lv901
-    EN: 
+    EN: 1
     CN: 1
   - key: levelname_lv902
-    EN: 
+    EN: 2
     CN: 2
   - key: levelname_lv903
-    EN: 
+    EN: 3
     CN: 3
   - key: levelname_lv904
-    EN: 
+    EN: 4
     CN: 4
   - key: levelname_lv905
-    EN: 
+    EN: 5
     CN: 5
   - key: levelname_lv906
-    EN: 
+    EN: 6
     CN: 6
   - key: levelname_lv907
-    EN: 
+    EN: 7
     CN: 7
   - key: levelname_lv908
-    EN: 
+    EN: 8
     CN: 8
   - key: levelname_lv909
-    EN: 
+    EN: 9
     CN: 9
   - key: levelname_lv910
-    EN: 
+    EN: 10
     CN: 10
   - key: levelname_lv911
-    EN: 
+    EN: 11
     CN: 11
   - key: levelname_lv912
-    EN: 
+    EN: 12
     CN: 12
   - key: locked_tm1
     EN: "\u2588 \u2588 never stops."
@@ -666,12 +669,12 @@ MonoBehaviour:
     EN: "Colorful \u2588 \u2588 ."
     CN: "\u8272\u5F69\u6591\u6593\u7684 \u2588 \u2588 \u3002"
   - key: manifesto_tm1
-    EN: The clock is the first theme, its production and design predate even before
-      the project set its title, Numbers of Everything. From a certain perspective,
-      it is the very starting point of the entire idea.<br><br>Staying up late doing
-      nothing is a superficial appreciation of time, yet it is a frantic waste of
-      time. The clock theme aims to express the individual's powerlessness in the
-      face of the passage of time through this scenario.
+    EN: The clock is the first theme, its design predate even before the project
+      set its title, Numbers of Everything. From a certain perspective, it is the
+      very starting point of the entire project.<br><br>Staying up late for social
+      media is a superficial appreciation of time, yet it is a frantic waste of time.
+      The Clock aims to express the individual's powerlessness in the face of the
+      passage of time through this scenario.
     CN: "\u65F6\u949F\u662F\u7B2C\u4E00\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u5236\u4F5C\u4E0E\u8BBE\u8BA1\u6BD4\u6E38\u620F\u540D\u201C\u4E07\u7269\u4E4B\u6570\u201C\u8FD8\u8981\u518D\u65E9\u4E00\u4E9B\u3002\u6362\u53E5\u8BDD\u8BF4\uFF0C\u5B83\u662F\u6574\u4E2A\u6E38\u620F\u9879\u76EE\u771F\u6B63\u7684\u8D77\u70B9\u3002<br><br>\u71AC\u591C\u5374\u65E0\u6240\u4E8B\u4E8B\u662F\u4E00\u79CD\u8868\u9762\u4E0A\u73CD\u60DC\u65F6\u95F4\uFF0C\u5374\u53C8\u614C\u4E71\u5730\u6D6A\u8D39\u4E86\u65F6\u95F4\u7684\u884C\u4E3A\u3002\u65F6\u949F\u4E3B\u9898\u60F3\u901A\u8FC7\u8FD9\u4E2A\u60C5\u666F\u6765\u8868\u8FBE\u4E2A\u4F53\u5728\u65F6\u5149\u6D41\u901D\u9762\u524D\u7684\u65E0\u529B\u3002"
   - key: manifesto_tm10
     EN: 
@@ -719,13 +722,13 @@ MonoBehaviour:
     EN: Twitch, tiktok, live streams,
     CN: "\u5FAE\u535A\u3001\u8FDE\u8F7D\u3001\u76F4\u64AD\uFF0C"
   - key: narrative_tm1_ln005
-    EN: never stop moving,
+    EN: never stop sliding,
     CN: "\u5F00\u542F\u65B0\u7684\u8282\u5F8B\uFF0C"
   - key: narrative_tm1_ln006
-    EN: time silently slipping through your fingertips.
+    EN: time slipping through your fingertips.
     CN: "\u65F6\u95F4\u5728\u4F60\u7684\u6307\u5C16\u9ED8\u9ED8\u6ED1\u52A8\u3002"
   - key: narrative_tm1_ln007
-    EN: Night's travelers,
+    EN: Night travelers,
     CN: "\u591C\u7684\u65C5\u8005\uFF0C"
   - key: narrative_tm1_ln008
     EN: trekking through darkness.
@@ -1386,41 +1389,41 @@ MonoBehaviour:
     EN: Flask
     CN: "\u70E7\u74F6"
   - key: tm1_goal_lv101
-    EN: 
+    EN: Set all cells to 8
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A8"
   - key: tm1_goal_lv102
-    EN: 
+    EN: Set all cells to 10
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A10"
   - key: tm1_goal_lv103
-    EN: 
+    EN: Set all cells to 12
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A12"
   - key: tm1_goal_lv104
-    EN: 
+    EN: Set all cells to UNIQUE numbers
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A\u4E0D\u540C\u6570\u5B57"
   - key: tm1_goal_lv105
-    EN: 
+    EN: Set all cells to 2
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A2"
   - key: tm1_goal_lv106
-    EN: 
+    EN: Set all cells to 3
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A3"
   - key: tm1_goal_lv107
-    EN: 
+    EN: Set all cells to 4
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A4"
   - key: tm1_goal_lv108
-    EN: 
+    EN: Set all cells to UNIQUE numbers
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A\u4E0D\u540C\u6570\u5B57"
   - key: tm1_goal_lv109
-    EN: 
+    EN: Set all cells to 5
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A5"
   - key: tm1_goal_lv110
-    EN: 
+    EN: Set all cells to 6
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A6"
   - key: tm1_rule1_lv101
-    EN: 
-    CN: "\u6253\u51FA\uFF1A+1"
+    EN: 'Play Clock to a cell: +1'
+    CN: "\u6253\u51FA\u65F6\u949F\u7684\u683C\u5B50\uFF1A+1"
   - key: tm1_rule2_lv103
-    EN: 
-    CN: "\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50+1"
+    EN: After playing, all cells with a clock +1
+    CN: "\u4E4B\u540E\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50+1"
   - key: tm10_goal_lv1001
     EN: 
     CN: "\u6807\u8BB0\u6EE1\u8DB3\u8981\u6C42\u7684\u6570\u5B57"
@@ -2165,8 +2168,8 @@ MonoBehaviour:
     EN: <sprite name=currency_gem> Hidden Gem Discovered!
     CN: "<sprite name=currency_gem> \u9690\u85CF\u5B9D\u77F3\u5173"
   - key: ui_hiddenobject_riddletitle
-    EN: 'Find the <b>object</b> according to the riddle:'
-    CN: "\u6839\u636E\u8C1C\u8BED\u627E\u5230<b>\u7269\u4EF6</b>\uFF1A"
+    EN: 'Find the <b>[object]</b> in the scene according to the riddle:'
+    CN: "\u6839\u636E\u8C1C\u8BED\u5728\u573A\u666F\u5185\u627E\u5230<b>[\u7269\u4EF6]</b>\uFF1A"
   - key: ui_intro_line0
     EN: "<size=70%>Dao begets One<br>\u9053\u751F\u4E00</size>"
     CN: "\u9053\u751F\u4E00<br><size=70%>Dao begets One</size>"
