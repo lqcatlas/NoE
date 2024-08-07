@@ -47,6 +47,9 @@ public class TitlePage : MonoBehaviour, ISaveData
         }
         else
         {
+            //Sequence seq = DOTween.Sequence();
+            //seq.AppendInterval(1f);
+            //seq.AppendCallback(() => IntroAnimToTitlePage());
             IntroAnimToTitlePage();
         }
     }
@@ -57,16 +60,7 @@ public class TitlePage : MonoBehaviour, ISaveData
         widgets.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Title);
         titleSprite.gameObject.SetActive(true);
-        
         confirmBtn.SetActive(true);
-        if(LocalizedAssetLookup.singleton.curLanguage == LanguageOption.CN)
-        {
-            SwitchToCN();
-        }
-        else
-        {
-            SwitchToEN();
-        }
         //playtest only
         /*if (firstOpening)
         {
@@ -87,6 +81,15 @@ public class TitlePage : MonoBehaviour, ISaveData
         Sequence seq = DOTween.Sequence();
         seq.AppendInterval(TITLE_ANIM_DURATION);
         seq.AppendCallback(() => GoToTitlePage());
+
+        if (LocalizedAssetLookup.singleton.curLanguage == LanguageOption.CN)
+        {
+            SwitchToCN();
+        }
+        else
+        {
+            SwitchToEN();
+        }
     }
     public void EnterBtnClick()
     {
@@ -136,14 +139,14 @@ public class TitlePage : MonoBehaviour, ISaveData
     public void SwitchToCN()
     {
         LocalizedAssetLookup.singleton.SwitchLanguage(LanguageOption.CN);
-        titleSprite.sprite = titleByLanguage[0];
+        titleSprite.sprite = titleByLanguage[1];
         titleSprite.gameObject.GetComponent<AdvSpriteSlider>().ResetBaseSprite();
         //GoToTitlePage();
     }
     public void SwitchToEN()
     {
         LocalizedAssetLookup.singleton.SwitchLanguage(LanguageOption.EN);
-        titleSprite.sprite = titleByLanguage[1];
+        titleSprite.sprite = titleByLanguage[0];
         titleSprite.gameObject.GetComponent<AdvSpriteSlider>().ResetBaseSprite();
         //GoToTitlePage();
     }
@@ -158,6 +161,7 @@ public class TitlePage : MonoBehaviour, ISaveData
     private const string MUSICVOLUME_SAVE_KEY = "setting.musicVolume";
     private const string SOUNDVOLUME_SAVE_KEY = "setting.soundVolume";
     private const string INTROCOUNT_SAVE_KEY = "setting.intro";
+    private const string LANGUAGE_SAVE_KEY = "setting.language";
     public void LoadFromSaveManager()
     {
         string str = SaveManager.controller.Inquire(string.Format(AUDIOVOLUME_SAVE_KEY));
@@ -196,7 +200,20 @@ public class TitlePage : MonoBehaviour, ISaveData
         {
             playerSettings.introCount = 0;
         }
-        
+        str = SaveManager.controller.Inquire(string.Format(LANGUAGE_SAVE_KEY));
+        if (str != null)
+        {
+            int curIndex = 0;
+            int.TryParse(SaveManager.controller.Inquire(string.Format(LANGUAGE_SAVE_KEY)), out curIndex);
+            playerSettings.curLan = (LanguageOption)curIndex;
+            LocalizedAssetLookup.singleton.SwitchLanguage(playerSettings.curLan);
+            //Debug.LogWarning($"set lan to {playerSettings.curLan} based from loading");
+        }
+        else
+        {
+            playerSettings.curLan = LocalizedAssetLookup.singleton.defaultLanguage;
+            LocalizedAssetLookup.singleton.SwitchLanguage(playerSettings.curLan);
+        }
     }
     public void SaveToSaveManager()
     {
@@ -205,6 +222,7 @@ public class TitlePage : MonoBehaviour, ISaveData
         SaveManager.controller.Insert(string.Format(MUSICVOLUME_SAVE_KEY), playerSettings.musicVolume.ToString());
         SaveManager.controller.Insert(string.Format(SOUNDVOLUME_SAVE_KEY), playerSettings.soundVolume.ToString());
         SaveManager.controller.Insert(string.Format(INTROCOUNT_SAVE_KEY), playerSettings.introCount.ToString());
+        SaveManager.controller.Insert(string.Format(LANGUAGE_SAVE_KEY), ((int)playerSettings.curLan).ToString());
     }
     #endregion
 }

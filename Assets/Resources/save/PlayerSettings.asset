@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: PlayerSettings
   m_EditorClassIdentifier: 
   audioVolume: 1
-  musicVolume: 0.5999999
-  soundVolume: 0.9
-  introCount: 8
+  musicVolume: 0.8
+  soundVolume: 0.7
+  introCount: 15
+  curLan: 0

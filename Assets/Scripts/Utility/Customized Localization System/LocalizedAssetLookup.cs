@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public enum LanguageOption:int{ EN = 0, CN = 1};
@@ -20,14 +21,14 @@ public class LocalizedAssetLookup : MonoBehaviour
         }
     }
     [SerializeField] LocalizationSource source;
+    [SerializeField] PlayerSettings playerSettings;
     public LanguageOption curLanguage;
-    [SerializeField] LanguageOption defaultLanguage;
+    public LanguageOption defaultLanguage;
     public void SwitchLanguage(LanguageOption option)
     {
-        if(option != curLanguage)
-        {
-            curLanguage = option;
-        }
+        //Debug.LogWarning($"set lan to {option} by switch lan");
+        playerSettings.curLan = option;
+        curLanguage = option;
     }
     public string Translate(string txt)
     {

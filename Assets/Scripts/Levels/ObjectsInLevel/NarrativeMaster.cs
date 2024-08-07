@@ -45,7 +45,7 @@ public class NarrativeMaster : MonoBehaviour
             seq.Kill();
             targetLine.SetText(FinalText);
         }
-        UpdateTypingSppeed();
+        UpdateTypingSpeed();
         _text = LocalizedAssetLookup.singleton.Translate(_text);
         targetLine = null;
         for(int i=0;i< lines.Count; i++)
@@ -91,14 +91,13 @@ public class NarrativeMaster : MonoBehaviour
         //List<string> splitWords = new List<string>();
         return Regex.Replace(richtextSentence, "<.*?>", string.Empty);
     }
-    void UpdateTypingSppeed()
+    void UpdateTypingSpeed()
     {
-        LanguageOption curLan = LocalizedAssetLookup.singleton.curLanguage;
-        if(curLan == LanguageOption.EN)
+        if(LocalizedAssetLookup.singleton.curLanguage == LanguageOption.EN)
         {
             TypeInterval = dConstants.VFX.ENTypingInterval;
         }
-        else if(curLan == LanguageOption.CN)
+        else if(LocalizedAssetLookup.singleton.curLanguage == LanguageOption.CN)
         {
             TypeInterval = dConstants.VFX.CNTypingInterval;
         }

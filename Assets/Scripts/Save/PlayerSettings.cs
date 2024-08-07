@@ -10,5 +10,5 @@ public class PlayerSettings : ScriptableObject
     public float musicVolume;
     public float soundVolume;
     public int introCount;
-
+    public LanguageOption curLan;
 }
