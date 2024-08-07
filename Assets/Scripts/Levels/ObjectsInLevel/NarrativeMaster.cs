@@ -16,6 +16,7 @@ public class NarrativeLineGroup
 public class NarrativeMaster : MonoBehaviour
 {
     static float TypeInterval = 0.2f;
+    public RectTransform group;
     public TextMeshPro title;
     public List<TextMeshPro> lines;
 

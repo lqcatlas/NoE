@@ -313,6 +313,7 @@ public class LevelMasterBase : MonoBehaviour
                 lineStatus.Add(NarrativeLineStatus.INQUEUE);
             }
         }
+        LayoutRebuilder.ForceRebuildLayoutImmediate(hub.narrativeMaster.group);
         return hasInitNarrative;
     }
     public virtual void InitGoal()

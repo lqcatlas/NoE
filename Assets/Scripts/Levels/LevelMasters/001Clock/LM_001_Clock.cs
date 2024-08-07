@@ -93,8 +93,22 @@ public class LM_001_Clock : LevelMasterBase
     }
     //private bool narrative_lv7_1 = false;
     //private bool narrative_lv8_1 = false;
+    public override void UpdateCells(Vector2Int coord)
+    {
+        //only instatntly update the play cell by one
+        for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+        {
+            DataCell temp_cellDataPrev = levelData.previousBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+            if (temp_cellDataPrev.coord == coord)
+            {
+                int showNumber = BoardCalculation.ModX_Range(temp_cellDataPrev.value + 1, new Vector2Int(1, 12));
+                hub.boardMaster.cells[i].NumberShift(showNumber);
+            }
+        }
+    }
     public override void AddtionalUpdate_Theme(Vector2Int coord)
     {
+        
         //cell bg update addition
         for (int i = 0; i < clockHub.runningClocks.Count; i++)
         {
@@ -117,6 +131,19 @@ public class LM_001_Clock : LevelMasterBase
             TryTypeNextPlayLine(0);
         }
         */
+    }
+    public override void DelayedPlay_Theme()
+    {
+        //delayed update on all cells for additional +1
+        for (int i = 0; i < hub.boardMaster.cells.Count; i++)
+        {
+            DataCell temp_cellData = levelData.curBoard.GetCellDataByCoord(hub.boardMaster.cells[i].coord);
+            if (temp_cellData.value != hub.boardMaster.cells[i].curNumber)
+            {
+                hub.boardMaster.cells[i].NumberShift(temp_cellData.value);
+            }
+        }
+
     }
     public override bool CheckWinCondition()
     {
