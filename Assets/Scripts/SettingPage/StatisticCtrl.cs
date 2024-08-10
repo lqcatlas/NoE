@@ -8,10 +8,10 @@ public class StatisticCtrl : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.S))
+        /*if (Input.GetKeyUp(KeyCode.S))
         {
             ShowPlayingRecordBox();
-        }
+        }*/
     }
     public string GenPlayingRecordText()
     {

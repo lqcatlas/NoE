@@ -5,6 +5,7 @@ using System.Linq;
 using UnityEngine.Rendering.Universal;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.Android;
 
 public class LevelSelector : MonoBehaviour, ISaveData
 {
@@ -35,7 +36,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     private int latestStarCollected;
     private int latestGemCollected;
     private int selectedThemeIndex;
-    private bool unlockGenLevels;
+    private bool unlockGemLevels;
 
     //private bool firstLoading = true;
 
@@ -48,6 +49,10 @@ public class LevelSelector : MonoBehaviour, ISaveData
     [SerializeField] List<ThemePhotoGroup> photos;
     [SerializeField] List<StarProgressBlocker> blockers;
     //public MsgBox DesignerNoteBox;
+
+    [Header("Demo")]
+    public int SecretCodeStage;
+
 
     public void GoToSelector()
     {
@@ -74,12 +79,24 @@ public class LevelSelector : MonoBehaviour, ISaveData
             seq.AppendCallback(() => temp.EnterPageAnimation());
             seq.AppendInterval(dConstants.UI.StandardizedBtnAnimDuration/2f);
             */
-            //all photos anim in the same time range
-            photos[i].EnterPageAnimation();
+            
+            //demo special
+            if (photos[i].themeData.themeUID == 2 && SecretCodeStage != 4)
+            {
+                photos[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                //all photos anim in the same time range
+                photos[i].EnterPageAnimation();
+            }
         }
         ReleaseLatestTokensCollected();
+        CheckThemeStatusUpdate();
         //vfx end
 
+        //demo
+        SecretCodeStage = 0;
     }
     public void CloseSelector()
     {
@@ -104,6 +121,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     }
     private void Update()
     {
+#if UNITY_EDITOR
         if (unlockAll)
         {
             Debug_UnlockAllNodes();
@@ -115,6 +133,8 @@ public class LevelSelector : MonoBehaviour, ISaveData
             GemEarned(1);
             getTokens = false;
         }
+#endif
+        CheckSecretCode();
     }
     private void Start()
     {
@@ -336,6 +356,51 @@ public class LevelSelector : MonoBehaviour, ISaveData
             photos[i].UIUpdateBasedOnStatus();
         }
         Debug.Log(string.Format("{0} photos unlocked by debug", photos.Count));
+    }
+    void ShowSecretTheme()
+    {
+        for (int i = 0; i < photos.Count; i++)
+        {
+            //demo special
+            if (photos[i].themeData.themeUID == 2 && SecretCodeStage == 4)
+            {
+                photos[i].gameObject.SetActive(false);
+                photos[i].EnterPageAnimation();
+            }
+        }
+    }
+    void CheckSecretCode()
+    {
+        switch (SecretCodeStage)
+        {
+            case 0: 
+                if (Input.GetKeyUp(KeyCode.C))
+                {
+                    SecretCodeStage = 1;
+                }
+                break;
+            case 1:
+                if (Input.GetKeyUp(KeyCode.O))
+                {
+                    SecretCodeStage = 2;
+                }
+                break;
+            case 2:
+                if (Input.GetKeyUp(KeyCode.I))
+                {
+                    SecretCodeStage = 3;
+                }
+                break;
+            case 3:
+                if (Input.GetKeyUp(KeyCode.N))
+                {
+                    SecretCodeStage = 4;
+                    ShowSecretTheme();
+                }
+                break;
+            default:
+                break;
+        }
     }
     #region save
     private const string TOKEN_SAVE_KEY = "record.tokens";

@@ -1918,6 +1918,7 @@ MonoBehaviour:
   ClearAllSaves: 0
   curSave:
     save_str: 
+  OverrideSaveFileName: demo_gamesave
   dictVisualized: []
 --- !u!4 &1425281393
 Transform:

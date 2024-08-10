@@ -12,7 +12,7 @@ public class ThemePhotoGroup : MonoBehaviour
 
     [Header("Gameplay Data")]
     //public LevelSelector selector;
-    [SerializeField] SheetItem_ThemeSetup themeData;
+    public SheetItem_ThemeSetup themeData;
     public ThemePhotoStatus curStatus;
 
     [Header("Children Objs")]

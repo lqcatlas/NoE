@@ -5,7 +5,6 @@ using System.Linq;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System;
-using Unity.VisualScripting;
 
 [System.Serializable]
 public class SaveData
@@ -75,7 +74,7 @@ public class SaveManager : MonoBehaviour
 
     [Header("Savings")]
     public SaveData curSave;
-
+    public string OverrideSaveFileName = "";
     
     //public List<ScriptableObject> ScriptablesWithSave;
     private List<ISaveData> SaveDataModules;
@@ -93,6 +92,7 @@ public class SaveManager : MonoBehaviour
     }
     private void Update()
     {
+#if UNITY_EDITOR
         if (Input.GetKeyUp(KeyCode.R))
         {
             ClearAllSaves = true;
@@ -103,6 +103,7 @@ public class SaveManager : MonoBehaviour
             SavesCleared = true;
             ClearSaveFile();
         }
+#endif
     }
     private void OnApplicationQuit()
     {
@@ -165,6 +166,10 @@ public class SaveManager : MonoBehaviour
 #if UNITY_EDITOR
             save_filename = "editor_gamesave.save";
 #endif
+            if (OverrideSaveFileName != "")
+            {
+                save_filename = OverrideSaveFileName + ".save";
+            }
             if (!File.Exists(Path.Combine(Application.persistentDataPath, save_filename)))
             {
                 ClearSaveFile();
@@ -203,6 +208,10 @@ public class SaveManager : MonoBehaviour
 #if UNITY_EDITOR
             save_filename = "editor_gamesave.save";
 #endif
+            if(OverrideSaveFileName != "")
+            {
+                save_filename = OverrideSaveFileName + ".save";
+            }
             FileStream file = File.Create(Path.Combine(Application.persistentDataPath, save_filename));
             curSave.save_str = curSave.ConvertToString(dict2save);
             bf.Serialize(file, curSave.save_str);

@@ -39,6 +39,7 @@ public class LevelMasterBase : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR
         //test only
         if (InitTrigger)
         {
@@ -65,6 +66,7 @@ public class LevelMasterBase : MonoBehaviour
             SuccessTrigger = false;
             WinALevel();
         }
+#endif
         levelPlayTime += Time.deltaTime;
     }
     //Key Actions assembling from atomic functions
