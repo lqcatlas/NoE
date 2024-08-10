@@ -34,10 +34,12 @@ public class LevelSelector : MonoBehaviour, ISaveData
     public Vector3 enteringPos;
     private int latestStarCollected;
     private int latestGemCollected;
+    private int selectedThemeIndex;
+    private bool unlockGenLevels;
 
     //private bool firstLoading = true;
-    
-    
+
+
     [Header("Children Objs")]
     [SerializeField] GameObject page;
     [SerializeField] Transform nodeParent;
@@ -45,7 +47,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     [SerializeField] Transform DefaultTokenSpawnPos;
     [SerializeField] List<ThemePhotoGroup> photos;
     [SerializeField] List<StarProgressBlocker> blockers;
-    public MsgBox DesignerNoteBox;
+    //public MsgBox DesignerNoteBox;
 
     public void GoToSelector()
     {
@@ -240,6 +242,11 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         //reset enter position
         enteringPos = DefaultTokenSpawnPos.position;
+    }
+    void CheckThemeStatusUpdate()
+    {
+        //TO DO: selectedThemeIndex
+        //TO DO: unlockGemLevels
     }
     void NodeParentInit()
     {

@@ -372,7 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 11400000, guid: d41dc660a95b15847a53d0151318986c, type: 2}
   playerSettings: {fileID: 11400000, guid: 8dad17fb5624d7c4ba6d2944aacdaf41, type: 2}
-  curLanguage: 1
+  curLanguage: 0
   defaultLanguage: 0
 --- !u!4 &165104778
 Transform:
