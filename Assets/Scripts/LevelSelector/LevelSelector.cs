@@ -35,8 +35,8 @@ public class LevelSelector : MonoBehaviour, ISaveData
     public Vector3 enteringPos;
     private int latestStarCollected;
     private int latestGemCollected;
-    private int selectedThemeIndex;
-    private bool unlockGemLevels;
+    public int selectedThemeIndex;
+    public bool gemLevelUnlocked;
 
     //private bool firstLoading = true;
 
@@ -94,7 +94,6 @@ public class LevelSelector : MonoBehaviour, ISaveData
         ReleaseLatestTokensCollected();
         CheckThemeStatusUpdate();
         //vfx end
-
         //demo
         SecretCodeStage = 0;
     }
@@ -151,6 +150,8 @@ public class LevelSelector : MonoBehaviour, ISaveData
         TokenEarned(0);
         GemEarned(0);
         enteringPos = DefaultTokenSpawnPos.position;
+        selectedThemeIndex = 1;
+        gemLevelUnlocked = false;
         page.SetActive(false);
     }
     public void UnlockTheme(int themeIndex, int tokenCost)
@@ -161,14 +162,15 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
         TokenSpent(tokenCost);
     }
-    public bool FinishLevel(int levelUID, bool isHard = false)
+    public bool FinishLevel(int levelUID)
     {
+        SheetItem_LevelSetup finishedLv = LevelLauncher.singleton.GetLevelSetupDataByUID(levelUID);
         bool isNew;
         if (!playerLevelRecords.isLevelFinished(levelUID))
         {
             isNew = true;
             playerLevelRecords.finishedLevels.Add(levelUID);
-            if (!isHard)
+            if (!finishedLv.isHard)
             {
                 TokenEarned(1);
             }
@@ -180,6 +182,14 @@ public class LevelSelector : MonoBehaviour, ISaveData
         else
         {
             isNew = false;
+        }
+        
+        if (finishedLv.nextLevel != null)
+        {
+            if(finishedLv.nextLevel.isHard && !finishedLv.isHard)
+            {
+                gemLevelUnlocked = true;
+            }
         }
         return isNew;
     }
@@ -229,9 +239,10 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
 
     }
-    public void RegisterEnteringPos(Vector3 vec)
+    public void RegisterThemeEntering(Vector3 vec, int themeIndex)
     {
         enteringPos = vec;
+        selectedThemeIndex = themeIndex;
     }
     void ReleaseLatestTokensCollected()
     {
@@ -265,8 +276,14 @@ public class LevelSelector : MonoBehaviour, ISaveData
     }
     void CheckThemeStatusUpdate()
     {
-        //TO DO: selectedThemeIndex
-        //TO DO: unlockGemLevels
+        for(int i=0;i<photos.Count;i++)
+        {
+            if(photos[i].themeData.themeUID == selectedThemeIndex && gemLevelUnlocked == true)
+            {
+                photos[i].ShowGemLevelAnimation();
+            }
+        }
+        gemLevelUnlocked = false;
     }
     void NodeParentInit()
     {
@@ -302,52 +319,6 @@ public class LevelSelector : MonoBehaviour, ISaveData
         }
 
     }
-    /*void CollectAllThemes()
-    {
-        themes = nodeParent.GetComponentsInChildren<SelectorTheme>(true).ToList();
-        int LockCount = 0;
-        int UnlockCount = 0;
-        int FinishCount = 0;
-        for (int i = 0; i < themes.Count; i++)
-        {
-            themes[i].master = this;
-            int result = themes[i].InitStatus();
-            if (result == 1)
-            {
-                LockCount += 1;
-            }
-            else if (result == 2)
-            {
-                UnlockCount += 1;
-            }
-            else if (result == 3)
-            {
-                FinishCount += 1;
-            }
-            nodes.AddRange(themes[i].CollectMyNodes()); ;
-        }
-        Debug.Log(string.Format("Level Selector launched, with {0} themes loaded. {1} locked, {2} unlocked, {3} finished.", themes.Count, LockCount, UnlockCount, FinishCount));
-        int NodeLockCount = 0;
-        int NodeUnlockCount = 0;
-        int NodeFinishCount = 0;
-        for (int i = 0; i < nodes.Count; i++)
-        {
-            if (nodes[i].status == SelectorNode.NodeStatus.locked)
-            {
-                NodeLockCount += 1;
-            }
-            else if (nodes[i].status == SelectorNode.NodeStatus.unlocked)
-            {
-                NodeUnlockCount += 1;
-            }
-            else if (nodes[i].status == SelectorNode.NodeStatus.finished)
-            {
-                NodeFinishCount += 1;
-            }
-        }
-        Debug.Log(string.Format("Additional, with {0} levels loaded. {1} locked, {2} unlocked, {3} finished.", nodes.Count, NodeLockCount, NodeUnlockCount, NodeFinishCount));
-    }
-    */
     public void Debug_UnlockAllNodes()
     {
         for (int i = 0; i < photos.Count; i++)

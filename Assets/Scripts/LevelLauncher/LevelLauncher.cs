@@ -76,6 +76,17 @@ public class LevelLauncher : MonoBehaviour
         }
         return false;
     }
+    public SheetItem_LevelSetup GetLevelSetupDataByUID(int uid)
+    {
+        for (int i = 0; i < levelSetupTable.Count; i++)
+        {
+            if (levelSetupTable[i].levelUID == uid)
+            {
+                return levelSetupTable[i];
+            }
+        }
+        return null;
+    }
     public bool LaunchLevelByUID(int uid)
     {
         ClearExistingLevel();

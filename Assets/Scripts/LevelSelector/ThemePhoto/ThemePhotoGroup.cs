@@ -34,12 +34,16 @@ public class ThemePhotoGroup : MonoBehaviour
     public TextMeshPro gemCollection;
     public GameObject gemInfo;
     public NoteLauncher designNote;
+    public RectTransform gemCollectionMask;
+    public RectTransform designNoteMask;
 
     [Header("VFX Prefabs")]
     [SerializeField] GameObject SelectorTransitionFX;
 
-    int curStars = 0;
-    int curGems = 0;
+    private bool mouseSelected;
+
+    private int curStars = 0;
+    private int curGems = 0;
     public void UpdatePhotoGroup()
     {
         curStatus = DetermineCurStatus();
@@ -155,7 +159,7 @@ public class ThemePhotoGroup : MonoBehaviour
     #region BtnFunc
     public void EnterPageAnimation()
     {
-        float rng_delay = Random.Range(0f, 0.6f);
+        float rng_delay = Random.Range(0f, 0.2f);
         gameObject.SetActive(false);
         connectingString.SetActive(false);
         photoGroup.DOScale(1.2f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(rng_delay).SetRelative(true)
@@ -164,6 +168,20 @@ public class ThemePhotoGroup : MonoBehaviour
         infoGroup.DOScaleY(0f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(dConstants.UI.StandardizedBtnAnimDuration/2f + rng_delay);
         connectingString.transform.DOScaleX(0f, dConstants.UI.StandardizedBtnAnimDuration).From().SetDelay(dConstants.UI.StandardizedBtnAnimDuration/ 2f + rng_delay)
             .OnStart(() => connectingString.SetActive(true));
+    }
+    public void HoverOffPhotoAnimation()
+    {
+        SwingByForce(1.5f);
+    }
+    public void ShowGemLevelAnimation()
+    {
+        Debug.LogWarning($"play ShowGemLevelAnimation() on photo theme id ${themeData.themeUID}");
+        gemCollectionMask.gameObject.SetActive(true);
+        designNoteMask.gameObject.SetActive(true);
+        //gemCollectionMask.anchoredPosition = Vector2.zero;
+        //designNoteMask.anchoredPosition = Vector2.zero;
+        gemCollectionMask.DOLocalMoveX(15f, dConstants.UI.StandardizedVFXAnimDuration).OnComplete(() => gemCollectionMask.gameObject.SetActive(false)).SetDelay(1f);
+        designNoteMask.DOLocalMoveX(15f, dConstants.UI.StandardizedVFXAnimDuration).OnComplete(() => designNoteMask.gameObject.SetActive(false)).SetDelay(1.5f);
     }
     public void SwingByForce(float swingDegree)
     {
@@ -190,11 +208,17 @@ public class ThemePhotoGroup : MonoBehaviour
     public void PhotoExitSelection()
     {
         photo.GetComponent<photoVFXCtrl>().ZoomReset(dConstants.UI.StandardizedBtnAnimDuration);
+        HoverOffPhotoAnimation();
+        mouseSelected = false;
+    }
+    public void PhotoClicked()
+    {
+        mouseSelected = true;
     }
     public void PhotoConfirmSelection()
     {
         //enter hidden obj or level
-        if (curStatus == ThemePhotoStatus.locked)
+        if (curStatus == ThemePhotoStatus.locked && mouseSelected)
         {
             if (themeData.unlockCost <= LevelSelector.singleton.playerLevelRecords.tokens)
             {
@@ -203,7 +227,7 @@ public class ThemePhotoGroup : MonoBehaviour
                 LevelSelector.singleton.currencySet.StarCountAdjustAnimation(-themeData.unlockCost, true);
             }
         }
-        else if(curStatus == ThemePhotoStatus.unlocked || curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect)
+        else if((curStatus == ThemePhotoStatus.unlocked || curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect) && mouseSelected)
         {
             GoToLatestLevel();
         }
@@ -243,7 +267,7 @@ public class ThemePhotoGroup : MonoBehaviour
         //reset currency to orginal (actual cost triggered at finishing hidden obj)
         seq.AppendCallback(() => LevelSelector.singleton.currencySet.StarCountAdjustAnimation(0));
         //register entering photo
-        LevelSelector.singleton.RegisterEnteringPos(photo.transform.position);
+        LevelSelector.singleton.RegisterThemeEntering(photo.transform.position, themeData.themeUID);
 
     }
     void GoToLatestLevel()
@@ -259,7 +283,7 @@ public class ThemePhotoGroup : MonoBehaviour
         seq.AppendCallback(() => LevelLauncher.singleton.LaunchLevelByUID(targetLevelUID));
         seq.AppendCallback(() => LevelSelector.singleton.CloseSelector());
         //register entering photo
-        LevelSelector.singleton.RegisterEnteringPos(photo.transform.position);
+        LevelSelector.singleton.RegisterThemeEntering(photo.transform.position, themeData.themeUID);
     }
     int GetLatestLevelUID()
     {
