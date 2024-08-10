@@ -283,7 +283,7 @@ public class LM_007_Bonsai : LevelMasterBase
     {
         status = LevelStatus.END;
         //hub.goalMaster.nextBtn.gameObject.SetActive(true);
-        bool isNew = LevelSelector.singleton.FinishLevel(levelData.levelUID, levelData.isHard);
+        bool isNew = LevelSelector.singleton.FinishLevel(levelData.levelUID);
         string finalPlayTime = string.Format("{0}:{1}:{2}"
             , Mathf.FloorToInt(levelPlayTime / 60).ToString("00")
             , (Mathf.FloorToInt(levelPlayTime) % 60).ToString("00")
