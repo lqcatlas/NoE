@@ -18,12 +18,6 @@ public class SpriteSlider : MonoBehaviour
     public bool SwitchByOrder;
 
     private Sequence seq;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
     void OnEnable()
     {
         if (InitShow())

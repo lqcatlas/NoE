@@ -3323,6 +3323,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -8
       objectReference: {fileID: 0}
+    - target: {fileID: 6991086074537894202, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: slides.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6991086074537894202, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
+      propertyPath: slides.Array.data[9]
+      value: 
+      objectReference: {fileID: -1121153292, guid: 7518423c8ecdcfe4db84782065ccbf35, type: 3}
     - target: {fileID: 7155117242004500927, guid: 568b9d671fec42d4ebdfdf63ecbb5a3d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
