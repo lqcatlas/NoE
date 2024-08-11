@@ -41,9 +41,12 @@ public class ThemePhotoGroup : MonoBehaviour
     [SerializeField] GameObject SelectorTransitionFX;
 
     private bool mouseSelected;
+    private Vector3 photoGroupOriginalRotate;
 
     private int curStars = 0;
     private int curGems = 0;
+
+    private Sequence seq;
     public void UpdatePhotoGroup()
     {
         curStatus = DetermineCurStatus();
@@ -59,6 +62,8 @@ public class ThemePhotoGroup : MonoBehaviour
         bool perfect = true;
         curStars = 0;
         curGems = 0;
+        photoGroupOriginalRotate = photoGroup.rotation.eulerAngles;
+        seq = DOTween.Sequence();
         for (int i = 0; i < themeData.levels.Count; i++)
         {
             if (!records.isLevelFinished(themeData.levels[i].levelUID))
@@ -146,11 +151,11 @@ public class ThemePhotoGroup : MonoBehaviour
         string statusSuffix = "";
         if(curStatus == ThemePhotoStatus.finished)
         {
-            statusSuffix = LocalizedAssetLookup.singleton.Translate("@Loc=ui_finished_status@@");
+            statusSuffix += LocalizedAssetLookup.singleton.Translate("@Loc=ui_finished_status@@");
         }
         else if(curStatus == ThemePhotoStatus.perfect)
         {
-            statusSuffix = LocalizedAssetLookup.singleton.Translate("@Loc=ui_perfect_status@@");
+            statusSuffix += LocalizedAssetLookup.singleton.Translate("@Loc=ui_perfect_status@@");
         }
         themeName.SetText(string.Format("{0}{1}",LocalizedAssetLookup.singleton.Translate(themeData.themeTitle), statusSuffix));
         starCollection.SetText(string.Format(LocalizedAssetLookup.singleton.Translate("@Loc=ui_themephoto_starcollection@@"), curStars, themeData.TotalStars));
@@ -186,7 +191,10 @@ public class ThemePhotoGroup : MonoBehaviour
     public void SwingByForce(float swingDegree)
     {
         float rng_timerange = Random.Range(0.8f, 1.2f);
-        photoGroup.DORotate(new Vector3(0f, 0f, swingDegree), 4f * rng_timerange).SetRelative(true).SetEase(Ease.InOutFlash, 6, 1);
+        seq.Kill();
+        seq = DOTween.Sequence();
+        seq.Append(photoGroup.DORotate(new Vector3(0f, 0f, swingDegree), 4f * rng_timerange).SetRelative(true).SetEase(Ease.InOutFlash, 6, 1));
+        seq.Append(photoGroup.DORotate(photoGroupOriginalRotate, rng_timerange).SetEase(Ease.InSine));
     }
     
     public void PhotoEnterSelection()
@@ -234,13 +242,13 @@ public class ThemePhotoGroup : MonoBehaviour
     }
     public void NoteEnterSelection()
     {
-        designNote.label.DOColor(dConstants.UI.DefaultColor_3rd, dConstants.UI.StandardizedBtnAnimDuration);
-        designNote.text.DOColor(dConstants.UI.DefaultColor_1st, dConstants.UI.StandardizedBtnAnimDuration);
+        designNote.label.DOColor(dConstants.UI.DefaultColor_1st, dConstants.UI.StandardizedBtnAnimDuration);
+        designNote.text.DOColor(dConstants.UI.DefaultColor_Black, dConstants.UI.StandardizedBtnAnimDuration);
     }
     public void NoteExitSelection()
     {
-        designNote.label.DOColor(dConstants.UI.DefaultColor_1st, dConstants.UI.StandardizedBtnAnimDuration);
-        designNote.text.DOColor(dConstants.UI.DefaultColor_Black, dConstants.UI.StandardizedBtnAnimDuration);
+        designNote.label.DOColor(dConstants.UI.DefaultColor_3rd, dConstants.UI.StandardizedBtnAnimDuration);
+        designNote.text.DOColor(dConstants.UI.DefaultColor_1st, dConstants.UI.StandardizedBtnAnimDuration);
     }
     public void NoteConfirmSelection()
     {
@@ -260,12 +268,12 @@ public class ThemePhotoGroup : MonoBehaviour
         //enter hidden obj
         GameObject obj = Instantiate(SelectorTransitionFX, transform);
         obj.transform.parent = VFXHolder.singleton.transform;
-        Sequence seq = DOTween.Sequence();
-        seq.AppendInterval(dConstants.VFX.SelectorToLevelAnimTransitionPhase1);
-        seq.AppendCallback(() => HiddenObjectLauncher.singleton.LaunchHiddenObjectPage(themeData));
-        seq.AppendCallback(() => LevelSelector.singleton.CloseSelector());
+        Sequence seq1 = DOTween.Sequence();
+        seq1.AppendInterval(dConstants.VFX.SelectorToLevelAnimTransitionPhase1);
+        seq1.AppendCallback(() => HiddenObjectLauncher.singleton.LaunchHiddenObjectPage(themeData));
+        seq1.AppendCallback(() => LevelSelector.singleton.CloseSelector());
         //reset currency to orginal (actual cost triggered at finishing hidden obj)
-        seq.AppendCallback(() => LevelSelector.singleton.currencySet.StarCountAdjustAnimation(0));
+        seq1.AppendCallback(() => LevelSelector.singleton.currencySet.StarCountAdjustAnimation(0));
         //register entering photo
         LevelSelector.singleton.RegisterThemeEntering(photo.transform.position, themeData.themeUID);
 

@@ -264,7 +264,7 @@ public class LM_002_Coin : LevelMasterBase
         }
         else if (levelData.levelIndex == 8)
         {
-            return BoardCalculation.Same_All(levelData.curBoard);
+            return BoardCalculation.CountX_All(levelData.curBoard, 5);
         }
         else if (levelData.levelIndex == 9)
         {
