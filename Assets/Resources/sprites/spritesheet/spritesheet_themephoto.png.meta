@@ -263,6 +263,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: themephoto_frame_dashed
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 720
+        width: 600
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2042eb9f84eca6449d76fdfa7907066
+      internalID: -621214754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -280,6 +301,7 @@ TextureImporter:
       themephoto_string@v1: 479771474
       themephoto_label: -1502076661
       popup_box_small: -1900411356
+      themephoto_frame_dashed: -621214754
       themephoto_background: 813241668
   spritePackingTag: 
   pSDRemoveMatte: 0

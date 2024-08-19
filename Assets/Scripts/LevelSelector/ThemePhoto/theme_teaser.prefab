@@ -2188,7 +2188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   localizeTarget: {fileID: 333771488244192205}
-  LocalizedKey: '@Loc=theme_teaser_desc@@'
+  LocalizedKey: '@Loc=theme_teaser_hint@@'
 --- !u!1 &8975762701932326170
 GameObject:
   m_ObjectHideFlags: 0
