@@ -48,6 +48,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
     [SerializeField] Transform DefaultTokenSpawnPos;
     [SerializeField] List<ThemePhotoGroup> photos;
     [SerializeField] List<StarProgressBlocker> blockers;
+    [SerializeField] TeaserPhotoGroup teaser;
     //public MsgBox DesignerNoteBox;
 
     [Header("Demo")]
@@ -64,6 +65,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             blockers[i].InitBlocker();
         }
+        teaser.InitTeaserPhoto();
         page.SetActive(true);
         BgCtrl.singleton.SetToPhase(dConstants.Gameplay.GamePhase.Selector);
         AudioCentralCtrl.singleton.BgMusicSwitch();
@@ -91,6 +93,7 @@ public class LevelSelector : MonoBehaviour, ISaveData
                 photos[i].EnterPageAnimation();
             }
         }
+        teaser.EnterPageAnimation();
         ReleaseLatestTokensCollected();
         CheckThemeStatusUpdate();
         //vfx end

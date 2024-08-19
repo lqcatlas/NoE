@@ -1958,6 +1958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5572331313842986715}
+  - component: {fileID: 133870546265324031}
   m_Layer: 0
   m_Name: theme_teaser
   m_TagString: Untagged
@@ -1986,6 +1987,21 @@ RectTransform:
   m_AnchoredPosition: {x: -746.2, y: -8}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &133870546265324031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7271210879132355124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfae78c43f4db3b4cb0d37b42f0a9e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  photoGroup: {fileID: 8502539510569398188}
+  infoGroup: {fileID: 5024330356742555383}
+  connectingString: {fileID: 4142417678299125559}
 --- !u!1 &8130640316030944880
 GameObject:
   m_ObjectHideFlags: 0
