@@ -74,6 +74,15 @@ public class LevelSelector : MonoBehaviour, ISaveData
         {
             photos[i].gameObject.SetActive(false);
         }
+        //demo
+        if (playerLevelRecords.isThemeUnlocked(2))
+        {
+            SecretCodeStage = 4;
+        }
+        else
+        {
+            SecretCodeStage = 0;
+        }
         Sequence seq = DOTween.Sequence();
         for (int i = 0; i < photos.Count; i++)
         {
@@ -97,8 +106,8 @@ public class LevelSelector : MonoBehaviour, ISaveData
         ReleaseLatestTokensCollected();
         CheckThemeStatusUpdate();
         //vfx end
-        //demo
-        SecretCodeStage = 0;
+        
+        
     }
     public void CloseSelector()
     {
