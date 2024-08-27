@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Steamworks;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -208,6 +209,14 @@ public class TitlePage : MonoBehaviour, ISaveData
             playerSettings.curLan = (LanguageOption)curIndex;
             LocalizedAssetLookup.singleton.SwitchLanguage(playerSettings.curLan);
             //Debug.LogWarning($"set lan to {playerSettings.curLan} based from loading");
+        }
+        else if (SteamManager.Initialized)
+        {
+            if (SteamApps.GetCurrentGameLanguage() == "schinese")
+            {
+                playerSettings.curLan = LanguageOption.CN;
+                LocalizedAssetLookup.singleton.SwitchLanguage(playerSettings.curLan);
+            }
         }
         else
         {
