@@ -37,6 +37,8 @@ public class ThemePhotoGroup : MonoBehaviour
     public RectTransform gemCollectionMask;
     public RectTransform designNoteMask;
 
+    public List<ThemePhotoTag> tags;
+
     [Header("VFX Prefabs")]
     [SerializeField] GameObject SelectorTransitionFX;
 
@@ -126,6 +128,8 @@ public class ThemePhotoGroup : MonoBehaviour
             themeIcon.SetActive(false);
             completeSign.SetActive(false);
             photoLine.SetText(LocalizedAssetLookup.singleton.Translate(themeData.lockedLine));
+
+            UpdateTags();
         }
         else if (curStatus == ThemePhotoStatus.unlocked || curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect)
         {
@@ -142,6 +146,8 @@ public class ThemePhotoGroup : MonoBehaviour
             gemInfo.gameObject.SetActive(curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect);
             designNote.gameObject.SetActive(curStatus == ThemePhotoStatus.finished || curStatus == ThemePhotoStatus.perfect);
             completeSign.gameObject.SetActive(curStatus == ThemePhotoStatus.perfect);
+
+            UpdateTags();
         }
     }
     void StaticTextUpdate()
@@ -308,5 +314,14 @@ public class ThemePhotoGroup : MonoBehaviour
             }
         }
         return themeData.levels[themeData.levels.Count - 1].levelUID;
+    }
+    void UpdateTags()
+    {
+        for (int i = 0; i < tags.Count; i++)
+        {
+            //update tags into right icon
+            //reset tag status
+            tags[i].SetTag(i);
+        }
     }
 }

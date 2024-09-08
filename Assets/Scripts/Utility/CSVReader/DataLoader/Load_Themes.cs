@@ -48,7 +48,9 @@ public class Load_Themes : MonoBehaviour
             UpdateLevelDataFromCSV(levels[i], dataSheet);
             RegisterLevelOnTheme(ref themes, levels[i]);
         }
-        //doing a 2nd pass to generate previous level narratives and next level reference
+        //doing a 2nd pass to:
+        //gen previous level narratives
+        //gen next level reference
         for (int i = 0; i < levels.Count; i++)
         {
             for (int j = 0; j < levels.Count; j++)

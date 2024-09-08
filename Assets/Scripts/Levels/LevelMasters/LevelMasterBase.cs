@@ -626,7 +626,10 @@ public class LevelMasterBase : MonoBehaviour
                 hub.miscMaster.nextBtn.SetActive(true);
             }
         }
-        hub.miscMaster.levelName.SetText(string.Format("{0} {1:000}{2}", LocalizedAssetLookup.singleton.Translate(levelData.theme), levelData.levelIndex, levelData.isHard? " <sprite name=currency_gem>":""));
+        hub.miscMaster.levelName.SetText(string.Format("{0}<size=60%>{1}</size>{2}", 
+            LocalizedAssetLookup.singleton.Translate(levelData.theme),
+            LocalizedAssetLookup.singleton.Translate(levelData.title), 
+            levelData.isHard? " <sprite name=currency_gem>":""));
     }
     public void GoToPreviousLevel()
     {

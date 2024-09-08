@@ -130,7 +130,7 @@ MonoBehaviour:
   - key: hint_tm2
     EN: 'Stepping into a history museum, exhibits speak of the rise and fall of empires.
       None is eternal through history. Sculptures, paintings, porcelain, <b>[objects]</b>,
-      all exude an aura of the past worlds. you can''t help but wonder: did people
+      all exude an aura of the past worlds. You can''t help but wonder: did people
       of the past also toss <b>[objects]</b> into the air, seeking the gods'' counsel
       with flips?'
     CN: "\u8D70\u8FDB\u5386\u53F2\u535A\u7269\u9986\uFF0C\u9648\u5217\u7684\u5C55\u54C1\u8BC9\u8BF4\u7740\u4E00\u4E2A\u53C8\u4E00\u4E2A\u5E1D\u56FD\u7684\u5174\u8870\u3002\u5728\u5386\u53F2\u9762\u524D\uFF0C\u6CA1\u6709\u4EC0\u4E48\u662F\u6C38\u6052\u662F\u4E0D\u4F1A\u8150\u574F\u7684\u3002\u96D5\u5851\u3001\u7ED8\u753B\u3001\u74F7\u5668\u3001<b>[\u7269\u4EF6]</b>\uFF0C\u4E00\u5207\u90FD\u5F25\u6563\u7740\u4E0D\u5C5E\u4E8E\u73B0\u4EE3\u4E16\u754C\u7684\u6C14\u5473\u3002\u4E0D\u7981\u597D\u5947\uFF1A\u8FC7\u53BB\u7684\u4EBA\u4E5F\u4F1A\u5C06<b>[\u7269\u4EF6]</b>\u629B\u5728\u7A7A\u4E2D\u7528\u4E00\u6B21\u6B21\u7684\u7FFB\u8F6C\u8BE2\u95EE\u795E\u660E\u7684\u610F\u89C1\u5417\uFF1F"
@@ -147,8 +147,13 @@ MonoBehaviour:
     EN: It's an art form crafted through trimming nature.
     CN: "\u5B83\u662F\u901A\u8FC7\u4FEE\u526A\u81EA\u7136\u5F97\u5230\u7684\u827A\u672F\u54C1\u3002"
   - key: hint_tm8
-    EN: It symbolizes power through its weight.
-    CN: "\u5B83\u7528\u91CD\u91CF\u8C61\u5F81\u6743\u529B\u3002"
+    EN: "The grand hall is bathed in sunlight. The room is silent. You glance around,
+      taking in every detail, each contributing to the sense of majesty and splendor.
+      Finally, your gaze rests on the <b>[object]</b>. It gleams with gold, a symbol
+      of wealth. Its intricate design carries the weight of ancient tradition. Its
+      heaviness is unmistakable \u2014 the burden of power. Lifted high and then
+      fell down, the profound responsibility quietly settles upon you."
+    CN: "\u6062\u5F18\u7684\u5927\u6BBF\u5185\uFF0C\u9633\u5149\u900F\u8FC7\u9AD8\u8038\u73BB\u7483\u7A97\u6D12\u4E0B\u6591\u6593\u7684\u5149\u5F71\u3002\u623F\u95F4\u5BC2\u9759\u65E0\u58F0\uFF0C\u4F60\u73AF\u987E\u56DB\u5468\uFF0C\u5C4B\u5185\u7684\u6BCF\u4E00\u4E2A\u7EC6\u8282\u90FD\u5C3D\u663E\u81F3\u5C0A\u7684\u5C0A\u4E25\u4E0E\u8F89\u714C\u3002\u6700\u7EC8\u76EE\u5149\u505C\u7559\u5728<b>[\u7269\u4EF6]</b>\u4E0A\u3002\u5B83\u7684\u91D1\u8272\u5728\u95EA\u8000\uFF0C\u5C55\u793A\u8D22\u5BCC\u3002\u5B83\u7684\u5F62\u72B6\u8003\u7A76\uFF0C\u6BCF\u4E00\u4E2A\u7EC6\u8282\u90FD\u6709\u53E4\u8001\u7684\u4F20\u627F\u3002\u5B83\u7684\u5206\u91CF\u5C24\u5176\u5730\u6C89\u91CD\uFF0C\u90A3\u662F\u6743\u529B\u7684\u91CD\u62C5\u3002\u9AD8\u9AD8\u4E3E\u8D77\u53C8\u91CD\u91CD\u843D\u4E0B\uFF0C\u6DF1\u8FDC\u7684\u8D23\u4EFB\u5C31\u6B64\u9ED8\u9ED8\u843D\u4E8E\u4F60\u8EAB\u3002"
   - key: hint_tm9
     EN: It contains dangerous substances.
     CN: "\u5B83\u88C5\u7740\u5371\u9669\u7684\u7269\u8D28\u3002"
@@ -159,483 +164,483 @@ MonoBehaviour:
     EN: On the way to work, passing through a river, <b>things</b> emerges from the
       voice of the winds
     CN: "\u8D70\u5728\u4E0A\u73ED\u7684\u8DEF\u4E0A\uFF0C\u8DEF\u8FC7\u4E00\u6761\u5C0F\u6CB3\uFF0C\u6811\u53F6\u7684\u5A46\u5A11\u58F0\u4E2D\u5939\u6742\u7740<b>\u4E07\u7269</b>\u3002"
-  - key: levelname_lv1001
-    EN: 1
-    CN: 1
-  - key: levelname_lv1002
-    EN: 2
-    CN: 2
-  - key: levelname_lv1003
-    EN: 3
-    CN: 3
-  - key: levelname_lv1004
-    EN: 4
-    CN: 4
-  - key: levelname_lv1005
-    EN: 5
-    CN: 5
-  - key: levelname_lv1006
-    EN: 6
-    CN: 6
-  - key: levelname_lv1007
-    EN: 7
-    CN: 7
-  - key: levelname_lv1008
-    EN: 8
-    CN: 8
-  - key: levelname_lv1009
-    EN: 9
-    CN: 9
   - key: levelname_lv101
-    EN: 1
-    CN: 1
-  - key: levelname_lv1010
-    EN: 10
-    CN: 10
-  - key: levelname_lv1011
-    EN: 11
-    CN: 11
-  - key: levelname_lv1012
-    EN: 12
-    CN: 12
+    EN: 001/008
+    CN: 001/008
   - key: levelname_lv102
-    EN: 2
-    CN: 2
+    EN: 002/008
+    CN: 002/008
   - key: levelname_lv103
-    EN: 3
-    CN: 3
+    EN: 003/008
+    CN: 003/008
   - key: levelname_lv104
-    EN: 4
-    CN: 4
+    EN: 004/008
+    CN: 004/008
   - key: levelname_lv105
-    EN: 5
-    CN: 5
+    EN: 005/008
+    CN: 005/008
   - key: levelname_lv106
-    EN: 6
-    CN: 6
+    EN: 006/008
+    CN: 006/008
   - key: levelname_lv107
-    EN: 7
-    CN: 7
+    EN: 007/008
+    CN: 007/008
   - key: levelname_lv108
-    EN: 8
-    CN: 8
+    EN: 008/008
+    CN: 008/008
   - key: levelname_lv109
-    EN: 9
-    CN: 9
+    EN: 009/010
+    CN: 009/010
   - key: levelname_lv110
-    EN: 10
-    CN: 10
-  - key: levelname_lv1101
-    EN: 1
-    CN: 1
-  - key: levelname_lv1102
-    EN: 2
-    CN: 2
-  - key: levelname_lv1103
-    EN: 3
-    CN: 3
-  - key: levelname_lv1104
-    EN: 4
-    CN: 4
-  - key: levelname_lv1105
-    EN: 5
-    CN: 5
-  - key: levelname_lv1106
-    EN: 6
-    CN: 6
-  - key: levelname_lv1107
-    EN: 7
-    CN: 7
-  - key: levelname_lv1108
-    EN: 8
-    CN: 8
-  - key: levelname_lv1109
-    EN: 9
-    CN: 9
-  - key: levelname_lv1110
-    EN: 10
-    CN: 10
-  - key: levelname_lv1111
-    EN: 11
-    CN: 11
-  - key: levelname_lv1112
-    EN: 12
-    CN: 12
-  - key: levelname_lv1201
-    EN: 1
-    CN: 1
-  - key: levelname_lv1202
-    EN: 2
-    CN: 2
-  - key: levelname_lv1203
-    EN: 3
-    CN: 3
-  - key: levelname_lv1204
-    EN: 4
-    CN: 4
-  - key: levelname_lv1205
-    EN: 5
-    CN: 5
-  - key: levelname_lv1206
-    EN: 6
-    CN: 6
-  - key: levelname_lv1207
-    EN: 7
-    CN: 7
-  - key: levelname_lv1208
-    EN: 8
-    CN: 8
-  - key: levelname_lv1209
-    EN: 9
-    CN: 9
-  - key: levelname_lv1210
-    EN: 10
-    CN: 10
-  - key: levelname_lv1211
-    EN: 11
-    CN: 11
-  - key: levelname_lv1212
-    EN: 12
-    CN: 12
-  - key: levelname_lv1213
-    EN: 13
-    CN: 13
-  - key: levelname_lv1214
-    EN: 14
-    CN: 14
-  - key: levelname_lv1301
-    EN: 1
-    CN: 1
-  - key: levelname_lv1302
-    EN: 2
-    CN: 2
-  - key: levelname_lv1303
-    EN: 3
-    CN: 3
-  - key: levelname_lv1304
-    EN: 4
-    CN: 4
-  - key: levelname_lv1305
-    EN: 5
-    CN: 5
-  - key: levelname_lv1306
-    EN: 6
-    CN: 6
-  - key: levelname_lv1307
-    EN: 7
-    CN: 7
-  - key: levelname_lv1308
-    EN: 8
-    CN: 8
-  - key: levelname_lv1309
-    EN: 9
-    CN: 9
-  - key: levelname_lv1310
-    EN: 10
-    CN: 10
-  - key: levelname_lv1311
-    EN: 11
-    CN: 11
-  - key: levelname_lv1312
-    EN: 12
-    CN: 12
-  - key: levelname_lv1313
-    EN: 13
-    CN: 13
+    EN: 010/010
+    CN: 010/010
   - key: levelname_lv201
-    EN: 1
-    CN: 1
+    EN: 001/008
+    CN: 001/008
   - key: levelname_lv202
-    EN: 2
-    CN: 2
+    EN: 002/008
+    CN: 002/008
   - key: levelname_lv203
-    EN: 3
-    CN: 3
+    EN: 003/008
+    CN: 003/008
   - key: levelname_lv204
-    EN: 4
-    CN: 4
+    EN: 004/008
+    CN: 004/008
   - key: levelname_lv205
-    EN: 5
-    CN: 5
+    EN: 005/008
+    CN: 005/008
   - key: levelname_lv206
-    EN: 6
-    CN: 6
+    EN: 006/008
+    CN: 006/008
   - key: levelname_lv207
-    EN: 7
-    CN: 7
+    EN: 007/008
+    CN: 007/008
   - key: levelname_lv208
-    EN: 8
-    CN: 8
+    EN: 008/008
+    CN: 008/008
   - key: levelname_lv209
-    EN: 9
-    CN: 9
+    EN: 009/011
+    CN: 009/011
   - key: levelname_lv210
-    EN: 10
-    CN: 10
+    EN: 010/011
+    CN: 010/011
   - key: levelname_lv211
-    EN: 11
-    CN: 11
+    EN: 011/011
+    CN: 011/011
   - key: levelname_lv401
-    EN: 1
-    CN: 1
+    EN: 001/011
+    CN: 001/011
   - key: levelname_lv402
-    EN: 2
-    CN: 2
+    EN: 002/011
+    CN: 002/011
   - key: levelname_lv403
-    EN: 3
-    CN: 3
+    EN: 003/011
+    CN: 003/011
   - key: levelname_lv404
-    EN: 4
-    CN: 4
+    EN: 004/011
+    CN: 004/011
   - key: levelname_lv405
-    EN: 5
-    CN: 5
+    EN: 005/011
+    CN: 005/011
   - key: levelname_lv406
-    EN: 6
-    CN: 6
+    EN: 006/011
+    CN: 006/011
   - key: levelname_lv407
-    EN: 7
-    CN: 7
+    EN: 007/011
+    CN: 007/011
   - key: levelname_lv408
-    EN: 8
-    CN: 8
+    EN: 008/011
+    CN: 008/011
   - key: levelname_lv409
-    EN: 9
-    CN: 9
+    EN: 009/011
+    CN: 009/011
   - key: levelname_lv410
-    EN: 10
-    CN: 10
+    EN: 010/011
+    CN: 010/011
   - key: levelname_lv411
-    EN: 11
-    CN: 11
+    EN: 011/011
+    CN: 011/011
   - key: levelname_lv412
-    EN: 12
-    CN: 12
+    EN: 012/014
+    CN: 012/014
   - key: levelname_lv413
-    EN: 13
-    CN: 13
+    EN: 013/014
+    CN: 013/014
   - key: levelname_lv414
-    EN: 14
-    CN: 14
+    EN: 014/014
+    CN: 014/014
   - key: levelname_lv501
-    EN: 1
-    CN: 1
+    EN: 001/012
+    CN: 001/012
   - key: levelname_lv502
-    EN: 2
-    CN: 2
+    EN: 002/012
+    CN: 002/012
   - key: levelname_lv503
-    EN: 3
-    CN: 3
+    EN: 003/012
+    CN: 003/012
   - key: levelname_lv504
-    EN: 4
-    CN: 4
+    EN: 004/012
+    CN: 004/012
   - key: levelname_lv505
-    EN: 5
-    CN: 5
+    EN: 005/012
+    CN: 005/012
   - key: levelname_lv506
-    EN: 6
-    CN: 6
+    EN: 006/012
+    CN: 006/012
   - key: levelname_lv507
-    EN: 7
-    CN: 7
+    EN: 007/012
+    CN: 007/012
   - key: levelname_lv508
-    EN: 8
-    CN: 8
+    EN: 008/012
+    CN: 008/012
   - key: levelname_lv509
-    EN: 9
-    CN: 9
+    EN: 009/012
+    CN: 009/012
   - key: levelname_lv510
-    EN: 10
-    CN: 10
+    EN: 010/012
+    CN: 010/012
   - key: levelname_lv511
-    EN: 11
-    CN: 11
+    EN: 011/012
+    CN: 011/012
   - key: levelname_lv512
-    EN: 12
-    CN: 12
+    EN: 012/012
+    CN: 012/012
   - key: levelname_lv513
-    EN: 13
-    CN: 13
+    EN: 013/014
+    CN: 013/014
   - key: levelname_lv514
-    EN: 14
-    CN: 14
+    EN: 014/014
+    CN: 014/014
   - key: levelname_lv601
-    EN: 1
-    CN: 1
+    EN: 001/012
+    CN: 001/012
   - key: levelname_lv602
-    EN: 2
-    CN: 2
+    EN: 002/012
+    CN: 002/012
   - key: levelname_lv603
-    EN: 3
-    CN: 3
+    EN: 003/012
+    CN: 003/012
   - key: levelname_lv604
-    EN: 4
-    CN: 4
+    EN: 004/012
+    CN: 004/012
   - key: levelname_lv605
-    EN: 5
-    CN: 5
+    EN: 005/012
+    CN: 005/012
   - key: levelname_lv606
-    EN: 6
-    CN: 6
+    EN: 006/012
+    CN: 006/012
   - key: levelname_lv607
-    EN: 7
-    CN: 7
+    EN: 007/012
+    CN: 007/012
   - key: levelname_lv608
-    EN: 8
-    CN: 8
+    EN: 008/012
+    CN: 008/012
   - key: levelname_lv609
-    EN: 9
-    CN: 9
+    EN: 009/012
+    CN: 009/012
   - key: levelname_lv610
-    EN: 10
-    CN: 10
+    EN: 010/012
+    CN: 010/012
   - key: levelname_lv611
-    EN: 11
-    CN: 11
+    EN: 011/012
+    CN: 011/012
   - key: levelname_lv612
-    EN: 12
-    CN: 12
+    EN: 012/012
+    CN: 012/012
   - key: levelname_lv613
-    EN: 13
-    CN: 13
+    EN: 013/015
+    CN: 013/015
   - key: levelname_lv614
-    EN: 14
-    CN: 14
+    EN: 014/015
+    CN: 014/015
   - key: levelname_lv615
-    EN: 15
-    CN: 15
+    EN: 015/015
+    CN: 015/015
   - key: levelname_lv701
-    EN: 1
-    CN: 1
+    EN: 001/019
+    CN: 001/019
   - key: levelname_lv702
-    EN: 2
-    CN: 2
+    EN: 002/019
+    CN: 002/019
   - key: levelname_lv703
-    EN: 3
-    CN: 3
+    EN: 003/019
+    CN: 003/019
   - key: levelname_lv704
-    EN: 4
-    CN: 4
+    EN: 004/019
+    CN: 004/019
   - key: levelname_lv705
-    EN: 5
-    CN: 5
+    EN: 005/019
+    CN: 005/019
   - key: levelname_lv706
-    EN: 6
-    CN: 6
+    EN: 006/019
+    CN: 006/019
   - key: levelname_lv707
-    EN: 7
-    CN: 7
+    EN: 007/019
+    CN: 007/019
   - key: levelname_lv708
-    EN: 8
-    CN: 8
+    EN: 008/019
+    CN: 008/019
   - key: levelname_lv709
-    EN: 9
-    CN: 9
+    EN: 009/019
+    CN: 009/019
   - key: levelname_lv710
-    EN: 10
-    CN: 10
+    EN: 010/019
+    CN: 010/019
   - key: levelname_lv711
-    EN: 11
-    CN: 11
+    EN: 011/019
+    CN: 011/019
   - key: levelname_lv712
-    EN: 12
-    CN: 12
+    EN: 012/019
+    CN: 012/019
   - key: levelname_lv713
-    EN: 13
-    CN: 13
+    EN: 013/019
+    CN: 013/019
   - key: levelname_lv714
-    EN: 14
-    CN: 14
+    EN: 014/019
+    CN: 014/019
   - key: levelname_lv715
-    EN: 15
-    CN: 15
+    EN: 015/019
+    CN: 015/019
   - key: levelname_lv716
-    EN: 16
-    CN: 16
+    EN: 016/019
+    CN: 016/019
   - key: levelname_lv717
-    EN: 17
-    CN: 17
+    EN: 017/019
+    CN: 017/019
   - key: levelname_lv718
-    EN: 18
-    CN: 18
+    EN: 018/019
+    CN: 018/019
   - key: levelname_lv719
-    EN: 19
-    CN: 19
+    EN: 019/019
+    CN: 019/019
   - key: levelname_lv720
-    EN: 20
-    CN: 20
+    EN: 020/020
+    CN: 020/020
   - key: levelname_lv801
-    EN: 1
-    CN: 1
+    EN: 001/011
+    CN: 001/011
   - key: levelname_lv802
-    EN: 2
-    CN: 2
+    EN: 002/011
+    CN: 002/011
   - key: levelname_lv803
-    EN: 3
-    CN: 3
+    EN: 003/011
+    CN: 003/011
   - key: levelname_lv804
-    EN: 4
-    CN: 4
+    EN: 004/011
+    CN: 004/011
   - key: levelname_lv805
-    EN: 5
-    CN: 5
+    EN: 005/011
+    CN: 005/011
   - key: levelname_lv806
-    EN: 6
-    CN: 6
+    EN: 006/011
+    CN: 006/011
   - key: levelname_lv807
-    EN: 7
-    CN: 7
+    EN: 007/011
+    CN: 007/011
   - key: levelname_lv808
-    EN: 8
-    CN: 8
+    EN: 008/011
+    CN: 008/011
   - key: levelname_lv809
-    EN: 9
-    CN: 9
+    EN: 009/011
+    CN: 009/011
   - key: levelname_lv810
-    EN: 10
-    CN: 10
+    EN: 010/011
+    CN: 010/011
   - key: levelname_lv811
-    EN: 11
-    CN: 11
+    EN: 011/011
+    CN: 011/011
   - key: levelname_lv812
-    EN: 12
-    CN: 12
+    EN: 012/012
+    CN: 012/012
   - key: levelname_lv901
-    EN: 1
-    CN: 1
+    EN: 001/010
+    CN: 001/010
   - key: levelname_lv902
-    EN: 2
-    CN: 2
+    EN: 002/010
+    CN: 002/010
   - key: levelname_lv903
-    EN: 3
-    CN: 3
+    EN: 003/010
+    CN: 003/010
   - key: levelname_lv904
-    EN: 4
-    CN: 4
+    EN: 004/010
+    CN: 004/010
   - key: levelname_lv905
-    EN: 5
-    CN: 5
+    EN: 005/010
+    CN: 005/010
   - key: levelname_lv906
-    EN: 6
-    CN: 6
+    EN: 006/010
+    CN: 006/010
   - key: levelname_lv907
-    EN: 7
-    CN: 7
+    EN: 007/010
+    CN: 007/010
   - key: levelname_lv908
-    EN: 8
-    CN: 8
+    EN: 008/010
+    CN: 008/010
   - key: levelname_lv909
-    EN: 9
-    CN: 9
+    EN: 009/010
+    CN: 009/010
   - key: levelname_lv910
-    EN: 10
-    CN: 10
+    EN: 010/010
+    CN: 010/010
   - key: levelname_lv911
-    EN: 11
-    CN: 11
+    EN: 011/012
+    CN: 011/012
   - key: levelname_lv912
-    EN: 12
-    CN: 12
+    EN: 012/012
+    CN: 012/012
+  - key: levelname_lv1001
+    EN: 001/010
+    CN: 001/010
+  - key: levelname_lv1002
+    EN: 002/010
+    CN: 002/010
+  - key: levelname_lv1003
+    EN: 003/010
+    CN: 003/010
+  - key: levelname_lv1004
+    EN: 004/010
+    CN: 004/010
+  - key: levelname_lv1005
+    EN: 005/010
+    CN: 005/010
+  - key: levelname_lv1006
+    EN: 006/010
+    CN: 006/010
+  - key: levelname_lv1007
+    EN: 007/010
+    CN: 007/010
+  - key: levelname_lv1008
+    EN: 008/010
+    CN: 008/010
+  - key: levelname_lv1009
+    EN: 009/010
+    CN: 009/010
+  - key: levelname_lv1010
+    EN: 010/010
+    CN: 010/010
+  - key: levelname_lv1011
+    EN: 011/012
+    CN: 011/012
+  - key: levelname_lv1012
+    EN: 012/012
+    CN: 012/012
+  - key: levelname_lv1101
+    EN: 001/010
+    CN: 001/010
+  - key: levelname_lv1102
+    EN: 002/010
+    CN: 002/010
+  - key: levelname_lv1103
+    EN: 003/010
+    CN: 003/010
+  - key: levelname_lv1104
+    EN: 004/010
+    CN: 004/010
+  - key: levelname_lv1105
+    EN: 005/010
+    CN: 005/010
+  - key: levelname_lv1106
+    EN: 006/010
+    CN: 006/010
+  - key: levelname_lv1107
+    EN: 007/010
+    CN: 007/010
+  - key: levelname_lv1108
+    EN: 008/010
+    CN: 008/010
+  - key: levelname_lv1109
+    EN: 009/010
+    CN: 009/010
+  - key: levelname_lv1110
+    EN: 010/010
+    CN: 010/010
+  - key: levelname_lv1111
+    EN: 011/012
+    CN: 011/012
+  - key: levelname_lv1112
+    EN: 012/012
+    CN: 012/012
+  - key: levelname_lv1201
+    EN: 001/010
+    CN: 001/010
+  - key: levelname_lv1202
+    EN: 002/010
+    CN: 002/010
+  - key: levelname_lv1203
+    EN: 003/010
+    CN: 003/010
+  - key: levelname_lv1204
+    EN: 004/010
+    CN: 004/010
+  - key: levelname_lv1205
+    EN: 005/010
+    CN: 005/010
+  - key: levelname_lv1206
+    EN: 006/010
+    CN: 006/010
+  - key: levelname_lv1207
+    EN: 007/010
+    CN: 007/010
+  - key: levelname_lv1208
+    EN: 008/010
+    CN: 008/010
+  - key: levelname_lv1209
+    EN: 009/010
+    CN: 009/010
+  - key: levelname_lv1210
+    EN: 010/010
+    CN: 010/010
+  - key: levelname_lv1211
+    EN: 011/014
+    CN: 011/014
+  - key: levelname_lv1212
+    EN: 012/014
+    CN: 012/014
+  - key: levelname_lv1213
+    EN: 013/014
+    CN: 013/014
+  - key: levelname_lv1214
+    EN: 014/014
+    CN: 014/014
+  - key: levelname_lv1301
+    EN: 001/011
+    CN: 001/011
+  - key: levelname_lv1302
+    EN: 002/011
+    CN: 002/011
+  - key: levelname_lv1303
+    EN: 003/011
+    CN: 003/011
+  - key: levelname_lv1304
+    EN: 004/011
+    CN: 004/011
+  - key: levelname_lv1305
+    EN: 005/011
+    CN: 005/011
+  - key: levelname_lv1306
+    EN: 006/011
+    CN: 006/011
+  - key: levelname_lv1307
+    EN: 007/011
+    CN: 007/011
+  - key: levelname_lv1308
+    EN: 008/011
+    CN: 008/011
+  - key: levelname_lv1309
+    EN: 009/011
+    CN: 009/011
+  - key: levelname_lv1310
+    EN: 010/011
+    CN: 010/011
+  - key: levelname_lv1311
+    EN: 011/011
+    CN: 011/011
+  - key: levelname_lv1312
+    EN: 012/013
+    CN: 012/013
+  - key: levelname_lv1313
+    EN: 013/013
+    CN: 013/013
   - key: locked_tm1
     EN: "\u2588 \u2588 never stops."
     CN: "\u2588 \u2588 \u6C38\u4E0D\u505C\u6B47\u3002"
