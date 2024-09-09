@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Load_Themes : MonoBehaviour
 {
@@ -142,6 +144,14 @@ public class Load_Themes : MonoBehaviour
             if (((string)result).Length > 0)
             {
                 theme.hint = (string)result;
+            }
+        }
+        result = null;
+        if (csvRow.TryGetValue("tags", out result))
+        {
+            if (((string)result).Length > 0)
+            {
+                theme.tags = StringToIntList((string)result, "|");
             }
         }
         result = null;
@@ -430,5 +440,23 @@ public class Load_Themes : MonoBehaviour
         }
         return false;
     }
+    List<int> StringToIntList(string long_str, string divider)
+    {
+        List<int> intList = new List<int>();
+        List<string> stringList = long_str.Split(divider).ToList();
+        for(int i = 0;i < stringList.Count; i++)
+        {
+            int number = int.MaxValue;
+            int.TryParse(stringList[i], out number);
+            if(number != int.MaxValue)
+            {
+                intList.Add(number);
+            }
+            //Debug.LogWarning($"parsing result {stringList[i]} as {number}");
+        }
+        //Debug.LogWarning($"get a list of int of {intList.Count} elements in it");
+        return intList;
+    }
 #endif
+
 }

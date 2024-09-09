@@ -19,6 +19,7 @@ MonoBehaviour:
   lockedLine: '@Loc=locked_tm4@@'
   unlockedLine: '@Loc=unlocked_tm4@@'
   hint: '@Loc=hint_tm4@@'
+  tags: 0000000005000000
   date: '@Loc=date_tm4@@'
   manifesto: '@Loc=manifesto_tm4@@'
   prompt: '@Loc=prompt_tm4@@'
