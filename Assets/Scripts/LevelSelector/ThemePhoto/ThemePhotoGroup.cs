@@ -321,7 +321,14 @@ public class ThemePhotoGroup : MonoBehaviour
         {
             //update tags into right icon
             //reset tag status
-            tags[i].SetTag(i);
+            if(i < themeData.tags.Count)
+            {
+                tags[i].SetTag(themeData.tags[i]);
+            }
+            else
+            {
+                tags[i].SetTag();
+            }
         }
     }
 }

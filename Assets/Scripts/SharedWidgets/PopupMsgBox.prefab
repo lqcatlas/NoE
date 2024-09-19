@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 4192418802491341785}
   - component: {fileID: 4062182168097655398}
   m_Layer: 0
-  m_Name: MsgBox
+  m_Name: PopupMsgBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

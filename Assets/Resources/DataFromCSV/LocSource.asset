@@ -2290,3 +2290,45 @@ MonoBehaviour:
   - key: theme_teaser_desc
     EN: Join Discord<br>to find more
     CN: "\u5173\u6CE8\u793E\u7FA4<br>QQ\uFF0C\u5C0F\u7EA2\u4E66\uFF0C\u5FAE\u535A<br>\u53D1\u73B0\u66F4\u591A"
+  - key: ui_theme_tag_1_name
+    EN: Calculation
+    CN: "\u8BA1\u7B97"
+  - key: ui_theme_tag_1_desc
+    EN: Need <b>numerical sensitivity</b> or <b>calculation</b>
+    CN: "\u8003\u9A8C<b>\u6570\u5B57</b>\u654F\u611F\u5EA6\u6216<b>\u8BA1\u7B97</b>"
+  - key: ui_theme_tag_2_name
+    EN: Logic
+    CN: "\u903B\u8F91"
+  - key: ui_theme_tag_2_desc
+    EN: Use <b>deduction</b> or <b>logical reasoning</b> to find answers
+    CN: "\u901A\u8FC7<b>\u6F14\u7ECE</b>\u4E0E<b>\u903B\u8F91</b>\u63A8\u7406\u5F97\u5230\u7B54\u6848"
+  - key: ui_theme_tag_3_name
+    EN: Perception
+    CN: "\u6D1E\u5BDF"
+  - key: ui_theme_tag_3_desc
+    EN: Challenge <b>awareness of changes</b> and <b>intuition</b>
+    CN: "\u6311\u6218\u5BF9\u53D8\u5316\u7684<b>\u611F\u77E5</b>\u4E0E<b>\u76F4\u89C9</b>"
+  - key: ui_theme_tag_4_name
+    EN: Feeling
+    CN: "\u611F\u53D7"
+  - key: ui_theme_tag_4_desc
+    EN: Reflect personal <b>emotions</b> or <b>thoughts</b> from the developer
+    CN: "\u6765\u81EA\u5F00\u53D1\u8005\u4E2A\u4EBA\u7684<b>\u60C5\u611F</b>\u6216<b>\u601D\u7EEA</b>"
+  - key: ui_theme_tag_5_name
+    EN: Agility
+    CN: "\u654F\u6377"
+  - key: ui_theme_tag_5_desc
+    EN: Require <b>sharpness</b> and <b>quick reactions</b>
+    CN: "\u8981\u6C42<b>\u654F\u9510</b>\u4E0E<b>\u53CD\u5E94</b>\u901F\u5EA6"
+  - key: ui_theme_tag_6_name
+    EN: Community
+    CN: "\u793E\u533A"
+  - key: ui_theme_tag_6_desc
+    EN: Voted or chosen from the <b>community</b>
+    CN: "\u6765\u81EA<b>\u793E\u533A</b>\u6295\u7968\u6216\u9009\u62E9"
+  - key: ui_theme_tag_7_name
+    EN: Luck
+    CN: "\u8FD0\u6C14"
+  - key: ui_theme_tag_7_desc
+    EN: Rely on some <b>luck</b>
+    CN: "\u9700\u8981\u4E00\u5B9A\u7684<b>\u8FD0\u6C14</b>"

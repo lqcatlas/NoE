@@ -719,3 +719,17 @@ UID,Key,EN,CN
 719,unlocked_tm8,"<b>Crown</b>, the heavier, the better.",<b>王冠</b>越重越好。
 720,unlocked_tm9,Colorful <b>Flask</b>.,色彩斑斓的<b>烧瓶</b>。
 721,theme_teaser_desc,Join Discord<br>to find more,关注社群<br>QQ，小红书，微博<br>发现更多
+722,ui_theme_tag_1_name,Calculation,计算
+723,ui_theme_tag_1_desc,Need <b>numerical sensitivity</b> or <b>calculation</b>,考验<b>数字</b>敏感度或<b>计算</b>
+724,ui_theme_tag_2_name,Logic,逻辑
+725,ui_theme_tag_2_desc,Use <b>deduction</b> or <b>logical reasoning</b> to find answers,通过<b>演绎</b>与<b>逻辑</b>推理得到答案
+726,ui_theme_tag_3_name,Perception,洞察
+727,ui_theme_tag_3_desc,Challenge <b>awareness of changes</b> and <b>intuition</b>,挑战对变化的<b>感知</b>与<b>直觉</b>
+728,ui_theme_tag_4_name,Feeling,感受
+729,ui_theme_tag_4_desc,Reflect personal <b>emotions</b> or <b>thoughts</b> from the developer,来自开发者个人的<b>情感</b>或<b>思绪</b>
+730,ui_theme_tag_5_name,Agility,敏捷
+731,ui_theme_tag_5_desc,Require <b>sharpness</b> and <b>quick reactions</b>,要求<b>敏锐</b>与<b>反应</b>速度
+732,ui_theme_tag_6_name,Community,社区
+733,ui_theme_tag_6_desc,Voted or chosen from the <b>community</b>,来自<b>社区</b>投票或选择
+734,ui_theme_tag_7_name,Luck,运气
+735,ui_theme_tag_7_desc,Rely on some <b>luck</b>,需要一定的<b>运气</b>
