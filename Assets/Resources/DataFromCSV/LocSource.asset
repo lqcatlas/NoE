@@ -17,31 +17,31 @@ MonoBehaviour:
     EN: 
     CN: 
   - key: answer_tm7_lv702
-    EN: 
+    EN: 'Hint: equal numbers'
     CN: "\u63ED\u79D8\uFF1A\u8BA9\u6570\u5B57\u5168\u76F8\u7B49"
   - key: answer_tm7_lv703
     EN: 
     CN: 
   - key: answer_tm7_lv704
-    EN: 
+    EN: 'Hint: parity consistent'
     CN: "\u63ED\u79D8\uFF1A\u8BA9\u5947\u5076\u6027\u4E00\u81F4"
   - key: answer_tm7_lv705
     EN: 
     CN: 
   - key: answer_tm7_lv706
-    EN: 
+    EN: 'Hint: prime numbers'
     CN: "\u63ED\u79D8\uFF1A\u4FDD\u7559\u5168\u90E8\u8D28\u6570"
   - key: answer_tm7_lv707
     EN: 
     CN: 
   - key: answer_tm7_lv708
-    EN: 
+    EN: 'Hint: numbers in pair'
     CN: "\u63ED\u79D8\uFF1A\u8BA9\u6570\u5B57\u6210\u5BF9"
   - key: answer_tm7_lv709
     EN: 
     CN: 
   - key: answer_tm7_lv710
-    EN: 
+    EN: 'Hint: unique numbers'
     CN: "\u63ED\u79D8\uFF1A\u8BA9\u6570\u5B57\u90FD\u4E0D\u540C"
   - key: answer_tm7_lv711
     EN: 
@@ -119,13 +119,13 @@ MonoBehaviour:
     EN: It unlocks the gates to success.
     CN: "\u5B83\u7528\u6765\u5F00\u95E8\uFF0C\u901A\u5411\u6210\u529F\u7684\u5927\u95E8\u3002"
   - key: hint_tm11
-    EN: 
+    EN: It's extraordinarily lucky.
     CN: "\u5B83\u662F\u7279\u522B\u7684\u5E78\u8FD0\u3002"
   - key: hint_tm12
-    EN: 
+    EN: It stands in the center of the city.
     CN: "\u5B83\u77D7\u7ACB\u7684\u5728\u57CE\u5E02\u7684\u4E2D\u5FC3\u3002"
   - key: hint_tm13
-    EN: 
+    EN: It doesn't leave any loose ends unturned.
     CN: "\u5B83\u4E0D\u653E\u8FC7\u4EFB\u4F55\u7EC6\u679D\u672B\u8282\u3002"
   - key: hint_tm2
     EN: 'Stepping into a history museum, exhibits speak of the rise and fall of empires.
@@ -648,13 +648,13 @@ MonoBehaviour:
     EN: "\u2588 \u2588 leads to success."
     CN: "\u2588 \u2588 \u901A\u5411\u6210\u529F\u3002"
   - key: locked_tm11
-    EN: 
+    EN: "Lucky \u2588 \u2588 ."
     CN: "\u5E78\u8FD0\u7684 \u2588 \u2588 \u3002"
   - key: locked_tm12
-    EN: 
+    EN: "\u2588 \u2588 attracts crowds."
     CN: "\u2588 \u2588 \u5438\u5F15\u4EBA\u7FA4\u3002"
   - key: locked_tm13
-    EN: 
+    EN: "\u2588 \u2588 spares no details."
     CN: "\u2588 \u2588 \u660E\u5BDF\u79CB\u6BEB\u3002"
   - key: locked_tm2
     EN: "\u2588 \u2588 determine fates."
@@ -686,16 +686,16 @@ MonoBehaviour:
       passage of time through this scenario.
     CN: "\u65F6\u949F\u662F\u7B2C\u4E00\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u5236\u4F5C\u4E0E\u8BBE\u8BA1\u6BD4\u6E38\u620F\u540D\u201C\u4E07\u7269\u4E4B\u6570\u201C\u8FD8\u8981\u518D\u65E9\u4E00\u4E9B\u3002\u6362\u53E5\u8BDD\u8BF4\uFF0C\u5B83\u662F\u6574\u4E2A\u6E38\u620F\u9879\u76EE\u771F\u6B63\u7684\u8D77\u70B9\u3002<br><br>\u71AC\u591C\u5374\u65E0\u6240\u4E8B\u4E8B\u662F\u4E00\u79CD\u8868\u9762\u4E0A\u73CD\u60DC\u65F6\u95F4\uFF0C\u5374\u53C8\u614C\u4E71\u5730\u6D6A\u8D39\u4E86\u65F6\u95F4\u7684\u884C\u4E3A\u3002\u65F6\u949F\u4E3B\u9898\u60F3\u901A\u8FC7\u8FD9\u4E2A\u60C5\u666F\u6765\u8868\u8FBE\u4E2A\u4F53\u5728\u65F6\u5149\u6D41\u901D\u9762\u524D\u7684\u65E0\u529B\u3002"
   - key: manifesto_tm10
-    EN: 
+    EN: '[to be translated]'
     CN: "\u8FD9\u4E2A\u4E3B\u9898\u8BDE\u751F\u4E8E\u6211\u5BF9\u5168\u804C\u5DE5\u4F5C\u4EA7\u751F\u4E25\u91CD\u5026\u6020\u7684\u65F6\u671F\u3002\u5C3D\u7BA1\u8EAB\u5904\u5927\u516C\u53F8\uFF0C\u4EAB\u6709\u9AD8\u85AA\u3001\u826F\u597D\u7684\u798F\u5229\u548C\u793E\u4F1A\u7684\u8BA4\u53EF\uFF0C\u5E76\u62E5\u6709\u5149\u660E\u7684\u524D\u9014\uFF0C\u4F46\u5728\u60C5\u7EEA\u7684\u7B3C\u7F69\u4E0B\uFF0C\u8FD9\u4E00\u5207\u90FD\u53D8\u5F97\u6BEB\u65E0\u610F\u4E49\u3002\u4E0D\u65AD\u53D8\u96BE\u3001\u53D8\u5927\u3001\u53D8\u5F97\u8352\u8BDE\u7684\u8C1C\u9898\uFF0C\u65E8\u5728\u8BA9\u6700\u521D\u7B80\u5355\u7684\u8C1C\u9898\u9010\u6E10\u663E\u5F97\u67AF\u71E5\u65E0\u8DA3\u3002<br><br>\u5E0C\u671B\u5927\u5BB6\u5BF9\u5DE5\u4F5C\u7684\u611F\u53D7\u6BD4\u201C\u6570\u5B57\u5DE5\u7A0B\u5E08\u201D\u8FD9\u6837\u7684\u804C\u4F4D\u66F4\u52A0\u6709\u8DA3\u3002\u5982\u679C\u4F60\u4E0D\u5E78\u5BF9\u6B64\u611F\u540C\u8EAB\u53D7\uFF0C\u6216\u8BB8\u662F\u65F6\u5019\u8003\u8651\u201C\u8BF4\u518D\u89C1\u201D\u4E86\u3002"
   - key: manifesto_tm11
-    EN: 
+    EN: '[to be translated]'
     CN: "\u5728\u4E00\u6B21\u8E0F\u9752\u4E2D\u5076\u7136\u4F11\u606F\u65F6\u9047\u5230\u4E86\u4E00\u7C07\u751F\u957F\u7684\u975E\u5E38\u7E41\u8302\u7684\u4E09\u53F6\u8349\u3002\u7A0D\u5FAE\u627E\u4E86\u4E0B\uFF0C\u53D1\u73B0\u56DB\u53F6\u8349\u786E\u5B9E\u5982\u6545\u4E8B\u6D41\u4F20\u7684\u4E00\u822C\uFF1A\u5728\u4E00\u7C07\u8349\u4E1B\u4E2D\u8F83\u5C11\u7684\u5B58\u5728\u3002\u5DF2\u7ECF\u4E0D\u8BB0\u5F97\u5F53\u65F6\u5728\u601D\u8003\u7684\u95EE\u9898\u662F\u4EC0\u4E48\u4E86\uFF0C\u4F46\u4E09\u56DB\u53F6\u8349\u4E00\u540C\u751F\u957F\u5374\u5BE1\u4F17\u5206\u660E\u7684\u5883\u51B5\u7ED9\u6211\u7559\u4E0B\u4E86\u5370\u8C61\u3002<br><br>\u7ED3\u5408\u5BFB\u627E\u56DB\u53F6\u8349\u65F6\u7684\u805A\u7CBE\u4F1A\u795E\u4E0E\u7FA4\u4F53\u4E2D\u6709\u4F17\u6709\u5BE1\u8FD9\u4E24\u70B9\uFF0C\u5C31\u4EA7\u751F\u4E86\u8FD9\u4E00\u7CFB\u5217\u7684\u8C1C\u9898\u3002\u540E\u8005\u4E8E\u6211\u7A76\u7ADF\u610F\u5473\u7740\u4EC0\u4E48\u6211\u96BE\u4EE5\u4E0B\u7ED3\u8BBA\uFF0C\u8FD9\u5927\u6982\u5C31\u662F\u751F\u547D\u4E2D\u9700\u8981\u6162\u6162\u627E\u5BFB\u7684\u8BDD\u9898\u4E4B\u4E00\u5427\u3002"
   - key: manifesto_tm12
-    EN: 
+    EN: '[to be translated]'
     CN: "\u5728\u4E00\u6B21\u8E0F\u9752\u4E2D\u5076\u7136\u4F11\u606F\u65F6\u9047\u5230\u4E86\u4E00\u7C07\u751F\u957F\u7684\u975E\u5E38\u7E41\u8302\u7684\u4E09\u53F6\u8349\u3002\u7A0D\u5FAE\u627E\u4E86\u4E0B\uFF0C\u53D1\u73B0\u56DB\u53F6\u8349\u786E\u5B9E\u5982\u6545\u4E8B\u6D41\u4F20\u7684\u4E00\u822C\uFF1A\u5728\u4E00\u7C07\u8349\u4E1B\u4E2D\u8F83\u5C11\u7684\u5B58\u5728\u3002\u5DF2\u7ECF\u4E0D\u8BB0\u5F97\u5F53\u65F6\u5728\u601D\u8003\u7684\u95EE\u9898\u662F\u4EC0\u4E48\u4E86\uFF0C\u4F46\u4E09\u56DB\u53F6\u8349\u4E00\u540C\u751F\u957F\u5374\u5BE1\u4F17\u5206\u660E\u7684\u5883\u51B5\u7ED9\u6211\u7559\u4E0B\u4E86\u5370\u8C61\u3002<br><br>\u7ED3\u5408\u5BFB\u627E\u56DB\u53F6\u8349\u65F6\u7684\u805A\u7CBE\u4F1A\u795E\u4E0E\u7FA4\u4F53\u4E2D\u6709\u4F17\u6709\u5BE1\u8FD9\u4E24\u70B9\uFF0C\u5C31\u4EA7\u751F\u4E86\u8FD9\u4E00\u7CFB\u5217\u7684\u8C1C\u9898\u3002\u540E\u8005\u4E8E\u6211\u7A76\u7ADF\u610F\u5473\u7740\u4EC0\u4E48\u6211\u96BE\u4EE5\u4E0B\u7ED3\u8BBA\uFF0C\u8FD9\u5927\u6982\u5C31\u662F\u751F\u547D\u4E2D\u9700\u8981\u6162\u6162\u627E\u5BFB\u7684\u8BDD\u9898\u4E4B\u4E00\u5427\u3002"
   - key: manifesto_tm13
-    EN: 
+    EN: '[to be translated]'
     CN: "\u5728\u4E00\u6B21\u8E0F\u9752\u4E2D\u5076\u7136\u4F11\u606F\u65F6\u9047\u5230\u4E86\u4E00\u7C07\u751F\u957F\u7684\u975E\u5E38\u7E41\u8302\u7684\u4E09\u53F6\u8349\u3002\u7A0D\u5FAE\u627E\u4E86\u4E0B\uFF0C\u53D1\u73B0\u56DB\u53F6\u8349\u786E\u5B9E\u5982\u6545\u4E8B\u6D41\u4F20\u7684\u4E00\u822C\uFF1A\u5728\u4E00\u7C07\u8349\u4E1B\u4E2D\u8F83\u5C11\u7684\u5B58\u5728\u3002\u5DF2\u7ECF\u4E0D\u8BB0\u5F97\u5F53\u65F6\u5728\u601D\u8003\u7684\u95EE\u9898\u662F\u4EC0\u4E48\u4E86\uFF0C\u4F46\u4E09\u56DB\u53F6\u8349\u4E00\u540C\u751F\u957F\u5374\u5BE1\u4F17\u5206\u660E\u7684\u5883\u51B5\u7ED9\u6211\u7559\u4E0B\u4E86\u5370\u8C61\u3002<br><br>\u7ED3\u5408\u5BFB\u627E\u56DB\u53F6\u8349\u65F6\u7684\u805A\u7CBE\u4F1A\u795E\u4E0E\u7FA4\u4F53\u4E2D\u6709\u4F17\u6709\u5BE1\u8FD9\u4E24\u70B9\uFF0C\u5C31\u4EA7\u751F\u4E86\u8FD9\u4E00\u7CFB\u5217\u7684\u8C1C\u9898\u3002\u540E\u8005\u4E8E\u6211\u7A76\u7ADF\u610F\u5473\u7740\u4EC0\u4E48\u6211\u96BE\u4EE5\u4E0B\u7ED3\u8BBA\uFF0C\u8FD9\u5927\u6982\u5C31\u662F\u751F\u547D\u4E2D\u9700\u8981\u6162\u6162\u627E\u5BFB\u7684\u8BDD\u9898\u4E4B\u4E00\u5427\u3002"
   - key: manifesto_tm2
     EN: "The coin is the second theme, inspired by those everyday moments when tossing
@@ -707,22 +707,22 @@ MonoBehaviour:
       me see what I really want deep down."
     CN: "\u786C\u5E01\u662F\u7B2C\u4E8C\u4E2A\u4E3B\u9898\uFF0C\u5B83\u7684\u7075\u611F\u6765\u6E90\u4E8E\u751F\u6D3B\u4E2D\u7528\u63B7\u786C\u5E01\u6765\u505A\u51B3\u7B56\u7684\u5E38\u89C1\u73A9\u7B11\u65F6\u523B\u3002<br><br>\u6545\u4E8B\u5F80\u5F80\u662F\u8FD9\u6837\u5C55\u5F00\u7684\uFF1A\u5634\u91CC\u8BF4\u7740\u4E0D\u77E5\u8BE5\u600E\u4E48\u9009\uFF0C\u4E8E\u662F\u51B3\u5B9A\u63B7\u786C\u5E01\u3002\u5F53\u786C\u5E01\u843D\u5730\u65F6\uFF0C\u5374\u53D1\u73B0\u8FD9\u4E2A\u7ED3\u679C\u5E76\u4E0D\u4EE4\u4EBA\u6EE1\u610F\u3002\u4E8E\u662F\uFF0C\u627E\u4E2A\u7406\u7531\u8BF4\u201C\u518D\u63B7\u4E00\u6B21\u5427\u201D\u3002<br><br>\u56E0\u6B64\uFF0C\u63B7\u786C\u5E01\u5E76\u4E0D\u662F\u7528\u6765\u51B3\u5B9A\u547D\u8FD0\u7684\uFF0C\u800C\u662F\u5E2E\u52A9\u4EBA\u4EEC\u66F4\u597D\u5730\u8D70\u8FDB\u81EA\u5DF1\u7684\u5185\u5FC3\uFF0C\u770B\u6E05\u81EA\u5DF1\u7684\u771F\u5B9E\u60F3\u6CD5\u3002"
   - key: manifesto_tm4
-    EN: 
+    EN: '[to be translated]'
     CN: "\u5BFF\u53F8\u662F\u8FDB\u5165\u5DE5\u7A0B\u6B63\u89C4\u6D41\u7A0B\u540E\u7684\u7B2C\u4E00\u4E2A\u6B63\u5F0F\u4E3B\u9898\u3002\u5B83\u8868\u8FBE\u4E86\u65E5\u672C\u6599\u7406\u7684\u7CBE\u9AD3\uFF1A\u7528\u6700\u7B80\u5355\u7684\u98DF\u6750\uFF0C\u901A\u8FC7\u4E0D\u540C\u7684\u70F9\u996A\u65B9\u5F0F\u548C\u7EC4\u5408\u53D8\u5316\uFF0C\u521B\u9020\u51FA\u4E30\u5BCC\u591A\u6837\u7684\u53E3\u611F\u548C\u5473\u9053\u3002\u5728\u5B9E\u9645\u7684\u8C1C\u9898\u4E2D\uFF0C\u8FD9\u4E00\u7406\u5FF5\u8868\u73B0\u4E3A\uFF0C\u901A\u8FC7\u4E24\u79CD\u98DF\u6750\u7684\u4E0D\u540C\u6392\u5217\u987A\u5E8F\uFF0C\u53EF\u4EE5\u4EA7\u751F\u622A\u7136\u4E0D\u540C\u7684\u6570\u5B57\u53D8\u5316\uFF0C\u4ECE\u800C\u89E3\u51B3\u8C1C\u9898\u3002"
   - key: manifesto_tm5
-    EN: 
+    EN: '[to be translated]'
     CN: "\u6708\u4EAE\u4E3B\u9898\u56F4\u7ED5\u7740\u5BF9\u89C4\u5219\u7684\u7406\u89E3\u5C55\u5F00\u3002\u65E9\u671F\u9636\u6BB5\uFF0C\u901A\u8FC7\u6708\u76F8\u4EA4\u66FF\u53D8\u5316\u7684\u7B80\u5355\u89C4\u5219\uFF0C\u73A9\u5BB6\u53EF\u4EE5\u8F7B\u677E\u638C\u63E1\u3002\u7136\u800C\uFF0C\u5F53\u5F15\u5165\u6708\u98DF\u89C4\u5219\u65F6\uFF0C\u8FD0\u7528\u4E86\u5404\u79CD\u8FF7\u60D1\u6027\u7684\u624B\u6BB5\uFF0C\u4ECE\u52A8\u753B\u6548\u679C\u5230\u6587\u5B57\u63CF\u8FF0\uFF0C\u90FD\u6697\u793A\u7740\u5B83\u7684\u65E0\u5E8F\u3002\u968F\u540E\uFF0C\u901A\u8FC7\u4E00\u7CFB\u5217\u5173\u5361\uFF0C\u5F15\u5BFC\u73A9\u5BB6\u63A2\u7D22\u5176\u5185\u5728\u7684\u89C4\u5F8B\u3002<br><br>\u770B\u5230\u8FD9\u6BB5\u6587\u5B57\u7684\u4F60\uFF0C\u771F\u7684\u5DF2\u7ECF\u5B8C\u5168\u638C\u63E1\u4E86\u6708\u98DF\u7684\u5965\u79D8\u5417\uFF1F\u5C31\u7528\u540E\u7EED\u7684\u94BB\u77F3\u6311\u6218\u6765\u786E\u8BA4\u4E00\u4E0B\u5427\u3002"
   - key: manifesto_tm6
-    EN: 
+    EN: '[to be translated]'
     CN: "\u706F\u6CE1\u7684\u7075\u611F\u6765\u6E90\u662F\u8868\u8FBE\u5BF9\u201C\u52A8\u6001\u89C4\u5212\u4E2D\u7684\u706F\u6CE1\u95EE\u9898\u201D\u7684\u9707\u64BC\u3002<br><br>\u201C\u706F\u6CE1\u95EE\u9898\u201D\u662F\u5927\u5B66\u8BA1\u7B97\u673A\u8BFE\u7A0B\u4E2D\u4E00\u7C7B\u6700\u7ECF\u5178\u9700\u8981\u4F7F\u7528\u52A8\u6001\u89C4\u5212\u7B97\u6CD5\u6765\u89E3\u51B3\u7684\u95EE\u9898\u3002\u5728\u5F53\u65F6\u7684\u6211\u770B\u6765\uFF0C\u52A8\u6001\u89C4\u5212\u7B97\u6CD5\u662F\u7B2C\u4E00\u6B21\u8BA9\u6211\u610F\u8BC6\u5230\u8BA1\u7B97\u673A\u7684\u7B97\u529B\u8D85\u8D8A\u4E86\u4EBA\u7C7B\u7684\u8BA4\u77E5\uFF0C\u505A\u7740\u4EBA\u8111\u5F88\u96BE\u5B8C\u6210\u7684\u4EFB\u52A1\u3002<br><br>\u8BBE\u8BA1\u8FD9\u4E2A\u8C1C\u9898\u662F\u5BF9\u5B83\u518D\u4E00\u6B21\u7684\u56DE\u987E\u4E0E\u63A2\u7D22\u3002\u901A\u8FC7\u6570\u5B57\u8C1C\u9898\u7684\u5F62\u5F0F\uFF0C\u80FD\u5426\u628A\u5982\u6B64\u6666\u6DA9\u62BD\u8C61\u7684\u95EE\u9898\u4EE5\u66F4\u52A0\u6709\u4E50\u8DA3\u7684\u5F62\u5F0F\u5C55\u73B0\u51FA\u6765\u5462\uFF1F"
   - key: manifesto_tm7
-    EN: 
+    EN: '[to be translated]'
     CN: "\u6211\u559C\u6B22\u76C6\u666F\u7684\u539F\u56E0\u662F\u5173\u5361\u4E2D\u6587\u5B57\u6700\u540E\u6240\u63D0\u5230\u7684\uFF1A\u201C\u76C6\u666F\u7684\u7F8E\u6765\u81EA\u4E8E\u53D1\u73B0\u800C\u975E\u521B\u9020\u201D\u3002\u8FD9\u548C\u6211\u5BF9\u6E38\u620F\u5F00\u53D1\u7684\u5BA1\u7F8E\u662F\u4E00\u81F4\u7684\uFF0C\u597D\u7684\u6E38\u620F\u51B3\u975E\u6765\u6E90\u4E8E\u5BF9\u67D0\u4E2A\u7EDD\u4F73\u521B\u610F\u575A\u51B3\u5730\u6267\u884C\u3002\u597D\u7684\u521B\u610F\u662F\u5728\u5F00\u53D1\u8FC7\u7A0B\u4E2D\u7ECF\u7531\u5F00\u53D1\u8005\u5BF9\u6E38\u620F\u66F4\u6DF1\u5165\u5730\u4F53\u9A8C\u800C\u9010\u6B65\u53D1\u73B0\u7684\u3002"
   - key: manifesto_tm8
-    EN: 
+    EN: '[to be translated]'
     CN: "\u738B\u51A0\u662F\u4E00\u4E2A\u4F53\u9A8C\u6D41\u7545\u4F46\u8868\u8FBE\u5E73\u6DE1\u7684\u4E3B\u9898\u3002\u5176\u7075\u611F\u6765\u6E90\u975E\u5E38\u76F4\u63A5\uFF1A\u65E2\u627F\u5176\u51A0\uFF0C\u5FC5\u627F\u5176\u91CD\uFF0C\u4EE5\u53CA\u738B\u6743\u6240\u5E26\u6765\u7684\u4E89\u593A\u4E0E\u6DF7\u4E71\u3002\u6B64\u5916\uFF0C\u8FD8\u9690\u85CF\u4E86\u4E00\u4E2A\u5C0F\u5F69\u86CB\uFF1A\u65E0\u8BBA\u738B\u51A0\u5982\u4F55\u66F4\u8FED\uFF0C\u793E\u4F1A\u6574\u4F53\u603B\u662F\u671D\u7740\u6570\u5B57\u4E0D\u65AD\u53D8\u5927\u7684\u65B9\u5411\u8FDB\u6B65\u3002\u4E0D\u77E5\u9053\u4F60\u662F\u5426\u5DF2\u7ECF\u5BDF\u89C9\u5230\u8FD9\u4E00\u70B9\u5462\uFF1F"
   - key: manifesto_tm9
-    EN: 
+    EN: '[to be translated]'
     CN: "\u70E7\u74F6\u662F\u4E00\u4E2A\u653E\u98DE\u81EA\u6211\u7684\u4E3B\u9898\uFF0C\u5927\u80C6\u5730\u5F15\u5165\u4E86\u57FA\u4E8E\u73A9\u5BB6\u53CD\u5E94\u800C\u975E\u7EAF\u7CB9\u8BA1\u7B97\u7684\u8C1C\u9898\u3002<br><br>\u7406\u8BBA\u5316\u5B66\u63CF\u7ED8\u7684\u795E\u79D8\u5206\u5B50\u4E16\u754C\u6DF1\u6DF1\u5438\u5F15\u7740\u6211\uFF0C\u4F46\u5B9E\u9A8C\u5316\u5B66\u8981\u6C42\u7684\u4E25\u8C28\u64CD\u4F5C\u5374\u6781\u5927\u5730\u6298\u78E8\u7740\u6211\u3002\u8FD9\u79CD\u77DB\u76FE\u7684\u611F\u53D7\u5728\u6E38\u620F\u4E2D\u6620\u5C04\u4E3A\u968F\u65F6\u53EF\u80FD\u7206\u70B8\u7684\u5B9E\u9A8C\uFF0C\u610F\u56FE\u521B\u9020\u4E00\u79CD\u201C\u60AC\u5D16\u8FB9\u8D77\u821E\u201D\u7684\u7D27\u5F20\u611F\u3002"
   - key: narrative_tm1_ln001
     EN: The passage of time
@@ -746,10 +746,10 @@ MonoBehaviour:
     EN: Night travelers,
     CN: "\u591C\u7684\u65C5\u8005\uFF0C"
   - key: narrative_tm1_ln008
-    EN: trekking through darkness.
+    EN: trek through darkness.
     CN: "\u5728\u9ED1\u6697\u4E2D\u8DCB\u6D89\u3002"
   - key: narrative_tm1_ln009
-    EN: Dragging weary bodies,
+    EN: Drag weary bodies,
     CN: "\u62D6\u7740\u75B2\u60EB\u7684\u8EAB\u8EAF\uFF0C"
   - key: narrative_tm1_ln010
     EN: finally arriving at dawn.
@@ -761,43 +761,43 @@ MonoBehaviour:
     EN: it's time to rest.
     CN: "\u662F\u65F6\u5019\u4F11\u606F\u4E86\u3002"
   - key: narrative_tm10_ln001
-    EN: 
+    EN: A badge
     CN: "\u5FC3\u4EEA\u7684\u5DE5\u724C"
   - key: narrative_tm10_ln002
-    EN: 
+    EN: 'Interview question: find the target number.'
     CN: "\u9762\u8BD5\u9898\uFF1A\u627E\u5230\u76EE\u6807\u6570\u5B57\u3002"
   - key: narrative_tm10_ln003
-    EN: 
+    EN: Entry level as a <b>Digital Engineer</b>.
     CN: "\u5165\u804C\u6210\u4E3A<b>\u6570\u5B57\u5DE5\u7A0B\u5E08</b>\u3002"
   - key: narrative_tm10_ln004
-    EN: 
+    EN: Keep up the good work.
     CN: "\u7EE7\u7EED\u8BA4\u771F\u5DE5\u4F5C\uFF0C"
   - key: narrative_tm10_ln005
-    EN: 
+    EN: Steady promotion.
     CN: "\u7A33\u6B65\u664B\u5347\u3002"
   - key: narrative_tm10_ln006
-    EN: 
+    EN: Efforts.
     CN: "\u52AA\u529B\uFF0C"
   - key: narrative_tm10_ln007
-    EN: 
+    EN: Become a <b>senior</b> digital engineer.
     CN: "\u6210\u4E3A<b>\u8D44\u6DF1</b>\u6570\u5B57\u5DE5\u7A0B\u5E08\u3002"
   - key: narrative_tm10_ln008
-    EN: 
+    EN: Struggle.
     CN: "\u594B\u6597\uFF0C"
   - key: narrative_tm10_ln009
-    EN: 
+    EN: Promoted to Digital Engineering <b>Specialist</b>.
     CN: "\u664B\u5347\u4E3A\u6570\u5B57\u5DE5\u7A0B<b>\u4E13\u5BB6</b>\u3002"
   - key: narrative_tm10_ln010
-    EN: 
+    EN: However.
     CN: "\u7136\u800C\uFF0C"
   - key: narrative_tm10_ln011
-    EN: 
+    EN: Was it all really worth it?
     CN: "\u8FD9\u4E00\u5207\u771F\u7684\u503C\u5F97\u4E48\uFF1F"
   - key: narrative_tm10_ln012
-    EN: 
+    EN: The work hasn't changed, but the people will <b>change</b>.
     CN: "\u5DE5\u4F5C\u6CA1\u53D8\uFF0C\u4F46\u4EBA\u4F1A<b>\u53D8</b>\u3002"
   - key: narrative_tm10_ln013
-    EN: 
+    EN: It's time to say goodbye.
     CN: "\u662F\u65F6\u5019\u8BF4\u518D\u89C1\u4E86\u3002"
   - key: narrative_tm10_ln014
     EN: 
@@ -806,44 +806,44 @@ MonoBehaviour:
     EN: 
     CN: 
   - key: narrative_tm11_ln001
-    EN: 
+    EN: Lucky Clover
     CN: "\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: narrative_tm11_ln002
-    EN: 
+    EN: Clover is all over the land.
     CN: "\u4E09\u53F6\u8349\u904D\u5E03\u5927\u5730\uFF0C"
   - key: narrative_tm11_ln003
-    EN: 
+    EN: The four-leaf clover blooms quietly.
     CN: "\u56DB\u53F6\u8349\u6084\u7136\u7EFD\u653E\u3002"
   - key: narrative_tm11_ln004
-    EN: 
+    EN: It's a blessing to be different.
     CN: "\u4E0E\u4F17\u4E0D\u540C\u662F\u4E00\u79CD\u5E78\u8FD0\uFF0C"
   - key: narrative_tm11_ln005
-    EN: 
+    EN: There's no need to hide the light.
     CN: "\u4E0D\u5FC5\u9690\u85CF\u5149\u8292\uFF0C"
   - key: narrative_tm11_ln006
-    EN: 
+    EN: Enjoy this special gift.
     CN: "\u4EAB\u53D7\u8FD9\u7279\u522B\u7684\u8D50\u4E88\u3002"
   - key: narrative_tm11_ln007
-    EN: 
+    EN: Value our unique selves.
     CN: "\u73CD\u60DC\u72EC\u7279\u7684\u81EA\u5DF1\uFF0C"
   - key: narrative_tm11_ln008
-    EN: 
+    EN: Confidence blooms.
     CN: "\u81EA\u4FE1\u7EFD\u653E\uFF0C"
   - key: narrative_tm11_ln009
-    EN: 
+    EN: In the ordinary world.
     CN: "\u5728\u5E73\u51E1\u7684\u4E16\u754C\u91CC\uFF0C"
   - key: narrative_tm11_ln010
-    EN: 
+    EN: Achieve extraordinary chapters.
     CN: "\u6210\u5C31\u4E0D\u5E73\u51E1\u7684\u7BC7\u7AE0\u3002"
   - key: narrative_tm11_ln011
     EN: 
-    CN: "\u8FD9\u4E00\u5207\u771F\u7684\u503C\u5F97\u4E48\uFF1F"
+    CN: 
   - key: narrative_tm11_ln012
     EN: 
-    CN: "\u5DE5\u4F5C\u6CA1\u53D8\uFF0C\u4F46\u4EBA\u4F1A<b>\u53D8</b>\u3002"
+    CN: 
   - key: narrative_tm11_ln013
     EN: 
-    CN: "\u662F\u65F6\u5019\u8BF4\u518D\u89C1\u4E86\u3002"
+    CN: 
   - key: narrative_tm11_ln014
     EN: 
     CN: 
@@ -851,91 +851,91 @@ MonoBehaviour:
     EN: 
     CN: 
   - key: narrative_tm12_ln001
-    EN: 
+    EN: skyscraper
     CN: "\u6469\u5929\u5927\u697C"
   - key: narrative_tm12_ln002
-    EN: 
+    EN: Crowds of people.
     CN: "\u4EBA\u6F6E\u6D8C\u52A8\uFF0C"
   - key: narrative_tm12_ln003
-    EN: 
+    EN: Tall buildings stand.
     CN: "\u9AD8\u697C\u77D7\u7ACB\uFF0C"
   - key: narrative_tm12_ln004
-    EN: 
+    EN: Pointing straight up to the heavens.
     CN: "\u76F4\u6307\u82CD\u7A79\u3002"
   - key: narrative_tm12_ln005
-    EN: 
+    EN: Some people work hard.
     CN: "\u6709\u4EBA\u8F9B\u52E4\uFF0C"
   - key: narrative_tm12_ln006
-    EN: 
+    EN: Some people are hesitant.
     CN: "\u6709\u4EBA\u8E0C\u8E87\uFF0C"
   - key: narrative_tm12_ln007
-    EN: 
+    EN: Countlesseyes in front of the glass.
     CN: "\u73BB\u7483\u524D\u65E0\u6570\u53CC\u773C\u775B\uFF0C"
   - key: narrative_tm12_ln008
-    EN: 
+    EN: Witness the history of the city.
     CN: "\u89C1\u8BC1\u7740\u57CE\u5E02\u7684\u5386\u53F2\u3002"
   - key: narrative_tm12_ln009
-    EN: 
+    EN: People are coming from all directions.
     CN: "\u4EBA\u4EEC\u4ECE\u56DB\u9762\u516B\u65B9\u6D8C\u6765\uFF0C"
   - key: narrative_tm12_ln010
-    EN: 
+    EN: Steel and glass intertwine into a forest.
     CN: "\u94A2\u94C1\u4E0E\u73BB\u7483\u4EA4\u7EC7\u6210\u68EE\u6797\u3002"
   - key: narrative_tm12_ln011
-    EN: 
+    EN: Nightfall.
     CN: "\u591C\u5E55\u964D\u4E34\uFF0C"
   - key: narrative_tm12_ln012
-    EN: 
+    EN: Neon flashes.
     CN: "\u9713\u8679\u95EA\u70C1\u3002"
   - key: narrative_tm12_ln013
-    EN: 
+    EN: skyline made up of buildings.
     CN: "\u697C\u5B87\u7EC4\u6210\u7684\u5929\u9645\u7EBF\uFF0C"
   - key: narrative_tm12_ln014
-    EN: 
+    EN: Writing the unfinished story.
     CN: "\u4E66\u5199\u7740\u672A\u5B8C\u7684\u6545\u4E8B\u3002"
   - key: narrative_tm12_ln015
     EN: 
     CN: 
   - key: narrative_tm13_ln001
-    EN: 
+    EN: Death of 0
     CN: "0\u7684\u6B7B\u4EA1"
   - key: narrative_tm13_ln002
-    EN: 
+    EN: 0 died horriblely in his apartment.
     CN: "0\u60E8\u6B7B\u4E8E\u516C\u5BD3\u5185\uFF0C"
   - key: narrative_tm13_ln003
-    EN: 
+    EN: The suspects are 1 through 9.
     CN: "\u5ACC\u7591\u4EBA\u662F1\u52309\u3002"
   - key: narrative_tm13_ln004
-    EN: 
+    EN: Grab a magnifying glass.
     CN: "\u62FF\u8D77\u653E\u5927\u955C\uFF0C"
   - key: narrative_tm13_ln005
-    EN: 
+    EN: scrutinize every nook and cranny.
     CN: "\u4ED4\u7EC6\u68C0\u67E5\u6BCF\u4E00\u5904\u89D2\u843D\uFF0C"
   - key: narrative_tm13_ln006
-    EN: 
+    EN: Question every witness in detail.
     CN: "\u8BE6\u7EC6\u8D28\u8BE2\u6BCF\u4E00\u4F4D\u76EE\u51FB\u8005\u3002"
   - key: narrative_tm13_ln007
-    EN: 
+    EN: Utilize ingenuity.
     CN: "\u8FD0\u7528\u806A\u660E\u7684\u624D\u667A\uFF0C"
   - key: narrative_tm13_ln008
-    EN: 
+    EN: Spin the cocoon.
     CN: "\u62BD\u4E1D\u5265\u8327\uFF0C"
   - key: narrative_tm13_ln009
-    EN: 
+    EN: Step-by-step.
     CN: "\u5FAA\u5E8F\u6E10\u8FDB\u3002"
   - key: narrative_tm13_ln010
-    EN: 
+    EN: Search for clues in the mist of
     CN: "\u5728\u8FF7\u96FE\u4E2D\u5BFB\u627E\u7EBF\u7D22\uFF0C"
   - key: narrative_tm13_ln011
-    EN: 
+    EN: Approach the truth in the darkness.
     CN: "\u4E8E\u9ED1\u6697\u4E2D\u4E2D\u903C\u8FD1\u771F\u76F8\u3002"
   - key: narrative_tm13_ln012
-    EN: 
+    EN: Uncover the devil in the crowd.
     CN: "\u63EA\u51FA\u4EBA\u7FA4\u4E2D\u7684\u6076\u9B54\uFF0C"
   - key: narrative_tm13_ln013
-    EN: 
+    EN: To clear the name of the people.
     CN: "\u8FD8\u4F17\u4EBA\u6E05\u767D\uFF0C"
   - key: narrative_tm13_ln014
-    EN: 
+    EN: Let the dead rest in peace.
     CN: "\u8BA9\u6B7B\u8005\u7791\u76EE\u3002"
   - key: narrative_tm13_ln015
     EN: 
@@ -968,178 +968,178 @@ MonoBehaviour:
     EN: The two sides intertwine,
     CN: "\u4E24\u9762\u4EA4\u9519\uFF0C"
   - key: narrative_tm2_ln010
-    EN: creating ripples of destiny.
+    EN: create ripples of destiny.
     CN: "\u521B\u9020\u547D\u8FD0\u7684\u6CE2\u6F9C\u3002"
   - key: narrative_tm2_ln011
     EN: You toss it again,
     CN: "\u4F60\u518D\u6B21\u6295\u63B7\uFF0C"
   - key: narrative_tm2_ln012
-    EN: "awaiting the echo of fate\u2019s fall."
+    EN: "await the echo of fate\u2019s fall."
     CN: "\u7B49\u5F85\u5BBF\u547D\u843D\u4E0B\u7684\u56DE\u54CD\u3002"
   - key: narrative_tm2_ln013
     EN: If unsatisfied,
     CN: "\u4E0D\u7518\u4E8E\u6B64\uFF0C"
   - key: narrative_tm2_ln014
-    EN: interpreting with your own wisdom.
+    EN: interpret with your own wisdom.
     CN: "\u5C31\u7528\u667A\u6167\u8FDB\u884C\u89E3\u8BFB\u3002"
   - key: narrative_tm4_ln001
-    EN: 
+    EN: The simplicity of Sushi
     CN: "\u5BFF\u53F8\u7684\u7B80\u7EA6"
   - key: narrative_tm4_ln002
-    EN: 
+    EN: Pick up a slice of sashimi.
     CN: "\u5939\u8D77\u4E00\u7247\u9C7C\u751F\uFF0C"
   - key: narrative_tm4_ln003
-    EN: 
+    EN: Crystal clear.
     CN: "\u6676\u83B9\u5254\u900F\u3002"
   - key: narrative_tm4_ln004
-    EN: 
+    EN: Pick up a ball of white rice.
     CN: "\u62FF\u8D77\u4E00\u56E2\u767D\u996D\uFF0C"
   - key: narrative_tm4_ln005
-    EN: 
+    EN: Outline the arc in the bowl.
     CN: "\u5728\u7897\u4E2D\u52FE\u52D2\u51FA\u5F27\u7EBF\u3002"
   - key: narrative_tm4_ln006
-    EN: 
+    EN: A strand of white rice layered with sashimi.
     CN: "\u4E00\u7F15\u767D\u7C73\u53E0\u4E0A\u9C7C\u751F\uFF0C"
   - key: narrative_tm4_ln007
-    EN: 
+    EN: Pinch it closed gently.
     CN: "\u8F7B\u8F7B\u634F\u5408\uFF0C"
   - key: narrative_tm4_ln008
-    EN: 
+    EN: Create the delicate texture of sushi.
     CN: "\u521B\u9020\u51FA\u5BFF\u53F8\u7EC6\u817B\u7684\u53E3\u611F\u3002"
   - key: narrative_tm4_ln009
-    EN: 
+    EN: A spoonful of fish in white rice.
     CN: "\u4E00\u52FA\u9C7C\u8089\u653E\u8FDB\u767D\u7C73\uFF0C"
   - key: narrative_tm4_ln010
-    EN: 
+    EN: Slowly rolled up.
     CN: "\u7F13\u7F13\u5377\u8D77\uFF0C"
   - key: narrative_tm4_ln011
-    EN: 
+    EN: It opens up the rice ball's voluptuous flavor profile.
     CN: "\u5C31\u5F00\u542F\u4E86\u996D\u56E2\u4E30\u76C8\u7684\u5473\u89C9\u3002"
   - key: narrative_tm4_ln012
-    EN: 
+    EN: Use only two ingredients.
     CN: "\u4EC5\u7528\u4E24\u79CD\u539F\u6599\uFF0C"
   - key: narrative_tm4_ln013
-    EN: 
+    EN: interweave a rich mix of
     CN: "\u4EA4\u7EC7\u51FA\u4E30\u5BCC\u7684\u7EC4\u5408\uFF0C"
   - key: narrative_tm4_ln014
-    EN: 
+    EN: Speaks to the beauty of simplicity.
     CN: "\u8BC9\u8BF4\u7B80\u7EA6\u7684\u7F8E\u3002"
   - key: narrative_tm4_ln015
     EN: 
     CN: 
   - key: narrative_tm5_ln001
-    EN: 
+    EN: The Law of the Month
     CN: "\u6708\u7684\u89C4\u5F8B"
   - key: narrative_tm5_ln002
-    EN: 
+    EN: Alternate losses and gains.
     CN: "\u4E8F\u76C8\u4EA4\u66FF\uFF0C"
   - key: narrative_tm5_ln003
-    EN: 
+    EN: The shape changes.
     CN: "\u5706\u7F3A\u53D8\u8FC1\u3002"
   - key: narrative_tm5_ln004
-    EN: 
+    EN: for all eternity.
     CN: "\u4E98\u53E4\u4E0D\u53D8\u7684\uFF0C"
   - key: narrative_tm5_ln005
-    EN: 
+    EN: It's the night sky that guides.
     CN: "\u662F\u591C\u7A7A\u7684\u6307\u5F15\u3002"
   - key: narrative_tm5_ln006
-    EN: 
+    EN: A sudden lunar eclipse.
     CN: "\u7A81\u5982\u5176\u6765\u7684\u6708\u98DF\uFF0C"
   - key: narrative_tm5_ln007
-    EN: 
+    EN: Spread Chaos.
     CN: "\u6563\u64AD\u6DF7\u6C8C\u3002"
   - key: narrative_tm5_ln008
-    EN: 
+    EN: By the faintest of lights.
     CN: "\u501F\u7740\u5FAE\u5F31\u5149\u8F89\uFF0C"
   - key: narrative_tm5_ln009
-    EN: 
+    EN: You move forward in confusion.
     CN: "\u4F60\u5728\u8FF7\u60D8\u4E2D\u524D\u884C\u3002"
   - key: narrative_tm5_ln010
-    EN: 
+    EN: With reflection and summarization.
     CN: "\u7528\u53CD\u601D\u548C\u603B\u7ED3\uFF0C"
   - key: narrative_tm5_ln011
-    EN: 
+    EN: Let the order emerge.
     CN: "\u8BA9\u79E9\u5E8F\u6D6E\u73B0\u3002"
   - key: narrative_tm5_ln012
-    EN: 
+    EN: superficial disorder.
     CN: "\u8868\u9762\u7684\u65E0\u5E8F\uFF0C"
   - key: narrative_tm5_ln013
-    EN: 
+    EN: Hidden deeper rules.
     CN: "\u85CF\u7740\u66F4\u6DF1\u7684\u89C4\u5219\u3002"
   - key: narrative_tm5_ln014
-    EN: 
+    EN: In the midst of the twists and turns to realize that
     CN: "\u5728\u66F2\u6298\u4E2D\u9886\u609F\uFF0C"
   - key: narrative_tm5_ln015
-    EN: 
+    EN: Gain control again.
     CN: "\u83B7\u5F97\u518D\u6B21\u7684\u638C\u63A7\u3002"
   - key: narrative_tm6_ln001
-    EN: 
+    EN: The Light of Inspiration
     CN: "\u7075\u611F\u4E4B\u5149"
   - key: narrative_tm6_ln002
-    EN: 
+    EN: Electric lights are always used to represent <b>inspiration</b>.
     CN: "\u7535\u706F\u603B\u7528\u6765\u4EE3\u8868<b>\u7075\u611F</b>\u3002"
   - key: narrative_tm6_ln003
-    EN: 
+    EN: <b>Sparks</b> leapt in his brain.
     CN: "<b>\u706B\u82B1</b>\u5728\u8111\u4E2D\u8DC3\u52A8\uFF0C"
   - key: narrative_tm6_ln004
-    EN: 
+    EN: Gradually, the idea became clearer.
     CN: "\u601D\u8DEF\u9010\u6E10\u4FBF\u53D8\u5F97\u6E05\u6670\u3002"
   - key: narrative_tm6_ln005
-    EN: 
+    EN: Light <b>emerges</b>.
     CN: "\u5149\u660E<b>\u6D8C\u73B0</b>\uFF0C"
   - key: narrative_tm6_ln006
-    EN: 
+    EN: Produces a radiant imprint.
     CN: "\u4EA7\u751F\u7480\u74A8\u7684\u5370\u8BB0\u3002"
   - key: narrative_tm6_ln007
-    EN: 
+    EN: Excessive <b>raging</b>.
     CN: "\u8FC7\u5EA6\u7684<b>\u6C79\u6D8C</b>\uFF0C"
   - key: narrative_tm6_ln008
-    EN: 
+    EN: Makes you lose your way.
     CN: "\u8BA9\u4F60\u5931\u53BB\u4E86\u65B9\u5411\u3002"
   - key: narrative_tm6_ln009
-    EN: 
+    EN: True wisdom.
     CN: "\u771F\u6B63\u7684\u667A\u6167\uFF0C"
   - key: narrative_tm6_ln010
-    EN: 
+    EN: Retain <b>the right amount</b> of inspiration.
     CN: "\u5728\u4E8E\u4FDD\u7559<b>\u6070\u5982\u5176\u5206</b>\u7684\u7075\u611F\u3002"
   - key: narrative_tm6_ln011
-    EN: 
+    EN: Before the invention of the light bulb.
     CN: "\u5728\u53D1\u660E\u706F\u6CE1\u4EE5\u524D\uFF0C"
   - key: narrative_tm6_ln012
-    EN: 
+    EN: In those years of infinite darkness.
     CN: "\u5728\u90A3\u65E0\u8FB9\u9ED1\u6697\u7684\u5C81\u6708\u91CC\uFF0C"
   - key: narrative_tm6_ln013
-    EN: 
+    EN: Light is ever present in the heart.
     CN: "\u5149\u660E\u6C38\u9A7B\u4E8E\u5FC3\u95F4\u3002"
   - key: narrative_tm7_ln001
-    EN: 
+    EN: Landscape in a Pot
     CN: "\u76C6\u4E2D\u7684\u98CE\u666F"
   - key: narrative_tm7_ln002
-    EN: 
+    EN: Beauty comes from <b>harmony</b>.
     CN: "\u7F8E\u6765\u81EA\u4E8E<b>\u548C\u8C10</b>\u3002"
   - key: narrative_tm7_ln003
-    EN: 
+    EN: Remove visible protrusions.
     CN: "\u53BB\u6389\u53EF\u89C1\u7684\u7A81\u5140\uFF0C"
   - key: narrative_tm7_ln004
-    EN: 
+    EN: Preserve the beauty of nature.
     CN: "\u4FDD\u7559\u81EA\u7136\u7684\u7F8E\u597D\u3002"
   - key: narrative_tm7_ln005
-    EN: 
+    EN: Beauty comes from <b>balance</b>.
     CN: "\u7F8E\u6765\u81EA\u4E8E<b>\u5E73\u8861</b>\uFF0C"
   - key: narrative_tm7_ln006
-    EN: 
+    EN: Follow the growth of the trees.
     CN: "\u8DDF\u968F\u4E8E\u6811\u6728\u7684\u751F\u957F\uFF0C"
   - key: narrative_tm7_ln007
-    EN: 
+    EN: Feel dominated by nature.
     CN: "\u611F\u53D7\u81EA\u7136\u7684\u4E3B\u5BFC\u3002"
   - key: narrative_tm7_ln008
-    EN: 
+    EN: Unbound by the <b>rules</b>.
     CN: "\u4E0D\u53D7\u89C4\u5219\u7684<b>\u675F\u7F1A</b>\uFF0C"
   - key: narrative_tm7_ln009
-    EN: 
+    EN: Bonsai is the discovery of beauty.
     CN: "\u76C6\u666F\u662F\u5BF9\u7F8E\u7684\u53D1\u73B0\uFF0C"
   - key: narrative_tm7_ln010
-    EN: 
+    EN: Instead of creation.
     CN: "\u800C\u975E\u521B\u9020\u3002"
   - key: narrative_tm7_ln011
     EN: 
@@ -1157,43 +1157,43 @@ MonoBehaviour:
     EN: 
     CN: 
   - key: narrative_tm8_ln001
-    EN: 
+    EN: The Weight of the Crown
     CN: "\u738B\u51A0\u7684\u91CD\u91CF"
   - key: narrative_tm8_ln002
-    EN: 
+    EN: To wear crown,
     CN: "\u6B32\u6234\u5176\u51A0\uFF0C"
   - key: narrative_tm8_ln003
-    EN: 
+    EN: Must bear its <b>weight</b>.
     CN: "\u5FC5\u627F\u5176<b>\u91CD</b>\u3002"
   - key: narrative_tm8_ln004
-    EN: 
+    EN: The crown stands tall.
     CN: "\u738B\u51A0\u9AD8\u8038\uFF0C"
   - key: narrative_tm8_ln005
-    EN: 
+    EN: Symbolizing supreme power.
     CN: "\u8C61\u5F81\u81F3\u9AD8\u7684\u6743\u5229\uFF0C"
   - key: narrative_tm8_ln006
-    EN: 
+    EN: The wearer gradually loses sight.
     CN: "\u4F69\u6234\u8005\u9010\u6E10\u8FF7\u5931\u521D\u5FC3\uFF0C"
   - key: narrative_tm8_ln007
-    EN: 
+    EN: Until it fell <b>with a thud</b>.
     CN: "\u76F4\u5230\u5B83\u7830\u7136<b>\u843D\u4E0B</b>\u3002"
   - key: narrative_tm8_ln008
-    EN: 
+    EN: Poisons, conspiracies, wars.
     CN: "\u6BD2\u836F\u3001\u9634\u8C0B\u3001\u6218\u4E71\uFF0C"
   - key: narrative_tm8_ln009
-    EN: 
+    EN: Power undergones numerous tests.
     CN: "\u5730\u4F4D\u7ECF\u5386\u7740\u65E0\u6570\u7684\u8003\u9A8C\u3002"
   - key: narrative_tm8_ln010
-    EN: 
+    EN: The power keeps changing.
     CN: "\u6743\u529B\u4E0D\u505C\u5730\u66F4\u8FED\uFF0C"
   - key: narrative_tm8_ln011
-    EN: 
+    EN: The crown keeps changing hands.
     CN: "\u738B\u51A0\u4E0D\u65AD\u5730\u6613\u624B\u3002"
   - key: narrative_tm8_ln012
-    EN: 
+    EN: Move through the ups and downs.
     CN: "\u5728\u8D77\u4F0F\u4E2D\u524D\u8FDB\uFF0C"
   - key: narrative_tm8_ln013
-    EN: 
+    EN: The glory and honor became epic.
     CN: "\u5149\u8F89\u548C\u8363\u8000\u6210\u4E3A\u53F2\u8BD7\u4F20\u9882\u3002"
   - key: narrative_tm8_ln014
     EN: 
@@ -1202,49 +1202,49 @@ MonoBehaviour:
     EN: 
     CN: 
   - key: narrative_tm9_ln001
-    EN: 
+    EN: Charming colors
     CN: "\u8FF7\u4EBA\u7684\u8272\u5F69"
   - key: narrative_tm9_ln002
-    EN: 
+    EN: The flasks are colorful.
     CN: "\u70E7\u74F6\u8272\u5F69\u6591\u6593\u3002"
   - key: narrative_tm9_ln003
-    EN: 
+    EN: The experiment is full of unknowns.
     CN: "\u5B9E\u9A8C\u5145\u6EE1\u672A\u77E5\u3002"
   - key: narrative_tm9_ln004
-    EN: 
+    EN: Once you lose your patience.
     CN: "\u4E00\u65E6\u5931\u53BB\u8010\u5FC3\uFF0C"
   - key: narrative_tm9_ln005
-    EN: 
+    EN: BOOM!
     CN: "BOOM\uFF01"
   - key: narrative_tm9_ln006
-    EN: 
+    EN: ----------
     CN: ----------
   - key: narrative_tm9_ln007
-    EN: 
+    EN: 'Experimental Safety Code:'
     CN: "\u5B9E\u9A8C\u5B89\u5168\u5B88\u5219\uFF1A"
   - key: narrative_tm9_ln008
-    EN: 
+    EN: 1. Avoiding overdose
     CN: "1. \u907F\u514D\u8D85\u91CF"
   - key: narrative_tm9_ln009
-    EN: 
+    EN: 2. Handle with care
     CN: "2. \u8F7B\u62FF\u8F7B\u653E"
   - key: narrative_tm9_ln010
-    EN: 
+    EN: 3. Rejection of mixing
     CN: "3. \u62D2\u7EDD\u6DF7\u7528"
   - key: narrative_tm9_ln011
-    EN: 
+    EN: 4. Maintaining ventilation
     CN: "4. \u4FDD\u6301\u901A\u98CE"
   - key: narrative_tm9_ln012
-    EN: 
+    EN: ----------
     CN: ----------
   - key: narrative_tm9_ln013
-    EN: 
+    EN: The objectives get complex.
     CN: "\u76EE\u6807\u9010\u6E10\u590D\u6742\u3002"
   - key: narrative_tm9_ln014
-    EN: 
+    EN: It's time to go home.
     CN: "\u591C\u8272\u6E10\u6D53\uFF0C\u51C6\u5907\u56DE\u5BB6\u3002"
   - key: narrative_tm9_ln015
-    EN: 
+    EN: Overtime for the diamonds!
     CN: "\u4E3A\u4E86\u94BB\u77F3\uFF0C\u52A0\u73ED\uFF01"
   - key: prompt_tm1
     EN: Photo is created by Midjourney using the following prompt:<br>A realistic
@@ -1269,17 +1269,29 @@ MonoBehaviour:
       The atmosphere are clean and busy. The photo is taken in a 35mm lens, using
       Fujicolor Superia film. --ar 16:9"
   - key: prompt_tm11
-    EN: 
+    EN: Photo is created by Midjourney using the following prompt:<br>A realistic
+      photo of a top-down view desk in a video game company. There are a laptop and
+      a drawing in center. And an employee badge appears at the side. The atmosphere
+      are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia
+      film. --ar 16:9
     CN: "\u7167\u7247\u4F7F\u7528Midjounrey\u901A\u8FC7\u4EE5\u4E0B\u63D0\u793A\u8BED\u751F\u6210\uFF1A<br>A
       realistic photo of a flat three-leafed clover tile. The photo is taken in a
       35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
   - key: prompt_tm12
-    EN: 
+    EN: Photo is created by Midjourney using the following prompt:<br>A realistic
+      photo of a top-down view desk in a video game company. There are a laptop and
+      a drawing in center. And an employee badge appears at the side. The atmosphere
+      are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia
+      film. --ar 16:9
     CN: "\u7167\u7247\u4F7F\u7528Midjounrey\u901A\u8FC7\u4EE5\u4E0B\u63D0\u793A\u8BED\u751F\u6210\uFF1A<br>A
       realistic photo of a flat three-leafed clover tile. The photo is taken in a
       35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
   - key: prompt_tm13
-    EN: 
+    EN: Photo is created by Midjourney using the following prompt:<br>A realistic
+      photo of a top-down view desk in a video game company. There are a laptop and
+      a drawing in center. And an employee badge appears at the side. The atmosphere
+      are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia
+      film. --ar 16:9
     CN: "\u7167\u7247\u4F7F\u7528Midjounrey\u901A\u8FC7\u4EE5\u4E0B\u63D0\u793A\u8BED\u751F\u6210\uFF1A<br>A
       realistic photo of a flat three-leafed clover tile. The photo is taken in a
       35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
@@ -1374,13 +1386,13 @@ MonoBehaviour:
     EN: Badge
     CN: "\u5DE5\u724C"
   - key: themename_tm11
-    EN: 
+    EN: Clover
     CN: "\u4E09\u53F6\u8349"
   - key: themename_tm12
-    EN: 
+    EN: Skyscraper
     CN: "\u6469\u5929\u5927\u697C"
   - key: themename_tm13
-    EN: 
+    EN: Detective
     CN: "\u4FA6\u63A2"
   - key: themename_tm2
     EN: Coin
@@ -1440,214 +1452,216 @@ MonoBehaviour:
     EN: Afterwards, cells with a clock +1
     CN: "\u4E4B\u540E\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50+1"
   - key: tm10_goal_lv1001
-    EN: 
+    EN: Mark numbers passing the criterion
     CN: "\u6807\u8BB0\u6EE1\u8DB3\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1002
-    EN: 
+    EN: Mark numbers passing the criterion
     CN: "\u6807\u8BB0\u6EE1\u8DB3\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1003
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1004
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1005
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1006
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1007
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1008
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1009
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1010
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1011
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_goal_lv1012
-    EN: 
+    EN: Mark numbers passing ALL criterions
     CN: "\u6807\u8BB0\u540C\u65F6\u6EE1\u8DB3\u5168\u90E8\u8981\u6C42\u7684\u6570\u5B57"
   - key: tm10_rule1_lv1001
-    EN: 
+    EN: 'Criterions: '
     CN: "\u76EE\u6807\u6570\u5B57\u8981\u6C42\uFF1A"
   - key: tm10_rule2_lv1001
-    EN: 
+    EN: '#1 Different from adjacent cells'
     CN: "#1\u4E0E\u5341\u5B57\u76F8\u90BB\u6570\u5B57\u90FD\u4E0D\u540C"
   - key: tm10_rule3_lv1003
-    EN: 
+    EN: '#2 Same as at least one diagonally adjacent number'
     CN: "#2\u4E0E\u81F3\u5C11\u4E00\u4E2A\u5BF9\u89D2\u7EBF\u76F8\u90BB\u6570\u5B57\u76F8\u540C"
   - key: tm10_rule4_lv1006
-    EN: 
+    EN: '#3 Simultaneous parity with up and down or left and right numbers'
     CN: "#3\u4E0E\u4E0A\u4E0B\u6216\u5DE6\u53F3\u6570\u5B57\u5947\u5076\u540C\u65F6\u4E00\u81F4"
   - key: tm10_rule5_lv1008
-    EN: 
+    EN: '#4 Is not the largest or smallest number in its adjacent 3x3 zones'
     CN: "#4\u4E0E\u73AF\u5F62\u76F8\u90BB\u6570\u5B57\u76F8\u6BD4\u4E0D\u662F\u6700\u5927\u6216\u6700\u5C0F"
   - key: tm11_goal_lv1101
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1102
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1103
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1104
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1105
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1106
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1107
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1108
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1109
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1110
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1111
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_goal_lv1112
-    EN: 
+    EN: Find the lucky four-leaf clover
     CN: "\u627E\u5230\u5E78\u8FD0\u7684\u56DB\u53F6\u8349"
   - key: tm11_rule1_lv1101
-    EN: 
+    EN: Look carefully and pick the four-leaf clover
     CN: "\u7EC6\u5FC3\u89C2\u5BDF\uFF0C\u9009\u51FA\u56DB\u53F6\u8349"
   - key: tm11_rule2_lv1112
-    EN: 
+    EN: Patience is important
     CN: "\u8010\u5FC3\u4E5F\u5F88\u91CD\u8981"
   - key: tm12_goal_lv1201
-    EN: 
+    EN: Establish 2 buildings with 10+ population
     CN: "\u5EFA\u7ACB2\u4E2A10+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1202
-    EN: 
+    EN: Establish 1 building with 15+ population
     CN: "\u5EFA\u7ACB1\u4E2A15+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1203
-    EN: 
+    EN: Establish 2 buildings with 15+ population
     CN: "\u5EFA\u7ACB2\u4E2A15+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1204
-    EN: 
+    EN: Establish 3 buildings with 15+ population
     CN: "\u5EFA\u7ACB3\u4E2A15+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1205
-    EN: 
+    EN: Establish 4 buildings with 15+ population
     CN: "\u5EFA\u7ACB4\u4E2A15+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1206
-    EN: 
+    EN: Establish 1 building with 30+ population
     CN: "\u5EFA\u7ACB1\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1207
-    EN: 
+    EN: Establish 4 buildings with 30+ population
     CN: "\u5EFA\u7ACB4\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1208
-    EN: 
+    EN: Establish 2 buildings with 30+ population
     CN: "\u5EFA\u7ACB2\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1209
-    EN: 
+    EN: Have a total population of 90+
     CN: "\u8BA9\u603B\u4EBA\u53E3\u8FBE\u523090+"
   - key: tm12_goal_lv1210
-    EN: 
+    EN: Establish 4 buildings with 30+ population
     CN: "\u5EFA\u7ACB4\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1211
-    EN: 
+    EN: Have a total population of 100+
     CN: "\u8BA9\u603B\u4EBA\u53E3\u8FBE\u5230100+"
   - key: tm12_goal_lv1212
-    EN: 
+    EN: Have a total population of 150+
     CN: "\u8BA9\u603B\u4EBA\u53E3\u8FBE\u5230150+"
   - key: tm12_goal_lv1213
-    EN: 
+    EN: Establish 5 buildings with 30+ population
     CN: "\u5EFA\u7ACB5\u4E2A30+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_goal_lv1214
-    EN: 
+    EN: Establish 1 building with 100+ population
     CN: "\u5EFA\u7ACB1\u4E2A100+\u4EBA\u53E3\u7684\u5927\u697C"
   - key: tm12_rule1_lv1201
-    EN: 
+    EN: 'Skyscrapers: +2 population'
     CN: "\u6469\u5929\u5927\u697C\uFF1A+2\u4EBA\u53E3"
   - key: tm12_rule2_lv1202
-    EN: 
+    EN: 'Migration: if larger than an adjacent area'
     CN: "\u8FC1\u79FB\uFF1A\u5EFA\u6210\u540E\u4EBA\u53E3\u591A\u4E8E\u76F8\u90BB\u5730\u533A"
   - key: tm12_rule3_lv1202
-    EN: 
+    EN: ' move 3 population'
     CN: " \u5219\u4ECE\u76F8\u90BB\u5730\u533A\u518D\u8FC1\u79FB3\u4EBA\u53E3"
   - key: tm12_rule4_lv1206
-    EN: 
+    EN: 'Burst: if 2+ <b>Migration</b> are triggered'
     CN: "\u7206\u53D1\uFF1A\u82E5\u540C\u65F6\u89E6\u53D12+\u6B21\u4EBA\u53E3\u8FC1\u79FB"
   - key: tm12_rule5_lv1206
-    EN: 
+    EN: ' +5 population'
     CN: " \u5219\u989D\u5916+5\u4EBA\u53E3"
   - key: tm13_goal_case_solved
     EN: 'Case solved: '
     CN: "\u5DF2\u89E3\u51B3\u6848\u4EF6\u6570\uFF1A"
   - key: tm13_goal_lv1301
-    EN: 
+    EN: Of the suspects <sprite name=meeple_full>, identify the only murderer
     CN: "\u5728\u5ACC\u7591\u4EBA<sprite name=meeple_full> \u4E2D\uFF0C\u6307\u8BA4\u552F\u4E00\u7684\u51F6\u624B"
   - key: tm13_goal_lv1302
-    EN: 
+    EN: Of the suspects <sprite name=meeple_full>, identify the only murderer
     CN: "\u5728\u5ACC\u7591\u4EBA<sprite name=meeple_full> \u4E2D\uFF0C\u6307\u8BA4\u552F\u4E00\u7684\u51F6\u624B"
   - key: tm13_goal_lv1303
-    EN: 
+    EN: Of the suspects <sprite name=meeple_full>, identify the only murderer
     CN: "\u5728\u5ACC\u7591\u4EBA<sprite name=meeple_full> \u4E2D\uFF0C\u6307\u8BA4\u552F\u4E00\u7684\u51F6\u624B"
   - key: tm13_goal_lv1304
-    EN: 
+    EN: Of the suspects <sprite name=meeple_full>, identify the only murderer
     CN: "\u5728\u5ACC\u7591\u4EBA<sprite name=meeple_full> \u4E2D\uFF0C\u6307\u8BA4\u552F\u4E00\u7684\u51F6\u624B"
   - key: tm13_goal_lv1305
-    EN: 
+    EN: Of the suspects <sprite name=meeple_full>, identify the only murderer
     CN: "\u5728\u5ACC\u7591\u4EBA<sprite name=meeple_full> \u4E2D\uFF0C\u6307\u8BA4\u552F\u4E00\u7684\u51F6\u624B"
   - key: tm13_goal_lv1306
-    EN: 
+    EN: Of the suspects <sprite name=meeple_full>, identify the only murderer
     CN: "\u5728\u5ACC\u7591\u4EBA<sprite name=meeple_full> \u4E2D\uFF0C\u6307\u8BA4\u552F\u4E00\u7684\u51F6\u624B"
   - key: tm13_goal_lv1307
-    EN: 
+    EN: Of the suspects <sprite name=meeple_full>, identify the only murderer
     CN: "\u5728\u5ACC\u7591\u4EBA<sprite name=meeple_full> \u4E2D\uFF0C\u6307\u8BA4\u552F\u4E00\u7684\u51F6\u624B"
   - key: tm13_goal_lv1308
-    EN: 
+    EN: Of the suspects <sprite name=meeple_full>, identify the only murderer
     CN: "\u5728\u5ACC\u7591\u4EBA<sprite name=meeple_full> \u4E2D\uFF0C\u6307\u8BA4\u552F\u4E00\u7684\u51F6\u624B"
   - key: tm13_goal_lv1309
-    EN: 
+    EN: Identify all murderers<br>There is more than one murderer.
     CN: "\u6307\u8BA4\u5168\u90E8\u51F6\u624B<br>\u51F6\u624B\u4E0D\u6B621\u4EBA"
   - key: tm13_goal_lv1310
-    EN: 
+    EN: Identify all murderers<br>There is more than one murderer.
     CN: "\u6307\u8BA4\u5168\u90E8\u51F6\u624B<br>\u51F6\u624B\u4E0D\u6B621\u4EBA"
   - key: tm13_goal_lv1311
-    EN: 
+    EN: Solve 2 consective cases
     CN: "\u8FDE\u7EED\u6210\u529F2\u4E2A\u6848\u4EF6"
   - key: tm13_goal_lv1312
-    EN: 
+    EN: Solve 2 consective cases<br>There is more than one murderer.
     CN: "\u8FDE\u7EED\u6210\u529F2\u4E2A\u6848\u4EF6<br>\u51F6\u624B\u4E0D\u6B621\u4EBA"
   - key: tm13_goal_lv1313
-    EN: 
+    EN: Solve as many cases as you can<br>There <b>might</b> be more than one murderer.
     CN: "\u65E0\u9650\u6B21\u89E3\u51B3\u6848\u4EF6<br>\u51F6\u624B<b>\u53EF\u80FD</b>\u4E0D\u6B621\u4EBA"
   - key: tm13_rule1_lv1301
-    EN: 
+    EN: Question witnesss in a row <sprite name=meeple_blank>
     CN: "\u8D28\u8BE2\u67D0\u4E00\u884C\u7684\u76EE\u51FB\u8005<sprite name=meeple_blank>"
   - key: tm13_rule2_lv1301
-    EN: 
+    EN: '<sprite name=sign_complete> Matched: murderer appears in correct columns'
     CN: " <sprite name=sign_complete> \u5339\u914D\uFF1A\u51F6\u624B\u51FA\u73B0\u5728\u6B63\u786E\u7684\u5217"
   - key: tm13_rule2_lv1309
-    EN: 
+    EN: '<sprite name=sign_complete> Matched: murderer appears in correct columns'
     CN: " <sprite name=sign_complete> \u5339\u914D\uFF1A\u6709\u51F6\u624B\u51FA\u73B0\u5728\u6B63\u786E\u7684\u5217"
   - key: tm13_rule3_lv1301
-    EN: 
+    EN: '<sprite name=sign_unknown> Suspicious: the murderer appears but in wrong
+      column'
     CN: " <sprite name=sign_unknown> \u53EF\u7591\uFF1A\u51F6\u624B\u51FA\u73B0\u5728\u9519\u8BEF\u7684\u5217"
   - key: tm13_rule3_lv1309
-    EN: 
+    EN: '<sprite name=sign_unknown> Suspicious: the murderer appears but in wrong
+      column'
     CN: " <sprite name=sign_unknown> \u53EF\u7591\uFF1A\u6709\u51F6\u624B\u51FA\u73B0\u4F46\u90FD\u5728\u9519\u8BEF\u7684\u5217"
   - key: tm13_rule4_lv1301
-    EN: 
+    EN: '<sprite name=rule_sign_deletion> Excluded: no murderer present'
     CN: " <sprite name=rule_sign_deletion> \u6392\u9664\uFF1A\u6CA1\u6709\u51F6\u624B\u51FA\u73B0"
   - key: tm13_suspect
     EN: Suspect
@@ -1710,392 +1724,392 @@ MonoBehaviour:
     EN: After play, toss the coin
     CN: "\u6253\u51FA\u540E\u6295\u63B7\u786C\u5E01"
   - key: tm4_goal_lv401
-    EN: 
+    EN: Set 1 cell to 1
     CN: "\u8BA91\u4E2A\u683C\u5B50\u4E3A1"
   - key: tm4_goal_lv402
-    EN: 
+    EN: Set 2 cells to 2
     CN: "\u8BA92\u4E2A\u683C\u5B50\u4E3A2"
   - key: tm4_goal_lv403
-    EN: 
+    EN: Set 5 cells to 5
     CN: "\u8BA95\u4E2A\u683C\u5B50\u4E3A5"
   - key: tm4_goal_lv404
-    EN: 
+    EN: Set ALL cells to 6
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A6"
   - key: tm4_goal_lv405
-    EN: 
+    EN: Set all cells to SAME numbers
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6570\u5B57\u76F8\u540C"
   - key: tm4_goal_lv406
-    EN: 
+    EN: Set ALL cells to 7
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: tm4_goal_lv407
-    EN: 
+    EN: Set ALL cells to 7
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: tm4_goal_lv408
-    EN: 
+    EN: Set ALL cells to 7
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: tm4_goal_lv409
-    EN: 
+    EN: Set ALL cells to 7
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: tm4_goal_lv410
-    EN: 
+    EN: Set ALL cells to Sushi or Onigiri
     CN: "\u8BA9\u6BCF\u4E2A\u683C\u5B50\u90FD\u53D8\u6210\u5BFF\u53F8\u6216\u996D\u56E2"
   - key: tm4_goal_lv411
-    EN: 
+    EN: Set total number to 18, <br>when there is one of each food type.
     CN: "\u523A\u8EAB\u3001\u7C73\u996D\u3001\u5BFF\u53F8\u3001\u996D\u56E2\u5404\u4E00\u4E2A\u65F6\uFF0C\u6570\u5B57\u603B\u548C\u4E3A18"
   - key: tm4_goal_lv412
-    EN: 
+    EN: Set total number to 36, <br>when all cells are Sashimi or Sushi.
     CN: "\u6BCF\u4E2A\u683C\u5B50\u662F\u523A\u8EAB\u6216\u5BFF\u53F8\u7684\u60C5\u51B5\u4E0B\uFF0C\u6570\u5B57\u603B\u548C\u4E3A36"
   - key: tm4_goal_lv413
-    EN: 
+    EN: Set total number to 36, <br>when all cells are Onigiri or Rice.
     CN: "\u5728\u6BCF\u4E2A\u683C\u5B50\u90FD\u662F\u7C73\u996D\u6216\u996D\u56E2\u7684\u60C5\u51B5\u4E0B\uFF0C\u8BA9\u6570\u5B57\u603B\u548C\u4E3A36"
   - key: tm4_goal_lv414
-    EN: 
+    EN: Set all cells to UNIQUE numbers
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u90FD\u4E3A\u4E0D\u540C\u503C"
   - key: tm4_rule1_lv401
-    EN: 
+    EN: 'Fish: +3'
     CN: "\u9C7C\uFF1A+3"
   - key: tm4_rule2_lv404
-    EN: 
+    EN: 'Rice: -3'
     CN: "\u7C73\uFF1A-3"
   - key: tm4_rule3_lv406
-    EN: 
-    CN: "\u7C73+\u9C7C\uFF1A \u5BFF\u53F8\uFF08=7\uFF09"
+    EN: 'Rice<<Fish: Sushi (=7)'
+    CN: "\u7C73<<\u9C7C\uFF1A \u5BFF\u53F8\uFF08=7\uFF09"
   - key: tm4_rule4_lv410
-    EN: 
-    CN: "\u9C7C+\u7C73\uFF1A \u996D\u56E2\uFF08=2\uFF09"
+    EN: 'Fish<<Rice: Onigiri (=2)'
+    CN: "\u9C7C<<\u7C73\uFF1A \u996D\u56E2\uFF08=2\uFF09"
   - key: tm4_rule5_lv404
-    EN: 
+    EN: Fish and Rice appear alternately
     CN: "\u9C7C\u548C\u7C73\u4EA4\u66FF\u51FA\u73B0"
   - key: tm5_goal_lv501
-    EN: 
+    EN: Set ALL cells to 7
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A7"
   - key: tm5_goal_lv502
-    EN: 
+    EN: Set all cells to SAME numbers
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
   - key: tm5_goal_lv503
-    EN: 
+    EN: Set all cells to SAME numbers
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
   - key: tm5_goal_lv504
-    EN: 
+    EN: Set all cells to SAME numbers
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u6210\u4E3A\u76F8\u540C\u6570\u5B57"
   - key: tm5_goal_lv505
-    EN: 
+    EN: Trigger Eclipses twice
     CN: "\u89E6\u53D12\u6B21\u6708\u98DF"
   - key: tm5_goal_lv506
-    EN: 
+    EN: Trigger Eclipses 3 times
     CN: "\u89E6\u53D13\u6B21\u6708\u98DF"
   - key: tm5_goal_lv507
-    EN: 
+    EN: Set total number to 10-
     CN: "\u8BA9\u6570\u5B57\u603B\u548C\u4E0B\u964D\u81F310\u4EE5\u4E0B"
   - key: tm5_goal_lv508
-    EN: 
+    EN: Set all cells to EVEN
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A\u5076\u6570"
   - key: tm5_goal_lv509
-    EN: 
+    EN: Set total number to 10-
     CN: "\u8BA9\u6570\u5B57\u603B\u548C\u4E0B\u964D\u81F310\u4EE5\u4E0B"
   - key: tm5_goal_lv510
-    EN: 
+    EN: Set the left column cells to 0
     CN: "\u8BA9\u5DE6\u4FA7\u4E00\u5217\u683C\u5B50\u4E3A0"
   - key: tm5_goal_lv511
-    EN: 
+    EN: Set the left column cells to 0, <br>and the right column cells to 2
     CN: "\u8BA9\u5DE6\u4FA7\u4E00\u5217\u683C\u5B50\u4E3A0\uFF0C<br>\u53F3\u4FA7\u4E00\u5217\u683C\u5B50\u4E3A2"
   - key: tm5_goal_lv512
-    EN: 
+    EN: Return all cells to its initial numbers right after Eclipse
     CN: "\u6708\u98DF\u65F6\uFF0C\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5F52\u521D\u503C"
   - key: tm5_goal_lv513
-    EN: 
+    EN: Return all grids to their initial numbers.
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5F52\u521D\u503C"
   - key: tm5_goal_lv514
-    EN: 
+    EN: Return all cells to its initial numbers right after Eclipse
     CN: "\u6708\u98DF\u65F6\uFF0C\u8BA9\u6240\u6709\u683C\u5B50\u56DE\u5F52\u521D\u503C"
   - key: tm5_rule1_lv501
-    EN: 
+    EN: 'Crescent: +1'
     CN: "\u65B0\u6708\uFF1A+1"
   - key: tm5_rule2_lv501
-    EN: 
+    EN: 'Quarter: +1'
     CN: "\u5F26\u6708\uFF1A+3"
   - key: tm5_rule3_lv502
-    EN: 
+    EN: 'Full Moon: +5'
     CN: "\u6EE1\u6708\uFF1A+5"
   - key: tm5_rule4_lv505
-    EN: 
-    CN: "9+\u6EE1\u6708\uFF1A\u6708\u98DF\uFF01"
+    EN: '9<<Full Moon: Eclipse!'
+    CN: "9<<\u6EE1\u6708\uFF1A\u6708\u98DF\uFF01"
   - key: tm5_rule5_lv503
-    EN: 
+    EN: 'Over 9: Sun rises, lose.'
     CN: "\u8D85\u8FC79\uFF1A\u592A\u9633\u5347\u8D77\uFF0C\u6E38\u620F\u5931\u8D25"
   - key: tm6_goal_lv601
-    EN: 
+    EN: Light up 1 lightbulb
     CN: "\u70B9\u4EAE1\u76CF\u706F\u6CE1"
   - key: tm6_goal_lv602
-    EN: 
+    EN: Light up 5 lightbulbs
     CN: "\u70B9\u4EAE5\u76CF\u706F\u6CE1"
   - key: tm6_goal_lv603
-    EN: 
+    EN: Light up ALL lightbulbs
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: tm6_goal_lv604
-    EN: 
+    EN: Light up ALL lightbulbs
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: tm6_goal_lv605
-    EN: 
+    EN: Light up ALL lightbulbs
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: tm6_goal_lv606
-    EN: 
+    EN: Light up ALL lightbulbs
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: tm6_goal_lv607
-    EN: 
+    EN: Light up ALL lightbulbs
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: tm6_goal_lv608
-    EN: 
+    EN: Light up 6 lightbulbs
     CN: "\u70B9\u4EAE6\u76CF\u706F\u6CE1"
   - key: tm6_goal_lv609
-    EN: 
+    EN: Light up 6 lightbulbs
     CN: "\u70B9\u4EAE6\u76CF\u706F\u6CE1"
   - key: tm6_goal_lv610
-    EN: 
+    EN: Light up 3 lightbulbs within 1 move
     CN: "\u4E00\u6B21\u5C063\u76CF\u7184\u706D\u7684\u706F\u6CE1\u70B9\u4EAE"
   - key: tm6_goal_lv611
-    EN: 
+    EN: Light up 4 lightbulbs within 1 move
     CN: "\u4E00\u6B21\u5C064\u76CF\u7184\u706D\u7684\u706F\u6CE1\u70B9\u4EAE"
   - key: tm6_goal_lv612
-    EN: 
+    EN: Use all lightbulbs,<br>while keep number lit between 4-6
     CN: "\u7528\u6389\u6240\u6709\u706F\u6CE1\uFF0C<br>\u4FDD\u6301\u70B9\u4EAE\u7684\u706F\u6570\u91CF\u57284-6\u4E4B\u95F4"
   - key: tm6_goal_lv613
-    EN: 
+    EN: Light up ALL lightbulbs
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: tm6_goal_lv614
-    EN: 
+    EN: Light up 8 lightbulbs within 1 move
     CN: "\u4E00\u6B21\u5C068\u76CF\u7184\u706D\u7684\u706F\u6CE1\u70B9\u4EAE"
   - key: tm6_goal_lv615
-    EN: 
+    EN: Light up ALL lightbulbs
     CN: "\u70B9\u4EAE\u5168\u90E8\u706F\u6CE1"
   - key: tm6_rule1_lv601
-    EN: 
+    EN: 'Play: +1'
     CN: "\u6253\u51FA\uFF1A+1"
   - key: tm6_rule1_lv605
-    EN: 
+    EN: 'Play: +1 on cross-shape cells'
     CN: "\u6253\u51FA\uFF1A\u5341\u5B57\u533A\u57DF+1"
   - key: tm6_rule2_lv601
-    EN: 
+    EN: Light up the lightbulb
     CN: "\u4E0E\u4E24\u4E2A\u6216\u4EE5\u4E0A\u7684\u76F8\u540C\u6570\u5B57\u76F8\u90BB"
   - key: tm6_rule3_lv601
-    EN: 
+    EN: ' if is adjacent to 2+ of the same number'
     CN: " \u5219\u70B9\u4EAE\u683C\u5B50"
   - key: tm7_goal_lv701
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv702
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv703
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv704
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv705
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv706
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv707
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv708
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv709
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv710
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv711
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv712
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv713
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv714
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv715
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv716
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv717
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv718
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv719
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_goal_lv720
-    EN: 
+    EN: Create the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u76C6\u666F"
   - key: tm7_rule1_lv701
-    EN: 
+    EN: 'Play: Remove the number in the cell'
     CN: "\u6253\u51FA\uFF1A\u79FB\u9664\u683C\u5B50\u5185\u7684\u6570\u5B57"
   - key: tm7_rule2_lv701
-    EN: 
+    EN: Discover the rules of beauty
     CN: "\u901A\u8FC7\u5C1D\u8BD5\uFF0C\u53D1\u73B0\u7F8E\u7684\u89C4\u5219"
   - key: tm7_rule2_lv719
-    EN: 
+    EN: Creating the most beautiful Bonsai
     CN: "\u521B\u9020\u6700\u7F8E\u7684\u76C6\u666F"
   - key: tm7_rule3_lv702
-    EN: 
+    EN: "Harmony:  \u2588 \u2588 \u2588 numbers"
     CN: "\u548C\u8C10\uFF1A \u2588 \u2588 \u2588 \u6570\u5B57"
   - key: tm7_rule3_lv703
-    EN: 
+    EN: "Harmony: Remove \u2588 \u2588 numbers"
     CN: "\u548C\u8C10\uFF1A\u79FB\u9664 \u2588 \u2588 \u6570\u5B57"
   - key: tm7_rule3_lv704
-    EN: 
+    EN: "Harmony: Remove \u2588 distinctive numbers"
     CN: "\u548C\u8C10\uFF1A\u79FB\u9664 \u2588 \u4E0D\u540C\u7684\u6570\u5B57"
   - key: tm7_rule3_lv705
-    EN: 
+    EN: 'Harmony: Remove the most distinctive numbers'
     CN: "\u548C\u8C10\uFF1A\u79FB\u9664\u4E0E\u4F17\u4E0D\u540C\u7684\u6570\u5B57"
   - key: tm7_rule4_lv703
-    EN: 
+    EN: "(Equal, \u2588, \u2588, \u2588, \u2588)"
     CN: "\uFF08\u76F8\u7B49\u3001 \u2588 \uFF09"
   - key: tm7_rule4_lv705
-    EN: 
+    EN: "(Equal, Parity, \u2588, \u2588, \u2588)"
     CN: "\uFF08\u76F8\u7B49\u3001\u5947\u5076\u3001 \u2588 \uFF09"
   - key: tm7_rule4_lv707
-    EN: 
+    EN: "(Equal, Parity, Prime, \u2588, \u2588)"
     CN: "\uFF08\u76F8\u7B49\u3001\u5947\u5076\u3001\u8D28\u6570\u3001 \u2588 \uFF09"
   - key: tm7_rule4_lv709
-    EN: 
+    EN: "(Equal, Parity, Prime, Pair, \u2588)"
     CN: "\uFF08\u76F8\u7B49\u3001\u5947\u5076\u3001\u8D28\u6570\u3001\u6210\u5BF9\u3001
       \u2588 \uFF09"
   - key: tm7_rule4_lv711
-    EN: 
+    EN: (Equal, Parity, Prime, Pair, Unique)
     CN: "\uFF08\u76F8\u7B49\u3001\u5947\u5076\u3001\u8D28\u6570\u3001\u6210\u5BF9\u3001\u4E0D\u540C\uFF09"
   - key: tm7_rule5_lv716
-    EN: 
+    EN: "Balance: \u2588 \u2588 are equal"
     CN: "\u5E73\u8861\uFF1A \u2588 \u2588 \u76F8\u7B49"
   - key: tm7_rule5_lv717
-    EN: 
+    EN: "Balance: the sum \u2588 are equal"
     CN: "\u5E73\u8861\uFF1A \u2588 \u603B\u548C\u76F8\u7B49"
   - key: tm7_rule5_lv718
-    EN: 
+    EN: 'Balance: the sum of each branch are equal'
     CN: "\u5E73\u8861\uFF1A\u5404\u679D\u5E72\u603B\u548C\u76F8\u7B49"
   - key: tm8_goal_lv801
-    EN: 
+    EN: Set 2 cells to 9
     CN: "\u8BA92\u4E2A\u683C\u5B50\u4E3A9"
   - key: tm8_goal_lv802
-    EN: 
+    EN: Set all cells to 9
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A9"
   - key: tm8_goal_lv803
-    EN: 
+    EN: Set all cells to 9
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A9"
   - key: tm8_goal_lv804
-    EN: 
+    EN: Set 4 cells to 9
     CN: "\u8BA94\u4E2A\u683C\u5B50\u4E3A9"
   - key: tm8_goal_lv805
-    EN: 
+    EN: Set 6 cells to 9
     CN: "\u8BA96\u4E2A\u683C\u5B50\u4E3A9"
   - key: tm8_goal_lv806
-    EN: 
-    CN: "\u540C\u65F6\u67096\u4E2A\u738B\u51A0\u5728\u573A"
+    EN: Has 6 Crowns present
+    CN: "\u67096\u4E2A\u738B\u51A0\u5728\u573A"
   - key: tm8_goal_lv807
-    EN: 
+    EN: Has 4 Crowns present
     CN: "4\u4E2A\u738B\u51A0\u540C\u65F6\u5728\u573A"
   - key: tm8_goal_lv808
-    EN: 
+    EN: Has 6 Crowns present
     CN: "6\u4E2A\u738B\u51A0\u540C\u65F6\u5728\u573A"
   - key: tm8_goal_lv809
-    EN: 
+    EN: Capture Crown 5 times
     CN: "\u593A\u53D65\u6B21\u738B\u51A0"
   - key: tm8_goal_lv810
-    EN: 
+    EN: Capture Crown 9 times
     CN: "\u593A\u53D69\u6B21\u738B\u51A0"
   - key: tm8_goal_lv811
-    EN: 
+    EN: Set all cells to 6+
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A6\u53CA\u4EE5\u4E0A"
   - key: tm8_goal_lv812
-    EN: 
+    EN: Has 9 Crowns present
     CN: "9\u4E2A\u738B\u51A0\u540C\u65F6\u5728\u573A"
   - key: tm8_rule1_lv801
-    EN: 
+    EN: 'Play: +3'
     CN: "\u6253\u51FA\uFF1A+3"
   - key: tm8_rule1_lv803
-    EN: 
+    EN: 'Play: +3 and crowned'
     CN: "\u6253\u51FA\uFF1A+3\uFF0C\u5E76\u52A0\u5195"
   - key: tm8_rule2_lv803
-    EN: 
+    EN: Crown falls and cell set to 0
     CN: "\u52A0\u5195\u540E\u6BD4\u4EFB\u610F\u76F8\u90BB\u9886\u571F\u5C0F"
   - key: tm8_rule3_lv803
-    EN: 
+    EN: ' if cell is smaller than any adjacent territory'
     CN: " \u5219\u52A0\u5195\u5931\u8D25\uFF1A=0"
   - key: tm8_rule4_lv807
-    EN: 
+    EN: Capture Crown(s) from adjacent territories
     CN: "\u52A0\u5195\u540E\u6BD4\u76F8\u90BB\u9886\u571F\u5927"
   - key: tm8_rule5_lv807
-    EN: 
+    EN: ' if cell is larger than the adjacent territory'
     CN: " \u5219\u76F8\u90BB\u9886\u571F\u738B\u51A0\u88AB\u593A\u53D6\uFF1A-2"
   - key: tm9_goal_lv901
-    EN: 
+    EN: Set all cells to 10
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A10"
   - key: tm9_goal_lv902
-    EN: 
+    EN: Set 1 cell to 1000+ ml
     CN: "\u8BA91\u4E2A\u683C\u5B50\u4E3A1000ml\u53CA\u4EE5\u4E0A"
   - key: tm9_goal_lv903
-    EN: 
+    EN: Set all cells to 900+ ml
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A900ml\u53CA\u4EE5\u4E0A"
   - key: tm9_goal_lv904
-    EN: 
+    EN: Set all cells to 910+ ml
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A910ml\u53CA\u4EE5\u4E0A"
   - key: tm9_goal_lv905
-    EN: 
+    EN: Set all cells to 920+ ml
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A920ml\u53CA\u4EE5\u4E0A"
   - key: tm9_goal_lv906
-    EN: 
+    EN: Set all cells to 930+ ml
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A930ml\u53CA\u4EE5\u4E0A"
   - key: tm9_goal_lv907
-    EN: 
+    EN: Set all cells to 940+ ml
     CN: "\u8BA9\u6240\u6709\u683C\u5B50\u4E3A940ml\u53CA\u4EE5\u4E0A"
   - key: tm9_goal_lv908
-    EN: 
+    EN: Set 1 all DIGITS to unique
     CN: "\u5404\u4F4D\u7684\u6570\u5B57\u90FD\u4E0D\u540C"
   - key: tm9_goal_lv909
-    EN: 
+    EN: Has 0~9 presents on digits
     CN: "\u5404\u4F4D\u6570\u5B57\u4E2D0~9\u540C\u65F6\u51FA\u73B0"
   - key: tm9_goal_lv910
-    EN: 
+    EN: Use up reagents
     CN: "\u7528\u5B8C\u5168\u90E8\u8BD5\u5242"
   - key: tm9_goal_lv911
-    EN: 
+    EN: Has only ODD numbers present on digits
     CN: "\u5404\u4F4D\u6570\u5B57\u4E2D\u53EA\u6709\u5947\u6570"
   - key: tm9_goal_lv912
-    EN: 
+    EN: Use up reagents
     CN: "\u7528\u5B8C\u5168\u90E8\u8BD5\u5242"
   - key: tm9_rule1_lv901
-    EN: 
+    EN: 'Play: +1'
     CN: "\u6253\u51FA\uFF1A+1"
   - key: tm9_rule1_lv902
-    EN: 
+    EN: 'Hold: Pour (increase accelerates)'
     CN: "\u6309\u4F4F\uFF1A\u503E\u5012\uFF08\u6570\u5B57\u52A0\u901F\u589E\u52A0\uFF09"
   - key: tm9_rule1_lv903
-    EN: 
+    EN: 'Hold: Pour (increase accelerates)'
     CN: "\u6309\u4F4F\uFF1A\u503E\u5012\uFF08\u9700\u4FDD\u8BC1\u5B89\u5168\uFF09"
   - key: tm9_rule2_lv903
-    EN: 
+    EN: 'Explosion: number is over 999'
     CN: "\u7206\u70B8\uFF1A\u683C\u5B50\u8D85\u8FC7999"
   - key: tm9_rule3_lv904
-    EN: 
+    EN: 'Explosion: average of all digits over 7'
     CN: "\u7206\u70B8\uFF1A\u6570\u5B57\u5747\u503C\u5927\u4E8E7"
   - key: tm9_rule4_lv905
-    EN: 
+    EN: 'Explosion: Hundred digit is 7'
     CN: "\u7206\u70B8\uFF1A\u767E\u4F4D\u6570\u5B57\u4E3A7"
   - key: tm9_rule5_lv906
-    EN: 
+    EN: 'Explosion: Same number repeats 3+ times on digits'
     CN: "\u7206\u70B8\uFF1A\u67093\u4E2A\u4EE5\u4E0A\u76F8\u540C\u6570\u5B57"
   - key: tool_name_theme13_status0
     EN: Inquire <size=70%>or</size> Identify
@@ -2149,19 +2163,19 @@ MonoBehaviour:
     EN: <sprite name=currency_gem> Gems
     CN: "<sprite name=currency_gem> \u5B9D\u77F3"
   - key: ui_goal_current_avg
-    EN: 'Current Average: '
+    EN: 'Digits average: '
     CN: "\u5F53\u524D\u6570\u5B57\u5747\u503C\uFF1A"
   - key: ui_goal_current_crown_present
-    EN: 
+    EN: 'Crown present:'
     CN: "\u5728\u573A\u738B\u51A0\uFF1A"
   - key: ui_goal_current_crown_taken
-    EN: 
+    EN: 'Crown captured:'
     CN: "\u5DF2\u593A\u53D6\u738B\u51A0\uFF1A"
   - key: ui_goal_current_repeat3
-    EN: Repeating 3 times
+    EN: 'Numbers repeating 3 times on digits:'
     CN: "\u51FA\u73B03\u6B21\u7684\u6570\u5B57\uFF1A"
   - key: ui_goal_current_sum
-    EN: 'Current Sum: '
+    EN: 'Current sum: '
     CN: "\u5F53\u524D\u6570\u5B57\u4E4B\u548C\uFF1A"
   - key: ui_goal_missing_digits
     EN: 'Missing:'
@@ -2224,10 +2238,10 @@ MonoBehaviour:
     EN: Rules
     CN: "\u89C4\u5219"
   - key: ui_setting_music
-    EN: Music
+    EN: Music Vol.
     CN: "\u97F3\u4E50"
   - key: ui_setting_sound
-    EN: Sound
+    EN: Effect Vol.
     CN: "\u97F3\u6548"
   - key: ui_setting_title
     EN: Settings
@@ -2258,13 +2272,13 @@ MonoBehaviour:
     EN: <b>Badge</b> leads to success.
     CN: "<b>\u5DE5\u724C</b>\u901A\u5411\u6210\u529F\u3002"
   - key: unlocked_tm11
-    EN: 
+    EN: Lucky <b>Clover</b>.
     CN: "\u5E78\u8FD0\u7684<b>\u56DB\u53F6\u8349</b>\u3002"
   - key: unlocked_tm12
-    EN: 
+    EN: <b>Skyscraper</b> draws a crowd.
     CN: "<b>\u5927\u697C</b>\u5438\u5F15\u4EBA\u7FA4\u3002"
   - key: unlocked_tm13
-    EN: 
+    EN: <b>Detectives</b> spares no details.
     CN: "<b>\u4FA6\u63A2</b>\u660E\u5BDF\u79CB\u6BEB\u3002"
   - key: unlocked_tm2
     EN: <b>Coin</b> determine fates.

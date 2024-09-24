@@ -1,14 +1,14 @@
 UID,Key,EN,CN
 1,answer_tm7_lv701,,
-2,answer_tm7_lv702,,揭秘：让数字全相等
+2,answer_tm7_lv702,Hint: equal numbers,揭秘：让数字全相等
 3,answer_tm7_lv703,,
-4,answer_tm7_lv704,,揭秘：让奇偶性一致
+4,answer_tm7_lv704,Hint: parity consistent,揭秘：让奇偶性一致
 5,answer_tm7_lv705,,
-6,answer_tm7_lv706,,揭秘：保留全部质数
+6,answer_tm7_lv706,Hint: prime numbers,揭秘：保留全部质数
 7,answer_tm7_lv707,,
-8,answer_tm7_lv708,,揭秘：让数字成对
+8,answer_tm7_lv708,Hint: numbers in pair,揭秘：让数字成对
 9,answer_tm7_lv709,,
-10,answer_tm7_lv710,,揭秘：让数字都不同
+10,answer_tm7_lv710,Hint: unique numbers,揭秘：让数字都不同
 11,answer_tm7_lv711,,
 12,answer_tm7_lv712,,
 13,answer_tm7_lv713,,
@@ -33,9 +33,9 @@ UID,Key,EN,CN
 32,date_tm9,2024/03/24,2024/03/24
 33,hint_tm1,"Friday night, you finally go back to the bedroom. Warm lights, cozy bed. Slipping under the covers, turning on the music. Light up the screen, vibrant worlds spill out. The world pauses in this moment. Only a <b>[object]</b> moves tirelessly, tick-tock, tick-tock.",周五晚上，终于回到了卧室。温馨的灯光，温暖的床铺。钻进被窝，打开音响，一切都停滞在此刻。只有<b>[物件]</b>不知疲倦的前进着，滴答、滴答。打开手机，缤纷的世界溢出屏幕。
 34,hint_tm10,It unlocks the gates to success.,它用来开门，通向成功的大门。
-35,hint_tm11,,它是特别的幸运。
-36,hint_tm12,,它矗立的在城市的中心。
-37,hint_tm13,,它不放过任何细枝末节。
+35,hint_tm11,It's extraordinarily lucky.,它是特别的幸运。
+36,hint_tm12,It stands in the center of the city.,它矗立的在城市的中心。
+37,hint_tm13,It doesn't leave any loose ends unturned.,它不放过任何细枝末节。
 38,hint_tm2,"Stepping into a history museum, exhibits speak of the rise and fall of empires. None is eternal through history. Sculptures, paintings, porcelain, <b>[objects]</b>, all exude an aura of the past worlds. You can't help but wonder: did people of the past also toss <b>[objects]</b> into the air, seeking the gods' counsel with flips?",走进历史博物馆，陈列的展品诉说着一个又一个帝国的兴衰。在历史面前，没有什么是永恒是不会腐坏的。雕塑、绘画、瓷器、<b>[物件]</b>，一切都弥散着不属于现代世界的气味。不禁好奇：过去的人也会将<b>[物件]</b>抛在空中用一次次的翻转询问神明的意见吗？
 39,hint_tm4,"Though simple, it exudes elegance.",它虽然简约，却愈显得精致。
 40,hint_tm5,"It's ever-changing, yet always returns.",它不停变化，却总会回到熟悉的样子。
@@ -206,9 +206,9 @@ UID,Key,EN,CN
 205,levelname_lv1313,013/013,013/013
 206,locked_tm1,█ █ never stops.,█ █ 永不停歇。
 207,locked_tm10,█ █ leads to success.,█ █ 通向成功。
-208,locked_tm11,,幸运的 █ █ 。
-209,locked_tm12,,█ █ 吸引人群。
-210,locked_tm13,,█ █ 明察秋毫。
+208,locked_tm11,Lucky █ █ .,幸运的 █ █ 。
+209,locked_tm12,█ █ attracts crowds.,█ █ 吸引人群。
+210,locked_tm13,█ █ spares no details.,█ █ 明察秋毫。
 211,locked_tm2,█ █ determine fates.,█ █ 决定命运。
 212,locked_tm4,simple and elegant █ █ .,█ █ 简约又精致。
 213,locked_tm5,Does █ █ have a cycle?,█ █ 有无规律？
@@ -217,17 +217,17 @@ UID,Key,EN,CN
 216,locked_tm8,"█ █ , the heavier, the better.",█ █ 越重越好。
 217,locked_tm9,Colorful █ █ .,色彩斑斓的 █ █ 。
 218,manifesto_tm1,"The clock is the first theme, its design predate even before the project set its title, Numbers of Everything. From a certain perspective, it is the very starting point of the entire project.<br><br>Staying up late for social media is a superficial appreciation of time, yet it is a frantic waste of time. The Clock aims to express the individual's powerlessness in the face of the passage of time through this scenario.",时钟是第一个主题，它的制作与设计比游戏名“万物之数“还要再早一些。换句话说，它是整个游戏项目真正的起点。<br><br>熬夜却无所事事是一种表面上珍惜时间，却又慌乱地浪费了时间的行为。时钟主题想通过这个情景来表达个体在时光流逝面前的无力。
-219,manifesto_tm10,,这个主题诞生于我对全职工作产生严重倦怠的时期。尽管身处大公司，享有高薪、良好的福利和社会的认可，并拥有光明的前途，但在情绪的笼罩下，这一切都变得毫无意义。不断变难、变大、变得荒诞的谜题，旨在让最初简单的谜题逐渐显得枯燥无趣。<br><br>希望大家对工作的感受比“数字工程师”这样的职位更加有趣。如果你不幸对此感同身受，或许是时候考虑“说再见”了。
-220,manifesto_tm11,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
-221,manifesto_tm12,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
-222,manifesto_tm13,,在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
+219,manifesto_tm10,[to be translated],这个主题诞生于我对全职工作产生严重倦怠的时期。尽管身处大公司，享有高薪、良好的福利和社会的认可，并拥有光明的前途，但在情绪的笼罩下，这一切都变得毫无意义。不断变难、变大、变得荒诞的谜题，旨在让最初简单的谜题逐渐显得枯燥无趣。<br><br>希望大家对工作的感受比“数字工程师”这样的职位更加有趣。如果你不幸对此感同身受，或许是时候考虑“说再见”了。
+220,manifesto_tm11,[to be translated],在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
+221,manifesto_tm12,[to be translated],在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
+222,manifesto_tm13,[to be translated],在一次踏青中偶然休息时遇到了一簇生长的非常繁茂的三叶草。稍微找了下，发现四叶草确实如故事流传的一般：在一簇草丛中较少的存在。已经不记得当时在思考的问题是什么了，但三四叶草一同生长却寡众分明的境况给我留下了印象。<br><br>结合寻找四叶草时的聚精会神与群体中有众有寡这两点，就产生了这一系列的谜题。后者于我究竟意味着什么我难以下结论，这大概就是生命中需要慢慢找寻的话题之一吧。
 223,manifesto_tm2,"The coin is the second theme, inspired by those everyday moments when tossing a coin to make decisions.<br><br>The story often unfolds like this: I say I am unsure of what to choose, so decide to flip a coin. But when the coin lands, I realize the result doesn’t sit well with me. So saying, “Let me flip it again.”<br><br>In the end, tossing a coin isn’t about leaving things to fate; it’s about guiding me closer to my true desires, helping me see what I really want deep down.",硬币是第二个主题，它的灵感来源于生活中用掷硬币来做决策的常见玩笑时刻。<br><br>故事往往是这样展开的：嘴里说着不知该怎么选，于是决定掷硬币。当硬币落地时，却发现这个结果并不令人满意。于是，找个理由说“再掷一次吧”。<br><br>因此，掷硬币并不是用来决定命运的，而是帮助人们更好地走进自己的内心，看清自己的真实想法。
-224,manifesto_tm4,,寿司是进入工程正规流程后的第一个正式主题。它表达了日本料理的精髓：用最简单的食材，通过不同的烹饪方式和组合变化，创造出丰富多样的口感和味道。在实际的谜题中，这一理念表现为，通过两种食材的不同排列顺序，可以产生截然不同的数字变化，从而解决谜题。
-225,manifesto_tm5,,月亮主题围绕着对规则的理解展开。早期阶段，通过月相交替变化的简单规则，玩家可以轻松掌握。然而，当引入月食规则时，运用了各种迷惑性的手段，从动画效果到文字描述，都暗示着它的无序。随后，通过一系列关卡，引导玩家探索其内在的规律。<br><br>看到这段文字的你，真的已经完全掌握了月食的奥秘吗？就用后续的钻石挑战来确认一下吧。
-226,manifesto_tm6,,灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
-227,manifesto_tm7,,我喜欢盆景的原因是关卡中文字最后所提到的：“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。
-228,manifesto_tm8,,王冠是一个体验流畅但表达平淡的主题。其灵感来源非常直接：既承其冠，必承其重，以及王权所带来的争夺与混乱。此外，还隐藏了一个小彩蛋：无论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步。不知道你是否已经察觉到这一点呢？
-229,manifesto_tm9,,烧瓶是一个放飞自我的主题，大胆地引入了基于玩家反应而非纯粹计算的谜题。<br><br>理论化学描绘的神秘分子世界深深吸引着我，但实验化学要求的严谨操作却极大地折磨着我。这种矛盾的感受在游戏中映射为随时可能爆炸的实验，意图创造一种“悬崖边起舞”的紧张感。
+224,manifesto_tm4,[to be translated],寿司是进入工程正规流程后的第一个正式主题。它表达了日本料理的精髓：用最简单的食材，通过不同的烹饪方式和组合变化，创造出丰富多样的口感和味道。在实际的谜题中，这一理念表现为，通过两种食材的不同排列顺序，可以产生截然不同的数字变化，从而解决谜题。
+225,manifesto_tm5,[to be translated],月亮主题围绕着对规则的理解展开。早期阶段，通过月相交替变化的简单规则，玩家可以轻松掌握。然而，当引入月食规则时，运用了各种迷惑性的手段，从动画效果到文字描述，都暗示着它的无序。随后，通过一系列关卡，引导玩家探索其内在的规律。<br><br>看到这段文字的你，真的已经完全掌握了月食的奥秘吗？就用后续的钻石挑战来确认一下吧。
+226,manifesto_tm6,[to be translated],灯泡的灵感来源是表达对“动态规划中的灯泡问题”的震撼。<br><br>“灯泡问题”是大学计算机课程中一类最经典需要使用动态规划算法来解决的问题。在当时的我看来，动态规划算法是第一次让我意识到计算机的算力超越了人类的认知，做着人脑很难完成的任务。<br><br>设计这个谜题是对它再一次的回顾与探索。通过数字谜题的形式，能否把如此晦涩抽象的问题以更加有乐趣的形式展现出来呢？
+227,manifesto_tm7,[to be translated],我喜欢盆景的原因是关卡中文字最后所提到的：“盆景的美来自于发现而非创造”。这和我对游戏开发的审美是一致的，好的游戏决非来源于对某个绝佳创意坚决地执行。好的创意是在开发过程中经由开发者对游戏更深入地体验而逐步发现的。
+228,manifesto_tm8,[to be translated],王冠是一个体验流畅但表达平淡的主题。其灵感来源非常直接：既承其冠，必承其重，以及王权所带来的争夺与混乱。此外，还隐藏了一个小彩蛋：无论王冠如何更迭，社会整体总是朝着数字不断变大的方向进步。不知道你是否已经察觉到这一点呢？
+229,manifesto_tm9,[to be translated],烧瓶是一个放飞自我的主题，大胆地引入了基于玩家反应而非纯粹计算的谜题。<br><br>理论化学描绘的神秘分子世界深深吸引着我，但实验化学要求的严谨操作却极大地折磨着我。这种矛盾的感受在游戏中映射为随时可能爆炸的实验，意图创造一种“悬崖边起舞”的紧张感。
 230,narrative_tm1_ln001,The passage of time,溜走的时间
 231,narrative_tm1_ln002,"Tick, tock, tick, tock,",滴答滴答滴答，
 232,narrative_tm1_ln003,The clock tirelessly marches on.,时钟不知疲倦地前进。
@@ -235,70 +235,70 @@ UID,Key,EN,CN
 234,narrative_tm1_ln005,"never stop sliding,",开启新的节律，
 235,narrative_tm1_ln006,time slipping through fingertips.,时间在你的指尖默默滑动。
 236,narrative_tm1_ln007,"Night travelers,",夜的旅者，
-237,narrative_tm1_ln008,trekking through darkness.,在黑暗中跋涉。
-238,narrative_tm1_ln009,"Dragging weary bodies,",拖着疲惫的身躯，
+237,narrative_tm1_ln008,trek through darkness.,在黑暗中跋涉。
+238,narrative_tm1_ln009,"Drag weary bodies,",拖着疲惫的身躯，
 239,narrative_tm1_ln010,finally arriving at dawn.,最终抵达晨曦。
 240,narrative_tm1_ln011,"Consciousness is fading,",意识逐渐模糊，
 241,narrative_tm1_ln012,it's time to rest.,是时候休息了。
-242,narrative_tm10_ln001,,心仪的工牌
-243,narrative_tm10_ln002,,面试题：找到目标数字。
-244,narrative_tm10_ln003,,入职成为<b>数字工程师</b>。
-245,narrative_tm10_ln004,,继续认真工作，
-246,narrative_tm10_ln005,,稳步晋升。
-247,narrative_tm10_ln006,,努力，
-248,narrative_tm10_ln007,,成为<b>资深</b>数字工程师。
-249,narrative_tm10_ln008,,奋斗，
-250,narrative_tm10_ln009,,晋升为数字工程<b>专家</b>。
-251,narrative_tm10_ln010,,然而，
-252,narrative_tm10_ln011,,这一切真的值得么？
-253,narrative_tm10_ln012,,工作没变，但人会<b>变</b>。
-254,narrative_tm10_ln013,,是时候说再见了。
+242,narrative_tm10_ln001,A badge,心仪的工牌
+243,narrative_tm10_ln002,Interview question: find the target number.,面试题：找到目标数字。
+244,narrative_tm10_ln003,Entry level as a <b>Digital Engineer</b>.,入职成为<b>数字工程师</b>。
+245,narrative_tm10_ln004,Keep up the good work.,继续认真工作，
+246,narrative_tm10_ln005,Steady promotion.,稳步晋升。
+247,narrative_tm10_ln006,Efforts.,努力，
+248,narrative_tm10_ln007,Become a <b>senior</b> digital engineer.,成为<b>资深</b>数字工程师。
+249,narrative_tm10_ln008,Struggle.,奋斗，
+250,narrative_tm10_ln009,Promoted to Digital Engineering <b>Specialist</b>.,晋升为数字工程<b>专家</b>。
+251,narrative_tm10_ln010,However.,然而，
+252,narrative_tm10_ln011,Was it all really worth it?,这一切真的值得么？
+253,narrative_tm10_ln012,"The work hasn't changed, but the people will <b>change</b>.",工作没变，但人会<b>变</b>。
+254,narrative_tm10_ln013,It's time to say goodbye.,是时候说再见了。
 255,narrative_tm10_ln014,,
 256,narrative_tm10_ln015,,
-257,narrative_tm11_ln001,,幸运的四叶草
-258,narrative_tm11_ln002,,三叶草遍布大地，
-259,narrative_tm11_ln003,,四叶草悄然绽放。
-260,narrative_tm11_ln004,,与众不同是一种幸运，
-261,narrative_tm11_ln005,,不必隐藏光芒，
-262,narrative_tm11_ln006,,享受这特别的赐予。
-263,narrative_tm11_ln007,,珍惜独特的自己，
-264,narrative_tm11_ln008,,自信绽放，
-265,narrative_tm11_ln009,,在平凡的世界里，
-266,narrative_tm11_ln010,,成就不平凡的篇章。
-267,narrative_tm11_ln011,,这一切真的值得么？
-268,narrative_tm11_ln012,,工作没变，但人会<b>变</b>。
-269,narrative_tm11_ln013,,是时候说再见了。
+257,narrative_tm11_ln001,Lucky Clover,幸运的四叶草
+258,narrative_tm11_ln002,Clover is all over the land.,三叶草遍布大地，
+259,narrative_tm11_ln003,The four-leaf clover blooms quietly.,四叶草悄然绽放。
+260,narrative_tm11_ln004,It's a blessing to be different.,与众不同是一种幸运，
+261,narrative_tm11_ln005,There's no need to hide the light.,不必隐藏光芒，
+262,narrative_tm11_ln006,Enjoy this special gift.,享受这特别的赐予。
+263,narrative_tm11_ln007,Value our unique selves.,珍惜独特的自己，
+264,narrative_tm11_ln008,Confidence blooms.,自信绽放，
+265,narrative_tm11_ln009,In the ordinary world.,在平凡的世界里，
+266,narrative_tm11_ln010,Achieve extraordinary chapters.,成就不平凡的篇章。
+267,narrative_tm11_ln011,,
+268,narrative_tm11_ln012,,
+269,narrative_tm11_ln013,,
 270,narrative_tm11_ln014,,
 271,narrative_tm11_ln015,,
-272,narrative_tm12_ln001,,摩天大楼
-273,narrative_tm12_ln002,,人潮涌动，
-274,narrative_tm12_ln003,,高楼矗立，
-275,narrative_tm12_ln004,,直指苍穹。
-276,narrative_tm12_ln005,,有人辛勤，
-277,narrative_tm12_ln006,,有人踌躇，
-278,narrative_tm12_ln007,,玻璃前无数双眼睛，
-279,narrative_tm12_ln008,,见证着城市的历史。
-280,narrative_tm12_ln009,,人们从四面八方涌来，
-281,narrative_tm12_ln010,,钢铁与玻璃交织成森林。
-282,narrative_tm12_ln011,,夜幕降临，
-283,narrative_tm12_ln012,,霓虹闪烁。
-284,narrative_tm12_ln013,,楼宇组成的天际线，
-285,narrative_tm12_ln014,,书写着未完的故事。
+272,narrative_tm12_ln001,skyscraper,摩天大楼
+273,narrative_tm12_ln002,Crowds of people.,人潮涌动，
+274,narrative_tm12_ln003,Tall buildings stand.,高楼矗立，
+275,narrative_tm12_ln004,Pointing straight up to the heavens.,直指苍穹。
+276,narrative_tm12_ln005,Some people work hard.,有人辛勤，
+277,narrative_tm12_ln006,Some people are hesitant.,有人踌躇，
+278,narrative_tm12_ln007,Countlesseyes in front of the glass.,玻璃前无数双眼睛，
+279,narrative_tm12_ln008,Witness the history of the city.,见证着城市的历史。
+280,narrative_tm12_ln009,People are coming from all directions.,人们从四面八方涌来，
+281,narrative_tm12_ln010,Steel and glass intertwine into a forest.,钢铁与玻璃交织成森林。
+282,narrative_tm12_ln011,Nightfall.,夜幕降临，
+283,narrative_tm12_ln012,Neon flashes.,霓虹闪烁。
+284,narrative_tm12_ln013,skyline made up of buildings.,楼宇组成的天际线，
+285,narrative_tm12_ln014,Writing the unfinished story.,书写着未完的故事。
 286,narrative_tm12_ln015,,
-287,narrative_tm13_ln001,,0的死亡
-288,narrative_tm13_ln002,,0惨死于公寓内，
-289,narrative_tm13_ln003,,嫌疑人是1到9。
-290,narrative_tm13_ln004,,拿起放大镜，
-291,narrative_tm13_ln005,,仔细检查每一处角落，
-292,narrative_tm13_ln006,,详细质询每一位目击者。
-293,narrative_tm13_ln007,,运用聪明的才智，
-294,narrative_tm13_ln008,,抽丝剥茧，
-295,narrative_tm13_ln009,,循序渐进。
-296,narrative_tm13_ln010,,在迷雾中寻找线索，
-297,narrative_tm13_ln011,,于黑暗中中逼近真相。
-298,narrative_tm13_ln012,,揪出人群中的恶魔，
-299,narrative_tm13_ln013,,还众人清白，
-300,narrative_tm13_ln014,,让死者瞑目。
+287,narrative_tm13_ln001,Death of 0,0的死亡
+288,narrative_tm13_ln002,0 died horriblely in his apartment.,0惨死于公寓内，
+289,narrative_tm13_ln003,The suspects are 1 through 9.,嫌疑人是1到9。
+290,narrative_tm13_ln004,Grab a magnifying glass.,拿起放大镜，
+291,narrative_tm13_ln005,scrutinize every nook and cranny.,仔细检查每一处角落，
+292,narrative_tm13_ln006,Question every witness in detail.,详细质询每一位目击者。
+293,narrative_tm13_ln007,Utilize ingenuity.,运用聪明的才智，
+294,narrative_tm13_ln008,Spin the cocoon.,抽丝剥茧，
+295,narrative_tm13_ln009,Step-by-step.,循序渐进。
+296,narrative_tm13_ln010,Search for clues in the mist of,在迷雾中寻找线索，
+297,narrative_tm13_ln011,Approach the truth in the darkness.,于黑暗中中逼近真相。
+298,narrative_tm13_ln012,Uncover the devil in the crowd.,揪出人群中的恶魔，
+299,narrative_tm13_ln013,To clear the name of the people.,还众人清白，
+300,narrative_tm13_ln014,Let the dead rest in peace.,让死者瞑目。
 301,narrative_tm13_ln015,,
 302,narrative_tm2_ln001,Fate from a coin,来自硬币的命运
 303,narrative_tm2_ln002,Coins has countless forms.,硬币有无数种形式。
@@ -309,104 +309,104 @@ UID,Key,EN,CN
 308,narrative_tm2_ln007,"The tail represents hesitation,",反面代表保留，
 309,narrative_tm2_ln008,or simply letting go.,或者叫放弃。
 310,narrative_tm2_ln009,"The two sides intertwine,",两面交错，
-311,narrative_tm2_ln010,creating ripples of destiny.,创造命运的波澜。
+311,narrative_tm2_ln010,create ripples of destiny.,创造命运的波澜。
 312,narrative_tm2_ln011,"You toss it again,",你再次投掷，
-313,narrative_tm2_ln012,awaiting the echo of fate’s fall.,等待宿命落下的回响。
+313,narrative_tm2_ln012,await the echo of fate’s fall.,等待宿命落下的回响。
 314,narrative_tm2_ln013,"If unsatisfied,",不甘于此，
-315,narrative_tm2_ln014,interpreting with your own wisdom.,就用智慧进行解读。
-316,narrative_tm4_ln001,,寿司的简约
-317,narrative_tm4_ln002,,夹起一片鱼生，
-318,narrative_tm4_ln003,,晶莹剔透。
-319,narrative_tm4_ln004,,拿起一团白饭，
-320,narrative_tm4_ln005,,在碗中勾勒出弧线。
-321,narrative_tm4_ln006,,一缕白米叠上鱼生，
-322,narrative_tm4_ln007,,轻轻捏合，
-323,narrative_tm4_ln008,,创造出寿司细腻的口感。
-324,narrative_tm4_ln009,,一勺鱼肉放进白米，
-325,narrative_tm4_ln010,,缓缓卷起，
-326,narrative_tm4_ln011,,就开启了饭团丰盈的味觉。
-327,narrative_tm4_ln012,,仅用两种原料，
-328,narrative_tm4_ln013,,交织出丰富的组合，
-329,narrative_tm4_ln014,,诉说简约的美。
+315,narrative_tm2_ln014,interpret with your own wisdom.,就用智慧进行解读。
+316,narrative_tm4_ln001,The simplicity of Sushi,寿司的简约
+317,narrative_tm4_ln002,Pick up a slice of sashimi.,夹起一片鱼生，
+318,narrative_tm4_ln003,Crystal clear.,晶莹剔透。
+319,narrative_tm4_ln004,Pick up a ball of white rice.,拿起一团白饭，
+320,narrative_tm4_ln005,Outline the arc in the bowl.,在碗中勾勒出弧线。
+321,narrative_tm4_ln006,A strand of white rice layered with sashimi.,一缕白米叠上鱼生，
+322,narrative_tm4_ln007,Pinch it closed gently.,轻轻捏合，
+323,narrative_tm4_ln008,Create the delicate texture of sushi.,创造出寿司细腻的口感。
+324,narrative_tm4_ln009,A spoonful of fish in white rice.,一勺鱼肉放进白米，
+325,narrative_tm4_ln010,Slowly rolled up.,缓缓卷起，
+326,narrative_tm4_ln011,It opens up the rice ball's voluptuous flavor profile.,就开启了饭团丰盈的味觉。
+327,narrative_tm4_ln012,Use only two ingredients.,仅用两种原料，
+328,narrative_tm4_ln013,interweave a rich mix of,交织出丰富的组合，
+329,narrative_tm4_ln014,Speaks to the beauty of simplicity.,诉说简约的美。
 330,narrative_tm4_ln015,,
-331,narrative_tm5_ln001,,月的规律
-332,narrative_tm5_ln002,,亏盈交替，
-333,narrative_tm5_ln003,,圆缺变迁。
-334,narrative_tm5_ln004,,亘古不变的，
-335,narrative_tm5_ln005,,是夜空的指引。
-336,narrative_tm5_ln006,,突如其来的月食，
-337,narrative_tm5_ln007,,散播混沌。
-338,narrative_tm5_ln008,,借着微弱光辉，
-339,narrative_tm5_ln009,,你在迷惘中前行。
-340,narrative_tm5_ln010,,用反思和总结，
-341,narrative_tm5_ln011,,让秩序浮现。
-342,narrative_tm5_ln012,,表面的无序，
-343,narrative_tm5_ln013,,藏着更深的规则。
-344,narrative_tm5_ln014,,在曲折中领悟，
-345,narrative_tm5_ln015,,获得再次的掌控。
-346,narrative_tm6_ln001,,灵感之光
-347,narrative_tm6_ln002,,电灯总用来代表<b>灵感</b>。
-348,narrative_tm6_ln003,,<b>火花</b>在脑中跃动，
-349,narrative_tm6_ln004,,思路逐渐便变得清晰。
-350,narrative_tm6_ln005,,光明<b>涌现</b>，
-351,narrative_tm6_ln006,,产生璀璨的印记。
-352,narrative_tm6_ln007,,过度的<b>汹涌</b>，
-353,narrative_tm6_ln008,,让你失去了方向。
-354,narrative_tm6_ln009,,真正的智慧，
-355,narrative_tm6_ln010,,在于保留<b>恰如其分</b>的灵感。
-356,narrative_tm6_ln011,,在发明灯泡以前，
-357,narrative_tm6_ln012,,在那无边黑暗的岁月里，
-358,narrative_tm6_ln013,,光明永驻于心间。
-359,narrative_tm7_ln001,,盆中的风景
-360,narrative_tm7_ln002,,美来自于<b>和谐</b>。
-361,narrative_tm7_ln003,,去掉可见的突兀，
-362,narrative_tm7_ln004,,保留自然的美好。
-363,narrative_tm7_ln005,,美来自于<b>平衡</b>，
-364,narrative_tm7_ln006,,跟随于树木的生长，
-365,narrative_tm7_ln007,,感受自然的主导。
-366,narrative_tm7_ln008,,不受规则的<b>束缚</b>，
-367,narrative_tm7_ln009,,盆景是对美的发现，
-368,narrative_tm7_ln010,,而非创造。
+331,narrative_tm5_ln001,The Law of the Month,月的规律
+332,narrative_tm5_ln002,Alternate losses and gains.,亏盈交替，
+333,narrative_tm5_ln003,The shape changes.,圆缺变迁。
+334,narrative_tm5_ln004,for all eternity.,亘古不变的，
+335,narrative_tm5_ln005,It's the night sky that guides.,是夜空的指引。
+336,narrative_tm5_ln006,A sudden lunar eclipse.,突如其来的月食，
+337,narrative_tm5_ln007,Spread Chaos.,散播混沌。
+338,narrative_tm5_ln008,By the faintest of lights.,借着微弱光辉，
+339,narrative_tm5_ln009,You move forward in confusion.,你在迷惘中前行。
+340,narrative_tm5_ln010,With reflection and summarization.,用反思和总结，
+341,narrative_tm5_ln011,Let the order emerge.,让秩序浮现。
+342,narrative_tm5_ln012,superficial disorder.,表面的无序，
+343,narrative_tm5_ln013,Hidden deeper rules.,藏着更深的规则。
+344,narrative_tm5_ln014,In the midst of the twists and turns to realize that,在曲折中领悟，
+345,narrative_tm5_ln015,Gain control again.,获得再次的掌控。
+346,narrative_tm6_ln001,The Light of Inspiration,灵感之光
+347,narrative_tm6_ln002,Electric lights are always used to represent <b>inspiration</b>.,电灯总用来代表<b>灵感</b>。
+348,narrative_tm6_ln003,<b>Sparks</b> leapt in his brain.,<b>火花</b>在脑中跃动，
+349,narrative_tm6_ln004,"Gradually, the idea became clearer.",思路逐渐便变得清晰。
+350,narrative_tm6_ln005,Light <b>emerges</b>.,光明<b>涌现</b>，
+351,narrative_tm6_ln006,Produces a radiant imprint.,产生璀璨的印记。
+352,narrative_tm6_ln007,Excessive <b>raging</b>.,过度的<b>汹涌</b>，
+353,narrative_tm6_ln008,Makes you lose your way.,让你失去了方向。
+354,narrative_tm6_ln009,True wisdom.,真正的智慧，
+355,narrative_tm6_ln010,Retain <b>the right amount</b> of inspiration.,在于保留<b>恰如其分</b>的灵感。
+356,narrative_tm6_ln011,Before the invention of the light bulb.,在发明灯泡以前，
+357,narrative_tm6_ln012,In those years of infinite darkness.,在那无边黑暗的岁月里，
+358,narrative_tm6_ln013,Light is ever present in the heart.,光明永驻于心间。
+359,narrative_tm7_ln001,Landscape in a Pot,盆中的风景
+360,narrative_tm7_ln002,Beauty comes from <b>harmony</b>.,美来自于<b>和谐</b>。
+361,narrative_tm7_ln003,Remove visible protrusions.,去掉可见的突兀，
+362,narrative_tm7_ln004,Preserve the beauty of nature.,保留自然的美好。
+363,narrative_tm7_ln005,Beauty comes from <b>balance</b>.,美来自于<b>平衡</b>，
+364,narrative_tm7_ln006,Follow the growth of the trees.,跟随于树木的生长，
+365,narrative_tm7_ln007,Feel dominated by nature.,感受自然的主导。
+366,narrative_tm7_ln008,Unbound by the <b>rules</b>.,不受规则的<b>束缚</b>，
+367,narrative_tm7_ln009,Bonsai is the discovery of beauty.,盆景是对美的发现，
+368,narrative_tm7_ln010,Instead of creation.,而非创造。
 369,narrative_tm7_ln011,,
 370,narrative_tm7_ln012,,
 371,narrative_tm7_ln013,,
 372,narrative_tm7_ln014,,
 373,narrative_tm7_ln015,,
-374,narrative_tm8_ln001,,王冠的重量
-375,narrative_tm8_ln002,,欲戴其冠，
-376,narrative_tm8_ln003,,必承其<b>重</b>。
-377,narrative_tm8_ln004,,王冠高耸，
-378,narrative_tm8_ln005,,象征至高的权利，
-379,narrative_tm8_ln006,,佩戴者逐渐迷失初心，
-380,narrative_tm8_ln007,,直到它砰然<b>落下</b>。
-381,narrative_tm8_ln008,,毒药、阴谋、战乱，
-382,narrative_tm8_ln009,,地位经历着无数的考验。
-383,narrative_tm8_ln010,,权力不停地更迭，
-384,narrative_tm8_ln011,,王冠不断地易手。
-385,narrative_tm8_ln012,,在起伏中前进，
-386,narrative_tm8_ln013,,光辉和荣耀成为史诗传颂。
+374,narrative_tm8_ln001,The Weight of the Crown,王冠的重量
+375,narrative_tm8_ln002,"To wear crown,",欲戴其冠，
+376,narrative_tm8_ln003,Must bear its <b>weight</b>.,必承其<b>重</b>。
+377,narrative_tm8_ln004,The crown stands tall.,王冠高耸，
+378,narrative_tm8_ln005,Symbolizing supreme power.,象征至高的权利，
+379,narrative_tm8_ln006,The wearer gradually loses sight.,佩戴者逐渐迷失初心，
+380,narrative_tm8_ln007,Until it fell <b>with a thud</b>.,直到它砰然<b>落下</b>。
+381,narrative_tm8_ln008,"Poisons, conspiracies, wars.",毒药、阴谋、战乱，
+382,narrative_tm8_ln009,Power undergones numerous tests.,地位经历着无数的考验。
+383,narrative_tm8_ln010,The power keeps changing.,权力不停地更迭，
+384,narrative_tm8_ln011,The crown keeps changing hands.,王冠不断地易手。
+385,narrative_tm8_ln012,Move through the ups and downs.,在起伏中前进，
+386,narrative_tm8_ln013,The glory and honor became epic.,光辉和荣耀成为史诗传颂。
 387,narrative_tm8_ln014,,
 388,narrative_tm8_ln015,,
-389,narrative_tm9_ln001,,迷人的色彩
-390,narrative_tm9_ln002,,烧瓶色彩斑斓。
-391,narrative_tm9_ln003,,实验充满未知。
-392,narrative_tm9_ln004,,一旦失去耐心，
-393,narrative_tm9_ln005,,BOOM！
-394,narrative_tm9_ln006,,----------
-395,narrative_tm9_ln007,,实验安全守则：
-396,narrative_tm9_ln008,,1. 避免超量
-397,narrative_tm9_ln009,,2. 轻拿轻放
-398,narrative_tm9_ln010,,3. 拒绝混用
-399,narrative_tm9_ln011,,4. 保持通风
-400,narrative_tm9_ln012,,----------
-401,narrative_tm9_ln013,,目标逐渐复杂。
-402,narrative_tm9_ln014,,夜色渐浓，准备回家。
-403,narrative_tm9_ln015,,为了钻石，加班！
+389,narrative_tm9_ln001,Charming colors,迷人的色彩
+390,narrative_tm9_ln002,The flasks are colorful.,烧瓶色彩斑斓。
+391,narrative_tm9_ln003,The experiment is full of unknowns.,实验充满未知。
+392,narrative_tm9_ln004,Once you lose your patience.,一旦失去耐心，
+393,narrative_tm9_ln005,BOOM!,BOOM！
+394,narrative_tm9_ln006,----------,----------
+395,narrative_tm9_ln007,Experimental Safety Code:,实验安全守则：
+396,narrative_tm9_ln008,1. Avoiding overdose,1. 避免超量
+397,narrative_tm9_ln009,2. Handle with care,2. 轻拿轻放
+398,narrative_tm9_ln010,3. Rejection of mixing,3. 拒绝混用
+399,narrative_tm9_ln011,4. Maintaining ventilation,4. 保持通风
+400,narrative_tm9_ln012,----------,----------
+401,narrative_tm9_ln013,The objectives get complex.,目标逐渐复杂。
+402,narrative_tm9_ln014,It's time to go home.,夜色渐浓，准备回家。
+403,narrative_tm9_ln015,Overtime for the diamonds!,为了钻石，加班！
 404,prompt_tm1,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a tiny bedroom in modern city at night. There are an old alarm clock and a shelf of books and a small window with night view. The atmosphere are dark and warm. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 405,prompt_tm10,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9"
-406,prompt_tm11,,"照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
-407,prompt_tm12,,"照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
-408,prompt_tm13,,"照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+406,prompt_tm11,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+407,prompt_tm12,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
+408,prompt_tm13,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a top-down view desk in a video game company. There are a laptop and a drawing in center. And an employee badge appears at the side. The atmosphere are clean and busy. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9","照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a flat three-leafed clover tile. The photo is taken in a 35mm lens, using Fujicolor Superia film. --v 6.0 --style raw --s 50 --ar 16:9"
 409,prompt_tm2,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a public museum exhibition featuring a shelf displaying a collection of 4 items from various historical periods from top-view in the center of the photo. Items are a statue, a large copper coin, a box, a trophy. Items are neatly labeled. The shelf is made of polished wood with glass protection. The background includes other museum exhibits, like paintings and sculptures, subtly visible. The photo is taken in a 50mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 410,prompt_tm4,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of a table in a Japanese restaurant from top-view. There are a teriyaki, a plate of sushi, a bowl of udon noodles, a plate of tempuras on the center of the table. The atmosphere are joyful and delicious. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
 411,prompt_tm5,"Photo is created by Midjourney using the following prompt:<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0","照片使用Midjounrey通过以下提示语生成：<br>A realistic photo of night sky view. There are few stars, a crescent moon in the sky with almost no cloud. The atmosphere are serene and tranquil. The photo is taken in a 35mm lens, using Fujicolor Superia film. --ar 16:9 --v 6.0"
@@ -417,9 +417,9 @@ UID,Key,EN,CN
 416,theme_teaser_hint,More themes to come...,更多主题，敬请期待
 417,themename_tm1,Clock,时钟
 418,themename_tm10,Badge,工牌
-419,themename_tm11,,三叶草
-420,themename_tm12,,摩天大楼
-421,themename_tm13,,侦探
+419,themename_tm11,Clover,三叶草
+420,themename_tm12,Skyscraper,摩天大楼
+421,themename_tm13,Detective,侦探
 422,themename_tm2,Coin,硬币
 423,themename_tm4,Sushi,寿司
 424,themename_tm5,Moon,月亮
@@ -439,76 +439,76 @@ UID,Key,EN,CN
 438,tm1_goal_lv110,Set all cells to 6,让所有格子为6
 439,tm1_rule1_lv101,Play Clock to a cell: +1,打出时钟的格子：+1
 440,tm1_rule2_lv103,"Afterwards, cells with a clock +1",之后已有时钟的格子+1
-441,tm10_goal_lv1001,,标记满足要求的数字
-442,tm10_goal_lv1002,,标记满足要求的数字
-443,tm10_goal_lv1003,,标记同时满足全部要求的数字
-444,tm10_goal_lv1004,,标记同时满足全部要求的数字
-445,tm10_goal_lv1005,,标记同时满足全部要求的数字
-446,tm10_goal_lv1006,,标记同时满足全部要求的数字
-447,tm10_goal_lv1007,,标记同时满足全部要求的数字
-448,tm10_goal_lv1008,,标记同时满足全部要求的数字
-449,tm10_goal_lv1009,,标记同时满足全部要求的数字
-450,tm10_goal_lv1010,,标记同时满足全部要求的数字
-451,tm10_goal_lv1011,,标记同时满足全部要求的数字
-452,tm10_goal_lv1012,,标记同时满足全部要求的数字
-453,tm10_rule1_lv1001,,目标数字要求：
-454,tm10_rule2_lv1001,,#1与十字相邻数字都不同
-455,tm10_rule3_lv1003,,#2与至少一个对角线相邻数字相同
-456,tm10_rule4_lv1006,,#3与上下或左右数字奇偶同时一致
-457,tm10_rule5_lv1008,,#4与环形相邻数字相比不是最大或最小
-458,tm11_goal_lv1101,,找到幸运的四叶草
-459,tm11_goal_lv1102,,找到幸运的四叶草
-460,tm11_goal_lv1103,,找到幸运的四叶草
-461,tm11_goal_lv1104,,找到幸运的四叶草
-462,tm11_goal_lv1105,,找到幸运的四叶草
-463,tm11_goal_lv1106,,找到幸运的四叶草
-464,tm11_goal_lv1107,,找到幸运的四叶草
-465,tm11_goal_lv1108,,找到幸运的四叶草
-466,tm11_goal_lv1109,,找到幸运的四叶草
-467,tm11_goal_lv1110,,找到幸运的四叶草
-468,tm11_goal_lv1111,,找到幸运的四叶草
-469,tm11_goal_lv1112,,找到幸运的四叶草
-470,tm11_rule1_lv1101,,细心观察，选出四叶草
-471,tm11_rule2_lv1112,,耐心也很重要
-472,tm12_goal_lv1201,,建立2个10+人口的大楼
-473,tm12_goal_lv1202,,建立1个15+人口的大楼
-474,tm12_goal_lv1203,,建立2个15+人口的大楼
-475,tm12_goal_lv1204,,建立3个15+人口的大楼
-476,tm12_goal_lv1205,,建立4个15+人口的大楼
-477,tm12_goal_lv1206,,建立1个30+人口的大楼
-478,tm12_goal_lv1207,,建立4个30+人口的大楼
-479,tm12_goal_lv1208,,建立2个30+人口的大楼
-480,tm12_goal_lv1209,,让总人口达到90+
-481,tm12_goal_lv1210,,建立4个30+人口的大楼
-482,tm12_goal_lv1211,,让总人口达到100+
-483,tm12_goal_lv1212,,让总人口达到150+
-484,tm12_goal_lv1213,,建立5个30+人口的大楼
-485,tm12_goal_lv1214,,建立1个100+人口的大楼
-486,tm12_rule1_lv1201,,摩天大楼：+2人口
-487,tm12_rule2_lv1202,,迁移：建成后人口多于相邻地区
-488,tm12_rule3_lv1202,, 则从相邻地区再迁移3人口
-489,tm12_rule4_lv1206,,爆发：若同时触发2+次人口迁移
-490,tm12_rule5_lv1206,, 则额外+5人口
+441,tm10_goal_lv1001,Mark numbers passing the criterion,标记满足要求的数字
+442,tm10_goal_lv1002,Mark numbers passing the criterion,标记满足要求的数字
+443,tm10_goal_lv1003,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+444,tm10_goal_lv1004,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+445,tm10_goal_lv1005,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+446,tm10_goal_lv1006,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+447,tm10_goal_lv1007,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+448,tm10_goal_lv1008,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+449,tm10_goal_lv1009,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+450,tm10_goal_lv1010,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+451,tm10_goal_lv1011,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+452,tm10_goal_lv1012,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
+453,tm10_rule1_lv1001,Criterions: ,目标数字要求：
+454,tm10_rule2_lv1001,#1 Different from adjacent cells,#1与十字相邻数字都不同
+455,tm10_rule3_lv1003,#2 Same as at least one diagonally adjacent number,#2与至少一个对角线相邻数字相同
+456,tm10_rule4_lv1006,#3 Simultaneous parity with up and down or left and right numbers,#3与上下或左右数字奇偶同时一致
+457,tm10_rule5_lv1008,#4 Is not the largest or smallest number in its adjacent 3x3 zones,#4与环形相邻数字相比不是最大或最小
+458,tm11_goal_lv1101,Find the lucky four-leaf clover,找到幸运的四叶草
+459,tm11_goal_lv1102,Find the lucky four-leaf clover,找到幸运的四叶草
+460,tm11_goal_lv1103,Find the lucky four-leaf clover,找到幸运的四叶草
+461,tm11_goal_lv1104,Find the lucky four-leaf clover,找到幸运的四叶草
+462,tm11_goal_lv1105,Find the lucky four-leaf clover,找到幸运的四叶草
+463,tm11_goal_lv1106,Find the lucky four-leaf clover,找到幸运的四叶草
+464,tm11_goal_lv1107,Find the lucky four-leaf clover,找到幸运的四叶草
+465,tm11_goal_lv1108,Find the lucky four-leaf clover,找到幸运的四叶草
+466,tm11_goal_lv1109,Find the lucky four-leaf clover,找到幸运的四叶草
+467,tm11_goal_lv1110,Find the lucky four-leaf clover,找到幸运的四叶草
+468,tm11_goal_lv1111,Find the lucky four-leaf clover,找到幸运的四叶草
+469,tm11_goal_lv1112,Find the lucky four-leaf clover,找到幸运的四叶草
+470,tm11_rule1_lv1101,Look carefully and pick the four-leaf clover,细心观察，选出四叶草
+471,tm11_rule2_lv1112,Patience is important,耐心也很重要
+472,tm12_goal_lv1201,Establish 2 buildings with 10+ population,建立2个10+人口的大楼
+473,tm12_goal_lv1202,Establish 1 building with 15+ population,建立1个15+人口的大楼
+474,tm12_goal_lv1203,Establish 2 buildings with 15+ population,建立2个15+人口的大楼
+475,tm12_goal_lv1204,Establish 3 buildings with 15+ population,建立3个15+人口的大楼
+476,tm12_goal_lv1205,Establish 4 buildings with 15+ population,建立4个15+人口的大楼
+477,tm12_goal_lv1206,Establish 1 building with 30+ population,建立1个30+人口的大楼
+478,tm12_goal_lv1207,Establish 4 buildings with 30+ population,建立4个30+人口的大楼
+479,tm12_goal_lv1208,Establish 2 buildings with 30+ population,建立2个30+人口的大楼
+480,tm12_goal_lv1209,Have a total population of 90+,让总人口达到90+
+481,tm12_goal_lv1210,Establish 4 buildings with 30+ population,建立4个30+人口的大楼
+482,tm12_goal_lv1211,Have a total population of 100+,让总人口达到100+
+483,tm12_goal_lv1212,Have a total population of 150+,让总人口达到150+
+484,tm12_goal_lv1213,Establish 5 buildings with 30+ population,建立5个30+人口的大楼
+485,tm12_goal_lv1214,Establish 1 building with 100+ population,建立1个100+人口的大楼
+486,tm12_rule1_lv1201,Skyscrapers: +2 population,摩天大楼：+2人口
+487,tm12_rule2_lv1202,Migration: if larger than an adjacent area,迁移：建成后人口多于相邻地区
+488,tm12_rule3_lv1202, move 3 population, 则从相邻地区再迁移3人口
+489,tm12_rule4_lv1206,Burst: if 2+ <b>Migration</b> are triggered,爆发：若同时触发2+次人口迁移
+490,tm12_rule5_lv1206, +5 population, 则额外+5人口
 491,tm13_goal_case_solved,Case solved: ,已解决案件数：
-492,tm13_goal_lv1301,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-493,tm13_goal_lv1302,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-494,tm13_goal_lv1303,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-495,tm13_goal_lv1304,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-496,tm13_goal_lv1305,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-497,tm13_goal_lv1306,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-498,tm13_goal_lv1307,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-499,tm13_goal_lv1308,,在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
-500,tm13_goal_lv1309,,指认全部凶手<br>凶手不止1人
-501,tm13_goal_lv1310,,指认全部凶手<br>凶手不止1人
-502,tm13_goal_lv1311,,连续成功2个案件
-503,tm13_goal_lv1312,,连续成功2个案件<br>凶手不止1人
-504,tm13_goal_lv1313,,无限次解决案件<br>凶手<b>可能</b>不止1人
-505,tm13_rule1_lv1301,,质询某一行的目击者<sprite name=meeple_blank>
-506,tm13_rule2_lv1301,, <sprite name=sign_complete> 匹配：凶手出现在正确的列
-507,tm13_rule2_lv1309,, <sprite name=sign_complete> 匹配：有凶手出现在正确的列
-508,tm13_rule3_lv1301,, <sprite name=sign_unknown> 可疑：凶手出现在错误的列
-509,tm13_rule3_lv1309,, <sprite name=sign_unknown> 可疑：有凶手出现但都在错误的列
-510,tm13_rule4_lv1301,, <sprite name=rule_sign_deletion> 排除：没有凶手出现
+492,tm13_goal_lv1301,"Of the suspects <sprite name=meeple_full>, identify the only murderer",在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+493,tm13_goal_lv1302,"Of the suspects <sprite name=meeple_full>, identify the only murderer",在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+494,tm13_goal_lv1303,"Of the suspects <sprite name=meeple_full>, identify the only murderer",在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+495,tm13_goal_lv1304,"Of the suspects <sprite name=meeple_full>, identify the only murderer",在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+496,tm13_goal_lv1305,"Of the suspects <sprite name=meeple_full>, identify the only murderer",在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+497,tm13_goal_lv1306,"Of the suspects <sprite name=meeple_full>, identify the only murderer",在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+498,tm13_goal_lv1307,"Of the suspects <sprite name=meeple_full>, identify the only murderer",在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+499,tm13_goal_lv1308,"Of the suspects <sprite name=meeple_full>, identify the only murderer",在嫌疑人<sprite name=meeple_full> 中，指认唯一的凶手
+500,tm13_goal_lv1309,Identify all murderers<br>There is more than one murderer.,指认全部凶手<br>凶手不止1人
+501,tm13_goal_lv1310,Identify all murderers<br>There is more than one murderer.,指认全部凶手<br>凶手不止1人
+502,tm13_goal_lv1311,Solve 2 consective cases,连续成功2个案件
+503,tm13_goal_lv1312,Solve 2 consective cases<br>There is more than one murderer.,连续成功2个案件<br>凶手不止1人
+504,tm13_goal_lv1313,Solve as many cases as you can<br>There <b>might</b> be more than one murderer.,无限次解决案件<br>凶手<b>可能</b>不止1人
+505,tm13_rule1_lv1301,Question witnesss in a row <sprite name=meeple_blank>,质询某一行的目击者<sprite name=meeple_blank>
+506,tm13_rule2_lv1301,<sprite name=sign_complete> Matched: murderer appears in correct columns, <sprite name=sign_complete> 匹配：凶手出现在正确的列
+507,tm13_rule2_lv1309,<sprite name=sign_complete> Matched: murderer appears in correct columns, <sprite name=sign_complete> 匹配：有凶手出现在正确的列
+508,tm13_rule3_lv1301,<sprite name=sign_unknown> Suspicious: the murderer appears but in wrong column, <sprite name=sign_unknown> 可疑：凶手出现在错误的列
+509,tm13_rule3_lv1309,<sprite name=sign_unknown> Suspicious: the murderer appears but in wrong column, <sprite name=sign_unknown> 可疑：有凶手出现但都在错误的列
+510,tm13_rule4_lv1301,<sprite name=rule_sign_deletion> Excluded: no murderer present, <sprite name=rule_sign_deletion> 排除：没有凶手出现
 512,tm13_suspect,Suspect,嫌疑人
 513,tm13_witness,Witness,目击者
 514,tm2_goal_lv201,Set all cells to 4,让所有格子为4
@@ -529,135 +529,135 @@ UID,Key,EN,CN
 529,tm2_rule3_lv204,<b>X</b> is the number of coins<br>in the cell before play,X为格子内原有硬币数
 530,tm2_rule4_lv203,"After play, the coin flips",打出后硬币翻面
 531,tm2_rule4_lv210,"After play, toss the coin",打出后投掷硬币
-532,tm4_goal_lv401,,让1个格子为1
-533,tm4_goal_lv402,,让2个格子为2
-534,tm4_goal_lv403,,让5个格子为5
-535,tm4_goal_lv404,,让所有格子为6
-536,tm4_goal_lv405,,让所有格子数字相同
-537,tm4_goal_lv406,,让所有格子为7
-538,tm4_goal_lv407,,让所有格子为7
-539,tm4_goal_lv408,,让所有格子为7
-540,tm4_goal_lv409,,让所有格子为7
-541,tm4_goal_lv410,,让每个格子都变成寿司或饭团
-542,tm4_goal_lv411,,刺身、米饭、寿司、饭团各一个时，数字总和为18
-543,tm4_goal_lv412,,每个格子是刺身或寿司的情况下，数字总和为36
-544,tm4_goal_lv413,,在每个格子都是米饭或饭团的情况下，让数字总和为36
-545,tm4_goal_lv414,,让所有格子都为不同值
-546,tm4_rule1_lv401,,鱼：+3
-547,tm4_rule2_lv404,,米：-3
-548,tm4_rule3_lv406,,米+鱼： 寿司（=7）
-549,tm4_rule4_lv410,,鱼+米： 饭团（=2）
-550,tm4_rule5_lv404,,鱼和米交替出现
-551,tm5_goal_lv501,,让所有格子为7
-552,tm5_goal_lv502,,让所有格子成为相同数字
-553,tm5_goal_lv503,,让所有格子成为相同数字
-554,tm5_goal_lv504,,让所有格子成为相同数字
-555,tm5_goal_lv505,,触发2次月食
-556,tm5_goal_lv506,,触发3次月食
-557,tm5_goal_lv507,,让数字总和下降至10以下
-558,tm5_goal_lv508,,让所有格子为偶数
-559,tm5_goal_lv509,,让数字总和下降至10以下
-560,tm5_goal_lv510,,让左侧一列格子为0
-561,tm5_goal_lv511,,让左侧一列格子为0，<br>右侧一列格子为2
-562,tm5_goal_lv512,,月食时，让所有格子回归初值
-563,tm5_goal_lv513,,让所有格子回归初值
-564,tm5_goal_lv514,,月食时，让所有格子回归初值
-565,tm5_rule1_lv501,,新月：+1
-566,tm5_rule2_lv501,,弦月：+3
-567,tm5_rule3_lv502,,满月：+5
-568,tm5_rule4_lv505,,9+满月：月食！
-569,tm5_rule5_lv503,,超过9：太阳升起，游戏失败
-570,tm6_goal_lv601,,点亮1盏灯泡
-571,tm6_goal_lv602,,点亮5盏灯泡
-572,tm6_goal_lv603,,点亮全部灯泡
-573,tm6_goal_lv604,,点亮全部灯泡
-574,tm6_goal_lv605,,点亮全部灯泡
-575,tm6_goal_lv606,,点亮全部灯泡
-576,tm6_goal_lv607,,点亮全部灯泡
-577,tm6_goal_lv608,,点亮6盏灯泡
-578,tm6_goal_lv609,,点亮6盏灯泡
-579,tm6_goal_lv610,,一次将3盏熄灭的灯泡点亮
-580,tm6_goal_lv611,,一次将4盏熄灭的灯泡点亮
-581,tm6_goal_lv612,,用掉所有灯泡，<br>保持点亮的灯数量在4-6之间
-582,tm6_goal_lv613,,点亮全部灯泡
-583,tm6_goal_lv614,,一次将8盏熄灭的灯泡点亮
-584,tm6_goal_lv615,,点亮全部灯泡
-585,tm6_rule1_lv601,,打出：+1
-586,tm6_rule1_lv605,,打出：十字区域+1
-587,tm6_rule2_lv601,,与两个或以上的相同数字相邻
-588,tm6_rule3_lv601,, 则点亮格子
-589,tm7_goal_lv701,,创造最美盆景
-590,tm7_goal_lv702,,创造最美盆景
-591,tm7_goal_lv703,,创造最美盆景
-592,tm7_goal_lv704,,创造最美盆景
-593,tm7_goal_lv705,,创造最美盆景
-594,tm7_goal_lv706,,创造最美盆景
-595,tm7_goal_lv707,,创造最美盆景
-596,tm7_goal_lv708,,创造最美盆景
-597,tm7_goal_lv709,,创造最美盆景
-598,tm7_goal_lv710,,创造最美盆景
-599,tm7_goal_lv711,,创造最美盆景
-600,tm7_goal_lv712,,创造最美盆景
-601,tm7_goal_lv713,,创造最美盆景
-602,tm7_goal_lv714,,创造最美盆景
-603,tm7_goal_lv715,,创造最美盆景
-604,tm7_goal_lv716,,创造最美盆景
-605,tm7_goal_lv717,,创造最美盆景
-606,tm7_goal_lv718,,创造最美盆景
-607,tm7_goal_lv719,,创造最美盆景
-608,tm7_goal_lv720,,创造最美盆景
-609,tm7_rule1_lv701,,打出：移除格子内的数字
-610,tm7_rule2_lv701,,通过尝试，发现美的规则
-611,tm7_rule2_lv719,,创造最美的盆景
-612,tm7_rule3_lv702,,和谐： █ █ █ 数字
-613,tm7_rule3_lv703,,和谐：移除 █ █ 数字
-614,tm7_rule3_lv704,,和谐：移除 █ 不同的数字
-615,tm7_rule3_lv705,,和谐：移除与众不同的数字
-616,tm7_rule4_lv703,,（相等、 █ ）
-617,tm7_rule4_lv705,,（相等、奇偶、 █ ）
-618,tm7_rule4_lv707,,（相等、奇偶、质数、 █ ）
-619,tm7_rule4_lv709,,（相等、奇偶、质数、成对、 █ ）
-620,tm7_rule4_lv711,,（相等、奇偶、质数、成对、不同）
-621,tm7_rule5_lv716,,平衡： █ █ 相等
-622,tm7_rule5_lv717,,平衡： █ 总和相等
-623,tm7_rule5_lv718,,平衡：各枝干总和相等
-624,tm8_goal_lv801,,让2个格子为9
-625,tm8_goal_lv802,,让所有格子为9
-626,tm8_goal_lv803,,让所有格子为9
-627,tm8_goal_lv804,,让4个格子为9
-628,tm8_goal_lv805,,让6个格子为9
-629,tm8_goal_lv806,,同时有6个王冠在场
-630,tm8_goal_lv807,,4个王冠同时在场
-631,tm8_goal_lv808,,6个王冠同时在场
-632,tm8_goal_lv809,,夺取5次王冠
-633,tm8_goal_lv810,,夺取9次王冠
-634,tm8_goal_lv811,,让所有格子为6及以上
-635,tm8_goal_lv812,,9个王冠同时在场
-636,tm8_rule1_lv801,,打出：+3
-637,tm8_rule1_lv803,,打出：+3，并加冕
-638,tm8_rule2_lv803,,加冕后比任意相邻领土小
-639,tm8_rule3_lv803,, 则加冕失败：=0
-640,tm8_rule4_lv807,,加冕后比相邻领土大
-641,tm8_rule5_lv807,, 则相邻领土王冠被夺取：-2
-642,tm9_goal_lv901,,让所有格子为10
-643,tm9_goal_lv902,,让1个格子为1000ml及以上
-644,tm9_goal_lv903,,让所有格子为900ml及以上
-645,tm9_goal_lv904,,让所有格子为910ml及以上
-646,tm9_goal_lv905,,让所有格子为920ml及以上
-647,tm9_goal_lv906,,让所有格子为930ml及以上
-648,tm9_goal_lv907,,让所有格子为940ml及以上
-649,tm9_goal_lv908,,各位的数字都不同
-650,tm9_goal_lv909,,各位数字中0~9同时出现
-651,tm9_goal_lv910,,用完全部试剂
-652,tm9_goal_lv911,,各位数字中只有奇数
-653,tm9_goal_lv912,,用完全部试剂
-654,tm9_rule1_lv901,,打出：+1
-655,tm9_rule1_lv902,,按住：倾倒（数字加速增加）
-656,tm9_rule1_lv903,,按住：倾倒（需保证安全）
-657,tm9_rule2_lv903,,爆炸：格子超过999
-658,tm9_rule3_lv904,,爆炸：数字均值大于7
-659,tm9_rule4_lv905,,爆炸：百位数字为7
-660,tm9_rule5_lv906,,爆炸：有3个以上相同数字
+532,tm4_goal_lv401,Set 1 cell to 1,让1个格子为1
+533,tm4_goal_lv402,Set 2 cells to 2,让2个格子为2
+534,tm4_goal_lv403,Set 5 cells to 5,让5个格子为5
+535,tm4_goal_lv404,Set ALL cells to 6,让所有格子为6
+536,tm4_goal_lv405,Set all cells to SAME numbers,让所有格子数字相同
+537,tm4_goal_lv406,Set ALL cells to 7,让所有格子为7
+538,tm4_goal_lv407,Set ALL cells to 7,让所有格子为7
+539,tm4_goal_lv408,Set ALL cells to 7,让所有格子为7
+540,tm4_goal_lv409,Set ALL cells to 7,让所有格子为7
+541,tm4_goal_lv410,Set ALL cells to Sushi or Onigiri,让每个格子都变成寿司或饭团
+542,tm4_goal_lv411,"Set total number to 18, <br>when there is one of each food type.",刺身、米饭、寿司、饭团各一个时，数字总和为18
+543,tm4_goal_lv412,"Set total number to 36, <br>when all cells are Sashimi or Sushi.",每个格子是刺身或寿司的情况下，数字总和为36
+544,tm4_goal_lv413,"Set total number to 36, <br>when all cells are Onigiri or Rice.",在每个格子都是米饭或饭团的情况下，让数字总和为36
+545,tm4_goal_lv414,Set all cells to UNIQUE numbers,让所有格子都为不同值
+546,tm4_rule1_lv401,Fish: +3,鱼：+3
+547,tm4_rule2_lv404,Rice: -3,米：-3
+548,tm4_rule3_lv406,Rice<<Fish: Sushi (=7),米<<鱼： 寿司（=7）
+549,tm4_rule4_lv410,Fish<<Rice: Onigiri (=2),鱼<<米： 饭团（=2）
+550,tm4_rule5_lv404,Fish and Rice appear alternately,鱼和米交替出现
+551,tm5_goal_lv501,Set ALL cells to 7,让所有格子为7
+552,tm5_goal_lv502,Set all cells to SAME numbers,让所有格子成为相同数字
+553,tm5_goal_lv503,Set all cells to SAME numbers,让所有格子成为相同数字
+554,tm5_goal_lv504,Set all cells to SAME numbers,让所有格子成为相同数字
+555,tm5_goal_lv505,Trigger Eclipses twice,触发2次月食
+556,tm5_goal_lv506,Trigger Eclipses 3 times,触发3次月食
+557,tm5_goal_lv507,Set total number to 10-,让数字总和下降至10以下
+558,tm5_goal_lv508,Set all cells to EVEN,让所有格子为偶数
+559,tm5_goal_lv509,Set total number to 10-,让数字总和下降至10以下
+560,tm5_goal_lv510,Set the left column cells to 0,让左侧一列格子为0
+561,tm5_goal_lv511,"Set the left column cells to 0, <br>and the right column cells to 2",让左侧一列格子为0，<br>右侧一列格子为2
+562,tm5_goal_lv512,Return all cells to its initial numbers right after Eclipse,月食时，让所有格子回归初值
+563,tm5_goal_lv513,Return all grids to their initial numbers.,让所有格子回归初值
+564,tm5_goal_lv514,Return all cells to its initial numbers right after Eclipse,月食时，让所有格子回归初值
+565,tm5_rule1_lv501,Crescent: +1,新月：+1
+566,tm5_rule2_lv501,Quarter: +1,弦月：+3
+567,tm5_rule3_lv502,Full Moon: +5,满月：+5
+568,tm5_rule4_lv505,9<<Full Moon: Eclipse!,9<<满月：月食！
+569,tm5_rule5_lv503,"Over 9: Sun rises, lose.",超过9：太阳升起，游戏失败
+570,tm6_goal_lv601,Light up 1 lightbulb,点亮1盏灯泡
+571,tm6_goal_lv602,Light up 5 lightbulbs,点亮5盏灯泡
+572,tm6_goal_lv603,Light up ALL lightbulbs,点亮全部灯泡
+573,tm6_goal_lv604,Light up ALL lightbulbs,点亮全部灯泡
+574,tm6_goal_lv605,Light up ALL lightbulbs,点亮全部灯泡
+575,tm6_goal_lv606,Light up ALL lightbulbs,点亮全部灯泡
+576,tm6_goal_lv607,Light up ALL lightbulbs,点亮全部灯泡
+577,tm6_goal_lv608,Light up 6 lightbulbs,点亮6盏灯泡
+578,tm6_goal_lv609,Light up 6 lightbulbs,点亮6盏灯泡
+579,tm6_goal_lv610,Light up 3 lightbulbs within 1 move,一次将3盏熄灭的灯泡点亮
+580,tm6_goal_lv611,Light up 4 lightbulbs within 1 move,一次将4盏熄灭的灯泡点亮
+581,tm6_goal_lv612,"Use all lightbulbs,<br>while keep number lit between 4-6",用掉所有灯泡，<br>保持点亮的灯数量在4-6之间
+582,tm6_goal_lv613,Light up ALL lightbulbs,点亮全部灯泡
+583,tm6_goal_lv614,Light up 8 lightbulbs within 1 move,一次将8盏熄灭的灯泡点亮
+584,tm6_goal_lv615,Light up ALL lightbulbs,点亮全部灯泡
+585,tm6_rule1_lv601,Play: +1,打出：+1
+586,tm6_rule1_lv605,Play: +1 on cross-shape cells,打出：十字区域+1
+587,tm6_rule2_lv601,Light up the lightbulb,与两个或以上的相同数字相邻
+588,tm6_rule3_lv601, if is adjacent to 2+ of the same number, 则点亮格子
+589,tm7_goal_lv701,Create the most beautiful Bonsai,创造最美盆景
+590,tm7_goal_lv702,Create the most beautiful Bonsai,创造最美盆景
+591,tm7_goal_lv703,Create the most beautiful Bonsai,创造最美盆景
+592,tm7_goal_lv704,Create the most beautiful Bonsai,创造最美盆景
+593,tm7_goal_lv705,Create the most beautiful Bonsai,创造最美盆景
+594,tm7_goal_lv706,Create the most beautiful Bonsai,创造最美盆景
+595,tm7_goal_lv707,Create the most beautiful Bonsai,创造最美盆景
+596,tm7_goal_lv708,Create the most beautiful Bonsai,创造最美盆景
+597,tm7_goal_lv709,Create the most beautiful Bonsai,创造最美盆景
+598,tm7_goal_lv710,Create the most beautiful Bonsai,创造最美盆景
+599,tm7_goal_lv711,Create the most beautiful Bonsai,创造最美盆景
+600,tm7_goal_lv712,Create the most beautiful Bonsai,创造最美盆景
+601,tm7_goal_lv713,Create the most beautiful Bonsai,创造最美盆景
+602,tm7_goal_lv714,Create the most beautiful Bonsai,创造最美盆景
+603,tm7_goal_lv715,Create the most beautiful Bonsai,创造最美盆景
+604,tm7_goal_lv716,Create the most beautiful Bonsai,创造最美盆景
+605,tm7_goal_lv717,Create the most beautiful Bonsai,创造最美盆景
+606,tm7_goal_lv718,Create the most beautiful Bonsai,创造最美盆景
+607,tm7_goal_lv719,Create the most beautiful Bonsai,创造最美盆景
+608,tm7_goal_lv720,Create the most beautiful Bonsai,创造最美盆景
+609,tm7_rule1_lv701,Play: Remove the number in the cell,打出：移除格子内的数字
+610,tm7_rule2_lv701,Discover the rules of beauty,通过尝试，发现美的规则
+611,tm7_rule2_lv719,Creating the most beautiful Bonsai,创造最美的盆景
+612,tm7_rule3_lv702,Harmony:  █ █ █ numbers,和谐： █ █ █ 数字
+613,tm7_rule3_lv703,Harmony: Remove █ █ numbers,和谐：移除 █ █ 数字
+614,tm7_rule3_lv704,Harmony: Remove █ distinctive numbers,和谐：移除 █ 不同的数字
+615,tm7_rule3_lv705,Harmony: Remove the most distinctive numbers,和谐：移除与众不同的数字
+616,tm7_rule4_lv703,"(Equal, █, █, █, █)",（相等、 █ ）
+617,tm7_rule4_lv705,"(Equal, Parity, █, █, █)",（相等、奇偶、 █ ）
+618,tm7_rule4_lv707,"(Equal, Parity, Prime, █, █)",（相等、奇偶、质数、 █ ）
+619,tm7_rule4_lv709,"(Equal, Parity, Prime, Pair, █)",（相等、奇偶、质数、成对、 █ ）
+620,tm7_rule4_lv711,"(Equal, Parity, Prime, Pair, Unique)",（相等、奇偶、质数、成对、不同）
+621,tm7_rule5_lv716,Balance: █ █ are equal,平衡： █ █ 相等
+622,tm7_rule5_lv717,Balance: the sum █ are equal,平衡： █ 总和相等
+623,tm7_rule5_lv718,Balance: the sum of each branch are equal,平衡：各枝干总和相等
+624,tm8_goal_lv801,Set 2 cells to 9,让2个格子为9
+625,tm8_goal_lv802,Set all cells to 9,让所有格子为9
+626,tm8_goal_lv803,Set all cells to 9,让所有格子为9
+627,tm8_goal_lv804,Set 4 cells to 9,让4个格子为9
+628,tm8_goal_lv805,Set 6 cells to 9,让6个格子为9
+629,tm8_goal_lv806,Has 6 Crowns present,有6个王冠在场
+630,tm8_goal_lv807,Has 4 Crowns present,4个王冠同时在场
+631,tm8_goal_lv808,Has 6 Crowns present,6个王冠同时在场
+632,tm8_goal_lv809,Capture Crown 5 times,夺取5次王冠
+633,tm8_goal_lv810,Capture Crown 9 times,夺取9次王冠
+634,tm8_goal_lv811,Set all cells to 6+,让所有格子为6及以上
+635,tm8_goal_lv812,Has 9 Crowns present,9个王冠同时在场
+636,tm8_rule1_lv801,Play: +3,打出：+3
+637,tm8_rule1_lv803,Play: +3 and crowned,打出：+3，并加冕
+638,tm8_rule2_lv803,Crown falls and cell set to 0,加冕后比任意相邻领土小
+639,tm8_rule3_lv803, if cell is smaller than any adjacent territory, 则加冕失败：=0
+640,tm8_rule4_lv807,Capture Crown(s) from adjacent territories,加冕后比相邻领土大
+641,tm8_rule5_lv807, if cell is larger than the adjacent territory, 则相邻领土王冠被夺取：-2
+642,tm9_goal_lv901,Set all cells to 10,让所有格子为10
+643,tm9_goal_lv902,Set 1 cell to 1000+ ml,让1个格子为1000ml及以上
+644,tm9_goal_lv903,Set all cells to 900+ ml,让所有格子为900ml及以上
+645,tm9_goal_lv904,Set all cells to 910+ ml,让所有格子为910ml及以上
+646,tm9_goal_lv905,Set all cells to 920+ ml,让所有格子为920ml及以上
+647,tm9_goal_lv906,Set all cells to 930+ ml,让所有格子为930ml及以上
+648,tm9_goal_lv907,Set all cells to 940+ ml,让所有格子为940ml及以上
+649,tm9_goal_lv908,Set 1 all DIGITS to unique,各位的数字都不同
+650,tm9_goal_lv909,Has 0~9 presents on digits,各位数字中0~9同时出现
+651,tm9_goal_lv910,Use up reagents,用完全部试剂
+652,tm9_goal_lv911,Has only ODD numbers present on digits,各位数字中只有奇数
+653,tm9_goal_lv912,Use up reagents,用完全部试剂
+654,tm9_rule1_lv901,Play: +1,打出：+1
+655,tm9_rule1_lv902,Hold: Pour (increase accelerates),按住：倾倒（数字加速增加）
+656,tm9_rule1_lv903,Hold: Pour (increase accelerates),按住：倾倒（需保证安全）
+657,tm9_rule2_lv903,Explosion: number is over 999,爆炸：格子超过999
+658,tm9_rule3_lv904,Explosion: average of all digits over 7,爆炸：数字均值大于7
+659,tm9_rule4_lv905,Explosion: Hundred digit is 7,爆炸：百位数字为7
+660,tm9_rule5_lv906,Explosion: Same number repeats 3+ times on digits,爆炸：有3个以上相同数字
 661,tool_name_theme13_status0,Inquire <size=70%>or</size> Identify,质询 <size=70%>或</size> 指认
 662,tool_name_theme13_status1,Identify now!,质询机会耗尽<br>立刻指认！
 663,tool_name_theme2_status0,Head,正面
@@ -675,11 +675,11 @@ UID,Key,EN,CN
 675,ui_finished_status, <sprite name=currency_star>, <sprite name=currency_star>
 676,ui_gem_desc,Gem is a rarely found point that remarks your mastering of Numbers of Everything.,宝石是一种更罕见的积分，它代表着您对《万物之数》的大师级掌握。
 677,ui_gem_name,<sprite name=currency_gem> Gems,<sprite name=currency_gem> 宝石
-678,ui_goal_current_avg,Current Average: ,当前数字均值：
-679,ui_goal_current_crown_present,,在场王冠：
-680,ui_goal_current_crown_taken,,已夺取王冠：
-681,ui_goal_current_repeat3,Repeating 3 times,出现3次的数字：
-682,ui_goal_current_sum,Current Sum: ,当前数字之和：
+678,ui_goal_current_avg,Digits average: ,当前数字均值：
+679,ui_goal_current_crown_present,Crown present:,在场王冠：
+680,ui_goal_current_crown_taken,Crown captured:,已夺取王冠：
+681,ui_goal_current_repeat3,Numbers repeating 3 times on digits:,出现3次的数字：
+682,ui_goal_current_sum,Current sum: ,当前数字之和：
 683,ui_goal_missing_digits,Missing:,缺失数字：
 684,ui_goal_section_title,Goal,目标
 685,ui_hiddengem_notice_desc,Hidden Gem levels are more challenging and complicated. <br><br>By accomplishing these levels you will earn <sprite name=currency_gem> Gems instead of regular <sprite name=currency_star> Stars. Gem is a rarely found point that remarks your mastering of Numbers of Everything. <br><br>Gems mainly come from Hidden Gem levels but can also be found in other “hidden” ways. Continue playing and discover more mystery of this game.,隐藏宝石关比常规关卡更加困难或复杂。<br><br>完成这些关卡，将获得 <sprite name=currency_gem> 宝石而非 <sprite name=currency_star> 星星。宝石是一种更罕见的积分，它代表着您对《万物之数》的大师级掌握。<br><br>宝石主要来自隐藏宝石关卡，但也可以通过其他更加“隐藏”的方式获得。请继续游戏，发现的更多秘密所在吧！
@@ -697,8 +697,8 @@ UID,Key,EN,CN
 697,ui_retry_btn,Restart,重试
 698,ui_rewind_btn,Rewind,回溯
 699,ui_ruleset_title,Rules,规则
-700,ui_setting_music,Music,音乐
-701,ui_setting_sound,Sound,音效
+700,ui_setting_music,Music Vol.,音乐
+701,ui_setting_sound,Effect Vol.,音效
 702,ui_setting_title,Settings,设置
 703,ui_star_desc,"Star is earned by completing regular levels. It is used to unlock more photos, meaning more new levels.",星星通过完成常规关卡挑战获取，获得的星星可以用来解锁更多的照片，也就是更多关卡挑战。
 704,ui_star_name,<sprite name=currency_star> Stars,<sprite name=currency_star> 星星
@@ -708,9 +708,9 @@ UID,Key,EN,CN
 708,ui_victory_title,Congrats!,恭喜通关
 709,unlocked_tm1,<b>Time</b> never stops.,<b>时间</b>永不停歇。
 710,unlocked_tm10,<b>Badge</b> leads to success.,<b>工牌</b>通向成功。
-711,unlocked_tm11,,幸运的<b>四叶草</b>。
-712,unlocked_tm12,,<b>大楼</b>吸引人群。
-713,unlocked_tm13,,<b>侦探</b>明察秋毫。
+711,unlocked_tm11,Lucky <b>Clover</b>.,幸运的<b>四叶草</b>。
+712,unlocked_tm12,<b>Skyscraper</b> draws a crowd.,<b>大楼</b>吸引人群。
+713,unlocked_tm13,<b>Detectives</b> spares no details.,<b>侦探</b>明察秋毫。
 714,unlocked_tm2,<b>Coin</b> determine fates.,<b>硬币</b>决定命运。
 715,unlocked_tm4,Simple and elegant <b>Sushi</b>.,<b>寿司</b>简约又精致。
 716,unlocked_tm5,Does <b>Moon</b> have a cycle?,<b>月亮</b>有无规律？
