@@ -1452,7 +1452,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5185\u90E8\u6D4B\u8BD5\u7248\u672C\uFF0C\u8BF7\u52FF\u5916\u4F20\uFF0C0.9.09242024"
+  m_text: "\u5185\u90E8\u6D4B\u8BD5 Internal Use Only 0.9.09242024"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0438792a9abcde94ba498411eb1f1ffe, type: 2}
   m_sharedMaterial: {fileID: 579824242631739247, guid: 0438792a9abcde94ba498411eb1f1ffe, type: 2}

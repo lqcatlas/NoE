@@ -42,7 +42,7 @@ public class Director : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.N) && !skipPlay)
+        /*if (Input.GetKeyUp(KeyCode.N) && !skipPlay)
         {
             ContinuePlay();
             atStart = false;
@@ -54,7 +54,7 @@ public class Director : MonoBehaviour
         if (skipPlay)
         {
             SkipPlay();
-        }
+        }*/
     }
     public void ContinuePlay()
     {
