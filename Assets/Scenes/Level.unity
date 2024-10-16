@@ -169,7 +169,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 27.067669
+  orthographic size: 27.886427
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -259,18 +259,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 214749520664381141, guid: 5f0f6cb217fe83d418c44b09027ba0dd, type: 3}
-      propertyPath: MaskColor.b
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 214749520664381141, guid: 5f0f6cb217fe83d418c44b09027ba0dd, type: 3}
-      propertyPath: MaskColor.g
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 214749520664381141, guid: 5f0f6cb217fe83d418c44b09027ba0dd, type: 3}
-      propertyPath: MaskColor.r
-      value: 0.05
-      objectReference: {fileID: 0}
     - target: {fileID: 8543446326591409719, guid: 5f0f6cb217fe83d418c44b09027ba0dd, type: 3}
       propertyPath: m_IsActive
       value: 1
