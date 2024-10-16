@@ -326,7 +326,7 @@ public class LevelMasterBase : MonoBehaviour
     }
     public virtual void InitRuleset()
     {
-        hub.rulesetMaster.ruleTitle.SetRuleLine("@Loc=ui_ruleset_title@@");
+        //hub.rulesetMaster.ruleTitle.SetRuleLine("@Loc=ui_ruleset_title@@");
         for (int i = 0; i < hub.rulesetMaster.ruleDescs.Count; i++)
         {
             if(i < levelData.ruleset.Count)

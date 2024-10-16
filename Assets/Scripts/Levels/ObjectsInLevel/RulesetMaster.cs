@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class RulesetMaster : MonoBehaviour
 {
-    public RuleLine ruleTitle;
+    public TextMeshPro ruleTitle;
     public List<RuleLine> ruleDescs;
 
     
