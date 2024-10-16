@@ -50,7 +50,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: de67d7e4376ad1f42b02d88a4a558e6c, type: 2}
   - {fileID: 11400000, guid: 0fa66f37f47963f4b9818e1b00a03ac2, type: 2}
   - {fileID: 11400000, guid: d82eaa1327f0de245a7fd43382b058f8, type: 2}
-  - {fileID: 11400000, guid: ff3d0215cc6f9ee4494775b177be7823, type: 2}
+  - {fileID: 11400000, guid: 6d6d4fca6523ef345801c86aa622a92e, type: 2}
   - {fileID: 11400000, guid: 0d30d279ad7429946a39af17206d9875, type: 2}
   TotalStars: 11
   TotalGems: 1

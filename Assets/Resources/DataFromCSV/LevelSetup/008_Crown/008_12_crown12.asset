@@ -16,7 +16,7 @@ MonoBehaviour:
   themeIndex: 8
   levelIndex: 12
   nextLevelIndex: 0
-  previousLevel: {fileID: 11400000, guid: ff3d0215cc6f9ee4494775b177be7823, type: 2}
+  previousLevel: {fileID: 11400000, guid: 6d6d4fca6523ef345801c86aa622a92e, type: 2}
   nextLevel: {fileID: 0}
   theme: '@Loc=themename_tm8@@'
   title: '@Loc=levelname_lv812@@'
