@@ -1449,8 +1449,9 @@ MonoBehaviour:
     EN: 'Play Clock to a cell: +1'
     CN: "\u6253\u51FA\u65F6\u949F\u7684\u683C\u5B50\uFF1A+1"
   - key: tm1_rule2_lv103
-    EN: Afterwards, cells with a clock +1
-    CN: "\u4E4B\u540E\u5DF2\u6709\u65F6\u949F\u7684\u683C\u5B50+1"
+    EN: 'After play, cells previously had a Clock: +1'
+    CN: "\u6253\u51FA\u540E\uFF0C\u4E4B\u524D\u6709\u65F6\u949F\u7684\u683C\u5B50\u4E5F
+      +1"
   - key: tm10_goal_lv1001
     EN: Mark numbers passing the criterion
     CN: "\u6807\u8BB0\u6EE1\u8DB3\u8981\u6C42\u7684\u6570\u5B57"

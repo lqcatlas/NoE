@@ -438,7 +438,7 @@ UID,Key,EN,CN
 437,tm1_goal_lv109,Set all cells to 5,让所有格子为5
 438,tm1_goal_lv110,Set all cells to 6,让所有格子为6
 439,tm1_rule1_lv101,Play Clock to a cell: +1,打出时钟的格子：+1
-440,tm1_rule2_lv103,"Afterwards, cells with a clock +1",之后已有时钟的格子+1
+440,tm1_rule2_lv103,"After play, cells previously had a Clock: +1",打出后，之前有时钟的格子也 +1
 441,tm10_goal_lv1001,Mark numbers passing the criterion,标记满足要求的数字
 442,tm10_goal_lv1002,Mark numbers passing the criterion,标记满足要求的数字
 443,tm10_goal_lv1003,Mark numbers passing ALL criterions,标记同时满足全部要求的数字
