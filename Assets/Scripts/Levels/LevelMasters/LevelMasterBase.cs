@@ -626,7 +626,7 @@ public class LevelMasterBase : MonoBehaviour
                 hub.miscMaster.nextBtn.SetActive(true);
             }
         }
-        hub.miscMaster.levelName.SetText(string.Format("{0}<size=60%>{1}</size>{2}", 
+        hub.miscMaster.levelName.SetText(string.Format("{0} <size=60%>{1}</size>{2}", 
             LocalizedAssetLookup.singleton.Translate(levelData.theme),
             LocalizedAssetLookup.singleton.Translate(levelData.title), 
             levelData.isHard? " <sprite name=currency_gem>":""));
