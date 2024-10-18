@@ -4,8 +4,7 @@ using UnityEngine;
 using System.Linq;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using System;
-using Unity.VisualScripting;
+using Steamworks;
 
 [System.Serializable]
 public class SaveData
@@ -161,15 +160,13 @@ public class SaveManager : MonoBehaviour
         try
         {
             BinaryFormatter bf = new BinaryFormatter();
-            string save_filename = "gamesave.save";
-#if UNITY_EDITOR
-            save_filename = "editor_gamesave.save";
-#endif
-            if (!File.Exists(Path.Combine(Application.persistentDataPath, save_filename)))
+            string finalPath = GetSaveFilePath();
+            Debug.LogWarning($"reading files from {finalPath}");
+            if (!File.Exists(finalPath))
             {
                 ClearSaveFile();
             }
-            FileStream file = File.Open(Path.Combine(Application.persistentDataPath, save_filename), FileMode.Open);
+            FileStream file = File.Open(Path.Combine(Application.persistentDataPath, finalPath), FileMode.Open);
             //Debug.Log(Application.persistentDataPath);
             curSave.save_str = (string)bf.Deserialize(file);
             dict2save = curSave.ConvertToDictionary(curSave.save_str);
@@ -177,7 +174,7 @@ public class SaveManager : MonoBehaviour
         }
         catch (IOException ex)
         {
-            Console.WriteLine(ex.Message);
+            Debug.LogError(ex.Message);
             Debug.LogError("game load fails, using fresh start");
         }
         VisualizeSaves();
@@ -194,28 +191,42 @@ public class SaveManager : MonoBehaviour
             SaveDataModules[i].SaveToSaveManager();
         }
     }
+    public string GetSaveFolder()
+    {
+        string steamID = SteamUser.GetSteamID().ToString();
+        string finalFolder = Path.Combine(Application.persistentDataPath, "cloudsave", steamID);
+        return finalFolder;
+    }
+    public string GetSaveFilePath()
+    {
+        string save_filename = "gamesave.sav";
+#if UNITY_EDITOR
+        save_filename = "editor_gamesave.sav";
+#endif
+        string finalPath = Path.Combine(GetSaveFolder(), save_filename);
+        return finalPath;
+    }
     public void SaveToFile()
     {
         try
         {
             BinaryFormatter bf = new BinaryFormatter();
-            string save_filename = "gamesave.save";
-#if UNITY_EDITOR
-            save_filename = "editor_gamesave.save";
-#endif
-            FileStream file = File.Create(Path.Combine(Application.persistentDataPath, save_filename));
+            string finalFolder = GetSaveFolder();
+            string finalPath = GetSaveFilePath();
+            Debug.LogWarning($"saving files to {finalPath}");
+            Directory.CreateDirectory(finalFolder);
+            FileStream file = File.Create(finalPath);
             curSave.save_str = curSave.ConvertToString(dict2save);
             bf.Serialize(file, curSave.save_str);
             file.Close();
         }
         catch (IOException ex)
         {
-            Console.WriteLine(ex.Message);
+            Debug.LogError(ex.Message);
             Debug.LogError("game save fails, no progression saved");
         }
         //Debug.Log(string.Format("game saved to file with {0} items in it", dict2save.Count));
         VisualizeSaves();
-
     }
     public void ClearSaveFile()
     {
